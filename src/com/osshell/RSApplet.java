@@ -1,4 +1,4 @@
-package com.original;
+package com.osshell;
 import java.applet.Applet;
 import java.applet.AppletContext;
 import java.applet.AppletStub;
@@ -43,9 +43,6 @@ public class RSApplet extends JFrame implements AppletStub{
             // Loading GUI
 
         try {
-            Util.GetParams(new URL(gameUrl));
-
-
             loader  = new Reflector(new URL[]{new File(System.getProperty("user.home") + "/OSLite/gamepack.jar").toURI().toURL()});
 
             applet = (Applet)loader.loadClass(MClass).newInstance();
@@ -104,10 +101,6 @@ public class RSApplet extends JFrame implements AppletStub{
     @Override
     public boolean isActive() {
         return false;
-    }
-
-    public static void main(String[] args) {
-        new RSApplet();
     }
 
 

@@ -14,8 +14,8 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.original.RSApplet;
 import com.osshell.Loader;
+import com.osshell.RSApplet;
 import com.osshell.settings.SettingsIO;
 
 public class Util {

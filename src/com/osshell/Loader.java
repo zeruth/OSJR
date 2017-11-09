@@ -3,7 +3,6 @@ package com.osshell;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
-import com.original.RSApplet;
 import com.osshell.settings.Settings;
 import com.osshell.settings.SettingsIO;
 import com.osshell.util.Util;
