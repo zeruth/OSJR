@@ -1,4 +1,4 @@
-package rsreflection;
+package com.osshell.util;
 
 public class FieldInfo {
 

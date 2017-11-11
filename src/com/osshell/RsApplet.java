@@ -1,5 +1,6 @@
 package com.osshell;
 
+import com.osshell.util.Reflector;
 import java.applet.Applet;
 import java.applet.AppletContext;
 import java.applet.AppletStub;
@@ -11,9 +12,6 @@ import java.net.URL;
 import java.util.HashMap;
 import javax.swing.JFrame;
 import javax.swing.JPopupMenu;
-
-import rsreflection.Reflector;
-
 
 public class RsApplet extends JFrame implements AppletStub {
   private static final long serialVersionUID = 1L;
@@ -38,7 +36,6 @@ public class RsApplet extends JFrame implements AppletStub {
       {new File(System.getProperty("user.home") + "/OSLite/gamepack.jar")
       .toURI().toURL()});
       
-     // loader.getFieldValueByDetails("client", fieldName)
       applet = (Applet)loader.loadClass(MClass).newInstance();
       applet.setSize(781, 543); //fixes game crash.
       applet.setPreferredSize(new Dimension(768, 528));

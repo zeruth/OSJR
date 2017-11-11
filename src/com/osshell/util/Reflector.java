@@ -1,4 +1,4 @@
-package rsreflection;
+package com.osshell.util;
 
 import java.lang.reflect.Field;
 import java.net.URL;
