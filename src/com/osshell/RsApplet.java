@@ -38,6 +38,7 @@ public class RsApplet extends JFrame implements AppletStub {
       {new File(System.getProperty("user.home") + "/OSLite/gamepack.jar")
       .toURI().toURL()});
       
+     // loader.getFieldValueByDetails("client", fieldName)
       applet = (Applet)loader.loadClass(MClass).newInstance();
       applet.setSize(781, 543); //fixes game crash.
       applet.setPreferredSize(new Dimension(768, 528));
