@@ -14,6 +14,22 @@ public class Reflector extends URLClassLoader {
   public Reflector(URL[] urls) {
     super(urls);
   }
+  
+  public Field getField(String className, String fieldName) {
+	try {
+		return loadClass(className).getDeclaredField(fieldName);
+	} catch (NoSuchFieldException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (SecurityException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	return null;
+  }
 
   public Object getFieldValue(String identifier) {
     FieldInfo f = hookMap.get(identifier);

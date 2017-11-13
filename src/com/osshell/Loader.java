@@ -63,8 +63,10 @@ public class Loader {
   * open - Checks for gamepack update then calls a new RSApplet.
   * @throws MalformedURLException = Incorrect URL.
   * @throws IOException = Various I/O causes.
+ * @throws SecurityException 
+ * @throws NoSuchFieldException 
   */
-  public void open() throws MalformedURLException, IOException {
+  public void open() throws MalformedURLException, IOException, NoSuchFieldException, SecurityException {
     Display display = Display.getDefault();
     createContents();
 

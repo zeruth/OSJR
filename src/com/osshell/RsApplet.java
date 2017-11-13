@@ -1,5 +1,6 @@
 package com.osshell;
 
+import com.osshell.util.RSHooks;
 import com.osshell.util.Reflector;
 import java.applet.Applet;
 import java.applet.AppletContext;
@@ -20,12 +21,33 @@ public class RsApplet extends JFrame implements AppletStub {
   private static Applet applet;
   public static String gameUrl;
   public static String MClass;
-  public Reflector loader;
+  public static Reflector loader;
+  public static Object clientBootClass = null;
+  
+  public static Thread updateHookData = new Thread(new Runnable() {
+	
+	@Override
+	public void run() {
+		while (true!=false) { //Hopefully a long time boys.
+			
+			try {
+				RSHooks.updateHooks();
+				Thread.sleep(1000);
+			} catch (InterruptedException | IllegalArgumentException | IllegalAccessException 
+					| NoSuchFieldException | SecurityException | ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+});
 
   /**
    * RsApplet - Instance of the RSApplet window.
+ * @throws SecurityException 
+ * @throws NoSuchFieldException 
    */
-  public RsApplet() {
+  public RsApplet() throws NoSuchFieldException, SecurityException {
     setTitle("OS-Lite 1.0");
     setSize(781, 543);
     setResizable(true);
@@ -35,8 +57,11 @@ public class RsApplet extends JFrame implements AppletStub {
       loader  = new Reflector(new URL[]
       {new File(System.getProperty("user.home") + "/OSLite/gamepack.jar")
       .toURI().toURL()});
+      RSHooks.setHooks();
+      updateHookData.start();
       
-      applet = (Applet)loader.loadClass(MClass).newInstance();
+      clientBootClass = loader.loadClass(MClass).newInstance();
+      applet = (Applet)clientBootClass;
       applet.setSize(781, 543); //fixes game crash.
       applet.setPreferredSize(new Dimension(768, 528));
       applet.setStub(this);
