@@ -92,6 +92,7 @@ public class Loader {
     }
     shell.close();
     new RsApplet();
+    HookDebugger.main();
   }
 
   /**
