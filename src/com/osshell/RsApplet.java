@@ -33,7 +33,7 @@ public class RsApplet extends JFrame implements AppletStub {
 			
 			try {
 				RSHooks.updateHooks();
-				Thread.sleep(1000);
+				Thread.sleep(100);
 			} catch (InterruptedException | IllegalArgumentException | IllegalAccessException 
 					| NoSuchFieldException | SecurityException | ClassNotFoundException e) {
 				// TODO Auto-generated catch block
