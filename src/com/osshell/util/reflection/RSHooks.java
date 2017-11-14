@@ -161,7 +161,9 @@ public class RSHooks {
 
 	public static int[] getClientExperiences() throws IllegalArgumentException, IllegalAccessException,
 			NoSuchFieldException, SecurityException, ClassNotFoundException {
-		return (int[]) getStaticValue(fieldHookMap.get("Client_Experiences"));
+		int[] i = (int[]) getStaticValue(fieldHookMap.get("Client_Experiences"));
+		HookDebugger.experiences=i;
+		return i;
 	}
 
 	public static int getClientWeight() {
@@ -183,7 +185,9 @@ public class RSHooks {
 	}
 
 	public static int[] getClientRealLevels() throws IllegalArgumentException, IllegalAccessException {
-		return (int[]) getStaticValue(fieldHookMap.get("Client_RealLevels"));
+		int[] i = (int[]) getStaticValue(fieldHookMap.get("Client_RealLevels"));
+		HookDebugger.levels = i;
+		return i;
 	}
 
 	public static int[] getClientCurrentLevels() throws IllegalArgumentException, IllegalAccessException {
