@@ -1,8 +1,8 @@
-# OSRS-Launcher-Lite
-OS-Light Rework
+# OS-Lite
+Was originally based off of OS-Light but almost everything of that is gone.
+Now it is a lightweight reflection client. Hardly any hooks have been implemented at this point but it was really just a learning project. Feel free to do whatever you want with this. I'll try to keep the ui as clean as possible. My only goal was to access the information. I don't want this to turn into some bloaty client.
 
-
-Basic launcher for OSRS. use it as a jumping point for your projects. was unreasonably hard to find a working OSRS loader on github. Enjoy.
+You can download the current release from jar_export.
 
 
                                  Apache License
