@@ -1,4 +1,4 @@
-package com.osshell.util;
+package com.osshell.util.reflection;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -2,13 +2,7 @@ package com.osshell;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-
-import com.osshell.util.Util;
-
 import org.eclipse.swt.widgets.Label;
-
-import java.io.IOException;
-
 import org.eclipse.swt.SWT;
 
 public class HookDebugger {

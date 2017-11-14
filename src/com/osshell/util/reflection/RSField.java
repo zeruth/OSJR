@@ -1,4 +1,4 @@
-package com.osshell.util;
+package com.osshell.util.reflection;
 
 import java.lang.reflect.Field;
 import java.math.BigInteger;

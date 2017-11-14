@@ -1,4 +1,4 @@
-package com.osshell.util;
+package com.osshell.util.reflection;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -93,11 +93,11 @@ public class RSClass {
 
 	}
 
-	private static Field getField(Class clazz, String fieldName) throws NoSuchFieldException {
+	private static Field getField(Class<?> clazz, String fieldName) throws NoSuchFieldException {
 		try {
 			return clazz.getDeclaredField(fieldName);
 		} catch (NoSuchFieldException e) {
-			Class superClass = clazz.getSuperclass();
+			Class<?> superClass = clazz.getSuperclass();
 			if (superClass == null) {
 				throw e;
 			} else {
@@ -106,11 +106,11 @@ public class RSClass {
 		}
 	}
 
-	private static Method getMethod(Class clazz, String methodName, Class... parameterTypes) throws NoSuchMethodException {
+	private static Method getMethod(Class<?> clazz, String methodName, Class<?>... parameterTypes) throws NoSuchMethodException {
 		try {
 			return clazz.getDeclaredMethod(methodName, parameterTypes);
 		} catch (NoSuchMethodException | SecurityException e) {
-			Class superClass = clazz.getSuperclass();
+			Class<?> superClass = clazz.getSuperclass();
 			if (superClass == null) {
 				throw e;
 			} else {

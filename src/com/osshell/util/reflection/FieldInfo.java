@@ -1,4 +1,4 @@
-package com.osshell.util;
+package com.osshell.util.reflection;
 
 public class FieldInfo {
 

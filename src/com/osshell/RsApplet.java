@@ -1,7 +1,5 @@
 package com.osshell;
 
-import com.osshell.util.RSHooks;
-import com.osshell.util.Reflector;
 import java.applet.Applet;
 import java.applet.AppletContext;
 import java.applet.AppletStub;
@@ -13,6 +11,9 @@ import java.net.URL;
 import java.util.HashMap;
 import javax.swing.JFrame;
 import javax.swing.JPopupMenu;
+
+import com.osshell.util.reflection.RSHooks;
+import com.osshell.util.reflection.Reflector;
 
 public class RsApplet extends JFrame implements AppletStub {
   private static final long serialVersionUID = 1L;
