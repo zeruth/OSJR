@@ -55,9 +55,6 @@ public class RSHooks {
 	 */
 	public static RSClass loadClass(String string) throws ClassNotFoundException {
 		String s = classHookMap.get(string);
-		if (s == "client") {
-			// return new RSClass(string, s, (Class<?>)RsApplet.clientBootClass);
-		}
 		return new RSClass(string, s, RsApplet.loader.loadClass(s));
 	}
 

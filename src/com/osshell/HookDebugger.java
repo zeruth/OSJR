@@ -8,6 +8,8 @@ import com.osshell.util.Util;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.ProgressBar;
+import org.eclipse.swt.events.MouseAdapter;
+import org.eclipse.swt.events.MouseEvent;
 
 public class HookDebugger {
 
@@ -463,72 +465,236 @@ public class HookDebugger {
 		skill22Experience.setText("10000000");
 
 		progressBar_16 = new ProgressBar(shell, SWT.NONE);
+		progressBar_16.setState(1);
+		progressBar_16.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_16);
+			}
+		});
 		progressBar_16.setBounds(551, 591, 170, 17);
 		
 		progressBar_0 = new ProgressBar(shell, SWT.NONE);
+		progressBar_0.setState(1);
+		progressBar_0.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_0);
+			}
+		});
 		progressBar_0.setBounds(551, 136, 170, 17);
 		
 		progressBar_1 = new ProgressBar(shell, SWT.NONE);
+		progressBar_1.setState(1);
+		progressBar_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_1);
+			}
+		});
 		progressBar_1.setBounds(551, 167, 170, 17);
 		
 		progressBar_2 = new ProgressBar(shell, SWT.NONE);
+		progressBar_2.setState(1);
+		progressBar_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_2);
+
+			}
+		});
 		progressBar_2.setBounds(551, 196, 170, 17);
 		
 		progressBar_3 = new ProgressBar(shell, SWT.NONE);
+		progressBar_3.setState(1);
+		progressBar_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_3);
+			}
+		});
 		progressBar_3.setBounds(551, 227, 170, 17);
 		
 		progressBar_4 = new ProgressBar(shell, SWT.NONE);
+		progressBar_4.setState(1);
+		progressBar_4.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_4);
+			}
+		});
 		progressBar_4.setBounds(551, 258, 170, 17);
 		
 		progressBar_5 = new ProgressBar(shell, SWT.NONE);
+		progressBar_5.setState(1);
+		progressBar_5.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_5);
+			}
+		});
 		progressBar_5.setBounds(551, 285, 170, 17);
 		
 		progressBar_6 = new ProgressBar(shell, SWT.NONE);
+		progressBar_6.setState(1);
+		progressBar_6.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_6);
+			}
+		});
 		progressBar_6.setBounds(551, 315, 170, 17);
 		
 		progressBar_7 = new ProgressBar(shell, SWT.NONE);
+		progressBar_7.setState(1);
+		progressBar_7.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_7);
+			}
+		});
 		progressBar_7.setBounds(551, 344, 170, 17);
 		
 		progressBar_8 = new ProgressBar(shell, SWT.NONE);
+		progressBar_8.setState(1);
+		progressBar_8.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_8);
+
+			}
+		});
 		progressBar_8.setBounds(551, 372, 170, 17);
 		
 		progressBar_9 = new ProgressBar(shell, SWT.NONE);
+		progressBar_9.setState(1);
+		progressBar_9.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_9);
+
+			}
+		});
 		progressBar_9.setBounds(551, 400, 170, 17);
 		
 		progressBar_10 = new ProgressBar(shell, SWT.NONE);
+		progressBar_10.setState(1);
+		progressBar_10.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_10);
+			}
+		});
 		progressBar_10.setBounds(551, 427, 170, 17);
 		
 		progressBar_11 = new ProgressBar(shell, SWT.NONE);
+		progressBar_11.setState(1);
+		progressBar_11.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_11);
+			}
+		});
 		progressBar_11.setBounds(551, 452, 170, 17);
 		
 		progressBar_12 = new ProgressBar(shell, SWT.NONE);
+		progressBar_12.setState(1);
+		progressBar_12.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_12);
+			}
+		});
 		progressBar_12.setBounds(551, 475, 170, 17);
 		
 		progressBar_13 = new ProgressBar(shell, SWT.NONE);
+		progressBar_13.setState(1);
+		progressBar_13.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_13);
+			}
+		});
 		progressBar_13.setBounds(551, 506, 170, 17);
 		
 		progressBar_14 = new ProgressBar(shell, SWT.NONE);
+		progressBar_14.setState(1);
+		progressBar_14.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_14);
+			}
+		});
 		progressBar_14.setBounds(551, 535, 170, 17);
 		
 		progressBar_15 = new ProgressBar(shell, SWT.NONE);
+		progressBar_15.setState(1);
+		progressBar_15.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_15);
+			}
+		});
 		progressBar_15.setBounds(551, 568, 170, 17);
 		
 		progressBar_17 = new ProgressBar(shell, SWT.NONE);
+		progressBar_17.setState(1);
+		progressBar_17.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_17);
+			}
+		});
 		progressBar_17.setBounds(551, 614, 170, 17);
 		
 		progressBar_18 = new ProgressBar(shell, SWT.NONE);
+		progressBar_18.setState(1);
+		progressBar_18.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_18);
+			}
+		});
 		progressBar_18.setBounds(551, 637, 170, 17);
 		
 		progressBar_19 = new ProgressBar(shell, SWT.NONE);
+		progressBar_19.setState(1);
+		progressBar_19.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_19);
+			}
+		});
 		progressBar_19.setBounds(551, 662, 170, 17);
 		
 		progressBar_20 = new ProgressBar(shell, SWT.NONE);
+		progressBar_20.setState(1);
+		progressBar_20.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_20);
+			}
+		});
 		progressBar_20.setBounds(551, 683, 170, 17);
 		
 		progressBar_21 = new ProgressBar(shell, SWT.NONE);
+		progressBar_21.setState(1);
+		progressBar_21.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_21);
+			}
+		});
 		progressBar_21.setBounds(551, 706, 170, 17);
 		
 		progressBar_22 = new ProgressBar(shell, SWT.NONE);
+		progressBar_22.setState(1);
+		progressBar_22.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent arg0) {
+				switchPbarState(progressBar_22);
+			}
+		});
 		progressBar_22.setBounds(551, 729, 170, 17);
 		
 		lblGgg = new Label(shell, SWT.SEPARATOR | SWT.HORIZONTAL);
@@ -722,6 +888,15 @@ public class HookDebugger {
 			progressBar_22.setSelection(makePbarSelection(22));
 			
 
+		}
+	}
+	
+	public static void switchPbarState(ProgressBar p) {
+		if (p.getState()==1) {
+			p.setState(0);
+		}
+		else {
+			p.setState(1);
 		}
 	}
 	
