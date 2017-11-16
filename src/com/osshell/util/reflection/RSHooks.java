@@ -34,39 +34,15 @@ public class RSHooks {
 
 		classHookMap.put("Client", "client");
 		client = loadClass("Client");
-		//fieldHookMap.put("Client_Weight", new RSField("Client_Weight", getField(client, "kz"), 911960287));
-		//fieldHookMap.put("Client_Energy", new RSField("Client_Energy", getField(client, "kb"), 2121080715));
-	//	fieldHookMap.put("Client_CurrentWorld",
-			//	new RSField("Client_CurrentWorld", getField(client, "bu"), -1232844837));
+		// fieldHookMap.put("Client_Weight", new RSField("Client_Weight",
+		// getField(client, "kz"), 911960287));
+		// fieldHookMap.put("Client_Energy", new RSField("Client_Energy",
+		// getField(client, "kb"), 2121080715));
+		// fieldHookMap.put("Client_CurrentWorld",
+		// new RSField("Client_CurrentWorld", getField(client, "bu"), -1232844837));
 		fieldHookMap.put("Client_Experiences", new RSField("Client_Experiences", getField(client, "iv"), 1));
 		fieldHookMap.put("Client_RealLevels", new RSField("Client_RealLevels", getField(client, "ie"), 1));
 		fieldHookMap.put("Client_CurrentLevels", new RSField("Client_CurrentLevels", getField(client, "if"), 1));
-
-		/*
-		 * classHookMap.put("Item", "ch"); classHookMap.put("ItemDefinition", "jx");
-		 * classHookMap.put("Widget", "hk"); classHookMap.put("WidgetNode", "bp");
-		 * classHookMap.put("Player", "bq"); classHookMap.put("PlayerDefinition", "hd");
-		 * classHookMap.put("NPC", "cp"); classHookMap.put("NPCDefinition", "jc");
-		 * classHookMap.put("Actor", "bf"); classHookMap.put("CombatInfoHolder", "cy");
-		 * classHookMap.put("CombatInfoList", "go"); classHookMap.put("CombatInfo2",
-		 * "iz"); classHookMap.put("CombatInfo1", "cn");
-		 * classHookMap.put("AnimationSequence", "jf"); Wont use until needed.
-		 * classHookMap.put("Model", "en"); classHookMap.put("GrandExchange", "h");
-		 * classHookMap.put("SceneTile", "ep"); classHookMap.put("GameObject", "ex");
-		 * classHookMap.put("FloorDecoration", "dd"); classHookMap.put("WallDecoration",
-		 * "eh"); classHookMap.put("BoundaryObject", "ea");
-		 * classHookMap.put("AnimableNode", "cq"); classHookMap.put("Region", "ec");
-		 * classHookMap.put("Renderable", "ei"); classHookMap.put("CollisionMap", "fa");
-		 * classHookMap.put("BufferedConnection", "ft"); classHookMap.put("Buffer",
-		 * "fv"); classHookMap.put("GameShell", "bn"); classHookMap.put("Keyboard",
-		 * "ae"); classHookMap.put("ImageRGB", "kd"); classHookMap.put("IndexedRGB",
-		 * "ko"); classHookMap.put("TypeFace", "jg"); classHookMap.put("Rasterizer3D",
-		 * "eq"); classHookMap.put("Rasterizer", "ky"); classHookMap.put("ClassData",
-		 * "kr"); classHookMap.put("Cache", "gr"); classHookMap.put("Queue", "gq");
-		 * classHookMap.put("HashTable", "gx"); classHookMap.put("LinkedList", "go");
-		 * classHookMap.put("Cacheable", "gu"); classHookMap.put("NodeDeque", "go");
-		 * classHookMap.put("Node", "gh");
-		 */
 
 	}
 
@@ -79,8 +55,8 @@ public class RSHooks {
 	 */
 	public static RSClass loadClass(String string) throws ClassNotFoundException {
 		String s = classHookMap.get(string);
-		if (s=="client") {
-		//	return new RSClass(string, s, (Class<?>)RsApplet.clientBootClass);
+		if (s == "client") {
+			// return new RSClass(string, s, (Class<?>)RsApplet.clientBootClass);
 		}
 		return new RSClass(string, s, RsApplet.loader.loadClass(s));
 	}
@@ -110,31 +86,31 @@ public class RSHooks {
 		} else {
 			if (!scannedForHooks) {
 				findHooks();
-				scannedForHooks=true;
+				scannedForHooks = true;
 			}
 
 		}
 
 	}
-	
+
 	public static void findHooks() throws SecurityException, ClassNotFoundException {
 		findClientExperiences();
 	}
-	
+
 	public static void findClientExperiences() throws SecurityException, ClassNotFoundException {
 		Field[] f = RsApplet.loader.loadClass("client").getDeclaredFields();
 		int i = 0;
-		while (i<= f.length-1) {
+		while (i <= f.length - 1) {
 			try {
 				f[i].setAccessible(true);
-					int[] j = (int[])f[i].get(null);
-					if (j.length == 25) {
-						System.out.println("Found potential ClientExperiences at client."+f[i].getName());
+				int[] j = (int[]) f[i].get(null);
+				if (j.length == 25) {
+					System.out.println("Found potential ClientExperiences at client." + f[i].getName());
 
 				}
 
 			} catch (Exception e) {
-				//e.printStackTrace();
+				// e.printStackTrace();
 			}
 			i++;
 		}
@@ -151,9 +127,9 @@ public class RSHooks {
 	 */
 	public static void updateClientHooks() throws IllegalArgumentException, IllegalAccessException,
 			NoSuchFieldException, SecurityException, ClassNotFoundException {
-		//getClientWeight();
-	//	getClientEnergy();
-	//	getClientCurrentWorld();
+		// getClientWeight();
+		// getClientEnergy();
+		// getClientCurrentWorld();
 		getClientExperiences();
 		getClientRealLevels();
 		getClientCurrentLevels();
