@@ -9,34 +9,38 @@ import com.osshell.RsApplet;
 public class RSHooks {
 
 	/**
-	 * Revision 157
+	 * Revision 158
 	 */
+	public static boolean outdated = false;
+	public static boolean scannedForHooks = false;
 	public static RSClass client;
 
 	static HashMap<String, String> classHookMap = new HashMap<String, String>();
 	static HashMap<String, RSField> fieldHookMap = new HashMap<String, RSField>();
 
 	/**
-	 * setHooks - Setup hook definitions. TODO: Implement gson into this method for easier modifications.
+	 * setHooks - Setup hook definitions. TODO: Implement gson into this method for
+	 * easier modifications.
+	 * 
 	 * @throws ClassNotFoundException
 	 * @throws NoSuchFieldException
 	 * @throws SecurityException
 	 */
 	public static void setHooks() throws ClassNotFoundException, NoSuchFieldException, SecurityException {
-		
+
 		/**
 		 * Client Hooks
 		 */
 
 		classHookMap.put("Client", "client");
 		client = loadClass("Client");
-		fieldHookMap.put("Client_Weight", new RSField("Client_Weight", getField(client, "kz"), 911960287));
-		fieldHookMap.put("Client_Energy", new RSField("Client_Energy", getField(client, "kb"), 2121080715));
-		fieldHookMap.put("Client_CurrentWorld",
-				new RSField("Client_CurrentWorld", getField(client, "bu"), -1232844837));
-		fieldHookMap.put("Client_Experiences", new RSField("Client_Experiences", getField(client, "il"), 1));
-		fieldHookMap.put("Client_RealLevels", new RSField("Client_RealLevels", getField(client, "ir"), 1));
-		fieldHookMap.put("Client_CurrentLevels", new RSField("Client_CurrentLevels", getField(client, "ir"), 1));
+		//fieldHookMap.put("Client_Weight", new RSField("Client_Weight", getField(client, "kz"), 911960287));
+		//fieldHookMap.put("Client_Energy", new RSField("Client_Energy", getField(client, "kb"), 2121080715));
+	//	fieldHookMap.put("Client_CurrentWorld",
+			//	new RSField("Client_CurrentWorld", getField(client, "bu"), -1232844837));
+		fieldHookMap.put("Client_Experiences", new RSField("Client_Experiences", getField(client, "iv"), 1));
+		fieldHookMap.put("Client_RealLevels", new RSField("Client_RealLevels", getField(client, "ie"), 1));
+		fieldHookMap.put("Client_CurrentLevels", new RSField("Client_CurrentLevels", getField(client, "if"), 1));
 
 		/*
 		 * classHookMap.put("Item", "ch"); classHookMap.put("ItemDefinition", "jx");
@@ -68,17 +72,22 @@ public class RSHooks {
 
 	/**
 	 * loadClass - Loads a class from the classhookmap then from the JAR.
+	 * 
 	 * @param string
 	 * @return
 	 * @throws ClassNotFoundException
 	 */
 	public static RSClass loadClass(String string) throws ClassNotFoundException {
 		String s = classHookMap.get(string);
+		if (s=="client") {
+		//	return new RSClass(string, s, (Class<?>)RsApplet.clientBootClass);
+		}
 		return new RSClass(string, s, RsApplet.loader.loadClass(s));
 	}
 
 	/**
 	 * updateHooks - Fetches current information from all defined hooks.
+	 * 
 	 * @throws IllegalArgumentException
 	 * @throws IllegalAccessException
 	 * @throws NoSuchFieldException
@@ -87,11 +96,53 @@ public class RSHooks {
 	 */
 	public static void updateHooks() throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException,
 			SecurityException, ClassNotFoundException {
-		updateClientHooks();
+		if (!outdated) {
+			try {
+				updateClientHooks();
+			} catch (Exception e) {
+				System.out.println("Revision out of date!");
+				outdated = true;
+				return;
+			} finally {
+
+			}
+
+		} else {
+			if (!scannedForHooks) {
+				findHooks();
+				scannedForHooks=true;
+			}
+
+		}
+
+	}
+	
+	public static void findHooks() throws SecurityException, ClassNotFoundException {
+		findClientExperiences();
+	}
+	
+	public static void findClientExperiences() throws SecurityException, ClassNotFoundException {
+		Field[] f = RsApplet.loader.loadClass("client").getDeclaredFields();
+		int i = 0;
+		while (i<= f.length-1) {
+			try {
+				f[i].setAccessible(true);
+					int[] j = (int[])f[i].get(null);
+					if (j.length == 25) {
+						System.out.println("Found potential ClientExperiences at client."+f[i].getName());
+
+				}
+
+			} catch (Exception e) {
+				//e.printStackTrace();
+			}
+			i++;
+		}
 	}
 
 	/**
 	 * updateClientHooks - Fetches current information from all client hooks
+	 * 
 	 * @throws IllegalArgumentException
 	 * @throws IllegalAccessException
 	 * @throws NoSuchFieldException
@@ -100,16 +151,17 @@ public class RSHooks {
 	 */
 	public static void updateClientHooks() throws IllegalArgumentException, IllegalAccessException,
 			NoSuchFieldException, SecurityException, ClassNotFoundException {
-		getClientWeight();
-		getClientEnergy();
-		getClientCurrentWorld();
+		//getClientWeight();
+	//	getClientEnergy();
+	//	getClientCurrentWorld();
 		getClientExperiences();
 		getClientRealLevels();
 		getClientCurrentLevels();
 	}
-	
+
 	/**
 	 * getField - Fetches a field from a given RSClass by unobfuscated name.
+	 * 
 	 * @param clasz
 	 * @param field
 	 * @return
@@ -123,7 +175,9 @@ public class RSHooks {
 	}
 
 	/**
-	 * fixStaticModInt - Fixes multiplication value, use on any hook with a multiplier value that isn't 1.
+	 * fixStaticModInt - Fixes multiplication value, use on any hook with a
+	 * multiplier value that isn't 1.
+	 * 
 	 * @param rsf
 	 * @return
 	 */
@@ -132,7 +186,9 @@ public class RSHooks {
 	}
 
 	/**
-	 * getNonStaticValue - Fetches the Object of a given NON STATIC RSField using the clientBootClass as a reference.
+	 * getNonStaticValue - Fetches the Object of a given NON STATIC RSField using
+	 * the clientBootClass as a reference.
+	 * 
 	 * @param f
 	 * @return
 	 * @throws IllegalArgumentException
@@ -143,7 +199,9 @@ public class RSHooks {
 	}
 
 	/**
-	 * getStaticValue - Fetches the Object of a given STATIC field using a null reference.
+	 * getStaticValue - Fetches the Object of a given STATIC field using a null
+	 * reference.
+	 * 
 	 * @param f
 	 * @return
 	 * @throws IllegalArgumentException
@@ -154,7 +212,7 @@ public class RSHooks {
 		return f.getField().get(null);
 
 	}
-	
+
 	/**
 	 * Hook Getters
 	 */
@@ -162,7 +220,7 @@ public class RSHooks {
 	public static int[] getClientExperiences() throws IllegalArgumentException, IllegalAccessException,
 			NoSuchFieldException, SecurityException, ClassNotFoundException {
 		int[] i = (int[]) getStaticValue(fieldHookMap.get("Client_Experiences"));
-		HookDebugger.experiences=i;
+		HookDebugger.experiences = i;
 		return i;
 	}
 
