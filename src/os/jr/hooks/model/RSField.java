@@ -1,4 +1,4 @@
-package com.osshell.util.reflection;
+package os.jr.hooks.model;
 
 import java.lang.reflect.Field;
 import java.math.BigInteger;
@@ -35,25 +35,20 @@ public class RSField {
 	}
 
 	public Object getValue(Object reference) {
-		if (reference == null) {
-			try {
-				return field.get(null);
-			} catch (IllegalArgumentException | IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}else {
-			try {
-				return field.get(reference);
-			} catch (IllegalArgumentException e) {
-				e.printStackTrace();
-			} catch (IllegalAccessException e) {
-				e.printStackTrace();
-			}
+		if (reference == null)
 			return null;
+
+		try {
+			if (multiplier!=1) {
+				return (int) field.get(reference)*multiplier;
+			}
+			return field.get(reference);
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
 		}
 		return null;
-
 	}
 
 	private static int modInverse(String integer) {

@@ -1,4 +1,4 @@
-package com.osshell.settings;
+package os.jr.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -14,7 +14,8 @@ import java.io.Writer;
 
 public class SettingsIo {
   public static Settings settings = new Settings();
-  public static File file = new File(System.getProperty("user.home") + "/OSLite/settings.txt");
+  public static File file = new File(System.getProperty("user.home") + "/OSJR/settings.txt");
+  public static File dir = new File(System.getProperty("user.home") + "/OSJR/");
   
   /**
    * loadSettings - Loads settings from user data directory using Gson.

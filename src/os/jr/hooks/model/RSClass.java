@@ -1,4 +1,4 @@
-package com.osshell.util.reflection;
+package os.jr.hooks.model;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -14,7 +14,16 @@ public class RSClass {
 	private Hashtable<String, RSField> fields;
 
 	public RSField getField(String name) {
-		return fields.get(name);
+		if (fields.containsKey(name)) {
+			if (fields.get(name)==null) {
+				return null;
+			}else {
+				return fields.get(name);
+			}
+		}
+		return null;
+
+
 	}
 
 	public RSMethod getMethod(String name) {

@@ -1,4 +1,4 @@
-package com.osshell.util.reflection;
+package os.jr.hooks.model;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
