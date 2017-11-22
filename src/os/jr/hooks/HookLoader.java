@@ -2,16 +2,16 @@ package os.jr.hooks;
 
 import java.util.Hashtable;
 
+import os.jr.game.Reflector;
 import os.jr.game.accessors.Client;
 import os.jr.hooks.model.RSClass;
 import os.jr.hooks.model.RSField;
-import os.jr.loader.Loader;
 
 public class HookLoader {
 	
 	public static Hashtable<String, RSClass> classStorage = new Hashtable<String, RSClass>();
 	
-	public static String player;
+	public static String player, imageRGB;
 	
 	public static RSClass client;
 	public static RSField Client_LocalPlayer;
@@ -20,7 +20,7 @@ public class HookLoader {
 							
 	
 	public static void loadHooks() {
-		ClassLoader cl = Loader.classLoader;
+		ClassLoader cl = Reflector.classLoader;
 		try {
 
 			client = new RSClass("Client", "client", cl.loadClass("client"));
@@ -45,6 +45,13 @@ public class HookLoader {
 			classStorage.get("Player").putField("Player_Model", null, "j", 1);
 			classStorage.get("Player").putField("Player_Visible", null, "p", 1);
 			classStorage.get("Player").putField("Player_CombatLevel", null, "u", 811274801);
+			
+			imageRGB = "kd";
+			c = cl.loadClass(imageRGB);
+			classStorage.put("ImageRGB", new RSClass("ImageRGB", imageRGB, c));
+			classStorage.get("ImageRGB").putField("ImageRGB_Pixels", null, "m", 1);
+
+			
 
 
 

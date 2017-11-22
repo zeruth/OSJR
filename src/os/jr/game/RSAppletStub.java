@@ -1,4 +1,4 @@
-package os.jr.loader;
+package os.jr.game;
 
 import java.applet.AppletContext;
 import java.applet.AppletStub;

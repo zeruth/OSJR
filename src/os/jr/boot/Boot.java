@@ -5,12 +5,12 @@ import java.net.URL;
 
 import javax.swing.JFrame;
 
+import os.jr.game.GameFrame;
+import os.jr.game.Reflector;
+import os.jr.game.Updater;
 import os.jr.game.accessors.Client;
 import os.jr.hooks.HookLoader;
 import os.jr.hooks.HookUpdater;
-import os.jr.loader.GameFrame;
-import os.jr.loader.Loader;
-import os.jr.loader.Updater;
 import os.jr.utils.SettingsIo;
 
 public class Boot extends JFrame {
@@ -31,7 +31,7 @@ public class Boot extends JFrame {
 		Client.settings = SettingsIo.loadSettings();
 
 		Updater.main();
-		new Loader();
+		new Reflector();
 		new GameFrame();
 		HookLoader.loadHooks();
 		HookUpdater.init();

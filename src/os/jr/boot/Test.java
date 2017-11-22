@@ -3,7 +3,7 @@ package os.jr.boot;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
-import os.jr.loader.Loader;
+import os.jr.game.Reflector;
 
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.SWT;
@@ -55,7 +55,7 @@ public class Test {
 		btnDoIt.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-				System.out.println("ls "+Loader.getClient().getLoginState());
+				System.out.println("ls "+Reflector.getClient().getLoginState());
 				/*
 					I use to test code.
 					

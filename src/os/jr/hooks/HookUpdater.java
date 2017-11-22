@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
+import os.jr.game.GameFrame;
+import os.jr.game.Reflector;
 import os.jr.game.accessors.Client;
-import os.jr.loader.GameFrame;
-import os.jr.loader.Loader;
 
 public class HookUpdater {
 	
@@ -12,7 +12,7 @@ public class HookUpdater {
 		public void run() {
 			while (true!=false) {
 				Client.client = HookLoader.client;
-				Client c = Loader.getClient();
+				Client c = Reflector.getClient();
 				if (c.getLoginState()==30) {
 					Client.loggedIn=true;
 				}

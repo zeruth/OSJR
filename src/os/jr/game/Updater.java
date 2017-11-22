@@ -1,4 +1,4 @@
-package os.jr.loader;
+package os.jr.game;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
@@ -46,8 +46,8 @@ public class Updater {
 	 */
 	public static void main() throws IOException {
 		Utils.getParams();
-	    if (Client.settings.gamePackSize == -1 || Client.settings.gamePackSize != Utils.getFileSize(Loader.gamepackURL)
-	            || Utils.localGamePackSize() != Utils.getFileSize(Loader.gamepackURL)) {
+	    if (Client.settings.gamePackSize == -1 || Client.settings.gamePackSize != Utils.getFileSize(Reflector.gamepackURL)
+	            || Utils.localGamePackSize() != Utils.getFileSize(Reflector.gamepackURL)) {
 	    	downloadRequired=true;
 	    }
 	    if (downloadRequired) {
@@ -74,7 +74,7 @@ public class Updater {
 		shell.open();
 		shell.layout();
 		Client.settings = SettingsIo.loadSettings();
-		progressBar.setMaximum(Utils.getFileSize(Loader.gamepackURL));
+		progressBar.setMaximum(Utils.getFileSize(Reflector.gamepackURL));
 		while (!shell.isDisposed()&&!downloadComplete) {
 			setSelection(progress);
 		      if (!display.readAndDispatch()) {

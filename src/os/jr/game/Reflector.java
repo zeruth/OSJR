@@ -1,4 +1,4 @@
-package os.jr.loader;
+package os.jr.game;
 
 import java.applet.Applet;
 import java.awt.Dimension;
@@ -17,7 +17,7 @@ import org.objectweb.asm.tree.ClassNode;
 
 import os.jr.game.accessors.Client;
 
-public class Loader extends ClassLoader{
+public class Reflector extends ClassLoader{
 	
 	public static String gameUrl = "http://oldschool9.runescape.com/";
 	private static File gamepackFile = new File(System.getProperty("user.home") + "/OSJR/gamepack.jar");
@@ -36,7 +36,7 @@ public class Loader extends ClassLoader{
 		return client;
 	}
 	
-	public Loader() throws IOException {
+	public Reflector() throws IOException {
 		classnodes = new Hashtable<String, ClassNode>();
 		loadJar();
 		

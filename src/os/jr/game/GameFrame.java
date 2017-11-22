@@ -1,4 +1,4 @@
-package os.jr.loader;
+package os.jr.game;
 
 import javax.swing.JFrame;
 
@@ -16,7 +16,7 @@ public class GameFrame extends JFrame{
 		gameFrame.setSize(781, 543);
 		gameFrame.setResizable(true);
 		gameFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		gameFrame.add(Loader.applet);
+		gameFrame.add(Reflector.applet);
 		gameFrame.setVisible(true);
 	}
 	
