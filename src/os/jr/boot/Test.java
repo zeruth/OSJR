@@ -55,7 +55,7 @@ public class Test {
 		btnDoIt.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-				System.out.println("ls "+Reflector.getClient().getLoginState());
+				System.out.println("ls "+Reflector.getClient().getLocalPlayer().getCombatInfoList().getHead());
 				/*
 					I use to test code.
 					
