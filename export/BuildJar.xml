@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project OS-JR">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="C:/Code"/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/OS-JR.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="os.jr.boot.Boot"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="C:/Users/Guy/Documents/GitHub/OSJR/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Guy/Documents/GitHub/OSJR/lib/asm-5.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Guy/Documents/GitHub/OSJR/lib/swt.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Guy/Documents/GitHub/OSJR/lib/gson-2.2.4.jar"/>
+        </jar>
+    </target>
+</project>
