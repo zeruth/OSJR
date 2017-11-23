@@ -14,6 +14,8 @@ import os.jr.hooks.HookUpdater;
 import os.jr.utils.SettingsIo;
 
 public class Boot extends JFrame {
+	
+	public static boolean outdated = false;
 
 	/**
 	 * 

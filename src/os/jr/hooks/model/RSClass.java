@@ -4,6 +4,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Hashtable;
 
+import os.jr.boot.Boot;
+
 
 public class RSClass {
 	private String refactoredName;
@@ -59,26 +61,29 @@ public class RSClass {
 	}
 
 	public void putField(String refactoredName, Class<?> clasz, String name, int multiplier) {
-		RSField field = null;
-		if (clasz == null) {
-			clasz = this.clasz;
-		}
-		
-		try {
-			Field f = getField(clasz, name);
-			f.setAccessible(true);
-			field = new RSField(refactoredName, f, multiplier);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		if (!Boot.outdated) {
+			RSField field = null;
+			if (clasz == null) {
+				clasz = this.clasz;
+			}
+			
+			try {
+				Field f = getField(clasz, name);
+				f.setAccessible(true);
+				field = new RSField(refactoredName, f, multiplier);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 
-		if (field != null) {
-			System.out.println("Added field " + refactoredName + " to " + this.refactoredName);
-			this.fields.put(field.getRefactoredName(), field);
-		} else {
-			System.out.println("Unable to load field " + refactoredName + " -> " + name);
+			if (field != null) {
+				System.out.println("Added field " + refactoredName + " to " + this.refactoredName);
+				this.fields.put(field.getRefactoredName(), field);
+			} else {
+				System.out.println("Unable to load field " + refactoredName + " -> " + name);
+				System.out.println("Client Outdated!");
+				Boot.outdated = true;
+			}
 		}
-
 	}
 
 	public void putMethod(String refactoredName, Class<?> clasz, String name, Class<?>[] parameterTypes, Object[] parameters) {

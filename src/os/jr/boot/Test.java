@@ -20,12 +20,16 @@ public class Test {
 	 * @wbp.parser.entryPoint
 	 */
 	public static void main() {
-		try {
-			Test window = new Test();
-			window.open();
-		} catch (Exception e) {
-			e.printStackTrace();
+		if (!Boot.outdated)
+		{
+			try {
+				Test window = new Test();
+				window.open();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
+
 	}
 
 	/**
