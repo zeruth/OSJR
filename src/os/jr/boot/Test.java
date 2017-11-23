@@ -16,12 +16,12 @@ public class Test {
 
 	/**
 	 * Launch the application.
+	 * 
 	 * @param args
 	 * @wbp.parser.entryPoint
 	 */
 	public static void main() {
-		if (!Boot.outdated)
-		{
+		if (!Boot.outdated) {
 			try {
 				Test window = new Test();
 				window.open();
@@ -54,16 +54,16 @@ public class Test {
 		shell = new Shell();
 		shell.setSize(450, 300);
 		shell.setText("SWT Application");
-		
+
 		Button btnDoIt = new Button(shell, SWT.NONE);
 		btnDoIt.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-				System.out.println("ls "+Reflector.getClient().getLocalPlayer().getCombatInfoList().getHead());
+				System.out.println("ls " + Reflector.getClient().getLocalPlayer().getCombatInfoList().getHead());
 				/*
-					I use to test code.
-					
-			      */
+				 * I use to test code.
+				 * 
+				 */
 			}
 		});
 		btnDoIt.setBounds(191, 226, 75, 25);

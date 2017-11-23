@@ -1,8 +1,6 @@
 package os.jr.boot;
 
 import java.io.IOException;
-import java.net.URL;
-
 import javax.swing.JFrame;
 
 import os.jr.game.GameFrame;
@@ -14,7 +12,7 @@ import os.jr.hooks.HookUpdater;
 import os.jr.utils.SettingsIo;
 
 public class Boot extends JFrame {
-	
+
 	public static boolean outdated = false;
 
 	/**
@@ -23,7 +21,7 @@ public class Boot extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	public static void main(String[] args) throws IOException, NoSuchFieldException {
-		
+
 		if (!SettingsIo.dir.exists()) {
 			SettingsIo.dir.mkdir();
 		}

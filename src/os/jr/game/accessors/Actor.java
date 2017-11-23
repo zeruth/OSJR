@@ -1,9 +1,11 @@
 package os.jr.game.accessors;
 
+import java.nio.file.NotDirectoryException;
+
 import os.jr.hooks.HookLoader;
 import os.jr.hooks.model.RSField;
 
-public class Actor extends RenderableNode {
+public class Actor extends GameObject {
 
 	protected Actor() {
 	}
@@ -16,6 +18,8 @@ public class Actor extends RenderableNode {
 	
 	public CombatInfoList getCombatInfoList() {
 		RSField f = HookLoader.classStorage.get("Actor").getField("Actor_CombatInfoList");
+		os.jr.hooks.Node Node = new os.jr.hooks.Node();
+	//	Node.fields.get(Node.nodeNext).multiplier;
 		return new CombatInfoList(f.getValue(obj), client);
 	}
 

@@ -2,12 +2,9 @@ package os.jr.game;
 
 import java.applet.AppletContext;
 import java.applet.AppletStub;
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
-
-import os.jr.utils.Utils;
 
 public class RSAppletStub implements AppletStub {
 

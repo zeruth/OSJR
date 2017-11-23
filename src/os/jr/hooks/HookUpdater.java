@@ -6,17 +6,17 @@ import os.jr.game.Reflector;
 import os.jr.game.accessors.Client;
 
 public class HookUpdater {
-	
+
 	static Thread t = new Thread(new Runnable() {
-		
+
 		@Override
 		public void run() {
-			while (true!=false) {
+			while (true != false) {
 				Client.client = HookLoader.client;
 				Client c = Reflector.getClient();
 				if (!Boot.outdated) {
-					if (c.getLoginState()==30) {
-						Client.loggedIn=true;
+					if (c.getLoginState() == 30) {
+						Client.loggedIn = true;
 					}
 					if (Client.loggedIn) {
 						GameFrame.changeName(c.getLocalPlayer().getName());
@@ -35,7 +35,7 @@ public class HookUpdater {
 
 		}
 	});
-	
+
 	public static void init() {
 		t.start();
 	}
