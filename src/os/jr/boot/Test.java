@@ -4,6 +4,9 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
 import os.jr.game.Reflector;
+import os.jr.hooks.Client;
+import os.jr.hooks.Node;
+import os.jr.hooks.model.GameField;
 
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.SWT;
@@ -21,7 +24,7 @@ public class Test {
 	 * @wbp.parser.entryPoint
 	 */
 	public static void main() {
-		if (!Boot.outdated) {
+		if (Boot.outdated) {
 			try {
 				Test window = new Test();
 				window.open();
@@ -57,13 +60,41 @@ public class Test {
 
 		Button btnDoIt = new Button(shell, SWT.NONE);
 		btnDoIt.addSelectionListener(new SelectionAdapter() {
+			private Client client;
+			private Node node;
+
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
-				System.out.println("ls " + Reflector.getClient().getLocalPlayer().getCombatInfoList().getHead());
+				try {
+					client = Boot.rootClient;
+					node = new Node();
+					System.out.println("Works? "+client.getFieldValue(client.SOMETHING, null));
+					client.getFieldValue(client.SOMETHING, null);
+					for (GameField gf : client.allFields.values()) {
+						System.out.println(gf.fieldName);
+					}
+					for (GameField gf : node.allFields.values()) {
+						System.out.println(gf.fieldName);
+					}				} catch (SecurityException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				/*
 				 * I use to test code.
 				 * 
-				 */
+				 */ catch (NoSuchFieldException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (ClassNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IllegalArgumentException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IllegalAccessException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 			}
 		});
 		btnDoIt.setBounds(191, 226, 75, 25);

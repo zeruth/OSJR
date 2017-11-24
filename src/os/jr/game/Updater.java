@@ -3,7 +3,7 @@ package os.jr.game;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
-import os.jr.game.accessors.Client;
+import os.jr.hooks.Client;
 import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;
 

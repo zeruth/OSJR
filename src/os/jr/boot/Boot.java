@@ -6,21 +6,21 @@ import javax.swing.JFrame;
 import os.jr.game.GameFrame;
 import os.jr.game.Reflector;
 import os.jr.game.Updater;
-import os.jr.game.accessors.Client;
-import os.jr.hooks.HookLoader;
+import os.jr.hooks.Client;
 import os.jr.hooks.HookUpdater;
 import os.jr.utils.SettingsIo;
 
 public class Boot extends JFrame {
 
-	public static boolean outdated = false;
+	public static Client rootClient;
+	public static boolean outdated = true;
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public static void main(String[] args) throws IOException, NoSuchFieldException {
+	public static void main(String[] args) throws IOException, NoSuchFieldException, ClassNotFoundException {
 
 		if (!SettingsIo.dir.exists()) {
 			SettingsIo.dir.mkdir();
@@ -33,7 +33,6 @@ public class Boot extends JFrame {
 		Updater.main();
 		new Reflector();
 		new GameFrame();
-		HookLoader.loadHooks();
 		HookUpdater.init();
 		Test.main();
 

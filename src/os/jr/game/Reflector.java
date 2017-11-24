@@ -4,6 +4,7 @@ import java.applet.Applet;
 import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.Enumeration;
@@ -15,7 +16,7 @@ import java.util.jar.JarFile;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
 
-import os.jr.game.accessors.Client;
+import os.jr.hooks.Client;
 
 public class Reflector extends ClassLoader {
 
@@ -40,16 +41,34 @@ public class Reflector extends ClassLoader {
 		loadJar();
 
 		try {
-			classLoader = URLClassLoader.newInstance(new URL[] { gamepackFile.toURI().toURL() });
-			applet = (Applet) classLoader.loadClass("client").newInstance();
-			applet.setSize(781, 543); // fixes game crash.
-			applet.setVisible(true);
-			applet.setPreferredSize(new Dimension(768, 528));
-			applet.setStub(new RSAppletStub());
-			applet.init();
-			applet.start();
+			Thread t = new Thread(new Runnable() {
+				
+				@Override
+				public void run() {
 
-			client = new Client(applet);
+					try {
+						classLoader = URLClassLoader.newInstance(new URL[] { gamepackFile.toURI().toURL() });
+						applet = (Applet) classLoader.loadClass("client").newInstance();
+					} catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (MalformedURLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					applet.setSize(781, 543); // fixes game crash.
+					applet.setVisible(true);
+					applet.setPreferredSize(new Dimension(768, 528));
+					applet.setStub(new RSAppletStub());
+					applet.init();
+					applet.start();
+
+					client = new Client(applet);
+				}
+			});
+			
+			t.start();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
