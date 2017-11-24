@@ -66,10 +66,10 @@ public class Test {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
 				try {
-					client = Boot.rootClient;
+					client = new Client(Boot.rootReference);
 					node = new Node();
-					System.out.println("Works? "+client.getFieldValue(client.SOMETHING, null));
-					client.getFieldValue(client.SOMETHING, null);
+					System.out.println("Works? "+client.getFieldValue(client.CLIENT_ENERGY, null));
+					client.getFieldValue(client.CLIENT_ENERGY, null);
 					for (GameField gf : client.allFields.values()) {
 						System.out.println(gf.fieldName);
 					}

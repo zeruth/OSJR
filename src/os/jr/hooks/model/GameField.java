@@ -8,14 +8,14 @@ public class GameField {
 	
 	public String fieldName;
 	public String parentClass;
-	public int multiplier = 1;
+	public long multiplier = 1;
 	
 	public GameField(String fieldName, String parentClass) {
 		this.fieldName = fieldName;
 		this.parentClass = parentClass;
 	}
 	
-	public GameField(String fieldName, String parentClass, int multiplier) {
+	public GameField(String fieldName, String parentClass, long multiplier) {
 		this.fieldName = fieldName;
 		this.parentClass = parentClass;
 		this.multiplier = multiplier;

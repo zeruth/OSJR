@@ -9,11 +9,11 @@ public class Node extends GameClass {
 	public final String NODE_NEXT = "Node_Next";
 	
 	public Node() {
-		super("gt");
-		String node = "gt";
+		super("gf");
+		String node = "gf";
 		this.fields.put("Node_UID", new GameField("cc", node));
-		this.fields.put("Node_Prev", new GameField("cc", node));
-		this.fields.put("Node_Next", new GameField("cc", node));
+		this.fields.put("Node_Prev", new GameField("cq", node));
+		this.fields.put("Node_Next", new GameField("ck", node));
 	}
 
 	

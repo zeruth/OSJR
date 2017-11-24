@@ -27,7 +27,7 @@ public class GameFrame extends JFrame {
 				e.printStackTrace();
 			}
 		}
-		Boot.rootClient = new Client(Reflector.applet);
+		Boot.rootReference = Reflector.applet;
 		gameFrame.add(Reflector.applet);
 		gameFrame.setVisible(true);
 	}

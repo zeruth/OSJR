@@ -1,8 +1,10 @@
-package os.jr.hooks;
+package os.jr.hooks.updater;
 
 import os.jr.boot.Boot;
 import os.jr.game.GameFrame;
 import os.jr.game.Reflector;
+import os.jr.hooks.Client;
+import os.jr.hooks.Node;
 
 public class HookUpdater {
 	public static Client client;

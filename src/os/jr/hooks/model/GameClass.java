@@ -26,7 +26,8 @@ public class GameClass {
 			ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
 		Class<?> c = Reflector.classLoader.loadClass(className);
 		GameField gf = fields.get(identifier);
-		Field f = c.getField(gf.fieldName);
+		Field f = c.getDeclaredField(gf.fieldName);
+		f.setAccessible(true);
 		if (gf.multiplier!=1) {
 			return ((int)f.get(reference)*gf.multiplier);
 		}
