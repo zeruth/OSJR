@@ -30,8 +30,11 @@ public class Player extends GameClass {
 			IllegalArgumentException, IllegalAccessException {
 		Actor actor = Hooks.selector.actor;
 		CombatInfoList cil = actor.getCombatInfoList(this.reference);
-		System.out.println("CombatInfoList "+cil.reference);
 		return cil;
+	}
+	
+	public Object getHealthScale() throws NoSuchFieldException, SecurityException, ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
+		return getCombatInfoList().getCombatInfo2().getHealthScale();
 	}
 
 }

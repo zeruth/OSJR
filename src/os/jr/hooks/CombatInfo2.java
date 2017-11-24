@@ -21,7 +21,6 @@ public class CombatInfo2 extends GameClass{
 	}
 	
 	public Object getHealthScale() {
-		System.out.println("Scale " + fields.get(COMBAT_INFO_2_HEALTH_SCALE).getValue(reference));
 		return fields.get(COMBAT_INFO_2_HEALTH_SCALE).getValue(reference);
 	}
 }

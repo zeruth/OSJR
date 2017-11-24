@@ -68,7 +68,7 @@ public class Test {
 			public void widgetSelected(SelectionEvent arg0) {
 				try {
 
-					Hooks.selector.client.getTest();
+					System.out.println(Hooks.selector.client.getLocalPlayer().getHealthScale());
 				}catch (Exception e) {
 					e.printStackTrace();
 					}

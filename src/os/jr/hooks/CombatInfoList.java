@@ -22,13 +22,11 @@ public class CombatInfoList extends GameClass{
 		this.fields.put("CombatInfoList_Current", new GameField("x", combatInfoList));	}
 
 	public Node getHead() {
-		System.out.println("Head " +fields.get(COMBAT_INFO_LIST_HEAD).getValue(reference));
 		return new Node(fields.get(COMBAT_INFO_LIST_HEAD).getValue(reference));
 	}
 	
 	public CombatInfo2 getCombatInfo2() throws NoSuchFieldException, SecurityException, ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
 		CombatInfoHolder h = Hooks.selector.combatInfoHolder;
-		
 		return new CombatInfo2(h.getFieldValue(h.COMBAT_INFO_HOLDER_COMBAT_INFO_2, getHead().getNext()));
 	}
 }

@@ -26,7 +26,6 @@ public class Node extends GameClass {
 	}
 	
 	public Object getNext() {
-		System.out.println("Next " + fields.get("Node_Next").getValue(reference));
 		return fields.get("Node_Next").getValue(reference);
 	}
 

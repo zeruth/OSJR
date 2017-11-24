@@ -92,12 +92,5 @@ public class Client extends GameClass {
 		player = c.fields.get(CLIENT_LOCAL_PLAYER).getValue(Boot.rootReference);
 		return new Player(player);
 	}
-	
-	public Object getHealthScale() throws NoSuchFieldException, SecurityException, ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
-
-		getLocalPlayer().getCombatInfoList().getCombatInfo2().getHealthScale();
-
-		return player;
-	}
 
 }
