@@ -1,9 +1,13 @@
 package os.jr.hooks;
 
+import os.jr.boot.Boot;
 import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 
-public class Actor extends GameClass{
+public class Actor extends GameClass {
+	
+	public final String ACTOR_COMBAT_INFO_LIST = "Actor_CombatInfoList";
+	public Object combatInfoList;
 
 	public Actor() {
 		super("by");
@@ -26,6 +30,12 @@ public class Actor extends GameClass{
 		this.fields.put("Actor_Orientation", new GameField("cw", actor, -781830063));
 		this.fields.put("Actor_CombatInfoList", new GameField("bq", actor));
 		this.fields.put("Actor_Height", new GameField("cd", actor, 2142258075));
+	}
+	
+	public CombatInfoList getCombatInfoList(Object reference) throws NoSuchFieldException, SecurityException, ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
+		Actor actor = Hooks.selector.actor;
+		combatInfoList = actor.getFieldValue(actor.ACTOR_COMBAT_INFO_LIST, reference);
+		return new CombatInfoList(combatInfoList);
 	}
 
 }

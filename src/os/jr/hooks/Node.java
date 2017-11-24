@@ -16,5 +16,19 @@ public class Node extends GameClass {
 		this.fields.put("Node_Next", new GameField("ck", node));
 	}
 
+	public Node(Object reference) {
+		super("gf");
+		String node = "gf";
+		this.reference = reference;
+		this.fields.put("Node_UID", new GameField("cc", node));
+		this.fields.put("Node_Prev", new GameField("cq", node));
+		this.fields.put("Node_Next", new GameField("ck", node));
+	}
+	
+	public Object getNext() {
+		System.out.println("Next " + fields.get("Node_Next").getValue(reference));
+		return fields.get("Node_Next").getValue(reference);
+	}
+
 	
 }

@@ -13,12 +13,14 @@ public class GameField {
 	public GameField(String fieldName, String parentClass) {
 		this.fieldName = fieldName;
 		this.parentClass = parentClass;
+	//	System.out.println("Loaded Hook - Class: "+this.parentClass+" - Field: "+this.fieldName);
 	}
 	
 	public GameField(String fieldName, String parentClass, long multiplier) {
 		this.fieldName = fieldName;
 		this.parentClass = parentClass;
 		this.multiplier = multiplier;
+		//System.out.println("Loaded Hook - Class: "+this.parentClass+" - Field: "+this.fieldName);
 	}
 
 	public Object getValue(Object reference) {
@@ -28,9 +30,9 @@ public class GameField {
 				o = ((int)Reflector.classLoader.loadClass(parentClass).getField(fieldName).get(reference))*multiplier;		
 			}
 			else {
-				System.out.println("parent "+parentClass);
-				System.out.println("field "+fieldName);
-				Field f = Reflector.classLoader.loadClass(parentClass).getField(fieldName);
+			//	System.out.println("parent "+parentClass);
+			//	System.out.println("field "+fieldName);
+				Field f = Reflector.classLoader.loadClass(parentClass).getDeclaredField(fieldName);
 				f.setAccessible(true);
 				o = f.get(reference);
 			}

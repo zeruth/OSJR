@@ -5,6 +5,7 @@ import org.eclipse.swt.widgets.Shell;
 
 import os.jr.game.Reflector;
 import os.jr.hooks.Client;
+import os.jr.hooks.Hooks;
 import os.jr.hooks.Node;
 import os.jr.hooks.model.GameField;
 
@@ -56,7 +57,7 @@ public class Test {
 	protected void createContents() {
 		shell = new Shell();
 		shell.setSize(450, 300);
-		shell.setText("SWT Application");
+		shell.setText("Testing ground");
 
 		Button btnDoIt = new Button(shell, SWT.NONE);
 		btnDoIt.addSelectionListener(new SelectionAdapter() {
@@ -66,36 +67,12 @@ public class Test {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
 				try {
-					client = new Client(Boot.rootReference);
-					node = new Node();
-					System.out.println("Works? "+client.getFieldValue(client.CLIENT_ENERGY, null));
-					client.getFieldValue(client.CLIENT_ENERGY, null);
-					for (GameField gf : client.allFields.values()) {
-						System.out.println(gf.fieldName);
-					}
-					for (GameField gf : node.allFields.values()) {
-						System.out.println(gf.fieldName);
-					}				} catch (SecurityException e) {
-					// TODO Auto-generated catch block
+
+					Hooks.selector.client.getTest();
+				}catch (Exception e) {
 					e.printStackTrace();
-				}
-				/*
-				 * I use to test code.
-				 * 
-				 */ catch (NoSuchFieldException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (ClassNotFoundException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (IllegalArgumentException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (IllegalAccessException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
 					}
-			}
+				}
 		});
 		btnDoIt.setBounds(191, 226, 75, 25);
 		btnDoIt.setText("Do it");

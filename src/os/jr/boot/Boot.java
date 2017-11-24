@@ -7,12 +7,14 @@ import os.jr.game.GameFrame;
 import os.jr.game.Reflector;
 import os.jr.game.Updater;
 import os.jr.hooks.Client;
+import os.jr.hooks.Hooks;
 import os.jr.hooks.updater.HookUpdater;
 import os.jr.utils.SettingsIo;
 
 public class Boot extends JFrame {
 
 	public static Object rootReference;
+
 	public static boolean outdated = true;
 
 	/**
@@ -33,6 +35,7 @@ public class Boot extends JFrame {
 		Updater.main();
 		new Reflector();
 		new GameFrame();
+		Hooks.init();
 		HookUpdater.init();
 		Test.main();
 

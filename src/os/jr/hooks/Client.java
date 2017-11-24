@@ -2,14 +2,18 @@ package os.jr.hooks;
 
 import java.lang.reflect.Field;
 
+import os.jr.boot.Boot;
 import os.jr.game.Reflector;
 import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 import os.jr.utils.Settings;
 
 public class Client extends GameClass {
+	
+	public Object player, actorCombatInfoList, combatInfoListHead, combatInfoListNext, combatInfo2, healthScale;
 
 	public final String CLIENT_ENERGY = "Client_Energy";
+	public final String CLIENT_LOCAL_PLAYER = "Client_LocalPlayer";
 
 	public static Settings settings;
 
@@ -73,9 +77,27 @@ public class Client extends GameClass {
 		this.fields.put("Client_Weight", new GameField("kb", client, -476166197));
 	}
 
-	public int getClientEnergy() throws NoSuchFieldException, SecurityException, ClassNotFoundException,
+	public long getClientEnergy() throws NoSuchFieldException, SecurityException, ClassNotFoundException,
 			IllegalArgumentException, IllegalAccessException {
-		return (int) getFieldValue(CLIENT_ENERGY, null);
+		System.out.println((long) getFieldValue(CLIENT_ENERGY, null));
+		return (long) getFieldValue(CLIENT_ENERGY, null);
+	}
+	
+	public Player getPlayer() {
+		return Hooks.selector.player;
+	}
+	
+	public Player getLocalPlayer() {
+		Client c = Hooks.selector.client;
+		player = c.fields.get(CLIENT_LOCAL_PLAYER).getValue(Boot.rootReference);
+		return new Player(player);
+	}
+	
+	public Object getHealthScale() throws NoSuchFieldException, SecurityException, ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
+
+		getLocalPlayer().getCombatInfoList().getCombatInfo2().getHealthScale();
+
+		return player;
 	}
 
 }

@@ -4,6 +4,8 @@ import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 
 public class CombatInfoHolder extends GameClass{
+	
+	public final String COMBAT_INFO_HOLDER_COMBAT_INFO_2 = "CombatInfoHolder_CombatInfo2";
 
 	public CombatInfoHolder() {
 		super("cb");

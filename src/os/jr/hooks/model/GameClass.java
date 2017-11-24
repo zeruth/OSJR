@@ -9,6 +9,7 @@ public class GameClass {
 	public String className;
 	public HashMap<String, GameField> fields = new HashMap<String, GameField>();
 	public HashMap<String, GameField> allFields = new HashMap<String, GameField>();
+	public Object reference;
 	
 	public GameClass(String classIdentifier) {
 		this.className = classIdentifier;
