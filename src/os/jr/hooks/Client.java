@@ -14,6 +14,7 @@ public class Client extends GameClass {
 
 	public final String CLIENT_ENERGY = "Client_Energy";
 	public final String CLIENT_LOCAL_PLAYER = "Client_LocalPlayer";
+	public final String CLIENT_LOGIN_STATE = "Client_LoginState";
 
 	public static Settings settings;
 
@@ -77,10 +78,9 @@ public class Client extends GameClass {
 		this.fields.put("Client_Weight", new GameField("kb", client, -476166197));
 	}
 
-	public long getClientEnergy() throws NoSuchFieldException, SecurityException, ClassNotFoundException,
-			IllegalArgumentException, IllegalAccessException {
-		System.out.println((long) getFieldValue(CLIENT_ENERGY, null));
-		return (long) getFieldValue(CLIENT_ENERGY, null);
+	public long getClientEnergy() {
+		System.out.println((int) getFieldValue(CLIENT_ENERGY, null));
+		return (int) getFieldValue(CLIENT_ENERGY, null);
 	}
 	
 	public Player getPlayer() {
@@ -91,6 +91,18 @@ public class Client extends GameClass {
 		Client c = Hooks.selector.client;
 		player = c.fields.get(CLIENT_LOCAL_PLAYER).getValue(Boot.rootReference);
 		return new Player(player);
+	}
+	
+	public int getLoginState() {
+		Client c = Hooks.selector.client;
+		return (int) c.getFieldValue(CLIENT_LOGIN_STATE, c);
+	}
+	
+	public boolean isLoggedIn() {
+		if (getLoginState()==30) {
+			return true;
+		}
+		return false;
 	}
 
 }

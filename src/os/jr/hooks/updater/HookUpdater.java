@@ -4,6 +4,7 @@ import os.jr.boot.Boot;
 import os.jr.game.GameFrame;
 import os.jr.game.Reflector;
 import os.jr.hooks.Client;
+import os.jr.hooks.Hooks;
 import os.jr.hooks.Node;
 
 public class HookUpdater {
@@ -17,13 +18,20 @@ public class HookUpdater {
 			while (true != false) {
 				{
 					try {
-						Thread.sleep(200);
+						Thread.sleep(1);
+						if (Hooks.selector.client.isLoggedIn()) {
+							GameFrame.changeName(Hooks.selector.client.getLocalPlayer().getName());
+						}
+						else {
+							GameFrame.changeName(null);
+						}
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-					GameFrame.changeName("-Fallback Mode-");
-					t.stop();
+
+
+					//t.stop();
 				}
 			}
 

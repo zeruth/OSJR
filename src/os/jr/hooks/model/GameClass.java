@@ -23,15 +23,36 @@ public class GameClass {
 		}
 	}
 
-	public Object getFieldValue(String identifier, Object reference) throws NoSuchFieldException, SecurityException,
-			ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
-		Class<?> c = Reflector.classLoader.loadClass(className);
-		GameField gf = fields.get(identifier);
-		Field f = c.getDeclaredField(gf.fieldName);
-		f.setAccessible(true);
-		if (gf.multiplier!=1) {
-			return ((int)f.get(reference)*gf.multiplier);
+	public Object getFieldValue(String identifier, Object reference) {
+		Class<?> c = null;
+		
+		try {
+			c = Reflector.classLoader.loadClass(className);
+			GameField gf = fields.get(identifier);
+			Field f = c.getDeclaredField(gf.fieldName);
+			f.setAccessible(true);
+			if (gf.multiplier!=1) {
+				return ((int)f.get(reference)*gf.multiplier);
+			}
+			return f.get(reference);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (NoSuchFieldException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		return f.get(reference);
+		return c;
+
+
 	}
 }

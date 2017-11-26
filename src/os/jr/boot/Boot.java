@@ -15,7 +15,7 @@ public class Boot extends JFrame {
 
 	public static Object rootReference;
 
-	public static boolean outdated = true;
+	public static boolean outdated = false;
 
 	/**
 	 * 

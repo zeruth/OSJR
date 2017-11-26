@@ -4,6 +4,8 @@ import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 
 public class Player extends GameClass {
+	
+	public final String PLAYER_NAME = "Player_Name";
 
 	public Player() {
 		super("bw");
@@ -25,16 +27,13 @@ public class Player extends GameClass {
 		this.fields.put("Player_Definition", new GameField("x", player));
 		this.fields.put("Player_CombatLevel", new GameField("b", player, -1374409013));
 	}
-
-	public CombatInfoList getCombatInfoList() throws NoSuchFieldException, SecurityException, ClassNotFoundException,
-			IllegalArgumentException, IllegalAccessException {
-		Actor actor = Hooks.selector.actor;
-		CombatInfoList cil = actor.getCombatInfoList(this.reference);
-		return cil;
+	
+	public Actor asActor() {
+		return new Actor(reference);
 	}
 	
-	public Object getHealthScale() throws NoSuchFieldException, SecurityException, ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
-		return getCombatInfoList().getCombatInfo2().getHealthScale();
+	public String getName() {
+		return (String)fields.get(PLAYER_NAME).getValue(reference);
 	}
 
 }

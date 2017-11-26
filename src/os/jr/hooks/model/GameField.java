@@ -2,25 +2,26 @@ package os.jr.hooks.model;
 
 import java.lang.reflect.Field;
 
+import os.jr.boot.Boot;
 import os.jr.game.Reflector;
 
 public class GameField {
 	
 	public String fieldName;
 	public String parentClass;
-	public long multiplier = 1;
+	public int multiplier = 1;
 	
 	public GameField(String fieldName, String parentClass) {
 		this.fieldName = fieldName;
 		this.parentClass = parentClass;
-	//	System.out.println("Loaded Hook - Class: "+this.parentClass+" - Field: "+this.fieldName);
+	//System.out.println("Loaded Hook - Class: "+this.parentClass+" - Field: "+this.fieldName);
 	}
 	
-	public GameField(String fieldName, String parentClass, long multiplier) {
+	public GameField(String fieldName, String parentClass, int multiplier) {
 		this.fieldName = fieldName;
 		this.parentClass = parentClass;
 		this.multiplier = multiplier;
-		//System.out.println("Loaded Hook - Class: "+this.parentClass+" - Field: "+this.fieldName);
+		//System.out.println("Loaded Hook - Class: "+this.parentClass+" - Field: "+this.fieldName + " "+multiplier);
 	}
 
 	public Object getValue(Object reference) {
@@ -40,6 +41,7 @@ public class GameField {
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException
 				| ClassNotFoundException e) {
 			// TODO Auto-generated catch block
+			Boot.outdated=true;
 			e.printStackTrace();
 		}
 		return null;

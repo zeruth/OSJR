@@ -10,6 +10,9 @@ import os.jr.hooks.Node;
 import os.jr.hooks.model.GameField;
 
 import org.eclipse.swt.widgets.Button;
+
+import java.awt.Graphics;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -25,7 +28,7 @@ public class Test {
 	 * @wbp.parser.entryPoint
 	 */
 	public static void main() {
-		if (Boot.outdated) {
+		if (!Boot.outdated) {
 			try {
 				Test window = new Test();
 				window.open();
@@ -68,7 +71,9 @@ public class Test {
 			public void widgetSelected(SelectionEvent arg0) {
 				try {
 
-					System.out.println(Hooks.selector.client.getLocalPlayer().getHealthScale());
+					System.out.println(Hooks.selector.client.getLoginState());
+					Graphics g = (Graphics) Reflector.classLoader.loadClass("bs").getField("g").get(Boot.rootReference);
+					g.dispose();
 				}catch (Exception e) {
 					e.printStackTrace();
 					}
