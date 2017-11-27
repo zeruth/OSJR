@@ -15,6 +15,8 @@ public class Client extends GameClass {
 	public final String CLIENT_ENERGY = "Client_Energy";
 	public final String CLIENT_LOCAL_PLAYER = "Client_LocalPlayer";
 	public final String CLIENT_LOGIN_STATE = "Client_LoginState";
+	public final String CLIENT_BASE_X = "Client_BaseX";
+	public final String CLIENT_BASE_Y = "Client_BaseY";
 
 	public static Settings settings;
 
@@ -78,13 +80,9 @@ public class Client extends GameClass {
 		this.fields.put("Client_Weight", new GameField("kb", client, -476166197));
 	}
 
-	public long getClientEnergy() {
+	public int getClientEnergy() {
 		System.out.println((int) getFieldValue(CLIENT_ENERGY, null));
-		return (int) getFieldValue(CLIENT_ENERGY, null);
-	}
-	
-	public Player getPlayer() {
-		return Hooks.selector.player;
+		return (int) getFieldValue(CLIENT_ENERGY, Boot.rootReference);
 	}
 	
 	public Player getLocalPlayer() {
@@ -103,6 +101,16 @@ public class Client extends GameClass {
 			return true;
 		}
 		return false;
+	}
+	
+	public int getBaseX() {
+		int i = (int)fields.get(CLIENT_BASE_X).getValue(Boot.rootReference);
+		return i;
+	}
+	
+	public int getBaseY() {
+		int i = (int)fields.get(CLIENT_BASE_Y).getValue(Boot.rootReference);
+		return i;
 	}
 
 }

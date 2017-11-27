@@ -20,7 +20,7 @@ public class CombatInfo2 extends GameClass{
 		this.fields.put("CombatInfo2_HealthScale", new GameField("y", combatInfo2, -790609031));	
 	}
 	
-	public Object getHealthScale() {
-		return fields.get(COMBAT_INFO_2_HEALTH_SCALE).getValue(reference);
+	public int getHealthScale() {
+		return (int)fields.get(COMBAT_INFO_2_HEALTH_SCALE).getValue(reference);
 	}
 }

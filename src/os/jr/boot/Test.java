@@ -4,6 +4,7 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
 import os.jr.game.Reflector;
+import os.jr.hooks.Actor;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
 import os.jr.hooks.Node;
@@ -70,10 +71,11 @@ public class Test {
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
 				try {
-
-					System.out.println(Hooks.selector.client.getLoginState());
-					Graphics g = (Graphics) Reflector.classLoader.loadClass("bs").getField("g").get(Boot.rootReference);
-					g.dispose();
+					Actor a = Hooks.selector.client.getLocalPlayer().asActor();
+					//System.out.println(Hooks.selector.client.getLoginState());
+					System.out.println("Max Health "+a.getMaxHealth());
+					System.out.println("Current Health "+a.getCurrentHealth());
+					System.out.println("Health Percentage "+a.getHealthPercentage());
 				}catch (Exception e) {
 					e.printStackTrace();
 					}

@@ -28,7 +28,9 @@ public class GameField {
 		try {
 			Object o;
 			if (multiplier!=1) {
-				o = ((int)Reflector.classLoader.loadClass(parentClass).getField(fieldName).get(reference))*multiplier;		
+				Field f = Reflector.classLoader.loadClass(parentClass).getDeclaredField(fieldName);
+				f.setAccessible(true);
+				o = ((int)f.get(reference))*multiplier;		
 			}
 			else {
 			//	System.out.println("parent "+parentClass);
