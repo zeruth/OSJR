@@ -33,7 +33,12 @@ public class GameFrame extends JFrame {
 	}
 
 	public static void changeName(String name) {
-		gameFrame.setTitle("OS-JR [" + name + "]");
+		if (name==null) {
+			gameFrame.setTitle("OS-JR");
+		} else {
+			gameFrame.setTitle("OS-JR [" + name + "]");
+		}
+
 	}
 
 }

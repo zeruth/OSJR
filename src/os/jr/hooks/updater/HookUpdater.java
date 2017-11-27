@@ -18,7 +18,7 @@ public class HookUpdater {
 			while (true != false) {
 				{
 					try {
-						Thread.sleep(1);
+						Thread.sleep(200);
 						if (Hooks.selector.client.isLoggedIn()) {
 							GameFrame.changeName(Hooks.selector.client.getLocalPlayer().getName());
 						}
