@@ -16,6 +16,7 @@ public class Boot extends JFrame {
 	public static Object rootReference;
 
 	public static boolean outdated = false;
+	public static GameFrame gf;
 
 	/**
 	 * 
@@ -34,7 +35,7 @@ public class Boot extends JFrame {
 
 		Updater.main();
 		new Reflector();
-		new GameFrame();
+		gf = new GameFrame();
 		Hooks.init();
 		HookUpdater.init();
 		Test.main();
