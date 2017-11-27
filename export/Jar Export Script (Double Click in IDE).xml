@@ -4,7 +4,7 @@
     <!--ANT 1.7 is required                                        -->
     <!--define folder properties-->
     <property name="dir.buildfile" value="."/>
-    <property name="dir.workspace" value="C:/Code/Work2"/>
+    <property name="dir.workspace" value=""/>
     <property name="dir.jarfile" value="${dir.buildfile}"/>
     <target name="create_run_jar">
         <jar destfile="${dir.jarfile}/OS-JR.jar" filesetmanifest="mergewithoutmain">
@@ -12,10 +12,10 @@
                 <attribute name="Main-Class" value="os.jr.boot.Boot"/>
                 <attribute name="Class-Path" value="."/>
             </manifest>
-            <fileset dir="C:/Users/Guy/git/OSJR/bin"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Guy/git/OSJR/lib/asm-5.1.0.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Guy/git/OSJR/lib/swt.jar"/>
-            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Guy/git/OSJR/lib/gson-2.2.4.jar"/>
+            <fileset dir=""/>
+            <zipfileset excludes="META-INF/*.SF" src="../lib/asm-5.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="../lib/swt.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="../lib/gson-2.2.4.jar"/>
         </jar>
     </target>
 </project>
