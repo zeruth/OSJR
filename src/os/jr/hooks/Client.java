@@ -85,10 +85,10 @@ public class Client extends GameClass {
 		return (int) getFieldValue(CLIENT_ENERGY, Boot.rootReference);
 	}
 	
-	public Player getLocalPlayer() {
+	public LocalPlayer getLocalPlayer() {
 		Client c = Hooks.selector.client;
 		player = c.fields.get(CLIENT_LOCAL_PLAYER).getValue(Boot.rootReference);
-		return new Player(player);
+		return new LocalPlayer(player);
 	}
 	
 	public int getLoginState() {

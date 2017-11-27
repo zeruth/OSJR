@@ -4,6 +4,9 @@ import javax.swing.JFrame;
 
 import os.jr.boot.Boot;
 import os.jr.hooks.Client;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
 
 public class GameFrame extends JFrame {
 
