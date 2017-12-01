@@ -3,9 +3,9 @@ package os.jr.hooks;
 import os.jr.boot.Boot;
 
 public class Hooks {
-	
+
 	public static Hooks selector;
-	
+
 	public Actor actor = new Actor();
 	public AnimableNode animableNode = new AnimableNode();
 	public AnimationSequence animationSequence = new AnimationSequence();
@@ -47,10 +47,17 @@ public class Hooks {
 	public WallDecoration wallDecoration = new WallDecoration();
 	public Widget widget = new Widget();
 	public WidgetNode widgetNode = new WidgetNode();
-	
-	
+
 	public static void init() {
-		selector = new Hooks();
+		try {
+			selector = new Hooks();
+		} catch (Exception e) {
+			System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
+			System.out.println("Running without hooks.");
+			Boot.outdated = true;
+			e.printStackTrace();
+		}
+
 	}
 
 }

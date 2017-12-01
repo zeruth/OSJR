@@ -3,10 +3,6 @@ package os.jr.game;
 import javax.swing.JFrame;
 
 import os.jr.boot.Boot;
-import os.jr.hooks.Client;
-import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.events.SelectionEvent;
 
 public class GameFrame extends JFrame {
 
@@ -22,7 +18,7 @@ public class GameFrame extends JFrame {
 		gameFrame.setSize(781, 543);
 		gameFrame.setResizable(true);
 		gameFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		while (Reflector.applet==null) {
+		while (Reflector.applet == null) {
 			try {
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
@@ -36,7 +32,7 @@ public class GameFrame extends JFrame {
 	}
 
 	public static void changeName(String name) {
-		if (name==null) {
+		if (name == null) {
 			gameFrame.setTitle("OS-JR");
 		} else {
 			gameFrame.setTitle("OS-JR [" + name + "]");

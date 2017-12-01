@@ -3,16 +3,9 @@ package os.jr.boot;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
-import os.jr.game.Reflector;
-import os.jr.hooks.Actor;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
-import os.jr.hooks.Node;
-import os.jr.hooks.model.GameField;
-
 import org.eclipse.swt.widgets.Button;
-
-import java.awt.Graphics;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -65,21 +58,16 @@ public class Test {
 
 		Button btnDoIt = new Button(shell, SWT.NONE);
 		btnDoIt.addSelectionListener(new SelectionAdapter() {
-			private Client client;
-			private Node node;
 
 			@Override
 			public void widgetSelected(SelectionEvent arg0) {
 				try {
-					Actor a = Hooks.selector.client.getLocalPlayer().asActor();
-					//System.out.println(Hooks.selector.client.getLoginState());
-					System.out.println("Max Health "+a.getMaxHealth());
-					System.out.println("Current Health "+a.getCurrentHealth());
-					System.out.println("Health Percentage "+a.getHealthPercentage());
-				}catch (Exception e) {
+					Client c = Hooks.selector.client;
+					c.getLocalPlayer().getName();
+				} catch (Exception e) {
 					e.printStackTrace();
-					}
 				}
+			}
 		});
 		btnDoIt.setBounds(191, 226, 75, 25);
 		btnDoIt.setText("Do it");

@@ -42,7 +42,7 @@ public class Reflector extends ClassLoader {
 
 		try {
 			Thread t = new Thread(new Runnable() {
-				
+
 				@Override
 				public void run() {
 
@@ -66,7 +66,7 @@ public class Reflector extends ClassLoader {
 					client = new Client(applet);
 				}
 			});
-			
+
 			t.start();
 
 		} catch (Exception e) {
