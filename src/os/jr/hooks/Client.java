@@ -1,6 +1,5 @@
 package os.jr.hooks;
 
-import os.jr.boot.Boot;
 import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 import os.jr.utils.Settings;
@@ -115,6 +114,8 @@ public class Client extends GameClass {
 	
 	public int baseY;
 	public int baseX;
+	public int[] realLevels;
+	public int[] currentLevels;
 	public int[] experiences;
 	public int loopCycle;
 	public int loginState;
@@ -122,15 +123,28 @@ public class Client extends GameClass {
 	public int CurrentWorld;
 	public int Energy;
 	public int Weight;
+	public int cameraX;
+	public int cameraY;
+	public int cameraZ;
+	public int cameraPitch;
+	public int cameraYaw;
 
 	public final String CLIENT_ENERGY = "Client_Energy";
 	public final String CLIENT_LOCAL_PLAYER = "Client_LocalPlayer";
 	public final String CLIENT_LOGIN_STATE = "Client_LoginState";
+	public final String CLIENT_GAME_STATE = "Client_GameState";
 	public final String CLIENT_BASE_X = "Client_BaseX";
 	public final String CLIENT_BASE_Y = "Client_BaseY";
 	public final String CLIENT_CURRENT_WORLD = "Client_CurrentWorld";
 	public final String CLIENT_WEIGHT = "Client_Weight";
 	public final String CLIENT_EXPERIENCES = "Client_Experiences";
+	public final String CLIENT_REAL_LEVELS = "Client_RealLevels";
+	public final String CLIENT_CURRENT_LEVELS = "Client_CurrentLevels";
+	public final String CLIENT_CAMERA_X = "Client_CameraX";
+	public final String CLIENT_CAMERA_Y = "Client_CameraY";
+	public final String CLIENT_CAMERA_Z = "Client_CameraZ";
+	public final String CLIENT_CAMERA_PITCH = "Client_CameraPitch";
+	public final String CLIENT_CAMERA_YAW = "Client_CameraYaw";
 
 	public Object player, actorCombatInfoList, combatInfoListHead, combatInfoListNext, combatInfo2, healthScale;
 
@@ -220,10 +234,15 @@ public class Client extends GameClass {
 		player = c.fields.get(CLIENT_LOCAL_PLAYER).getValue(reference);
 		return new LocalPlayer(player);
 	}
+	
+	public int getGameState() {
+		int i = (int) fields.get(CLIENT_GAME_STATE).getValue(reference);
+		return i;
+	}
 
 	public int getLoginState() {
-		Client c = Hooks.selector.client;
-		return (int) c.getFieldValue(CLIENT_LOGIN_STATE, c);
+		int i = (int) fields.get(CLIENT_LOGIN_STATE).getValue(reference);
+		return i;
 	}
 
 	public boolean isLoggedIn() {
@@ -248,6 +267,16 @@ public class Client extends GameClass {
 		return i;
 	}
 	
+	public int[] getRealLevels() {
+		int[] i = (int[]) fields.get(CLIENT_REAL_LEVELS).getValue(reference);
+		return i;
+	}
+	
+	public int[] getCurrentLevels() {
+		int[] i = (int[]) fields.get(CLIENT_CURRENT_LEVELS).getValue(reference);
+		return i;
+	}
+	
 	public int getCurrentWorld() {
 		int i = (int) getFieldValue(CLIENT_CURRENT_WORLD, reference);
 		return i;
@@ -260,6 +289,31 @@ public class Client extends GameClass {
 	
 	public int getWeight() {
 		int i = (int) fields.get(CLIENT_WEIGHT).getValue(reference);
+		return i;
+	}
+	
+	public int getCameraX() {
+		int i = (int) fields.get(CLIENT_CAMERA_X).getValue(reference);
+		return i;
+	}
+	
+	public int getCameraY() {
+		int i = (int) fields.get(CLIENT_CAMERA_Y).getValue(reference);
+		return i;
+	}
+	
+	public int getCameraZ() {
+		int i = (int) fields.get(CLIENT_CAMERA_Z).getValue(reference);
+		return i;
+	}
+	
+	public int getCameraPitch() {
+		int i = (int) fields.get(CLIENT_CAMERA_PITCH).getValue(reference);
+		return i;
+	}
+	
+	public int getCameraYaw() {
+		int i = (int) fields.get(CLIENT_CAMERA_YAW).getValue(reference);
 		return i;
 	}
 

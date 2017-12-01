@@ -10,6 +10,7 @@ public class HookUpdater {
 	public static Client client;
 	public static Node node;
 	public static long lastCacheRunTime = 0;
+	static long sleeptime = 250;
 
 	static Thread t = new Thread(new Runnable() {
 
@@ -23,11 +24,11 @@ public class HookUpdater {
 						t.stop();
 					}
 					try {
-						long sleeptime = 250-lastCacheRunTime;
+						sleeptime -= lastCacheRunTime;
 						if (sleeptime<50) {
 							System.out.println("Cache thread clogged. <50 ms of free time per cycle.");
-							System.out.println("Lowering sleep time by");
-							sleeptime=250;
+							System.out.println("Increasing sleeptime to " + sleeptime + "(ms)");
+							sleeptime=600;
 						}
 						Thread.sleep(sleeptime);
 						
@@ -35,13 +36,24 @@ public class HookUpdater {
 						
 						Long cacheTimerStart = System.currentTimeMillis();
 						if (Hooks.selector.client.isLoggedIn()) {
+							
 							Client c = Hooks.selector.client;
+							c.realLevels = c.getRealLevels();
+							c.currentLevels = c.getCurrentLevels();
 							c.experiences = c.getExperiences();
+							c.loginState = c.getLoginState();
+							c.gameState = c.getGameState();
 							c.baseY = c.getBaseY();
 							c.baseX = c.getBaseX();
+							c.cameraX = c.getCameraX();
+							c.cameraY = c.getCameraY();
+							c.cameraZ = c.getCameraZ();
+							c.cameraPitch = c.getCameraPitch();
+							c.cameraYaw = c.getCameraYaw();
 							c.CurrentWorld = c.getCurrentWorld();
 							c.Energy = c.getEnergy();
 							c.Weight = c.getWeight();
+							
 							GameFrame.changeName(Hooks.selector.client.getLocalPlayer().getName());
 						} else {
 							GameFrame.changeName(null);
