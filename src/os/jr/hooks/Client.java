@@ -112,12 +112,25 @@ public class Client extends GameClass {
 	public static final int field_CurrentWorld_multiplier = -516348683;
 	public static final int field_Energy_multiplier = -1863294619;
 	public static final int field_Weight_multiplier = -297847855;
+	
+	public int baseY;
+	public int baseX;
+	public int[] experiences;
+	public int loopCycle;
+	public int loginState;
+	public int gameState;
+	public int CurrentWorld;
+	public int Energy;
+	public int Weight;
 
 	public final String CLIENT_ENERGY = "Client_Energy";
 	public final String CLIENT_LOCAL_PLAYER = "Client_LocalPlayer";
 	public final String CLIENT_LOGIN_STATE = "Client_LoginState";
 	public final String CLIENT_BASE_X = "Client_BaseX";
 	public final String CLIENT_BASE_Y = "Client_BaseY";
+	public final String CLIENT_CURRENT_WORLD = "Client_CurrentWorld";
+	public final String CLIENT_WEIGHT = "Client_Weight";
+	public final String CLIENT_EXPERIENCES = "Client_Experiences";
 
 	public Object player, actorCombatInfoList, combatInfoListHead, combatInfoListNext, combatInfo2, healthScale;
 
@@ -202,14 +215,9 @@ public class Client extends GameClass {
 		this.fields.put("Client_Weight", new GameField(field_Weight, client, field_Weight_multiplier));
 	}
 
-	public int getClientEnergy() {
-		System.out.println((int) getFieldValue(CLIENT_ENERGY, null));
-		return (int) getFieldValue(CLIENT_ENERGY, Boot.rootReference);
-	}
-
 	public LocalPlayer getLocalPlayer() {
 		Client c = Hooks.selector.client;
-		player = c.fields.get(CLIENT_LOCAL_PLAYER).getValue(Boot.rootReference);
+		player = c.fields.get(CLIENT_LOCAL_PLAYER).getValue(reference);
 		return new LocalPlayer(player);
 	}
 
@@ -226,12 +234,32 @@ public class Client extends GameClass {
 	}
 
 	public int getBaseX() {
-		int i = (int) fields.get(CLIENT_BASE_X).getValue(Boot.rootReference);
+		int i = (int) fields.get(CLIENT_BASE_X).getValue(reference);
 		return i;
 	}
 
 	public int getBaseY() {
-		int i = (int) fields.get(CLIENT_BASE_Y).getValue(Boot.rootReference);
+		int i = (int) fields.get(CLIENT_BASE_Y).getValue(reference);
+		return i;
+	}
+	
+	public int[] getExperiences() {
+		int[] i = (int[]) fields.get(CLIENT_EXPERIENCES).getValue(reference);
+		return i;
+	}
+	
+	public int getCurrentWorld() {
+		int i = (int) getFieldValue(CLIENT_CURRENT_WORLD, reference);
+		return i;
+	}
+	
+	public int getEnergy() {
+		int i = (int) getFieldValue(CLIENT_ENERGY, reference);
+		return i;
+	}
+	
+	public int getWeight() {
+		int i = (int) fields.get(CLIENT_WEIGHT).getValue(reference);
 		return i;
 	}
 
