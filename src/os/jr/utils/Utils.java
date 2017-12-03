@@ -1,63 +1,22 @@
 package os.jr.utils;
 
 import java.io.BufferedInputStream;
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.List;
-
-import os.jr.game.RSAppletStub;
-import os.jr.game.Reflector;
+import os.jr.game.RSGame;
 import os.jr.game.Updater;
 
 public class Utils {
 
 	public static int size;
 	private static int[] XPforLevel;
-
-	public static void getParams() throws IOException {
-		URL url = new URL(Reflector.gameUrl);
-		boolean init = false;
-		BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
-		String line;
-		List<String> params = new ArrayList<String>();
-		while ((line = reader.readLine()) != null) {
-			if (line.contains("param name")) {
-				params.add(line);
-				System.out.println(line);
-			}
-			if (!init) {
-				if (Reflector.gamepackURL == null) {
-					if (line.contains("archive")) {
-
-						Reflector.gamepackURL = new URL(
-								Reflector.gameUrl + line.substring(line.indexOf("archive=") + 8, line.indexOf(" ');")));
-
-						System.out.println(Reflector.gamepackURL);
-					}
-				} else if (Reflector.mainClass == null) {
-					if (line.contains("code=")) {
-						Reflector.mainClass = line.substring(line.indexOf("code=") + 5, line.indexOf(".class"));
-					}
-				} else {
-					init = true;
-				}
-			}
-		}
-		reader.close();
-		for (String s : params) {
-			RSAppletStub.parameters.put(getParamName(s), getParamValue(s));
-		}
-	}
-
+	
 	public static int localGamePackSize() {
 		File file = new File(System.getProperty("user.home") + "/OSJR/gamepack.jar");
 		return (int) file.length();
@@ -119,14 +78,14 @@ public class Utils {
 		BufferedInputStream in = null;
 		FileOutputStream out = null;
 		try {
-			URL url = Reflector.gamepackURL;
+			URL url = RSGame.LIVE_JAR_URL;
 			URLConnection conn = url.openConnection();
 			size = conn.getContentLength();
 			Updater.maximum = size;
 			if (size < 0) {
 				System.out.println("Could not get the file size");
 			} else {
-				System.out.println("File size: " + size);
+				System.out.println("\nGamepack update required.");
 			}
 			File file = new File(System.getProperty("user.home") + "/OSJR/");
 			File file2 = new File(System.getProperty("user.home") + "/OSJR/gamepack.jar");

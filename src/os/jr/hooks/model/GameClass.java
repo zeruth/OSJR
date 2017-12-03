@@ -4,7 +4,7 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 
 import os.jr.boot.Boot;
-import os.jr.game.Reflector;
+import os.jr.game.RSGame;
 
 public class GameClass {
 	public String className;
@@ -16,7 +16,7 @@ public class GameClass {
 		this.className = classIdentifier;
 		try {
 			try {
-				Reflector.classLoader.loadClass(classIdentifier);
+				RSGame.classLoader.loadClass(classIdentifier);
 			} catch (ClassNotFoundException e) {
 				System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
 				System.out.println("Running without hooks.");
@@ -24,7 +24,7 @@ public class GameClass {
 				e.printStackTrace();
 				return;
 			}
-			for (Field f : Reflector.classLoader.loadClass(classIdentifier).getFields()) {
+			for (Field f : RSGame.classLoader.loadClass(classIdentifier).getFields()) {
 				this.allFields.put(f.getName(), new GameField(f.getName(), classIdentifier));
 			}
 		} catch (SecurityException | ClassNotFoundException e) {
@@ -39,7 +39,7 @@ public class GameClass {
 		Class<?> c = null;
 
 		try {
-			c = Reflector.classLoader.loadClass(className);
+			c = RSGame.classLoader.loadClass(className);
 			GameField gf = fields.get(identifier);
 			Field f = c.getDeclaredField(gf.fieldName);
 			f.setAccessible(true);

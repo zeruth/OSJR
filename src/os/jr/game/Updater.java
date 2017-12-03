@@ -4,7 +4,6 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
 import os.jr.hooks.Client;
-import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;
 
 import org.eclipse.swt.widgets.ProgressBar;
@@ -45,11 +44,10 @@ public class Updater {
 	 * @throws IOException
 	 * @wbp.parser.entryPoint
 	 */
-	public static void main() throws IOException {
-		Utils.getParams();
+	public static void main() {
 		if (Client.settings.gamePackSize == -1
-				|| Client.settings.gamePackSize != Utils.getFileSize(Reflector.gamepackURL)
-				|| Utils.localGamePackSize() != Utils.getFileSize(Reflector.gamepackURL)) {
+				|| Client.settings.gamePackSize != Utils.getFileSize(RSGame.LIVE_JAR_URL)
+				|| Utils.localGamePackSize() != Utils.getFileSize(RSGame.LIVE_JAR_URL)) {
 			downloadRequired = true;
 		}
 		if (downloadRequired) {
@@ -74,8 +72,7 @@ public class Updater {
 		createContents();
 		shell.open();
 		shell.layout();
-		Client.settings = SettingsIo.loadSettings();
-		progressBar.setMaximum(Utils.getFileSize(Reflector.gamepackURL));
+		progressBar.setMaximum(Utils.getFileSize(RSGame.LIVE_JAR_URL));
 		while (!shell.isDisposed() && !downloadComplete) {
 			setSelection(progress);
 			if (!display.readAndDispatch()) {

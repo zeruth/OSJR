@@ -3,7 +3,7 @@ package os.jr.hooks.model;
 import java.lang.reflect.Field;
 
 import os.jr.boot.Boot;
-import os.jr.game.Reflector;
+import os.jr.game.RSGame;
 
 public class GameField {
 
@@ -30,13 +30,13 @@ public class GameField {
 		try {
 			Object o;
 			if (multiplier != 1) {
-				Field f = Reflector.classLoader.loadClass(parentClass).getDeclaredField(fieldName);
+				Field f = RSGame.classLoader.loadClass(parentClass).getDeclaredField(fieldName);
 				f.setAccessible(true);
 				o = ((int) f.get(reference)) * multiplier;
 			} else {
 				// System.out.println("parent "+parentClass);
 				// System.out.println("field "+fieldName);
-				Field f = Reflector.classLoader.loadClass(parentClass).getDeclaredField(fieldName);
+				Field f = RSGame.classLoader.loadClass(parentClass).getDeclaredField(fieldName);
 				f.setAccessible(true);
 				o = f.get(reference);
 			}
