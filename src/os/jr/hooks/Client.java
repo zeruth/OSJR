@@ -1,5 +1,6 @@
 package os.jr.hooks;
 
+import os.jr.game.Skill;
 import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 import os.jr.utils.Settings;
@@ -129,6 +130,7 @@ public class Client extends GameClass {
 	public int cameraPitch;
 	public int cameraYaw;
 
+	public final String CLIENT_LOCAL_NPCS = "Client_LocalNPCs";
 	public final String CLIENT_ENERGY = "Client_Energy";
 	public final String CLIENT_LOCAL_PLAYER = "Client_LocalPlayer";
 	public final String CLIENT_LOGIN_STATE = "Client_LoginState";
@@ -227,6 +229,19 @@ public class Client extends GameClass {
 		
 		this.fields.put("Client_Energy", new GameField(field_Energy, client, field_Energy_multiplier));
 		this.fields.put("Client_Weight", new GameField(field_Weight, client, field_Weight_multiplier));
+	}
+	
+	public NPC[] getLocalNPCs() {
+		Object[] o = (Object[]) fields.get(CLIENT_LOCAL_NPCS).getValue(reference);
+		NPC[] npcs = new NPC[o.length];
+		int i = 0;
+		for (Object p : o) {
+			if (p!=null) {
+			npcs[i] = new NPC(p);
+			}
+			i++;
+		}
+		return npcs;
 	}
 
 	public LocalPlayer getLocalPlayer() {

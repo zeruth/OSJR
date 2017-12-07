@@ -9,8 +9,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+
+import os.jr.boot.Updater;
 import os.jr.game.RSGame;
-import os.jr.game.Updater;
 
 public class Utils {
 

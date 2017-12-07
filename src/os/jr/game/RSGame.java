@@ -9,7 +9,6 @@ import java.applet.Applet;
 import java.applet.AppletContext;
 import java.applet.AppletStub;
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Graphics;
 import java.io.DataInputStream;
 import java.io.File;
@@ -31,6 +30,7 @@ import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
 
 import os.jr.boot.Boot;
+import os.jr.boot.Updater;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
 import os.jr.hooks.updater.HookUpdater;
@@ -54,9 +54,7 @@ public class RSGame extends JFrame implements AppletStub {
 
 	private final int FAVORITE_WORLD = 9;
 
-	private static File dataDir = new File(System.getProperty("user.home") + "/OSJR/");
 	private static File gamepackFile = new File(System.getProperty("user.home") + "/OSJR/gamepack.jar");
-	private static File settingsFile = new File(System.getProperty("user.home") + "/OSJR/settings");
 	private String JAR_URL = "http://oldschool" + FAVORITE_WORLD + ".runescape.com/";
 	public String gamepackUrl;
 

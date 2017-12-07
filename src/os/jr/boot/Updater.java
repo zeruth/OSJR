@@ -1,8 +1,9 @@
-package os.jr.game;
+package os.jr.boot;
 
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
+import os.jr.game.RSGame;
 import os.jr.hooks.Client;
 import os.jr.utils.Utils;
 

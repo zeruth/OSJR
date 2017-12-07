@@ -4,6 +4,7 @@ import os.jr.boot.Boot;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
 import os.jr.hooks.Node;
+import os.jr.utils.Dumper;
 
 public class HookUpdater {
 	public static Client client;
@@ -52,6 +53,12 @@ public class HookUpdater {
 						if (Hooks.selector.client.isLoggedIn()) {
 							
 							Boot.changeName(Hooks.selector.client.getLocalPlayer().getName());
+							if (c.getLocalNPCs().length>2) {
+								Dumper.dumpLocalNPCS(c.getLocalNPCs());
+							} else {
+								System.out.println(c.getLocalNPCs().length);
+							}
+
 						} else {
 							Boot.changeName(Boot.VERSION);
 						}
