@@ -53,11 +53,7 @@ public class HookUpdater {
 						if (Hooks.selector.client.isLoggedIn()) {
 							
 							Boot.changeName(Hooks.selector.client.getLocalPlayer().getName());
-							if (c.getLocalNPCs().length>2) {
-								Dumper.dumpLocalNPCS(c.getLocalNPCs());
-							} else {
-								System.out.println(c.getLocalNPCs().length);
-							}
+							
 
 						} else {
 							Boot.changeName(Boot.VERSION);
