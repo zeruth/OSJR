@@ -5,13 +5,7 @@ import os.jr.utils.Dumpers.NPCdump;
 
 public class Dumper {
 	
-	public static boolean dumpLocalNPCS = false;
-	
-	
-	
-	public static void main() {
-		
-	}
+	public static boolean dumpLocalNPCS = true;
 	
 	public static void dumpLocalNPCS(NPC[] npcs) {
 		

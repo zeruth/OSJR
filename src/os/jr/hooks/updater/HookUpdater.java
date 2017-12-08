@@ -1,5 +1,9 @@
 package os.jr.hooks.updater;
 
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Graphics;
+
 import os.jr.boot.Boot;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
@@ -29,6 +33,8 @@ public class HookUpdater {
 						
 						Thread.sleep(sleeptime);
 						
+						Dumper.dumpLocalNPCS(c.getLocalNPCs());
+
 						//Start Hook caching
 						Long cacheTimerStart = System.currentTimeMillis();
 						

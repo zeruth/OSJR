@@ -15,6 +15,10 @@ public class Player extends GameClass {
 	public static final int field_CombatLevel_multiplier = 959498037;
 
 	public final String PLAYER_NAME = "Player_Name";
+	public final String PLAYER_MODEL = "Player_Model";
+	public final String PLAYER_VISIBLE = "Player_Visible";
+	public final String PLAYER_DEFINITION = "Player_Definition";
+	public final String PLAYER_COMBAT_LEVEL = "Player_CombatLevel";
 
 	public Player() {
 		super(player);
@@ -41,6 +45,18 @@ public class Player extends GameClass {
 
 	public String getName() {
 		return (String) fields.get(PLAYER_NAME).getValue(reference);
+	}
+	
+	public int getModel() {
+		return (int) fields.get(PLAYER_MODEL).getValue(reference);
+	}
+	
+	public boolean getVisible() {
+		return (boolean) fields.get(PLAYER_VISIBLE).getValue(reference);
+	}
+	
+	public PlayerDefinition getPlayerDefinition() {
+		return new PlayerDefinition(fields.get(PLAYER_DEFINITION).getValue(reference));
 	}
 
 }
