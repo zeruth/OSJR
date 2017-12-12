@@ -9,6 +9,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 
 import os.jr.boot.Updater;
 import os.jr.game.RSGame;
@@ -16,7 +19,7 @@ import os.jr.game.RSGame;
 public class Utils {
 
 	public static int size;
-	private static int[] XPforLevel;
+	private static int[] XPforLevel = new int[128];
 	
 	public static int localGamePackSize() {
 		File file = new File(System.getProperty("user.home") + "/OSJR/gamepack.jar");
@@ -125,6 +128,27 @@ public class Utils {
 			}
 			SettingsIo.updateGamePackSize(size);
 		}
+	}
+	
+	public static String getUTCTime() {
+		LocalDateTime ldt1 = LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC);
+		String second = ""+ldt1.getSecond();
+		String minute= ""+ldt1.getMinute();
+		String hour = ""+ldt1.getHour();
+		String day = ""+ldt1.getDayOfMonth();
+		String month = ""+ldt1.getMonth();
+		String year = ""+ldt1.getYear();
+
+		if (Integer.valueOf(second)<10) {
+			second = "0"+second;
+		}
+		if (Integer.valueOf(minute)<10) {
+			minute = "0"+minute;
+		}
+		if (Integer.valueOf(hour)<10) {
+			hour = "0"+hour;
+		}
+		return hour+":"+minute+":"+second+" UTC";
 	}
 
 	public static void makeXPforLevel() {

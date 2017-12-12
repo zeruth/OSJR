@@ -8,7 +8,6 @@ package os.jr.game;
 import java.applet.Applet;
 import java.applet.AppletContext;
 import java.applet.AppletStub;
-import java.awt.BorderLayout;
 import java.awt.Graphics;
 import java.io.DataInputStream;
 import java.io.File;
@@ -25,7 +24,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import javax.swing.JFrame;
-
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
 
@@ -34,8 +32,16 @@ import os.jr.boot.Updater;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
 import os.jr.hooks.updater.HookUpdater;
+import os.jr.ui.Notes;
+import os.jr.ui.StatMonitor;
 import os.jr.utils.Settings;
 import os.jr.utils.SettingsIo;
+import os.jr.utils.Utils;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 /**
  * A program that loads a jar file into a jframe
@@ -75,6 +81,44 @@ public class RSGame extends JFrame implements AppletStub {
 
 	public RSGame() {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenu mnFile = new JMenu("OS-JR");
+		menuBar.add(mnFile);
+		
+		JMenuItem mntmHideMenu = new JMenuItem("Hide Menu");
+		mntmHideMenu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				menuBar.setVisible(false);
+			}
+		});
+		mnFile.add(mntmHideMenu);
+		
+		JMenuItem mntmExit = new JMenuItem("Exit");
+		mnFile.add(mntmExit);
+		
+		JMenu mnTools = new JMenu("Tools");
+		menuBar.add(mnTools);
+		
+		JMenuItem mntmStatMonitor = new JMenuItem("Stat Monitor");
+		mntmStatMonitor.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				StatMonitor.frame.setVisible(true);
+			}
+		});
+		mnTools.add(mntmStatMonitor);
+		
+		JMenuItem mntmNotes = new JMenuItem("Notes");
+		mntmNotes.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Notes.frame.setVisible(true);
+			}
+		});
+
+		mnTools.add(mntmNotes);
+		getContentPane().setLayout(null);
 		Client.settings = SettingsIo.loadSettings();
 		if (Client.settings == null) {
 			Client.settings = new Settings();
@@ -114,7 +158,7 @@ public class RSGame extends JFrame implements AppletStub {
 				}
 				Hooks.init();
 				HookUpdater.init();
-				this.setSize(782,541);
+				this.setSize(782,566);
 				System.out.println("\nOS-JR "+ Boot.VERSION + " Loaded.");
 				System.out.println("Hook Revision "+Boot.HOOK_REVISION);
 			}
@@ -158,8 +202,9 @@ public class RSGame extends JFrame implements AppletStub {
 
 	private void addApplet() {
 		applet.setStub(this);
-		add(applet, BorderLayout.CENTER);
-		applet.setSize(800, 600);
+		getContentPane().add(applet, null);
+		//setco
+		applet.setSize(766, 503);
 		applet.init();
 		applet.start();
 	}
@@ -190,14 +235,18 @@ public class RSGame extends JFrame implements AppletStub {
 			applet.setSize(x, y);
 		}
 	}
+	
+	@Override
+	public void paint(Graphics g) {
+		super.paint(g);
+		if (applet != null) {
+			applet.setSize(getContentPane().getWidth(), getContentPane().getHeight());
+		}
+	}
 
 	@Override
 	public AppletContext getAppletContext() {
 		return applet != null ? applet.getAppletContext() : null;
-	}
-	
-	@Override
-	public void paint(Graphics g) {
 	}
 
 	@Override
@@ -243,11 +292,10 @@ public class RSGame extends JFrame implements AppletStub {
 	public void changeName(String name) {
 		
 		if (name == null) {
-			this.setTitle("OS-JR");
+			this.setTitle("OS-JR" + Utils.getUTCTime());
 		} else {
-			this.setTitle("OS-JR [" + name + "]");
+			this.setTitle("OS-JR [" + name + "]" + Utils.getUTCTime());
 		}
 
 	}
-
 }

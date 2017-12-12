@@ -4,6 +4,8 @@ import javax.swing.JFrame;
 
 import os.jr.game.RSGame;
 import os.jr.hooks.Client;
+import os.jr.ui.StatMonitor;
+import os.jr.ui.Notes;
 import os.jr.utils.SettingsIo;
 
 public class Boot extends JFrame {
@@ -25,15 +27,8 @@ public class Boot extends JFrame {
 		}
 		Client.settings = SettingsIo.loadSettings();
 		rsGame.run();
-
-	}
-	
-	public static void changeName(String name) {
-		if (name == null) {
-			rsGame.setTitle("OS-JR");
-		} else {
-			rsGame.setTitle("OS-JR [" + name + "]");
-		}
+		StatMonitor.display();
+		Notes.display();
 
 	}
 

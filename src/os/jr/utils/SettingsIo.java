@@ -2,6 +2,9 @@ package os.jr.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import os.jr.ui.Notes;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -30,6 +33,8 @@ public class SettingsIo {
 	public static Settings loadSettings() {
 		InputStream inputStream;
 		try {
+			if (!file.exists())
+				createBlankDb();
 			inputStream = new FileInputStream(file);
 			try (Reader reader = new InputStreamReader(inputStream, "UTF-8")) {
 				Gson gson = new GsonBuilder().create();
@@ -86,6 +91,17 @@ public class SettingsIo {
 		s.gamePackSize = size;
 		saveSettings(s);
 	}
+	
+	public static String loadNotes(){
+		Settings s = loadSettings();
+		return s.notes;
+	}
+	
+	public static void SaveNotes(){
+		Settings s = loadSettings();
+		s.notes = Notes.notes;
+		saveSettings(s);
+	}
 
 	/**
 	 * saveSettings - Saves Settings object to file in data directory.
@@ -98,7 +114,7 @@ public class SettingsIo {
 	public static void saveSettings(Settings s){
 		try {
 			Writer writer = new FileWriter(file);
-			Gson gson = new GsonBuilder().create();
+			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 			gson.toJson(s, writer);
 			writer.close();
 		} catch (Exception e) {
