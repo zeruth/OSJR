@@ -37,7 +37,6 @@ public class HookUpdater {
 					try {
 						
 						Thread.sleep(sleeptime);
-						SystemTray.sendMessageNormal("lol bad idea");
 						//Start Hook caching
 						Long cacheTimerStart = System.currentTimeMillis();
 						
