@@ -130,14 +130,12 @@ public class Utils {
 		}
 	}
 	
+
 	public static String getUTCTime() {
 		LocalDateTime ldt1 = LocalDateTime.ofInstant(Instant.now(), ZoneOffset.UTC);
 		String second = ""+ldt1.getSecond();
 		String minute= ""+ldt1.getMinute();
 		String hour = ""+ldt1.getHour();
-		String day = ""+ldt1.getDayOfMonth();
-		String month = ""+ldt1.getMonth();
-		String year = ""+ldt1.getYear();
 
 		if (Integer.valueOf(second)<10) {
 			second = "0"+second;

@@ -22,8 +22,7 @@ public class DumperIo {
 			gson.toJson(object, writer);
 			writer.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Special NPC not dumped: " + name);
 		}
 
 	}

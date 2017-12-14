@@ -1,6 +1,5 @@
 package os.jr.ui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -10,9 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Color;
 import javax.swing.JProgressBar;
-import java.awt.ComponentOrientation;
-import javax.swing.border.BevelBorder;
 
+@SuppressWarnings("serial")
 public class StatMonitor extends JFrame {
 
 	private JPanel contentPane;
@@ -69,7 +67,7 @@ public class StatMonitor extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void display() {
+	public static void init() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

@@ -1,6 +1,5 @@
 package os.jr.ui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -12,6 +11,7 @@ import os.jr.utils.SettingsIo;
 import java.awt.Color;
 import javax.swing.JTextArea;
 
+@SuppressWarnings("serial")
 public class Notes extends JFrame {
 
 	private JPanel contentPane;
@@ -22,7 +22,7 @@ public class Notes extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void display() {
+	public static void init() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

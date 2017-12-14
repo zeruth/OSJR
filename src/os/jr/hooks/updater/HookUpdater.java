@@ -1,19 +1,12 @@
 package os.jr.hooks.updater;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
-
 import os.jr.boot.Boot;
-import os.jr.game.RSGame;
 import os.jr.game.Skill;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
 import os.jr.hooks.Node;
 import os.jr.ui.StatMonitor;
+import os.jr.ui.SystemTray;
 import os.jr.ui.Notes;
 import os.jr.utils.Dumper;
 import os.jr.utils.SettingsIo;
@@ -44,7 +37,7 @@ public class HookUpdater {
 					try {
 						
 						Thread.sleep(sleeptime);
-
+						SystemTray.sendMessageNormal("lol bad idea");
 						//Start Hook caching
 						Long cacheTimerStart = System.currentTimeMillis();
 						

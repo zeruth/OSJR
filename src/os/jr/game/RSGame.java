@@ -1,5 +1,6 @@
 /**
- * Credits to Reich
+ * Credits to Reich for the one page client source
+ * I (Null) have of course heavily modified this source but none the less, thanks.
  * https://goo.gl/49W1Hg (Rune-Server Link)
  */
 
@@ -34,6 +35,7 @@ import os.jr.hooks.Hooks;
 import os.jr.hooks.updater.HookUpdater;
 import os.jr.ui.Notes;
 import os.jr.ui.StatMonitor;
+import os.jr.ui.SystemTray;
 import os.jr.utils.Settings;
 import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;
@@ -42,13 +44,16 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JRadioButtonMenuItem;
 
 /**
  * A program that loads a jar file into a jframe
  * 
  * @author Cody Reichenbach
+ * @author Null
  *
  */
+@SuppressWarnings("serial")
 public class RSGame extends JFrame implements AppletStub {
 
 	private final String MAIN_CLASS = "client";
@@ -77,11 +82,31 @@ public class RSGame extends JFrame implements AppletStub {
 	private Hashtable<String, ClassNode> classnodes = new Hashtable<String, ClassNode>();
 	
 	public static URLClassLoader classLoader;
+	
+	public static java.awt.SystemTray systemTray;
 
 
 	public RSGame() {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+		setupMenuBar();
+		initSettings();
+		systemTray = SystemTray.setupSystemTray();
+		getContentPane().setLayout(null);
+		classnodes = new Hashtable<String, ClassNode>();
+		getAppletStubData();
+		Updater.main();
+		loadJar();
+	}
+	
+	public void initSettings() {
+		Client.settings = SettingsIo.loadSettings();
+		if (Client.settings == null) {
+			Client.settings = new Settings();
+			SettingsIo.saveSettings(Client.settings);
+		}
+	}
+	
+	public void setupMenuBar() {
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
@@ -95,6 +120,18 @@ public class RSGame extends JFrame implements AppletStub {
 			}
 		});
 		mnFile.add(mntmHideMenu);
+		
+		JRadioButtonMenuItem rdbtnmntmAlwaysOnTop = new JRadioButtonMenuItem("Always on top");
+		rdbtnmntmAlwaysOnTop.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				if (rdbtnmntmAlwaysOnTop.isSelected()) {
+					setAlwaysOnTop(true);
+				} else {
+					setAlwaysOnTop(false);
+				}
+			}
+		});
+		mnFile.add(rdbtnmntmAlwaysOnTop);
 		
 		JMenuItem mntmExit = new JMenuItem("Exit");
 		mnFile.add(mntmExit);
@@ -118,16 +155,6 @@ public class RSGame extends JFrame implements AppletStub {
 		});
 
 		mnTools.add(mntmNotes);
-		getContentPane().setLayout(null);
-		Client.settings = SettingsIo.loadSettings();
-		if (Client.settings == null) {
-			Client.settings = new Settings();
-			SettingsIo.saveSettings(Client.settings);
-		}
-		classnodes = new Hashtable<String, ClassNode>();
-		getAppletStubData();
-		Updater.main();
-		loadJar();
 	}
 
 	public void run() {
@@ -203,7 +230,6 @@ public class RSGame extends JFrame implements AppletStub {
 	private void addApplet() {
 		applet.setStub(this);
 		getContentPane().add(applet, null);
-		//setco
 		applet.setSize(766, 503);
 		applet.init();
 		applet.start();

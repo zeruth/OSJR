@@ -47,7 +47,10 @@ public class NPCDefinition extends GameClass {
 	}
 	
 	public String getName() {
-		return (String) fields.get(NPC_DEFINITION_NAME).getValue(reference);
+		String name = (String) fields.get(NPC_DEFINITION_NAME).getValue(reference);
+		if (name.contains("col="))
+			return "";
+		return name;
 	}
 	
 	public String[] getActions() {

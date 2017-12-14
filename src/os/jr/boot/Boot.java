@@ -14,10 +14,19 @@ public class Boot extends JFrame {
 	public static Object rootReference;
 	public static RSGame rsGame = new RSGame();
 	public static boolean outdated = false;
-	public static final String VERSION = "0.5.5";
+	public static final String VERSION = "0.5.6";
 	public static final int HOOK_REVISION = 160;
 
 	public static void main(String[] args) {
+
+		initSettings();
+		rsGame.run();
+		StatMonitor.init();
+		Notes.init();
+
+	}
+	
+	public static void initSettings() {
 
 		if (!SettingsIo.dir.exists()) {
 			SettingsIo.dir.mkdir();
@@ -25,11 +34,8 @@ public class Boot extends JFrame {
 		if (!SettingsIo.file.exists()) {
 			SettingsIo.createBlankDb();
 		}
+		
 		Client.settings = SettingsIo.loadSettings();
-		rsGame.run();
-		StatMonitor.display();
-		Notes.display();
-
 	}
 
 }
