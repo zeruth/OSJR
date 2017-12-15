@@ -1,9 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 
-public class NPC extends GameClass {
+public class NPC extends Renderable {
 
 	public static final String npc = "ci";
 	public static final String field_Definition = "a";

@@ -9,5 +9,12 @@ public class Tile {
 		this.BaseX = baseX;
 		this.BaseY = baseY;
 	}
+	
+	public int getBaseX() {
+		return BaseX;
+	}
+	public int getBaseY() {
+		return BaseY;
+	}
 
 }

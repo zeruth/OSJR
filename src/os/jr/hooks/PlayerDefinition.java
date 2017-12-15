@@ -38,9 +38,5 @@ public class PlayerDefinition extends GameClass {
 	public boolean isFemale() {
 		return (boolean) fields.get(PLAYER_DEFINITION_IS_FEMALE).getValue(reference);
 	}
-	
-	public int[] getEquipment() {
-		return (int[]) fields.get(PLAYER_DEFINITION_EQUIPMENT).getValue(reference);
-	}
 
 }

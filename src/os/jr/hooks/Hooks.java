@@ -41,7 +41,7 @@ public class Hooks {
 	public Rasteriser rasteriser = new Rasteriser();
 	public Rasteriser3D rasteriser3d = new Rasteriser3D();
 	public Region region = new Region();
-	public Renderable renderable = new Renderable();
+	public Renderable renderable = new Renderable(Renderable.renderable);
 	public SceneTile sceneTile = new SceneTile();
 	public Typeface typeface = new Typeface();
 	public WallDecoration wallDecoration = new WallDecoration();

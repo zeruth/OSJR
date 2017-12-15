@@ -4,7 +4,7 @@ import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 import os.jr.utils.Tile;
 
-public class Actor extends GameClass {
+public class Actor extends Renderable {
 
 	public static final String actor = "br";
 	public static final String field_Animation = "bw";

@@ -91,6 +91,7 @@ public class RSGame extends JFrame implements AppletStub {
 		setupMenuBar();
 		initSettings();
 		systemTray = SystemTray.setupSystemTray();
+		setIconImage(systemTray.getTrayIcons()[0].getImage());
 		getContentPane().setLayout(null);
 		classnodes = new Hashtable<String, ClassNode>();
 		getAppletStubData();
@@ -185,7 +186,7 @@ public class RSGame extends JFrame implements AppletStub {
 				}
 				Hooks.init();
 				HookUpdater.init();
-				this.setSize(782,566);
+				this.setSize(781,565);
 				System.out.println("\nOS-JR "+ Boot.VERSION + " Loaded.");
 				System.out.println("Hook Revision "+Boot.HOOK_REVISION);
 			}

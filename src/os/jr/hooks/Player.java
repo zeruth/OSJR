@@ -1,9 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 
-public class Player extends GameClass {
+public class Player extends Renderable {
 
 	public static final String player = "bj";
 	public static final String field_Name = "a";

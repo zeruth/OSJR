@@ -128,6 +128,8 @@ public class Client extends GameClass {
 	public int cameraZ;
 	public int cameraPitch;
 	public int cameraYaw;
+	public Item[] groundItems;
+	public Player[] localPlayers;
 
 	public final String CLIENT_LOCAL_NPCS = "Client_LocalNPCs";
 	public final String CLIENT_ENERGY = "Client_Energy";
@@ -146,6 +148,8 @@ public class Client extends GameClass {
 	public final String CLIENT_CAMERA_Z = "Client_CameraZ";
 	public final String CLIENT_CAMERA_PITCH = "Client_CameraPitch";
 	public final String CLIENT_CAMERA_YAW = "Client_CameraYaw";
+	public final String CLIENT_GROUND_ITEMS = "Client_GroundItems";
+	public final String CLIENT_LOCAL_PLAYERS = "Client_LocalPlayers";
 
 	public Object player, actorCombatInfoList, combatInfoListHead, combatInfoListNext, combatInfo2, healthScale;
 
@@ -228,6 +232,19 @@ public class Client extends GameClass {
 		
 		this.fields.put("Client_Energy", new GameField(field_Energy, client, field_Energy_multiplier));
 		this.fields.put("Client_Weight", new GameField(field_Weight, client, field_Weight_multiplier));
+	}
+	
+	public Player[] getLocalPlayers() {
+		Object[] o = (Object[]) fields.get(CLIENT_LOCAL_PLAYERS).getValue(reference);
+		Player[] players = new Player[o.length];
+		int i = 0;
+		for (Object p : o) {
+			if (p!=null) {
+				players[i] = new Player(p);
+			}
+			i++;
+		}
+		return players;
 	}
 	
 	public NPC[] getLocalNPCs() {

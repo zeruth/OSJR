@@ -1,9 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 
-public class Widget extends GameClass {
+public class Widget extends Node {
 
 	public static final String widget = "hz";
 	public static final String field_Name = "cg";

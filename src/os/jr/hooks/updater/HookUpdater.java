@@ -4,7 +4,9 @@ import os.jr.boot.Boot;
 import os.jr.game.Skill;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
+import os.jr.hooks.Item;
 import os.jr.hooks.Node;
+import os.jr.hooks.Player;
 import os.jr.ui.StatMonitor;
 import os.jr.ui.SystemTray;
 import os.jr.ui.Notes;
@@ -74,7 +76,9 @@ public class HookUpdater {
 		c.cameraZ = c.getCameraZ();
 		c.cameraPitch = c.getCameraPitch();
 		c.cameraYaw = c.getCameraYaw();
+		c.localPlayers = c.getLocalPlayers();
 		
+
 		if (Notes.frame!=null) {
 			if (Notes.getTextArea().getText().compareTo(Notes.notes)!=0) {
 				Notes.notes=Notes.getTextArea().getText();
@@ -84,8 +88,9 @@ public class HookUpdater {
 	}
 	
 	public static void loggedInHooks() {
-		if (Hooks.selector.client.isLoggedIn()) {
-			Boot.rsGame.changeName(Hooks.selector.client.getLocalPlayer().getName());
+		c = Hooks.selector.client;
+		if (c.isLoggedIn()) {
+			Boot.rsGame.changeName(c.getLocalPlayer().getName());
 			
 			Skill.getProgressedSkills();
 

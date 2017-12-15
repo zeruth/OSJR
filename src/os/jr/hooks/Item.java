@@ -11,6 +11,8 @@ public class Item extends GameClass {
 
 	public static final int field_ID_multiplier = 485193461;
 	public static final int field_StackSizes_multiplier = -1501899501;
+	
+	public static final String ITEM_ID = "Item_ID";
 
 	public Item() {
 		super(item);
@@ -23,6 +25,12 @@ public class Item extends GameClass {
 		this.reference = reference;
 		this.fields.put("Item_ID", new GameField(field_ID, item, field_ID_multiplier));
 		this.fields.put("Item_StackSizes", new GameField(field_StackSizes, item, field_StackSizes_multiplier));
+	}
+	
+	public int getID() {
+		if (reference==null)
+		return (int) fields.get(ITEM_ID).getValue(reference);
+		return 0;
 	}
 
 }

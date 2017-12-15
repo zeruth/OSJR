@@ -14,7 +14,7 @@ public class Boot extends JFrame {
 	public static Object rootReference;
 	public static RSGame rsGame = new RSGame();
 	public static boolean outdated = false;
-	public static final String VERSION = "0.5.6";
+	public static final String VERSION = "0.5.7";
 	public static final int HOOK_REVISION = 160;
 
 	public static void main(String[] args) {

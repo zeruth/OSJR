@@ -1,9 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 
-public class Cacheable extends GameClass {
+public class Cacheable extends Node {
 
 	public static final String cacheable = "gi";
 	public static final String field_Next = "cg";
