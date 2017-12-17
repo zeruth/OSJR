@@ -11,7 +11,7 @@ import java.awt.Color;
 import javax.swing.JProgressBar;
 
 @SuppressWarnings("serial")
-public class StatMonitor extends JFrame {
+public class SkillMonitor extends JFrame {
 
 	private JPanel contentPane;
 	private JProgressBar progressBar;
@@ -62,7 +62,7 @@ public class StatMonitor extends JFrame {
 	private JLabel label_41;
 	private JLabel label_43;
 	
-	public static StatMonitor frame;
+	public static SkillMonitor frame;
 
 	/**
 	 * Launch the application.
@@ -71,7 +71,7 @@ public class StatMonitor extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					frame = new StatMonitor();
+					frame = new SkillMonitor();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -82,7 +82,7 @@ public class StatMonitor extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public StatMonitor() {
+	public SkillMonitor() {
 		setTitle("Stat monitor");
 		setBounds(100, 100, 311, 528);
 		setAlwaysOnTop(true);
@@ -106,7 +106,7 @@ public class StatMonitor extends JFrame {
 		AttackPanel.setLayout(null);
 		
 		JLabel SkillIconLabel = new JLabel("");
-		SkillIconLabel.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Attack_icon.png")));
+		SkillIconLabel.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Attack-icon.png")));
 		SkillIconLabel.setBounds(14, 0, 30, 35);
 		AttackPanel.add(SkillIconLabel);
 		
@@ -131,7 +131,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(HitpointsPanel);
 		
 		JLabel label = new JLabel("");
-		label.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Hitpoints_icon.png")));
+		label.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Hitpoints-icon.png")));
 		label.setBounds(14, 0, 30, 35);
 		HitpointsPanel.add(label);
 		
@@ -156,7 +156,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(MiningPanel);
 		
 		JLabel label_2 = new JLabel("");
-		label_2.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Mining-icon.png")));
+		label_2.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Mining-icon.png")));
 		label_2.setBounds(14, 0, 30, 35);
 		MiningPanel.add(label_2);
 		
@@ -181,7 +181,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(StrengthPanel);
 		
 		JLabel label_4 = new JLabel("");
-		label_4.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Strength-icon.png")));
+		label_4.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Strength-icon.png")));
 		label_4.setBounds(14, 0, 30, 35);
 		StrengthPanel.add(label_4);
 		
@@ -206,7 +206,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(AgilityPanel);
 		
 		JLabel label_6 = new JLabel("");
-		label_6.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Agility-icon.png")));
+		label_6.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Agility-icon.png")));
 		label_6.setBounds(14, 0, 30, 35);
 		AgilityPanel.add(label_6);
 		
@@ -231,7 +231,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(SmithingPanel);
 		
 		JLabel label_8 = new JLabel("");
-		label_8.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Smithing-icon.png")));
+		label_8.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Smithing-icon.png")));
 		label_8.setBounds(14, 0, 30, 35);
 		SmithingPanel.add(label_8);
 		
@@ -256,7 +256,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(DefencePanel);
 		
 		JLabel label_10 = new JLabel("");
-		label_10.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Defence-icon.png")));
+		label_10.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Defence-icon.png")));
 		label_10.setBounds(14, 0, 30, 35);
 		DefencePanel.add(label_10);
 		
@@ -281,7 +281,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(HerblorePanel);
 		
 		JLabel label_12 = new JLabel("");
-		label_12.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Herblore-icon.png")));
+		label_12.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Herblore-icon.png")));
 		label_12.setBounds(14, 0, 30, 35);
 		HerblorePanel.add(label_12);
 		
@@ -306,7 +306,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(FishingPanel);
 		
 		JLabel label_14 = new JLabel("");
-		label_14.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Fishing-icon.png")));
+		label_14.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Fishing-icon.png")));
 		label_14.setBounds(14, 0, 30, 35);
 		FishingPanel.add(label_14);
 		
@@ -331,7 +331,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(RangedPanel);
 		
 		JLabel label_16 = new JLabel("");
-		label_16.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Ranged-icon.png")));
+		label_16.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Ranged-icon.png")));
 		label_16.setBounds(14, 0, 30, 35);
 		RangedPanel.add(label_16);
 		
@@ -356,7 +356,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(ThievingPanel);
 		
 		JLabel label_18 = new JLabel("");
-		label_18.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Thieving-icon.png")));
+		label_18.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Thieving-icon.png")));
 		label_18.setBounds(14, 0, 30, 35);
 		ThievingPanel.add(label_18);
 		
@@ -381,7 +381,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(CookingPanel);
 		
 		JLabel label_20 = new JLabel("");
-		label_20.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Cooking-icon.png")));
+		label_20.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Cooking-icon.png")));
 		label_20.setBounds(14, 0, 30, 35);
 		CookingPanel.add(label_20);
 		
@@ -406,7 +406,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(PrayerPanel);
 		
 		JLabel label_22 = new JLabel("");
-		label_22.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Prayer-icon.png")));
+		label_22.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Prayer-icon.png")));
 		label_22.setBounds(14, 0, 30, 35);
 		PrayerPanel.add(label_22);
 		
@@ -431,7 +431,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(CraftingPanel);
 		
 		JLabel label_24 = new JLabel("");
-		label_24.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Crafting-icon.png")));
+		label_24.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Crafting-icon.png")));
 		label_24.setBounds(14, 0, 30, 35);
 		CraftingPanel.add(label_24);
 		
@@ -456,7 +456,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(FiremakingPanel);
 		
 		JLabel label_26 = new JLabel("");
-		label_26.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Firemaking-icon.png")));
+		label_26.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Firemaking-icon.png")));
 		label_26.setBounds(14, 0, 30, 35);
 		FiremakingPanel.add(label_26);
 		
@@ -481,7 +481,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(MagicPanel);
 		
 		JLabel label_28 = new JLabel("");
-		label_28.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Magic-icon.png")));
+		label_28.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Magic-icon.png")));
 		label_28.setBounds(14, 0, 30, 35);
 		MagicPanel.add(label_28);
 		
@@ -506,7 +506,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(FletchingPanel);
 		
 		JLabel label_30 = new JLabel("");
-		label_30.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Fletching-icon.png")));
+		label_30.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Fletching-icon.png")));
 		label_30.setBounds(14, 0, 30, 35);
 		FletchingPanel.add(label_30);
 		
@@ -531,7 +531,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(WoodcuttingPanel);
 		
 		JLabel label_32 = new JLabel("");
-		label_32.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Woodcutting-icon.png")));
+		label_32.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Woodcutting-icon.png")));
 		label_32.setBounds(14, 0, 30, 35);
 		WoodcuttingPanel.add(label_32);
 		
@@ -556,7 +556,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(RunecraftingPanel);
 		
 		JLabel label_34 = new JLabel("");
-		label_34.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Runecrafting-icon.png")));
+		label_34.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Runecrafting-icon.png")));
 		label_34.setBounds(14, 0, 30, 35);
 		RunecraftingPanel.add(label_34);
 		
@@ -581,7 +581,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(SlayerPanel);
 		
 		JLabel label_36 = new JLabel("");
-		label_36.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Slayer-icon.png")));
+		label_36.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Slayer-icon.png")));
 		label_36.setBounds(14, 0, 30, 35);
 		SlayerPanel.add(label_36);
 		
@@ -606,7 +606,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(FarmingPanel);
 		
 		JLabel label_38 = new JLabel("");
-		label_38.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Farming-icon.png")));
+		label_38.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Farming-icon.png")));
 		label_38.setBounds(14, 0, 30, 35);
 		FarmingPanel.add(label_38);
 		
@@ -631,7 +631,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(ConstructionPanel);
 		
 		JLabel label_40 = new JLabel("");
-		label_40.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Construction_icon.png")));
+		label_40.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Construction-icon.png")));
 		label_40.setBounds(14, 0, 30, 35);
 		ConstructionPanel.add(label_40);
 		
@@ -656,7 +656,7 @@ public class StatMonitor extends JFrame {
 		StatsPanel.add(HunterPanel);
 		
 		JLabel label_42 = new JLabel("");
-		label_42.setIcon(new ImageIcon(StatMonitor.class.getResource("/resources/Hunter-icon.png")));
+		label_42.setIcon(new ImageIcon(SkillMonitor.class.getResource("/resources/Hunter-icon.png")));
 		label_42.setBounds(14, 0, 30, 35);
 		HunterPanel.add(label_42);
 		

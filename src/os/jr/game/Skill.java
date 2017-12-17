@@ -1,8 +1,16 @@
 package os.jr.game;
 
+import java.text.NumberFormat;
+
+import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JProgressBar;
+
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
-import os.jr.ui.StatMonitor;
+import os.jr.ui.IndividualSkillMonitor;
+import os.jr.ui.SkillMonitor;
 import os.jr.utils.Utils;
 
 public class Skill {
@@ -86,9 +94,60 @@ public class Skill {
 		return null;
 	}
 	
+	public static int getIDForName(String name) {
+		if (name.compareTo("Attack")==0) {
+			return Skill.ATTACK;
+		} else if (name.compareTo("Defence")==0) {
+			return Skill.DEFENCE;
+		} else if (name.compareTo("Strength")==0) {
+			return Skill.STRENGTH;
+		} else if (name.compareTo("Hitpoints")==0) {
+			return Skill.HITPOINTS;
+		} else if (name.compareTo("Ranged")==0) {
+			return Skill.RANGED;
+		} else if (name.compareTo("Prayer")==0) {
+			return Skill.PRAYER;
+		} else if (name.compareTo("Magic")==0) {
+			return Skill.MAGIC;
+		} else if (name.compareTo("Cooking")==0) {
+			return Skill.COOKING;
+		} else if (name.compareTo("Woodcutting")==0) {
+			return Skill.WOODCUTTING;
+		} else if (name.compareTo("Fletching")==0) {
+			return Skill.FLETCHING;
+		} else if (name.compareTo("Fishing")==0) {
+			return Skill.FISHING;
+		} else if (name.compareTo("Firemaking")==0) {
+			return Skill.FIREMAKING;
+		} else if (name.compareTo("Crafting")==0) {
+			return Skill.CRAFTING;
+		} else if (name.compareTo("Smithing")==0) {
+			return Skill.SMITHING;
+		} else if (name.compareTo("Mining")==0) {
+			return Skill.MINING;
+		} else if (name.compareTo("Herblore")==0) {
+			return Skill.HERBLORE;
+		} else if (name.compareTo("Agility")==0) {
+			return Skill.AGILITY;
+		} else if (name.compareTo("Thieving")==0) {
+			return Skill.THIEVING;
+		} else if (name.compareTo("Slayer")==0) {
+			return Skill.SLAYER;
+		} else if (name.compareTo("Farming")==0) {
+			return Skill.FARMING;
+		} else if (name.compareTo("Runecrafting")==0) {
+			return Skill.RUNECRAFTING;
+		} else if (name.compareTo("Hunter")==0) {
+			return Skill.HUNTER;
+		} else if (name.compareTo("Construction")==0) {
+			return Skill.CONSTRUCTION;
+		}
+		return -1;
+	}
+	
 	public static void updateStatMonitor() {
 		c = Hooks.selector.client;
-		StatMonitor frame = StatMonitor.frame;
+		SkillMonitor frame = SkillMonitor.frame;
 		frame.getAttackLevel().setText(""+c.getRealLevels()[Skill.ATTACK]);
 		frame.getHitpointsLevel().setText(""+c.getRealLevels()[Skill.HITPOINTS]);
 		frame.getMiningLevel().setText(""+c.getRealLevels()[Skill.MINING]);
@@ -180,4 +239,49 @@ public class Skill {
 		}
 		return progressedSkills;
 	}
+
+	public static void updateIndividualSkillPanel(IndividualSkillMonitor sm) {
+		c = Hooks.selector.client;
+		JComboBox<String> jcb = sm.getSkillSelector();
+		JLabel skillIcon = sm.getSkillImageLabel();
+		JLabel skillLvl = sm.getLevellabel();
+		JLabel xpTilLvl = sm.getXptillevellabel();
+		JLabel xpTil99 = sm.getXptil99label();
+		JLabel xpTil120 = sm.getXptil120label();
+		JProgressBar lvlProgress = sm.getProgressBar();
+		NumberFormat nf1 = NumberFormat.getInstance();
+		
+			ImageIcon image = new ImageIcon(Skill.class.getResource("/resources/"+(String)jcb.getSelectedItem()+"-icon.png"));
+			skillIcon.setIcon(image);
+			skillLvl.setText(""+nf1.format(c.getRealLevels()[getIDForName((String)jcb.getSelectedItem())]));
+			xpTilLvl.setText(""+nf1.format(getXPTilLevel(getIDForName((String)jcb.getSelectedItem()))));
+			xpTil99.setText(""+nf1.format(getXPTil99(getIDForName((String)jcb.getSelectedItem()))));
+			xpTil120.setText(""+nf1.format(getXPTil120(getIDForName((String)jcb.getSelectedItem()))));
+			lvlProgress.setEnabled(true);
+			lvlProgress.setValue(progressToNextLevel(getIDForName((String)jcb.getSelectedItem())));
+	}
+	
+	public static int getXPTilLevel(int skill) {
+		int xpForNextLvl = Utils.getXPforNextLevel(c.realLevels[skill]);
+		return xpForNextLvl - c.experiences[skill];
+	}
+	
+	public static int getXPTil99(int skill) {
+		int xpFor99 = Utils.getXPforCurrentLevel(99);
+		int xpTil99 = xpFor99 - c.experiences[skill];
+		if (xpTil99<1) {
+			return 0;
+		}
+		return xpTil99;
+	}
+	
+	public static int getXPTil120(int skill) {
+		int xpFor120 = Utils.getXPforCurrentLevel(120);
+		int xpTil120 = xpFor120 - c.experiences[skill];
+		if (xpTil120<1) {
+			return 0;
+		}
+		return xpTil120;
+	}
+	
 }

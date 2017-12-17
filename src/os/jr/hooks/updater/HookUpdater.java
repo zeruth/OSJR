@@ -7,8 +7,9 @@ import os.jr.hooks.Hooks;
 import os.jr.hooks.Item;
 import os.jr.hooks.Node;
 import os.jr.hooks.Player;
-import os.jr.ui.StatMonitor;
+import os.jr.ui.SkillMonitor;
 import os.jr.ui.SystemTray;
+import os.jr.ui.IndividualSkillMonitor;
 import os.jr.ui.Notes;
 import os.jr.utils.Dumper;
 import os.jr.utils.SettingsIo;
@@ -94,8 +95,13 @@ public class HookUpdater {
 			
 			Skill.getProgressedSkills();
 
-			if (StatMonitor.frame!=null) {
+			if (SkillMonitor.frame!=null) {
 				Skill.updateStatMonitor();
+			}
+			for (IndividualSkillMonitor sm : IndividualSkillMonitor.frames) {
+				if (sm!=null) {
+					Skill.updateIndividualSkillPanel(sm);
+				}
 			}
 		} else {
 			Boot.rsGame.changeName(Boot.VERSION);

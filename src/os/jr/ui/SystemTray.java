@@ -22,7 +22,7 @@ public class SystemTray {
 	        //If the icon is a file
 	        Image image;
 			try {
-				image = ImageIO.read(SystemTray.class.getResource("/resources/OSJR_Icon.png"));
+				image = ImageIO.read(SystemTray.class.getResource("/resources/OSJR-Icon.png"));
 		        TrayIcon trayIcon = new TrayIcon(image, "OS-JR");
 		        trayIcon.setImageAutoSize(true);
 		        trayIcon.setToolTip("OS-JR version " + Boot.VERSION);

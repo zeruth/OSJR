@@ -33,8 +33,9 @@ import os.jr.boot.Updater;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
 import os.jr.hooks.updater.HookUpdater;
+import os.jr.ui.IndividualSkillMonitor;
 import os.jr.ui.Notes;
-import os.jr.ui.StatMonitor;
+import os.jr.ui.SkillMonitor;
 import os.jr.ui.SystemTray;
 import os.jr.utils.Settings;
 import os.jr.utils.SettingsIo;
@@ -140,10 +141,10 @@ public class RSGame extends JFrame implements AppletStub {
 		JMenu mnTools = new JMenu("Tools");
 		menuBar.add(mnTools);
 		
-		JMenuItem mntmStatMonitor = new JMenuItem("Stat Monitor");
+		JMenuItem mntmStatMonitor = new JMenuItem("All Skill Monitor");
 		mntmStatMonitor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				StatMonitor.frame.setVisible(true);
+				SkillMonitor.frame.setVisible(true);
 			}
 		});
 		mnTools.add(mntmStatMonitor);
@@ -154,6 +155,17 @@ public class RSGame extends JFrame implements AppletStub {
 				Notes.frame.setVisible(true);
 			}
 		});
+		
+		JMenuItem mntmIndividualSkillMonitor = new JMenuItem("Individual Skill Monitor");
+		mntmIndividualSkillMonitor.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				IndividualSkillMonitor sm = new IndividualSkillMonitor();
+				sm.setVisible(true);
+				IndividualSkillMonitor.frames[IndividualSkillMonitor.skillFrameCount] = sm;
+				IndividualSkillMonitor.skillFrameCount++;
+			}
+		});
+		mnTools.add(mntmIndividualSkillMonitor);
 
 		mnTools.add(mntmNotes);
 	}
@@ -319,9 +331,9 @@ public class RSGame extends JFrame implements AppletStub {
 	public void changeName(String name) {
 		
 		if (name == null) {
-			this.setTitle("OS-JR" + Utils.getUTCTime());
+			this.setTitle("OS-JR" + " " + Utils.getUTCTime());
 		} else {
-			this.setTitle("OS-JR [" + name + "]" + Utils.getUTCTime());
+			this.setTitle("OS-JR [" + name + "]" + " " + Utils.getUTCTime());
 		}
 
 	}
