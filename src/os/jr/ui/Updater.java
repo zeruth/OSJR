@@ -1,20 +1,12 @@
 package os.jr.ui;
 
 import java.io.IOException;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
-<<<<<<< HEAD
-import org.eclipse.swt.widgets.Display;
-
 import os.jr.boot.Boot;
-=======
->>>>>>> c67326b2e43ecc272bdb66aa180400aa25336e61
 import os.jr.game.RSGame;
 import os.jr.utils.Utils;
-
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JProgressBar;
