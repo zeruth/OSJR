@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Friend {
+import os.jr.hooks.model.GameClass;
+
+public class Friend extends GameClass{
+
+	public Friend() {
+		super(Hooks.classNames.get("Friend"));
+	}
 
 }

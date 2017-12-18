@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class FrameMap {
+import os.jr.hooks.model.GameClass;
+
+public class FrameMap extends GameClass{
+
+	public FrameMap() {
+		super(Hooks.classNames.get("FrameMap"));
+	}
 
 }

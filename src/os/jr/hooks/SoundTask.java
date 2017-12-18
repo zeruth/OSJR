@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class SoundTask {
+import os.jr.hooks.model.GameClass;
+
+public class SoundTask extends GameClass{
+
+	public SoundTask() {
+		super(Hooks.classNames.get("SoundTask"));
+	}
 
 }

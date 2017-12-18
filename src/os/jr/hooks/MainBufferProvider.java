@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class MainBufferProvider {
+import os.jr.hooks.model.GameClass;
+
+public class MainBufferProvider extends GameClass{
+
+	public MainBufferProvider() {
+		super(Hooks.classNames.get("MainBufferProvider"));
+	}
 
 }

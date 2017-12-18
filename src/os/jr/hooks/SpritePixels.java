@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class SpritePixels {
+import os.jr.hooks.model.GameClass;
+
+public class SpritePixels extends GameClass{
+
+	public SpritePixels() {
+		super(Hooks.classNames.get("SpritePixels"));
+	}
 
 }

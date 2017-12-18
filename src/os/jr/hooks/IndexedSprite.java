@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class IndexedSprite {
+import os.jr.hooks.model.GameClass;
+
+public class IndexedSprite extends GameClass{
+
+	public IndexedSprite() {
+		super(Hooks.classNames.get("IndexedSprite"));
+	}
 
 }

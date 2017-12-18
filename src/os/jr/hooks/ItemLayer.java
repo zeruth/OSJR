@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class ItemLayer {
+import os.jr.hooks.model.GameClass;
+
+public class ItemLayer extends GameClass{
+
+	public ItemLayer() {
+		super(Hooks.classNames.get("ItemLayer"));
+	}
 
 }

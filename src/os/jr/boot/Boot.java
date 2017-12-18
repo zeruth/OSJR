@@ -23,9 +23,9 @@ public class Boot extends JFrame {
 
 		initSettings();
 		rsGame.run();
+		DumpLoader.loadFieldDumps();
 		SkillMonitor.init();
 		Notes.init();
-		DumpLoader.loadHookDumps();
 	}
 	
 	public static void initSettings() {

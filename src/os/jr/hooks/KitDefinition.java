@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class KitDefinition {
+import os.jr.hooks.model.GameClass;
+
+public class KitDefinition extends GameClass{
+
+	public KitDefinition() {
+		super(Hooks.classNames.get("KitDefinition"));
+	}
 
 }

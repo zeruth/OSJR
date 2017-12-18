@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Spotanim {
+import os.jr.hooks.model.GameClass;
+
+public class Spotanim extends GameClass{
+
+	public Spotanim() {
+		super(Hooks.classNames.get("Spotanim"));
+	}
 
 }

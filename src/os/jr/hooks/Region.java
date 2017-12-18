@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Region {
+import os.jr.hooks.model.GameClass;
+
+public class Region extends GameClass{
+
+	public Region() {
+		super(Hooks.classNames.get("Region"));
+	}
 
 }

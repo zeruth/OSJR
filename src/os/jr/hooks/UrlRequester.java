@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class UrlRequester {
+import os.jr.hooks.model.GameClass;
+
+public class UrlRequester extends GameClass{
+
+	public UrlRequester() {
+		super(Hooks.classNames.get("UrlRequester"));
+	}
 
 }

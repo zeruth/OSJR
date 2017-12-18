@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class MouseInput {
+import os.jr.hooks.model.GameClass;
+
+public class MouseInput extends GameClass{
+
+	public MouseInput() {
+		super(Hooks.classNames.get("MouseInput"));
+	}
 
 }

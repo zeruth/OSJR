@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class MouseRecorder {
+import os.jr.hooks.model.GameClass;
+
+public class MouseRecorder extends GameClass{
+
+	public MouseRecorder() {
+		super(Hooks.classNames.get("MouseRecorder"));
+	}
 
 }

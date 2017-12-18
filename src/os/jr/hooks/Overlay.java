@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Overlay {
+import os.jr.hooks.model.GameClass;
+
+public class Overlay extends GameClass{
+
+	public Overlay() {
+		super(Hooks.classNames.get("Overlay"));
+	}
 
 }

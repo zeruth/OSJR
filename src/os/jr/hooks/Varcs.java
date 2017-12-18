@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Varcs {
+import os.jr.hooks.model.GameClass;
+
+public class Varcs extends GameClass{
+
+	public Varcs() {
+		super(Hooks.classNames.get("Varcs"));
+	}
 
 }

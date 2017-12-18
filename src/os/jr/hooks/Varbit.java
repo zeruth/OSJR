@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Varbit {
+import os.jr.hooks.model.GameClass;
+
+public class Varbit extends GameClass{
+
+	public Varbit() {
+		super(Hooks.classNames.get("Varbit"));
+	}
 
 }

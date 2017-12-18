@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class NPCComposition {
+import os.jr.hooks.model.GameClass;
+
+public class NPCComposition extends GameClass{
+
+	public NPCComposition() {
+		super(Hooks.classNames.get("NPCComposition"));
+	}
 
 }

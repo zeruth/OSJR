@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class PlayerComposition {
+import os.jr.hooks.model.GameClass;
+
+public class PlayerComposition extends GameClass{
+
+	public PlayerComposition() {
+		super(Hooks.classNames.get("PlayerComposition"));
+	}
 
 }

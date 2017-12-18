@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class SoundEffect {
+import os.jr.hooks.model.GameClass;
+
+public class SoundEffect extends GameClass{
+
+	public SoundEffect() {
+		super(Hooks.classNames.get("SoundEffect"));
+	}
 
 }

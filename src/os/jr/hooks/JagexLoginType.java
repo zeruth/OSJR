@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class JagexLoginType {
+import os.jr.hooks.model.GameClass;
+
+public class JagexLoginType extends GameClass{
+
+	public JagexLoginType() {
+		super(Hooks.classNames.get("JagexLoginType"));
+	}
 
 }

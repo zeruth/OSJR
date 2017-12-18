@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class IndexData {
+import os.jr.hooks.model.GameClass;
+
+public class IndexData extends GameClass{
+
+	public IndexData() {
+		super(Hooks.classNames.get("IndexData"));
+	}
 
 }

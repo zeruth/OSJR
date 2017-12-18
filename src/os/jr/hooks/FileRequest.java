@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class FileRequest {
+import os.jr.hooks.model.GameClass;
+
+public class FileRequest extends GameClass{
+
+	public FileRequest() {
+		super(Hooks.classNames.get("FileRequest"));
+	}
 
 }

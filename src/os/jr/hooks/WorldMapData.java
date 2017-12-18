@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class WorldMapData {
+import os.jr.hooks.model.GameClass;
+
+public class WorldMapData extends GameClass{
+
+	public WorldMapData() {
+		super(Hooks.classNames.get("WorldMapData"));
+	}
 
 }

@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Rasterizer2D {
+import os.jr.hooks.model.GameClass;
+
+public class Rasterizer2D extends GameClass{
+
+	public Rasterizer2D() {
+		super(Hooks.classNames.get("Rasterizer2D"));
+	}
 
 }

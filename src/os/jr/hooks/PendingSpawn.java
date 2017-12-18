@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class PendingSpawn {
+import os.jr.hooks.model.GameClass;
+
+public class PendingSpawn extends GameClass{
+
+	public PendingSpawn() {
+		super(Hooks.classNames.get("PendingSpawn"));
+	}
 
 }

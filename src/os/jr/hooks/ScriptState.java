@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class ScriptState {
+import os.jr.hooks.model.GameClass;
+
+public class ScriptState extends GameClass{
+
+	public ScriptState() {
+		super(Hooks.classNames.get("ScriptState"));
+	}
 
 }

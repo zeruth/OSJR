@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Texture {
+import os.jr.hooks.model.GameClass;
+
+public class Texture extends GameClass{
+
+	public Texture() {
+		super(Hooks.classNames.get("Texture"));
+	}
 
 }

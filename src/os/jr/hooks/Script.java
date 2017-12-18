@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Script {
+import os.jr.hooks.model.GameClass;
+
+public class Script extends GameClass{
+
+	public Script() {
+		super(Hooks.classNames.get("Script"));
+	}
 
 }

@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Ignore {
+import os.jr.hooks.model.GameClass;
+
+public class Ignore extends GameClass{
+
+	public Ignore() {
+		super(Hooks.classNames.get("Ignore"));
+	}
 
 }

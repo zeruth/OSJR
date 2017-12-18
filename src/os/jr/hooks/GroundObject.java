@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class GroundObject {
+import os.jr.hooks.model.GameClass;
+
+public class GroundObject extends GameClass{
+
+	public GroundObject() {
+		super(Hooks.classNames.get("GroundObject"));
+	}
 
 }

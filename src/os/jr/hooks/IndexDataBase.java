@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class IndexDataBase {
+import os.jr.hooks.model.GameClass;
+
+public class IndexDataBase extends GameClass{
+
+	public IndexDataBase() {
+		super(Hooks.classNames.get("IndexDataBase"));
+	}
 
 }

@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class TextureProvider {
+import os.jr.hooks.model.GameClass;
+
+public class TextureProvider extends GameClass{
+
+	public TextureProvider() {
+		super(Hooks.classNames.get("TextureProvider"));
+	}
 
 }

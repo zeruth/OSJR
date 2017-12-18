@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class ModelData {
+import os.jr.hooks.model.GameClass;
+
+public class ModelData extends GameClass{
+
+	public ModelData() {
+		super(Hooks.classNames.get("ModelData"));
+	}
 
 }

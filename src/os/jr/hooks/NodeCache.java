@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class NodeCache {
+import os.jr.hooks.model.GameClass;
+
+public class NodeCache extends GameClass{
+
+	public NodeCache() {
+		super(Hooks.classNames.get("NodeCache"));
+	}
 
 }

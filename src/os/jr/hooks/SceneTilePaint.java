@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class SceneTilePaint {
+import os.jr.hooks.model.GameClass;
+
+public class SceneTilePaint extends GameClass{
+
+	public SceneTilePaint() {
+		super(Hooks.classNames.get("SceneTilePaint"));
+	}
 
 }

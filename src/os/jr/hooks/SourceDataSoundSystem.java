@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class SourceDataSoundSystem {
+import os.jr.hooks.model.GameClass;
+
+public class SourceDataSoundSystem extends GameClass{
+
+	public SourceDataSoundSystem() {
+		super(Hooks.classNames.get("SourceDataSoundSystem"));
+	}
 
 }

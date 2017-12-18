@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class IterableDualNodeQueue {
+import os.jr.hooks.model.GameClass;
+
+public class IterableDualNodeQueue extends GameClass{
+
+	public IterableDualNodeQueue() {
+		super(Hooks.classNames.get("IterableDualNodeQueue"));
+	}
 
 }

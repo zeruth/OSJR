@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class VertexNormal {
+import os.jr.hooks.model.GameClass;
+
+public class VertexNormal extends GameClass{
+
+	public VertexNormal() {
+		super(Hooks.classNames.get("VertexNormal"));
+	}
 
 }

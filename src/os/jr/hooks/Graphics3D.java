@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Graphics3D {
+import os.jr.hooks.model.GameClass;
+
+public class Graphics3D extends GameClass{
+
+	public Graphics3D() {
+		super(Hooks.classNames.get("Graphics3D"));
+	}
 
 }

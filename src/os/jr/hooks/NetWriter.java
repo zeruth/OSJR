@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class NetWriter {
+import os.jr.hooks.model.GameClass;
+
+public class NetWriter extends GameClass{
+
+	public NetWriter() {
+		super(Hooks.classNames.get("NetWriter"));
+	}
 
 }

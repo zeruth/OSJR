@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class RSCanvas {
+import os.jr.hooks.model.GameClass;
+
+public class RSCanvas extends GameClass{
+
+	public RSCanvas() {
+		super(Hooks.classNames.get("RSCanvas"));
+	}
 
 }

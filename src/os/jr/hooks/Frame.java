@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Frame {
+import os.jr.hooks.model.GameClass;
+
+public class Frame extends GameClass{
+
+	public Frame() {
+		super(Hooks.classNames.get("Frame"));
+	}
 
 }

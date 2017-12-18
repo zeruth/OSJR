@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class GZipDecompressor {
+import os.jr.hooks.model.GameClass;
+
+public class GZipDecompressor extends GameClass{
+
+	public GZipDecompressor() {
+		super(Hooks.classNames.get("GZipDecompressor"));
+	}
 
 }

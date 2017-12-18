@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Renderable {
+import os.jr.hooks.model.GameClass;
+
+public class Renderable extends GameClass{
+
+	public Renderable() {
+		super(Hooks.classNames.get("Renderable"));
+	}
 
 }

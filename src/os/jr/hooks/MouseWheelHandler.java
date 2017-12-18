@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class MouseWheelHandler {
+import os.jr.hooks.model.GameClass;
+
+public class MouseWheelHandler extends GameClass{
+
+	public MouseWheelHandler() {
+		super(Hooks.classNames.get("MouseWheelHandler"));
+	}
 
 }

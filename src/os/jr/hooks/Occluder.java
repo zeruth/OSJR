@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Occluder {
+import os.jr.hooks.model.GameClass;
+
+public class Occluder extends GameClass{
+
+	public Occluder() {
+		super(Hooks.classNames.get("Occluder"));
+	}
 
 }

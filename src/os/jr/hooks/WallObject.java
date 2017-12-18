@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class WallObject {
+import os.jr.hooks.model.GameClass;
+
+public class WallObject extends GameClass{
+
+	public WallObject() {
+		super(Hooks.classNames.get("WallObject"));
+	}
 
 }

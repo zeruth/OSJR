@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class GrandExchangeEvent {
+import os.jr.hooks.model.GameClass;
+
+public class GrandExchangeEvent extends GameClass{
+
+	public GrandExchangeEvent() {
+		super(Hooks.classNames.get("GrandExchangeEvent"));
+	}
 
 }

@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Huffman {
+import os.jr.hooks.model.GameClass;
+
+public class Huffman extends GameClass{
+
+	public Huffman() {
+		super(Hooks.classNames.get("Huffman"));
+	}
 
 }

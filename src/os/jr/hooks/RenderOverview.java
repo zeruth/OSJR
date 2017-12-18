@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class RenderOverview {
+import os.jr.hooks.model.GameClass;
+
+public class RenderOverview extends GameClass{
+
+	public RenderOverview() {
+		super(Hooks.classNames.get("RenderOverview"));
+	}
 
 }

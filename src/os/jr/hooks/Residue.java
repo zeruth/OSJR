@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Residue {
+import os.jr.hooks.model.GameClass;
+
+public class Residue extends GameClass{
+
+	public Residue() {
+		super(Hooks.classNames.get("Residue"));
+	}
 
 }

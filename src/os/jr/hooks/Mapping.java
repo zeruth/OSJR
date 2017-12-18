@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Mapping {
+import os.jr.hooks.model.GameClass;
+
+public class Mapping extends GameClass{
+
+	public Mapping() {
+		super(Hooks.classNames.get("Mapping"));
+	}
 
 }

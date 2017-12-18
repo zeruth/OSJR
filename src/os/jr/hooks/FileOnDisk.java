@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class FileOnDisk {
+import os.jr.hooks.model.GameClass;
+
+public class FileOnDisk extends GameClass{
+
+	public FileOnDisk() {
+		super(Hooks.classNames.get("FileOnDisk"));
+	}
 
 }

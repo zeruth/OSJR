@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class NanoTimer {
+import os.jr.hooks.model.GameClass;
+
+public class NanoTimer extends GameClass{
+
+	public NanoTimer() {
+		super(Hooks.classNames.get("NanoTimer"));
+	}
 
 }

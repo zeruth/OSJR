@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class MessageNode {
+import os.jr.hooks.model.GameClass;
+
+public class MessageNode extends GameClass{
+
+	public MessageNode() {
+		super(Hooks.classNames.get("MessageNode"));
+	}
 
 }

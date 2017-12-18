@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class HashTable {
+import os.jr.hooks.model.GameClass;
+
+public class HashTable extends GameClass{
+
+	public HashTable() {
+		super(Hooks.classNames.get("HashTable"));
+	}
 
 }
