@@ -1,13 +1,10 @@
 package os.jr.ui;
 
-import java.awt.EventQueue;
 import java.io.IOException;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
-import org.eclipse.swt.widgets.Display;
 
 import os.jr.game.RSGame;
 import os.jr.hooks.Client;

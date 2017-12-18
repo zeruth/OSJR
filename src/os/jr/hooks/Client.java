@@ -1,6 +1,5 @@
 package os.jr.hooks;
 
-import os.jr.game.RSGame;
 import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.GameField;
 import os.jr.utils.Settings;

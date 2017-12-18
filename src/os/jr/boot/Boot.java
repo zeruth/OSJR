@@ -5,7 +5,6 @@ import javax.swing.JFrame;
 import os.jr.game.RSGame;
 import os.jr.hooks.Client;
 import os.jr.ui.SkillMonitor;
-import os.jr.ui.IndividualSkillMonitor;
 import os.jr.ui.Notes;
 import os.jr.utils.SettingsIo;
 
