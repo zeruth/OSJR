@@ -1,27 +1,18 @@
 package os.jr.hooks.updater;
 
 import os.jr.boot.Boot;
-import os.jr.game.Skill;
-import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
-import os.jr.hooks.Item;
-import os.jr.hooks.Node;
-import os.jr.hooks.Player;
 import os.jr.ui.SkillMonitor;
 import os.jr.ui.SystemTray;
 import os.jr.ui.IndividualSkillMonitor;
 import os.jr.ui.Notes;
-import os.jr.utils.Dumper;
 import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;
 
 public class HookUpdater {
-	public static Client client;
-	public static Node node;
 	public static long lastCacheRunTime = 0;
 	static long sleeptime = 150;
 	
-	public static Client c;
 
 	static Thread t = new Thread(new Runnable() {
 
@@ -29,7 +20,6 @@ public class HookUpdater {
 		@Override
 		public void run() {
 			Utils.makeXPforLevel();
-			c = Hooks.selector.client;
 			
 			while (true != false) {
 				{
@@ -49,8 +39,6 @@ public class HookUpdater {
 						lastCacheRunTime = System.currentTimeMillis() - cacheTimerStart;
 						//System.out.println("Time to run last Hooks cache: (ms) "+lastCacheRunTime);
 						
-						cycleDumpers();
-						
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -62,23 +50,6 @@ public class HookUpdater {
 	});
 	
 	public static void anyStateHooks() {
-		c.loginState = c.getLoginState();
-		c.gameState = c.getGameState();
-		c.CurrentWorld = c.getCurrentWorld();
-		c.Energy = c.getEnergy();
-		c.Weight = c.getWeight();
-		c.realLevels = c.getRealLevels();
-		c.currentLevels = c.getCurrentLevels();
-		c.experiences = c.getExperiences();
-		c.baseY = c.getBaseY();
-		c.baseX = c.getBaseX();
-		c.cameraX = c.getCameraX();
-		c.cameraY = c.getCameraY();
-		c.cameraZ = c.getCameraZ();
-		c.cameraPitch = c.getCameraPitch();
-		c.cameraYaw = c.getCameraYaw();
-		c.localPlayers = c.getLocalPlayers();
-		
 
 		if (Notes.frame!=null) {
 			if (Notes.getTextArea().getText().compareTo(Notes.notes)!=0) {
@@ -89,28 +60,9 @@ public class HookUpdater {
 	}
 	
 	public static void loggedInHooks() {
-		c = Hooks.selector.client;
-		if (c.isLoggedIn()) {
-			Boot.rsGame.changeName(c.getLocalPlayer().getName());
-			
-			Skill.getProgressedSkills();
 
-			if (SkillMonitor.frame!=null) {
-				Skill.updateStatMonitor();
-			}
-			for (IndividualSkillMonitor sm : IndividualSkillMonitor.frames) {
-				if (sm!=null) {
-					Skill.updateIndividualSkillPanel(sm);
-				}
-			}
-		} else {
-			Boot.rsGame.changeName(Boot.VERSION);
-		}
 	}
 	
-	public static void cycleDumpers() {	
-		Dumper.dumpLocalNPCS(c.getLocalNPCs());
-	}
 
 	public static void init() {
 		t.start();

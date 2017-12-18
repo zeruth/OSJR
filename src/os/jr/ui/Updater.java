@@ -9,8 +9,8 @@ import javax.swing.border.EmptyBorder;
 
 import org.eclipse.swt.widgets.Display;
 
+import os.jr.boot.Boot;
 import os.jr.game.RSGame;
-import os.jr.hooks.Client;
 import os.jr.utils.Utils;
 
 import java.awt.Color;
@@ -86,8 +86,8 @@ public class Updater extends JFrame {
 	public static int maximum = 0;
 	
 	public static void checkUpdate() {
-		if (Client.settings.gamePackSize == -1
-				|| Client.settings.gamePackSize != Utils.getFileSize(RSGame.LIVE_JAR_URL)
+		if (Boot.settings.gamePackSize == -1
+				|| Boot.settings.gamePackSize != Utils.getFileSize(RSGame.LIVE_JAR_URL)
 				|| Utils.localGamePackSize() != Utils.getFileSize(RSGame.LIVE_JAR_URL)) {
 			downloadRequired = true;
 		}

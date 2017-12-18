@@ -29,7 +29,6 @@ import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
 
 import os.jr.boot.Boot;
-import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
 import os.jr.hooks.updater.HookUpdater;
 import os.jr.ui.IndividualSkillMonitor;
@@ -101,10 +100,10 @@ public class RSGame extends JFrame implements AppletStub {
 	}
 	
 	public void initSettings() {
-		Client.settings = SettingsIo.loadSettings();
-		if (Client.settings == null) {
-			Client.settings = new Settings();
-			SettingsIo.saveSettings(Client.settings);
+		Boot.settings = SettingsIo.loadSettings();
+		if (Boot.settings == null) {
+			Boot.settings = new Settings();
+			SettingsIo.saveSettings(Boot.settings);
 		}
 	}
 	
