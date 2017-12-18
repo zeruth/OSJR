@@ -51,7 +51,7 @@ public class Updater extends JFrame {
 		
 		JLabel lblUpdatingGamepack = new JLabel("Updating Gamepack");
 		lblUpdatingGamepack.setForeground(Color.WHITE);
-		lblUpdatingGamepack.setBounds(125, 11, 119, 14);
+		lblUpdatingGamepack.setBounds(125, 11, 193, 14);
 		panel.add(lblUpdatingGamepack);
 		
 		progressBar = new JProgressBar();

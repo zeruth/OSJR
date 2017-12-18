@@ -91,8 +91,10 @@ public class RSGame extends JFrame implements AppletStub {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setupMenuBar();
 		initSettings();
-		systemTray = SystemTray.setupSystemTray();
-		setIconImage(systemTray.getTrayIcons()[0].getImage());
+		if (java.awt.SystemTray.isSupported()) {
+			systemTray = SystemTray.setupSystemTray();
+			setIconImage(systemTray.getTrayIcons()[0].getImage());
+		}
 		getContentPane().setLayout(null);
 		classnodes = new Hashtable<String, ClassNode>();
 		getAppletStubData();
