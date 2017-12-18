@@ -1,15 +1,17 @@
 package os.jr.ui;
 
-import java.awt.EventQueue;
 import java.io.IOException;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+<<<<<<< HEAD
 import org.eclipse.swt.widgets.Display;
 
 import os.jr.boot.Boot;
+=======
+>>>>>>> c67326b2e43ecc272bdb66aa180400aa25336e61
 import os.jr.game.RSGame;
 import os.jr.utils.Utils;
 
@@ -51,7 +53,7 @@ public class Updater extends JFrame {
 		
 		JLabel lblUpdatingGamepack = new JLabel("Updating Gamepack");
 		lblUpdatingGamepack.setForeground(Color.WHITE);
-		lblUpdatingGamepack.setBounds(125, 11, 119, 14);
+		lblUpdatingGamepack.setBounds(125, 11, 193, 14);
 		panel.add(lblUpdatingGamepack);
 		
 		progressBar = new JProgressBar();

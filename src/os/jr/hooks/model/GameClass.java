@@ -15,15 +15,7 @@ public class GameClass {
 	public GameClass(String classIdentifier) {
 		this.className = classIdentifier;
 		try {
-			try {
-				RSGame.classLoader.loadClass(classIdentifier);
-			} catch (ClassNotFoundException e) {
-				System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
-				System.out.println("Running without hooks.");
-				Boot.outdated = true;
-				e.printStackTrace();
-				return;
-			}
+			RSGame.classLoader.loadClass(classIdentifier);
 			for (Field f : RSGame.classLoader.loadClass(classIdentifier).getFields()) {
 				this.allFields.put(f.getName(), new GameField(f.getName(), classIdentifier));
 			}
@@ -37,7 +29,6 @@ public class GameClass {
 
 	public Object getFieldValue(String identifier, Object reference) {
 		Class<?> c = null;
-
 		try {
 			c = RSGame.classLoader.loadClass(className);
 			GameField gf = fields.get(identifier);
@@ -47,22 +38,7 @@ public class GameClass {
 				return ((int) f.get(reference) * gf.multiplier);
 			}
 			return f.get(reference);
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (NoSuchFieldException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SecurityException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (NullPointerException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return c;

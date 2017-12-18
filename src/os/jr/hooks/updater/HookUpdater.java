@@ -2,8 +2,11 @@ package os.jr.hooks.updater;
 
 import os.jr.boot.Boot;
 import os.jr.hooks.Hooks;
+<<<<<<< HEAD
+=======
+import os.jr.hooks.Node;
+>>>>>>> c67326b2e43ecc272bdb66aa180400aa25336e61
 import os.jr.ui.SkillMonitor;
-import os.jr.ui.SystemTray;
 import os.jr.ui.IndividualSkillMonitor;
 import os.jr.ui.Notes;
 import os.jr.utils.SettingsIo;
