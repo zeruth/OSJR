@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Coordinates {
+import os.jr.hooks.model.GameClass;
+
+public class Coordinates extends GameClass{
+
+	public Coordinates() {
+		super(Hooks.classNames.get("Coordinates"));
+	}
 
 }

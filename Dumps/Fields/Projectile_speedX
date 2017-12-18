@@ -1,0 +1,5 @@
+{
+  "className": "Projectile",
+  "fieldName": "o",
+  "refactoredName": "speedX"
+}

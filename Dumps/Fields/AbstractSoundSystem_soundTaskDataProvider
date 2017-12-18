@@ -1,0 +1,5 @@
+{
+  "className": "AbstractSoundSystem",
+  "fieldName": "s",
+  "refactoredName": "soundTaskDataProvider"
+}

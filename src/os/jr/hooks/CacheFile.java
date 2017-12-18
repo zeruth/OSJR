@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class CacheFile {
+import os.jr.hooks.model.GameClass;
+
+public class CacheFile extends GameClass{
+
+	public CacheFile() {
+		super(Hooks.classNames.get("CacheFile"));
+	}
 
 }

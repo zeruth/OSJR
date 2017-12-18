@@ -1,0 +1,5 @@
+{
+  "className": "Buffer",
+  "fieldName": "e",
+  "refactoredName": "crc32Table"
+}

@@ -1,0 +1,5 @@
+{
+  "className": "HashTableIterator",
+  "fieldName": "k",
+  "refactoredName": "head"
+}

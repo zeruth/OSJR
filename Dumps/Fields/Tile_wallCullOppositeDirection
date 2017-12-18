@@ -1,0 +1,6 @@
+{
+  "className": "Tile",
+  "fieldName": "q",
+  "refactoredName": "wallCullOppositeDirection",
+  "multiplier": 37190099
+}

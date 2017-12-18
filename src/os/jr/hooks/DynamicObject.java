@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class DynamicObject {
+import os.jr.hooks.model.GameClass;
+
+public class DynamicObject extends GameClass{
+
+	public DynamicObject() {
+		super(Hooks.classNames.get("DynamicObject"));
+	}
 
 }

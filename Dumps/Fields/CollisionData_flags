@@ -1,0 +1,5 @@
+{
+  "className": "CollisionData",
+  "fieldName": "aw",
+  "refactoredName": "flags"
+}

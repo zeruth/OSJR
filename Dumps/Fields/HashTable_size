@@ -1,0 +1,5 @@
+{
+  "className": "HashTable",
+  "fieldName": "a",
+  "refactoredName": "size"
+}

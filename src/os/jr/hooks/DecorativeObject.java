@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class DecorativeObject {
+import os.jr.hooks.model.GameClass;
+
+public class DecorativeObject extends GameClass{
+
+	public DecorativeObject() {
+		super(Hooks.classNames.get("DecorativeObject"));
+	}
 
 }

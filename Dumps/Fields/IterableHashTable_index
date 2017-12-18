@@ -1,0 +1,5 @@
+{
+  "className": "IterableHashTable",
+  "fieldName": "u",
+  "refactoredName": "index"
+}

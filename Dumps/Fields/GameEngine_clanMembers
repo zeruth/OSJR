@@ -1,0 +1,5 @@
+{
+  "className": "GameEngine",
+  "fieldName": "nh",
+  "refactoredName": "clanMembers"
+}

@@ -5,7 +5,7 @@ import os.jr.hooks.model.GameClass;
 public class AttackOption extends GameClass{
 
 	public AttackOption() {
-		super("cz");
+		super(Hooks.classNames.get("AttackOption"));
 	}
 
 }

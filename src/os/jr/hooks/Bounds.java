@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Bounds {
+import os.jr.hooks.model.GameClass;
+
+public class Bounds extends GameClass{
+
+	public Bounds() {
+		super(Hooks.classNames.get("Bounds"));
+	}
 
 }

@@ -1,0 +1,5 @@
+{
+  "className": "CacheFile",
+  "fieldName": "u",
+  "refactoredName": "writePayload"
+}

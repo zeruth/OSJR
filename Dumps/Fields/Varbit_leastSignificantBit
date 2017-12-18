@@ -1,0 +1,6 @@
+{
+  "className": "Varbit",
+  "fieldName": "k",
+  "refactoredName": "leastSignificantBit",
+  "multiplier": 442861105
+}

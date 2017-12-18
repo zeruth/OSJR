@@ -1,0 +1,5 @@
+{
+  "className": "KeyFocusListener",
+  "fieldName": "cx",
+  "refactoredName": "KeyHandler_keyCodes"
+}

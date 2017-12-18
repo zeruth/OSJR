@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class CodeBook {
+import os.jr.hooks.model.GameClass;
+
+public class CodeBook extends GameClass{
+
+	public CodeBook() {
+		super(Hooks.classNames.get("CodeBook"));
+	}
 
 }

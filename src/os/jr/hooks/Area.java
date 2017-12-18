@@ -5,7 +5,7 @@ import os.jr.hooks.model.GameClass;
 public class Area extends GameClass{
 
 	public Area() {
-		super("if");
+		super(Hooks.classNames.get("Area"));
 	}
 
 }

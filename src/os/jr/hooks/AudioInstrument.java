@@ -5,7 +5,7 @@ import os.jr.hooks.model.GameClass;
 public class AudioInstrument extends GameClass{
 
 	public AudioInstrument() {
-		super("db");
+		super(Hooks.classNames.get("AudioInstrument"));
 	}
 
 }

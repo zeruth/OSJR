@@ -1,0 +1,5 @@
+{
+  "className": "NetWriter",
+  "fieldName": "w",
+  "refactoredName": "packetBufferNodes"
+}

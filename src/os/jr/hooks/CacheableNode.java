@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class CacheableNode {
+import os.jr.hooks.model.GameClass;
+
+public class CacheableNode extends GameClass{
+
+	public CacheableNode() {
+		super(Hooks.classNames.get("CacheableNode"));
+	}
 
 }

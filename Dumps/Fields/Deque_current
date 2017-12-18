@@ -1,0 +1,5 @@
+{
+  "className": "Deque",
+  "fieldName": "w",
+  "refactoredName": "current"
+}

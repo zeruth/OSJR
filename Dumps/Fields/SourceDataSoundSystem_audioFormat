@@ -1,0 +1,5 @@
+{
+  "className": "SourceDataSoundSystem",
+  "fieldName": "a",
+  "refactoredName": "audioFormat"
+}

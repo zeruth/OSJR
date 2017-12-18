@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Deque {
+import os.jr.hooks.model.GameClass;
+
+public class Deque extends GameClass{
+
+	public Deque() {
+		super(Hooks.classNames.get("Deque"));
+	}
 
 }

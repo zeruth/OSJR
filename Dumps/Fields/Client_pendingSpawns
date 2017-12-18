@@ -1,0 +1,5 @@
+{
+  "className": "Client",
+  "fieldName": "ik",
+  "refactoredName": "pendingSpawns"
+}

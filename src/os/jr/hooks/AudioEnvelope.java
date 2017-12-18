@@ -5,7 +5,7 @@ import os.jr.hooks.model.GameClass;
 public class AudioEnvelope extends GameClass{
 
 	public AudioEnvelope() {
-		super("dh");
+		super(Hooks.classNames.get("AudioEnvelope"));
 	}
 
 }

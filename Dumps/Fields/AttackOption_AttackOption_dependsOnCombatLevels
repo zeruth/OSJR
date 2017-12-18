@@ -1,0 +1,5 @@
+{
+  "className": "AttackOption",
+  "fieldName": "a",
+  "refactoredName": "AttackOption_dependsOnCombatLevels"
+}

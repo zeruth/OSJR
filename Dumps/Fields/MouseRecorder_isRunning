@@ -1,0 +1,5 @@
+{
+  "className": "MouseRecorder",
+  "fieldName": "a",
+  "refactoredName": "isRunning"
+}

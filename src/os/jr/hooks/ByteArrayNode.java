@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class ByteArrayNode {
+import os.jr.hooks.model.GameClass;
+
+public class ByteArrayNode extends GameClass{
+
+	public ByteArrayNode() {
+		super(Hooks.classNames.get("ByteArrayNode"));
+	}
 
 }

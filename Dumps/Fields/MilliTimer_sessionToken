@@ -1,0 +1,5 @@
+{
+  "className": "MilliTimer",
+  "fieldName": "bs",
+  "refactoredName": "sessionToken"
+}

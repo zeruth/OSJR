@@ -1,0 +1,5 @@
+{
+  "className": "IndexedSprite",
+  "fieldName": "z",
+  "refactoredName": "offsetY"
+}

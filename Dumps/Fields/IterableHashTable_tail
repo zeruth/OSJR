@@ -1,0 +1,5 @@
+{
+  "className": "IterableHashTable",
+  "fieldName": "k",
+  "refactoredName": "tail"
+}

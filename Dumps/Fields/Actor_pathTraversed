@@ -1,0 +1,5 @@
+{
+  "className": "Actor",
+  "fieldName": "ci",
+  "refactoredName": "pathTraversed"
+}

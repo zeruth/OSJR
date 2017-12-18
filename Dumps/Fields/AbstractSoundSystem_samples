@@ -1,0 +1,5 @@
+{
+  "className": "AbstractSoundSystem",
+  "fieldName": "n",
+  "refactoredName": "samples"
+}

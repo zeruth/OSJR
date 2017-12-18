@@ -1,0 +1,5 @@
+{
+  "className": "NetWriter",
+  "fieldName": "z",
+  "refactoredName": "packetBuffer"
+}

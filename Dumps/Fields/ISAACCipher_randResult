@@ -1,0 +1,5 @@
+{
+  "className": "ISAACCipher",
+  "fieldName": "u",
+  "refactoredName": "randResult"
+}

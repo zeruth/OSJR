@@ -14,6 +14,8 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 
 import os.jr.game.RSGame;
+import os.jr.hooks.Hooks;
+import os.jr.hooks.model.GameClass;
 import os.jr.ui.Updater;
 
 public class Utils {
@@ -45,6 +47,64 @@ public class Utils {
 		} finally {
 			conn.disconnect();
 		}
+	}
+	
+	public static GameClass getClassbyName(String name) {
+		if (name.compareTo("AbstractByteBuffer")==0) {
+			return Hooks.selector.abstractByteBuffer;
+		} else if (name.compareTo("AbstractIntegerNode0")==0) {
+			return Hooks.selector.abstractIntegerNode0;
+		} else if (name.compareTo("AbstractSoundSystem")==0) {
+			return Hooks.selector.abstractSoundSystem;
+		} else if (name.compareTo("Actor")==0) {
+			return Hooks.selector.actor;
+		} else if (name.compareTo("Area")==0) {
+			return Hooks.selector.area;
+		} else if (name.compareTo("AttackOption")==0) {
+			return Hooks.selector.attackOption;
+		} else if (name.compareTo("AudioEnvelope")==0) {
+			return Hooks.selector.audioEnvelope;
+		} else if (name.compareTo("AudioInstrument")==0) {
+			return Hooks.selector.audioInstrument;
+		} else if (name.compareTo("BaseVarType")==0) {
+			return Hooks.selector.baseVarType;
+		} else if (name.compareTo("BoundingBox")==0) {
+			return Hooks.selector.boundingBox;
+		} else if (name.compareTo("BoundingBox2D")==0) {
+			return Hooks.selector.boundingBox2D;
+		} else if (name.compareTo("BoundingBox3D")==0) {
+			return Hooks.selector.boundingBox3D;
+		} else if (name.compareTo("Bounds")==0) {
+			return Hooks.selector.bounds;
+		} else if (name.compareTo("Buffer")==0) {
+			return Hooks.selector.buffer;
+		} else if (name.compareTo("BufferProvider")==0) {
+			return Hooks.selector.bufferProvider;
+		} else if (name.compareTo("BuildType")==0) {
+			return Hooks.selector.buildType;
+		} else if (name.compareTo("ByteArrayNode")==0) {
+			return Hooks.selector.byteArrayNode;
+		} else if (name.compareTo("CacheableNode")==0) {
+			return Hooks.selector.cacheableNode;
+		} else if (name.compareTo("CacheFile")==0) {
+			return Hooks.selector.cacheFile;
+		} else if (name.compareTo("ChatLineBuffer")==0) {
+			return Hooks.selector.chatLineBuffer;
+		} else if (name.compareTo("ClanMember")==0) {
+			return Hooks.selector.clanMember;
+		} else if (name.compareTo("ClassInfo")==0) {
+			return Hooks.selector.classInfo;
+		} else if (name.compareTo("Client")==0) {
+			return Hooks.selector.client;
+		} else if (name.compareTo("ClientPacket")==0) {
+			return Hooks.selector.clientPacket;
+		} else if (name.compareTo("CodeBook")==0) {
+			return Hooks.selector.codeBook;
+		} else if (name.compareTo("CollisionData")==0) {
+			return Hooks.selector.collisionData;
+		}
+
+		return null;
 	}
 
 	public static String getParamName(String param) {

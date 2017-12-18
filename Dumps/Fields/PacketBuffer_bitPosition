@@ -1,0 +1,6 @@
+{
+  "className": "PacketBuffer",
+  "fieldName": "x",
+  "refactoredName": "bitPosition",
+  "multiplier": -1022606895
+}

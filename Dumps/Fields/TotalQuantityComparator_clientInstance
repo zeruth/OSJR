@@ -1,0 +1,5 @@
+{
+  "className": "TotalQuantityComparator",
+  "fieldName": "ar",
+  "refactoredName": "clientInstance"
+}

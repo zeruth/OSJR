@@ -1,0 +1,5 @@
+{
+  "className": "FileOnDisk",
+  "fieldName": "a",
+  "refactoredName": "file"
+}

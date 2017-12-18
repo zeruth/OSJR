@@ -1,0 +1,5 @@
+{
+  "className": "Region",
+  "fieldName": "bc",
+  "refactoredName": "TILE_MASK_2D"
+}

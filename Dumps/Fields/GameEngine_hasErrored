@@ -1,0 +1,5 @@
+{
+  "className": "GameEngine",
+  "fieldName": "t",
+  "refactoredName": "hasErrored"
+}

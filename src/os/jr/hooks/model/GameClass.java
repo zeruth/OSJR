@@ -7,17 +7,18 @@ import os.jr.boot.Boot;
 import os.jr.game.RSGame;
 
 public class GameClass {
-	public String className;
+	public String obfuscatedName;
+	public String refactoredName;
 	public HashMap<String, GameField> fields = new HashMap<String, GameField>();
 	public HashMap<String, GameField> allFields = new HashMap<String, GameField>();
 	public Object reference;
 
-	public GameClass(String classIdentifier) {
-		this.className = classIdentifier;
+	public GameClass(String obfuscatedName) {
+		this.obfuscatedName = obfuscatedName;
 		try {
-			RSGame.classLoader.loadClass(classIdentifier);
-			for (Field f : RSGame.classLoader.loadClass(classIdentifier).getFields()) {
-				this.allFields.put(f.getName(), new GameField(f.getName(), classIdentifier));
+			RSGame.classLoader.loadClass(obfuscatedName);
+			for (Field f : RSGame.classLoader.loadClass(obfuscatedName).getFields()) {
+				this.allFields.put(f.getName(), new GameField(f.getName(), obfuscatedName));
 			}
 		} catch (SecurityException | ClassNotFoundException e) {
 			System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
@@ -30,7 +31,7 @@ public class GameClass {
 	public Object getFieldValue(String identifier, Object reference) {
 		Class<?> c = null;
 		try {
-			c = RSGame.classLoader.loadClass(className);
+			c = RSGame.classLoader.loadClass(obfuscatedName);
 			GameField gf = fields.get(identifier);
 			Field f = c.getDeclaredField(gf.fieldName);
 			f.setAccessible(true);

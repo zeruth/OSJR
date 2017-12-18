@@ -1,0 +1,5 @@
+{
+  "className": "IndexStoreActionHandler",
+  "fieldName": "w",
+  "refactoredName": "IndexStoreActionHandler_responseQueue"
+}

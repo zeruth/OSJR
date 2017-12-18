@@ -1,0 +1,5 @@
+{
+  "className": "ObjectComposition",
+  "fieldName": "z",
+  "refactoredName": "cachedModels"
+}

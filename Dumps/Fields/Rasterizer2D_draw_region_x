@@ -1,0 +1,5 @@
+{
+  "className": "Rasterizer2D",
+  "fieldName": "ax",
+  "refactoredName": "draw_region_x"
+}

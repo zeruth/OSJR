@@ -1,0 +1,5 @@
+{
+  "className": "GZipDecompressor",
+  "fieldName": "a",
+  "refactoredName": "inflator"
+}

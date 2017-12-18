@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class BoundingBox {
+import os.jr.hooks.model.GameClass;
+
+public class BoundingBox extends GameClass{
+
+	public BoundingBox() {
+		super(Hooks.classNames.get("BoundingBox"));
+	}
 
 }

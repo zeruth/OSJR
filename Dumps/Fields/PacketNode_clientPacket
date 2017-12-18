@@ -1,0 +1,5 @@
+{
+  "className": "PacketNode",
+  "fieldName": "a",
+  "refactoredName": "clientPacket"
+}

@@ -1,0 +1,6 @@
+{
+  "className": "MouseWheelHandler",
+  "fieldName": "a",
+  "refactoredName": "rotation",
+  "multiplier": -303729091
+}

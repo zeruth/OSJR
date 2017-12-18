@@ -1,0 +1,6 @@
+{
+  "className": "MouseInput",
+  "fieldName": "s",
+  "refactoredName": "MouseHandler_lastPressedX",
+  "multiplier": -384786981
+}

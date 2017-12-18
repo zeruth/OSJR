@@ -5,7 +5,7 @@ import os.jr.hooks.model.GameClass;
 public class AbstractByteBuffer extends GameClass{
 
 	public AbstractByteBuffer() {
-		super("gd");
+		super(Hooks.classNames.get("AbstractByteBuffer"));
 	}
 
 }

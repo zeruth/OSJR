@@ -1,0 +1,5 @@
+{
+  "className": "Sequence",
+  "fieldName": "x",
+  "refactoredName": "interleaveLeave"
+}

@@ -1,0 +1,5 @@
+{
+  "className": "AudioInstrument",
+  "fieldName": "e",
+  "refactoredName": "pitchModifier"
+}

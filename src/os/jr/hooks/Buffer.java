@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Buffer {
+import os.jr.hooks.model.GameClass;
+
+public class Buffer extends GameClass{
+
+	public Buffer() {
+		super(Hooks.classNames.get("Buffer"));
+	}
 
 }

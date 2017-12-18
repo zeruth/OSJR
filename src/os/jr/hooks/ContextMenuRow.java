@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class ContextMenuRow {
+import os.jr.hooks.model.GameClass;
+
+public class ContextMenuRow extends GameClass{
+
+	public ContextMenuRow() {
+		super(Hooks.classNames.get("ContextMenuRow"));
+	}
 
 }

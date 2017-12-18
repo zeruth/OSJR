@@ -1,0 +1,5 @@
+{
+  "className": "ItemComposition",
+  "fieldName": "c",
+  "refactoredName": "itemSpriteCache"
+}

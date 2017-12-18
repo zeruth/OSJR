@@ -1,0 +1,6 @@
+{
+  "className": "MouseInput",
+  "fieldName": "l",
+  "refactoredName": "mouseLastPressedTimeMillis",
+  "multiplier": -8309155304464128139
+}

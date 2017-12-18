@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class ClientPacket {
+import os.jr.hooks.model.GameClass;
+
+public class ClientPacket extends GameClass{
+
+	public ClientPacket() {
+		super(Hooks.classNames.get("ClientPacket"));
+	}
 
 }

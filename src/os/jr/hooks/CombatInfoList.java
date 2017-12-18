@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class CombatInfoList {
+import os.jr.hooks.model.GameClass;
+
+public class CombatInfoList extends GameClass{
+
+	public CombatInfoList() {
+		super(Hooks.classNames.get("CombatInfoList"));
+	}
 
 }

@@ -5,7 +5,7 @@ import os.jr.hooks.model.GameClass;
 public class Actor extends GameClass{
 
 	public Actor() {
-		super("br");
+		super(Hooks.classNames.get("Actor"));
 	}
 
 }

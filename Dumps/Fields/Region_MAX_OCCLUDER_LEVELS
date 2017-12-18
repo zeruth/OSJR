@@ -1,0 +1,5 @@
+{
+  "className": "Region",
+  "fieldName": "ai",
+  "refactoredName": "MAX_OCCLUDER_LEVELS"
+}

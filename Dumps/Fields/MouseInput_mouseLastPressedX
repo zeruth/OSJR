@@ -1,0 +1,6 @@
+{
+  "className": "MouseInput",
+  "fieldName": "r",
+  "refactoredName": "mouseLastPressedX",
+  "multiplier": -1046301689
+}

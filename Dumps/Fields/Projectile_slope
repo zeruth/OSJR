@@ -1,0 +1,6 @@
+{
+  "className": "Projectile",
+  "fieldName": "g",
+  "refactoredName": "slope",
+  "multiplier": -45498235
+}

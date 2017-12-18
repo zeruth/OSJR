@@ -1,0 +1,5 @@
+{
+  "className": "FloorUnderlayDefinition",
+  "fieldName": "a",
+  "refactoredName": "underlay_ref"
+}

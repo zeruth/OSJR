@@ -1,0 +1,6 @@
+{
+  "className": "ClientPacket",
+  "fieldName": "ck",
+  "refactoredName": "packetLength",
+  "multiplier": -1101711967
+}

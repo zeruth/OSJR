@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class Enum {
+import os.jr.hooks.model.GameClass;
+
+public class Enum extends GameClass{
+
+	public Enum() {
+		super(Hooks.classNames.get("Enum"));
+	}
 
 }

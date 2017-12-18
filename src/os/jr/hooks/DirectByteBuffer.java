@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class DirectByteBuffer {
+import os.jr.hooks.model.GameClass;
+
+public class DirectByteBuffer extends GameClass{
+
+	public DirectByteBuffer() {
+		super(Hooks.classNames.get("DirectByteBuffer"));
+	}
 
 }

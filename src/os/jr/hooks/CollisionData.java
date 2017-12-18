@@ -1,5 +1,11 @@
 package os.jr.hooks;
 
-public class CollisionData {
+import os.jr.hooks.model.GameClass;
+
+public class CollisionData extends GameClass{
+
+	public CollisionData() {
+		super(Hooks.classNames.get("CollisionData"));
+	}
 
 }

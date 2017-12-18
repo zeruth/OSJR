@@ -1,0 +1,5 @@
+{
+  "className": "AttackOption",
+  "fieldName": "w",
+  "refactoredName": "AttackOption_alwaysRightClick"
+}

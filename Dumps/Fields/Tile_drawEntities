@@ -1,0 +1,5 @@
+{
+  "className": "Tile",
+  "fieldName": "i",
+  "refactoredName": "drawEntities"
+}

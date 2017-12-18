@@ -1,0 +1,5 @@
+{
+  "className": "ItemComposition",
+  "fieldName": "x",
+  "refactoredName": "itemModelCache"
+}
