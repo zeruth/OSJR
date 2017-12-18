@@ -24,7 +24,6 @@ public class Boot extends JFrame {
 		rsGame.run();
 		SkillMonitor.init();
 		Notes.init();
-
 	}
 	
 	public static void initSettings() {

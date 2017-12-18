@@ -29,7 +29,6 @@ import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
 
 import os.jr.boot.Boot;
-import os.jr.boot.Updater;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
 import os.jr.hooks.updater.HookUpdater;
@@ -37,6 +36,7 @@ import os.jr.ui.IndividualSkillMonitor;
 import os.jr.ui.Notes;
 import os.jr.ui.SkillMonitor;
 import os.jr.ui.SystemTray;
+import os.jr.ui.Updater;
 import os.jr.utils.Settings;
 import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;
@@ -96,7 +96,7 @@ public class RSGame extends JFrame implements AppletStub {
 		getContentPane().setLayout(null);
 		classnodes = new Hashtable<String, ClassNode>();
 		getAppletStubData();
-		Updater.main();
+		Updater.checkUpdate();
 		loadJar();
 	}
 	

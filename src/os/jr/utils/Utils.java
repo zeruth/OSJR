@@ -13,8 +13,8 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 
-import os.jr.boot.Updater;
 import os.jr.game.RSGame;
+import os.jr.ui.Updater;
 
 public class Utils {
 
