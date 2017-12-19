@@ -1,11 +1,15 @@
 package os.jr.hooks;
 
-import os.jr.hooks.model.GameClass;
-
-public class ByteArrayNode extends GameClass{
+public class ByteArrayNode extends Node{
+	
+	public static final String byteArray = "byteArray";
 
 	public ByteArrayNode() {
 		super(Hooks.classNames.get("ByteArrayNode"));
+	}
+	
+	public byte[] getByteArray() {
+		return (byte[]) Hooks.selector.byteArrayNode.fields.get(byteArray).getValue(reference);
 	}
 
 }

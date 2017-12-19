@@ -4,8 +4,9 @@ import os.jr.hooks.model.GameClass;
 
 public class FileOnDisk extends GameClass{
 
-	public FileOnDisk() {
+	public FileOnDisk(Object reference) {
 		super(Hooks.classNames.get("FileOnDisk"));
+		this.reference = reference;
 	}
 
 }

@@ -43,7 +43,7 @@ public class Hooks {
 	public BufferProvider bufferProvider = new BufferProvider();
 	public BuildType buildType = new BuildType();
 	public ByteArrayNode byteArrayNode = new ByteArrayNode();
-	public CacheableNode cacheableNode = new CacheableNode();
+	public CacheableNode cacheableNode = new CacheableNode(null);
 	public CacheFile cacheFile = new CacheFile();
 	public ChatLineBuffer chatLineBuffer = new ChatLineBuffer();
 	public ClanMember clanMember = new ClanMember();
@@ -64,7 +64,7 @@ public class Hooks {
 	public DynamicObject dynamicObject = new DynamicObject();
 	public Enum enum_ = new Enum();
 	public FaceNormal faceNormal = new FaceNormal();
-	public FileOnDisk fileOnDisk = new FileOnDisk();
+	public FileOnDisk fileOnDisk = new FileOnDisk(null);
 	public FileRequest fileRequest = new FileRequest();
 	public FileSystem fileSystem = new FileSystem();
 	public Floor1 floor1 = new Floor1();
@@ -113,7 +113,7 @@ public class Hooks {
 	public MachineInfo machineInfo = new MachineInfo();
 	public MainBufferProvider mainBufferProvider = new MainBufferProvider();
 	public Mapping mapping = new Mapping();
-	public MessageNode messageNode = new MessageNode();
+	public MessageNode messageNode = new MessageNode(null);
 	public MilliTimer milliTimer = new MilliTimer();
 	public Model model = new Model();
 	public ModelData modelData = new ModelData();
