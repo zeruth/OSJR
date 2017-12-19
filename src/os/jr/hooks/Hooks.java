@@ -30,9 +30,9 @@ public class Hooks {
 	public AbstractIntegerNode0 abstractIntegerNode0 = new AbstractIntegerNode0() {};
 	public AbstractSoundSystem abstractSoundSystem = new AbstractSoundSystem();
 	public Actor actor = new Actor();
-	public Area area = new Area();
+	public Area area = new Area(null);
 	public AttackOption attackOption = new AttackOption();
-	public AudioEnvelope audioEnvelope = new AudioEnvelope();
+	public AudioEnvelope audioEnvelope = new AudioEnvelope(null);
 	public AudioInstrument audioInstrument = new AudioInstrument();
 	public BaseVarType baseVarType = new BaseVarType();
 	public BoundingBox boundingBox = new BoundingBox();
