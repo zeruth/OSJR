@@ -80,6 +80,7 @@ public class Client extends GameClass{
 	public static final String playerOptions = "playerOptions";
 	public static final String lastSelectedItemName = "lastSelectedItemName";
 	public static final String playerOptionsPriorities = "playerOptionsPriorities";
+	public static final String groundItemDeque = "groundItemDeque";
 	public static final String pendingSpawns = "pendingSpawns";
 	public static final String projectiles = "projectiles";
 	public static final String graphicsObjectDeque = "graphicsObjectDeque";
