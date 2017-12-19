@@ -54,7 +54,7 @@ public class Hooks {
 	public CollisionData collisionData = new CollisionData();
 	public CombatInfo1 combatInfo1 = new CombatInfo1();
 	public CombatInfo2 combatInfo2 = new CombatInfo2();
-	public CombatInfoList combatInfoList = new CombatInfoList();
+	public CombatInfoList combatInfoList = new CombatInfoList(null);
 	public ContextMenuRow contextMenuRow = new ContextMenuRow();
 	public Coordinates coordinates = new Coordinates();
 	public DecorativeObject decorativeObject = new DecorativeObject();
