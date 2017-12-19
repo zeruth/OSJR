@@ -8,4 +8,8 @@ public class Renderable extends GameClass{
 		super(Hooks.classNames.get("Renderable"));
 	}
 
+	public Renderable(String className) {
+		super(className);
+	}
+
 }

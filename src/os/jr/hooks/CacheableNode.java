@@ -8,4 +8,8 @@ public class CacheableNode extends GameClass{
 		super(Hooks.classNames.get("CacheableNode"));
 	}
 
+	public CacheableNode(String className) {
+		super(className);
+	}
+
 }

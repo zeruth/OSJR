@@ -1,6 +1,8 @@
 package os.jr.hooks.updater;
 
 import os.jr.boot.Boot;
+import os.jr.hooks.Client;
+import os.jr.hooks.Hooks;
 import os.jr.ui.Notes;
 import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;
@@ -56,6 +58,10 @@ public class HookUpdater {
 	}
 	
 	public static void loggedInHooks() {
+		Client c = Hooks.selector.client;
+		if (c.isLoggedOn()) {
+			System.out.println(c.getLocalPlayer().getX());
+		}
 
 	}
 	

@@ -26,8 +26,8 @@ public class Hooks {
 	
 	public static HashMap<String, String> classNames = new HashMap<String, String>();
 
-	public AbstractByteBuffer abstractByteBuffer = new AbstractByteBuffer();
-	public AbstractIntegerNode0 abstractIntegerNode0 = new AbstractIntegerNode0();
+	public AbstractByteBuffer abstractByteBuffer = new AbstractByteBuffer() {};
+	public AbstractIntegerNode0 abstractIntegerNode0 = new AbstractIntegerNode0() {};
 	public AbstractSoundSystem abstractSoundSystem = new AbstractSoundSystem();
 	public Actor actor = new Actor();
 	public Area area = new Area();
@@ -48,7 +48,7 @@ public class Hooks {
 	public ChatLineBuffer chatLineBuffer = new ChatLineBuffer();
 	public ClanMember clanMember = new ClanMember();
 	public ClassInfo classInfo = new ClassInfo();
-	public Client client = new Client();
+	public Client client = new Client(Boot.rootReference);
 	public ClientPacket clientPacket = new ClientPacket();
 	public CodeBook codeBook = new CodeBook();
 	public CollisionData collisionData = new CollisionData();
@@ -134,7 +134,7 @@ public class Hooks {
 	public PacketNode packetNode = new PacketNode();
 	public Parameters parameters = new Parameters();
 	public PendingSpawn pendingSpawn = new PendingSpawn();
-	public Player player = new Player();
+	public Player player = new Player(null);
 	public PlayerComposition playerComposition = new PlayerComposition();
 	public Preferences preferences = new Preferences();
 	public Projectile projectile = new Projectile();

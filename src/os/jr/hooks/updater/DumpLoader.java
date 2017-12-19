@@ -35,7 +35,7 @@ public class DumpLoader {
 							gameClass.fields.put(fieldDump.refactoredName, new GameField(fieldDump.fieldName, gameClass.obfuscatedName, fieldDump.multiplier.intValue()));	
 						}
 
-					//	System.out.println("Added "+fieldDump.className+":"+fieldDump.refactoredName);
+						System.out.println("Added "+fieldDump.className+":"+fieldDump.refactoredName);
 						Hooks.rsFieldCount++;
 					}
 				} catch (Exception e) {

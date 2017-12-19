@@ -1,11 +1,16 @@
 package os.jr.hooks;
 
-import os.jr.hooks.model.GameClass;
+public class Player extends Actor{
+	
+	public static final String name = "name";
 
-public class Player extends GameClass{
-
-	public Player() {
+	public Player(Object reference) {
 		super(Hooks.classNames.get("Player"));
+		this.reference=reference;
+	}
+	
+	public String getName() {
+		return (String) fields.get(name).getValue(reference);
 	}
 
 }

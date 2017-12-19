@@ -8,4 +8,7 @@ public class Node extends GameClass{
 		super(Hooks.classNames.get("Node"));
 	}
 
+	public Node(String className) {
+		super(className);
+	}
 }
