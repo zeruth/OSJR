@@ -91,7 +91,7 @@ public class Hooks {
 	public Huffman huffman = new Huffman();
 	public Identifiers identifiers = new Identifiers();
 	public Ignore ignore = new Ignore();
-	public IndexData indexData = new IndexData();
+	public IndexData indexData = new IndexData(null);
 	public IndexDataBase indexDataBase = new IndexDataBase();
 	public IndexedSprite indexedSprite = new IndexedSprite();
 	public IndexFile indexFile = new IndexFile();
@@ -124,7 +124,7 @@ public class Hooks {
 	public NetWriter netWriter = new NetWriter();
 	public Node node = new Node();
 	public Node2LinkedList node2LinkedList = new Node2LinkedList();
-	public NodeCache nodeCache = new NodeCache();
+	public NodeCache nodeCache = new NodeCache(null);
 	public NPC npc = new NPC();
 	public NPCComposition npcComposition = new NPCComposition();
 	public ObjectComposition objectComposition = new ObjectComposition();
@@ -155,7 +155,7 @@ public class Hooks {
 	public Signlink signlink = new Signlink();
 	public Size size = new Size();
 	public SoundEffect soundEffect = new SoundEffect();
-	public SoundEffect3 soundEffect3 = new SoundEffect3();
+	public SoundEffect3 soundEffect3 = new SoundEffect3(null);
 	public SoundTask soundTask = new SoundTask();
 	public SourceDataSoundSystem sourceDataSoundSystem = new SourceDataSoundSystem();
 	public Spotanim spotanim = new Spotanim();

@@ -1,11 +1,19 @@
 package os.jr.hooks;
 
-import os.jr.hooks.model.GameClass;
-
-public class BoundingBox extends GameClass{
+public class BoundingBox extends Node{
+	
+	public static final String indexInterfaces = "indexInterfaces";
 
 	public BoundingBox() {
 		super(Hooks.classNames.get("BoundingBox"));
+	}
+	
+	public BoundingBox(String string) {
+		super(string);
+	}
+
+	public IndexData getIndexInterfaces() {
+		return new IndexData(Hooks.selector.boundingBox.fields.get(indexInterfaces).getValue(reference));
 	}
 
 }
