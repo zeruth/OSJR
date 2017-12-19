@@ -4,8 +4,9 @@ import os.jr.hooks.model.GameClass;
 
 public class Deque extends GameClass{
 
-	public Deque() {
+	public Deque(Object reference) {
 		super(Hooks.classNames.get("Deque"));
+		this.reference = reference;
 	}
 
 }

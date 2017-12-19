@@ -4,8 +4,9 @@ import os.jr.hooks.model.GameClass;
 
 public class HashTable extends GameClass{
 
-	public HashTable() {
+	public HashTable(Object reference) {
 		super(Hooks.classNames.get("HashTable"));
+		this.reference = reference;
 	}
 
 }

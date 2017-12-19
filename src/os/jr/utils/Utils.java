@@ -353,6 +353,14 @@ public class Utils {
 			return Hooks.selector.world;
 		} else if (name.compareTo("WorldMapData")==0) {
 			return Hooks.selector.worldMapData;
+		} else if (name.compareTo("WorldMapSectionBase")==0) {
+			return Hooks.selector.worldMapSectionBase;
+		} else if (name.compareTo("WorldMapType1")==0) {
+			return Hooks.selector.worldMapType1;
+		} else if (name.compareTo("WorldMapType2")==0) {
+			return Hooks.selector.worldMapType2;
+		} else if (name.compareTo("WorldMapType3")==0) {
+			return Hooks.selector.worldMapType3;
 		}
 
 		return null;

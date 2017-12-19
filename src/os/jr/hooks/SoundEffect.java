@@ -4,8 +4,9 @@ import os.jr.hooks.model.GameClass;
 
 public class SoundEffect extends GameClass{
 
-	public SoundEffect() {
+	public SoundEffect(Object reference) {
 		super(Hooks.classNames.get("SoundEffect"));
+		this.reference = reference;
 	}
 
 }

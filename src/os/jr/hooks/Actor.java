@@ -1,7 +1,5 @@
 package os.jr.hooks;
 
-import os.jr.hooks.model.GameField;
-
 public class Actor extends Renderable{
 	
 	public static final String x = "x";

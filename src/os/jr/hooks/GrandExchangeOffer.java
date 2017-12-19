@@ -4,8 +4,9 @@ import os.jr.hooks.model.GameClass;
 
 public class GrandExchangeOffer extends GameClass{
 
-	public GrandExchangeOffer() {
+	public GrandExchangeOffer(Object reference) {
 		super(Hooks.classNames.get("GrandExchangeOffer"));
+		this.reference = reference;
 	}
 
 }

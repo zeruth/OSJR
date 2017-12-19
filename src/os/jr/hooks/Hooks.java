@@ -31,7 +31,7 @@ public class Hooks {
 	public AbstractSoundSystem abstractSoundSystem = new AbstractSoundSystem();
 	public Actor actor = new Actor();
 	public Area area = new Area(null);
-	public AttackOption attackOption = new AttackOption();
+	public AttackOption attackOption = new AttackOption(null);
 	public AudioEnvelope audioEnvelope = new AudioEnvelope(null);
 	public AudioInstrument audioInstrument = new AudioInstrument();
 	public BaseVarType baseVarType = new BaseVarType();
@@ -51,14 +51,14 @@ public class Hooks {
 	public Client client = new Client(Boot.rootReference);
 	public ClientPacket clientPacket = new ClientPacket();
 	public CodeBook codeBook = new CodeBook();
-	public CollisionData collisionData = new CollisionData();
+	public CollisionData collisionData = new CollisionData(null);
 	public CombatInfo1 combatInfo1 = new CombatInfo1();
 	public CombatInfo2 combatInfo2 = new CombatInfo2();
 	public CombatInfoList combatInfoList = new CombatInfoList(null);
 	public ContextMenuRow contextMenuRow = new ContextMenuRow();
 	public Coordinates coordinates = new Coordinates();
 	public DecorativeObject decorativeObject = new DecorativeObject();
-	public Deque deque = new Deque();
+	public Deque deque = new Deque(null);
 	public DirectByteBuffer directByteBuffer = new DirectByteBuffer();
 	public DState dState = new DState();
 	public DynamicObject dynamicObject = new DynamicObject();
@@ -75,22 +75,22 @@ public class Hooks {
 	public Frame frame = new Frame();
 	public FrameMap frameMap = new FrameMap();
 	public Frames frames = new Frames();
-	public Friend friend = new Friend();
+	public Friend friend = new Friend(null);
 	public FriendLoginUpdate friendLoginUpdate = new FriendLoginUpdate();
 	public GameEngine gameEngine = new GameEngine();
 	public GameObject gameObject = new GameObject();
 	public GrandExchangeEvent grandExchangeEvent = new GrandExchangeEvent();
 	public GrandExchangeEvents grandExchangeEvents = new GrandExchangeEvents();
-	public GrandExchangeOffer grandExchangeOffer = new GrandExchangeOffer();
+	public GrandExchangeOffer grandExchangeOffer = new GrandExchangeOffer(null);
 	public Graphics3D graphics3D = new Graphics3D();
 	public GraphicsObject graphicsObject = new GraphicsObject();
 	public GroundObject groundObject = new GroundObject();
 	public GZipDecompressor gzipDecompressor = new GZipDecompressor();
-	public HashTable hashTable = new HashTable();
+	public HashTable hashTable = new HashTable(null);
 	public HashTableIterator hashTableIterator = new HashTableIterator();
 	public Huffman huffman = new Huffman();
 	public Identifiers identifiers = new Identifiers();
-	public Ignore ignore = new Ignore();
+	public Ignore ignore = new Ignore(null);
 	public IndexData indexData = new IndexData(null);
 	public IndexDataBase indexDataBase = new IndexDataBase();
 	public IndexedSprite indexedSprite = new IndexedSprite();
@@ -125,7 +125,7 @@ public class Hooks {
 	public Node node = new Node();
 	public Node2LinkedList node2LinkedList = new Node2LinkedList();
 	public NodeCache nodeCache = new NodeCache(null);
-	public NPC npc = new NPC();
+	public NPC npc = new NPC(null);
 	public NPCComposition npcComposition = new NPCComposition();
 	public ObjectComposition objectComposition = new ObjectComposition();
 	public Occluder occluder = new Occluder();
@@ -154,12 +154,12 @@ public class Hooks {
 	public Sequence sequence = new Sequence();
 	public Signlink signlink = new Signlink();
 	public Size size = new Size();
-	public SoundEffect soundEffect = new SoundEffect();
+	public SoundEffect soundEffect = new SoundEffect(null);
 	public SoundEffect3 soundEffect3 = new SoundEffect3(null);
 	public SoundTask soundTask = new SoundTask();
 	public SourceDataSoundSystem sourceDataSoundSystem = new SourceDataSoundSystem();
 	public Spotanim spotanim = new Spotanim();
-	public SpritePixels spritePixels = new SpritePixels();
+	public SpritePixels spritePixels = new SpritePixels(null);
 	public Task task = new Task();
 	public Texture texture = new Texture();
 	public TextureProvider textureProvider = new TextureProvider();
@@ -177,6 +177,10 @@ public class Hooks {
 	public WidgetNode widgetNode = new WidgetNode();
 	public World world = new World();
 	public WorldMapData worldMapData = new WorldMapData();
+	public WorldMapSectionBase worldMapSectionBase = new WorldMapSectionBase();
+	public WorldMapType1 worldMapType1 = new WorldMapType1();
+	public WorldMapType2 worldMapType2 = new WorldMapType2();
+	public WorldMapType3 worldMapType3 = new WorldMapType3();
 	
 
 	public static void init() {

@@ -4,8 +4,9 @@ import os.jr.hooks.model.GameClass;
 
 public class CollisionData extends GameClass{
 
-	public CollisionData() {
+	public CollisionData(Object reference) {
 		super(Hooks.classNames.get("CollisionData"));
+		this.reference = reference;
 	}
 
 }
