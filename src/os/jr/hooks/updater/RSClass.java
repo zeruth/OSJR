@@ -1,4 +1,4 @@
-package net.runelite.injector;
+package os.jr.hooks.updater;
 
 public class RSClass {
 

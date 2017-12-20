@@ -1,10 +1,8 @@
 package os.jr.hooks.updater;
 
-import os.jr.boot.Boot;
 import os.jr.game.RSGame;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
-import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;
 
 public class HookUpdater {

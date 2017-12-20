@@ -1,14 +1,14 @@
-package os.jr.boot;
+package os.jr.launcher;
 
 import javax.swing.JFrame;
 
 import os.jr.game.RSGame;
 
-public class Boot extends JFrame {
+public class OSJRLauncher extends JFrame {
 	
-	public Boot() {
-		setVisible(true);
-		setSize(800,600);
+	public OSJRLauncher() {
+		setSize(781, 542);
+		setTitle("OS-JR Standalone Launcher");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 
@@ -17,8 +17,8 @@ public class Boot extends JFrame {
 
 	public static void main(String[] args) {
 
-		Boot b = new Boot();
-		Boot.rsGame.run();
+		OSJRLauncher b = new OSJRLauncher();
+		OSJRLauncher.rsGame.run();
 		b.addApplet();
 
 	}
@@ -26,6 +26,7 @@ public class Boot extends JFrame {
 	private void addApplet() {
 		add(RSGame.applet);
 		validate();
+		setVisible(true);
 	}
 
 }

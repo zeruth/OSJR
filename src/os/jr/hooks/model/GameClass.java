@@ -3,7 +3,6 @@ package os.jr.hooks.model;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 
-import os.jr.boot.Boot;
 import os.jr.game.RSGame;
 
 public class GameClass {

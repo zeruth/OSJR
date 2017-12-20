@@ -391,8 +391,8 @@ public class Client extends GameClass{
 		return (boolean) Hooks.selector.client.fields.get(socketError).getValue(reference);
 	}
 	
-	public HashMap getFontsMap() {
-		return (HashMap) Hooks.selector.client.fields.get(fontsMap).getValue(reference);
+	public HashMap<?, ?> getFontsMap() {
+		return (HashMap<?, ?>) Hooks.selector.client.fields.get(fontsMap).getValue(reference);
 	}
 	
 	public int getBaseY() {

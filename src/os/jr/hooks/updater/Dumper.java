@@ -1,10 +1,5 @@
 package os.jr.hooks.updater;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import os.jr.hooks.model.RSClass;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;

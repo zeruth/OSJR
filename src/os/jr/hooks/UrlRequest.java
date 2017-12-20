@@ -1,6 +1,5 @@
 package os.jr.hooks;
 
-import os.jr.boot.Boot;
 import os.jr.game.RSGame;
 import os.jr.hooks.model.GameClass;
 

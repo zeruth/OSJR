@@ -2,7 +2,6 @@ package os.jr.hooks.model;
 
 import java.lang.reflect.Field;
 
-import os.jr.boot.Boot;
 import os.jr.game.RSGame;
 
 public class GameField {

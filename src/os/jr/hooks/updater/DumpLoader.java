@@ -24,7 +24,7 @@ public class DumpLoader {
 	public static int rsClassCount = 0;
 	public static HookDump[] rsClasses;
 	
-	public static boolean cleanDumpConvert = true;
+	public static boolean dumpHooksToTxt = false;
 
 	public static void loadFieldDumps () {
 		
@@ -45,7 +45,7 @@ public class DumpLoader {
 					
 					GameClass gameClass = Utils.getClassbyName(fieldDump.className);
 					if (gameClass!=null) {
-						if (fieldDump.multiplier.intValue()==1) {
+						if (fieldDump.multiplier==null) {
 							gameClass.fields.put(fieldDump.refactoredName, new GameField(fieldDump.fieldName, gameClass.obfuscatedName));	
 						} else {
 							gameClass.fields.put(fieldDump.refactoredName, new GameField(fieldDump.fieldName, gameClass.obfuscatedName, fieldDump.multiplier.intValue()));	
@@ -55,10 +55,10 @@ public class DumpLoader {
 						rsFieldCount++;
 					}
 				} catch (Exception e) {
-					//e.printStackTrace();
+					e.printStackTrace();
 				}
 		}
-		if (cleanDumpConvert)
+		if (dumpHooksToTxt)
 		Dumper.saveOSJRHooksDump(rsClasses);
 		Utils.sendDebugPrintln("Loaded "+rsFieldCount+" RSField compositions. - "+((dir.listFiles().length+1)-rsFieldCount+" RSField compositions not loaded."));
 	}
@@ -90,7 +90,6 @@ public class DumpLoader {
 
 	public static void loadClassDumps() {
 		File dir = new File("./Hooks/Classes/");
-		File fieldsDir = new File("./Hooks/Fields/");
 		rsClasses = new HookDump[dir.listFiles().length];
 		int classCount = 0;
 		for (File f : dir.listFiles()) {
@@ -101,7 +100,7 @@ public class DumpLoader {
 					rsClassCount++;
 					Gson gson = new GsonBuilder().create();
 					RSClass rsClass = gson.fromJson(reader, RSClass.class);
-					if (cleanDumpConvert) {
+					if (dumpHooksToTxt) {
 						System.out.println(rsClasses[classCount]==null);
 						rsClasses[classCount] = new HookDump();
 						rsClasses[classCount].rsClass = rsClass;
