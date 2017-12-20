@@ -3,8 +3,6 @@ package os.jr.utils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import os.jr.ui.Notes;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -89,17 +87,6 @@ public class SettingsIo {
 	public static void updateGamePackSize(int size) {
 		Settings s = loadSettings();
 		s.gamePackSize = size;
-		saveSettings(s);
-	}
-	
-	public static String loadNotes(){
-		Settings s = loadSettings();
-		return s.notes;
-	}
-	
-	public static void SaveNotes(){
-		Settings s = loadSettings();
-		s.notes = Notes.notes;
 		saveSettings(s);
 	}
 

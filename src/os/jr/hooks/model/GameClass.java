@@ -23,7 +23,7 @@ public class GameClass {
 		} catch (SecurityException | ClassNotFoundException e) {
 			System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
 			System.out.println("Running without hooks.");
-			Boot.outdated = true;
+			RSGame.outdated = true;
 			e.printStackTrace();
 		}
 	}

@@ -1,9 +1,9 @@
 package os.jr.hooks.updater;
 
 import os.jr.boot.Boot;
+import os.jr.game.RSGame;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
-import os.jr.ui.Notes;
 import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;
 
@@ -21,8 +21,7 @@ public class HookUpdater {
 			
 			while (true != false) {
 				{
-					if (Boot.outdated) {
-						Boot.rsGame.changeName("Hookless-Mode");
+					if (RSGame.outdated) {
 						t.stop();
 					}
 					try {
@@ -48,19 +47,22 @@ public class HookUpdater {
 	});
 	
 	public static void anyStateHooks() {
-
-		if (Notes.frame!=null) {
-			if (Notes.getTextArea().getText().compareTo(Notes.notes)!=0) {
-				Notes.notes=Notes.getTextArea().getText();
-				SettingsIo.SaveNotes();
-			}
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+
 	}
 	
 	public static void loggedInHooks() {
 		Client c = Hooks.selector.client;
-		if (c.isLoggedOn()) {
-			System.out.println(c.getLocalPlayer().getX());
+		try {
+			if (c.isLoggedOn()) {
+				System.out.println(c.getLocalPlayer().getX());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 
 	}

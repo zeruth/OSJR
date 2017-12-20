@@ -9,7 +9,6 @@ package os.jr.game;
 import java.applet.Applet;
 import java.applet.AppletContext;
 import java.applet.AppletStub;
-import java.awt.Graphics;
 import java.io.DataInputStream;
 import java.io.File;
 import java.net.MalformedURLException;
@@ -24,27 +23,16 @@ import java.util.jar.JarFile;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.swing.JFrame;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
 
-import os.jr.boot.Boot;
 import os.jr.hooks.Hooks;
+import os.jr.hooks.updater.DumpLoader;
 import os.jr.hooks.updater.HookUpdater;
-import os.jr.ui.IndividualSkillMonitor;
-import os.jr.ui.Notes;
-import os.jr.ui.SkillMonitor;
-import os.jr.ui.SystemTray;
 import os.jr.ui.Updater;
 import os.jr.utils.Settings;
 import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.JRadioButtonMenuItem;
 
 /**
  * A program that loads a jar file into a jframe
@@ -54,11 +42,14 @@ import javax.swing.JRadioButtonMenuItem;
  *
  */
 @SuppressWarnings("serial")
-public class RSGame extends JFrame implements AppletStub {
+public class RSGame implements AppletStub {
+
+	public static Object rootReference;
+	public static boolean outdated = false;
 
 	private final String MAIN_CLASS = "client";
 
-	private final boolean VERBOSE = true;
+	private final boolean VERBOSE = false;
 
 	private URL CODE_BASE;
 	private URL DOCUMENT_BASE;
@@ -71,110 +62,49 @@ public class RSGame extends JFrame implements AppletStub {
 
 	public static URL LIVE_JAR_URL;
 
-	static Applet applet;
+	public static Applet applet = new Applet();
 
 	private final Pattern REGEX_CODE = Pattern.compile("code=(.*) ");
 	private final Pattern REGEX_ARCHIVE = Pattern.compile("archive=(.*) ");
 	private final Pattern REGEX_PARAMETER = Pattern.compile("<param name=\"([^\\s]+)\"\\s+value=\"([^>]*)\">");
 
 	private HashMap<String, String> PARAMETERS = new HashMap<>();
-	
+
 	private Hashtable<String, ClassNode> classnodes = new Hashtable<String, ClassNode>();
-	
+
+	public static Settings settings;
+
 	public static URLClassLoader classLoader;
-	
+
 	public static java.awt.SystemTray systemTray;
 
+	public static final String VERSION = "0.5.7";
+	public static final int HOOK_REVISION = 160;
 
 	public RSGame() {
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setupMenuBar();
 		initSettings();
-		if (java.awt.SystemTray.isSupported()) {
-			systemTray = SystemTray.setupSystemTray();
-			setIconImage(systemTray.getTrayIcons()[0].getImage());
-		}
-		getContentPane().setLayout(null);
 		classnodes = new Hashtable<String, ClassNode>();
 		getAppletStubData();
 		Updater.checkUpdate();
 		loadJar();
 	}
-	
-	public void initSettings() {
-		Boot.settings = SettingsIo.loadSettings();
-		if (Boot.settings == null) {
-			Boot.settings = new Settings();
-			SettingsIo.saveSettings(Boot.settings);
-		}
-	}
-	
-	public void setupMenuBar() {
-		JMenuBar menuBar = new JMenuBar();
-		setJMenuBar(menuBar);
-		
-		JMenu mnFile = new JMenu("OS-JR");
-		menuBar.add(mnFile);
-		
-		JMenuItem mntmHideMenu = new JMenuItem("Hide Menu");
-		mntmHideMenu.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				menuBar.setVisible(false);
-			}
-		});
-		mnFile.add(mntmHideMenu);
-		
-		JRadioButtonMenuItem rdbtnmntmAlwaysOnTop = new JRadioButtonMenuItem("Always on top");
-		rdbtnmntmAlwaysOnTop.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				if (rdbtnmntmAlwaysOnTop.isSelected()) {
-					setAlwaysOnTop(true);
-				} else {
-					setAlwaysOnTop(false);
-				}
-			}
-		});
-		mnFile.add(rdbtnmntmAlwaysOnTop);
-		
-		JMenuItem mntmExit = new JMenuItem("Exit");
-		mnFile.add(mntmExit);
-		
-		JMenu mnTools = new JMenu("Tools");
-		menuBar.add(mnTools);
-		
-		JMenuItem mntmStatMonitor = new JMenuItem("All Skill Monitor");
-		mntmStatMonitor.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				SkillMonitor.frame.setVisible(true);
-			}
-		});
-		mnTools.add(mntmStatMonitor);
-		
-		JMenuItem mntmNotes = new JMenuItem("Notes");
-		mntmNotes.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Notes.frame.setVisible(true);
-			}
-		});
-		
-		JMenuItem mntmIndividualSkillMonitor = new JMenuItem("Individual Skill Monitor");
-		mntmIndividualSkillMonitor.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				IndividualSkillMonitor sm = new IndividualSkillMonitor();
-				sm.setVisible(true);
-				IndividualSkillMonitor.frames[IndividualSkillMonitor.skillFrameCount] = sm;
-				IndividualSkillMonitor.skillFrameCount++;
-			}
-		});
-		mnTools.add(mntmIndividualSkillMonitor);
 
-		mnTools.add(mntmNotes);
+	public void initSettings() {
+		if (!SettingsIo.dir.exists()) {
+			SettingsIo.dir.mkdir();
+		}
+		if (!SettingsIo.file.exists()) {
+			SettingsIo.createBlankDb();
+		}
+
+		settings = SettingsIo.loadSettings();
 	}
 
 	public void run() {
 		classLoader = null;
 		try {
 			classLoader = new URLClassLoader(new URL[] { gamepackFile.toURI().toURL() });
+
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} finally {
@@ -190,18 +120,19 @@ public class RSGame extends JFrame implements AppletStub {
 					return;
 				try {
 					applet = (Applet) clientClass.newInstance();
+					RSGame.rootReference = (Object) applet;
 					addApplet();
 				} catch (InstantiationException | IllegalAccessException e) {
 					e.printStackTrace();
 				} finally {
-					setSize(785, 525);
-					setVisible(true);
+
 				}
+				DumpLoader.loadClassDumps();
 				Hooks.init();
+				DumpLoader.loadFieldDumps();
 				HookUpdater.init();
-				this.setSize(781,565);
-				System.out.println("\nOS-JR "+ Boot.VERSION + " Loaded.");
-				System.out.println("Hook Revision "+Boot.HOOK_REVISION);
+				Utils.sendDebugPrintln("OS-JR " + VERSION + " Loaded.");
+				Utils.sendDebugPrintln("Hook Revision " + HOOK_REVISION);
 			}
 		}
 	}
@@ -243,7 +174,6 @@ public class RSGame extends JFrame implements AppletStub {
 
 	private void addApplet() {
 		applet.setStub(this);
-		getContentPane().add(applet, null);
 		applet.setSize(766, 503);
 		applet.init();
 		applet.start();
@@ -275,14 +205,6 @@ public class RSGame extends JFrame implements AppletStub {
 			applet.setSize(x, y);
 		}
 	}
-	
-	@Override
-	public void paint(Graphics g) {
-		super.paint(g);
-		if (applet != null) {
-			applet.setSize(getContentPane().getWidth(), getContentPane().getHeight());
-		}
-	}
 
 	@Override
 	public AppletContext getAppletContext() {
@@ -308,7 +230,7 @@ public class RSGame extends JFrame implements AppletStub {
 	public boolean isActive() {
 		return true;
 	}
-	
+
 	public void loadJar() {
 		try {
 			@SuppressWarnings("resource")
@@ -323,19 +245,10 @@ public class RSGame extends JFrame implements AppletStub {
 					classnodes.put(cn.name, cn);
 				}
 			}
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 	}
-	
-	public void changeName(String name) {
-		
-		if (name == null) {
-			this.setTitle("OS-JR" + " " + Utils.getUTCTime());
-		} else {
-			this.setTitle("OS-JR [" + name + "]" + " " + Utils.getUTCTime());
-		}
 
-	}
 }

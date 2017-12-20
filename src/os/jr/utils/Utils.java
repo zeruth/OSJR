@@ -365,6 +365,10 @@ public class Utils {
 
 		return null;
 	}
+	
+	public static void sendDebugPrintln(String text) {
+		System.out.println("[OSJR] "+text);
+	}
 
 	public static String getParamName(String param) {
 		try {
@@ -446,6 +450,7 @@ public class Utils {
 				}
 			}
 			SettingsIo.updateGamePackSize(size);
+			Updater.downloadComplete = true;
 		}
 	}
 	

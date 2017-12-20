@@ -14,6 +14,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import os.jr.boot.Boot;
+import os.jr.game.RSGame;
 import os.jr.hooks.model.RSClass;
 import os.jr.utils.Settings;
 import os.jr.utils.Utils;
@@ -21,9 +22,6 @@ import os.jr.utils.Utils;
 public class Hooks {
 
 	public static Hooks selector;
-	public static int rsFieldCount = 0;
-	public static int rsClassCount = 0;
-	
 	public static HashMap<String, String> classNames = new HashMap<String, String>();
 
 	public AbstractByteBuffer abstractByteBuffer = new AbstractByteBuffer() {};
@@ -48,7 +46,7 @@ public class Hooks {
 	public ChatLineBuffer chatLineBuffer = new ChatLineBuffer();
 	public ClanMember clanMember = new ClanMember();
 	public ClassInfo classInfo = new ClassInfo();
-	public Client client = new Client(Boot.rootReference);
+	public Client client = new Client(RSGame.rootReference);
 	public ClientPacket clientPacket = new ClientPacket();
 	public CodeBook codeBook = new CodeBook();
 	public CollisionData collisionData = new CollisionData(null);
@@ -185,41 +183,14 @@ public class Hooks {
 
 	public static void init() {
 		try {
-			loadClassDump();
 			selector = new Hooks();
 		} catch (Exception e) {
 			System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
 			System.out.println("Running without hooks.");
-			Boot.outdated = true;
+			RSGame.outdated = true;
 			e.printStackTrace();
 		}
 
-	}
-
-	public static void loadClassDump() {
-		File dir = new File("./Dumps/Classes/");
-		for (File f : dir.listFiles()) {
-			InputStream inputStream;
-			try {
-				inputStream = new FileInputStream(f);
-				try (Reader reader = new InputStreamReader(inputStream, "UTF-8")) {
-					rsClassCount++;
-					Gson gson = new GsonBuilder().create();
-					RSClass rsClass = gson.fromJson(reader, RSClass.class);
-					classNames.put(rsClass.refactoredName, rsClass.obfuscatedName);
-				} catch (UnsupportedEncodingException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-		}
 	}
 
 }

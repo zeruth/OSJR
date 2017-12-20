@@ -1,6 +1,7 @@
 package os.jr.hooks;
 
 import os.jr.boot.Boot;
+import os.jr.game.RSGame;
 import os.jr.hooks.model.GameClass;
 
 public class UrlRequest extends GameClass{
@@ -14,7 +15,7 @@ public class UrlRequest extends GameClass{
 	public Player getLocalPlayer() {
 
 		Player p = Hooks.selector.player;
-		p.reference = fields.get(localPlayer).getValue(Boot.rootReference);
+		p.reference = fields.get(localPlayer).getValue(RSGame.rootReference);
 		return p;
 	}
 

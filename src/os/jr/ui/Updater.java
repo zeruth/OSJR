@@ -4,7 +4,6 @@ import java.io.IOException;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import os.jr.boot.Boot;
 import os.jr.game.RSGame;
 import os.jr.utils.Utils;
 import java.awt.Color;
@@ -69,7 +68,8 @@ public class Updater extends JFrame {
 
 			try {
 				Utils.downloadGamePack();
-				downloadComplete = true;
+				downloadRequired=false;
+				downloadComplete=true;
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -80,8 +80,8 @@ public class Updater extends JFrame {
 	public static int maximum = 0;
 	
 	public static void checkUpdate() {
-		if (Boot.settings.gamePackSize == -1
-				|| Boot.settings.gamePackSize != Utils.getFileSize(RSGame.LIVE_JAR_URL)
+		if (RSGame.settings.gamePackSize == -1
+				|| RSGame.settings.gamePackSize != Utils.getFileSize(RSGame.LIVE_JAR_URL)
 				|| Utils.localGamePackSize() != Utils.getFileSize(RSGame.LIVE_JAR_URL)) {
 			downloadRequired = true;
 		}
