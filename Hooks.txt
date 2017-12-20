@@ -1,0 +1,1553 @@
+Hook Revision 160
+
+
+{AbstractByteBuffer: gd}
+directBufferUnavailable: w
+
+{AbstractIntegerNode0: do}
+int1: z
+
+{AbstractSoundSystem: dn}
+offset: i, 578551261
+samples: n
+soundTaskDataProvider: s
+
+{Actor: br}
+actionAnimationDisable: bz, 1371068499
+actionFrame: bf, 944368229
+angle: ak, -1662683967
+animation: bw, 1823864565
+combatInfoList: bc
+graphic: bh, -1732957069
+graphicsDelay: by, 844238417
+hitsplatCycles: ar
+hitsplatTypes: ao
+idlePoseAnimation: ax, 135804315
+inSequence: ah
+interacting: bp, -156297857
+npcCycle: br, -1830190809
+orientation: cp, -878372439
+overhead: ai
+overheadTextCyclesRemaining: az, 1918381959
+pathTraversed: ci
+pathX: cj
+pathY: cq
+poseAnimation: bq, -647845853
+poseFrame: be, -1237351081
+queueSize: cv, -979915637
+x: ad, 1951012149
+y: ag, -959431109
+
+{Area: if}
+areaSpriteCache: k
+mapAreaType: w
+name: f
+spriteId: z, 1034066741
+
+{AttackOption: cz}
+AttackOption_alwaysRightClick: w
+AttackOption_dependsOnCombatLevels: a
+AttackOption_hidden: k
+AttackOption_leftClickWhereAvailable: e
+id: u, -1676481437
+mapscene: fo
+
+{AudioEnvelope: dh}
+amplitude: j
+durations: w
+end: u
+form: z
+max: c
+phaseIndex: f
+phases: e
+segments: a
+start: k
+step: g
+ticks: t
+
+{AudioInstrument: db}
+delayDecay: s
+delays: h
+delayTime: c
+duration: o
+filter: n
+filterEnvelope: y
+NOISE: l
+offset: r
+oscillatorDelays: x
+oscillatorPitch: j
+oscillatorVolume: g
+phases: b
+pitch: a
+pitchBaseSteps: p
+pitchModifier: e
+pitchModifierAmplitude: k
+pitchSteps: v
+release: t
+samples: i
+SINE: m
+volume: w
+volumeMultiplier: u
+volumeMultiplierAmplitude: z
+volumeSteps: d
+
+{BaseVarType: u}
+font_p12full: ea
+id: u, -436300871
+id2: k, 826185209
+INTEGER: a
+LONG: w
+STRING: e
+
+{BoundingBox: j}
+indexInterfaces: cy
+
+{BoundingBox2D: g}
+color: u, 811326853
+plane: iy, -1321200933
+xMax: e, -1796622757
+xMin: a, -1617776623
+yMax: k, -841368133
+yMin: w, -904869015
+
+{BoundingBox3D: x}
+color: t, 840368185
+int1: a, 1399164583
+int2: w, 1793077055
+int3: e, 1975799011
+int4: k, 1467756151
+int5: u, -1302896507
+int6: z, 839033671
+
+{Bounds: kr}
+spritePixels: g
+
+{Buffer: gh}
+crc32Table: e
+crc64Table: u
+offset: w, 328573213
+payload: a
+
+{BufferProvider: kt}
+height: u, 205368253
+pixels: e
+width: k, -1870118989
+
+{BuildType: il}
+BUILD_LIVE: k
+identifier: u
+LIVE: e
+ordinal: z, 175058789
+RC: a
+WIP: w
+
+{ByteArrayNode: hv}
+byteArray: a
+
+{CacheableNode: gi}
+next: cg
+previous: co
+
+{CacheFile: dv}
+accessFile: a
+capacity: j, -1754338581505271593
+length: g, 32181713884337277
+position: f, 1092840870758656945
+readPayload: w
+writePayload: u
+
+{ChatLineBuffer: ct}
+length: e, -1771803705
+lines: w
+
+{ClanMember: bu}
+rank: k
+username: a
+world: e, 65229773
+
+{ClassInfo: kb}
+args: f
+count: w, 1480288181
+errorIdentifiers: k
+fields: u
+methods: t
+type: e
+
+{Client: client}
+audioEffects: oc
+baseY: ee, -1694947901
+boostedSkillLevels: if
+cachedNPCs: dm
+cachedPlayers: ie
+chatCycle: lh, 254134351
+clanChatName: np
+clanChatOwner: nl
+collisionMaps: w
+componentTable: kb
+cursorState: hl, 52368887
+cycleCntr: lx, -1965739811
+destinationX: na, -710720663
+destinationY: ni, -118830161
+displayFps: ba
+energy: kx, -1863294619
+flags: bc, -600424845
+fontsMap: ey
+friendCount: pp, 379628735
+friends: qq
+gameCycle: bt, 400517435
+gameDrawingMode: mv, 1192519963
+gameState: bh, -41679833
+grandExchangeOffers: qn
+graphicsObjectDeque: iv
+groundItemDeque: io
+hintArrowNpcTargetIdx: br, 1297669925
+hintArrowOffsetX: cv, -1413170751
+hintArrowOffsetY: cj, 1628051803
+hintArrowPlayerTargetIdx: ch, -392377251
+hintArrowTargetType: bo, 1519630183
+hintArrowType: cb, -1138049719
+hintArrowX: cp, -288982181
+hintArrowY: cf, -645003167
+ignoreCount: qt, 1957516805
+ignores: qz
+interfaceItemTriggers: lt
+isDynamicRegion: fl
+isMembers: be
+isMenuOpen: ip
+isResized: mw
+itemSelectionState: jp, 1247988347
+js5State: cr, 443603509
+languageId: bw, -628562359
+lastSelectedItemName: it
+loadingStage: cw, -868419915
+localInteractingIndex: ig, 273517695
+loginState: dw, -1576936849
+lowMemory: bx
+mapAngle: gb, -1215179141
+mapIcons: ne
+menuActionParams0: je
+menuActionParams1: jf
+menuBooleanArray: jj
+menuIdentifiers: jr
+menuOptionCount: jg, -1716599453
+menuOptions: jn
+menuTargets: jh
+menuTypes: jq
+mouseCrosshair: hs, 1535720689
+mouseLastLastPressedTimeMillis: by, 12100145674618081
+mouseWheelRotation: lk, -2097279347
+npcAttackOption: ce
+npcIndexesCount: df, 469759311
+npcIndices: dq
+numberMenuOptions: kz
+pendingNpcFlagsCount: dp, -1005396313
+pendingNpcFlagsIndices: eu
+pendingSpawns: ik
+playerAttackOption: ci
+playerMenuTypes: ia
+playerOptions: in
+playerOptionsPriorities: ib
+projectiles: is
+publicChatMode: ms, 981875525
+realSkillLevels: ic
+rights: ks, 810022409
+scale: pu, 967296413
+screenX: hq, 1559491565
+screenY: ht, 277812439
+skillExperiences: iw
+socketError: ed
+socketType: bn, 402349077
+spellSelected: jb
+viewportHeight: pd, -123028359
+viewportWidth: pa, -1020819321
+Viewport_xOffset: pn, 1916496795
+Viewport_yOffset: pv, 789289861
+weight: kg, -297847855
+widgetBoundsHeight: mb
+widgetBoundsWidth: mr
+widgetCount: mn, 1871303889
+widgetFlags: mt
+widgetPositionX: mi
+widgetPositionY: mf
+widgetRoot: kr, 634425425
+world: bb, -516348683
+
+{ClientPacket: fo}
+menuY: jc, 139833421
+packetId: cm, 300628027
+packetLength: ck, -1101711967
+
+{CodeBook: cd}
+dimensions: a
+entries: w
+entryLengths: e
+valueVector: u
+
+{CollisionData: fp}
+flags: aw
+height: ac, -1670453825
+width: an, 1646832785
+x: at, 906965333
+y: ap, 1899582203
+
+{CombatInfo1: ch}
+cycle: a, 1601973829
+health: e, 664186193
+healthRatio: w, 1616408329
+int2: k, 104636013
+
+{CombatInfo2: ir}
+healthScale: y, -500589715
+spriteCache: k
+
+{CombatInfoList: go}
+current: w
+node: a
+
+{CombatInfoListHolder: cq}
+combatInfo1: k
+combatInfo2: e
+
+{ContextMenuRow: cw}
+highMemory: z
+identifier: k, 1578872715
+option: u
+param0: a, 571443005
+param1: w, 715253505
+type: e, 1066703259
+
+{Coordinates: hc}
+plane: a, -269383583
+worldX: w, -1934805779
+worldY: e, -397623979
+
+{DecorativeObject: eq}
+floor: a, 714609933
+hash: j, 1258761623
+offsetX: z, -337797081
+offsetY: t, 1852052911
+renderable1: f
+renderable2: g
+renderFlag: k, 600979589
+renderInfoBitPacked: x, 1479818253
+rotation: u, 116232835
+x: w, -635706115
+y: e, -554820235
+
+{Deque: gl}
+current: w
+head: a
+
+{DirectByteBuffer: gk}
+buffer: a
+
+{DState: gt}
+blockSize100k: i, 1124898451
+inUse: ab
+k0: q, 1742289959
+nblock_used: h, 1018799019
+next_in: f, -23923469
+next_out: x, -2097812977
+nInUse: p, 861373207
+out: j
+out_ch: n
+out_len: y, -1624378745
+seqToUnseq: ag
+strm: t
+total_in_hi32: o, -978960935
+total_in_lo32: r, -996553717
+total_out_hi32: s, -1477017367
+total_out_lo32: g, 1159766183
+tPos: m, -928259005
+urlRequester: ei
+
+{DynamicObject: cn}
+id: a, -1075365621
+level: k, -156840023
+orientation: e, -1841293615
+sceneX: u, 45773791
+sceneY: z, 1127872755
+type: w, -86666889
+
+{Enum: jg}
+defaultInt: z, -970408909
+defaultString: u
+EnumDefinition_cached: w
+EnumDefinition_indexCache: a
+intVals: g
+keys: f
+keyType: e
+size: t, 72752757
+stringVals: j
+valType: k
+
+{Enumerated: gs}
+
+{FaceNormal: ea}
+x: a, -819810915
+y: w, 572835747
+z: e, 1215733267
+
+{FileOnDisk: da}
+file: a
+length: w, -4512531111401429473
+port2: ds, -1270739899
+position: e, -6496465651702349683
+
+{FileRequest: it}
+crc: w, -803899541
+index: a
+padding: e
+
+{FileSystem: in}
+data: k
+fonts: el
+index: e
+type: a, -1959598111
+
+{Floor1: dj}
+classDimensions: z
+classMasterbooks: f
+classSubClasses: t
+multiplier: k
+paritionClassList: u
+RANGES: a
+subclassBooks: g
+xList: j
+yList: x
+
+{FloorUnderlayDefinition: ih}
+hue: k, -1784433545
+hueMultiplier: t, -982635371
+lightness: z, -272353301
+rgbColor: e, -1882661743
+saturation: u, 167744801
+underlays: w
+underlay_ref: a
+
+{Font: jm}
+
+{FontName: jl}
+FontName_bold12: e
+FontName_plain11: a
+FontName_plain12: w
+indexCache15: dh
+
+{Fonts: ju}
+configsIndex: cm
+map: e
+
+{FontTypeFace: jd}
+color: r
+glyphWidths: k
+gylphHeights: e
+gylphs: a
+horizontalOffsets: u
+maxSpacing: g
+minSpacing: f
+modIcons: j
+prevColorRGB: o
+prevShadeRGB: n
+shadow: y
+strikeRGB: c
+underlineRGB: s
+verticalOffsets: z
+verticalSpace: t
+
+{Frame: eu}
+showing: x
+skin: u
+translator_x: f
+translator_y: g
+translator_z: j
+
+{FrameMap: eg}
+colorsToFind: t
+count: w, -1096353093
+id: a, 656904343
+indexSoundEffects: cc
+list: k
+types: e
+
+{Frames: ec}
+skeletons: a
+
+{Friend: bh}
+fontBold12: ec
+name: a
+previousName: w
+rank: k, -1196101617
+world: e, -681673857
+
+{FriendLoginUpdate: bm}
+indexWorldMap: du
+
+{GameEngine: be}
+canvas: ax
+clanMembers: nh
+clipboard: ah
+eventQueue: az
+focused: av
+FPS: c, 1092574815
+frame: aq
+garbageCollectorLastCheckTimeMs: aj, -1390540160102048077
+garbageCollectorLastCollectionTime: aa, 7654158968335052561
+hasErrored: t
+mouseWheelHandler: af
+shell: e
+shellCount: k, -673297861
+taskManager: a
+
+{GameObject: et}
+cycle: c, -833063441
+drawPriority: x, 792465583
+flags: n, 195247177
+hash: s, 1044473627
+height: w, 1840593029
+offsetX: f, 1511254367
+offsetY: j, 235575925
+orientation: z, 1672836637
+plane: a, -1866751847
+relativeX: t, 1610249375
+relativeY: g, 19135965
+renderable: u
+x: e, 1087761421
+y: k, 1063628249
+
+{GrandExchangeEvent: y}
+cameraZ: gd, 508599443
+compass: ff
+grandExchangeOffer: e
+string1: k
+string2: u
+world: a, 306485541
+
+{GrandExchangeEvents: n}
+events: a
+
+{GrandExchangeOffer: r}
+itemId: w, 420374037
+osName: b
+price: e, -940633443
+progress: a
+quantitySold: u, -616978795
+spent: z, 300076227
+totalQuantity: k, -1993245439
+
+{Graphics3D: es}
+centerX: s
+centerY: n
+colorPalette: b
+COSINE: ab
+lowMem: e
+rasterAlpha: u
+rasterClipEnable: a
+rasterClipX: y
+rasterClipY: q
+rasterGouraudLowRes: k
+Rasterizer3D_clipHeight: o
+Rasterizer3D_clipMidX2: i
+Rasterizer3D_clipMidY2: m
+Rasterizer3D_clipNegativeMidX: r
+Rasterizer3D_clipNegativeMidY: l
+Rasterizer3D_zoom: c
+SINE: p
+textureLoader: h
+
+{GraphicsObject: cj}
+finished: j
+height: z, 254755159
+id: a, -1167853917
+landRegionFileIds: fe
+level: e, 2120405891
+port1: dy, -505196129
+startCycle: w, 1957506109
+x: k, -1183024183
+y: u, 2114952073
+
+{GroundObject: dq}
+floor: a, 950595223
+hash: u, 1395110931
+renderable: k
+renderInfoBitPacked: z, 908974953
+task: j
+x: w, -1302060085
+y: e, 326033797
+
+{GZipDecompressor: fd}
+cameraY: gz, -219460773
+inflator: a
+
+{HashTable: gp}
+buckets: w
+current: k
+currentGet: e
+index: u
+size: a
+
+{HashTableIterator: he}
+head: k
+index: e
+table: a
+tail: w
+
+{Huffman: fb}
+bits: w
+canvasWidth: d, -1401406659
+keys: e
+masks: a
+
+{Identifiers: gm}
+table: a
+
+{Ignore: bi}
+modIconSprites: fu
+name: a
+previousName: w
+
+{IndexData: iu}
+crc32: p
+crcValue: ab, 707407901
+index: b, -233744701
+indexReferenceVersion: ad, 809778315
+indexStore: m
+referenceStore: q
+validArchives: v
+
+{IndexDataBase: ib}
+archiveCrcs: u
+archiveFileIds: f
+archiveFileNames: g
+archiveIds: w
+archiveNames: e
+archiveNumberOfFiles: t
+archiveRevisions: z
+archives: x
+childIdentifiers: j
+childs: c
+crc: n, 1159717755
+gzip: s
+identifiers: k
+releaseArchives: y
+shallowRecords: o
+validArchivesCount: a, -955590129
+
+{IndexedSprite: kg}
+height: k
+offsetX: u
+offsetY: z
+originalHeight: f
+originalWidth: e
+palette: w
+pixels: a
+width: t
+
+{IndexFile: fv}
+dataFile: w
+index: k, 1333258905
+indexFile: e
+IndexStore_buffer: a
+maxSize: u, -312679233
+
+{IndexStoreActionHandler: id}
+IndexStoreActionHandler_lock: k
+IndexStoreActionHandler_requestQueue: a
+IndexStoreActionHandler_responseQueue: w
+IndexStoreActionHandler_thread: u
+
+{IntegerNode: hr}
+value: a
+
+{InvType: is}
+inventoryCache: w
+size: e, 1659984447
+
+{ISAACCipher: gj}
+mm: z
+randResult: u
+valuesRemaining: k, -1239715429
+
+{Item: cg}
+id: a, 485193461
+menuWidth: jw, -2124720277
+quantity: w, -1501899501
+
+{ItemComposition: jq}
+ambient: bb, -1717939813
+colourToReplace: r
+colourToReplaceWith: i
+contrast: bc, -1199119237
+countCo: am
+countObj: ae
+femaleHeadModel: az, -806041147
+femaleHeadModel2: av, -1553992041
+femaleModel: ac, 1164979167
+femaleModel1: aw, 2001513361
+femaleModel2: ai, 2095734483
+femaleOffset: al, 1454486959
+groundActions: ak
+id: n, 893144361
+int1: bp, 394645357
+int2: bx, -389138497
+int3: bw, 599115067
+inventoryActions: as
+inventoryModel: y, 1453511911
+isMembers: ag
+isStackable: ab, 658096135
+isTradable: bg
+itemModelCache: x
+items: j
+itemSpriteCache: c
+item_ref: z
+maleHeadModel: af, 1550750577
+maleHeadModel2: ah, -1469717441
+maleModel: at, 1536749267
+maleModel1: ap, -2144494677
+maleModel2: ay, -417382559
+maleOffset: an, -1840041673
+name: o
+note: aa, -1866150387
+notedId: be, -1995884479
+notedTemplate: aj, -1408228201
+offsetX2d: v, 51891773
+offsetY2d: p, 1784761435
+price: ad, -968472145
+resizeX: ao, -933749849
+resizeY: ar, -2006568821
+resizeZ: au, 1353408719
+team: ax, 156584973
+textToReplaceWith: m
+textureToReplace: l
+unnotedId: bq, 806926903
+xan2d: b, 1556411869
+yan2d: h, -404379691
+zan2d: d, -1182865303
+zoom2d: q, 232612579
+
+{ItemContainer: bz}
+itemContainers: a
+itemIds: w
+stackSizes: e
+worldList: u
+
+{ItemLayer: dl}
+bottom: k
+flags: t, 554011731
+hash: a, 1329167205
+height: f, 14426789
+middle: u
+top: z
+x: w, 813439287
+y: e, 594162243
+
+{IterableDualNodeQueue: hh}
+sentinel: a
+
+{IterableHashTable: gr}
+buckets: w
+head: e
+index: u
+size: a
+tail: k
+
+{ITextureLoader: ey}
+
+{JagexGame: ia}
+id: f, -1037398473
+name: t
+
+{JagexLoginType: kz}
+identifier: x
+
+{KeyFocusListener: ar}
+keyboard: a
+keyboardIdleTicks: ct, -1997209807
+KeyHandler_keyCodes: cx
+
+{KitDefinition: ip}
+bodyPartId: u, 755102505
+identKits: k
+identKit_ref: a
+modelIds: z
+models: x
+nonSelectable: c
+recolorToFind: t
+recolorToReplace: f
+retextureToFind: g
+retextureToReplace: j
+
+{Link: gc}
+
+{LinkDeque: gv}
+
+{LoginPacket: fh}
+id: u, -105058661
+timer: s
+
+{MachineInfo: ki}
+javaVendorType: ax, -317574963
+javaVersionMajor: at, 465222985
+javaVersionMinor: ap, -383063131
+javaVersionPatch: an, 504078667
+maxMemoryMB: aw, -789804035
+os64Bit: t
+osType: z, -571571871
+osVersionType: ab, 1520683389
+
+{MainBufferProvider: bq}
+component: a
+image: w
+
+{Mapping: ds}
+mux: w
+submapFloors: e
+
+{MessageNode: bv}
+id: a, -1624456843
+name: k
+sender: u
+tick: w, -181195109
+type: e, 1783927465
+value: z
+
+{MilliTimer: ew}
+milliTime: k, 9158307521041611221
+sessionToken: bs
+sleepTime: e, -291367241
+
+{Model: ef}
+bottomY: ag
+boundsType: ad
+diameter: as
+indices1: j
+indices2: x
+indices3: c
+indicesCount: g
+modelViewportXs: ah
+modelViewportYs: af
+Model_cosine: bh
+Model_sine: bk
+radius: aq
+useBoundingBoxes3D: bf
+verticesCount: u
+verticesX: z
+verticesY: t
+verticesZ: f
+xViewportBuffer: bq
+XYZMag: ak
+yViewportBuffer: av
+
+{ModelData: dm}
+contrast: an
+faceAlphas: x
+faceColor: s
+faceNormals: aq
+faceRenderPriorities: j
+faceRenderType: g
+faceTextures: n
+normals: ax
+priority: y
+texTriangleX: i
+texTriangleY: l
+texTriangleZ: m
+textureCoords: c
+texturePrimaryColor: p
+textureRenderTypes: r
+triangleFaceCount: u
+trianglePointsX: z
+trianglePointsY: t
+trianglePointsZ: f
+triangleSkinValues: ag
+vertexCount: a
+vertexSkins: ad
+vertexX: w
+vertexY: e
+vertexZ: k
+
+{MouseInput: bx}
+cameraX: gg, -245636329
+indexCache3: ck
+mouse: u
+mouseCurrentButton: j, -333228559
+MouseHandler_currentButton: t, 523049731
+MouseHandler_lastButton: c, 1453893085
+MouseHandler_lastPressedTimeMillis: y, -7398409833473874705
+MouseHandler_lastPressedX: s, -384786981
+MouseHandler_lastPressedY: n, -348709505
+mouseIdleTicks: z, -363108789
+mouseLastButton: o, 872384249
+mouseLastPressedTimeMillis: l, -8309155304464128139
+mouseLastPressedX: r, -1046301689
+mouseLastPressedY: i, -1913046979
+mouseX: f, 1376819745
+mouseY: g, 202010869
+
+{MouseRecorder: bl}
+index: e, 396566785
+isRunning: a
+lock: w
+xs: k
+ys: u
+
+{MouseWheel: fe}
+
+{MouseWheelHandler: ao}
+rotation: a, -303729091
+
+{NanoTimer: en}
+nanoTime: a, 5541093550852491481
+
+{NetWriter: cx}
+buffer: k
+chatMessages: lj
+packetBuffer: z
+packetBufferNodes: w
+packetLength: f, 76115971
+rssocket: a
+serverPacket: t
+
+{Node: gn}
+hash: cs
+next: cz
+previous: cr
+
+{Node2LinkedList: gx}
+sentinel: a
+
+{NodeCache: gu}
+capacity: w
+list: u
+remainingCapacity: e
+table: k
+
+{NPC: ci}
+composition: a
+
+{NPCComposition: jn}
+actions: q
+colors: r
+combatLevel: h, -280231869
+configs: as
+heightScale: v, -2082676849
+id: u, 1273015549
+isClickable: ap
+isMinimapVisible: b
+isVisible: p
+models: f
+modifiedColors: i
+name: z
+NpcDefinition_indexCache: a
+NpcDefinition_modelIndexCache: w
+npcModelCache: k
+npcs: e
+varp32Index: ax, -1839748547
+varpIndex: aq, -2002687013
+widthScale: d, 1246817025
+
+{ObjectComposition: jf}
+actions: ag
+ambient: ab, 2045893851
+ambientSoundId: ae, 492183817
+animationId: v, -334665683
+boolean1: m
+boolean2: ay
+cachedModels: z
+clipped: ax
+clipType: b, 542423197
+configId: av, 2109158551
+contrast: ad, 931874435
+id: g, -1714760777
+impostorIds: ah
+int1: q, -1320550455
+int2: p, -1284309911
+int3: af, 2040555547
+int4: am, 1274074531
+int5: aa, 103125545
+int6: aj, 1679061985
+interactType: l, -1161808807
+isRotated: aq
+isSolid: ai
+mapIconId: ak, -956559097
+mapSceneId: as, -1042448959
+modelClipped: d
+modelSizeHeight: ap, -1468073391
+modelSizeX: at, 1342124689
+modelSizeY: an, -1186652121
+name: c
+nonFlatShading: h
+ObjectDefinition_isLowDetail: a
+objectModels: j
+objects: k
+objects_ref: w
+objectTypes: x
+offsetHeight: aw, 688876963
+offsetX: ac, 1247660289
+offsetY: al, 2050502779
+recolorToFind: s
+recolorToReplace: n
+sizeX: r, -1899287589
+sizeY: i, -2057232489
+textureToFind: y
+textureToReplace: o
+varpId: az, 1929572175
+
+{ObjectNode: gq}
+value: a
+
+{Occluder: em}
+maxNormalX: o, -743903315
+maxNormalY: i, 1329319429
+maxTIleX: w, -1669354965
+maxTileZ: k, -1798184553
+maxX: t, -663628629
+maxY: x, 1204169261
+maxZ: g, 1738272033
+minNormalX: y, 1499501973
+minNormalY: r, 236692935
+minTileX: a, 1377100417
+minTileZ: e, -1364764655
+minX: z, -25611653
+minY: j, -925867423
+minZ: f, 162046975
+testDirection: c, 619543051
+type: u, -153010939
+
+{Overlay: jh}
+color: e, -806846189
+hue: t, -1907080363
+isHidden: u
+lightness: g, 973818973
+otherHue: j, 1376424583
+otherLightness: c, -341809107
+otherRgbColor: z, 353934355
+otherSaturation: x, -1001047649
+overlays: w
+overlay_ref: a
+saturation: f, 1051805489
+texture: k, 1614382543
+
+{OwnWorldComparator: ba}
+
+{PacketBuffer: gy}
+bitPosition: x, -1022606895
+cipher: g
+
+{PacketNode: fg}
+clientPacket: a
+packetBuffer: e
+packetBufferNodes: u
+
+{Parameters: kp}
+key: r
+
+{PendingSpawn: bo}
+delay: x, 1885900041
+hitpoints: c, -1299482467
+id: f, -591865171
+jagexLoginType: bq
+level: a, 1314434327
+orientation: g, 1702666337
+topContextMenuRow: jv
+type: w, 1135806613
+x: e, -1534725047
+y: k, -2011832797
+
+{Permission: ij}
+
+{Player: bj}
+actions: z
+animationCycleEnd: x, 897531569
+animationCycleStart: j, -313979289
+combatLevel: t, 959498037
+composition: w
+hidden: b
+isLowDetail: m
+model: y
+name: a
+overheadIcon: k, 226773847
+skullIcon: e, 1669295901
+team: q, -558926455
+totalLevel: f, -1522787423
+
+{PlayerComposition: hb}
+bodyPartColours: w
+colorsToReplace: f
+equipmentIds: a
+hash: u, -5429717739818962937
+isFemale: e
+transformedNpcId: k, -938568641
+
+{Preferences: cf}
+hideRoofs: e
+hideUsername: t
+indexCache13: dj
+muted: k
+preferences: f
+rememberedUsername: z
+screenType: u, -881826075
+
+{Projectile: co}
+animationSequence: h
+cycle: f, 632478681
+endHeight: z, 1369906141
+floor: w, 1093934655
+height: u, -1885188655
+heightOffset: m
+id: a, 253222545
+int6: v, 242707913
+int7: d, -851439171
+interacting: x, -820127231
+isMoving: c
+rotationX: q, -83233913
+rotationY: b, -436430029
+scalar: r
+slope: g, -45498235
+speedX: o
+start: j, -1841552807
+startTime: t, 1550375669
+velocityX: l
+velocityY: i
+velocityZ: n
+x: s
+x1: e, 696136279
+y1: k, 806338563
+z: y
+
+{Rasterizer2D: ky}
+drawingAreaBottom: at
+drawingAreaRight: aq
+drawingAreaTop: as
+draw_region_x: ax
+graphicsPixels: ad
+graphicsPixelsHeight: ak
+graphicsPixelsWidth: ag
+
+{Region: eh}
+cameraX2: d
+cameraY2: v
+cameraZ2: p
+checkClick: aq
+cycle: r
+entityBuffer: as
+entityCount: f
+levelOccluderCount: af
+levelOccluders: ah
+lowMemory: a
+maxTileX: l
+maxTileZ: q
+maxX: e
+maxY: w
+maxZ: k
+MAX_OCCLUDER_LEVELS: ai
+minLevel: t
+minTileX: i
+minTileZ: m
+mouseX2: at
+mouseY2: ap
+objects: g
+pitchCos: ad
+pitchSin: ab
+renderArea: bg
+Scene_plane: o
+screenCenterX: b
+screenCenterZ: h
+selectedRegionTileX: an
+selectedRegionTileY: ac
+tileCycles: j
+tileDeque: ae
+tileHeights: u
+tiles: z
+tileUpdateCount: y
+TILE_MASK_2D: bc
+TILE_ROTATION_2D: bp
+TILE_WALL_DRAW_FLAGS_1: aj
+viewportWalking: aw
+visibilityMaps: bn
+WALL_UNCULL_FLAGS_0: ao
+WALL_UNCULL_FLAGS_1: ar
+WALL_UNCULL_FLAGS_2: au
+WALL_UNCULL_FLAGS_3: bb
+yawCos: ak
+yawSin: ag
+
+{Renderable: el}
+modelHeight: cw, -1204322527
+
+{RenderOverview: ka}
+fontNameVerdana11: f
+fontNameVerdana13: g
+fontNameVerdana15: j
+headIconsHint: fg
+
+{Residue: dr}
+begin: w
+classBook: z
+classification: u
+end: e
+partitionSize: k
+type: a
+
+{RSCanvas: bc}
+component: a
+
+{RSSocket: fr}
+
+{RunException: eo}
+localPlayerName: w
+
+{SceneTileModel: df}
+flatShade: x
+overlay: y
+rotation: s
+shape: c
+tmpScreenX: o
+tmpScreenY: r
+triangleColorA: k
+triangleColorB: u
+triangleColorC: z
+triangleTextureId: j
+underlay: n
+vertexSceneX: i
+vertexSceneY: l
+vertexSceneZ: m
+vertexX: a
+vertexY: w
+vertexZ: e
+
+{SceneTilePaint: ed}
+flatShade: z
+neColor: e, 646505167
+nwColor: k, 799884147
+rgb: t, -546473555
+seColor: w, 1295951857
+swColor: a, -829167371
+texture: u, -879620257
+
+{Script: ck}
+instructions: w
+intOperands: e
+intStackCount: t, -1243325363
+localIntCount: u, 475547171
+localStringCount: z, -1400091303
+mapDots: fd
+stringOperands: k
+stringStackCount: f, -1013854573
+switches: g
+
+{ScriptEvent: by}
+boolean1: w
+objs: a
+string: j
+widget: e
+
+{ScriptState: bs}
+invokedFromPc: w, -1612919269
+invokedFromScript: a
+isMembersWorld: f
+rasterProvider: ai
+sampleRate: u, -1895373177
+savedLocalInts: e
+savedLocalStrings: k
+
+{ScriptVarType: t}
+id: ge, 2055034965
+typeChar: gg
+
+{Sequence: jj}
+forcedPriority: s, -1623144549
+frameIDs: z
+frameLenghts: f
+frameStep: j, -220100085
+interleaveLeave: x
+leftHandItem: n, 199012451
+maxLoops: o, -502401333
+precedenceAnimating: r, -235496103
+priority: i, 100974965
+replyMode: l, 1611211339
+rightHandItem: y, -1249525367
+sequences: k
+skeletons: u
+skel_ref: w
+skin_ref: e
+stretches: c
+
+{ServerPacket: fq}
+packetId: cb, -874561827
+packetLength: cv, -1985679577
+
+{Signlink: fs}
+cachedTask: k
+closed: z
+currentTask: e
+javaVendor: a
+javaVersion: w
+sysEventQueue: u
+
+{Size: v}
+crossSprites: fb
+menuHeight: jk, -557930467
+
+{SoundEffect: di}
+end: k
+instruments: w
+start: e
+
+{SoundEffect3: dt}
+coefficients: t
+fowardMinimisedCoefficientMultiplier: f
+fowardMultiplier: g
+magnitudes: k
+minimisedCoefficients: z
+pairs: a
+phases: e
+unity: u
+
+{SoundTask: du}
+NetCache_reference: m
+systems: a
+
+{SoundTaskDataProvider: au}
+
+{SourceDataSoundSystem: bn}
+audioFormat: a
+bytes: k
+size: e, 187098319
+source: w
+
+{Spotanim: iz}
+heightScale: s, 924320411
+id: u, -1724173847
+orientation: n, 1346987829
+SpotAnimationDefinition_cachedModels: k
+SpotAnimationDefinition_indexCache: a
+SpotAnimationDefinition_modelIndexCache: w
+spotanims: e
+widthScale: c, -2078782681
+
+{SpritePixels: ks}
+height: e
+maxHeight: t
+maxWidth: z
+offsetX: k
+offsetY: u
+pixels: a
+width: w
+
+{Task: ev}
+intArgument: t
+objectArgument: f
+status: u
+task: a
+type: z, 243075415
+value: g
+
+{TaskDataNode: dy}
+
+{TaskDataProvider: ca}
+
+{Texture: dp}
+fileIds: t
+loaded: n
+pixels: s
+
+{TextureProvider: dc}
+brightness: u
+deque: w
+maxSize: e, 1055362031
+size: k, -205210017
+sprites: t
+textures: a
+width: z, 1283582721
+
+{Tile: ez}
+bridge: h
+decorativeObject: f
+draw: o
+drawEntities: i
+entityCount: x, 1495705029
+entityFlags: s
+flags: n, 414760873
+groundObject: g
+itemLayer: j
+objects: c
+overlay: z
+paint: u
+physicalLevel: y, 1613392379
+plane: a, 1725557519
+renderLevel: k, -721315981
+visible: r
+wallCullDirection: l, -746627283
+wallCullOppositeDirection: q, 37190099
+wallDrawFlags: b, -1139868411
+wallObject: t
+wallUncullDirection: m, 1182737099
+x: w, -695857629
+y: e, 1267689537
+
+{Timer: fi}
+
+{TotalQuantityComparator: o}
+clientInstance: ar
+
+{Track1: hl}
+
+{UnitPriceComparator: i}
+headIconsPrayer: fa
+
+{UrlRequest: ep}
+isDone0: w
+localPlayer: ii
+response0: e
+url: a
+
+{UrlRequester: ee}
+isClosed: w
+requests: e
+thread: a
+
+{Varbit: jw}
+configId: e, -1005831171
+leastSignificantBit: k, 442861105
+mostSignificantBit: u, 1796470167
+varbits: w
+varbit_ref: a
+
+{Varcs: cc}
+changed: t
+lastSerialize: f, -1435949291815639655
+varcs: u
+varcSerials: e
+varcstrings: z
+varcstringSerials: k
+
+{VarPlayerType: iv}
+configType: k, 1618823997
+varplayers: e
+varplayer_ref: a
+
+{VertexNormal: ek}
+canvasHeight: v, 197876021
+clanChatRank: nn
+magnitude: k, -1070537593
+soundSystem1: or
+x: a, -364405127
+y: w, -312726173
+z: e, -820067941
+
+{WallObject: eb}
+config: g, 585357267
+floor: a, -848426587
+hash: f, 2085641561
+orientationA: k, -659812433
+orientationB: u, 529102943
+renderable1: z
+renderable2: t
+scrollbarSprites: fw
+x: w, -395897065
+y: e, 1588001219
+
+{Widget: hz}
+actions: cy
+borderThickness: bg, -787463529
+boundsIndex: en, -767002277
+buttonType: p, -1691006837
+children: ey
+config: co, -29765301
+configActions: cw
+configListenerArgs: dk
+configTriggers: dr
+contentType: b, -1317501575
+dragParent: cc
+dynamicValues: ef
+filled: am
+flippedHorizontally: bx
+flippedVertically: be
+fontId: bo, 1378111317
+hasScript: r
+height: at, -510787749
+id: i, 1180637085
+index: l, 373582993
+isHidden: aw
+itemId: el, -655869141
+itemIds: eh
+itemQuantities: ei
+itemQuantity: eb, 306061293
+lineWidth: ar, 1546760195
+loopCycle: ew, 451491617
+modelId: bf, -1159054531
+modelType: bw, 2100193729
+modelZoom: bv, -675889149
+mouseEnterListener: dx
+mouseExitListener: dn
+mouseHoverListener: dj
+name: cg
+noClickThrough: er
+opacity: aj, 1259484473
+originalWidth: ag, -1466251825
+originalX: ab, -942933619
+originalY: ad, -520769527
+paddingX: cj, -943352403
+paddingY: cq, -498146337
+parentId: ac, 1222259003
+relativeX: as, -2118483697
+relativeY: aq, 330328389
+renderListener: ds
+rotationX: by, 431546337
+rotationY: bl, 1562380973
+rotationZ: bi, -1087716599
+scrollHeight: af, 548021281
+scrollListener: do
+scrollWidth: ai, -1224042105
+scrollX: al, -1206701085
+scrollY: ay, 579088909
+selectedAction: ct
+skillListenerArgs: dt
+skillTriggers: dy
+spellName: ed
+sprite2: bq, -1788728145
+spriteId: bb, -207033201
+spriteTiling: bn
+string1: ch
+tableActions: ej
+tableListenerArgs: dz
+tableModTriggers: dg
+text: br
+textColor: ah, -705105487
+textShadowed: cv
+textureId: bp, -1826327485
+tooltip: eg
+type: m, -615721927
+widgets: z
+Widget_cachedFonts: n
+Widget_cachedModels: s
+width: ax, 1913265447
+xSprites: ci
+
+{WidgetNode: bt}
+id: a, 1515870281
+owner: w, -292484973
+
+{World: cp}
+activity: y
+address: n
+id: x, -404484463
+index: r, -1567307001
+location: o, 614439421
+mask: c, -1198421041
+playerCount: s, -2015743543
+worldCount: z, -2073723129
+
+{WorldComparator: s}
+mouseWheel: ld
+
+{WorldMapData: ax}
+fileId: a, 1868688265
+
+{WorldMapSectionBase: ah}
+
+{WorldMapType1: as}
+menuX: ir, -1945852199
+
+{WorldMapType2: al}
+
+{WorldMapType3: ab}

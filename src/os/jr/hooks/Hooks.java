@@ -15,6 +15,7 @@ import com.google.gson.GsonBuilder;
 
 import os.jr.boot.Boot;
 import os.jr.game.RSGame;
+import os.jr.hooks.model.GameClass;
 import os.jr.hooks.model.RSClass;
 import os.jr.utils.Settings;
 import os.jr.utils.Utils;
@@ -23,6 +24,7 @@ public class Hooks {
 
 	public static Hooks selector;
 	public static HashMap<String, String> classNames = new HashMap<String, String>();
+	public static GameClass[] collection = new GameClass[400];
 
 	public AbstractByteBuffer abstractByteBuffer = new AbstractByteBuffer() {};
 	public AbstractIntegerNode0 abstractIntegerNode0 = new AbstractIntegerNode0() {};
