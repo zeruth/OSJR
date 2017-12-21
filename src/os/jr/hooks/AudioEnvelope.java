@@ -22,42 +22,42 @@ public class AudioEnvelope extends GameClass {
 	}
 
 	public int getAmplitude() {
-		return (int) Hooks.selector.audioEnvelope.fields.get(amplitude).getValue(reference);
+		return (int) fields.get(amplitude).getValue(reference);
 	}
 
 	public int[] getDurations() {
-		return (int[]) Hooks.selector.audioEnvelope.fields.get(durations).getValue(reference);
+		return (int[]) fields.get(durations).getValue(reference);
 	}
 
 	public int getEnd() {
-		return (int) Hooks.selector.audioEnvelope.fields.get(end).getValue(reference);
+		return (int) fields.get(end).getValue(reference);
 	}
 
 	public int getForm() {
-		return (int) Hooks.selector.audioEnvelope.fields.get(form).getValue(reference);
+		return (int) fields.get(form).getValue(reference);
 	}
 
 	public int getMax() {
-		return (int) Hooks.selector.audioEnvelope.fields.get(max).getValue(reference);
+		return (int) fields.get(max).getValue(reference);
 	}
 
 	public int getPhaseIndex() {
-		return (int) Hooks.selector.audioEnvelope.fields.get(phaseIndex).getValue(reference);
+		return (int) fields.get(phaseIndex).getValue(reference);
 	}
 
 	public int[] getPhases() {
-		return (int[]) Hooks.selector.audioEnvelope.fields.get(phases).getValue(reference);
+		return (int[]) fields.get(phases).getValue(reference);
 	}
 
 	public int getSegments() {
-		return (int) Hooks.selector.audioEnvelope.fields.get(segments).getValue(reference);
+		return (int) fields.get(segments).getValue(reference);
 	}
 
 	public int getStart() {
-		return (int) Hooks.selector.audioEnvelope.fields.get(start).getValue(reference);
+		return (int) fields.get(start).getValue(reference);
 	}
 
 	public int getTicks() {
-		return (int) Hooks.selector.audioEnvelope.fields.get(ticks).getValue(reference);
+		return (int) fields.get(ticks).getValue(reference);
 	}
 }

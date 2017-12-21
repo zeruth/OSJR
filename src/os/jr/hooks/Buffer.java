@@ -14,19 +14,19 @@ public class Buffer extends GameClass {
 	}
 
 	public int[] getCrc32Table() {
-		return (int[]) Hooks.selector.buffer.fields.get(crc32Table).getValue(reference);
+		return (int[]) fields.get(crc32Table).getValue(reference);
 	}
 
 	public int[] getCrc64Table() {
-		return (int[]) Hooks.selector.buffer.fields.get(crc64Table).getValue(reference);
+		return (int[]) fields.get(crc64Table).getValue(reference);
 	}
 
 	public int getOffset() {
-		return (int) Hooks.selector.buffer.fields.get(offset).getValue(reference);
+		return (int) fields.get(offset).getValue(reference);
 	}
 
 	public byte[] getPayload() {
-		return (byte[]) Hooks.selector.buffer.fields.get(payload).getValue(reference);
+		return (byte[]) fields.get(payload).getValue(reference);
 	}
 
 }

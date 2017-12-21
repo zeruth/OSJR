@@ -4,6 +4,8 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 
 import os.jr.game.RSGame;
+import os.jr.hooks.Hooks;
+import os.jr.utils.Utils;
 
 public class GameClass {
 	public String obfuscatedName;
@@ -13,6 +15,7 @@ public class GameClass {
 
 	public GameClass(String obfuscatedName) {
 		this.obfuscatedName = obfuscatedName;
+		this.refactoredName = Hooks.refactoredClassNames.get(obfuscatedName);
 		try {
 			RSGame.classLoader.loadClass(obfuscatedName);
 		} catch (SecurityException | ClassNotFoundException e) {
@@ -20,6 +23,13 @@ public class GameClass {
 			System.out.println("Running without hooks.");
 			RSGame.outdated = true;
 			e.printStackTrace();
+		}
+		if (Hooks.selector!=null) {
+			GameClass gameClass = Utils.getClassbyName(this.refactoredName);
+			if (gameClass!=null) {
+				if (gameClass.fields!=null)
+				this.fields = gameClass.fields;
+			}
 		}
 	}
 

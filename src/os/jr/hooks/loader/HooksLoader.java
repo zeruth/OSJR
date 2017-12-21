@@ -15,6 +15,9 @@ import os.jr.utils.Utils;
 public class HooksLoader {
 
 	public static File hooksFile = new File("./Hooks/Hooks.json/");
+	private static int totalFields = 0;
+	private static int totalClasses = 0;
+	private static int totalFieldsAddedToClass = 0;;
 
 	public static void loadHooksJson() {
 		Reader reader;
@@ -28,15 +31,19 @@ public class HooksLoader {
 
 			for (HookDump hook : hooks) {
 				Hooks.classNames.put(hook.rsClass.refactoredName, hook.rsClass.obfuscatedName);
-
+				Hooks.refactoredClassNames.put(hook.rsClass.obfuscatedName, hook.rsClass.refactoredName);
+				totalClasses ++;
 			}
 			Hooks.init();
 			for (HookDump hook : hooks) {
 				for (FieldDump field : hook.rsFields) {
+					totalFields++;
 					try {
 						GameClass gc = Utils.getClassbyName(field.className);
-						if (gc != null)
+						if (gc != null) {
 							gc.fields.put(field.refactoredName, field);
+								totalFieldsAddedToClass++;
+						}
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -46,6 +53,8 @@ public class HooksLoader {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		System.out.println("[OSJR] Loaded "+totalClasses+" Classes.");
+		System.out.println("[OSJR] Loaded "+totalFields+" Fields.");
+		System.out.println("[OSJR] Loaded "+totalFieldsAddedToClass+" Fields into classes.");
 	}
-
 }

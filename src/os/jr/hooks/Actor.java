@@ -37,102 +37,102 @@ public class Actor extends Renderable {
 	}
 
 	public int getActionAnimationDisable() {
-		return (int) Hooks.selector.actor.fields.get(actionAnimationDisable).getValue(reference);
+		return (int) fields.get(actionAnimationDisable).getValue(reference);
 	}
 
 	public int getActionFrame() {
-		return (int) Hooks.selector.actor.fields.get(actionFrame).getValue(reference);
+		return (int) fields.get(actionFrame).getValue(reference);
 	}
 
 	public int getAngle() {
-		return (int) Hooks.selector.actor.fields.get(angle).getValue(reference);
+		return (int) fields.get(angle).getValue(reference);
 	}
 
 	public int getAnimation() {
-		return (int) Hooks.selector.actor.fields.get(animation).getValue(reference);
+		return (int) fields.get(animation).getValue(reference);
 	}
 
 	public CombatInfoList getCombatInfoList() {
-		return new CombatInfoList(Hooks.selector.actor.fields.get(combatInfoList).getValue(reference));
+		return new CombatInfoList(fields.get(combatInfoList).getValue(reference));
 	}
 
 	public int getGraphic() {
-		return (int) Hooks.selector.actor.fields.get(graphic).getValue(reference);
+		return (int) fields.get(graphic).getValue(reference);
 	}
 
 	public int getGraphicsDelay() {
-		return (int) Hooks.selector.actor.fields.get(graphicsDelay).getValue(reference);
+		return (int) fields.get(graphicsDelay).getValue(reference);
 	}
 
 	public int[] getHitSplatCycles() {
-		return (int[]) Hooks.selector.actor.fields.get(hitSplatCycles).getValue(reference);
+		return (int[]) fields.get(hitSplatCycles).getValue(reference);
 	}
 
 	public int[] getHitSplatTypes() {
-		return (int[]) Hooks.selector.actor.fields.get(hitSplatTypes).getValue(reference);
+		return (int[]) fields.get(hitSplatTypes).getValue(reference);
 	}
 
 	public int getIdlePoseAnimation() {
-		return (int) Hooks.selector.actor.fields.get(idlePoseAnimation).getValue(reference);
+		return (int) fields.get(idlePoseAnimation).getValue(reference);
 	}
 
 	public boolean getInSequence() {
-		return (boolean) Hooks.selector.actor.fields.get(inSequence).getValue(reference);
+		return (boolean) fields.get(inSequence).getValue(reference);
 	}
 
 	public int getInteracting() {
-		return (int) Hooks.selector.actor.fields.get(interacting).getValue(reference);
+		return (int) fields.get(interacting).getValue(reference);
 	}
 
 	public int getNpcCycle() {
-		return (int) Hooks.selector.actor.fields.get(npcCycle).getValue(reference);
+		return (int) fields.get(npcCycle).getValue(reference);
 	}
 
 	public int getOrientation() {
-		return (int) Hooks.selector.actor.fields.get(orientation).getValue(reference);
+		return (int) fields.get(orientation).getValue(reference);
 	}
 
 	public String getOverhead() {
-		return (String) Hooks.selector.actor.fields.get(overhead).getValue(reference);
+		return (String) fields.get(overhead).getValue(reference);
 	}
 
 	public int getOverheadTextCyclesRemaining() {
-		return (int) Hooks.selector.actor.fields.get(overheadTextCyclesRemaining).getValue(reference);
+		return (int) fields.get(overheadTextCyclesRemaining).getValue(reference);
 	}
 
 	public byte[] getPathTraversed() {
-		return (byte[]) Hooks.selector.actor.fields.get(pathTraversed).getValue(reference);
+		return (byte[]) fields.get(pathTraversed).getValue(reference);
 	}
 
 	public int[] getPathX() {
-		return (int[]) Hooks.selector.actor.fields.get(pathX).getValue(reference);
+		return (int[]) fields.get(pathX).getValue(reference);
 	}
 
 	public int[] getPathY() {
-		return (int[]) Hooks.selector.actor.fields.get(pathY).getValue(reference);
+		return (int[]) fields.get(pathY).getValue(reference);
 	}
 
 	public int getPoseAnimation() {
-		return (int) Hooks.selector.actor.fields.get(poseAnimation).getValue(reference);
+		return (int) fields.get(poseAnimation).getValue(reference);
 	}
 
 	public int getPoseFrame() {
-		return (int) Hooks.selector.actor.fields.get(poseFrame).getValue(reference);
+		return (int) fields.get(poseFrame).getValue(reference);
 	}
 
 	public int getQueueSize() {
-		return (int) Hooks.selector.actor.fields.get(queueSize).getValue(reference);
+		return (int) fields.get(queueSize).getValue(reference);
 	}
 
 	public int getX() {
-		return (int) Hooks.selector.actor.fields.get(x).getValue(reference);
+		return (int) fields.get(x).getValue(reference);
 	}
 
 	public int getY() {
-		return (int) Hooks.selector.actor.fields.get(y).getValue(reference);
+		return (int) fields.get(y).getValue(reference);
 	}
 
 	public boolean hasConfig() {
-		return (boolean) Hooks.selector.actor.fields.get(hasConfig).getValue(reference);
+		return (boolean) fields.get(hasConfig).getValue(reference);
 	}
 }

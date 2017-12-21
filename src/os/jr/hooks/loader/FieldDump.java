@@ -17,6 +17,9 @@ public class FieldDump {
 	}
 
 	public Object getValue(Object reference) {
+		if (reference==null) {
+			reference = RSGame.rootReference;
+		}
 		try {
 			Object o;
 			if (multiplier != null) {

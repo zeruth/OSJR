@@ -13,16 +13,16 @@ public class AbstractSoundSystem extends GameClass {
 	}
 
 	public int getOffset() {
-		return (int) Hooks.selector.abstractSoundSystem.fields.get(offset).getValue(reference);
+		return (int) fields.get(offset).getValue(reference);
 	}
 
 	public int[] getSamples() {
-		return (int[]) Hooks.selector.abstractSoundSystem.fields.get(samples).getValue(reference);
+		return (int[]) fields.get(samples).getValue(reference);
 	}
 
 	public TaskDataProvider getTaskDataProvider() {
 		return new TaskDataProvider(
-				Hooks.selector.abstractSoundSystem.fields.get(soundTaskDataProvider).getValue(reference));
+				fields.get(soundTaskDataProvider).getValue(reference));
 	}
 
 }

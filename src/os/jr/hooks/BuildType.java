@@ -16,26 +16,26 @@ public class BuildType extends GameClass {
 	}
 
 	public Object getBUILD_LIVE() {
-		return Hooks.selector.buildType.fields.get(BUILD_LIVE).getValue(reference);
+		return fields.get(BUILD_LIVE).getValue(reference);
 	}
 
 	public String getIdentifier() {
-		return (String) Hooks.selector.buildType.fields.get(identifier).getValue(reference);
+		return (String) fields.get(identifier).getValue(reference);
 	}
 
 	public Object getLIVE() {
-		return Hooks.selector.buildType.fields.get(LIVE).getValue(reference);
+		return fields.get(LIVE).getValue(reference);
 	}
 
 	public int getOrdinal() {
-		return (int) Hooks.selector.buildType.fields.get(ordinal).getValue(reference);
+		return (int) fields.get(ordinal).getValue(reference);
 	}
 
 	public Object getRC() {
-		return Hooks.selector.buildType.fields.get(RC).getValue(reference);
+		return fields.get(RC).getValue(reference);
 	}
 
 	public Object getWIP() {
-		return Hooks.selector.buildType.fields.get(WIP).getValue(reference);
+		return fields.get(WIP).getValue(reference);
 	}
 }

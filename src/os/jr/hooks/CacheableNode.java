@@ -17,11 +17,11 @@ public class CacheableNode extends GameClass {
 	}
 
 	public CacheableNode getNext() {
-		return new CacheableNode(Hooks.selector.cacheableNode.fields.get(next).getValue(reference));
+		return new CacheableNode(fields.get(next).getValue(reference));
 	}
 
 	public CacheableNode getPrevious() {
-		return new CacheableNode(Hooks.selector.cacheableNode.fields.get(previous).getValue(reference));
+		return new CacheableNode(fields.get(previous).getValue(reference));
 	}
 
 }

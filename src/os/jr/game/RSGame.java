@@ -182,6 +182,7 @@ public class RSGame implements AppletStub {
 	}
 
 	public void run() {
+		Utils.sendDebugPrintln("Hook Revision " + HOOK_REVISION);
 		classLoader = null;
 		try {
 			classLoader = new URLClassLoader(new URL[] { gamepackFile.toURI().toURL() });
@@ -211,7 +212,6 @@ public class RSGame implements AppletStub {
 				HooksLoader.loadHooksJson();
 				HookUpdater.init();
 				Utils.sendDebugPrintln("OS-JR " + VERSION + " Loaded.");
-				Utils.sendDebugPrintln("Hook Revision " + HOOK_REVISION);
 			}
 		}
 	}

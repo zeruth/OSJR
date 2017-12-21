@@ -4,8 +4,9 @@ import os.jr.hooks.loader.GameClass;
 
 public class Preferences extends GameClass {
 
-	public Preferences() {
+	public Preferences(Object reference) {
 		super(Hooks.classNames.get("Preferences"));
+		this.reference = reference;
 	}
 
 }

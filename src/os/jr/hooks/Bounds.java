@@ -11,7 +11,7 @@ public class Bounds extends GameClass {
 	}
 
 	public byte[][] getSpritePixels() {
-		return (byte[][]) Hooks.selector.bounds.fields.get(spritePixels).getValue(reference);
+		return (byte[][]) fields.get(spritePixels).getValue(reference);
 	}
 
 }

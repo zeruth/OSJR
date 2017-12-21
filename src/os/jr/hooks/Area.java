@@ -13,11 +13,11 @@ public class Area extends CacheableNode {
 	}
 
 	public NodeCache getAreaSpriteCache() {
-		return new NodeCache(Hooks.selector.area.fields.get(areaSpriteCache).getValue(reference));
+		return new NodeCache(fields.get(areaSpriteCache).getValue(reference));
 	}
 
 	public Area[] getMapAreaType() {
-		Object[] os = (Object[]) Hooks.selector.area.fields.get(mapAreaType).getValue(reference);
+		Object[] os = (Object[]) fields.get(mapAreaType).getValue(reference);
 		Area[] mapAreaType = new Area[os.length];
 		int count = 0;
 		for (Object o : os) {
@@ -28,11 +28,11 @@ public class Area extends CacheableNode {
 	}
 
 	public String getName() {
-		return (String) Hooks.selector.area.fields.get(name).getValue(reference);
+		return (String) fields.get(name).getValue(reference);
 	}
 
 	public int getSpriteID() {
-		return (int) Hooks.selector.area.fields.get(spriteID).getValue(reference);
+		return (int) fields.get(spriteID).getValue(reference);
 	}
 
 }

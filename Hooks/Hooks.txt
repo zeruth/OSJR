@@ -165,6 +165,399 @@ rank: k
 username: a
 world: e, 65229773
 
+{class0: a}
+
+{class1: w}
+userHome: h
+
+{class101: cl}
+
+{class105: dd}
+bitPosition: g
+blockSize0: j
+blockSize1: x
+codeBooks: c
+floors: s
+mappings: y
+modeBlockFlags: o
+modeMappings: r
+payload: t
+position: f
+residues: n
+
+{class106: dx}
+
+{class11: c}
+BoundingBox3DDrawMode_all: w
+BoundingBox3DDrawMode_mouseOver: a
+host: dt
+
+{class111: de}
+sfx_index: a
+vorbis_index: w
+
+{class113: dk}
+
+{class115: dz}
+cacheLocations: r
+validInterfaces: t
+
+{class116: dg}
+
+{class133: ej}
+Viewport_containsMouse: a
+Viewport_entityCountAtMouse: n, 12111091
+Viewport_entityIdsAtMouse: y
+Viewport_false0: k
+Viewport_mouseX: w, -730306591
+Viewport_mouseY: e, -671398125
+
+{class139: ei}
+
+{class150: ex}
+
+{class153: er}
+
+{class157: fn}
+dat2File: s
+idx255File: n
+idxCount: z, 2015749067
+idxFiles: y
+jagexClDat: k
+osNameLC: q
+randomDat: c
+
+{class159: fx}
+
+{class160: fm}
+cameraPitch: gs, -1636862767
+tt: v
+
+{class161: fj}
+indexScripts: dx
+
+{class163: fl}
+
+{class167: ft}
+
+{class168: fk}
+
+{class169: ff}
+
+{class173: fa}
+
+{class175: fz}
+socket: cs
+
+{class178: fw}
+state: f
+
+{class179: fu}
+
+{class18: l}
+headIconsPk: fh
+
+{class180: fc}
+
+{class185: ge}
+
+{class186: gg}
+currentTimeMsLast: a, -9054710416978003905
+currentTimeMsOffset: w, -6119670683134236171
+
+{class188: gz}
+
+{class19: m}
+
+{class192: gb}
+clanChatCount: nr, -322232451
+listFetcher: j
+
+{class193: gw}
+
+{class194: gf}
+
+{class199: ga}
+
+{class2: e}
+preferences: qj
+
+{class20: q}
+indexTrack2: dd
+
+{class21: b}
+xteaKeys: fx
+
+{class211: hp}
+queue: a
+
+{class213: ha}
+
+{class214: hm}
+
+{class215: ht}
+
+{class216: hq}
+
+{class217: hf}
+
+{class218: ho}
+priority: g, 2004185345
+
+{class219: hn}
+
+{class22: h}
+indexMaps: ct
+
+{class221: hy}
+slFlagSprites: bs
+
+{class222: hs}
+settings: w
+varpsMasks: a
+widgetSettings: e
+
+{class225: hd}
+
+{class226: hg}
+
+{class228: hx}
+
+{class229: hk}
+
+{class23: d}
+
+{class230: hi}
+
+{class231: hu}
+vorbisIndex: dn
+
+{class232: hw}
+
+{class233: hj}
+
+{class234: ix}
+runeSprites: u
+
+{class236: iy}
+
+{class237: ig}
+
+{class238: iq}
+ItemDefinition_modelIndexCache: t
+
+{class239: ii}
+
+{class240: im}
+cameraYaw: gy, -1524418041
+
+{class249: io}
+NetCache_crc: l
+NetCache_indexCaches: q
+NetCache_pendingPriorityResponses: z
+NetCache_pendingPriorityResponsesCount: t, 791424375
+NetCache_pendingPriorityWrites: k
+NetCache_pendingPriorityWritesCount: u, -1407929151
+NetCache_pendingResponses: x
+NetCache_pendingResponsesCount: c, -1116565755
+NetCache_pendingWrites: g
+NetCache_pendingWritesCount: j, -28511567
+NetCache_pendingWritesQueue: f
+NetCache_responseHeaderBuffer: y
+NetCache_socket: a
+
+{class25: p}
+
+{class250: ik}
+
+{class254: ic}
+
+{class255: iw}
+
+{class260: jc}
+
+{class262: jk}
+
+{class263: jt}
+
+{class265: je}
+
+{class268: jr}
+myWorldPort: db, 1266214211
+
+{class27: ad}
+
+{class276: jx}
+huffman: a
+
+{class277: jv}
+cp1252AsciiExtension: a
+
+{class278: js}
+titlemuteSprite: g
+
+{class279: jy}
+
+{class28: ag}
+
+{class280: jo}
+
+{class281: ja}
+scriptLocalInts: e
+
+{class282: jp}
+
+{class283: jz}
+
+{class285: ji}
+
+{class287: kj}
+NetCache_responseArchiveBuffer: o
+
+{class289: ku}
+
+{class29: ak}
+indexTrack1: cx
+
+{class293: kv}
+classInfos: a
+
+{class296: kx}
+
+{class299: kn}
+offsetsY: u
+
+{class3: k}
+indexTextures: cd
+rssocket: cz
+
+{class300: kc}
+
+{class305: kw}
+
+{class31: aq}
+
+{class33: at}
+
+{class34: ap}
+mapMarkers: fz
+seq_ref: a
+
+{class35: an}
+scriptStringStackSize: j, -1440292873
+
+{class36: ac}
+indexCache10: di
+selectedItemIndex: jz, 1715250021
+soundSystem0: od
+
+{class37: aw}
+indexModels: cl
+revision: e, 1490194549
+slStarSprites: bk
+widgetIndex: f
+
+{class39: ay}
+
+{class40: ai}
+
+{class41: af}
+
+{class43: az}
+indexSprites: ca
+
+{class44: av}
+mouseRecorder: bi
+
+{class45: ae}
+
+{class46: am}
+baseX: et, -1917457925
+
+{class47: aa}
+mapedge: fq
+
+{class48: aj}
+platformInfo: qf
+region: fi
+
+{class5: z}
+
+{class52: bb}
+
+{class54: bp}
+
+{class56: bg}
+fontPlain11: eb
+grandExchangeEvents: qi
+indexStore255: qx
+
+{class60: bw}
+
+{class61: bf}
+currentRequest: n
+renderOverview: qw
+tileHeights: a
+tileSettings: w
+
+{class64: bk}
+mapRegions: fs
+
+{class7: f}
+boundingBox3DDrawMode: k
+boundingBoxes: u
+drawBoundingBoxes2D: w
+drawBoundingBoxes3D: a
+drawObjectGeometry2D: e
+slArrowSprites: bz
+
+{class72: bd}
+
+{class81: cb}
+
+{class82: cv}
+intStack: t
+intStackSize: f, -531735453
+scriptLocalStrings: k
+scriptStack: c
+scriptStackCount: x, 733546181
+scriptStringStack: g
+SHAPE_VERTICES: z
+
+{class86: ce}
+indexCache4: cn
+
+{class87: cu}
+
+{class89: cs}
+
+{class91: cr}
+landMapFileIds: fn
+loadingBarPercentage: an, -233909077
+loadingText: ac
+loginIndex: aw, 773237997
+loginMessage1: ay
+loginMessage2: ai
+loginMessage3: af
+loginWindowX: i, 1407958579
+Login_isUsernameRemembered: av
+Login_response0: al
+logoSprite: f
+password: az
+username: ah
+worldSelectShown: bw
+
+{class94: cy}
+playerIndexesCount: z, 1049985723
+playerIndices: t
+Players_orientations: x
+Players_regions: j
+Players_targetIndices: c
+
+{class96: cm}
+chatLineMap: a
+messages: w
+
 {ClassInfo: kb}
 args: f
 count: w, 1480288181

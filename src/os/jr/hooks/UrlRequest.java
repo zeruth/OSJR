@@ -7,8 +7,9 @@ public class UrlRequest extends GameClass {
 
 	public static String localPlayer = "localPlayer";
 
-	public UrlRequest() {
+	public UrlRequest(Object reference) {
 		super(Hooks.classNames.get("UrlRequest"));
+		this.reference = reference;
 	}
 
 	public Player getLocalPlayer() {

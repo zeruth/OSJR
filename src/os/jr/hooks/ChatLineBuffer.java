@@ -12,11 +12,11 @@ public class ChatLineBuffer extends GameClass {
 	}
 
 	public int getLength() {
-		return (int) Hooks.selector.chatLineBuffer.fields.get(length).getValue(reference);
+		return (int) fields.get(length).getValue(reference);
 	}
 
 	public MessageNode[] getLines() {
-		Object[] os = (Object[]) Hooks.selector.chatLineBuffer.fields.get(lines).getValue(reference);
+		Object[] os = (Object[]) fields.get(lines).getValue(reference);
 		MessageNode[] lines = new MessageNode[os.length];
 		int count = 0;
 		for (Object o : os) {

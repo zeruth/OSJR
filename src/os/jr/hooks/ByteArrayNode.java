@@ -9,7 +9,7 @@ public class ByteArrayNode extends Node {
 	}
 
 	public byte[] getByteArray() {
-		return (byte[]) Hooks.selector.byteArrayNode.fields.get(byteArray).getValue(reference);
+		return (byte[]) fields.get(byteArray).getValue(reference);
 	}
 
 }

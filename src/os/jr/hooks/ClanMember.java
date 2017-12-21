@@ -13,15 +13,15 @@ public class ClanMember extends GameClass {
 	}
 
 	public byte getRank() {
-		return (byte) Hooks.selector.clanMember.fields.get(rank).getValue(reference);
+		return (byte) fields.get(rank).getValue(reference);
 	}
 
 	public String getUsername() {
-		return (String) Hooks.selector.clanMember.fields.get(username).getValue(reference);
+		return (String) fields.get(username).getValue(reference);
 	}
 
 	public int getWorld() {
-		return (int) Hooks.selector.clanMember.fields.get(world).getValue(reference);
+		return (int) fields.get(world).getValue(reference);
 	}
 
 }

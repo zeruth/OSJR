@@ -15,31 +15,31 @@ public class BoundingBox3D extends BoundingBox {
 	}
 
 	public int getColor() {
-		return (int) Hooks.selector.boundingBox3D.fields.get(color).getValue(reference);
+		return (int) fields.get(color).getValue(reference);
 	}
 
 	public int getInt1() {
-		return (int) Hooks.selector.boundingBox3D.fields.get(int1).getValue(reference);
+		return (int) fields.get(int1).getValue(reference);
 	}
 
 	public int getInt2() {
-		return (int) Hooks.selector.boundingBox3D.fields.get(int2).getValue(reference);
+		return (int) fields.get(int2).getValue(reference);
 	}
 
 	public int getInt3() {
-		return (int) Hooks.selector.boundingBox3D.fields.get(int3).getValue(reference);
+		return (int) fields.get(int3).getValue(reference);
 	}
 
 	public int getInt4() {
-		return (int) Hooks.selector.boundingBox3D.fields.get(int4).getValue(reference);
+		return (int) fields.get(int4).getValue(reference);
 	}
 
 	public int getInt5() {
-		return (int) Hooks.selector.boundingBox3D.fields.get(int5).getValue(reference);
+		return (int) fields.get(int5).getValue(reference);
 	}
 
 	public int getInt6() {
-		return (int) Hooks.selector.boundingBox3D.fields.get(int6).getValue(reference);
+		return (int) fields.get(int6).getValue(reference);
 	}
 
 }

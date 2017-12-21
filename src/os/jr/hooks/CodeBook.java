@@ -4,8 +4,9 @@ import os.jr.hooks.loader.GameClass;
 
 public class CodeBook extends GameClass {
 
-	public CodeBook() {
+	public CodeBook(Object reference) {
 		super(Hooks.classNames.get("CodeBook"));
+		this.reference = reference;
 	}
 
 }

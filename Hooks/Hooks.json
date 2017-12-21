@@ -822,6 +822,1670 @@
   },
   {
     "rsClass": {
+      "refactoredName": "class0",
+      "obfuscatedName": "a"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class1",
+      "obfuscatedName": "w"
+    },
+    "rsFields": [
+      {
+        "className": "class1",
+        "refactoredName": "userHome",
+        "fieldName": "h"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class101",
+      "obfuscatedName": "cl"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class105",
+      "obfuscatedName": "dd"
+    },
+    "rsFields": [
+      {
+        "className": "class105",
+        "refactoredName": "bitPosition",
+        "fieldName": "g"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "blockSize0",
+        "fieldName": "j"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "blockSize1",
+        "fieldName": "x"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "codeBooks",
+        "fieldName": "c"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "floors",
+        "fieldName": "s"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "mappings",
+        "fieldName": "y"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "modeBlockFlags",
+        "fieldName": "o"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "modeMappings",
+        "fieldName": "r"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "payload",
+        "fieldName": "t"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "position",
+        "fieldName": "f"
+      },
+      {
+        "className": "class105",
+        "refactoredName": "residues",
+        "fieldName": "n"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class106",
+      "obfuscatedName": "dx"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class11",
+      "obfuscatedName": "c"
+    },
+    "rsFields": [
+      {
+        "className": "class11",
+        "refactoredName": "BoundingBox3DDrawMode_all",
+        "fieldName": "w"
+      },
+      {
+        "className": "class11",
+        "refactoredName": "BoundingBox3DDrawMode_mouseOver",
+        "fieldName": "a"
+      },
+      {
+        "className": "class11",
+        "refactoredName": "host",
+        "fieldName": "dt"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class111",
+      "obfuscatedName": "de"
+    },
+    "rsFields": [
+      {
+        "className": "class111",
+        "refactoredName": "sfx_index",
+        "fieldName": "a"
+      },
+      {
+        "className": "class111",
+        "refactoredName": "vorbis_index",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class113",
+      "obfuscatedName": "dk"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class115",
+      "obfuscatedName": "dz"
+    },
+    "rsFields": [
+      {
+        "className": "class115",
+        "refactoredName": "cacheLocations",
+        "fieldName": "r"
+      },
+      {
+        "className": "class115",
+        "refactoredName": "validInterfaces",
+        "fieldName": "t"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class116",
+      "obfuscatedName": "dg"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class133",
+      "obfuscatedName": "ej"
+    },
+    "rsFields": [
+      {
+        "className": "class133",
+        "refactoredName": "Viewport_containsMouse",
+        "fieldName": "a"
+      },
+      {
+        "className": "class133",
+        "refactoredName": "Viewport_entityCountAtMouse",
+        "fieldName": "n",
+        "multiplier": 12111091
+      },
+      {
+        "className": "class133",
+        "refactoredName": "Viewport_entityIdsAtMouse",
+        "fieldName": "y"
+      },
+      {
+        "className": "class133",
+        "refactoredName": "Viewport_false0",
+        "fieldName": "k"
+      },
+      {
+        "className": "class133",
+        "refactoredName": "Viewport_mouseX",
+        "fieldName": "w",
+        "multiplier": -730306591
+      },
+      {
+        "className": "class133",
+        "refactoredName": "Viewport_mouseY",
+        "fieldName": "e",
+        "multiplier": -671398125
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class139",
+      "obfuscatedName": "ei"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class150",
+      "obfuscatedName": "ex"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class153",
+      "obfuscatedName": "er"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class157",
+      "obfuscatedName": "fn"
+    },
+    "rsFields": [
+      {
+        "className": "class157",
+        "refactoredName": "dat2File",
+        "fieldName": "s"
+      },
+      {
+        "className": "class157",
+        "refactoredName": "idx255File",
+        "fieldName": "n"
+      },
+      {
+        "className": "class157",
+        "refactoredName": "idxCount",
+        "fieldName": "z",
+        "multiplier": 2015749067
+      },
+      {
+        "className": "class157",
+        "refactoredName": "idxFiles",
+        "fieldName": "y"
+      },
+      {
+        "className": "class157",
+        "refactoredName": "jagexClDat",
+        "fieldName": "k"
+      },
+      {
+        "className": "class157",
+        "refactoredName": "osNameLC",
+        "fieldName": "q"
+      },
+      {
+        "className": "class157",
+        "refactoredName": "randomDat",
+        "fieldName": "c"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class159",
+      "obfuscatedName": "fx"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class160",
+      "obfuscatedName": "fm"
+    },
+    "rsFields": [
+      {
+        "className": "class160",
+        "refactoredName": "cameraPitch",
+        "fieldName": "gs",
+        "multiplier": -1636862767
+      },
+      {
+        "className": "class160",
+        "refactoredName": "tt",
+        "fieldName": "v"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class161",
+      "obfuscatedName": "fj"
+    },
+    "rsFields": [
+      {
+        "className": "class161",
+        "refactoredName": "indexScripts",
+        "fieldName": "dx"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class163",
+      "obfuscatedName": "fl"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class167",
+      "obfuscatedName": "ft"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class168",
+      "obfuscatedName": "fk"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class169",
+      "obfuscatedName": "ff"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class173",
+      "obfuscatedName": "fa"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class175",
+      "obfuscatedName": "fz"
+    },
+    "rsFields": [
+      {
+        "className": "class175",
+        "refactoredName": "socket",
+        "fieldName": "cs"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class178",
+      "obfuscatedName": "fw"
+    },
+    "rsFields": [
+      {
+        "className": "class178",
+        "refactoredName": "state",
+        "fieldName": "f"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class179",
+      "obfuscatedName": "fu"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class18",
+      "obfuscatedName": "l"
+    },
+    "rsFields": [
+      {
+        "className": "class18",
+        "refactoredName": "headIconsPk",
+        "fieldName": "fh"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class180",
+      "obfuscatedName": "fc"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class185",
+      "obfuscatedName": "ge"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class186",
+      "obfuscatedName": "gg"
+    },
+    "rsFields": [
+      {
+        "className": "class186",
+        "refactoredName": "currentTimeMsLast",
+        "fieldName": "a",
+        "multiplier": -9054710416978003905
+      },
+      {
+        "className": "class186",
+        "refactoredName": "currentTimeMsOffset",
+        "fieldName": "w",
+        "multiplier": -6119670683134236171
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class188",
+      "obfuscatedName": "gz"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class19",
+      "obfuscatedName": "m"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class192",
+      "obfuscatedName": "gb"
+    },
+    "rsFields": [
+      {
+        "className": "class192",
+        "refactoredName": "clanChatCount",
+        "fieldName": "nr",
+        "multiplier": -322232451
+      },
+      {
+        "className": "class192",
+        "refactoredName": "listFetcher",
+        "fieldName": "j"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class193",
+      "obfuscatedName": "gw"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class194",
+      "obfuscatedName": "gf"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class199",
+      "obfuscatedName": "ga"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class2",
+      "obfuscatedName": "e"
+    },
+    "rsFields": [
+      {
+        "className": "class2",
+        "refactoredName": "preferences",
+        "fieldName": "qj"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class20",
+      "obfuscatedName": "q"
+    },
+    "rsFields": [
+      {
+        "className": "class20",
+        "refactoredName": "indexTrack2",
+        "fieldName": "dd"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class21",
+      "obfuscatedName": "b"
+    },
+    "rsFields": [
+      {
+        "className": "class21",
+        "refactoredName": "xteaKeys",
+        "fieldName": "fx"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class211",
+      "obfuscatedName": "hp"
+    },
+    "rsFields": [
+      {
+        "className": "class211",
+        "refactoredName": "queue",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class213",
+      "obfuscatedName": "ha"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class214",
+      "obfuscatedName": "hm"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class215",
+      "obfuscatedName": "ht"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class216",
+      "obfuscatedName": "hq"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class217",
+      "obfuscatedName": "hf"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class218",
+      "obfuscatedName": "ho"
+    },
+    "rsFields": [
+      {
+        "className": "class218",
+        "refactoredName": "priority",
+        "fieldName": "g",
+        "multiplier": 2004185345
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class219",
+      "obfuscatedName": "hn"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class22",
+      "obfuscatedName": "h"
+    },
+    "rsFields": [
+      {
+        "className": "class22",
+        "refactoredName": "indexMaps",
+        "fieldName": "ct"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class221",
+      "obfuscatedName": "hy"
+    },
+    "rsFields": [
+      {
+        "className": "class221",
+        "refactoredName": "slFlagSprites",
+        "fieldName": "bs"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class222",
+      "obfuscatedName": "hs"
+    },
+    "rsFields": [
+      {
+        "className": "class222",
+        "refactoredName": "settings",
+        "fieldName": "w"
+      },
+      {
+        "className": "class222",
+        "refactoredName": "varpsMasks",
+        "fieldName": "a"
+      },
+      {
+        "className": "class222",
+        "refactoredName": "widgetSettings",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class225",
+      "obfuscatedName": "hd"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class226",
+      "obfuscatedName": "hg"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class228",
+      "obfuscatedName": "hx"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class229",
+      "obfuscatedName": "hk"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class23",
+      "obfuscatedName": "d"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class230",
+      "obfuscatedName": "hi"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class231",
+      "obfuscatedName": "hu"
+    },
+    "rsFields": [
+      {
+        "className": "class231",
+        "refactoredName": "vorbisIndex",
+        "fieldName": "dn"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class232",
+      "obfuscatedName": "hw"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class233",
+      "obfuscatedName": "hj"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class234",
+      "obfuscatedName": "ix"
+    },
+    "rsFields": [
+      {
+        "className": "class234",
+        "refactoredName": "runeSprites",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class236",
+      "obfuscatedName": "iy"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class237",
+      "obfuscatedName": "ig"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class238",
+      "obfuscatedName": "iq"
+    },
+    "rsFields": [
+      {
+        "className": "class238",
+        "refactoredName": "ItemDefinition_modelIndexCache",
+        "fieldName": "t"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class239",
+      "obfuscatedName": "ii"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class240",
+      "obfuscatedName": "im"
+    },
+    "rsFields": [
+      {
+        "className": "class240",
+        "refactoredName": "cameraYaw",
+        "fieldName": "gy",
+        "multiplier": -1524418041
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class249",
+      "obfuscatedName": "io"
+    },
+    "rsFields": [
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_crc",
+        "fieldName": "l"
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_indexCaches",
+        "fieldName": "q"
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_pendingPriorityResponses",
+        "fieldName": "z"
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_pendingPriorityResponsesCount",
+        "fieldName": "t",
+        "multiplier": 791424375
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_pendingPriorityWrites",
+        "fieldName": "k"
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_pendingPriorityWritesCount",
+        "fieldName": "u",
+        "multiplier": -1407929151
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_pendingResponses",
+        "fieldName": "x"
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_pendingResponsesCount",
+        "fieldName": "c",
+        "multiplier": -1116565755
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_pendingWrites",
+        "fieldName": "g"
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_pendingWritesCount",
+        "fieldName": "j",
+        "multiplier": -28511567
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_pendingWritesQueue",
+        "fieldName": "f"
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_responseHeaderBuffer",
+        "fieldName": "y"
+      },
+      {
+        "className": "class249",
+        "refactoredName": "NetCache_socket",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class25",
+      "obfuscatedName": "p"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class250",
+      "obfuscatedName": "ik"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class254",
+      "obfuscatedName": "ic"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class255",
+      "obfuscatedName": "iw"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class260",
+      "obfuscatedName": "jc"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class262",
+      "obfuscatedName": "jk"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class263",
+      "obfuscatedName": "jt"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class265",
+      "obfuscatedName": "je"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class268",
+      "obfuscatedName": "jr"
+    },
+    "rsFields": [
+      {
+        "className": "class268",
+        "refactoredName": "myWorldPort",
+        "fieldName": "db",
+        "multiplier": 1266214211
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class27",
+      "obfuscatedName": "ad"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class276",
+      "obfuscatedName": "jx"
+    },
+    "rsFields": [
+      {
+        "className": "class276",
+        "refactoredName": "huffman",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class277",
+      "obfuscatedName": "jv"
+    },
+    "rsFields": [
+      {
+        "className": "class277",
+        "refactoredName": "cp1252AsciiExtension",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class278",
+      "obfuscatedName": "js"
+    },
+    "rsFields": [
+      {
+        "className": "class278",
+        "refactoredName": "titlemuteSprite",
+        "fieldName": "g"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class279",
+      "obfuscatedName": "jy"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class28",
+      "obfuscatedName": "ag"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class280",
+      "obfuscatedName": "jo"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class281",
+      "obfuscatedName": "ja"
+    },
+    "rsFields": [
+      {
+        "className": "class281",
+        "refactoredName": "scriptLocalInts",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class282",
+      "obfuscatedName": "jp"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class283",
+      "obfuscatedName": "jz"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class285",
+      "obfuscatedName": "ji"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class287",
+      "obfuscatedName": "kj"
+    },
+    "rsFields": [
+      {
+        "className": "class287",
+        "refactoredName": "NetCache_responseArchiveBuffer",
+        "fieldName": "o"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class289",
+      "obfuscatedName": "ku"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class29",
+      "obfuscatedName": "ak"
+    },
+    "rsFields": [
+      {
+        "className": "class29",
+        "refactoredName": "indexTrack1",
+        "fieldName": "cx"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class293",
+      "obfuscatedName": "kv"
+    },
+    "rsFields": [
+      {
+        "className": "class293",
+        "refactoredName": "classInfos",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class296",
+      "obfuscatedName": "kx"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class299",
+      "obfuscatedName": "kn"
+    },
+    "rsFields": [
+      {
+        "className": "class299",
+        "refactoredName": "offsetsY",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class3",
+      "obfuscatedName": "k"
+    },
+    "rsFields": [
+      {
+        "className": "class3",
+        "refactoredName": "indexTextures",
+        "fieldName": "cd"
+      },
+      {
+        "className": "class3",
+        "refactoredName": "rssocket",
+        "fieldName": "cz"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class300",
+      "obfuscatedName": "kc"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class305",
+      "obfuscatedName": "kw"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class31",
+      "obfuscatedName": "aq"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class33",
+      "obfuscatedName": "at"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class34",
+      "obfuscatedName": "ap"
+    },
+    "rsFields": [
+      {
+        "className": "class34",
+        "refactoredName": "mapMarkers",
+        "fieldName": "fz"
+      },
+      {
+        "className": "class34",
+        "refactoredName": "seq_ref",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class35",
+      "obfuscatedName": "an"
+    },
+    "rsFields": [
+      {
+        "className": "class35",
+        "refactoredName": "scriptStringStackSize",
+        "fieldName": "j",
+        "multiplier": -1440292873
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class36",
+      "obfuscatedName": "ac"
+    },
+    "rsFields": [
+      {
+        "className": "class36",
+        "refactoredName": "indexCache10",
+        "fieldName": "di"
+      },
+      {
+        "className": "class36",
+        "refactoredName": "selectedItemIndex",
+        "fieldName": "jz",
+        "multiplier": 1715250021
+      },
+      {
+        "className": "class36",
+        "refactoredName": "soundSystem0",
+        "fieldName": "od"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class37",
+      "obfuscatedName": "aw"
+    },
+    "rsFields": [
+      {
+        "className": "class37",
+        "refactoredName": "indexModels",
+        "fieldName": "cl"
+      },
+      {
+        "className": "class37",
+        "refactoredName": "revision",
+        "fieldName": "e",
+        "multiplier": 1490194549
+      },
+      {
+        "className": "class37",
+        "refactoredName": "slStarSprites",
+        "fieldName": "bk"
+      },
+      {
+        "className": "class37",
+        "refactoredName": "widgetIndex",
+        "fieldName": "f"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class39",
+      "obfuscatedName": "ay"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class40",
+      "obfuscatedName": "ai"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class41",
+      "obfuscatedName": "af"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class43",
+      "obfuscatedName": "az"
+    },
+    "rsFields": [
+      {
+        "className": "class43",
+        "refactoredName": "indexSprites",
+        "fieldName": "ca"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class44",
+      "obfuscatedName": "av"
+    },
+    "rsFields": [
+      {
+        "className": "class44",
+        "refactoredName": "mouseRecorder",
+        "fieldName": "bi"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class45",
+      "obfuscatedName": "ae"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class46",
+      "obfuscatedName": "am"
+    },
+    "rsFields": [
+      {
+        "className": "class46",
+        "refactoredName": "baseX",
+        "fieldName": "et",
+        "multiplier": -1917457925
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class47",
+      "obfuscatedName": "aa"
+    },
+    "rsFields": [
+      {
+        "className": "class47",
+        "refactoredName": "mapedge",
+        "fieldName": "fq"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class48",
+      "obfuscatedName": "aj"
+    },
+    "rsFields": [
+      {
+        "className": "class48",
+        "refactoredName": "platformInfo",
+        "fieldName": "qf"
+      },
+      {
+        "className": "class48",
+        "refactoredName": "region",
+        "fieldName": "fi"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class5",
+      "obfuscatedName": "z"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class52",
+      "obfuscatedName": "bb"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class54",
+      "obfuscatedName": "bp"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class56",
+      "obfuscatedName": "bg"
+    },
+    "rsFields": [
+      {
+        "className": "class56",
+        "refactoredName": "fontPlain11",
+        "fieldName": "eb"
+      },
+      {
+        "className": "class56",
+        "refactoredName": "grandExchangeEvents",
+        "fieldName": "qi"
+      },
+      {
+        "className": "class56",
+        "refactoredName": "indexStore255",
+        "fieldName": "qx"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class60",
+      "obfuscatedName": "bw"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class61",
+      "obfuscatedName": "bf"
+    },
+    "rsFields": [
+      {
+        "className": "class61",
+        "refactoredName": "currentRequest",
+        "fieldName": "n"
+      },
+      {
+        "className": "class61",
+        "refactoredName": "renderOverview",
+        "fieldName": "qw"
+      },
+      {
+        "className": "class61",
+        "refactoredName": "tileHeights",
+        "fieldName": "a"
+      },
+      {
+        "className": "class61",
+        "refactoredName": "tileSettings",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class64",
+      "obfuscatedName": "bk"
+    },
+    "rsFields": [
+      {
+        "className": "class64",
+        "refactoredName": "mapRegions",
+        "fieldName": "fs"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class7",
+      "obfuscatedName": "f"
+    },
+    "rsFields": [
+      {
+        "className": "class7",
+        "refactoredName": "boundingBox3DDrawMode",
+        "fieldName": "k"
+      },
+      {
+        "className": "class7",
+        "refactoredName": "boundingBoxes",
+        "fieldName": "u"
+      },
+      {
+        "className": "class7",
+        "refactoredName": "drawBoundingBoxes2D",
+        "fieldName": "w"
+      },
+      {
+        "className": "class7",
+        "refactoredName": "drawBoundingBoxes3D",
+        "fieldName": "a"
+      },
+      {
+        "className": "class7",
+        "refactoredName": "drawObjectGeometry2D",
+        "fieldName": "e"
+      },
+      {
+        "className": "class7",
+        "refactoredName": "slArrowSprites",
+        "fieldName": "bz"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class72",
+      "obfuscatedName": "bd"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class81",
+      "obfuscatedName": "cb"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class82",
+      "obfuscatedName": "cv"
+    },
+    "rsFields": [
+      {
+        "className": "class82",
+        "refactoredName": "intStack",
+        "fieldName": "t"
+      },
+      {
+        "className": "class82",
+        "refactoredName": "intStackSize",
+        "fieldName": "f",
+        "multiplier": -531735453
+      },
+      {
+        "className": "class82",
+        "refactoredName": "scriptLocalStrings",
+        "fieldName": "k"
+      },
+      {
+        "className": "class82",
+        "refactoredName": "scriptStack",
+        "fieldName": "c"
+      },
+      {
+        "className": "class82",
+        "refactoredName": "scriptStackCount",
+        "fieldName": "x",
+        "multiplier": 733546181
+      },
+      {
+        "className": "class82",
+        "refactoredName": "scriptStringStack",
+        "fieldName": "g"
+      },
+      {
+        "className": "class82",
+        "refactoredName": "SHAPE_VERTICES",
+        "fieldName": "z"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class86",
+      "obfuscatedName": "ce"
+    },
+    "rsFields": [
+      {
+        "className": "class86",
+        "refactoredName": "indexCache4",
+        "fieldName": "cn"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class87",
+      "obfuscatedName": "cu"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class89",
+      "obfuscatedName": "cs"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class91",
+      "obfuscatedName": "cr"
+    },
+    "rsFields": [
+      {
+        "className": "class91",
+        "refactoredName": "landMapFileIds",
+        "fieldName": "fn"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "loadingBarPercentage",
+        "fieldName": "an",
+        "multiplier": -233909077
+      },
+      {
+        "className": "class91",
+        "refactoredName": "loadingText",
+        "fieldName": "ac"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "loginIndex",
+        "fieldName": "aw",
+        "multiplier": 773237997
+      },
+      {
+        "className": "class91",
+        "refactoredName": "loginMessage1",
+        "fieldName": "ay"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "loginMessage2",
+        "fieldName": "ai"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "loginMessage3",
+        "fieldName": "af"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "loginWindowX",
+        "fieldName": "i",
+        "multiplier": 1407958579
+      },
+      {
+        "className": "class91",
+        "refactoredName": "Login_isUsernameRemembered",
+        "fieldName": "av"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "Login_response0",
+        "fieldName": "al"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "logoSprite",
+        "fieldName": "f"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "password",
+        "fieldName": "az"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "username",
+        "fieldName": "ah"
+      },
+      {
+        "className": "class91",
+        "refactoredName": "worldSelectShown",
+        "fieldName": "bw"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class94",
+      "obfuscatedName": "cy"
+    },
+    "rsFields": [
+      {
+        "className": "class94",
+        "refactoredName": "playerIndexesCount",
+        "fieldName": "z",
+        "multiplier": 1049985723
+      },
+      {
+        "className": "class94",
+        "refactoredName": "playerIndices",
+        "fieldName": "t"
+      },
+      {
+        "className": "class94",
+        "refactoredName": "Players_orientations",
+        "fieldName": "x"
+      },
+      {
+        "className": "class94",
+        "refactoredName": "Players_regions",
+        "fieldName": "j"
+      },
+      {
+        "className": "class94",
+        "refactoredName": "Players_targetIndices",
+        "fieldName": "c"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "class96",
+      "obfuscatedName": "cm"
+    },
+    "rsFields": [
+      {
+        "className": "class96",
+        "refactoredName": "chatLineMap",
+        "fieldName": "a"
+      },
+      {
+        "className": "class96",
+        "refactoredName": "messages",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
       "refactoredName": "ClassInfo",
       "obfuscatedName": "kb"
     },

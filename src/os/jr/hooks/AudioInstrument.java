@@ -34,99 +34,99 @@ public class AudioInstrument extends GameClass {
 	}
 
 	public int getDelayDecay() {
-		return (int) Hooks.selector.audioInstrument.fields.get(delayDecay).getValue(reference);
+		return (int) fields.get(delayDecay).getValue(reference);
 	}
 
 	public int[] getDelays() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(delays).getValue(reference);
+		return (int[]) fields.get(delays).getValue(reference);
 	}
 
 	public int getDelayTime() {
-		return (int) Hooks.selector.audioInstrument.fields.get(delayTime).getValue(reference);
+		return (int) fields.get(delayTime).getValue(reference);
 	}
 
 	public int getDuration() {
-		return (int) Hooks.selector.audioInstrument.fields.get(duration).getValue(reference);
+		return (int) fields.get(duration).getValue(reference);
 	}
 
 	public SoundEffect3 getFilter() {
-		return new SoundEffect3(Hooks.selector.audioInstrument.fields.get(filter).getValue(reference));
+		return new SoundEffect3(fields.get(filter).getValue(reference));
 	}
 
 	public AudioEnvelope getFilterEnvelope() {
-		return new AudioEnvelope(Hooks.selector.audioInstrument.fields.get(filterEnvelope).getValue(reference));
+		return new AudioEnvelope(fields.get(filterEnvelope).getValue(reference));
 	}
 
 	public int[] getNOISE() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(NOISE).getValue(reference);
+		return (int[]) fields.get(NOISE).getValue(reference);
 	}
 
 	public int getOffset() {
-		return (int) Hooks.selector.audioInstrument.fields.get(offset).getValue(reference);
+		return (int) fields.get(offset).getValue(reference);
 	}
 
 	public int[] getOscillatorDelays() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(oscillatorDelays).getValue(reference);
+		return (int[]) fields.get(oscillatorDelays).getValue(reference);
 	}
 
 	public int[] getOscillatorPitch() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(oscillatorPitch).getValue(reference);
+		return (int[]) fields.get(oscillatorPitch).getValue(reference);
 	}
 
 	public int[] getOscillatorVolume() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(oscillatorVolume).getValue(reference);
+		return (int[]) fields.get(oscillatorVolume).getValue(reference);
 	}
 
 	public int[] getPhases() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(phases).getValue(reference);
+		return (int[]) fields.get(phases).getValue(reference);
 	}
 
 	public AudioEnvelope getPitch() {
-		return new AudioEnvelope(Hooks.selector.audioInstrument.fields.get(pitch).getValue(reference));
+		return new AudioEnvelope(fields.get(pitch).getValue(reference));
 	}
 
 	public int[] getPitchBaseSteps() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(pitchBaseSteps).getValue(reference);
+		return (int[]) fields.get(pitchBaseSteps).getValue(reference);
 	}
 
 	public AudioEnvelope getPitchModifier() {
-		return new AudioEnvelope(Hooks.selector.audioInstrument.fields.get(pitchModifier).getValue(reference));
+		return new AudioEnvelope(fields.get(pitchModifier).getValue(reference));
 	}
 
 	public AudioEnvelope getPitchModifierAmplitude() {
-		return new AudioEnvelope(Hooks.selector.audioInstrument.fields.get(pitchModifierAmplitude).getValue(reference));
+		return new AudioEnvelope(fields.get(pitchModifierAmplitude).getValue(reference));
 	}
 
 	public int[] getPitchSteps() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(pitchSteps).getValue(reference);
+		return (int[]) fields.get(pitchSteps).getValue(reference);
 	}
 
 	public AudioEnvelope getRelease() {
-		return new AudioEnvelope(Hooks.selector.audioInstrument.fields.get(release).getValue(reference));
+		return new AudioEnvelope(fields.get(release).getValue(reference));
 	}
 
 	public int[] getSamples() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(samples).getValue(reference);
+		return (int[]) fields.get(samples).getValue(reference);
 	}
 
 	public int[] getSINE() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(SINE).getValue(reference);
+		return (int[]) fields.get(SINE).getValue(reference);
 	}
 
 	public AudioEnvelope getVolume() {
-		return new AudioEnvelope(Hooks.selector.audioInstrument.fields.get(volume).getValue(reference));
+		return new AudioEnvelope(fields.get(volume).getValue(reference));
 	}
 
 	public AudioEnvelope getVolumeMultiplier() {
-		return new AudioEnvelope(Hooks.selector.audioInstrument.fields.get(volumeMultiplier).getValue(reference));
+		return new AudioEnvelope(fields.get(volumeMultiplier).getValue(reference));
 	}
 
 	public AudioEnvelope getVolumeMultiplierAmplitude() {
 		return new AudioEnvelope(
-				Hooks.selector.audioInstrument.fields.get(volumeMultiplierAmplitude).getValue(reference));
+				fields.get(volumeMultiplierAmplitude).getValue(reference));
 	}
 
 	public int[] getVolumeSteps() {
-		return (int[]) Hooks.selector.audioInstrument.fields.get(volumeSteps).getValue(reference);
+		return (int[]) fields.get(volumeSteps).getValue(reference);
 	}
 }

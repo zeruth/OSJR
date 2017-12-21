@@ -13,15 +13,15 @@ public class BufferProvider extends GameClass {
 	}
 
 	public int getHeight() {
-		return (int) Hooks.selector.bufferProvider.fields.get(height).getValue(reference);
+		return (int) fields.get(height).getValue(reference);
 	}
 
 	public int[] getPixels() {
-		return (int[]) Hooks.selector.bufferProvider.fields.get(pixels).getValue(reference);
+		return (int[]) fields.get(pixels).getValue(reference);
 	}
 
 	public int getWidth() {
-		return (int) Hooks.selector.bufferProvider.fields.get(width).getValue(reference);
+		return (int) fields.get(width).getValue(reference);
 	}
 
 }

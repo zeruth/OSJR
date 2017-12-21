@@ -9,6 +9,7 @@ public class Hooks {
 
 	public static Hooks selector;
 	public static HashMap<String, String> classNames = new HashMap<String, String>();
+	public static HashMap<String, String> refactoredClassNames = new HashMap<String, String>();
 	public static GameClass[] collection = new GameClass[400];
 
 	public static void init() {
@@ -43,13 +44,14 @@ public class Hooks {
 	public BuildType buildType = new BuildType();
 	public ByteArrayNode byteArrayNode = new ByteArrayNode();
 	public CacheableNode cacheableNode = new CacheableNode(null);
-	public CacheFile cacheFile = new CacheFile();
+	public CacheFile cacheFile = new CacheFile(null);
 	public ChatLineBuffer chatLineBuffer = new ChatLineBuffer();
 	public ClanMember clanMember = new ClanMember();
+	public Class0 class0 = new Class0();
 	public ClassInfo classInfo = new ClassInfo();
 	public Client client = new Client(RSGame.rootReference);
 	public ClientPacket clientPacket = new ClientPacket();
-	public CodeBook codeBook = new CodeBook();
+	public CodeBook codeBook = new CodeBook(null);
 	public CollisionData collisionData = new CollisionData(null);
 	public CombatInfo1 combatInfo1 = new CombatInfo1();
 	public CombatInfo2 combatInfo2 = new CombatInfo2();
@@ -59,14 +61,14 @@ public class Hooks {
 	public DecorativeObject decorativeObject = new DecorativeObject();
 	public Deque deque = new Deque(null);
 	public DirectByteBuffer directByteBuffer = new DirectByteBuffer();
-	public DState dState = new DState();
+	public DState dState = new DState(null);
 	public DynamicObject dynamicObject = new DynamicObject();
 	public Enum enum_ = new Enum();
 	public FaceNormal faceNormal = new FaceNormal();
 	public FileOnDisk fileOnDisk = new FileOnDisk(null);
 	public FileRequest fileRequest = new FileRequest();
 	public FileSystem fileSystem = new FileSystem();
-	public Floor1 floor1 = new Floor1();
+	public Floor1 floor1 = new Floor1(null);
 	public FloorUnderlayDefinition floorUnderlayDefinition = new FloorUnderlayDefinition();
 	public FontName fontName = new FontName();
 	public Fonts fonts = new Fonts();
@@ -91,7 +93,7 @@ public class Hooks {
 	public Identifiers identifiers = new Identifiers();
 	public Ignore ignore = new Ignore(null);
 	public IndexData indexData = new IndexData(null);
-	public IndexDataBase indexDataBase = new IndexDataBase();
+	public IndexDataBase indexDataBase = new IndexDataBase(null);
 	public IndexedSprite indexedSprite = new IndexedSprite();
 	public IndexFile indexFile = new IndexFile();
 	public IndexStoreActionHandler indexStoreActionHandler = new IndexStoreActionHandler();
@@ -111,7 +113,7 @@ public class Hooks {
 	public LoginPacket loginPacket = new LoginPacket();
 	public MachineInfo machineInfo = new MachineInfo();
 	public MainBufferProvider mainBufferProvider = new MainBufferProvider();
-	public Mapping mapping = new Mapping();
+	public Mapping mapping = new Mapping(null);
 	public MessageNode messageNode = new MessageNode(null);
 	public MilliTimer milliTimer = new MilliTimer();
 	public Model model = new Model();
@@ -135,13 +137,13 @@ public class Hooks {
 	public PendingSpawn pendingSpawn = new PendingSpawn();
 	public Player player = new Player(null);
 	public PlayerComposition playerComposition = new PlayerComposition();
-	public Preferences preferences = new Preferences();
+	public Preferences preferences = new Preferences(null);
 	public Projectile projectile = new Projectile();
 	public Rasterizer2D rasterizer2D = new Rasterizer2D();
 	public Region region = new Region();
 	public Renderable renderable = new Renderable();
 	public RenderOverview renderOverview = new RenderOverview();
-	public Residue residue = new Residue();
+	public Residue residue = new Residue(null);
 	public RSCanvas rsCanvas = new RSCanvas();
 	public RunException runException = new RunException();
 	public SceneTileModel sceneTileModel = new SceneTileModel();
@@ -159,13 +161,13 @@ public class Hooks {
 	public SourceDataSoundSystem sourceDataSoundSystem = new SourceDataSoundSystem();
 	public Spotanim spotanim = new Spotanim();
 	public SpritePixels spritePixels = new SpritePixels(null);
-	public Task task = new Task();
+	public Task task = new Task(null);
 	public Texture texture = new Texture();
 	public TextureProvider textureProvider = new TextureProvider();
 	public Tile tile = new Tile();
 	public TotalQuantityComparator totalQuantityComparator = new TotalQuantityComparator();
 	public UnitPriceComparator unitPriceComparator = new UnitPriceComparator();
-	public UrlRequest urlRequest = new UrlRequest();
+	public UrlRequest urlRequest = new UrlRequest(null);
 	public UrlRequester urlRequester = new UrlRequester();
 	public Varbit varbit = new Varbit();
 	public Varcs varcs = new Varcs();
@@ -179,7 +181,6 @@ public class Hooks {
 	public WorldMapSectionBase worldMapSectionBase = new WorldMapSectionBase();
 	public WorldMapType1 worldMapType1 = new WorldMapType1();
 	public WorldMapType2 worldMapType2 = new WorldMapType2();
-
 	public WorldMapType3 worldMapType3 = new WorldMapType3();
 
 }
