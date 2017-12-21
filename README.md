@@ -18,7 +18,7 @@ A lightweight OSRS Reflection framework.
 Live hook list
 --------------
 
-https://raw.githubusercontent.com/zeruth/OSJR/master/Hooks.txt
+https://raw.githubusercontent.com/zeruth/OSJR/master/Hooks/Hooks.txt
 
 OS-JR Implementation example
 ----------------------------
