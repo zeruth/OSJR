@@ -1,5 +1,0 @@
-{
-  "className": "ChatLineBuffer",
-  "fieldName": "w",
-  "refactoredName": "lines"
-}

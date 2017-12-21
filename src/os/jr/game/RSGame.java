@@ -27,7 +27,7 @@ import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
 
 import os.jr.hooks.Hooks;
-import os.jr.hooks.updater.DumpLoader;
+import os.jr.hooks.loader.HooksLoader;
 import os.jr.hooks.updater.HookUpdater;
 import os.jr.ui.Updater;
 import os.jr.utils.Settings;
@@ -126,9 +126,7 @@ public class RSGame implements AppletStub {
 				} finally {
 
 				}
-				DumpLoader.loadClassDumps();
-				Hooks.init();
-				DumpLoader.loadFieldDumps();
+				HooksLoader.loadHooksJson();
 				HookUpdater.init();
 				Utils.sendDebugPrintln("OS-JR " + VERSION + " Loaded.");
 				Utils.sendDebugPrintln("Hook Revision " + HOOK_REVISION);

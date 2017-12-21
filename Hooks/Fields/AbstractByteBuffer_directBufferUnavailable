@@ -1,5 +1,0 @@
-{
-  "className": "AbstractByteBuffer",
-  "fieldName": "w",
-  "refactoredName": "directBufferUnavailable"
-}

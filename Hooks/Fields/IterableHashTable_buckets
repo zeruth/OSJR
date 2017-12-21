@@ -1,5 +1,0 @@
-{
-  "className": "IterableHashTable",
-  "fieldName": "w",
-  "refactoredName": "buckets"
-}

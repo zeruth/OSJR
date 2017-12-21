@@ -1,5 +1,0 @@
-{
-  "className": "IndexStoreActionHandler",
-  "fieldName": "a",
-  "refactoredName": "IndexStoreActionHandler_requestQueue"
-}

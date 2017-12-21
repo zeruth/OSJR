@@ -15,7 +15,7 @@ import java.time.ZoneOffset;
 
 import os.jr.game.RSGame;
 import os.jr.hooks.Hooks;
-import os.jr.hooks.model.GameClass;
+import os.jr.hooks.loader.GameClass;
 import os.jr.ui.Updater;
 
 public class Utils {

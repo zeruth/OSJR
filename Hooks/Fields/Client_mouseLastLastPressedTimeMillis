@@ -1,6 +1,0 @@
-{
-  "className": "Client",
-  "fieldName": "by",
-  "refactoredName": "mouseLastLastPressedTimeMillis",
-  "multiplier": 12100145674618081
-}

@@ -1,7 +1,7 @@
 package os.jr.hooks;
 
 import os.jr.game.RSGame;
-import os.jr.hooks.model.GameClass;
+import os.jr.hooks.loader.GameClass;
 
 public class UrlRequest extends GameClass{
 	

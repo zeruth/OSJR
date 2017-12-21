@@ -1,5 +1,0 @@
-{
-  "className": "Graphics3D",
-  "fieldName": "l",
-  "refactoredName": "Rasterizer3D_clipNegativeMidY"
-}

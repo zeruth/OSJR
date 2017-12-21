@@ -1,5 +1,0 @@
-{
-  "className": "PacketBuffer",
-  "fieldName": "g",
-  "refactoredName": "cipher"
-}

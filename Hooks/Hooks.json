@@ -1,0 +1,7875 @@
+[
+  {
+    "rsClass": {
+      "refactoredName": "AbstractByteBuffer",
+      "obfuscatedName": "gd"
+    },
+    "rsFields": [
+      {
+        "className": "AbstractByteBuffer",
+        "refactoredName": "directBufferUnavailable",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "AbstractIntegerNode0",
+      "obfuscatedName": "do"
+    },
+    "rsFields": [
+      {
+        "className": "AbstractIntegerNode0",
+        "refactoredName": "int1",
+        "fieldName": "z"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "AbstractSoundSystem",
+      "obfuscatedName": "dn"
+    },
+    "rsFields": [
+      {
+        "className": "AbstractSoundSystem",
+        "refactoredName": "offset",
+        "fieldName": "i",
+        "multiplier": 578551261
+      },
+      {
+        "className": "AbstractSoundSystem",
+        "refactoredName": "samples",
+        "fieldName": "n"
+      },
+      {
+        "className": "AbstractSoundSystem",
+        "refactoredName": "soundTaskDataProvider",
+        "fieldName": "s"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Actor",
+      "obfuscatedName": "br"
+    },
+    "rsFields": [
+      {
+        "className": "Actor",
+        "refactoredName": "actionAnimationDisable",
+        "fieldName": "bz",
+        "multiplier": 1371068499
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "actionFrame",
+        "fieldName": "bf",
+        "multiplier": 944368229
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "angle",
+        "fieldName": "ak",
+        "multiplier": -1662683967
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "animation",
+        "fieldName": "bw",
+        "multiplier": 1823864565
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "combatInfoList",
+        "fieldName": "bc"
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "graphic",
+        "fieldName": "bh",
+        "multiplier": -1732957069
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "graphicsDelay",
+        "fieldName": "by",
+        "multiplier": 844238417
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "hitsplatCycles",
+        "fieldName": "ar"
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "hitsplatTypes",
+        "fieldName": "ao"
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "idlePoseAnimation",
+        "fieldName": "ax",
+        "multiplier": 135804315
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "inSequence",
+        "fieldName": "ah"
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "interacting",
+        "fieldName": "bp",
+        "multiplier": -156297857
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "npcCycle",
+        "fieldName": "br",
+        "multiplier": -1830190809
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "orientation",
+        "fieldName": "cp",
+        "multiplier": -878372439
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "overhead",
+        "fieldName": "ai"
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "overheadTextCyclesRemaining",
+        "fieldName": "az",
+        "multiplier": 1918381959
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "pathTraversed",
+        "fieldName": "ci"
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "pathX",
+        "fieldName": "cj"
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "pathY",
+        "fieldName": "cq"
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "poseAnimation",
+        "fieldName": "bq",
+        "multiplier": -647845853
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "poseFrame",
+        "fieldName": "be",
+        "multiplier": -1237351081
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "queueSize",
+        "fieldName": "cv",
+        "multiplier": -979915637
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "x",
+        "fieldName": "ad",
+        "multiplier": 1951012149
+      },
+      {
+        "className": "Actor",
+        "refactoredName": "y",
+        "fieldName": "ag",
+        "multiplier": -959431109
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Area",
+      "obfuscatedName": "if"
+    },
+    "rsFields": [
+      {
+        "className": "Area",
+        "refactoredName": "areaSpriteCache",
+        "fieldName": "k"
+      },
+      {
+        "className": "Area",
+        "refactoredName": "mapAreaType",
+        "fieldName": "w"
+      },
+      {
+        "className": "Area",
+        "refactoredName": "name",
+        "fieldName": "f"
+      },
+      {
+        "className": "Area",
+        "refactoredName": "spriteId",
+        "fieldName": "z",
+        "multiplier": 1034066741
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "AttackOption",
+      "obfuscatedName": "cz"
+    },
+    "rsFields": [
+      {
+        "className": "AttackOption",
+        "refactoredName": "AttackOption_alwaysRightClick",
+        "fieldName": "w"
+      },
+      {
+        "className": "AttackOption",
+        "refactoredName": "AttackOption_dependsOnCombatLevels",
+        "fieldName": "a"
+      },
+      {
+        "className": "AttackOption",
+        "refactoredName": "AttackOption_hidden",
+        "fieldName": "k"
+      },
+      {
+        "className": "AttackOption",
+        "refactoredName": "AttackOption_leftClickWhereAvailable",
+        "fieldName": "e"
+      },
+      {
+        "className": "AttackOption",
+        "refactoredName": "id",
+        "fieldName": "u",
+        "multiplier": -1676481437
+      },
+      {
+        "className": "AttackOption",
+        "refactoredName": "mapscene",
+        "fieldName": "fo"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "AudioEnvelope",
+      "obfuscatedName": "dh"
+    },
+    "rsFields": [
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "amplitude",
+        "fieldName": "j"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "durations",
+        "fieldName": "w"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "end",
+        "fieldName": "u"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "form",
+        "fieldName": "z"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "max",
+        "fieldName": "c"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "phaseIndex",
+        "fieldName": "f"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "phases",
+        "fieldName": "e"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "segments",
+        "fieldName": "a"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "start",
+        "fieldName": "k"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "step",
+        "fieldName": "g"
+      },
+      {
+        "className": "AudioEnvelope",
+        "refactoredName": "ticks",
+        "fieldName": "t"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "AudioInstrument",
+      "obfuscatedName": "db"
+    },
+    "rsFields": [
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "delayDecay",
+        "fieldName": "s"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "delays",
+        "fieldName": "h"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "delayTime",
+        "fieldName": "c"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "duration",
+        "fieldName": "o"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "filter",
+        "fieldName": "n"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "filterEnvelope",
+        "fieldName": "y"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "NOISE",
+        "fieldName": "l"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "offset",
+        "fieldName": "r"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "oscillatorDelays",
+        "fieldName": "x"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "oscillatorPitch",
+        "fieldName": "j"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "oscillatorVolume",
+        "fieldName": "g"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "phases",
+        "fieldName": "b"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "pitch",
+        "fieldName": "a"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "pitchBaseSteps",
+        "fieldName": "p"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "pitchModifier",
+        "fieldName": "e"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "pitchModifierAmplitude",
+        "fieldName": "k"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "pitchSteps",
+        "fieldName": "v"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "release",
+        "fieldName": "t"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "samples",
+        "fieldName": "i"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "SINE",
+        "fieldName": "m"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "volume",
+        "fieldName": "w"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "volumeMultiplier",
+        "fieldName": "u"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "volumeMultiplierAmplitude",
+        "fieldName": "z"
+      },
+      {
+        "className": "AudioInstrument",
+        "refactoredName": "volumeSteps",
+        "fieldName": "d"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "BaseVarType",
+      "obfuscatedName": "u"
+    },
+    "rsFields": [
+      {
+        "className": "BaseVarType",
+        "refactoredName": "font_p12full",
+        "fieldName": "ea"
+      },
+      {
+        "className": "BaseVarType",
+        "refactoredName": "id",
+        "fieldName": "u",
+        "multiplier": -436300871
+      },
+      {
+        "className": "BaseVarType",
+        "refactoredName": "id2",
+        "fieldName": "k",
+        "multiplier": 826185209
+      },
+      {
+        "className": "BaseVarType",
+        "refactoredName": "INTEGER",
+        "fieldName": "a"
+      },
+      {
+        "className": "BaseVarType",
+        "refactoredName": "LONG",
+        "fieldName": "w"
+      },
+      {
+        "className": "BaseVarType",
+        "refactoredName": "STRING",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "BoundingBox",
+      "obfuscatedName": "j"
+    },
+    "rsFields": [
+      {
+        "className": "BoundingBox",
+        "refactoredName": "indexInterfaces",
+        "fieldName": "cy"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "BoundingBox2D",
+      "obfuscatedName": "g"
+    },
+    "rsFields": [
+      {
+        "className": "BoundingBox2D",
+        "refactoredName": "color",
+        "fieldName": "u",
+        "multiplier": 811326853
+      },
+      {
+        "className": "BoundingBox2D",
+        "refactoredName": "plane",
+        "fieldName": "iy",
+        "multiplier": -1321200933
+      },
+      {
+        "className": "BoundingBox2D",
+        "refactoredName": "xMax",
+        "fieldName": "e",
+        "multiplier": -1796622757
+      },
+      {
+        "className": "BoundingBox2D",
+        "refactoredName": "xMin",
+        "fieldName": "a",
+        "multiplier": -1617776623
+      },
+      {
+        "className": "BoundingBox2D",
+        "refactoredName": "yMax",
+        "fieldName": "k",
+        "multiplier": -841368133
+      },
+      {
+        "className": "BoundingBox2D",
+        "refactoredName": "yMin",
+        "fieldName": "w",
+        "multiplier": -904869015
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "BoundingBox3D",
+      "obfuscatedName": "x"
+    },
+    "rsFields": [
+      {
+        "className": "BoundingBox3D",
+        "refactoredName": "color",
+        "fieldName": "t",
+        "multiplier": 840368185
+      },
+      {
+        "className": "BoundingBox3D",
+        "refactoredName": "int1",
+        "fieldName": "a",
+        "multiplier": 1399164583
+      },
+      {
+        "className": "BoundingBox3D",
+        "refactoredName": "int2",
+        "fieldName": "w",
+        "multiplier": 1793077055
+      },
+      {
+        "className": "BoundingBox3D",
+        "refactoredName": "int3",
+        "fieldName": "e",
+        "multiplier": 1975799011
+      },
+      {
+        "className": "BoundingBox3D",
+        "refactoredName": "int4",
+        "fieldName": "k",
+        "multiplier": 1467756151
+      },
+      {
+        "className": "BoundingBox3D",
+        "refactoredName": "int5",
+        "fieldName": "u",
+        "multiplier": -1302896507
+      },
+      {
+        "className": "BoundingBox3D",
+        "refactoredName": "int6",
+        "fieldName": "z",
+        "multiplier": 839033671
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Bounds",
+      "obfuscatedName": "kr"
+    },
+    "rsFields": [
+      {
+        "className": "Bounds",
+        "refactoredName": "spritePixels",
+        "fieldName": "g"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Buffer",
+      "obfuscatedName": "gh"
+    },
+    "rsFields": [
+      {
+        "className": "Buffer",
+        "refactoredName": "crc32Table",
+        "fieldName": "e"
+      },
+      {
+        "className": "Buffer",
+        "refactoredName": "crc64Table",
+        "fieldName": "u"
+      },
+      {
+        "className": "Buffer",
+        "refactoredName": "offset",
+        "fieldName": "w",
+        "multiplier": 328573213
+      },
+      {
+        "className": "Buffer",
+        "refactoredName": "payload",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "BufferProvider",
+      "obfuscatedName": "kt"
+    },
+    "rsFields": [
+      {
+        "className": "BufferProvider",
+        "refactoredName": "height",
+        "fieldName": "u",
+        "multiplier": 205368253
+      },
+      {
+        "className": "BufferProvider",
+        "refactoredName": "pixels",
+        "fieldName": "e"
+      },
+      {
+        "className": "BufferProvider",
+        "refactoredName": "width",
+        "fieldName": "k",
+        "multiplier": -1870118989
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "BuildType",
+      "obfuscatedName": "il"
+    },
+    "rsFields": [
+      {
+        "className": "BuildType",
+        "refactoredName": "BUILD_LIVE",
+        "fieldName": "k"
+      },
+      {
+        "className": "BuildType",
+        "refactoredName": "identifier",
+        "fieldName": "u"
+      },
+      {
+        "className": "BuildType",
+        "refactoredName": "LIVE",
+        "fieldName": "e"
+      },
+      {
+        "className": "BuildType",
+        "refactoredName": "ordinal",
+        "fieldName": "z",
+        "multiplier": 175058789
+      },
+      {
+        "className": "BuildType",
+        "refactoredName": "RC",
+        "fieldName": "a"
+      },
+      {
+        "className": "BuildType",
+        "refactoredName": "WIP",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ByteArrayNode",
+      "obfuscatedName": "hv"
+    },
+    "rsFields": [
+      {
+        "className": "ByteArrayNode",
+        "refactoredName": "byteArray",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "CacheableNode",
+      "obfuscatedName": "gi"
+    },
+    "rsFields": [
+      {
+        "className": "CacheableNode",
+        "refactoredName": "next",
+        "fieldName": "cg"
+      },
+      {
+        "className": "CacheableNode",
+        "refactoredName": "previous",
+        "fieldName": "co"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "CacheFile",
+      "obfuscatedName": "dv"
+    },
+    "rsFields": [
+      {
+        "className": "CacheFile",
+        "refactoredName": "accessFile",
+        "fieldName": "a"
+      },
+      {
+        "className": "CacheFile",
+        "refactoredName": "capacity",
+        "fieldName": "j",
+        "multiplier": -1754338581505271593
+      },
+      {
+        "className": "CacheFile",
+        "refactoredName": "length",
+        "fieldName": "g",
+        "multiplier": 32181713884337277
+      },
+      {
+        "className": "CacheFile",
+        "refactoredName": "position",
+        "fieldName": "f",
+        "multiplier": 1092840870758656945
+      },
+      {
+        "className": "CacheFile",
+        "refactoredName": "readPayload",
+        "fieldName": "w"
+      },
+      {
+        "className": "CacheFile",
+        "refactoredName": "writePayload",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ChatLineBuffer",
+      "obfuscatedName": "ct"
+    },
+    "rsFields": [
+      {
+        "className": "ChatLineBuffer",
+        "refactoredName": "length",
+        "fieldName": "e",
+        "multiplier": -1771803705
+      },
+      {
+        "className": "ChatLineBuffer",
+        "refactoredName": "lines",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ClanMember",
+      "obfuscatedName": "bu"
+    },
+    "rsFields": [
+      {
+        "className": "ClanMember",
+        "refactoredName": "rank",
+        "fieldName": "k"
+      },
+      {
+        "className": "ClanMember",
+        "refactoredName": "username",
+        "fieldName": "a"
+      },
+      {
+        "className": "ClanMember",
+        "refactoredName": "world",
+        "fieldName": "e",
+        "multiplier": 65229773
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ClassInfo",
+      "obfuscatedName": "kb"
+    },
+    "rsFields": [
+      {
+        "className": "ClassInfo",
+        "refactoredName": "args",
+        "fieldName": "f"
+      },
+      {
+        "className": "ClassInfo",
+        "refactoredName": "count",
+        "fieldName": "w",
+        "multiplier": 1480288181
+      },
+      {
+        "className": "ClassInfo",
+        "refactoredName": "errorIdentifiers",
+        "fieldName": "k"
+      },
+      {
+        "className": "ClassInfo",
+        "refactoredName": "fields",
+        "fieldName": "u"
+      },
+      {
+        "className": "ClassInfo",
+        "refactoredName": "methods",
+        "fieldName": "t"
+      },
+      {
+        "className": "ClassInfo",
+        "refactoredName": "type",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Client",
+      "obfuscatedName": "client"
+    },
+    "rsFields": [
+      {
+        "className": "Client",
+        "refactoredName": "audioEffects",
+        "fieldName": "oc"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "baseY",
+        "fieldName": "ee",
+        "multiplier": -1694947901
+      },
+      {
+        "className": "Client",
+        "refactoredName": "boostedSkillLevels",
+        "fieldName": "if"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "cachedNPCs",
+        "fieldName": "dm"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "cachedPlayers",
+        "fieldName": "ie"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "chatCycle",
+        "fieldName": "lh",
+        "multiplier": 254134351
+      },
+      {
+        "className": "Client",
+        "refactoredName": "clanChatName",
+        "fieldName": "np"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "clanChatOwner",
+        "fieldName": "nl"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "collisionMaps",
+        "fieldName": "w"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "componentTable",
+        "fieldName": "kb"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "cursorState",
+        "fieldName": "hl",
+        "multiplier": 52368887
+      },
+      {
+        "className": "Client",
+        "refactoredName": "cycleCntr",
+        "fieldName": "lx",
+        "multiplier": -1965739811
+      },
+      {
+        "className": "Client",
+        "refactoredName": "destinationX",
+        "fieldName": "na",
+        "multiplier": -710720663
+      },
+      {
+        "className": "Client",
+        "refactoredName": "destinationY",
+        "fieldName": "ni",
+        "multiplier": -118830161
+      },
+      {
+        "className": "Client",
+        "refactoredName": "displayFps",
+        "fieldName": "ba"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "energy",
+        "fieldName": "kx",
+        "multiplier": -1863294619
+      },
+      {
+        "className": "Client",
+        "refactoredName": "flags",
+        "fieldName": "bc",
+        "multiplier": -600424845
+      },
+      {
+        "className": "Client",
+        "refactoredName": "fontsMap",
+        "fieldName": "ey"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "friendCount",
+        "fieldName": "pp",
+        "multiplier": 379628735
+      },
+      {
+        "className": "Client",
+        "refactoredName": "friends",
+        "fieldName": "qq"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "gameCycle",
+        "fieldName": "bt",
+        "multiplier": 400517435
+      },
+      {
+        "className": "Client",
+        "refactoredName": "gameDrawingMode",
+        "fieldName": "mv",
+        "multiplier": 1192519963
+      },
+      {
+        "className": "Client",
+        "refactoredName": "gameState",
+        "fieldName": "bh",
+        "multiplier": -41679833
+      },
+      {
+        "className": "Client",
+        "refactoredName": "grandExchangeOffers",
+        "fieldName": "qn"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "graphicsObjectDeque",
+        "fieldName": "iv"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "groundItemDeque",
+        "fieldName": "io"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "hintArrowNpcTargetIdx",
+        "fieldName": "br",
+        "multiplier": 1297669925
+      },
+      {
+        "className": "Client",
+        "refactoredName": "hintArrowOffsetX",
+        "fieldName": "cv",
+        "multiplier": -1413170751
+      },
+      {
+        "className": "Client",
+        "refactoredName": "hintArrowOffsetY",
+        "fieldName": "cj",
+        "multiplier": 1628051803
+      },
+      {
+        "className": "Client",
+        "refactoredName": "hintArrowPlayerTargetIdx",
+        "fieldName": "ch",
+        "multiplier": -392377251
+      },
+      {
+        "className": "Client",
+        "refactoredName": "hintArrowTargetType",
+        "fieldName": "bo",
+        "multiplier": 1519630183
+      },
+      {
+        "className": "Client",
+        "refactoredName": "hintArrowType",
+        "fieldName": "cb",
+        "multiplier": -1138049719
+      },
+      {
+        "className": "Client",
+        "refactoredName": "hintArrowX",
+        "fieldName": "cp",
+        "multiplier": -288982181
+      },
+      {
+        "className": "Client",
+        "refactoredName": "hintArrowY",
+        "fieldName": "cf",
+        "multiplier": -645003167
+      },
+      {
+        "className": "Client",
+        "refactoredName": "ignoreCount",
+        "fieldName": "qt",
+        "multiplier": 1957516805
+      },
+      {
+        "className": "Client",
+        "refactoredName": "ignores",
+        "fieldName": "qz"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "interfaceItemTriggers",
+        "fieldName": "lt"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "isDynamicRegion",
+        "fieldName": "fl"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "isMembers",
+        "fieldName": "be"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "isMenuOpen",
+        "fieldName": "ip"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "isResized",
+        "fieldName": "mw"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "itemSelectionState",
+        "fieldName": "jp",
+        "multiplier": 1247988347
+      },
+      {
+        "className": "Client",
+        "refactoredName": "js5State",
+        "fieldName": "cr",
+        "multiplier": 443603509
+      },
+      {
+        "className": "Client",
+        "refactoredName": "languageId",
+        "fieldName": "bw",
+        "multiplier": -628562359
+      },
+      {
+        "className": "Client",
+        "refactoredName": "lastSelectedItemName",
+        "fieldName": "it"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "loadingStage",
+        "fieldName": "cw",
+        "multiplier": -868419915
+      },
+      {
+        "className": "Client",
+        "refactoredName": "localInteractingIndex",
+        "fieldName": "ig",
+        "multiplier": 273517695
+      },
+      {
+        "className": "Client",
+        "refactoredName": "loginState",
+        "fieldName": "dw",
+        "multiplier": -1576936849
+      },
+      {
+        "className": "Client",
+        "refactoredName": "lowMemory",
+        "fieldName": "bx"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "mapAngle",
+        "fieldName": "gb",
+        "multiplier": -1215179141
+      },
+      {
+        "className": "Client",
+        "refactoredName": "mapIcons",
+        "fieldName": "ne"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "menuActionParams0",
+        "fieldName": "je"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "menuActionParams1",
+        "fieldName": "jf"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "menuBooleanArray",
+        "fieldName": "jj"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "menuIdentifiers",
+        "fieldName": "jr"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "menuOptionCount",
+        "fieldName": "jg",
+        "multiplier": -1716599453
+      },
+      {
+        "className": "Client",
+        "refactoredName": "menuOptions",
+        "fieldName": "jn"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "menuTargets",
+        "fieldName": "jh"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "menuTypes",
+        "fieldName": "jq"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "mouseCrosshair",
+        "fieldName": "hs",
+        "multiplier": 1535720689
+      },
+      {
+        "className": "Client",
+        "refactoredName": "mouseLastLastPressedTimeMillis",
+        "fieldName": "by",
+        "multiplier": 12100145674618081
+      },
+      {
+        "className": "Client",
+        "refactoredName": "mouseWheelRotation",
+        "fieldName": "lk",
+        "multiplier": -2097279347
+      },
+      {
+        "className": "Client",
+        "refactoredName": "npcAttackOption",
+        "fieldName": "ce"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "npcIndexesCount",
+        "fieldName": "df",
+        "multiplier": 469759311
+      },
+      {
+        "className": "Client",
+        "refactoredName": "npcIndices",
+        "fieldName": "dq"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "numberMenuOptions",
+        "fieldName": "kz"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "pendingNpcFlagsCount",
+        "fieldName": "dp",
+        "multiplier": -1005396313
+      },
+      {
+        "className": "Client",
+        "refactoredName": "pendingNpcFlagsIndices",
+        "fieldName": "eu"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "pendingSpawns",
+        "fieldName": "ik"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "playerAttackOption",
+        "fieldName": "ci"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "playerMenuTypes",
+        "fieldName": "ia"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "playerOptions",
+        "fieldName": "in"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "playerOptionsPriorities",
+        "fieldName": "ib"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "projectiles",
+        "fieldName": "is"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "publicChatMode",
+        "fieldName": "ms",
+        "multiplier": 981875525
+      },
+      {
+        "className": "Client",
+        "refactoredName": "realSkillLevels",
+        "fieldName": "ic"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "rights",
+        "fieldName": "ks",
+        "multiplier": 810022409
+      },
+      {
+        "className": "Client",
+        "refactoredName": "scale",
+        "fieldName": "pu",
+        "multiplier": 967296413
+      },
+      {
+        "className": "Client",
+        "refactoredName": "screenX",
+        "fieldName": "hq",
+        "multiplier": 1559491565
+      },
+      {
+        "className": "Client",
+        "refactoredName": "screenY",
+        "fieldName": "ht",
+        "multiplier": 277812439
+      },
+      {
+        "className": "Client",
+        "refactoredName": "skillExperiences",
+        "fieldName": "iw"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "socketError",
+        "fieldName": "ed"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "socketType",
+        "fieldName": "bn",
+        "multiplier": 402349077
+      },
+      {
+        "className": "Client",
+        "refactoredName": "spellSelected",
+        "fieldName": "jb"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "viewportHeight",
+        "fieldName": "pd",
+        "multiplier": -123028359
+      },
+      {
+        "className": "Client",
+        "refactoredName": "viewportWidth",
+        "fieldName": "pa",
+        "multiplier": -1020819321
+      },
+      {
+        "className": "Client",
+        "refactoredName": "Viewport_xOffset",
+        "fieldName": "pn",
+        "multiplier": 1916496795
+      },
+      {
+        "className": "Client",
+        "refactoredName": "Viewport_yOffset",
+        "fieldName": "pv",
+        "multiplier": 789289861
+      },
+      {
+        "className": "Client",
+        "refactoredName": "weight",
+        "fieldName": "kg",
+        "multiplier": -297847855
+      },
+      {
+        "className": "Client",
+        "refactoredName": "widgetBoundsHeight",
+        "fieldName": "mb"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "widgetBoundsWidth",
+        "fieldName": "mr"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "widgetCount",
+        "fieldName": "mn",
+        "multiplier": 1871303889
+      },
+      {
+        "className": "Client",
+        "refactoredName": "widgetFlags",
+        "fieldName": "mt"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "widgetPositionX",
+        "fieldName": "mi"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "widgetPositionY",
+        "fieldName": "mf"
+      },
+      {
+        "className": "Client",
+        "refactoredName": "widgetRoot",
+        "fieldName": "kr",
+        "multiplier": 634425425
+      },
+      {
+        "className": "Client",
+        "refactoredName": "world",
+        "fieldName": "bb",
+        "multiplier": -516348683
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ClientPacket",
+      "obfuscatedName": "fo"
+    },
+    "rsFields": [
+      {
+        "className": "ClientPacket",
+        "refactoredName": "menuY",
+        "fieldName": "jc",
+        "multiplier": 139833421
+      },
+      {
+        "className": "ClientPacket",
+        "refactoredName": "packetId",
+        "fieldName": "cm",
+        "multiplier": 300628027
+      },
+      {
+        "className": "ClientPacket",
+        "refactoredName": "packetLength",
+        "fieldName": "ck",
+        "multiplier": -1101711967
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "CodeBook",
+      "obfuscatedName": "cd"
+    },
+    "rsFields": [
+      {
+        "className": "CodeBook",
+        "refactoredName": "dimensions",
+        "fieldName": "a"
+      },
+      {
+        "className": "CodeBook",
+        "refactoredName": "entries",
+        "fieldName": "w"
+      },
+      {
+        "className": "CodeBook",
+        "refactoredName": "entryLengths",
+        "fieldName": "e"
+      },
+      {
+        "className": "CodeBook",
+        "refactoredName": "valueVector",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "CollisionData",
+      "obfuscatedName": "fp"
+    },
+    "rsFields": [
+      {
+        "className": "CollisionData",
+        "refactoredName": "flags",
+        "fieldName": "aw"
+      },
+      {
+        "className": "CollisionData",
+        "refactoredName": "height",
+        "fieldName": "ac",
+        "multiplier": -1670453825
+      },
+      {
+        "className": "CollisionData",
+        "refactoredName": "width",
+        "fieldName": "an",
+        "multiplier": 1646832785
+      },
+      {
+        "className": "CollisionData",
+        "refactoredName": "x",
+        "fieldName": "at",
+        "multiplier": 906965333
+      },
+      {
+        "className": "CollisionData",
+        "refactoredName": "y",
+        "fieldName": "ap",
+        "multiplier": 1899582203
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "CombatInfo1",
+      "obfuscatedName": "ch"
+    },
+    "rsFields": [
+      {
+        "className": "CombatInfo1",
+        "refactoredName": "cycle",
+        "fieldName": "a",
+        "multiplier": 1601973829
+      },
+      {
+        "className": "CombatInfo1",
+        "refactoredName": "health",
+        "fieldName": "e",
+        "multiplier": 664186193
+      },
+      {
+        "className": "CombatInfo1",
+        "refactoredName": "healthRatio",
+        "fieldName": "w",
+        "multiplier": 1616408329
+      },
+      {
+        "className": "CombatInfo1",
+        "refactoredName": "int2",
+        "fieldName": "k",
+        "multiplier": 104636013
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "CombatInfo2",
+      "obfuscatedName": "ir"
+    },
+    "rsFields": [
+      {
+        "className": "CombatInfo2",
+        "refactoredName": "healthScale",
+        "fieldName": "y",
+        "multiplier": -500589715
+      },
+      {
+        "className": "CombatInfo2",
+        "refactoredName": "spriteCache",
+        "fieldName": "k"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "CombatInfoList",
+      "obfuscatedName": "go"
+    },
+    "rsFields": [
+      {
+        "className": "CombatInfoList",
+        "refactoredName": "current",
+        "fieldName": "w"
+      },
+      {
+        "className": "CombatInfoList",
+        "refactoredName": "node",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "CombatInfoListHolder",
+      "obfuscatedName": "cq"
+    },
+    "rsFields": [
+      {
+        "className": "CombatInfoListHolder",
+        "refactoredName": "combatInfo1",
+        "fieldName": "k"
+      },
+      {
+        "className": "CombatInfoListHolder",
+        "refactoredName": "combatInfo2",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ContextMenuRow",
+      "obfuscatedName": "cw"
+    },
+    "rsFields": [
+      {
+        "className": "ContextMenuRow",
+        "refactoredName": "highMemory",
+        "fieldName": "z"
+      },
+      {
+        "className": "ContextMenuRow",
+        "refactoredName": "identifier",
+        "fieldName": "k",
+        "multiplier": 1578872715
+      },
+      {
+        "className": "ContextMenuRow",
+        "refactoredName": "option",
+        "fieldName": "u"
+      },
+      {
+        "className": "ContextMenuRow",
+        "refactoredName": "param0",
+        "fieldName": "a",
+        "multiplier": 571443005
+      },
+      {
+        "className": "ContextMenuRow",
+        "refactoredName": "param1",
+        "fieldName": "w",
+        "multiplier": 715253505
+      },
+      {
+        "className": "ContextMenuRow",
+        "refactoredName": "type",
+        "fieldName": "e",
+        "multiplier": 1066703259
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Coordinates",
+      "obfuscatedName": "hc"
+    },
+    "rsFields": [
+      {
+        "className": "Coordinates",
+        "refactoredName": "plane",
+        "fieldName": "a",
+        "multiplier": -269383583
+      },
+      {
+        "className": "Coordinates",
+        "refactoredName": "worldX",
+        "fieldName": "w",
+        "multiplier": -1934805779
+      },
+      {
+        "className": "Coordinates",
+        "refactoredName": "worldY",
+        "fieldName": "e",
+        "multiplier": -397623979
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "DecorativeObject",
+      "obfuscatedName": "eq"
+    },
+    "rsFields": [
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "floor",
+        "fieldName": "a",
+        "multiplier": 714609933
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "hash",
+        "fieldName": "j",
+        "multiplier": 1258761623
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "offsetX",
+        "fieldName": "z",
+        "multiplier": -337797081
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "offsetY",
+        "fieldName": "t",
+        "multiplier": 1852052911
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "renderable1",
+        "fieldName": "f"
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "renderable2",
+        "fieldName": "g"
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "renderFlag",
+        "fieldName": "k",
+        "multiplier": 600979589
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "renderInfoBitPacked",
+        "fieldName": "x",
+        "multiplier": 1479818253
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "rotation",
+        "fieldName": "u",
+        "multiplier": 116232835
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "x",
+        "fieldName": "w",
+        "multiplier": -635706115
+      },
+      {
+        "className": "DecorativeObject",
+        "refactoredName": "y",
+        "fieldName": "e",
+        "multiplier": -554820235
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Deque",
+      "obfuscatedName": "gl"
+    },
+    "rsFields": [
+      {
+        "className": "Deque",
+        "refactoredName": "current",
+        "fieldName": "w"
+      },
+      {
+        "className": "Deque",
+        "refactoredName": "head",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "DirectByteBuffer",
+      "obfuscatedName": "gk"
+    },
+    "rsFields": [
+      {
+        "className": "DirectByteBuffer",
+        "refactoredName": "buffer",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "DState",
+      "obfuscatedName": "gt"
+    },
+    "rsFields": [
+      {
+        "className": "DState",
+        "refactoredName": "blockSize100k",
+        "fieldName": "i",
+        "multiplier": 1124898451
+      },
+      {
+        "className": "DState",
+        "refactoredName": "inUse",
+        "fieldName": "ab"
+      },
+      {
+        "className": "DState",
+        "refactoredName": "k0",
+        "fieldName": "q",
+        "multiplier": 1742289959
+      },
+      {
+        "className": "DState",
+        "refactoredName": "nblock_used",
+        "fieldName": "h",
+        "multiplier": 1018799019
+      },
+      {
+        "className": "DState",
+        "refactoredName": "next_in",
+        "fieldName": "f",
+        "multiplier": -23923469
+      },
+      {
+        "className": "DState",
+        "refactoredName": "next_out",
+        "fieldName": "x",
+        "multiplier": -2097812977
+      },
+      {
+        "className": "DState",
+        "refactoredName": "nInUse",
+        "fieldName": "p",
+        "multiplier": 861373207
+      },
+      {
+        "className": "DState",
+        "refactoredName": "out",
+        "fieldName": "j"
+      },
+      {
+        "className": "DState",
+        "refactoredName": "out_ch",
+        "fieldName": "n"
+      },
+      {
+        "className": "DState",
+        "refactoredName": "out_len",
+        "fieldName": "y",
+        "multiplier": -1624378745
+      },
+      {
+        "className": "DState",
+        "refactoredName": "seqToUnseq",
+        "fieldName": "ag"
+      },
+      {
+        "className": "DState",
+        "refactoredName": "strm",
+        "fieldName": "t"
+      },
+      {
+        "className": "DState",
+        "refactoredName": "total_in_hi32",
+        "fieldName": "o",
+        "multiplier": -978960935
+      },
+      {
+        "className": "DState",
+        "refactoredName": "total_in_lo32",
+        "fieldName": "r",
+        "multiplier": -996553717
+      },
+      {
+        "className": "DState",
+        "refactoredName": "total_out_hi32",
+        "fieldName": "s",
+        "multiplier": -1477017367
+      },
+      {
+        "className": "DState",
+        "refactoredName": "total_out_lo32",
+        "fieldName": "g",
+        "multiplier": 1159766183
+      },
+      {
+        "className": "DState",
+        "refactoredName": "tPos",
+        "fieldName": "m",
+        "multiplier": -928259005
+      },
+      {
+        "className": "DState",
+        "refactoredName": "urlRequester",
+        "fieldName": "ei"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "DynamicObject",
+      "obfuscatedName": "cn"
+    },
+    "rsFields": [
+      {
+        "className": "DynamicObject",
+        "refactoredName": "id",
+        "fieldName": "a",
+        "multiplier": -1075365621
+      },
+      {
+        "className": "DynamicObject",
+        "refactoredName": "level",
+        "fieldName": "k",
+        "multiplier": -156840023
+      },
+      {
+        "className": "DynamicObject",
+        "refactoredName": "orientation",
+        "fieldName": "e",
+        "multiplier": -1841293615
+      },
+      {
+        "className": "DynamicObject",
+        "refactoredName": "sceneX",
+        "fieldName": "u",
+        "multiplier": 45773791
+      },
+      {
+        "className": "DynamicObject",
+        "refactoredName": "sceneY",
+        "fieldName": "z",
+        "multiplier": 1127872755
+      },
+      {
+        "className": "DynamicObject",
+        "refactoredName": "type",
+        "fieldName": "w",
+        "multiplier": -86666889
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Enum",
+      "obfuscatedName": "jg"
+    },
+    "rsFields": [
+      {
+        "className": "Enum",
+        "refactoredName": "defaultInt",
+        "fieldName": "z",
+        "multiplier": -970408909
+      },
+      {
+        "className": "Enum",
+        "refactoredName": "defaultString",
+        "fieldName": "u"
+      },
+      {
+        "className": "Enum",
+        "refactoredName": "EnumDefinition_cached",
+        "fieldName": "w"
+      },
+      {
+        "className": "Enum",
+        "refactoredName": "EnumDefinition_indexCache",
+        "fieldName": "a"
+      },
+      {
+        "className": "Enum",
+        "refactoredName": "intVals",
+        "fieldName": "g"
+      },
+      {
+        "className": "Enum",
+        "refactoredName": "keys",
+        "fieldName": "f"
+      },
+      {
+        "className": "Enum",
+        "refactoredName": "keyType",
+        "fieldName": "e"
+      },
+      {
+        "className": "Enum",
+        "refactoredName": "size",
+        "fieldName": "t",
+        "multiplier": 72752757
+      },
+      {
+        "className": "Enum",
+        "refactoredName": "stringVals",
+        "fieldName": "j"
+      },
+      {
+        "className": "Enum",
+        "refactoredName": "valType",
+        "fieldName": "k"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Enumerated",
+      "obfuscatedName": "gs"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "FaceNormal",
+      "obfuscatedName": "ea"
+    },
+    "rsFields": [
+      {
+        "className": "FaceNormal",
+        "refactoredName": "x",
+        "fieldName": "a",
+        "multiplier": -819810915
+      },
+      {
+        "className": "FaceNormal",
+        "refactoredName": "y",
+        "fieldName": "w",
+        "multiplier": 572835747
+      },
+      {
+        "className": "FaceNormal",
+        "refactoredName": "z",
+        "fieldName": "e",
+        "multiplier": 1215733267
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "FileOnDisk",
+      "obfuscatedName": "da"
+    },
+    "rsFields": [
+      {
+        "className": "FileOnDisk",
+        "refactoredName": "file",
+        "fieldName": "a"
+      },
+      {
+        "className": "FileOnDisk",
+        "refactoredName": "length",
+        "fieldName": "w",
+        "multiplier": -4512531111401429473
+      },
+      {
+        "className": "FileOnDisk",
+        "refactoredName": "port2",
+        "fieldName": "ds",
+        "multiplier": -1270739899
+      },
+      {
+        "className": "FileOnDisk",
+        "refactoredName": "position",
+        "fieldName": "e",
+        "multiplier": -6496465651702349683
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "FileRequest",
+      "obfuscatedName": "it"
+    },
+    "rsFields": [
+      {
+        "className": "FileRequest",
+        "refactoredName": "crc",
+        "fieldName": "w",
+        "multiplier": -803899541
+      },
+      {
+        "className": "FileRequest",
+        "refactoredName": "index",
+        "fieldName": "a"
+      },
+      {
+        "className": "FileRequest",
+        "refactoredName": "padding",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "FileSystem",
+      "obfuscatedName": "in"
+    },
+    "rsFields": [
+      {
+        "className": "FileSystem",
+        "refactoredName": "data",
+        "fieldName": "k"
+      },
+      {
+        "className": "FileSystem",
+        "refactoredName": "fonts",
+        "fieldName": "el"
+      },
+      {
+        "className": "FileSystem",
+        "refactoredName": "index",
+        "fieldName": "e"
+      },
+      {
+        "className": "FileSystem",
+        "refactoredName": "type",
+        "fieldName": "a",
+        "multiplier": -1959598111
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Floor1",
+      "obfuscatedName": "dj"
+    },
+    "rsFields": [
+      {
+        "className": "Floor1",
+        "refactoredName": "classDimensions",
+        "fieldName": "z"
+      },
+      {
+        "className": "Floor1",
+        "refactoredName": "classMasterbooks",
+        "fieldName": "f"
+      },
+      {
+        "className": "Floor1",
+        "refactoredName": "classSubClasses",
+        "fieldName": "t"
+      },
+      {
+        "className": "Floor1",
+        "refactoredName": "multiplier",
+        "fieldName": "k"
+      },
+      {
+        "className": "Floor1",
+        "refactoredName": "paritionClassList",
+        "fieldName": "u"
+      },
+      {
+        "className": "Floor1",
+        "refactoredName": "RANGES",
+        "fieldName": "a"
+      },
+      {
+        "className": "Floor1",
+        "refactoredName": "subclassBooks",
+        "fieldName": "g"
+      },
+      {
+        "className": "Floor1",
+        "refactoredName": "xList",
+        "fieldName": "j"
+      },
+      {
+        "className": "Floor1",
+        "refactoredName": "yList",
+        "fieldName": "x"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "FloorUnderlayDefinition",
+      "obfuscatedName": "ih"
+    },
+    "rsFields": [
+      {
+        "className": "FloorUnderlayDefinition",
+        "refactoredName": "hue",
+        "fieldName": "k",
+        "multiplier": -1784433545
+      },
+      {
+        "className": "FloorUnderlayDefinition",
+        "refactoredName": "hueMultiplier",
+        "fieldName": "t",
+        "multiplier": -982635371
+      },
+      {
+        "className": "FloorUnderlayDefinition",
+        "refactoredName": "lightness",
+        "fieldName": "z",
+        "multiplier": -272353301
+      },
+      {
+        "className": "FloorUnderlayDefinition",
+        "refactoredName": "rgbColor",
+        "fieldName": "e",
+        "multiplier": -1882661743
+      },
+      {
+        "className": "FloorUnderlayDefinition",
+        "refactoredName": "saturation",
+        "fieldName": "u",
+        "multiplier": 167744801
+      },
+      {
+        "className": "FloorUnderlayDefinition",
+        "refactoredName": "underlays",
+        "fieldName": "w"
+      },
+      {
+        "className": "FloorUnderlayDefinition",
+        "refactoredName": "underlay_ref",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Font",
+      "obfuscatedName": "jm"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "FontName",
+      "obfuscatedName": "jl"
+    },
+    "rsFields": [
+      {
+        "className": "FontName",
+        "refactoredName": "FontName_bold12",
+        "fieldName": "e"
+      },
+      {
+        "className": "FontName",
+        "refactoredName": "FontName_plain11",
+        "fieldName": "a"
+      },
+      {
+        "className": "FontName",
+        "refactoredName": "FontName_plain12",
+        "fieldName": "w"
+      },
+      {
+        "className": "FontName",
+        "refactoredName": "indexCache15",
+        "fieldName": "dh"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Fonts",
+      "obfuscatedName": "ju"
+    },
+    "rsFields": [
+      {
+        "className": "Fonts",
+        "refactoredName": "configsIndex",
+        "fieldName": "cm"
+      },
+      {
+        "className": "Fonts",
+        "refactoredName": "map",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "FontTypeFace",
+      "obfuscatedName": "jd"
+    },
+    "rsFields": [
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "color",
+        "fieldName": "r"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "glyphWidths",
+        "fieldName": "k"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "gylphHeights",
+        "fieldName": "e"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "gylphs",
+        "fieldName": "a"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "horizontalOffsets",
+        "fieldName": "u"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "maxSpacing",
+        "fieldName": "g"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "minSpacing",
+        "fieldName": "f"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "modIcons",
+        "fieldName": "j"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "prevColorRGB",
+        "fieldName": "o"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "prevShadeRGB",
+        "fieldName": "n"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "shadow",
+        "fieldName": "y"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "strikeRGB",
+        "fieldName": "c"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "underlineRGB",
+        "fieldName": "s"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "verticalOffsets",
+        "fieldName": "z"
+      },
+      {
+        "className": "FontTypeFace",
+        "refactoredName": "verticalSpace",
+        "fieldName": "t"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Frame",
+      "obfuscatedName": "eu"
+    },
+    "rsFields": [
+      {
+        "className": "Frame",
+        "refactoredName": "showing",
+        "fieldName": "x"
+      },
+      {
+        "className": "Frame",
+        "refactoredName": "skin",
+        "fieldName": "u"
+      },
+      {
+        "className": "Frame",
+        "refactoredName": "translator_x",
+        "fieldName": "f"
+      },
+      {
+        "className": "Frame",
+        "refactoredName": "translator_y",
+        "fieldName": "g"
+      },
+      {
+        "className": "Frame",
+        "refactoredName": "translator_z",
+        "fieldName": "j"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "FrameMap",
+      "obfuscatedName": "eg"
+    },
+    "rsFields": [
+      {
+        "className": "FrameMap",
+        "refactoredName": "colorsToFind",
+        "fieldName": "t"
+      },
+      {
+        "className": "FrameMap",
+        "refactoredName": "count",
+        "fieldName": "w",
+        "multiplier": -1096353093
+      },
+      {
+        "className": "FrameMap",
+        "refactoredName": "id",
+        "fieldName": "a",
+        "multiplier": 656904343
+      },
+      {
+        "className": "FrameMap",
+        "refactoredName": "indexSoundEffects",
+        "fieldName": "cc"
+      },
+      {
+        "className": "FrameMap",
+        "refactoredName": "list",
+        "fieldName": "k"
+      },
+      {
+        "className": "FrameMap",
+        "refactoredName": "types",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Frames",
+      "obfuscatedName": "ec"
+    },
+    "rsFields": [
+      {
+        "className": "Frames",
+        "refactoredName": "skeletons",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Friend",
+      "obfuscatedName": "bh"
+    },
+    "rsFields": [
+      {
+        "className": "Friend",
+        "refactoredName": "fontBold12",
+        "fieldName": "ec"
+      },
+      {
+        "className": "Friend",
+        "refactoredName": "name",
+        "fieldName": "a"
+      },
+      {
+        "className": "Friend",
+        "refactoredName": "previousName",
+        "fieldName": "w"
+      },
+      {
+        "className": "Friend",
+        "refactoredName": "rank",
+        "fieldName": "k",
+        "multiplier": -1196101617
+      },
+      {
+        "className": "Friend",
+        "refactoredName": "world",
+        "fieldName": "e",
+        "multiplier": -681673857
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "FriendLoginUpdate",
+      "obfuscatedName": "bm"
+    },
+    "rsFields": [
+      {
+        "className": "FriendLoginUpdate",
+        "refactoredName": "indexWorldMap",
+        "fieldName": "du"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "GameEngine",
+      "obfuscatedName": "be"
+    },
+    "rsFields": [
+      {
+        "className": "GameEngine",
+        "refactoredName": "canvas",
+        "fieldName": "ax"
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "clanMembers",
+        "fieldName": "nh"
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "clipboard",
+        "fieldName": "ah"
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "eventQueue",
+        "fieldName": "az"
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "focused",
+        "fieldName": "av"
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "FPS",
+        "fieldName": "c",
+        "multiplier": 1092574815
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "frame",
+        "fieldName": "aq"
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "garbageCollectorLastCheckTimeMs",
+        "fieldName": "aj",
+        "multiplier": -1390540160102048077
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "garbageCollectorLastCollectionTime",
+        "fieldName": "aa",
+        "multiplier": 7654158968335052561
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "hasErrored",
+        "fieldName": "t"
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "mouseWheelHandler",
+        "fieldName": "af"
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "shell",
+        "fieldName": "e"
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "shellCount",
+        "fieldName": "k",
+        "multiplier": -673297861
+      },
+      {
+        "className": "GameEngine",
+        "refactoredName": "taskManager",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "GameObject",
+      "obfuscatedName": "et"
+    },
+    "rsFields": [
+      {
+        "className": "GameObject",
+        "refactoredName": "cycle",
+        "fieldName": "c",
+        "multiplier": -833063441
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "drawPriority",
+        "fieldName": "x",
+        "multiplier": 792465583
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "flags",
+        "fieldName": "n",
+        "multiplier": 195247177
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "hash",
+        "fieldName": "s",
+        "multiplier": 1044473627
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "height",
+        "fieldName": "w",
+        "multiplier": 1840593029
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "offsetX",
+        "fieldName": "f",
+        "multiplier": 1511254367
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "offsetY",
+        "fieldName": "j",
+        "multiplier": 235575925
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "orientation",
+        "fieldName": "z",
+        "multiplier": 1672836637
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "plane",
+        "fieldName": "a",
+        "multiplier": -1866751847
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "relativeX",
+        "fieldName": "t",
+        "multiplier": 1610249375
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "relativeY",
+        "fieldName": "g",
+        "multiplier": 19135965
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "renderable",
+        "fieldName": "u"
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "x",
+        "fieldName": "e",
+        "multiplier": 1087761421
+      },
+      {
+        "className": "GameObject",
+        "refactoredName": "y",
+        "fieldName": "k",
+        "multiplier": 1063628249
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "GrandExchangeEvent",
+      "obfuscatedName": "y"
+    },
+    "rsFields": [
+      {
+        "className": "GrandExchangeEvent",
+        "refactoredName": "cameraZ",
+        "fieldName": "gd",
+        "multiplier": 508599443
+      },
+      {
+        "className": "GrandExchangeEvent",
+        "refactoredName": "compass",
+        "fieldName": "ff"
+      },
+      {
+        "className": "GrandExchangeEvent",
+        "refactoredName": "grandExchangeOffer",
+        "fieldName": "e"
+      },
+      {
+        "className": "GrandExchangeEvent",
+        "refactoredName": "string1",
+        "fieldName": "k"
+      },
+      {
+        "className": "GrandExchangeEvent",
+        "refactoredName": "string2",
+        "fieldName": "u"
+      },
+      {
+        "className": "GrandExchangeEvent",
+        "refactoredName": "world",
+        "fieldName": "a",
+        "multiplier": 306485541
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "GrandExchangeEvents",
+      "obfuscatedName": "n"
+    },
+    "rsFields": [
+      {
+        "className": "GrandExchangeEvents",
+        "refactoredName": "events",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "GrandExchangeOffer",
+      "obfuscatedName": "r"
+    },
+    "rsFields": [
+      {
+        "className": "GrandExchangeOffer",
+        "refactoredName": "itemId",
+        "fieldName": "w",
+        "multiplier": 420374037
+      },
+      {
+        "className": "GrandExchangeOffer",
+        "refactoredName": "osName",
+        "fieldName": "b"
+      },
+      {
+        "className": "GrandExchangeOffer",
+        "refactoredName": "price",
+        "fieldName": "e",
+        "multiplier": -940633443
+      },
+      {
+        "className": "GrandExchangeOffer",
+        "refactoredName": "progress",
+        "fieldName": "a"
+      },
+      {
+        "className": "GrandExchangeOffer",
+        "refactoredName": "quantitySold",
+        "fieldName": "u",
+        "multiplier": -616978795
+      },
+      {
+        "className": "GrandExchangeOffer",
+        "refactoredName": "spent",
+        "fieldName": "z",
+        "multiplier": 300076227
+      },
+      {
+        "className": "GrandExchangeOffer",
+        "refactoredName": "totalQuantity",
+        "fieldName": "k",
+        "multiplier": -1993245439
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Graphics3D",
+      "obfuscatedName": "es"
+    },
+    "rsFields": [
+      {
+        "className": "Graphics3D",
+        "refactoredName": "centerX",
+        "fieldName": "s"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "centerY",
+        "fieldName": "n"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "colorPalette",
+        "fieldName": "b"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "COSINE",
+        "fieldName": "ab"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "lowMem",
+        "fieldName": "e"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "rasterAlpha",
+        "fieldName": "u"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "rasterClipEnable",
+        "fieldName": "a"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "rasterClipX",
+        "fieldName": "y"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "rasterClipY",
+        "fieldName": "q"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "rasterGouraudLowRes",
+        "fieldName": "k"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "Rasterizer3D_clipHeight",
+        "fieldName": "o"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "Rasterizer3D_clipMidX2",
+        "fieldName": "i"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "Rasterizer3D_clipMidY2",
+        "fieldName": "m"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "Rasterizer3D_clipNegativeMidX",
+        "fieldName": "r"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "Rasterizer3D_clipNegativeMidY",
+        "fieldName": "l"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "Rasterizer3D_zoom",
+        "fieldName": "c"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "SINE",
+        "fieldName": "p"
+      },
+      {
+        "className": "Graphics3D",
+        "refactoredName": "textureLoader",
+        "fieldName": "h"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "GraphicsObject",
+      "obfuscatedName": "cj"
+    },
+    "rsFields": [
+      {
+        "className": "GraphicsObject",
+        "refactoredName": "finished",
+        "fieldName": "j"
+      },
+      {
+        "className": "GraphicsObject",
+        "refactoredName": "height",
+        "fieldName": "z",
+        "multiplier": 254755159
+      },
+      {
+        "className": "GraphicsObject",
+        "refactoredName": "id",
+        "fieldName": "a",
+        "multiplier": -1167853917
+      },
+      {
+        "className": "GraphicsObject",
+        "refactoredName": "landRegionFileIds",
+        "fieldName": "fe"
+      },
+      {
+        "className": "GraphicsObject",
+        "refactoredName": "level",
+        "fieldName": "e",
+        "multiplier": 2120405891
+      },
+      {
+        "className": "GraphicsObject",
+        "refactoredName": "port1",
+        "fieldName": "dy",
+        "multiplier": -505196129
+      },
+      {
+        "className": "GraphicsObject",
+        "refactoredName": "startCycle",
+        "fieldName": "w",
+        "multiplier": 1957506109
+      },
+      {
+        "className": "GraphicsObject",
+        "refactoredName": "x",
+        "fieldName": "k",
+        "multiplier": -1183024183
+      },
+      {
+        "className": "GraphicsObject",
+        "refactoredName": "y",
+        "fieldName": "u",
+        "multiplier": 2114952073
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "GroundObject",
+      "obfuscatedName": "dq"
+    },
+    "rsFields": [
+      {
+        "className": "GroundObject",
+        "refactoredName": "floor",
+        "fieldName": "a",
+        "multiplier": 950595223
+      },
+      {
+        "className": "GroundObject",
+        "refactoredName": "hash",
+        "fieldName": "u",
+        "multiplier": 1395110931
+      },
+      {
+        "className": "GroundObject",
+        "refactoredName": "renderable",
+        "fieldName": "k"
+      },
+      {
+        "className": "GroundObject",
+        "refactoredName": "renderInfoBitPacked",
+        "fieldName": "z",
+        "multiplier": 908974953
+      },
+      {
+        "className": "GroundObject",
+        "refactoredName": "task",
+        "fieldName": "j"
+      },
+      {
+        "className": "GroundObject",
+        "refactoredName": "x",
+        "fieldName": "w",
+        "multiplier": -1302060085
+      },
+      {
+        "className": "GroundObject",
+        "refactoredName": "y",
+        "fieldName": "e",
+        "multiplier": 326033797
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "GZipDecompressor",
+      "obfuscatedName": "fd"
+    },
+    "rsFields": [
+      {
+        "className": "GZipDecompressor",
+        "refactoredName": "cameraY",
+        "fieldName": "gz",
+        "multiplier": -219460773
+      },
+      {
+        "className": "GZipDecompressor",
+        "refactoredName": "inflator",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "HashTable",
+      "obfuscatedName": "gp"
+    },
+    "rsFields": [
+      {
+        "className": "HashTable",
+        "refactoredName": "buckets",
+        "fieldName": "w"
+      },
+      {
+        "className": "HashTable",
+        "refactoredName": "current",
+        "fieldName": "k"
+      },
+      {
+        "className": "HashTable",
+        "refactoredName": "currentGet",
+        "fieldName": "e"
+      },
+      {
+        "className": "HashTable",
+        "refactoredName": "index",
+        "fieldName": "u"
+      },
+      {
+        "className": "HashTable",
+        "refactoredName": "size",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "HashTableIterator",
+      "obfuscatedName": "he"
+    },
+    "rsFields": [
+      {
+        "className": "HashTableIterator",
+        "refactoredName": "head",
+        "fieldName": "k"
+      },
+      {
+        "className": "HashTableIterator",
+        "refactoredName": "index",
+        "fieldName": "e"
+      },
+      {
+        "className": "HashTableIterator",
+        "refactoredName": "table",
+        "fieldName": "a"
+      },
+      {
+        "className": "HashTableIterator",
+        "refactoredName": "tail",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Huffman",
+      "obfuscatedName": "fb"
+    },
+    "rsFields": [
+      {
+        "className": "Huffman",
+        "refactoredName": "bits",
+        "fieldName": "w"
+      },
+      {
+        "className": "Huffman",
+        "refactoredName": "canvasWidth",
+        "fieldName": "d",
+        "multiplier": -1401406659
+      },
+      {
+        "className": "Huffman",
+        "refactoredName": "keys",
+        "fieldName": "e"
+      },
+      {
+        "className": "Huffman",
+        "refactoredName": "masks",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Identifiers",
+      "obfuscatedName": "gm"
+    },
+    "rsFields": [
+      {
+        "className": "Identifiers",
+        "refactoredName": "table",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Ignore",
+      "obfuscatedName": "bi"
+    },
+    "rsFields": [
+      {
+        "className": "Ignore",
+        "refactoredName": "modIconSprites",
+        "fieldName": "fu"
+      },
+      {
+        "className": "Ignore",
+        "refactoredName": "name",
+        "fieldName": "a"
+      },
+      {
+        "className": "Ignore",
+        "refactoredName": "previousName",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "IndexData",
+      "obfuscatedName": "iu"
+    },
+    "rsFields": [
+      {
+        "className": "IndexData",
+        "refactoredName": "crc32",
+        "fieldName": "p"
+      },
+      {
+        "className": "IndexData",
+        "refactoredName": "crcValue",
+        "fieldName": "ab",
+        "multiplier": 707407901
+      },
+      {
+        "className": "IndexData",
+        "refactoredName": "index",
+        "fieldName": "b",
+        "multiplier": -233744701
+      },
+      {
+        "className": "IndexData",
+        "refactoredName": "indexReferenceVersion",
+        "fieldName": "ad",
+        "multiplier": 809778315
+      },
+      {
+        "className": "IndexData",
+        "refactoredName": "indexStore",
+        "fieldName": "m"
+      },
+      {
+        "className": "IndexData",
+        "refactoredName": "referenceStore",
+        "fieldName": "q"
+      },
+      {
+        "className": "IndexData",
+        "refactoredName": "validArchives",
+        "fieldName": "v"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "IndexDataBase",
+      "obfuscatedName": "ib"
+    },
+    "rsFields": [
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "archiveCrcs",
+        "fieldName": "u"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "archiveFileIds",
+        "fieldName": "f"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "archiveFileNames",
+        "fieldName": "g"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "archiveIds",
+        "fieldName": "w"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "archiveNames",
+        "fieldName": "e"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "archiveNumberOfFiles",
+        "fieldName": "t"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "archiveRevisions",
+        "fieldName": "z"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "archives",
+        "fieldName": "x"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "childIdentifiers",
+        "fieldName": "j"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "childs",
+        "fieldName": "c"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "crc",
+        "fieldName": "n",
+        "multiplier": 1159717755
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "gzip",
+        "fieldName": "s"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "identifiers",
+        "fieldName": "k"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "releaseArchives",
+        "fieldName": "y"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "shallowRecords",
+        "fieldName": "o"
+      },
+      {
+        "className": "IndexDataBase",
+        "refactoredName": "validArchivesCount",
+        "fieldName": "a",
+        "multiplier": -955590129
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "IndexedSprite",
+      "obfuscatedName": "kg"
+    },
+    "rsFields": [
+      {
+        "className": "IndexedSprite",
+        "refactoredName": "height",
+        "fieldName": "k"
+      },
+      {
+        "className": "IndexedSprite",
+        "refactoredName": "offsetX",
+        "fieldName": "u"
+      },
+      {
+        "className": "IndexedSprite",
+        "refactoredName": "offsetY",
+        "fieldName": "z"
+      },
+      {
+        "className": "IndexedSprite",
+        "refactoredName": "originalHeight",
+        "fieldName": "f"
+      },
+      {
+        "className": "IndexedSprite",
+        "refactoredName": "originalWidth",
+        "fieldName": "e"
+      },
+      {
+        "className": "IndexedSprite",
+        "refactoredName": "palette",
+        "fieldName": "w"
+      },
+      {
+        "className": "IndexedSprite",
+        "refactoredName": "pixels",
+        "fieldName": "a"
+      },
+      {
+        "className": "IndexedSprite",
+        "refactoredName": "width",
+        "fieldName": "t"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "IndexFile",
+      "obfuscatedName": "fv"
+    },
+    "rsFields": [
+      {
+        "className": "IndexFile",
+        "refactoredName": "dataFile",
+        "fieldName": "w"
+      },
+      {
+        "className": "IndexFile",
+        "refactoredName": "index",
+        "fieldName": "k",
+        "multiplier": 1333258905
+      },
+      {
+        "className": "IndexFile",
+        "refactoredName": "indexFile",
+        "fieldName": "e"
+      },
+      {
+        "className": "IndexFile",
+        "refactoredName": "IndexStore_buffer",
+        "fieldName": "a"
+      },
+      {
+        "className": "IndexFile",
+        "refactoredName": "maxSize",
+        "fieldName": "u",
+        "multiplier": -312679233
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "IndexStoreActionHandler",
+      "obfuscatedName": "id"
+    },
+    "rsFields": [
+      {
+        "className": "IndexStoreActionHandler",
+        "refactoredName": "IndexStoreActionHandler_lock",
+        "fieldName": "k"
+      },
+      {
+        "className": "IndexStoreActionHandler",
+        "refactoredName": "IndexStoreActionHandler_requestQueue",
+        "fieldName": "a"
+      },
+      {
+        "className": "IndexStoreActionHandler",
+        "refactoredName": "IndexStoreActionHandler_responseQueue",
+        "fieldName": "w"
+      },
+      {
+        "className": "IndexStoreActionHandler",
+        "refactoredName": "IndexStoreActionHandler_thread",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "IntegerNode",
+      "obfuscatedName": "hr"
+    },
+    "rsFields": [
+      {
+        "className": "IntegerNode",
+        "refactoredName": "value",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "InvType",
+      "obfuscatedName": "is"
+    },
+    "rsFields": [
+      {
+        "className": "InvType",
+        "refactoredName": "inventoryCache",
+        "fieldName": "w"
+      },
+      {
+        "className": "InvType",
+        "refactoredName": "size",
+        "fieldName": "e",
+        "multiplier": 1659984447
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ISAACCipher",
+      "obfuscatedName": "gj"
+    },
+    "rsFields": [
+      {
+        "className": "ISAACCipher",
+        "refactoredName": "mm",
+        "fieldName": "z"
+      },
+      {
+        "className": "ISAACCipher",
+        "refactoredName": "randResult",
+        "fieldName": "u"
+      },
+      {
+        "className": "ISAACCipher",
+        "refactoredName": "valuesRemaining",
+        "fieldName": "k",
+        "multiplier": -1239715429
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Item",
+      "obfuscatedName": "cg"
+    },
+    "rsFields": [
+      {
+        "className": "Item",
+        "refactoredName": "id",
+        "fieldName": "a",
+        "multiplier": 485193461
+      },
+      {
+        "className": "Item",
+        "refactoredName": "menuWidth",
+        "fieldName": "jw",
+        "multiplier": -2124720277
+      },
+      {
+        "className": "Item",
+        "refactoredName": "quantity",
+        "fieldName": "w",
+        "multiplier": -1501899501
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ItemComposition",
+      "obfuscatedName": "jq"
+    },
+    "rsFields": [
+      {
+        "className": "ItemComposition",
+        "refactoredName": "ambient",
+        "fieldName": "bb",
+        "multiplier": -1717939813
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "colourToReplace",
+        "fieldName": "r"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "colourToReplaceWith",
+        "fieldName": "i"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "contrast",
+        "fieldName": "bc",
+        "multiplier": -1199119237
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "countCo",
+        "fieldName": "am"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "countObj",
+        "fieldName": "ae"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "femaleHeadModel",
+        "fieldName": "az",
+        "multiplier": -806041147
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "femaleHeadModel2",
+        "fieldName": "av",
+        "multiplier": -1553992041
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "femaleModel",
+        "fieldName": "ac",
+        "multiplier": 1164979167
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "femaleModel1",
+        "fieldName": "aw",
+        "multiplier": 2001513361
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "femaleModel2",
+        "fieldName": "ai",
+        "multiplier": 2095734483
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "femaleOffset",
+        "fieldName": "al",
+        "multiplier": 1454486959
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "groundActions",
+        "fieldName": "ak"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "id",
+        "fieldName": "n",
+        "multiplier": 893144361
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "int1",
+        "fieldName": "bp",
+        "multiplier": 394645357
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "int2",
+        "fieldName": "bx",
+        "multiplier": -389138497
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "int3",
+        "fieldName": "bw",
+        "multiplier": 599115067
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "inventoryActions",
+        "fieldName": "as"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "inventoryModel",
+        "fieldName": "y",
+        "multiplier": 1453511911
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "isMembers",
+        "fieldName": "ag"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "isStackable",
+        "fieldName": "ab",
+        "multiplier": 658096135
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "isTradable",
+        "fieldName": "bg"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "itemModelCache",
+        "fieldName": "x"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "items",
+        "fieldName": "j"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "itemSpriteCache",
+        "fieldName": "c"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "item_ref",
+        "fieldName": "z"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "maleHeadModel",
+        "fieldName": "af",
+        "multiplier": 1550750577
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "maleHeadModel2",
+        "fieldName": "ah",
+        "multiplier": -1469717441
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "maleModel",
+        "fieldName": "at",
+        "multiplier": 1536749267
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "maleModel1",
+        "fieldName": "ap",
+        "multiplier": -2144494677
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "maleModel2",
+        "fieldName": "ay",
+        "multiplier": -417382559
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "maleOffset",
+        "fieldName": "an",
+        "multiplier": -1840041673
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "name",
+        "fieldName": "o"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "note",
+        "fieldName": "aa",
+        "multiplier": -1866150387
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "notedId",
+        "fieldName": "be",
+        "multiplier": -1995884479
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "notedTemplate",
+        "fieldName": "aj",
+        "multiplier": -1408228201
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "offsetX2d",
+        "fieldName": "v",
+        "multiplier": 51891773
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "offsetY2d",
+        "fieldName": "p",
+        "multiplier": 1784761435
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "price",
+        "fieldName": "ad",
+        "multiplier": -968472145
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "resizeX",
+        "fieldName": "ao",
+        "multiplier": -933749849
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "resizeY",
+        "fieldName": "ar",
+        "multiplier": -2006568821
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "resizeZ",
+        "fieldName": "au",
+        "multiplier": 1353408719
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "team",
+        "fieldName": "ax",
+        "multiplier": 156584973
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "textToReplaceWith",
+        "fieldName": "m"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "textureToReplace",
+        "fieldName": "l"
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "unnotedId",
+        "fieldName": "bq",
+        "multiplier": 806926903
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "xan2d",
+        "fieldName": "b",
+        "multiplier": 1556411869
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "yan2d",
+        "fieldName": "h",
+        "multiplier": -404379691
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "zan2d",
+        "fieldName": "d",
+        "multiplier": -1182865303
+      },
+      {
+        "className": "ItemComposition",
+        "refactoredName": "zoom2d",
+        "fieldName": "q",
+        "multiplier": 232612579
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ItemContainer",
+      "obfuscatedName": "bz"
+    },
+    "rsFields": [
+      {
+        "className": "ItemContainer",
+        "refactoredName": "itemContainers",
+        "fieldName": "a"
+      },
+      {
+        "className": "ItemContainer",
+        "refactoredName": "itemIds",
+        "fieldName": "w"
+      },
+      {
+        "className": "ItemContainer",
+        "refactoredName": "stackSizes",
+        "fieldName": "e"
+      },
+      {
+        "className": "ItemContainer",
+        "refactoredName": "worldList",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ItemLayer",
+      "obfuscatedName": "dl"
+    },
+    "rsFields": [
+      {
+        "className": "ItemLayer",
+        "refactoredName": "bottom",
+        "fieldName": "k"
+      },
+      {
+        "className": "ItemLayer",
+        "refactoredName": "flags",
+        "fieldName": "t",
+        "multiplier": 554011731
+      },
+      {
+        "className": "ItemLayer",
+        "refactoredName": "hash",
+        "fieldName": "a",
+        "multiplier": 1329167205
+      },
+      {
+        "className": "ItemLayer",
+        "refactoredName": "height",
+        "fieldName": "f",
+        "multiplier": 14426789
+      },
+      {
+        "className": "ItemLayer",
+        "refactoredName": "middle",
+        "fieldName": "u"
+      },
+      {
+        "className": "ItemLayer",
+        "refactoredName": "top",
+        "fieldName": "z"
+      },
+      {
+        "className": "ItemLayer",
+        "refactoredName": "x",
+        "fieldName": "w",
+        "multiplier": 813439287
+      },
+      {
+        "className": "ItemLayer",
+        "refactoredName": "y",
+        "fieldName": "e",
+        "multiplier": 594162243
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "IterableDualNodeQueue",
+      "obfuscatedName": "hh"
+    },
+    "rsFields": [
+      {
+        "className": "IterableDualNodeQueue",
+        "refactoredName": "sentinel",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "IterableHashTable",
+      "obfuscatedName": "gr"
+    },
+    "rsFields": [
+      {
+        "className": "IterableHashTable",
+        "refactoredName": "buckets",
+        "fieldName": "w"
+      },
+      {
+        "className": "IterableHashTable",
+        "refactoredName": "head",
+        "fieldName": "e"
+      },
+      {
+        "className": "IterableHashTable",
+        "refactoredName": "index",
+        "fieldName": "u"
+      },
+      {
+        "className": "IterableHashTable",
+        "refactoredName": "size",
+        "fieldName": "a"
+      },
+      {
+        "className": "IterableHashTable",
+        "refactoredName": "tail",
+        "fieldName": "k"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ITextureLoader",
+      "obfuscatedName": "ey"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "JagexGame",
+      "obfuscatedName": "ia"
+    },
+    "rsFields": [
+      {
+        "className": "JagexGame",
+        "refactoredName": "id",
+        "fieldName": "f",
+        "multiplier": -1037398473
+      },
+      {
+        "className": "JagexGame",
+        "refactoredName": "name",
+        "fieldName": "t"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "JagexLoginType",
+      "obfuscatedName": "kz"
+    },
+    "rsFields": [
+      {
+        "className": "JagexLoginType",
+        "refactoredName": "identifier",
+        "fieldName": "x"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "KeyFocusListener",
+      "obfuscatedName": "ar"
+    },
+    "rsFields": [
+      {
+        "className": "KeyFocusListener",
+        "refactoredName": "keyboard",
+        "fieldName": "a"
+      },
+      {
+        "className": "KeyFocusListener",
+        "refactoredName": "keyboardIdleTicks",
+        "fieldName": "ct",
+        "multiplier": -1997209807
+      },
+      {
+        "className": "KeyFocusListener",
+        "refactoredName": "KeyHandler_keyCodes",
+        "fieldName": "cx"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "KitDefinition",
+      "obfuscatedName": "ip"
+    },
+    "rsFields": [
+      {
+        "className": "KitDefinition",
+        "refactoredName": "bodyPartId",
+        "fieldName": "u",
+        "multiplier": 755102505
+      },
+      {
+        "className": "KitDefinition",
+        "refactoredName": "identKits",
+        "fieldName": "k"
+      },
+      {
+        "className": "KitDefinition",
+        "refactoredName": "identKit_ref",
+        "fieldName": "a"
+      },
+      {
+        "className": "KitDefinition",
+        "refactoredName": "modelIds",
+        "fieldName": "z"
+      },
+      {
+        "className": "KitDefinition",
+        "refactoredName": "models",
+        "fieldName": "x"
+      },
+      {
+        "className": "KitDefinition",
+        "refactoredName": "nonSelectable",
+        "fieldName": "c"
+      },
+      {
+        "className": "KitDefinition",
+        "refactoredName": "recolorToFind",
+        "fieldName": "t"
+      },
+      {
+        "className": "KitDefinition",
+        "refactoredName": "recolorToReplace",
+        "fieldName": "f"
+      },
+      {
+        "className": "KitDefinition",
+        "refactoredName": "retextureToFind",
+        "fieldName": "g"
+      },
+      {
+        "className": "KitDefinition",
+        "refactoredName": "retextureToReplace",
+        "fieldName": "j"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Link",
+      "obfuscatedName": "gc"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "LinkDeque",
+      "obfuscatedName": "gv"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "LoginPacket",
+      "obfuscatedName": "fh"
+    },
+    "rsFields": [
+      {
+        "className": "LoginPacket",
+        "refactoredName": "id",
+        "fieldName": "u",
+        "multiplier": -105058661
+      },
+      {
+        "className": "LoginPacket",
+        "refactoredName": "timer",
+        "fieldName": "s"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "MachineInfo",
+      "obfuscatedName": "ki"
+    },
+    "rsFields": [
+      {
+        "className": "MachineInfo",
+        "refactoredName": "javaVendorType",
+        "fieldName": "ax",
+        "multiplier": -317574963
+      },
+      {
+        "className": "MachineInfo",
+        "refactoredName": "javaVersionMajor",
+        "fieldName": "at",
+        "multiplier": 465222985
+      },
+      {
+        "className": "MachineInfo",
+        "refactoredName": "javaVersionMinor",
+        "fieldName": "ap",
+        "multiplier": -383063131
+      },
+      {
+        "className": "MachineInfo",
+        "refactoredName": "javaVersionPatch",
+        "fieldName": "an",
+        "multiplier": 504078667
+      },
+      {
+        "className": "MachineInfo",
+        "refactoredName": "maxMemoryMB",
+        "fieldName": "aw",
+        "multiplier": -789804035
+      },
+      {
+        "className": "MachineInfo",
+        "refactoredName": "os64Bit",
+        "fieldName": "t"
+      },
+      {
+        "className": "MachineInfo",
+        "refactoredName": "osType",
+        "fieldName": "z",
+        "multiplier": -571571871
+      },
+      {
+        "className": "MachineInfo",
+        "refactoredName": "osVersionType",
+        "fieldName": "ab",
+        "multiplier": 1520683389
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "MainBufferProvider",
+      "obfuscatedName": "bq"
+    },
+    "rsFields": [
+      {
+        "className": "MainBufferProvider",
+        "refactoredName": "component",
+        "fieldName": "a"
+      },
+      {
+        "className": "MainBufferProvider",
+        "refactoredName": "image",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Mapping",
+      "obfuscatedName": "ds"
+    },
+    "rsFields": [
+      {
+        "className": "Mapping",
+        "refactoredName": "mux",
+        "fieldName": "w"
+      },
+      {
+        "className": "Mapping",
+        "refactoredName": "submapFloors",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "MessageNode",
+      "obfuscatedName": "bv"
+    },
+    "rsFields": [
+      {
+        "className": "MessageNode",
+        "refactoredName": "id",
+        "fieldName": "a",
+        "multiplier": -1624456843
+      },
+      {
+        "className": "MessageNode",
+        "refactoredName": "name",
+        "fieldName": "k"
+      },
+      {
+        "className": "MessageNode",
+        "refactoredName": "sender",
+        "fieldName": "u"
+      },
+      {
+        "className": "MessageNode",
+        "refactoredName": "tick",
+        "fieldName": "w",
+        "multiplier": -181195109
+      },
+      {
+        "className": "MessageNode",
+        "refactoredName": "type",
+        "fieldName": "e",
+        "multiplier": 1783927465
+      },
+      {
+        "className": "MessageNode",
+        "refactoredName": "value",
+        "fieldName": "z"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "MilliTimer",
+      "obfuscatedName": "ew"
+    },
+    "rsFields": [
+      {
+        "className": "MilliTimer",
+        "refactoredName": "milliTime",
+        "fieldName": "k",
+        "multiplier": 9158307521041611221
+      },
+      {
+        "className": "MilliTimer",
+        "refactoredName": "sessionToken",
+        "fieldName": "bs"
+      },
+      {
+        "className": "MilliTimer",
+        "refactoredName": "sleepTime",
+        "fieldName": "e",
+        "multiplier": -291367241
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Model",
+      "obfuscatedName": "ef"
+    },
+    "rsFields": [
+      {
+        "className": "Model",
+        "refactoredName": "bottomY",
+        "fieldName": "ag"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "boundsType",
+        "fieldName": "ad"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "diameter",
+        "fieldName": "as"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "indices1",
+        "fieldName": "j"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "indices2",
+        "fieldName": "x"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "indices3",
+        "fieldName": "c"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "indicesCount",
+        "fieldName": "g"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "modelViewportXs",
+        "fieldName": "ah"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "modelViewportYs",
+        "fieldName": "af"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "Model_cosine",
+        "fieldName": "bh"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "Model_sine",
+        "fieldName": "bk"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "radius",
+        "fieldName": "aq"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "useBoundingBoxes3D",
+        "fieldName": "bf"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "verticesCount",
+        "fieldName": "u"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "verticesX",
+        "fieldName": "z"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "verticesY",
+        "fieldName": "t"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "verticesZ",
+        "fieldName": "f"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "xViewportBuffer",
+        "fieldName": "bq"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "XYZMag",
+        "fieldName": "ak"
+      },
+      {
+        "className": "Model",
+        "refactoredName": "yViewportBuffer",
+        "fieldName": "av"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ModelData",
+      "obfuscatedName": "dm"
+    },
+    "rsFields": [
+      {
+        "className": "ModelData",
+        "refactoredName": "contrast",
+        "fieldName": "an"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "faceAlphas",
+        "fieldName": "x"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "faceColor",
+        "fieldName": "s"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "faceNormals",
+        "fieldName": "aq"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "faceRenderPriorities",
+        "fieldName": "j"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "faceRenderType",
+        "fieldName": "g"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "faceTextures",
+        "fieldName": "n"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "normals",
+        "fieldName": "ax"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "priority",
+        "fieldName": "y"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "texTriangleX",
+        "fieldName": "i"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "texTriangleY",
+        "fieldName": "l"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "texTriangleZ",
+        "fieldName": "m"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "textureCoords",
+        "fieldName": "c"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "texturePrimaryColor",
+        "fieldName": "p"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "textureRenderTypes",
+        "fieldName": "r"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "triangleFaceCount",
+        "fieldName": "u"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "trianglePointsX",
+        "fieldName": "z"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "trianglePointsY",
+        "fieldName": "t"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "trianglePointsZ",
+        "fieldName": "f"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "triangleSkinValues",
+        "fieldName": "ag"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "vertexCount",
+        "fieldName": "a"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "vertexSkins",
+        "fieldName": "ad"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "vertexX",
+        "fieldName": "w"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "vertexY",
+        "fieldName": "e"
+      },
+      {
+        "className": "ModelData",
+        "refactoredName": "vertexZ",
+        "fieldName": "k"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "MouseInput",
+      "obfuscatedName": "bx"
+    },
+    "rsFields": [
+      {
+        "className": "MouseInput",
+        "refactoredName": "cameraX",
+        "fieldName": "gg",
+        "multiplier": -245636329
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "indexCache3",
+        "fieldName": "ck"
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "mouse",
+        "fieldName": "u"
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "mouseCurrentButton",
+        "fieldName": "j",
+        "multiplier": -333228559
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "MouseHandler_currentButton",
+        "fieldName": "t",
+        "multiplier": 523049731
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "MouseHandler_lastButton",
+        "fieldName": "c",
+        "multiplier": 1453893085
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "MouseHandler_lastPressedTimeMillis",
+        "fieldName": "y",
+        "multiplier": -7398409833473874705
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "MouseHandler_lastPressedX",
+        "fieldName": "s",
+        "multiplier": -384786981
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "MouseHandler_lastPressedY",
+        "fieldName": "n",
+        "multiplier": -348709505
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "mouseIdleTicks",
+        "fieldName": "z",
+        "multiplier": -363108789
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "mouseLastButton",
+        "fieldName": "o",
+        "multiplier": 872384249
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "mouseLastPressedTimeMillis",
+        "fieldName": "l",
+        "multiplier": -8309155304464128139
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "mouseLastPressedX",
+        "fieldName": "r",
+        "multiplier": -1046301689
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "mouseLastPressedY",
+        "fieldName": "i",
+        "multiplier": -1913046979
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "mouseX",
+        "fieldName": "f",
+        "multiplier": 1376819745
+      },
+      {
+        "className": "MouseInput",
+        "refactoredName": "mouseY",
+        "fieldName": "g",
+        "multiplier": 202010869
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "MouseRecorder",
+      "obfuscatedName": "bl"
+    },
+    "rsFields": [
+      {
+        "className": "MouseRecorder",
+        "refactoredName": "index",
+        "fieldName": "e",
+        "multiplier": 396566785
+      },
+      {
+        "className": "MouseRecorder",
+        "refactoredName": "isRunning",
+        "fieldName": "a"
+      },
+      {
+        "className": "MouseRecorder",
+        "refactoredName": "lock",
+        "fieldName": "w"
+      },
+      {
+        "className": "MouseRecorder",
+        "refactoredName": "xs",
+        "fieldName": "k"
+      },
+      {
+        "className": "MouseRecorder",
+        "refactoredName": "ys",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "MouseWheel",
+      "obfuscatedName": "fe"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "MouseWheelHandler",
+      "obfuscatedName": "ao"
+    },
+    "rsFields": [
+      {
+        "className": "MouseWheelHandler",
+        "refactoredName": "rotation",
+        "fieldName": "a",
+        "multiplier": -303729091
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "NanoTimer",
+      "obfuscatedName": "en"
+    },
+    "rsFields": [
+      {
+        "className": "NanoTimer",
+        "refactoredName": "nanoTime",
+        "fieldName": "a",
+        "multiplier": 5541093550852491481
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "NetWriter",
+      "obfuscatedName": "cx"
+    },
+    "rsFields": [
+      {
+        "className": "NetWriter",
+        "refactoredName": "buffer",
+        "fieldName": "k"
+      },
+      {
+        "className": "NetWriter",
+        "refactoredName": "chatMessages",
+        "fieldName": "lj"
+      },
+      {
+        "className": "NetWriter",
+        "refactoredName": "packetBuffer",
+        "fieldName": "z"
+      },
+      {
+        "className": "NetWriter",
+        "refactoredName": "packetBufferNodes",
+        "fieldName": "w"
+      },
+      {
+        "className": "NetWriter",
+        "refactoredName": "packetLength",
+        "fieldName": "f",
+        "multiplier": 76115971
+      },
+      {
+        "className": "NetWriter",
+        "refactoredName": "rssocket",
+        "fieldName": "a"
+      },
+      {
+        "className": "NetWriter",
+        "refactoredName": "serverPacket",
+        "fieldName": "t"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Node",
+      "obfuscatedName": "gn"
+    },
+    "rsFields": [
+      {
+        "className": "Node",
+        "refactoredName": "hash",
+        "fieldName": "cs"
+      },
+      {
+        "className": "Node",
+        "refactoredName": "next",
+        "fieldName": "cz"
+      },
+      {
+        "className": "Node",
+        "refactoredName": "previous",
+        "fieldName": "cr"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Node2LinkedList",
+      "obfuscatedName": "gx"
+    },
+    "rsFields": [
+      {
+        "className": "Node2LinkedList",
+        "refactoredName": "sentinel",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "NodeCache",
+      "obfuscatedName": "gu"
+    },
+    "rsFields": [
+      {
+        "className": "NodeCache",
+        "refactoredName": "capacity",
+        "fieldName": "w"
+      },
+      {
+        "className": "NodeCache",
+        "refactoredName": "list",
+        "fieldName": "u"
+      },
+      {
+        "className": "NodeCache",
+        "refactoredName": "remainingCapacity",
+        "fieldName": "e"
+      },
+      {
+        "className": "NodeCache",
+        "refactoredName": "table",
+        "fieldName": "k"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "NPC",
+      "obfuscatedName": "ci"
+    },
+    "rsFields": [
+      {
+        "className": "NPC",
+        "refactoredName": "composition",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "NPCComposition",
+      "obfuscatedName": "jn"
+    },
+    "rsFields": [
+      {
+        "className": "NPCComposition",
+        "refactoredName": "actions",
+        "fieldName": "q"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "colors",
+        "fieldName": "r"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "combatLevel",
+        "fieldName": "h",
+        "multiplier": -280231869
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "configs",
+        "fieldName": "as"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "heightScale",
+        "fieldName": "v",
+        "multiplier": -2082676849
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "id",
+        "fieldName": "u",
+        "multiplier": 1273015549
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "isClickable",
+        "fieldName": "ap"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "isMinimapVisible",
+        "fieldName": "b"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "isVisible",
+        "fieldName": "p"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "models",
+        "fieldName": "f"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "modifiedColors",
+        "fieldName": "i"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "name",
+        "fieldName": "z"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "NpcDefinition_indexCache",
+        "fieldName": "a"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "NpcDefinition_modelIndexCache",
+        "fieldName": "w"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "npcModelCache",
+        "fieldName": "k"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "npcs",
+        "fieldName": "e"
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "varp32Index",
+        "fieldName": "ax",
+        "multiplier": -1839748547
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "varpIndex",
+        "fieldName": "aq",
+        "multiplier": -2002687013
+      },
+      {
+        "className": "NPCComposition",
+        "refactoredName": "widthScale",
+        "fieldName": "d",
+        "multiplier": 1246817025
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ObjectComposition",
+      "obfuscatedName": "jf"
+    },
+    "rsFields": [
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "actions",
+        "fieldName": "ag"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "ambient",
+        "fieldName": "ab",
+        "multiplier": 2045893851
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "ambientSoundId",
+        "fieldName": "ae",
+        "multiplier": 492183817
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "animationId",
+        "fieldName": "v",
+        "multiplier": -334665683
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "boolean1",
+        "fieldName": "m"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "boolean2",
+        "fieldName": "ay"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "cachedModels",
+        "fieldName": "z"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "clipped",
+        "fieldName": "ax"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "clipType",
+        "fieldName": "b",
+        "multiplier": 542423197
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "configId",
+        "fieldName": "av",
+        "multiplier": 2109158551
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "contrast",
+        "fieldName": "ad",
+        "multiplier": 931874435
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "id",
+        "fieldName": "g",
+        "multiplier": -1714760777
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "impostorIds",
+        "fieldName": "ah"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "int1",
+        "fieldName": "q",
+        "multiplier": -1320550455
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "int2",
+        "fieldName": "p",
+        "multiplier": -1284309911
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "int3",
+        "fieldName": "af",
+        "multiplier": 2040555547
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "int4",
+        "fieldName": "am",
+        "multiplier": 1274074531
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "int5",
+        "fieldName": "aa",
+        "multiplier": 103125545
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "int6",
+        "fieldName": "aj",
+        "multiplier": 1679061985
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "interactType",
+        "fieldName": "l",
+        "multiplier": -1161808807
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "isRotated",
+        "fieldName": "aq"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "isSolid",
+        "fieldName": "ai"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "mapIconId",
+        "fieldName": "ak",
+        "multiplier": -956559097
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "mapSceneId",
+        "fieldName": "as",
+        "multiplier": -1042448959
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "modelClipped",
+        "fieldName": "d"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "modelSizeHeight",
+        "fieldName": "ap",
+        "multiplier": -1468073391
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "modelSizeX",
+        "fieldName": "at",
+        "multiplier": 1342124689
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "modelSizeY",
+        "fieldName": "an",
+        "multiplier": -1186652121
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "name",
+        "fieldName": "c"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "nonFlatShading",
+        "fieldName": "h"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "ObjectDefinition_isLowDetail",
+        "fieldName": "a"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "objectModels",
+        "fieldName": "j"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "objects",
+        "fieldName": "k"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "objects_ref",
+        "fieldName": "w"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "objectTypes",
+        "fieldName": "x"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "offsetHeight",
+        "fieldName": "aw",
+        "multiplier": 688876963
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "offsetX",
+        "fieldName": "ac",
+        "multiplier": 1247660289
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "offsetY",
+        "fieldName": "al",
+        "multiplier": 2050502779
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "recolorToFind",
+        "fieldName": "s"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "recolorToReplace",
+        "fieldName": "n"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "sizeX",
+        "fieldName": "r",
+        "multiplier": -1899287589
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "sizeY",
+        "fieldName": "i",
+        "multiplier": -2057232489
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "textureToFind",
+        "fieldName": "y"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "textureToReplace",
+        "fieldName": "o"
+      },
+      {
+        "className": "ObjectComposition",
+        "refactoredName": "varpId",
+        "fieldName": "az",
+        "multiplier": 1929572175
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ObjectNode",
+      "obfuscatedName": "gq"
+    },
+    "rsFields": [
+      {
+        "className": "ObjectNode",
+        "refactoredName": "value",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Occluder",
+      "obfuscatedName": "em"
+    },
+    "rsFields": [
+      {
+        "className": "Occluder",
+        "refactoredName": "maxNormalX",
+        "fieldName": "o",
+        "multiplier": -743903315
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "maxNormalY",
+        "fieldName": "i",
+        "multiplier": 1329319429
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "maxTIleX",
+        "fieldName": "w",
+        "multiplier": -1669354965
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "maxTileZ",
+        "fieldName": "k",
+        "multiplier": -1798184553
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "maxX",
+        "fieldName": "t",
+        "multiplier": -663628629
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "maxY",
+        "fieldName": "x",
+        "multiplier": 1204169261
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "maxZ",
+        "fieldName": "g",
+        "multiplier": 1738272033
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "minNormalX",
+        "fieldName": "y",
+        "multiplier": 1499501973
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "minNormalY",
+        "fieldName": "r",
+        "multiplier": 236692935
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "minTileX",
+        "fieldName": "a",
+        "multiplier": 1377100417
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "minTileZ",
+        "fieldName": "e",
+        "multiplier": -1364764655
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "minX",
+        "fieldName": "z",
+        "multiplier": -25611653
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "minY",
+        "fieldName": "j",
+        "multiplier": -925867423
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "minZ",
+        "fieldName": "f",
+        "multiplier": 162046975
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "testDirection",
+        "fieldName": "c",
+        "multiplier": 619543051
+      },
+      {
+        "className": "Occluder",
+        "refactoredName": "type",
+        "fieldName": "u",
+        "multiplier": -153010939
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Overlay",
+      "obfuscatedName": "jh"
+    },
+    "rsFields": [
+      {
+        "className": "Overlay",
+        "refactoredName": "color",
+        "fieldName": "e",
+        "multiplier": -806846189
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "hue",
+        "fieldName": "t",
+        "multiplier": -1907080363
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "isHidden",
+        "fieldName": "u"
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "lightness",
+        "fieldName": "g",
+        "multiplier": 973818973
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "otherHue",
+        "fieldName": "j",
+        "multiplier": 1376424583
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "otherLightness",
+        "fieldName": "c",
+        "multiplier": -341809107
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "otherRgbColor",
+        "fieldName": "z",
+        "multiplier": 353934355
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "otherSaturation",
+        "fieldName": "x",
+        "multiplier": -1001047649
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "overlays",
+        "fieldName": "w"
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "overlay_ref",
+        "fieldName": "a"
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "saturation",
+        "fieldName": "f",
+        "multiplier": 1051805489
+      },
+      {
+        "className": "Overlay",
+        "refactoredName": "texture",
+        "fieldName": "k",
+        "multiplier": 1614382543
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "OwnWorldComparator",
+      "obfuscatedName": "ba"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "PacketBuffer",
+      "obfuscatedName": "gy"
+    },
+    "rsFields": [
+      {
+        "className": "PacketBuffer",
+        "refactoredName": "bitPosition",
+        "fieldName": "x",
+        "multiplier": -1022606895
+      },
+      {
+        "className": "PacketBuffer",
+        "refactoredName": "cipher",
+        "fieldName": "g"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "PacketNode",
+      "obfuscatedName": "fg"
+    },
+    "rsFields": [
+      {
+        "className": "PacketNode",
+        "refactoredName": "clientPacket",
+        "fieldName": "a"
+      },
+      {
+        "className": "PacketNode",
+        "refactoredName": "packetBuffer",
+        "fieldName": "e"
+      },
+      {
+        "className": "PacketNode",
+        "refactoredName": "packetBufferNodes",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Parameters",
+      "obfuscatedName": "kp"
+    },
+    "rsFields": [
+      {
+        "className": "Parameters",
+        "refactoredName": "key",
+        "fieldName": "r"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "PendingSpawn",
+      "obfuscatedName": "bo"
+    },
+    "rsFields": [
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "delay",
+        "fieldName": "x",
+        "multiplier": 1885900041
+      },
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "hitpoints",
+        "fieldName": "c",
+        "multiplier": -1299482467
+      },
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "id",
+        "fieldName": "f",
+        "multiplier": -591865171
+      },
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "jagexLoginType",
+        "fieldName": "bq"
+      },
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "level",
+        "fieldName": "a",
+        "multiplier": 1314434327
+      },
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "orientation",
+        "fieldName": "g",
+        "multiplier": 1702666337
+      },
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "topContextMenuRow",
+        "fieldName": "jv"
+      },
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "type",
+        "fieldName": "w",
+        "multiplier": 1135806613
+      },
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "x",
+        "fieldName": "e",
+        "multiplier": -1534725047
+      },
+      {
+        "className": "PendingSpawn",
+        "refactoredName": "y",
+        "fieldName": "k",
+        "multiplier": -2011832797
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Permission",
+      "obfuscatedName": "ij"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Player",
+      "obfuscatedName": "bj"
+    },
+    "rsFields": [
+      {
+        "className": "Player",
+        "refactoredName": "actions",
+        "fieldName": "z"
+      },
+      {
+        "className": "Player",
+        "refactoredName": "animationCycleEnd",
+        "fieldName": "x",
+        "multiplier": 897531569
+      },
+      {
+        "className": "Player",
+        "refactoredName": "animationCycleStart",
+        "fieldName": "j",
+        "multiplier": -313979289
+      },
+      {
+        "className": "Player",
+        "refactoredName": "combatLevel",
+        "fieldName": "t",
+        "multiplier": 959498037
+      },
+      {
+        "className": "Player",
+        "refactoredName": "composition",
+        "fieldName": "w"
+      },
+      {
+        "className": "Player",
+        "refactoredName": "hidden",
+        "fieldName": "b"
+      },
+      {
+        "className": "Player",
+        "refactoredName": "isLowDetail",
+        "fieldName": "m"
+      },
+      {
+        "className": "Player",
+        "refactoredName": "model",
+        "fieldName": "y"
+      },
+      {
+        "className": "Player",
+        "refactoredName": "name",
+        "fieldName": "a"
+      },
+      {
+        "className": "Player",
+        "refactoredName": "overheadIcon",
+        "fieldName": "k",
+        "multiplier": 226773847
+      },
+      {
+        "className": "Player",
+        "refactoredName": "skullIcon",
+        "fieldName": "e",
+        "multiplier": 1669295901
+      },
+      {
+        "className": "Player",
+        "refactoredName": "team",
+        "fieldName": "q",
+        "multiplier": -558926455
+      },
+      {
+        "className": "Player",
+        "refactoredName": "totalLevel",
+        "fieldName": "f",
+        "multiplier": -1522787423
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "PlayerComposition",
+      "obfuscatedName": "hb"
+    },
+    "rsFields": [
+      {
+        "className": "PlayerComposition",
+        "refactoredName": "bodyPartColours",
+        "fieldName": "w"
+      },
+      {
+        "className": "PlayerComposition",
+        "refactoredName": "colorsToReplace",
+        "fieldName": "f"
+      },
+      {
+        "className": "PlayerComposition",
+        "refactoredName": "equipmentIds",
+        "fieldName": "a"
+      },
+      {
+        "className": "PlayerComposition",
+        "refactoredName": "hash",
+        "fieldName": "u",
+        "multiplier": -5429717739818962937
+      },
+      {
+        "className": "PlayerComposition",
+        "refactoredName": "isFemale",
+        "fieldName": "e"
+      },
+      {
+        "className": "PlayerComposition",
+        "refactoredName": "transformedNpcId",
+        "fieldName": "k",
+        "multiplier": -938568641
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Preferences",
+      "obfuscatedName": "cf"
+    },
+    "rsFields": [
+      {
+        "className": "Preferences",
+        "refactoredName": "hideRoofs",
+        "fieldName": "e"
+      },
+      {
+        "className": "Preferences",
+        "refactoredName": "hideUsername",
+        "fieldName": "t"
+      },
+      {
+        "className": "Preferences",
+        "refactoredName": "indexCache13",
+        "fieldName": "dj"
+      },
+      {
+        "className": "Preferences",
+        "refactoredName": "muted",
+        "fieldName": "k"
+      },
+      {
+        "className": "Preferences",
+        "refactoredName": "preferences",
+        "fieldName": "f"
+      },
+      {
+        "className": "Preferences",
+        "refactoredName": "rememberedUsername",
+        "fieldName": "z"
+      },
+      {
+        "className": "Preferences",
+        "refactoredName": "screenType",
+        "fieldName": "u",
+        "multiplier": -881826075
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Projectile",
+      "obfuscatedName": "co"
+    },
+    "rsFields": [
+      {
+        "className": "Projectile",
+        "refactoredName": "animationSequence",
+        "fieldName": "h"
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "cycle",
+        "fieldName": "f",
+        "multiplier": 632478681
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "endHeight",
+        "fieldName": "z",
+        "multiplier": 1369906141
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "floor",
+        "fieldName": "w",
+        "multiplier": 1093934655
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "height",
+        "fieldName": "u",
+        "multiplier": -1885188655
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "heightOffset",
+        "fieldName": "m"
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "id",
+        "fieldName": "a",
+        "multiplier": 253222545
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "int6",
+        "fieldName": "v",
+        "multiplier": 242707913
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "int7",
+        "fieldName": "d",
+        "multiplier": -851439171
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "interacting",
+        "fieldName": "x",
+        "multiplier": -820127231
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "isMoving",
+        "fieldName": "c"
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "rotationX",
+        "fieldName": "q",
+        "multiplier": -83233913
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "rotationY",
+        "fieldName": "b",
+        "multiplier": -436430029
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "scalar",
+        "fieldName": "r"
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "slope",
+        "fieldName": "g",
+        "multiplier": -45498235
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "speedX",
+        "fieldName": "o"
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "start",
+        "fieldName": "j",
+        "multiplier": -1841552807
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "startTime",
+        "fieldName": "t",
+        "multiplier": 1550375669
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "velocityX",
+        "fieldName": "l"
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "velocityY",
+        "fieldName": "i"
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "velocityZ",
+        "fieldName": "n"
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "x",
+        "fieldName": "s"
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "x1",
+        "fieldName": "e",
+        "multiplier": 696136279
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "y1",
+        "fieldName": "k",
+        "multiplier": 806338563
+      },
+      {
+        "className": "Projectile",
+        "refactoredName": "z",
+        "fieldName": "y"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Rasterizer2D",
+      "obfuscatedName": "ky"
+    },
+    "rsFields": [
+      {
+        "className": "Rasterizer2D",
+        "refactoredName": "drawingAreaBottom",
+        "fieldName": "at"
+      },
+      {
+        "className": "Rasterizer2D",
+        "refactoredName": "drawingAreaRight",
+        "fieldName": "aq"
+      },
+      {
+        "className": "Rasterizer2D",
+        "refactoredName": "drawingAreaTop",
+        "fieldName": "as"
+      },
+      {
+        "className": "Rasterizer2D",
+        "refactoredName": "draw_region_x",
+        "fieldName": "ax"
+      },
+      {
+        "className": "Rasterizer2D",
+        "refactoredName": "graphicsPixels",
+        "fieldName": "ad"
+      },
+      {
+        "className": "Rasterizer2D",
+        "refactoredName": "graphicsPixelsHeight",
+        "fieldName": "ak"
+      },
+      {
+        "className": "Rasterizer2D",
+        "refactoredName": "graphicsPixelsWidth",
+        "fieldName": "ag"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Region",
+      "obfuscatedName": "eh"
+    },
+    "rsFields": [
+      {
+        "className": "Region",
+        "refactoredName": "cameraX2",
+        "fieldName": "d"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "cameraY2",
+        "fieldName": "v"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "cameraZ2",
+        "fieldName": "p"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "checkClick",
+        "fieldName": "aq"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "cycle",
+        "fieldName": "r"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "entityBuffer",
+        "fieldName": "as"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "entityCount",
+        "fieldName": "f"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "levelOccluderCount",
+        "fieldName": "af"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "levelOccluders",
+        "fieldName": "ah"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "lowMemory",
+        "fieldName": "a"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "maxTileX",
+        "fieldName": "l"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "maxTileZ",
+        "fieldName": "q"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "maxX",
+        "fieldName": "e"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "maxY",
+        "fieldName": "w"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "maxZ",
+        "fieldName": "k"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "MAX_OCCLUDER_LEVELS",
+        "fieldName": "ai"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "minLevel",
+        "fieldName": "t"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "minTileX",
+        "fieldName": "i"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "minTileZ",
+        "fieldName": "m"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "mouseX2",
+        "fieldName": "at"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "mouseY2",
+        "fieldName": "ap"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "objects",
+        "fieldName": "g"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "pitchCos",
+        "fieldName": "ad"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "pitchSin",
+        "fieldName": "ab"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "renderArea",
+        "fieldName": "bg"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "Scene_plane",
+        "fieldName": "o"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "screenCenterX",
+        "fieldName": "b"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "screenCenterZ",
+        "fieldName": "h"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "selectedRegionTileX",
+        "fieldName": "an"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "selectedRegionTileY",
+        "fieldName": "ac"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "tileCycles",
+        "fieldName": "j"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "tileDeque",
+        "fieldName": "ae"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "tileHeights",
+        "fieldName": "u"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "tiles",
+        "fieldName": "z"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "tileUpdateCount",
+        "fieldName": "y"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "TILE_MASK_2D",
+        "fieldName": "bc"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "TILE_ROTATION_2D",
+        "fieldName": "bp"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "TILE_WALL_DRAW_FLAGS_1",
+        "fieldName": "aj"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "viewportWalking",
+        "fieldName": "aw"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "visibilityMaps",
+        "fieldName": "bn"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "WALL_UNCULL_FLAGS_0",
+        "fieldName": "ao"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "WALL_UNCULL_FLAGS_1",
+        "fieldName": "ar"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "WALL_UNCULL_FLAGS_2",
+        "fieldName": "au"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "WALL_UNCULL_FLAGS_3",
+        "fieldName": "bb"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "yawCos",
+        "fieldName": "ak"
+      },
+      {
+        "className": "Region",
+        "refactoredName": "yawSin",
+        "fieldName": "ag"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Renderable",
+      "obfuscatedName": "el"
+    },
+    "rsFields": [
+      {
+        "className": "Renderable",
+        "refactoredName": "modelHeight",
+        "fieldName": "cw",
+        "multiplier": -1204322527
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "RenderOverview",
+      "obfuscatedName": "ka"
+    },
+    "rsFields": [
+      {
+        "className": "RenderOverview",
+        "refactoredName": "fontNameVerdana11",
+        "fieldName": "f"
+      },
+      {
+        "className": "RenderOverview",
+        "refactoredName": "fontNameVerdana13",
+        "fieldName": "g"
+      },
+      {
+        "className": "RenderOverview",
+        "refactoredName": "fontNameVerdana15",
+        "fieldName": "j"
+      },
+      {
+        "className": "RenderOverview",
+        "refactoredName": "headIconsHint",
+        "fieldName": "fg"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Residue",
+      "obfuscatedName": "dr"
+    },
+    "rsFields": [
+      {
+        "className": "Residue",
+        "refactoredName": "begin",
+        "fieldName": "w"
+      },
+      {
+        "className": "Residue",
+        "refactoredName": "classBook",
+        "fieldName": "z"
+      },
+      {
+        "className": "Residue",
+        "refactoredName": "classification",
+        "fieldName": "u"
+      },
+      {
+        "className": "Residue",
+        "refactoredName": "end",
+        "fieldName": "e"
+      },
+      {
+        "className": "Residue",
+        "refactoredName": "partitionSize",
+        "fieldName": "k"
+      },
+      {
+        "className": "Residue",
+        "refactoredName": "type",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "RSCanvas",
+      "obfuscatedName": "bc"
+    },
+    "rsFields": [
+      {
+        "className": "RSCanvas",
+        "refactoredName": "component",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "RSSocket",
+      "obfuscatedName": "fr"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "RunException",
+      "obfuscatedName": "eo"
+    },
+    "rsFields": [
+      {
+        "className": "RunException",
+        "refactoredName": "localPlayerName",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "SceneTileModel",
+      "obfuscatedName": "df"
+    },
+    "rsFields": [
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "flatShade",
+        "fieldName": "x"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "overlay",
+        "fieldName": "y"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "rotation",
+        "fieldName": "s"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "shape",
+        "fieldName": "c"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "tmpScreenX",
+        "fieldName": "o"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "tmpScreenY",
+        "fieldName": "r"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "triangleColorA",
+        "fieldName": "k"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "triangleColorB",
+        "fieldName": "u"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "triangleColorC",
+        "fieldName": "z"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "triangleTextureId",
+        "fieldName": "j"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "underlay",
+        "fieldName": "n"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "vertexSceneX",
+        "fieldName": "i"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "vertexSceneY",
+        "fieldName": "l"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "vertexSceneZ",
+        "fieldName": "m"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "vertexX",
+        "fieldName": "a"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "vertexY",
+        "fieldName": "w"
+      },
+      {
+        "className": "SceneTileModel",
+        "refactoredName": "vertexZ",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "SceneTilePaint",
+      "obfuscatedName": "ed"
+    },
+    "rsFields": [
+      {
+        "className": "SceneTilePaint",
+        "refactoredName": "flatShade",
+        "fieldName": "z"
+      },
+      {
+        "className": "SceneTilePaint",
+        "refactoredName": "neColor",
+        "fieldName": "e",
+        "multiplier": 646505167
+      },
+      {
+        "className": "SceneTilePaint",
+        "refactoredName": "nwColor",
+        "fieldName": "k",
+        "multiplier": 799884147
+      },
+      {
+        "className": "SceneTilePaint",
+        "refactoredName": "rgb",
+        "fieldName": "t",
+        "multiplier": -546473555
+      },
+      {
+        "className": "SceneTilePaint",
+        "refactoredName": "seColor",
+        "fieldName": "w",
+        "multiplier": 1295951857
+      },
+      {
+        "className": "SceneTilePaint",
+        "refactoredName": "swColor",
+        "fieldName": "a",
+        "multiplier": -829167371
+      },
+      {
+        "className": "SceneTilePaint",
+        "refactoredName": "texture",
+        "fieldName": "u",
+        "multiplier": -879620257
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Script",
+      "obfuscatedName": "ck"
+    },
+    "rsFields": [
+      {
+        "className": "Script",
+        "refactoredName": "instructions",
+        "fieldName": "w"
+      },
+      {
+        "className": "Script",
+        "refactoredName": "intOperands",
+        "fieldName": "e"
+      },
+      {
+        "className": "Script",
+        "refactoredName": "intStackCount",
+        "fieldName": "t",
+        "multiplier": -1243325363
+      },
+      {
+        "className": "Script",
+        "refactoredName": "localIntCount",
+        "fieldName": "u",
+        "multiplier": 475547171
+      },
+      {
+        "className": "Script",
+        "refactoredName": "localStringCount",
+        "fieldName": "z",
+        "multiplier": -1400091303
+      },
+      {
+        "className": "Script",
+        "refactoredName": "mapDots",
+        "fieldName": "fd"
+      },
+      {
+        "className": "Script",
+        "refactoredName": "stringOperands",
+        "fieldName": "k"
+      },
+      {
+        "className": "Script",
+        "refactoredName": "stringStackCount",
+        "fieldName": "f",
+        "multiplier": -1013854573
+      },
+      {
+        "className": "Script",
+        "refactoredName": "switches",
+        "fieldName": "g"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ScriptEvent",
+      "obfuscatedName": "by"
+    },
+    "rsFields": [
+      {
+        "className": "ScriptEvent",
+        "refactoredName": "boolean1",
+        "fieldName": "w"
+      },
+      {
+        "className": "ScriptEvent",
+        "refactoredName": "objs",
+        "fieldName": "a"
+      },
+      {
+        "className": "ScriptEvent",
+        "refactoredName": "string",
+        "fieldName": "j"
+      },
+      {
+        "className": "ScriptEvent",
+        "refactoredName": "widget",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ScriptState",
+      "obfuscatedName": "bs"
+    },
+    "rsFields": [
+      {
+        "className": "ScriptState",
+        "refactoredName": "invokedFromPc",
+        "fieldName": "w",
+        "multiplier": -1612919269
+      },
+      {
+        "className": "ScriptState",
+        "refactoredName": "invokedFromScript",
+        "fieldName": "a"
+      },
+      {
+        "className": "ScriptState",
+        "refactoredName": "isMembersWorld",
+        "fieldName": "f"
+      },
+      {
+        "className": "ScriptState",
+        "refactoredName": "rasterProvider",
+        "fieldName": "ai"
+      },
+      {
+        "className": "ScriptState",
+        "refactoredName": "sampleRate",
+        "fieldName": "u",
+        "multiplier": -1895373177
+      },
+      {
+        "className": "ScriptState",
+        "refactoredName": "savedLocalInts",
+        "fieldName": "e"
+      },
+      {
+        "className": "ScriptState",
+        "refactoredName": "savedLocalStrings",
+        "fieldName": "k"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ScriptVarType",
+      "obfuscatedName": "t"
+    },
+    "rsFields": [
+      {
+        "className": "ScriptVarType",
+        "refactoredName": "id",
+        "fieldName": "ge",
+        "multiplier": 2055034965
+      },
+      {
+        "className": "ScriptVarType",
+        "refactoredName": "typeChar",
+        "fieldName": "gg"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Sequence",
+      "obfuscatedName": "jj"
+    },
+    "rsFields": [
+      {
+        "className": "Sequence",
+        "refactoredName": "forcedPriority",
+        "fieldName": "s",
+        "multiplier": -1623144549
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "frameIDs",
+        "fieldName": "z"
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "frameLenghts",
+        "fieldName": "f"
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "frameStep",
+        "fieldName": "j",
+        "multiplier": -220100085
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "interleaveLeave",
+        "fieldName": "x"
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "leftHandItem",
+        "fieldName": "n",
+        "multiplier": 199012451
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "maxLoops",
+        "fieldName": "o",
+        "multiplier": -502401333
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "precedenceAnimating",
+        "fieldName": "r",
+        "multiplier": -235496103
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "priority",
+        "fieldName": "i",
+        "multiplier": 100974965
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "replyMode",
+        "fieldName": "l",
+        "multiplier": 1611211339
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "rightHandItem",
+        "fieldName": "y",
+        "multiplier": -1249525367
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "sequences",
+        "fieldName": "k"
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "skeletons",
+        "fieldName": "u"
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "skel_ref",
+        "fieldName": "w"
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "skin_ref",
+        "fieldName": "e"
+      },
+      {
+        "className": "Sequence",
+        "refactoredName": "stretches",
+        "fieldName": "c"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "ServerPacket",
+      "obfuscatedName": "fq"
+    },
+    "rsFields": [
+      {
+        "className": "ServerPacket",
+        "refactoredName": "packetId",
+        "fieldName": "cb",
+        "multiplier": -874561827
+      },
+      {
+        "className": "ServerPacket",
+        "refactoredName": "packetLength",
+        "fieldName": "cv",
+        "multiplier": -1985679577
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Signlink",
+      "obfuscatedName": "fs"
+    },
+    "rsFields": [
+      {
+        "className": "Signlink",
+        "refactoredName": "cachedTask",
+        "fieldName": "k"
+      },
+      {
+        "className": "Signlink",
+        "refactoredName": "closed",
+        "fieldName": "z"
+      },
+      {
+        "className": "Signlink",
+        "refactoredName": "currentTask",
+        "fieldName": "e"
+      },
+      {
+        "className": "Signlink",
+        "refactoredName": "javaVendor",
+        "fieldName": "a"
+      },
+      {
+        "className": "Signlink",
+        "refactoredName": "javaVersion",
+        "fieldName": "w"
+      },
+      {
+        "className": "Signlink",
+        "refactoredName": "sysEventQueue",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Size",
+      "obfuscatedName": "v"
+    },
+    "rsFields": [
+      {
+        "className": "Size",
+        "refactoredName": "crossSprites",
+        "fieldName": "fb"
+      },
+      {
+        "className": "Size",
+        "refactoredName": "menuHeight",
+        "fieldName": "jk",
+        "multiplier": -557930467
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "SoundEffect",
+      "obfuscatedName": "di"
+    },
+    "rsFields": [
+      {
+        "className": "SoundEffect",
+        "refactoredName": "end",
+        "fieldName": "k"
+      },
+      {
+        "className": "SoundEffect",
+        "refactoredName": "instruments",
+        "fieldName": "w"
+      },
+      {
+        "className": "SoundEffect",
+        "refactoredName": "start",
+        "fieldName": "e"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "SoundEffect3",
+      "obfuscatedName": "dt"
+    },
+    "rsFields": [
+      {
+        "className": "SoundEffect3",
+        "refactoredName": "coefficients",
+        "fieldName": "t"
+      },
+      {
+        "className": "SoundEffect3",
+        "refactoredName": "fowardMinimisedCoefficientMultiplier",
+        "fieldName": "f"
+      },
+      {
+        "className": "SoundEffect3",
+        "refactoredName": "fowardMultiplier",
+        "fieldName": "g"
+      },
+      {
+        "className": "SoundEffect3",
+        "refactoredName": "magnitudes",
+        "fieldName": "k"
+      },
+      {
+        "className": "SoundEffect3",
+        "refactoredName": "minimisedCoefficients",
+        "fieldName": "z"
+      },
+      {
+        "className": "SoundEffect3",
+        "refactoredName": "pairs",
+        "fieldName": "a"
+      },
+      {
+        "className": "SoundEffect3",
+        "refactoredName": "phases",
+        "fieldName": "e"
+      },
+      {
+        "className": "SoundEffect3",
+        "refactoredName": "unity",
+        "fieldName": "u"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "SoundTask",
+      "obfuscatedName": "du"
+    },
+    "rsFields": [
+      {
+        "className": "SoundTask",
+        "refactoredName": "NetCache_reference",
+        "fieldName": "m"
+      },
+      {
+        "className": "SoundTask",
+        "refactoredName": "systems",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "SoundTaskDataProvider",
+      "obfuscatedName": "au"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "SourceDataSoundSystem",
+      "obfuscatedName": "bn"
+    },
+    "rsFields": [
+      {
+        "className": "SourceDataSoundSystem",
+        "refactoredName": "audioFormat",
+        "fieldName": "a"
+      },
+      {
+        "className": "SourceDataSoundSystem",
+        "refactoredName": "bytes",
+        "fieldName": "k"
+      },
+      {
+        "className": "SourceDataSoundSystem",
+        "refactoredName": "size",
+        "fieldName": "e",
+        "multiplier": 187098319
+      },
+      {
+        "className": "SourceDataSoundSystem",
+        "refactoredName": "source",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Spotanim",
+      "obfuscatedName": "iz"
+    },
+    "rsFields": [
+      {
+        "className": "Spotanim",
+        "refactoredName": "heightScale",
+        "fieldName": "s",
+        "multiplier": 924320411
+      },
+      {
+        "className": "Spotanim",
+        "refactoredName": "id",
+        "fieldName": "u",
+        "multiplier": -1724173847
+      },
+      {
+        "className": "Spotanim",
+        "refactoredName": "orientation",
+        "fieldName": "n",
+        "multiplier": 1346987829
+      },
+      {
+        "className": "Spotanim",
+        "refactoredName": "SpotAnimationDefinition_cachedModels",
+        "fieldName": "k"
+      },
+      {
+        "className": "Spotanim",
+        "refactoredName": "SpotAnimationDefinition_indexCache",
+        "fieldName": "a"
+      },
+      {
+        "className": "Spotanim",
+        "refactoredName": "SpotAnimationDefinition_modelIndexCache",
+        "fieldName": "w"
+      },
+      {
+        "className": "Spotanim",
+        "refactoredName": "spotanims",
+        "fieldName": "e"
+      },
+      {
+        "className": "Spotanim",
+        "refactoredName": "widthScale",
+        "fieldName": "c",
+        "multiplier": -2078782681
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "SpritePixels",
+      "obfuscatedName": "ks"
+    },
+    "rsFields": [
+      {
+        "className": "SpritePixels",
+        "refactoredName": "height",
+        "fieldName": "e"
+      },
+      {
+        "className": "SpritePixels",
+        "refactoredName": "maxHeight",
+        "fieldName": "t"
+      },
+      {
+        "className": "SpritePixels",
+        "refactoredName": "maxWidth",
+        "fieldName": "z"
+      },
+      {
+        "className": "SpritePixels",
+        "refactoredName": "offsetX",
+        "fieldName": "k"
+      },
+      {
+        "className": "SpritePixels",
+        "refactoredName": "offsetY",
+        "fieldName": "u"
+      },
+      {
+        "className": "SpritePixels",
+        "refactoredName": "pixels",
+        "fieldName": "a"
+      },
+      {
+        "className": "SpritePixels",
+        "refactoredName": "width",
+        "fieldName": "w"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Task",
+      "obfuscatedName": "ev"
+    },
+    "rsFields": [
+      {
+        "className": "Task",
+        "refactoredName": "intArgument",
+        "fieldName": "t"
+      },
+      {
+        "className": "Task",
+        "refactoredName": "objectArgument",
+        "fieldName": "f"
+      },
+      {
+        "className": "Task",
+        "refactoredName": "status",
+        "fieldName": "u"
+      },
+      {
+        "className": "Task",
+        "refactoredName": "task",
+        "fieldName": "a"
+      },
+      {
+        "className": "Task",
+        "refactoredName": "type",
+        "fieldName": "z",
+        "multiplier": 243075415
+      },
+      {
+        "className": "Task",
+        "refactoredName": "value",
+        "fieldName": "g"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "TaskDataNode",
+      "obfuscatedName": "dy"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "TaskDataProvider",
+      "obfuscatedName": "ca"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Texture",
+      "obfuscatedName": "dp"
+    },
+    "rsFields": [
+      {
+        "className": "Texture",
+        "refactoredName": "fileIds",
+        "fieldName": "t"
+      },
+      {
+        "className": "Texture",
+        "refactoredName": "loaded",
+        "fieldName": "n"
+      },
+      {
+        "className": "Texture",
+        "refactoredName": "pixels",
+        "fieldName": "s"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "TextureProvider",
+      "obfuscatedName": "dc"
+    },
+    "rsFields": [
+      {
+        "className": "TextureProvider",
+        "refactoredName": "brightness",
+        "fieldName": "u"
+      },
+      {
+        "className": "TextureProvider",
+        "refactoredName": "deque",
+        "fieldName": "w"
+      },
+      {
+        "className": "TextureProvider",
+        "refactoredName": "maxSize",
+        "fieldName": "e",
+        "multiplier": 1055362031
+      },
+      {
+        "className": "TextureProvider",
+        "refactoredName": "size",
+        "fieldName": "k",
+        "multiplier": -205210017
+      },
+      {
+        "className": "TextureProvider",
+        "refactoredName": "sprites",
+        "fieldName": "t"
+      },
+      {
+        "className": "TextureProvider",
+        "refactoredName": "textures",
+        "fieldName": "a"
+      },
+      {
+        "className": "TextureProvider",
+        "refactoredName": "width",
+        "fieldName": "z",
+        "multiplier": 1283582721
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Tile",
+      "obfuscatedName": "ez"
+    },
+    "rsFields": [
+      {
+        "className": "Tile",
+        "refactoredName": "bridge",
+        "fieldName": "h"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "decorativeObject",
+        "fieldName": "f"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "draw",
+        "fieldName": "o"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "drawEntities",
+        "fieldName": "i"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "entityCount",
+        "fieldName": "x",
+        "multiplier": 1495705029
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "entityFlags",
+        "fieldName": "s"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "flags",
+        "fieldName": "n",
+        "multiplier": 414760873
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "groundObject",
+        "fieldName": "g"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "itemLayer",
+        "fieldName": "j"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "objects",
+        "fieldName": "c"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "overlay",
+        "fieldName": "z"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "paint",
+        "fieldName": "u"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "physicalLevel",
+        "fieldName": "y",
+        "multiplier": 1613392379
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "plane",
+        "fieldName": "a",
+        "multiplier": 1725557519
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "renderLevel",
+        "fieldName": "k",
+        "multiplier": -721315981
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "visible",
+        "fieldName": "r"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "wallCullDirection",
+        "fieldName": "l",
+        "multiplier": -746627283
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "wallCullOppositeDirection",
+        "fieldName": "q",
+        "multiplier": 37190099
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "wallDrawFlags",
+        "fieldName": "b",
+        "multiplier": -1139868411
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "wallObject",
+        "fieldName": "t"
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "wallUncullDirection",
+        "fieldName": "m",
+        "multiplier": 1182737099
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "x",
+        "fieldName": "w",
+        "multiplier": -695857629
+      },
+      {
+        "className": "Tile",
+        "refactoredName": "y",
+        "fieldName": "e",
+        "multiplier": 1267689537
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Timer",
+      "obfuscatedName": "fi"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "TotalQuantityComparator",
+      "obfuscatedName": "o"
+    },
+    "rsFields": [
+      {
+        "className": "TotalQuantityComparator",
+        "refactoredName": "clientInstance",
+        "fieldName": "ar"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Track1",
+      "obfuscatedName": "hl"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "UnitPriceComparator",
+      "obfuscatedName": "i"
+    },
+    "rsFields": [
+      {
+        "className": "UnitPriceComparator",
+        "refactoredName": "headIconsPrayer",
+        "fieldName": "fa"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "UrlRequest",
+      "obfuscatedName": "ep"
+    },
+    "rsFields": [
+      {
+        "className": "UrlRequest",
+        "refactoredName": "isDone0",
+        "fieldName": "w"
+      },
+      {
+        "className": "UrlRequest",
+        "refactoredName": "localPlayer",
+        "fieldName": "ii"
+      },
+      {
+        "className": "UrlRequest",
+        "refactoredName": "response0",
+        "fieldName": "e"
+      },
+      {
+        "className": "UrlRequest",
+        "refactoredName": "url",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "UrlRequester",
+      "obfuscatedName": "ee"
+    },
+    "rsFields": [
+      {
+        "className": "UrlRequester",
+        "refactoredName": "isClosed",
+        "fieldName": "w"
+      },
+      {
+        "className": "UrlRequester",
+        "refactoredName": "requests",
+        "fieldName": "e"
+      },
+      {
+        "className": "UrlRequester",
+        "refactoredName": "thread",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Varbit",
+      "obfuscatedName": "jw"
+    },
+    "rsFields": [
+      {
+        "className": "Varbit",
+        "refactoredName": "configId",
+        "fieldName": "e",
+        "multiplier": -1005831171
+      },
+      {
+        "className": "Varbit",
+        "refactoredName": "leastSignificantBit",
+        "fieldName": "k",
+        "multiplier": 442861105
+      },
+      {
+        "className": "Varbit",
+        "refactoredName": "mostSignificantBit",
+        "fieldName": "u",
+        "multiplier": 1796470167
+      },
+      {
+        "className": "Varbit",
+        "refactoredName": "varbits",
+        "fieldName": "w"
+      },
+      {
+        "className": "Varbit",
+        "refactoredName": "varbit_ref",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Varcs",
+      "obfuscatedName": "cc"
+    },
+    "rsFields": [
+      {
+        "className": "Varcs",
+        "refactoredName": "changed",
+        "fieldName": "t"
+      },
+      {
+        "className": "Varcs",
+        "refactoredName": "lastSerialize",
+        "fieldName": "f",
+        "multiplier": -1435949291815639655
+      },
+      {
+        "className": "Varcs",
+        "refactoredName": "varcs",
+        "fieldName": "u"
+      },
+      {
+        "className": "Varcs",
+        "refactoredName": "varcSerials",
+        "fieldName": "e"
+      },
+      {
+        "className": "Varcs",
+        "refactoredName": "varcstrings",
+        "fieldName": "z"
+      },
+      {
+        "className": "Varcs",
+        "refactoredName": "varcstringSerials",
+        "fieldName": "k"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "VarPlayerType",
+      "obfuscatedName": "iv"
+    },
+    "rsFields": [
+      {
+        "className": "VarPlayerType",
+        "refactoredName": "configType",
+        "fieldName": "k",
+        "multiplier": 1618823997
+      },
+      {
+        "className": "VarPlayerType",
+        "refactoredName": "varplayers",
+        "fieldName": "e"
+      },
+      {
+        "className": "VarPlayerType",
+        "refactoredName": "varplayer_ref",
+        "fieldName": "a"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "VertexNormal",
+      "obfuscatedName": "ek"
+    },
+    "rsFields": [
+      {
+        "className": "VertexNormal",
+        "refactoredName": "canvasHeight",
+        "fieldName": "v",
+        "multiplier": 197876021
+      },
+      {
+        "className": "VertexNormal",
+        "refactoredName": "clanChatRank",
+        "fieldName": "nn"
+      },
+      {
+        "className": "VertexNormal",
+        "refactoredName": "magnitude",
+        "fieldName": "k",
+        "multiplier": -1070537593
+      },
+      {
+        "className": "VertexNormal",
+        "refactoredName": "soundSystem1",
+        "fieldName": "or"
+      },
+      {
+        "className": "VertexNormal",
+        "refactoredName": "x",
+        "fieldName": "a",
+        "multiplier": -364405127
+      },
+      {
+        "className": "VertexNormal",
+        "refactoredName": "y",
+        "fieldName": "w",
+        "multiplier": -312726173
+      },
+      {
+        "className": "VertexNormal",
+        "refactoredName": "z",
+        "fieldName": "e",
+        "multiplier": -820067941
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "WallObject",
+      "obfuscatedName": "eb"
+    },
+    "rsFields": [
+      {
+        "className": "WallObject",
+        "refactoredName": "config",
+        "fieldName": "g",
+        "multiplier": 585357267
+      },
+      {
+        "className": "WallObject",
+        "refactoredName": "floor",
+        "fieldName": "a",
+        "multiplier": -848426587
+      },
+      {
+        "className": "WallObject",
+        "refactoredName": "hash",
+        "fieldName": "f",
+        "multiplier": 2085641561
+      },
+      {
+        "className": "WallObject",
+        "refactoredName": "orientationA",
+        "fieldName": "k",
+        "multiplier": -659812433
+      },
+      {
+        "className": "WallObject",
+        "refactoredName": "orientationB",
+        "fieldName": "u",
+        "multiplier": 529102943
+      },
+      {
+        "className": "WallObject",
+        "refactoredName": "renderable1",
+        "fieldName": "z"
+      },
+      {
+        "className": "WallObject",
+        "refactoredName": "renderable2",
+        "fieldName": "t"
+      },
+      {
+        "className": "WallObject",
+        "refactoredName": "scrollbarSprites",
+        "fieldName": "fw"
+      },
+      {
+        "className": "WallObject",
+        "refactoredName": "x",
+        "fieldName": "w",
+        "multiplier": -395897065
+      },
+      {
+        "className": "WallObject",
+        "refactoredName": "y",
+        "fieldName": "e",
+        "multiplier": 1588001219
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "Widget",
+      "obfuscatedName": "hz"
+    },
+    "rsFields": [
+      {
+        "className": "Widget",
+        "refactoredName": "actions",
+        "fieldName": "cy"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "borderThickness",
+        "fieldName": "bg",
+        "multiplier": -787463529
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "boundsIndex",
+        "fieldName": "en",
+        "multiplier": -767002277
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "buttonType",
+        "fieldName": "p",
+        "multiplier": -1691006837
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "children",
+        "fieldName": "ey"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "config",
+        "fieldName": "co",
+        "multiplier": -29765301
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "configActions",
+        "fieldName": "cw"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "configListenerArgs",
+        "fieldName": "dk"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "configTriggers",
+        "fieldName": "dr"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "contentType",
+        "fieldName": "b",
+        "multiplier": -1317501575
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "dragParent",
+        "fieldName": "cc"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "dynamicValues",
+        "fieldName": "ef"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "filled",
+        "fieldName": "am"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "flippedHorizontally",
+        "fieldName": "bx"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "flippedVertically",
+        "fieldName": "be"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "fontId",
+        "fieldName": "bo",
+        "multiplier": 1378111317
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "hasScript",
+        "fieldName": "r"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "height",
+        "fieldName": "at",
+        "multiplier": -510787749
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "id",
+        "fieldName": "i",
+        "multiplier": 1180637085
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "index",
+        "fieldName": "l",
+        "multiplier": 373582993
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "isHidden",
+        "fieldName": "aw"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "itemId",
+        "fieldName": "el",
+        "multiplier": -655869141
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "itemIds",
+        "fieldName": "eh"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "itemQuantities",
+        "fieldName": "ei"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "itemQuantity",
+        "fieldName": "eb",
+        "multiplier": 306061293
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "lineWidth",
+        "fieldName": "ar",
+        "multiplier": 1546760195
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "loopCycle",
+        "fieldName": "ew",
+        "multiplier": 451491617
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "modelId",
+        "fieldName": "bf",
+        "multiplier": -1159054531
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "modelType",
+        "fieldName": "bw",
+        "multiplier": 2100193729
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "modelZoom",
+        "fieldName": "bv",
+        "multiplier": -675889149
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "mouseEnterListener",
+        "fieldName": "dx"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "mouseExitListener",
+        "fieldName": "dn"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "mouseHoverListener",
+        "fieldName": "dj"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "name",
+        "fieldName": "cg"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "noClickThrough",
+        "fieldName": "er"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "opacity",
+        "fieldName": "aj",
+        "multiplier": 1259484473
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "originalWidth",
+        "fieldName": "ag",
+        "multiplier": -1466251825
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "originalX",
+        "fieldName": "ab",
+        "multiplier": -942933619
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "originalY",
+        "fieldName": "ad",
+        "multiplier": -520769527
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "paddingX",
+        "fieldName": "cj",
+        "multiplier": -943352403
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "paddingY",
+        "fieldName": "cq",
+        "multiplier": -498146337
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "parentId",
+        "fieldName": "ac",
+        "multiplier": 1222259003
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "relativeX",
+        "fieldName": "as",
+        "multiplier": -2118483697
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "relativeY",
+        "fieldName": "aq",
+        "multiplier": 330328389
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "renderListener",
+        "fieldName": "ds"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "rotationX",
+        "fieldName": "by",
+        "multiplier": 431546337
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "rotationY",
+        "fieldName": "bl",
+        "multiplier": 1562380973
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "rotationZ",
+        "fieldName": "bi",
+        "multiplier": -1087716599
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "scrollHeight",
+        "fieldName": "af",
+        "multiplier": 548021281
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "scrollListener",
+        "fieldName": "do"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "scrollWidth",
+        "fieldName": "ai",
+        "multiplier": -1224042105
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "scrollX",
+        "fieldName": "al",
+        "multiplier": -1206701085
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "scrollY",
+        "fieldName": "ay",
+        "multiplier": 579088909
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "selectedAction",
+        "fieldName": "ct"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "skillListenerArgs",
+        "fieldName": "dt"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "skillTriggers",
+        "fieldName": "dy"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "spellName",
+        "fieldName": "ed"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "sprite2",
+        "fieldName": "bq",
+        "multiplier": -1788728145
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "spriteId",
+        "fieldName": "bb",
+        "multiplier": -207033201
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "spriteTiling",
+        "fieldName": "bn"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "string1",
+        "fieldName": "ch"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "tableActions",
+        "fieldName": "ej"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "tableListenerArgs",
+        "fieldName": "dz"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "tableModTriggers",
+        "fieldName": "dg"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "text",
+        "fieldName": "br"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "textColor",
+        "fieldName": "ah",
+        "multiplier": -705105487
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "textShadowed",
+        "fieldName": "cv"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "textureId",
+        "fieldName": "bp",
+        "multiplier": -1826327485
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "tooltip",
+        "fieldName": "eg"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "type",
+        "fieldName": "m",
+        "multiplier": -615721927
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "widgets",
+        "fieldName": "z"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "Widget_cachedFonts",
+        "fieldName": "n"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "Widget_cachedModels",
+        "fieldName": "s"
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "width",
+        "fieldName": "ax",
+        "multiplier": 1913265447
+      },
+      {
+        "className": "Widget",
+        "refactoredName": "xSprites",
+        "fieldName": "ci"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "WidgetNode",
+      "obfuscatedName": "bt"
+    },
+    "rsFields": [
+      {
+        "className": "WidgetNode",
+        "refactoredName": "id",
+        "fieldName": "a",
+        "multiplier": 1515870281
+      },
+      {
+        "className": "WidgetNode",
+        "refactoredName": "owner",
+        "fieldName": "w",
+        "multiplier": -292484973
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "World",
+      "obfuscatedName": "cp"
+    },
+    "rsFields": [
+      {
+        "className": "World",
+        "refactoredName": "activity",
+        "fieldName": "y"
+      },
+      {
+        "className": "World",
+        "refactoredName": "address",
+        "fieldName": "n"
+      },
+      {
+        "className": "World",
+        "refactoredName": "id",
+        "fieldName": "x",
+        "multiplier": -404484463
+      },
+      {
+        "className": "World",
+        "refactoredName": "index",
+        "fieldName": "r",
+        "multiplier": -1567307001
+      },
+      {
+        "className": "World",
+        "refactoredName": "location",
+        "fieldName": "o",
+        "multiplier": 614439421
+      },
+      {
+        "className": "World",
+        "refactoredName": "mask",
+        "fieldName": "c",
+        "multiplier": -1198421041
+      },
+      {
+        "className": "World",
+        "refactoredName": "playerCount",
+        "fieldName": "s",
+        "multiplier": -2015743543
+      },
+      {
+        "className": "World",
+        "refactoredName": "worldCount",
+        "fieldName": "z",
+        "multiplier": -2073723129
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "WorldComparator",
+      "obfuscatedName": "s"
+    },
+    "rsFields": [
+      {
+        "className": "WorldComparator",
+        "refactoredName": "mouseWheel",
+        "fieldName": "ld"
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "WorldMapData",
+      "obfuscatedName": "ax"
+    },
+    "rsFields": [
+      {
+        "className": "WorldMapData",
+        "refactoredName": "fileId",
+        "fieldName": "a",
+        "multiplier": 1868688265
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "WorldMapSectionBase",
+      "obfuscatedName": "ah"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "WorldMapType1",
+      "obfuscatedName": "as"
+    },
+    "rsFields": [
+      {
+        "className": "WorldMapType1",
+        "refactoredName": "menuX",
+        "fieldName": "ir",
+        "multiplier": -1945852199
+      }
+    ]
+  },
+  {
+    "rsClass": {
+      "refactoredName": "WorldMapType2",
+      "obfuscatedName": "al"
+    },
+    "rsFields": []
+  },
+  {
+    "rsClass": {
+      "refactoredName": "WorldMapType3",
+      "obfuscatedName": "ab"
+    },
+    "rsFields": []
+  }
+]

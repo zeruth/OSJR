@@ -1,5 +1,0 @@
-{
-  "className": "IterableDualNodeQueue",
-  "fieldName": "a",
-  "refactoredName": "sentinel"
-}

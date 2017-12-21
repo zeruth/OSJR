@@ -1,5 +1,0 @@
-{
-  "className": "AudioInstrument",
-  "fieldName": "g",
-  "refactoredName": "oscillatorVolume"
-}

@@ -1,5 +1,0 @@
-{
-  "className": "DirectByteBuffer",
-  "fieldName": "a",
-  "refactoredName": "buffer"
-}

@@ -1,5 +1,0 @@
-{
-  "className": "IntegerNode",
-  "fieldName": "a",
-  "refactoredName": "value"
-}

@@ -3,7 +3,7 @@ package os.jr.hooks;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-import os.jr.hooks.model.GameClass;
+import os.jr.hooks.loader.GameClass;
 
 public class ClassInfo extends GameClass{
 	

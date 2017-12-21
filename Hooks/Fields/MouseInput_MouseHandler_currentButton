@@ -1,6 +1,0 @@
-{
-  "className": "MouseInput",
-  "fieldName": "t",
-  "refactoredName": "MouseHandler_currentButton",
-  "multiplier": 523049731
-}

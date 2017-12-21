@@ -1,5 +1,0 @@
-{
-  "className": "ScriptState",
-  "fieldName": "e",
-  "refactoredName": "savedLocalInts"
-}

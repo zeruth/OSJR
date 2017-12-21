@@ -1,6 +1,0 @@
-{
-  "className": "ServerPacket",
-  "fieldName": "cv",
-  "refactoredName": "packetLength",
-  "multiplier": -1985679577
-}

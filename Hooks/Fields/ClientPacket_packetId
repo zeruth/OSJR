@@ -1,6 +1,0 @@
-{
-  "className": "ClientPacket",
-  "fieldName": "cm",
-  "refactoredName": "packetId",
-  "multiplier": 300628027
-}

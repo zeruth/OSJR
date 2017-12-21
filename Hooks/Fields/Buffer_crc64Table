@@ -1,5 +1,0 @@
-{
-  "className": "Buffer",
-  "fieldName": "u",
-  "refactoredName": "crc64Table"
-}

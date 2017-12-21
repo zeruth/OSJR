@@ -1,5 +1,0 @@
-{
-  "className": "Node2LinkedList",
-  "fieldName": "a",
-  "refactoredName": "sentinel"
-}
