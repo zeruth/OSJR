@@ -7,24 +7,26 @@ import os.jr.utils.Utils;
 
 public class FieldDump {
 
-    public String className = "";
-    public String refactoredName = "";
-    public String fieldName = "";
-    public Number multiplier;
+	public String className = "";
+	public String refactoredName = "";
+	public String fieldName = "";
+	public Number multiplier;
 
-    public FieldDump() {
+	public FieldDump() {
 
-    }
-    
+	}
+
 	public Object getValue(Object reference) {
 		try {
 			Object o;
 			if (multiplier != null) {
-				Field f = RSGame.classLoader.loadClass(Utils.getClassbyName(className).obfuscatedName).getDeclaredField(fieldName);
+				Field f = RSGame.classLoader.loadClass(Utils.getClassbyName(className).obfuscatedName)
+						.getDeclaredField(fieldName);
 				f.setAccessible(true);
 				o = ((int) f.get(reference)) * multiplier.intValue();
 			} else {
-				Field f = RSGame.classLoader.loadClass(Utils.getClassbyName(className).obfuscatedName).getDeclaredField(fieldName);
+				Field f = RSGame.classLoader.loadClass(Utils.getClassbyName(className).obfuscatedName)
+						.getDeclaredField(fieldName);
 				f.setAccessible(true);
 				o = f.get(reference);
 			}

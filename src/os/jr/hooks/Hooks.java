@@ -11,8 +11,22 @@ public class Hooks {
 	public static HashMap<String, String> classNames = new HashMap<String, String>();
 	public static GameClass[] collection = new GameClass[400];
 
-	public AbstractByteBuffer abstractByteBuffer = new AbstractByteBuffer() {};
-	public AbstractIntegerNode0 abstractIntegerNode0 = new AbstractIntegerNode0() {};
+	public static void init() {
+		try {
+			selector = new Hooks();
+		} catch (Exception e) {
+			System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
+			System.out.println("Running without hooks.");
+			RSGame.outdated = true;
+			e.printStackTrace();
+		}
+
+	}
+
+	public AbstractByteBuffer abstractByteBuffer = new AbstractByteBuffer() {
+	};
+	public AbstractIntegerNode0 abstractIntegerNode0 = new AbstractIntegerNode0() {
+	};
 	public AbstractSoundSystem abstractSoundSystem = new AbstractSoundSystem();
 	public Actor actor = new Actor();
 	public Area area = new Area(null);
@@ -165,19 +179,7 @@ public class Hooks {
 	public WorldMapSectionBase worldMapSectionBase = new WorldMapSectionBase();
 	public WorldMapType1 worldMapType1 = new WorldMapType1();
 	public WorldMapType2 worldMapType2 = new WorldMapType2();
+
 	public WorldMapType3 worldMapType3 = new WorldMapType3();
-	
-
-	public static void init() {
-		try {
-			selector = new Hooks();
-		} catch (Exception e) {
-			System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
-			System.out.println("Running without hooks.");
-			RSGame.outdated = true;
-			e.printStackTrace();
-		}
-
-	}
 
 }

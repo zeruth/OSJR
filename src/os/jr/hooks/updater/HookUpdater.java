@@ -8,7 +8,6 @@ import os.jr.utils.Utils;
 public class HookUpdater {
 	public static long lastCacheRunTime = 0;
 	static long sleeptime = 150;
-	
 
 	static Thread t = new Thread(new Runnable() {
 
@@ -16,24 +15,24 @@ public class HookUpdater {
 		@Override
 		public void run() {
 			Utils.makeXPforLevel();
-			
+
 			while (true != false) {
 				{
 					if (RSGame.outdated) {
 						t.stop();
 					}
 					try {
-						
+
 						Thread.sleep(sleeptime);
-						//Start Hook caching
+						// Start Hook caching
 						Long cacheTimerStart = System.currentTimeMillis();
-						
+
 						anyStateHooks();
 						loggedInHooks();
 
 						lastCacheRunTime = System.currentTimeMillis() - cacheTimerStart;
-						//System.out.println("Time to run last Hooks cache: (ms) "+lastCacheRunTime);
-						
+						// System.out.println("Time to run last Hooks cache: (ms) "+lastCacheRunTime);
+
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -43,16 +42,20 @@ public class HookUpdater {
 
 		}
 	});
-	
+
 	public static void anyStateHooks() {
 		try {
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 	}
-	
+
+	public static void init() {
+		t.start();
+	}
+
 	public static void loggedInHooks() {
 		Client c = Hooks.selector.client;
 		try {
@@ -63,11 +66,6 @@ public class HookUpdater {
 			e.printStackTrace();
 		}
 
-	}
-	
-
-	public static void init() {
-		t.start();
 	}
 
 }

@@ -13,9 +13,9 @@ import os.jr.hooks.Hooks;
 import os.jr.utils.Utils;
 
 public class HooksLoader {
-	
+
 	public static File hooksFile = new File("./Hooks/Hooks.json/");
-	
+
 	public static void loadHooksJson() {
 		Reader reader;
 
@@ -35,8 +35,8 @@ public class HooksLoader {
 				for (FieldDump field : hook.rsFields) {
 					try {
 						GameClass gc = Utils.getClassbyName(field.className);
-						if (gc!=null)
-						gc.fields.put(field.refactoredName, field);
+						if (gc != null)
+							gc.fields.put(field.refactoredName, field);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}

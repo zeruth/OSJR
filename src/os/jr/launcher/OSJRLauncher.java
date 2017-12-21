@@ -5,14 +5,9 @@ import javax.swing.JFrame;
 import os.jr.game.RSGame;
 
 public class OSJRLauncher extends JFrame {
-	
-	public OSJRLauncher() {
-		setSize(781, 542);
-		setTitle("OS-JR Standalone Launcher");
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
-	}
 
 	private static final long serialVersionUID = 1L;
+
 	public static RSGame rsGame = new RSGame();
 
 	public static void main(String[] args) {
@@ -22,7 +17,13 @@ public class OSJRLauncher extends JFrame {
 		b.addApplet();
 
 	}
-	
+
+	public OSJRLauncher() {
+		setSize(781, 542);
+		setTitle("OS-JR Standalone Launcher");
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
 	private void addApplet() {
 		add(RSGame.applet);
 		validate();

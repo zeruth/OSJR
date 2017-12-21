@@ -1,8 +1,5 @@
 package os.jr.utils;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,10 +11,34 @@ import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 public class SettingsIo {
 	public static Settings settings = new Settings();
 	public static File file = new File(System.getProperty("user.home") + "/OSJR/settings");
 	public static File dir = new File(System.getProperty("user.home") + "/OSJR/");
+
+	/**
+	 * createBlankDB - Creates blank settings file in user data directory.
+	 * 
+	 * @throws IOException
+	 *             = Various I/O issues.
+	 */
+	public static void createBlankDb() {
+		Writer writer;
+		try {
+			Settings s = new Settings();
+			writer = new FileWriter(file);
+			Gson gson = new GsonBuilder().create();
+			gson.toJson(s, writer);
+			writer.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
 
 	/**
 	 * loadSettings - Loads settings from user data directory using Gson.
@@ -54,21 +75,20 @@ public class SettingsIo {
 	}
 
 	/**
-	 * createBlankDB - Creates blank settings file in user data directory.
+	 * saveSettings - Saves Settings object to file in data directory.
 	 * 
+	 * @param s
+	 *            = Settings object to be saved.
 	 * @throws IOException
 	 *             = Various I/O issues.
 	 */
-	public static void createBlankDb() {
-		Writer writer;
+	public static void saveSettings(Settings s) {
 		try {
-			Settings s = new Settings();
-			writer = new FileWriter(file);
-			Gson gson = new GsonBuilder().create();
+			Writer writer = new FileWriter(file);
+			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 			gson.toJson(s, writer);
 			writer.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
@@ -88,25 +108,5 @@ public class SettingsIo {
 		Settings s = loadSettings();
 		s.gamePackSize = size;
 		saveSettings(s);
-	}
-
-	/**
-	 * saveSettings - Saves Settings object to file in data directory.
-	 * 
-	 * @param s
-	 *            = Settings object to be saved.
-	 * @throws IOException
-	 *             = Various I/O issues.
-	 */
-	public static void saveSettings(Settings s){
-		try {
-			Writer writer = new FileWriter(file);
-			Gson gson = new GsonBuilder().setPrettyPrinting().create();
-			gson.toJson(s, writer);
-			writer.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
 	}
 }
