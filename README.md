@@ -1,7 +1,6 @@
 OS-JR
 ===================
 A lightweight OSRS Reflection framework.
-https://github.com/zeruth/OSJR
 
 
 
