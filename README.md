@@ -1,38 +1,27 @@
-# OS-JR
+OS-JR
+===================
+A lightweight OSRS Reflection framework.
 
 
-OS-JR is a lightweight modular UI OSRS Reflection client.
 
-  - Revision 160 compliant
-  - Hooks updated regularly
-  - Auto gamepack updater
-  - Instant startup time
+- **Revision 160 compliant**
+- Hook Implementations updated regularly
+- Built with Eclipse, easy to import and make your own if you so choose
+- **Auto gamepack updater**:
+      You don't ever have to worry about keeping the gamepack up to date, OS-JR does it all for you.
 
-# Recent updates
-  # 0.5.7
-  
-  - Added IndividualSkillMonitor tool.
-  - Fixed some minor naming inconsistencies.
+- Run 1 method from OS-JR, and have a fully accessible OSRS context and applet to put in your game frame.
+- Instant startup time
+- **Library**, Easy implementation and updating. (see:https://github.com/zeruth/OS-JR-IMPL)
 
-  - Added: Skill:
-    - getXPTilLevel
-    - getXPTil99
-    - getXPTil120
- 
-  - Added Client.getLocalPlayers
-  - Small updates to the framework.
-  - Made game screen pixel perfect. (was 1x1 too large)
 
-  # 0.5.6
+Live hook list
+--------------
 
-  - Added Stat Monitor
-  - Added Notes
-  - Added menu bar
-  - Added UTC clock to titlebar
-  - Added option to remove menubar under OS-JR (until restart)
-  - Some minor improvements to things here and there.
-  
-  - Added SystemTray support
-  - Added OSJR Icon
-  - Added SystemTray message support
-  - Fixed certain special npcs (like rocks at blast mine) from goofing up the NPC dumper.
+https://raw.githubusercontent.com/zeruth/OSJR/master/Hooks.txt
+
+OS-JR Implementation example
+----------------------------
+
+
+https://github.com/zeruth/OS-JR-IMPL
