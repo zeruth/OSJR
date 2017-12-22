@@ -24,11 +24,12 @@ public class GameClass {
 			RSGame.outdated = true;
 			e.printStackTrace();
 		}
-		if (Hooks.selector!=null) {
-			GameClass gameClass = Utils.getClassbyName(this.refactoredName);
-			if (gameClass!=null) {
-				if (gameClass.fields!=null)
-				this.fields = gameClass.fields;
+
+		for (HookDump hook : HooksLoader.hooks) {
+			if (hook.rsClass.refactoredName.compareTo("Actor")==0) {
+				for (FieldDump field : hook.rsFields) {
+					fields.put(field.refactoredName, field);
+				}
 			}
 		}
 	}

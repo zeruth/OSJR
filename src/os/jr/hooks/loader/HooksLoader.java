@@ -17,7 +17,8 @@ public class HooksLoader {
 	public static File hooksFile = new File("./Hooks/Hooks.json/");
 	private static int totalFields = 0;
 	private static int totalClasses = 0;
-	private static int totalFieldsAddedToClass = 0;;
+	private static int totalFieldsAddedToClass = 0;
+	public static HookDump[] hooks;
 
 	public static void loadHooksJson() {
 		Reader reader;
@@ -27,7 +28,7 @@ public class HooksLoader {
 			inputStream = new FileInputStream(hooksFile);
 			reader = new InputStreamReader(inputStream, "UTF-8");
 			Gson gson = new GsonBuilder().create();
-			HookDump[] hooks = gson.fromJson(reader, HookDump[].class);
+			hooks = gson.fromJson(reader, HookDump[].class);
 
 			for (HookDump hook : hooks) {
 				Hooks.classNames.put(hook.rsClass.refactoredName, hook.rsClass.obfuscatedName);
