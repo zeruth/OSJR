@@ -196,6 +196,8 @@ public class Utils {
 			return Hooks.selector.class199;
 		} else if (name.compareTo("class2") == 0) {
 			return Hooks.selector.class2;
+		} else if (name.compareTo("class20") == 0) {
+			return Hooks.selector.class20;
 		} else if (name.compareTo("class21") == 0) {
 			return Hooks.selector.class21;
 		} else if (name.compareTo("class211") == 0) {
@@ -296,8 +298,12 @@ public class Utils {
 			return Hooks.selector.class289;
 		} else if (name.compareTo("class29") == 0) {
 			return Hooks.selector.class29;
+		} else if (name.compareTo("class293") == 0) {
+			return Hooks.selector.class293;
 		} else if (name.compareTo("class299") == 0) {
 			return Hooks.selector.class299;
+		} else if (name.compareTo("class3") == 0) {
+			return Hooks.selector.class3;
 		} else if (name.compareTo("class300") == 0) {
 			return Hooks.selector.class300;
 		} else if (name.compareTo("class31") == 0) {
@@ -376,6 +382,8 @@ public class Utils {
 			return Hooks.selector.combatInfo2;
 		} else if (name.compareTo("CombatInfoList") == 0) {
 			return Hooks.selector.combatInfoList;
+		} else if (name.compareTo("CombatInfoListHolder") == 0) {
+			return Hooks.selector.combatInfoListHolder;
 		} else if (name.compareTo("ContextMenuRow") == 0) {
 			return Hooks.selector.contextMenuRow;
 		} else if (name.compareTo("Coordinates") == 0) {
@@ -522,6 +530,8 @@ public class Utils {
 			return Hooks.selector.npc;
 		} else if (name.compareTo("NPCComposition") == 0) {
 			return Hooks.selector.npcComposition;
+		} else if (name.compareTo("ObjectNode") == 0) {
+			return Hooks.selector.objectNode;
 		} else if (name.compareTo("ObjectComposition") == 0) {
 			return Hooks.selector.objectComposition;
 		} else if (name.compareTo("Occluder") == 0) {
@@ -572,6 +582,8 @@ public class Utils {
 			return Hooks.selector.scriptVarType;
 		} else if (name.compareTo("Sequence") == 0) {
 			return Hooks.selector.sequence;
+		} else if (name.compareTo("ServerPacket") == 0) {
+			return Hooks.selector.serverPacket;
 		} else if (name.compareTo("Signlink") == 0) {
 			return Hooks.selector.signlink;
 		} else if (name.compareTo("Size") == 0) {
@@ -620,6 +632,8 @@ public class Utils {
 			return Hooks.selector.widgetNode;
 		} else if (name.compareTo("World") == 0) {
 			return Hooks.selector.world;
+		} else if (name.compareTo("WorldComparator") == 0) {
+			return Hooks.selector.worldComparator;
 		} else if (name.compareTo("WorldMapData") == 0) {
 			return Hooks.selector.worldMapData;
 		} else if (name.compareTo("WorldMapSectionBase") == 0) {
@@ -632,6 +646,7 @@ public class Utils {
 			return Hooks.selector.worldMapType3;
 		}
 
+		System.out.println(name+" not loaded.");
 		return null;
 	}
 

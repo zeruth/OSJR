@@ -182,6 +182,7 @@ public class Hooks {
 	public CombatInfo1 combatInfo1 = new CombatInfo1();
 	public CombatInfo2 combatInfo2 = new CombatInfo2();
 	public CombatInfoList combatInfoList = new CombatInfoList(null);
+	public CombatInfoListHolder combatInfoListHolder = new CombatInfoListHolder(null);
 	public ContextMenuRow contextMenuRow = new ContextMenuRow();
 	public Coordinates coordinates = new Coordinates();
 	public DecorativeObject decorativeObject = new DecorativeObject();
@@ -255,6 +256,7 @@ public class Hooks {
 	public NodeCache nodeCache = new NodeCache(null);
 	public NPC npc = new NPC(null);
 	public NPCComposition npcComposition = new NPCComposition();
+	public ObjectNode objectNode = new ObjectNode();
 	public ObjectComposition objectComposition = new ObjectComposition();
 	public Occluder occluder = new Occluder();
 	public Overlay overlay = new Overlay();
@@ -273,6 +275,7 @@ public class Hooks {
 	public Residue residue = new Residue(null);
 	public RSCanvas rsCanvas = new RSCanvas();
 	public RunException runException = new RunException();
+	public ServerPacket serverPacket = new ServerPacket();
 	public SceneTileModel sceneTileModel = new SceneTileModel();
 	public SceneTilePaint sceneTilePaint = new SceneTilePaint();
 	public Script script = new Script();
@@ -304,6 +307,7 @@ public class Hooks {
 	public Widget widget = new Widget();
 	public WidgetNode widgetNode = new WidgetNode();
 	public World world = new World();
+	public WorldComparator worldComparator = new WorldComparator();
 	public WorldMapData worldMapData = new WorldMapData();
 	public WorldMapSectionBase worldMapSectionBase = new WorldMapSectionBase();
 	public WorldMapType1 worldMapType1 = new WorldMapType1();
