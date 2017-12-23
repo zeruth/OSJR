@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 import os.jr.game.RSGame;
 import os.jr.hooks.Hooks;
-import os.jr.utils.Utils;
 
 public class GameClass {
 	public String obfuscatedName;

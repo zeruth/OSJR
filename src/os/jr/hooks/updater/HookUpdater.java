@@ -60,6 +60,7 @@ public class HookUpdater {
 		Client c = Hooks.selector.client;
 		try {
 			if (c.isLoggedOn()) {
+				@SuppressWarnings("unused")
 				int[][] i = Hooks.selector.class21.getXTeaKeys();
 			}
 		} catch (Exception e) {
