@@ -122,6 +122,246 @@ public class Utils {
 			return Hooks.selector.clanMember;
 		} else if (name.compareTo("ClassInfo") == 0) {
 			return Hooks.selector.classInfo;
+		} else if (name.compareTo("class0") == 0) {
+			return Hooks.selector.class0;
+		} else if (name.compareTo("class1") == 0) {
+			return Hooks.selector.class1;
+		} else if (name.compareTo("class101") == 0) {
+			return Hooks.selector.class101;
+		} else if (name.compareTo("class105") == 0) {
+			return Hooks.selector.class105;
+		} else if (name.compareTo("class106") == 0) {
+			return Hooks.selector.class106;
+		} else if (name.compareTo("class11") == 0) {
+			return Hooks.selector.class11;
+		} else if (name.compareTo("class111") == 0) {
+			return Hooks.selector.class111;
+		} else if (name.compareTo("class113") == 0) {
+			return Hooks.selector.class113;
+		} else if (name.compareTo("class115") == 0) {
+			return Hooks.selector.class115;
+		} else if (name.compareTo("class116") == 0) {
+			return Hooks.selector.class116;
+		} else if (name.compareTo("class133") == 0) {
+			return Hooks.selector.class133;
+		} else if (name.compareTo("class139") == 0) {
+			return Hooks.selector.class139;
+		} else if (name.compareTo("class150") == 0) {
+			return Hooks.selector.class150;
+		} else if (name.compareTo("class153") == 0) {
+			return Hooks.selector.class153;
+		} else if (name.compareTo("class157") == 0) {
+			return Hooks.selector.class157;
+		} else if (name.compareTo("class159") == 0) {
+			return Hooks.selector.class159;
+		} else if (name.compareTo("class160") == 0) {
+			return Hooks.selector.class160;
+		} else if (name.compareTo("class161") == 0) {
+			return Hooks.selector.class161;
+		} else if (name.compareTo("class163") == 0) {
+			return Hooks.selector.class163;
+		} else if (name.compareTo("class167") == 0) {
+			return Hooks.selector.class167;
+		} else if (name.compareTo("class168") == 0) {
+			return Hooks.selector.class168;
+		} else if (name.compareTo("class169") == 0) {
+			return Hooks.selector.class169;
+		} else if (name.compareTo("class173") == 0) {
+			return Hooks.selector.class173;
+		} else if (name.compareTo("class175") == 0) {
+			return Hooks.selector.class175;
+		} else if (name.compareTo("class178") == 0) {
+			return Hooks.selector.class178;
+		} else if (name.compareTo("class179") == 0) {
+			return Hooks.selector.class179;
+		} else if (name.compareTo("class18") == 0) {
+			return Hooks.selector.class18;
+		} else if (name.compareTo("class180") == 0) {
+			return Hooks.selector.class180;
+		} else if (name.compareTo("class185") == 0) {
+			return Hooks.selector.class185;
+		} else if (name.compareTo("class186") == 0) {
+			return Hooks.selector.class186;
+		} else if (name.compareTo("class188") == 0) {
+			return Hooks.selector.class188;
+		} else if (name.compareTo("class19") == 0) {
+			return Hooks.selector.class19;
+		} else if (name.compareTo("class192") == 0) {
+			return Hooks.selector.class192;
+		} else if (name.compareTo("class193") == 0) {
+			return Hooks.selector.class193;
+		} else if (name.compareTo("class194") == 0) {
+			return Hooks.selector.class194;
+		} else if (name.compareTo("class199") == 0) {
+			return Hooks.selector.class199;
+		} else if (name.compareTo("class2") == 0) {
+			return Hooks.selector.class2;
+		} else if (name.compareTo("class21") == 0) {
+			return Hooks.selector.class21;
+		} else if (name.compareTo("class211") == 0) {
+			return Hooks.selector.class211;
+		} else if (name.compareTo("class213") == 0) {
+			return Hooks.selector.class213;
+		} else if (name.compareTo("class214") == 0) {
+			return Hooks.selector.class214;
+		} else if (name.compareTo("class215") == 0) {
+			return Hooks.selector.class215;
+		} else if (name.compareTo("class216") == 0) {
+			return Hooks.selector.class216;
+		} else if (name.compareTo("class217") == 0) {
+			return Hooks.selector.class217;
+		} else if (name.compareTo("class218") == 0) {
+			return Hooks.selector.class218;
+		} else if (name.compareTo("class219") == 0) {
+			return Hooks.selector.class219;
+		} else if (name.compareTo("class22") == 0) {
+			return Hooks.selector.class22;
+		} else if (name.compareTo("class221") == 0) {
+			return Hooks.selector.class221;
+		} else if (name.compareTo("class222") == 0) {
+			return Hooks.selector.class222;
+		} else if (name.compareTo("class225") == 0) {
+			return Hooks.selector.class225;
+		} else if (name.compareTo("class226") == 0) {
+			return Hooks.selector.class226;
+		} else if (name.compareTo("class228") == 0) {
+			return Hooks.selector.class228;
+		} else if (name.compareTo("class229") == 0) {
+			return Hooks.selector.class229;
+		} else if (name.compareTo("class23") == 0) {
+			return Hooks.selector.class23;
+		} else if (name.compareTo("class231") == 0) {
+			return Hooks.selector.class231;
+		} else if (name.compareTo("class232") == 0) {
+			return Hooks.selector.class232;
+		} else if (name.compareTo("class233") == 0) {
+			return Hooks.selector.class233;
+		} else if (name.compareTo("class234") == 0) {
+			return Hooks.selector.class234;
+		} else if (name.compareTo("class236") == 0) {
+			return Hooks.selector.class236;
+		} else if (name.compareTo("class237") == 0) {
+			return Hooks.selector.class237;
+		} else if (name.compareTo("class238") == 0) {
+			return Hooks.selector.class238;
+		} else if (name.compareTo("class239") == 0) {
+			return Hooks.selector.class239;
+		} else if (name.compareTo("class240") == 0) {
+			return Hooks.selector.class240;
+		} else if (name.compareTo("class249") == 0) {
+			return Hooks.selector.class249;
+		} else if (name.compareTo("class25") == 0) {
+			return Hooks.selector.class25;
+		} else if (name.compareTo("class250") == 0) {
+			return Hooks.selector.class250;
+		} else if (name.compareTo("class254") == 0) {
+			return Hooks.selector.class254;
+		} else if (name.compareTo("class255") == 0) {
+			return Hooks.selector.class255;
+		} else if (name.compareTo("class260") == 0) {
+			return Hooks.selector.class260;
+		} else if (name.compareTo("class262") == 0) {
+			return Hooks.selector.class262;
+		} else if (name.compareTo("class263") == 0) {
+			return Hooks.selector.class263;
+		} else if (name.compareTo("class265") == 0) {
+			return Hooks.selector.class265;
+		} else if (name.compareTo("class268") == 0) {
+			return Hooks.selector.class268;
+		} else if (name.compareTo("class27") == 0) {
+			return Hooks.selector.class27;
+		} else if (name.compareTo("class276") == 0) {
+			return Hooks.selector.class276;
+		} else if (name.compareTo("class277") == 0) {
+			return Hooks.selector.class277;
+		} else if (name.compareTo("class278") == 0) {
+			return Hooks.selector.class278;
+		} else if (name.compareTo("class279") == 0) {
+			return Hooks.selector.class279;
+		} else if (name.compareTo("class28") == 0) {
+			return Hooks.selector.class28;
+		} else if (name.compareTo("class280") == 0) {
+			return Hooks.selector.class280;
+		} else if (name.compareTo("class281") == 0) {
+			return Hooks.selector.class281;
+		} else if (name.compareTo("class282") == 0) {
+			return Hooks.selector.class282;
+		} else if (name.compareTo("class283") == 0) {
+			return Hooks.selector.class283;
+		} else if (name.compareTo("class285") == 0) {
+			return Hooks.selector.class285;
+		} else if (name.compareTo("class287") == 0) {
+			return Hooks.selector.class287;
+		} else if (name.compareTo("class289") == 0) {
+			return Hooks.selector.class289;
+		} else if (name.compareTo("class29") == 0) {
+			return Hooks.selector.class29;
+		} else if (name.compareTo("class299") == 0) {
+			return Hooks.selector.class299;
+		} else if (name.compareTo("class300") == 0) {
+			return Hooks.selector.class300;
+		} else if (name.compareTo("class31") == 0) {
+			return Hooks.selector.class31;
+		} else if (name.compareTo("class34") == 0) {
+			return Hooks.selector.class34;
+		} else if (name.compareTo("class35") == 0) {
+			return Hooks.selector.class35;
+		} else if (name.compareTo("class36") == 0) {
+			return Hooks.selector.class36;
+		} else if (name.compareTo("class37") == 0) {
+			return Hooks.selector.class37;
+		} else if (name.compareTo("class39") == 0) {
+			return Hooks.selector.class39;
+		} else if (name.compareTo("class40") == 0) {
+			return Hooks.selector.class40;
+		} else if (name.compareTo("class41") == 0) {
+			return Hooks.selector.class41;
+		} else if (name.compareTo("class43") == 0) {
+			return Hooks.selector.class43;
+		} else if (name.compareTo("class44") == 0) {
+			return Hooks.selector.class44;
+		} else if (name.compareTo("class45") == 0) {
+			return Hooks.selector.class45;
+		} else if (name.compareTo("class46") == 0) {
+			return Hooks.selector.class46;
+		} else if (name.compareTo("class47") == 0) {
+			return Hooks.selector.class47;
+		} else if (name.compareTo("class48") == 0) {
+			return Hooks.selector.class48;
+		} else if (name.compareTo("class5") == 0) {
+			return Hooks.selector.class5;
+		} else if (name.compareTo("class52") == 0) {
+			return Hooks.selector.class52;
+		} else if (name.compareTo("class54") == 0) {
+			return Hooks.selector.class54;
+		} else if (name.compareTo("class56") == 0) {
+			return Hooks.selector.class56;
+		} else if (name.compareTo("class60") == 0) {
+			return Hooks.selector.class60;
+		} else if (name.compareTo("class61") == 0) {
+			return Hooks.selector.class61;
+		} else if (name.compareTo("class64") == 0) {
+			return Hooks.selector.class64;
+		} else if (name.compareTo("class7") == 0) {
+			return Hooks.selector.class7;
+		} else if (name.compareTo("class72") == 0) {
+			return Hooks.selector.class72;
+		} else if (name.compareTo("class81") == 0) {
+			return Hooks.selector.class81;
+		} else if (name.compareTo("class82") == 0) {
+			return Hooks.selector.class82;
+		} else if (name.compareTo("class86") == 0) {
+			return Hooks.selector.class86;
+		} else if (name.compareTo("class87") == 0) {
+			return Hooks.selector.class87;
+		} else if (name.compareTo("class89") == 0) {
+			return Hooks.selector.class89;
+		} else if (name.compareTo("class91") == 0) {
+			return Hooks.selector.class91;
+		} else if (name.compareTo("class94") == 0) {
+			return Hooks.selector.class94;
+		} else if (name.compareTo("class96") == 0) {
+			return Hooks.selector.class96;
 		} else if (name.compareTo("Client") == 0) {
 			return Hooks.selector.client;
 		} else if (name.compareTo("ClientPacket") == 0) {
@@ -152,6 +392,8 @@ public class Utils {
 			return Hooks.selector.dynamicObject;
 		} else if (name.compareTo("Enum") == 0) {
 			return Hooks.selector.enum_;
+		} else if (name.compareTo("Enumerated") == 0) {
+			return Hooks.selector.enumerated;
 		} else if (name.compareTo("FaceNormal") == 0) {
 			return Hooks.selector.faceNormal;
 		} else if (name.compareTo("FileOnDisk") == 0) {

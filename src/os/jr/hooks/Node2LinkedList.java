@@ -4,8 +4,9 @@ import os.jr.hooks.loader.GameClass;
 
 public class Node2LinkedList extends GameClass {
 
-	public Node2LinkedList() {
+	public Node2LinkedList(Object reference) {
 		super(Hooks.classNames.get("Node2LinkedList"));
+		this.reference = reference;
 	}
 
 }

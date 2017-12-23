@@ -8,8 +8,9 @@ public class AbstractSoundSystem extends GameClass {
 	public static final String samples = "samples";
 	public static final String offset = "offset";
 
-	public AbstractSoundSystem() {
+	public AbstractSoundSystem(Object reference) {
 		super(Hooks.classNames.get("AbstractSoundSystem"));
+		this.reference = reference;
 	}
 
 	public int getOffset() {

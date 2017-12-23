@@ -9,8 +9,9 @@ public class Buffer extends GameClass {
 	public static final String payload = "payload";
 	public static final String offset = "offset";
 
-	public Buffer() {
+	public Buffer(Object reference) {
 		super(Hooks.classNames.get("Buffer"));
+		this.reference = reference;
 	}
 
 	public int[] getCrc32Table() {

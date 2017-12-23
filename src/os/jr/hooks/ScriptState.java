@@ -4,8 +4,9 @@ import os.jr.hooks.loader.GameClass;
 
 public class ScriptState extends GameClass {
 
-	public ScriptState() {
+	public ScriptState(Object reference) {
 		super(Hooks.classNames.get("ScriptState"));
+		this.reference = reference;
 	}
 
 }
