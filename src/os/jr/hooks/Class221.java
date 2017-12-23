@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class221 extends GameClass{
+public class Class221 extends RSClass{
 	
 	public static final String slFlagSprites = "slFlagSprites";
 
@@ -11,7 +11,7 @@ public class Class221 extends GameClass{
 	}
 	
 	public IndexedSprite[] getSlFlagSprites() {
-		Object[] os = (Object[]) fields.get(slFlagSprites).getValue(reference);
+		Object[] os = (Object[]) getField(slFlagSprites).getValue(reference);
 		IndexedSprite[] slFlagSprites = new IndexedSprite[os.length];
 		int i = 0;
 		for (Object o : os) {

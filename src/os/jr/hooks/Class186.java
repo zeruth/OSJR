@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class186 extends GameClass{
+public class Class186 extends RSClass{
 	
 	public static final String currentTimeMsLast = "currentTimeMsLast";
 	public static final String currentTimeMsOffset = "currentTimeMsOffset";
@@ -12,11 +12,11 @@ public class Class186 extends GameClass{
 	}
 	
 	public long getCurrentTimeMsLast() {
-		return (long) fields.get(currentTimeMsLast).getValue(reference);
+		return (long) getField(currentTimeMsLast).getValue(reference);
 	}
 	
 	public long getCurrentTimeMsOffset() {
-		return (long) fields.get(currentTimeMsOffset).getValue(reference);
+		return (long) getField(currentTimeMsOffset).getValue(reference);
 	}
 
 }

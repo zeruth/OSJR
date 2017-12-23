@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class21 extends GameClass{
+public class Class21 extends RSClass{
 	
 	public static final String xteaKeys = "xteaKeys";
 
@@ -11,7 +11,7 @@ public class Class21 extends GameClass{
 	}
 	
 	public int[][] getXTeaKeys() {
-		return (int[][]) fields.get(xteaKeys).getValue(reference);
+		return (int[][]) getField(xteaKeys).getValue(reference);
 	}
 
 }

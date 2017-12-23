@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class CacheFile extends GameClass {
+public class CacheFile extends RSClass {
 
 	public static final String accessFile = "accessFile";
 	public static final String readPayload = "readPayload";
@@ -17,27 +17,27 @@ public class CacheFile extends GameClass {
 	}
 
 	public FileOnDisk getAccessFile() {
-		return new FileOnDisk(fields.get(accessFile).getValue(reference));
+		return new FileOnDisk(getField(accessFile).getValue(reference));
 	}
 
 	public long getCapacity() {
-		return (long) fields.get(capacity).getValue(reference);
+		return (long) getField(capacity).getValue(reference);
 	}
 
 	public long getLength() {
-		return (long) fields.get(length).getValue(reference);
+		return (long) getField(length).getValue(reference);
 	}
 
 	public long getPosition() {
-		return (long) fields.get(position).getValue(reference);
+		return (long) getField(position).getValue(reference);
 	}
 
 	public byte[] readPayload() {
-		return (byte[]) fields.get(readPayload).getValue(reference);
+		return (byte[]) getField(readPayload).getValue(reference);
 	}
 
 	public byte[] writePayload() {
-		return (byte[]) fields.get(writePayload).getValue(reference);
+		return (byte[]) getField(writePayload).getValue(reference);
 	}
 
 }

@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class111 extends GameClass{
+public class Class111 extends RSClass{
 	
 	public static final String sfx_index ="sfx_index";
 	public static final String vorbis_index ="vorbis_index";
@@ -12,11 +12,11 @@ public class Class111 extends GameClass{
 	}
 	
 	public IndexDataBase getSFXIndex() {
-		return new IndexDataBase(fields.get(sfx_index).getValue(reference));
+		return new IndexDataBase(getField(sfx_index).getValue(reference));
 	}
 	
 	public IndexDataBase getVorbisIndex() {
-		return new IndexDataBase(fields.get(vorbis_index).getValue(reference));
+		return new IndexDataBase(getField(vorbis_index).getValue(reference));
 	}
 
 }

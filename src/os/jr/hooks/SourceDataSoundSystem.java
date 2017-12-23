@@ -1,8 +1,7 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
-
-public class SourceDataSoundSystem extends GameClass {
+import os.jr.hooks.loader.RSClass;
+public class SourceDataSoundSystem extends RSClass {
 
 	public SourceDataSoundSystem() {
 		super(Hooks.classNames.get("SourceDataSoundSystem"));

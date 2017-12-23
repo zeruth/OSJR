@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Deque extends GameClass {
+public class Deque extends RSClass {
 
 	public Deque(Object reference) {
 		super(Hooks.classNames.get("Deque"));

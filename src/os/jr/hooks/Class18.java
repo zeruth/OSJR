@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class18 extends GameClass {
+public class Class18 extends RSClass {
 	
 	public static final String headIconsPk = "headIconsPk";
 
@@ -11,7 +11,7 @@ public class Class18 extends GameClass {
 	}
 	
 	public SpritePixels[] getHeadIconsPk() {
-		Object[] os = (Object[]) fields.get(headIconsPk).getValue(reference); 
+		Object[] os = (Object[]) getField(headIconsPk).getValue(reference); 
 		SpritePixels[] headIconsPk = new SpritePixels[os.length];
 		int i = 0;
 		for (Object o : os) {

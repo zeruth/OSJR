@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class56 extends GameClass{
+public class Class56 extends RSClass{
 	
 	public static final String indexStore255 = "indexStore255";
 	public static final String grandExchangeEvents = "grandExchangeEvents";
@@ -13,11 +13,11 @@ public class Class56 extends GameClass{
 	}
 	
 	public IndexFile getIndexStore255() {
-		return new IndexFile(fields.get(indexStore255).getValue(reference));
+		return new IndexFile(getField(indexStore255).getValue(reference));
 	}
 	
 	public GrandExchangeEvents getGrandExchangeEvents() {
-		return new GrandExchangeEvents(fields.get(grandExchangeEvents).getValue(reference));
+		return new GrandExchangeEvents(getField(grandExchangeEvents).getValue(reference));
 	}
 
 }

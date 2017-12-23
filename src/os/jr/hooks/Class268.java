@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class268 extends GameClass{
+public class Class268 extends RSClass{
 	
 	public static final String myWorldPort = "myWorldPort";
 
@@ -11,7 +11,7 @@ public class Class268 extends GameClass{
 	}
 	
 	public int getMyWorldPort() {
-		return (int) fields.get(myWorldPort).getValue(reference);
+		return (int) getField(myWorldPort).getValue(reference);
 	}
 
 }

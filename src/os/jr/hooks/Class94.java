@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class94 extends GameClass{
+public class Class94 extends RSClass{
 	
 	public static final String playerIndexesCount = "playerIndexesCount";
 	public static final String playerIndices = "playerIndices";
@@ -15,22 +15,22 @@ public class Class94 extends GameClass{
 	}
 
 	public int getPlayerIndexesCount() {
-		return (int) fields.get(playerIndexesCount).getValue(reference);
+		return (int) getField(playerIndexesCount).getValue(reference);
 	}
 	
 	public int[] getPlayerIndices() {
-		return (int[]) fields.get(playerIndexesCount).getValue(reference);
+		return (int[]) getField(playerIndexesCount).getValue(reference);
 	}
 	
 	public int[] getPlayers_regions() {
-		return (int[]) fields.get(Players_regions).getValue(reference);
+		return (int[]) getField(Players_regions).getValue(reference);
 	}
 	
 	public int[] getPlayers_orientations() {
-		return (int[]) fields.get(Players_orientations).getValue(reference);
+		return (int[]) getField(Players_orientations).getValue(reference);
 	}
 	
 	public int[] getPlayers_targetIndices() {
-		return (int[]) fields.get(Players_targetIndices).getValue(reference);
+		return (int[]) getField(Players_targetIndices).getValue(reference);
 	}
 }

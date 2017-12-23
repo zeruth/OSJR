@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class FloorUnderlayDefinition extends GameClass {
+public class FloorUnderlayDefinition extends RSClass {
 
 	public FloorUnderlayDefinition() {
 		super(Hooks.classNames.get("FloorUnderlayDefinition"));

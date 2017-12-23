@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Buffer extends GameClass {
+public class Buffer extends RSClass {
 
 	public static final String crc32Table = "crc32Table";
 	public static final String crc64Table = "crc64Table";
@@ -15,19 +15,19 @@ public class Buffer extends GameClass {
 	}
 
 	public int[] getCrc32Table() {
-		return (int[]) fields.get(crc32Table).getValue(reference);
+		return (int[]) getField(crc32Table).getValue(reference);
 	}
 
 	public int[] getCrc64Table() {
-		return (int[]) fields.get(crc64Table).getValue(reference);
+		return (int[]) getField(crc64Table).getValue(reference);
 	}
 
 	public int getOffset() {
-		return (int) fields.get(offset).getValue(reference);
+		return (int) getField(offset).getValue(reference);
 	}
 
 	public byte[] getPayload() {
-		return (byte[]) fields.get(payload).getValue(reference);
+		return (byte[]) getField(payload).getValue(reference);
 	}
 
 }

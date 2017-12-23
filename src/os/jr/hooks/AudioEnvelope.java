@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class AudioEnvelope extends GameClass {
+public class AudioEnvelope extends RSClass {
 
 	public static final String segments = "segments";
 	public static final String durations = "durations";
@@ -22,42 +22,42 @@ public class AudioEnvelope extends GameClass {
 	}
 
 	public int getAmplitude() {
-		return (int) fields.get(amplitude).getValue(reference);
+		return (int) getField(amplitude).getValue(reference);
 	}
 
 	public int[] getDurations() {
-		return (int[]) fields.get(durations).getValue(reference);
+		return (int[]) getField(durations).getValue(reference);
 	}
 
 	public int getEnd() {
-		return (int) fields.get(end).getValue(reference);
+		return (int) getField(end).getValue(reference);
 	}
 
 	public int getForm() {
-		return (int) fields.get(form).getValue(reference);
+		return (int) getField(form).getValue(reference);
 	}
 
 	public int getMax() {
-		return (int) fields.get(max).getValue(reference);
+		return (int) getField(max).getValue(reference);
 	}
 
 	public int getPhaseIndex() {
-		return (int) fields.get(phaseIndex).getValue(reference);
+		return (int) getField(phaseIndex).getValue(reference);
 	}
 
 	public int[] getPhases() {
-		return (int[]) fields.get(phases).getValue(reference);
+		return (int[]) getField(phases).getValue(reference);
 	}
 
 	public int getSegments() {
-		return (int) fields.get(segments).getValue(reference);
+		return (int) getField(segments).getValue(reference);
 	}
 
 	public int getStart() {
-		return (int) fields.get(start).getValue(reference);
+		return (int) getField(start).getValue(reference);
 	}
 
 	public int getTicks() {
-		return (int) fields.get(ticks).getValue(reference);
+		return (int) getField(ticks).getValue(reference);
 	}
 }

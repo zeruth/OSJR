@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class BuildType extends GameClass {
+public class BuildType extends RSClass {
 
 	public static final String RC = "RC";
 	public static final String WIP = "WIP";
@@ -16,26 +16,26 @@ public class BuildType extends GameClass {
 	}
 
 	public Object getBUILD_LIVE() {
-		return fields.get(BUILD_LIVE).getValue(reference);
+		return getField(BUILD_LIVE).getValue(reference);
 	}
 
 	public String getIdentifier() {
-		return (String) fields.get(identifier).getValue(reference);
+		return (String) getField(identifier).getValue(reference);
 	}
 
 	public Object getLIVE() {
-		return fields.get(LIVE).getValue(reference);
+		return getField(LIVE).getValue(reference);
 	}
 
 	public int getOrdinal() {
-		return (int) fields.get(ordinal).getValue(reference);
+		return (int) getField(ordinal).getValue(reference);
 	}
 
 	public Object getRC() {
-		return fields.get(RC).getValue(reference);
+		return getField(RC).getValue(reference);
 	}
 
 	public Object getWIP() {
-		return fields.get(WIP).getValue(reference);
+		return getField(WIP).getValue(reference);
 	}
 }

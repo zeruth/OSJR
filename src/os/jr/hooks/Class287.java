@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class287 extends GameClass{
+public class Class287 extends RSClass{
 	
 	public static final String NetCache_responseArchiveBuffer = "NetCache_responseArchiveBuffer";
 
@@ -11,7 +11,7 @@ public class Class287 extends GameClass{
 	}
 	
 	public Buffer NetCache_responseArchiveBuffer() {
-		return new Buffer(fields.get(NetCache_responseArchiveBuffer).getValue(reference));
+		return new Buffer(getField(NetCache_responseArchiveBuffer).getValue(reference));
 	}
 
 }

@@ -15,7 +15,7 @@ import java.time.ZoneOffset;
 
 import os.jr.game.RSGame;
 import os.jr.hooks.Hooks;
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 import os.jr.ui.Updater;
 
 public class Utils {
@@ -76,7 +76,7 @@ public class Utils {
 		}
 	}
 
-	public static GameClass getClassbyName(String name) {
+	public static RSClass getClassbyName(String name) {
 
 		if (name.compareTo("AbstractByteBuffer") == 0) {
 			return Hooks.selector.abstractByteBuffer;
@@ -232,6 +232,8 @@ public class Utils {
 			return Hooks.selector.class229;
 		} else if (name.compareTo("class23") == 0) {
 			return Hooks.selector.class23;
+		} else if (name.compareTo("class230") == 0) {
+			return Hooks.selector.class230;
 		} else if (name.compareTo("class231") == 0) {
 			return Hooks.selector.class231;
 		} else if (name.compareTo("class232") == 0) {
@@ -300,14 +302,20 @@ public class Utils {
 			return Hooks.selector.class29;
 		} else if (name.compareTo("class293") == 0) {
 			return Hooks.selector.class293;
+		} else if (name.compareTo("class296") == 0) {
+			return Hooks.selector.class296;
 		} else if (name.compareTo("class299") == 0) {
 			return Hooks.selector.class299;
 		} else if (name.compareTo("class3") == 0) {
 			return Hooks.selector.class3;
 		} else if (name.compareTo("class300") == 0) {
 			return Hooks.selector.class300;
+		} else if (name.compareTo("class305") == 0) {
+			return Hooks.selector.class305;
 		} else if (name.compareTo("class31") == 0) {
 			return Hooks.selector.class31;
+		} else if (name.compareTo("class33") == 0) {
+			return Hooks.selector.class33;
 		} else if (name.compareTo("class34") == 0) {
 			return Hooks.selector.class34;
 		} else if (name.compareTo("class35") == 0) {
@@ -414,6 +422,8 @@ public class Utils {
 			return Hooks.selector.floor1;
 		} else if (name.compareTo("FloorUnderlayDefinition") == 0) {
 			return Hooks.selector.floorUnderlayDefinition;
+		} else if (name.compareTo("Font") == 0) {
+			return Hooks.selector.font;
 		} else if (name.compareTo("FontName") == 0) {
 			return Hooks.selector.fontName;
 		} else if (name.compareTo("Fonts") == 0) {
@@ -486,6 +496,8 @@ public class Utils {
 			return Hooks.selector.iterableDualNodeQueue;
 		} else if (name.compareTo("IterableHashTable") == 0) {
 			return Hooks.selector.iterableHashTable;
+		} else if (name.compareTo("ITextureLoader") == 0) {
+			return Hooks.selector.iTextureLoader;
 		} else if (name.compareTo("JagexGame") == 0) {
 			return Hooks.selector.jagexGame;
 		} else if (name.compareTo("JagexLoginType") == 0) {
@@ -494,6 +506,10 @@ public class Utils {
 			return Hooks.selector.keyFocusListener;
 		} else if (name.compareTo("KitDefinition") == 0) {
 			return Hooks.selector.kitDefinition;
+		} else if (name.compareTo("Link") == 0) {
+			return Hooks.selector.link;
+		} else if (name.compareTo("LinkDeque") == 0) {
+			return Hooks.selector.linkDeque;
 		} else if (name.compareTo("LoginPacket") == 0) {
 			return Hooks.selector.loginPacket;
 		} else if (name.compareTo("MachineInfo") == 0) {
@@ -514,6 +530,8 @@ public class Utils {
 			return Hooks.selector.mouseInput;
 		} else if (name.compareTo("MouseRecorder") == 0) {
 			return Hooks.selector.mouseRecorder;
+		} else if (name.compareTo("MouseWheel") == 0) {
+			return Hooks.selector.mouseWheel;
 		} else if (name.compareTo("MouseWheelHandler") == 0) {
 			return Hooks.selector.mouseWheelHandler;
 		} else if (name.compareTo("NanoTimer") == 0) {
@@ -538,6 +556,8 @@ public class Utils {
 			return Hooks.selector.occluder;
 		} else if (name.compareTo("Overlay") == 0) {
 			return Hooks.selector.overlay;
+		} else if (name.compareTo("OwnWorldComparator") == 0) {
+			return Hooks.selector.ownWorldComparator;
 		} else if (name.compareTo("PacketBuffer") == 0) {
 			return Hooks.selector.packetBuffer;
 		} else if (name.compareTo("PacketNode") == 0) {
@@ -546,6 +566,8 @@ public class Utils {
 			return Hooks.selector.parameters;
 		} else if (name.compareTo("PendingSpawn") == 0) {
 			return Hooks.selector.pendingSpawn;
+		} else if (name.compareTo("Permission") == 0) {
+			return Hooks.selector.permission;
 		} else if (name.compareTo("Player") == 0) {
 			return Hooks.selector.player;
 		} else if (name.compareTo("PlayerComposition") == 0) {
@@ -566,6 +588,8 @@ public class Utils {
 			return Hooks.selector.residue;
 		} else if (name.compareTo("RSCanvas") == 0) {
 			return Hooks.selector.rsCanvas;
+		} else if (name.compareTo("RSSocket") == 0) {
+			return Hooks.selector.rsSocket;
 		} else if (name.compareTo("RunException") == 0) {
 			return Hooks.selector.runException;
 		} else if (name.compareTo("SceneTileModel") == 0) {
@@ -594,6 +618,8 @@ public class Utils {
 			return Hooks.selector.soundEffect3;
 		} else if (name.compareTo("SoundTask") == 0) {
 			return Hooks.selector.soundTask;
+		} else if (name.compareTo("SoundTaskDataProvider") == 0) {
+			return Hooks.selector.soundTaskDataProvider;
 		} else if (name.compareTo("SourceDataSoundSystem") == 0) {
 			return Hooks.selector.sourceDataSoundSystem;
 		} else if (name.compareTo("Spotanim") == 0) {
@@ -602,14 +628,22 @@ public class Utils {
 			return Hooks.selector.spritePixels;
 		} else if (name.compareTo("Task") == 0) {
 			return Hooks.selector.task;
+		} else if (name.compareTo("TaskDataNode") == 0) {
+			return Hooks.selector.taskDataNode;
+		} else if (name.compareTo("TaskDataProvider") == 0) {
+			return Hooks.selector.taskDataProvider;
 		} else if (name.compareTo("Texture") == 0) {
 			return Hooks.selector.texture;
 		} else if (name.compareTo("TextureProvider") == 0) {
 			return Hooks.selector.textureProvider;
 		} else if (name.compareTo("Tile") == 0) {
 			return Hooks.selector.tile;
+		} else if (name.compareTo("Timer") == 0) {
+			return Hooks.selector.timer;
 		} else if (name.compareTo("TotalQuantityComparator") == 0) {
 			return Hooks.selector.totalQuantityComparator;
+		} else if (name.compareTo("Track1") == 0) {
+			return Hooks.selector.track1;
 		} else if (name.compareTo("UnitPriceComparator") == 0) {
 			return Hooks.selector.unitPriceComparator;
 		} else if (name.compareTo("UrlRequest") == 0) {

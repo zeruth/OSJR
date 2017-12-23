@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class47 extends GameClass{
+public class Class47 extends RSClass{
 	
 	public static final String mapedge = "mapedge";
 
@@ -11,7 +11,7 @@ public class Class47 extends GameClass{
 	}
 	
 	public SpritePixels getMapEdge() {
-		return new SpritePixels(fields.get(mapedge).getValue(reference));
+		return new SpritePixels(getField(mapedge).getValue(reference));
 	}
 
 }

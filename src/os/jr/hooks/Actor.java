@@ -28,111 +28,112 @@ public class Actor extends Renderable {
 	public static final String pathTraversed = "pathTraversed";
 	public static final String hasConfig = "hasConfig";
 
-	public Actor() {
+	public Actor(Object reference) {
 		super(Hooks.classNames.get("Actor"));
+		this.reference = reference;
 	}
-
+	
 	public Actor(String className) {
 		super(className);
 	}
 
 	public int getActionAnimationDisable() {
-		return (int) fields.get(actionAnimationDisable).getValue(reference);
+		return (int) getField(actionAnimationDisable).getValue(reference);
 	}
 
 	public int getActionFrame() {
-		return (int) fields.get(actionFrame).getValue(reference);
+		return (int) getField(actionFrame).getValue(reference);
 	}
 
 	public int getAngle() {
-		return (int) fields.get(angle).getValue(reference);
+		return (int) getField(angle).getValue(reference);
 	}
 
 	public int getAnimation() {
-		return (int) fields.get(animation).getValue(reference);
+		return (int) getField(animation).getValue(reference);
 	}
 
 	public CombatInfoList getCombatInfoList() {
-		return new CombatInfoList(fields.get(combatInfoList).getValue(reference));
+		return new CombatInfoList(getField(combatInfoList).getValue(reference));
 	}
 
 	public int getGraphic() {
-		return (int) fields.get(graphic).getValue(reference);
+		return (int) getField(graphic).getValue(reference);
 	}
 
 	public int getGraphicsDelay() {
-		return (int) fields.get(graphicsDelay).getValue(reference);
+		return (int) getField(graphicsDelay).getValue(reference);
 	}
 
 	public int[] getHitSplatCycles() {
-		return (int[]) fields.get(hitSplatCycles).getValue(reference);
+		return (int[]) getField(hitSplatCycles).getValue(reference);
 	}
 
 	public int[] getHitSplatTypes() {
-		return (int[]) fields.get(hitSplatTypes).getValue(reference);
+		return (int[]) getField(hitSplatTypes).getValue(reference);
 	}
 
 	public int getIdlePoseAnimation() {
-		return (int) fields.get(idlePoseAnimation).getValue(reference);
+		return (int) getField(idlePoseAnimation).getValue(reference);
 	}
 
 	public boolean getInSequence() {
-		return (boolean) fields.get(inSequence).getValue(reference);
+		return (boolean) getField(inSequence).getValue(reference);
 	}
 
 	public int getInteracting() {
-		return (int) fields.get(interacting).getValue(reference);
+		return (int) getField(interacting).getValue(reference);
 	}
 
 	public int getNpcCycle() {
-		return (int) fields.get(npcCycle).getValue(reference);
+		return (int) getField(npcCycle).getValue(reference);
 	}
 
 	public int getOrientation() {
-		return (int) fields.get(orientation).getValue(reference);
+		return (int) getField(orientation).getValue(reference);
 	}
 
 	public String getOverhead() {
-		return (String) fields.get(overhead).getValue(reference);
+		return (String) getField(overhead).getValue(reference);
 	}
 
 	public int getOverheadTextCyclesRemaining() {
-		return (int) fields.get(overheadTextCyclesRemaining).getValue(reference);
+		return (int) getField(overheadTextCyclesRemaining).getValue(reference);
 	}
 
 	public byte[] getPathTraversed() {
-		return (byte[]) fields.get(pathTraversed).getValue(reference);
+		return (byte[]) getField(pathTraversed).getValue(reference);
 	}
 
 	public int[] getPathX() {
-		return (int[]) fields.get(pathX).getValue(reference);
+		return (int[]) getField(pathX).getValue(reference);
 	}
 
 	public int[] getPathY() {
-		return (int[]) fields.get(pathY).getValue(reference);
+		return (int[]) getField(pathY).getValue(reference);
 	}
 
 	public int getPoseAnimation() {
-		return (int) fields.get(poseAnimation).getValue(reference);
+		return (int) getField(poseAnimation).getValue(reference);
 	}
 
 	public int getPoseFrame() {
-		return (int) fields.get(poseFrame).getValue(reference);
+		return (int) getField(poseFrame).getValue(reference);
 	}
 
 	public int getQueueSize() {
-		return (int) fields.get(queueSize).getValue(reference);
+		return (int) getField(queueSize).getValue(reference);
 	}
 
 	public int getX() {
-		return (int) fields.get(x).getValue(reference);
+		return (int) getField(x).getValue(reference);
 	}
 
 	public int getY() {
-		return (int) fields.get(y).getValue(reference);
+		return (int) getField(y).getValue(reference);
 	}
 
 	public boolean hasConfig() {
-		return (boolean) fields.get(hasConfig).getValue(reference);
+		return (boolean) getField(hasConfig).getValue(reference);
 	}
 }

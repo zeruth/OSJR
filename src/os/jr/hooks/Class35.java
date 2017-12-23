@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class35 extends GameClass{
+public class Class35 extends RSClass{
 	
 	public static final String scriptStringStackSize = "scriptStringStackSize";
 
@@ -11,6 +11,6 @@ public class Class35 extends GameClass{
 	}
 
 	public int getScriptStringStackSize() {
-		return (int) fields.get(scriptStringStackSize).getValue(reference);
+		return (int) getField(scriptStringStackSize).getValue(reference);
 	}
 }

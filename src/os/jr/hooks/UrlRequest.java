@@ -1,9 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.game.RSGame;
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class UrlRequest extends GameClass {
+public class UrlRequest extends RSClass {
 
 	public static String localPlayer = "localPlayer";
 
@@ -13,10 +12,7 @@ public class UrlRequest extends GameClass {
 	}
 
 	public Player getLocalPlayer() {
-
-		Player p = Hooks.selector.player;
-		p.reference = fields.get(localPlayer).getValue(RSGame.rootReference);
-		return p;
+		return new Player(getField(localPlayer).getValue(reference));
 	}
 
 }

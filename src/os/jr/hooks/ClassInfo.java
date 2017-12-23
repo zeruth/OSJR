@@ -3,9 +3,9 @@ package os.jr.hooks;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class ClassInfo extends GameClass {
+public class ClassInfo extends RSClass {
 
 	public static final String count = "count";
 	public static final String type = "type";
@@ -19,26 +19,26 @@ public class ClassInfo extends GameClass {
 	}
 
 	public byte[][][] getArgs() {
-		return (byte[][][]) Hooks.selector.classInfo.fields.get(args).getValue(reference);
+		return (byte[][][]) Hooks.selector.classInfo.getField(args).getValue(reference);
 	}
 
 	public int getCount() {
-		return (int) Hooks.selector.classInfo.fields.get(count).getValue(reference);
+		return (int) Hooks.selector.classInfo.getField(count).getValue(reference);
 	}
 
 	public int[] getErrorIdentifiers() {
-		return (int[]) Hooks.selector.classInfo.fields.get(errorIdentifiers).getValue(reference);
+		return (int[]) Hooks.selector.classInfo.getField(errorIdentifiers).getValue(reference);
 	}
 
 	public Field[] getFields() {
-		return (Field[]) Hooks.selector.classInfo.fields.get(fields_).getValue(reference);
+		return (Field[]) Hooks.selector.classInfo.getField(fields_).getValue(reference);
 	}
 
 	public Method[] getMethods() {
-		return (Method[]) Hooks.selector.classInfo.fields.get(fields_).getValue(reference);
+		return (Method[]) Hooks.selector.classInfo.getField(fields_).getValue(reference);
 	}
 
 	public int[] getType() {
-		return (int[]) Hooks.selector.classInfo.fields.get(type).getValue(reference);
+		return (int[]) Hooks.selector.classInfo.getField(type).getValue(reference);
 	}
 }

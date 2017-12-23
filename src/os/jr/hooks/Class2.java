@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class2 extends GameClass{
+public class Class2 extends RSClass{
 	
 	public static final String preferences = "preferences";
 
@@ -11,7 +11,7 @@ public class Class2 extends GameClass{
 	}
 	
 	public Preferences getPreferences() {
-		return new Preferences(fields.get(preferences).getValue(reference));
+		return new Preferences(getField(preferences).getValue(reference));
 	}
 
 }

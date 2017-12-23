@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class44 extends GameClass{
+public class Class44 extends RSClass{
 	
 	public static final String mouseRecorder = "mouseRecorder";
 
@@ -11,7 +11,7 @@ public class Class44 extends GameClass{
 	}
 	
 	public MouseRecorder getMouseRecorder() {
-		return new MouseRecorder(fields.get(mouseRecorder).getValue(reference));
+		return new MouseRecorder(getField(mouseRecorder).getValue(reference));
 	}
 
 }

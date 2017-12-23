@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Varbit extends GameClass {
+public class Varbit extends RSClass {
 
 	public Varbit() {
 		super(Hooks.classNames.get("Varbit"));

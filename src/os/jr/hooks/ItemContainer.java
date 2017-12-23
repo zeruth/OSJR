@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class ItemContainer extends GameClass {
+public class ItemContainer extends RSClass {
 
 	public ItemContainer() {
 		super(Hooks.classNames.get("ItemContainer"));

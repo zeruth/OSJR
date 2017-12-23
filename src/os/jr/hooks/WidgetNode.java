@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class WidgetNode extends GameClass {
+public class WidgetNode extends RSClass {
 
 	public WidgetNode() {
 		super(Hooks.classNames.get("WidgetNode"));

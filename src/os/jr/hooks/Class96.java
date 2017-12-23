@@ -2,9 +2,9 @@ package os.jr.hooks;
 
 import java.util.Map;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class96 extends GameClass{
+public class Class96 extends RSClass{
 	
 	public static final String chatLineMap = "chatLineMap";
 	public static final String messages = "messages";
@@ -14,11 +14,11 @@ public class Class96 extends GameClass{
 	}
 	
 	public Map<?, ?> getChatLineMap() {
-		return (Map<?, ?>) fields.get(chatLineMap).getValue(reference);
+		return (Map<?, ?>) getField(chatLineMap).getValue(reference);
 	}
 	
 	public IterableHashTable getMessages() {
-		return new IterableHashTable(fields.get(messages).getValue(reference));
+		return new IterableHashTable(getField(messages).getValue(reference));
 	}
 
 }

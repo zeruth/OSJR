@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class34 extends GameClass{
+public class Class34 extends RSClass{
 	
 	public static final String seq_ref = "seq_ref";
 	public static final String mapMarkers = "mapMarkers";
@@ -12,11 +12,11 @@ public class Class34 extends GameClass{
 	}
 	
 	public IndexDataBase getSeq_ref() {
-		return new IndexDataBase(fields.get(seq_ref).getValue(reference));
+		return new IndexDataBase(getField(seq_ref).getValue(reference));
 	}
 	
 	public SpritePixels[] getMapMarkers() {
-		Object[] os = (Object[]) fields.get(mapMarkers).getValue(reference);
+		Object[] os = (Object[]) getField(mapMarkers).getValue(reference);
 		SpritePixels[] mapMarkers = new SpritePixels[os.length];
 		int i = 0;
 		for (Object o : os) {

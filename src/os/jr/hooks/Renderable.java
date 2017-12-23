@@ -1,15 +1,12 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Renderable extends GameClass {
+public class Renderable extends RSClass {
 
-	public Renderable() {
+	public Renderable(Object reference) {
 		super(Hooks.classNames.get("Renderable"));
-	}
-
-	public Renderable(String className) {
-		super(className);
+		this.reference = reference;
 	}
 
 }

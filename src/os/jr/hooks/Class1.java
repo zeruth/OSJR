@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class1 extends GameClass{
+public class Class1 extends RSClass{
 	
 	public static final String userHome = "userHome";
 
@@ -11,7 +11,7 @@ public class Class1 extends GameClass{
 	}
 	
 	public String getUserHome() {
-		return (String) fields.get(userHome).getValue(reference);
+		return (String) getField(userHome).getValue(reference);
 	}
 
 }

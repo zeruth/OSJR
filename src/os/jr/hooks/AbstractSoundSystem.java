@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class AbstractSoundSystem extends GameClass {
+public class AbstractSoundSystem extends RSClass {
 
 	public static final String soundTaskDataProvider = "soundTaskDataProvider";
 	public static final String samples = "samples";
@@ -14,16 +14,16 @@ public class AbstractSoundSystem extends GameClass {
 	}
 
 	public int getOffset() {
-		return (int) fields.get(offset).getValue(reference);
+		return (int) getField(offset).getValue(reference);
 	}
 
 	public int[] getSamples() {
-		return (int[]) fields.get(samples).getValue(reference);
+		return (int[]) getField(samples).getValue(reference);
 	}
 
 	public TaskDataProvider getTaskDataProvider() {
 		return new TaskDataProvider(
-				fields.get(soundTaskDataProvider).getValue(reference));
+				getField(soundTaskDataProvider).getValue(reference));
 	}
 
 }

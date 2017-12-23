@@ -10,7 +10,7 @@ public class Player extends Actor {
 	}
 
 	public String getName() {
-		return (String) fields.get(name).getValue(reference);
+		return (String) Hooks.selector.player.getField(name).getValue(reference);
 	}
 
 }

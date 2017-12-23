@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class231 extends GameClass{
+public class Class231 extends RSClass{
 	
 	public static final String vorbisIndex = "vorbisIndex";
 
@@ -11,7 +11,7 @@ public class Class231 extends GameClass{
 	}
 	
 	public IndexData getVorbisIndex() {
-		return new IndexData(fields.get(vorbisIndex).getValue(reference));
+		return new IndexData(getField(vorbisIndex).getValue(reference));
 	}
 
 }

@@ -19,27 +19,27 @@ public class Class105 extends Node{
 	}
 	
 	public byte[] getPayload() {
-		return (byte[]) fields.get(payload).getValue(reference);
+		return (byte[]) getField(payload).getValue(reference);
 	}
 	
 	public int getPosition() {
-		return (int) fields.get(position).getValue(reference);
+		return (int) getField(position).getValue(reference);
 	}
 	
 	public int getBitPosition() {
-		return (int) fields.get(bitPosition).getValue(reference);
+		return (int) getField(bitPosition).getValue(reference);
 	}
 	
 	public int getBlockSize0() {
-		return (int) fields.get(blockSize0).getValue(reference);
+		return (int) getField(blockSize0).getValue(reference);
 	}
 	
 	public int getBlockSize1() {
-		return (int) fields.get(blockSize1).getValue(reference);
+		return (int) getField(blockSize1).getValue(reference);
 	}
 	
 	public CodeBook[] getCodeBooks() {
-		Object[] os = (Object[]) fields.get(codeBooks).getValue(reference);
+		Object[] os = (Object[]) getField(codeBooks).getValue(reference);
 		CodeBook[] codeBooks = new CodeBook[os.length];
  		int i = 0;
 		for (Object o : os) {
@@ -50,7 +50,7 @@ public class Class105 extends Node{
 	}
 	
 	public Floor1[] getFloors() {
-		Object[] os = (Object[]) fields.get(floors).getValue(reference);
+		Object[] os = (Object[]) getField(floors).getValue(reference);
 		Floor1[] floors = new Floor1[os.length];
  		int i = 0;
 		for (Object o : os) {
@@ -61,7 +61,7 @@ public class Class105 extends Node{
 	}
 	
 	public Residue[] getResidues() {
-		Object[] os = (Object[]) fields.get(residues).getValue(reference);
+		Object[] os = (Object[]) getField(residues).getValue(reference);
 		Residue[] residues = new Residue[os.length];
  		int i = 0;
 		for (Object o : os) {
@@ -72,7 +72,7 @@ public class Class105 extends Node{
 	}
 	
 	public Mapping[] getMappings() {
-		Object[] os = (Object[]) fields.get(mappings).getValue(reference);
+		Object[] os = (Object[]) getField(mappings).getValue(reference);
 		Mapping[] mappings = new Mapping[os.length];
  		int i = 0;
 		for (Object o : os) {
@@ -83,11 +83,11 @@ public class Class105 extends Node{
 	}
 	
 	public boolean[] getModeBlockFlags() {
-		return (boolean[]) fields.get(modeBlockFlags).getValue(reference);
+		return (boolean[]) getField(modeBlockFlags).getValue(reference);
 	}
 	
 	public int[] getModeMappings() {
-		return (int[]) fields.get(modeMappings).getValue(reference);
+		return (int[]) getField(modeMappings).getValue(reference);
 	}
 
 }

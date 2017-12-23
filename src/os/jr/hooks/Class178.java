@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class178 extends GameClass{
+public class Class178 extends RSClass{
 	
 	public static final String state = "state";
 
@@ -11,7 +11,7 @@ public class Class178 extends GameClass{
 	}
 	
 	public DState getState() {
-		return new DState(fields.get(state).getValue(reference));
+		return new DState(getField(state).getValue(reference));
 	}
 
 }

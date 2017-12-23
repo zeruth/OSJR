@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class299 extends GameClass{
+public class Class299 extends RSClass{
 	
 	public static final String offsetsY = "offsetsY";
 
@@ -11,7 +11,7 @@ public class Class299 extends GameClass{
 	}
 	
 	public int[] getOffsetsY() {
-		return (int[]) fields.get(offsetsY).getValue(reference);
+		return (int[]) getField(offsetsY).getValue(reference);
 	}
 
 }

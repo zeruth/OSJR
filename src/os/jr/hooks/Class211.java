@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class211 extends GameClass{
+public class Class211 extends RSClass{
 	
 	public static final String queue = "queue";
 
@@ -11,7 +11,7 @@ public class Class211 extends GameClass{
 	}
 	
 	public IterableDualNodeQueue getQueue() {
-		return new IterableDualNodeQueue(fields.get(queue).getValue(reference));
+		return new IterableDualNodeQueue(getField(queue).getValue(reference));
 	}
 
 }

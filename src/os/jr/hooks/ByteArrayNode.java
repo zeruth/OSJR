@@ -9,7 +9,7 @@ public class ByteArrayNode extends Node {
 	}
 
 	public byte[] getByteArray() {
-		return (byte[]) fields.get(byteArray).getValue(reference);
+		return (byte[]) getField(byteArray).getValue(reference);
 	}
 
 }

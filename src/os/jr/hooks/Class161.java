@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class161 extends GameClass{
+public class Class161 extends RSClass{
 	
 	public static final String indexScripts = "indexScripts";
 
@@ -11,7 +11,7 @@ public class Class161 extends GameClass{
 	}
 	
 	public IndexData getIndexScripts() {
-		return new IndexData(fields.get(indexScripts).getValue(reference));
+		return new IndexData(getField(indexScripts).getValue(reference));
 	}
 
 }

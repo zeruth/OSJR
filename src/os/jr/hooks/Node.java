@@ -1,14 +1,11 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Node extends GameClass {
+public class Node extends RSClass {
 
-	public Node() {
+	public Node(Object reference) {
 		super(Hooks.classNames.get("Node"));
 	}
 
-	public Node(String className) {
-		super(className);
-	}
 }

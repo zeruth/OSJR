@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class281 extends GameClass{
+public class Class281 extends RSClass{
 	
 	public static final String scriptLocalInts = "scriptLocalInts";
 
@@ -11,7 +11,7 @@ public class Class281 extends GameClass{
 	}
 	
 	public int[] getScriptLocalInts() {
-		return (int[]) fields.get(scriptLocalInts).getValue(reference);
+		return (int[]) getField(scriptLocalInts).getValue(reference);
 	}
 
 }

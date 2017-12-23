@@ -14,27 +14,27 @@ public class BoundingBox2D extends BoundingBox {
 	}
 
 	public int getColor() {
-		return (int) fields.get(color).getValue(reference);
+		return (int) getField(color).getValue(reference);
 	}
 
 	public int getPlane() {
-		return (int) fields.get(plane).getValue(reference);
+		return (int) getField(plane).getValue(reference);
 	}
 
 	public int getxMax() {
-		return (int) fields.get(xMax).getValue(reference);
+		return (int) getField(xMax).getValue(reference);
 	}
 
 	public int getxMin() {
-		return (int) fields.get(xMin).getValue(reference);
+		return (int) getField(xMin).getValue(reference);
 	}
 
 	public int getyMax() {
-		return (int) fields.get(yMax).getValue(reference);
+		return (int) getField(yMax).getValue(reference);
 	}
 
 	public int getyMin() {
-		return (int) fields.get(yMin).getValue(reference);
+		return (int) getField(yMin).getValue(reference);
 	}
 
 }

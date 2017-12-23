@@ -9,7 +9,7 @@ public abstract class AbstractIntegerNode0 extends Node {
 	}
 
 	public int getInt1() {
-		return (int) fields.get(int1).getValue(reference);
+		return (int) getField(int1).getValue(reference);
 	}
 
 }

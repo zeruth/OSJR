@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class160 extends GameClass{
+public class Class160 extends RSClass{
 	
 	public static final String cameraPitch = "cameraPitch";
 
@@ -11,7 +11,7 @@ public class Class160 extends GameClass{
 	}
 	
 	public int getCameraPitch() {
-		return (int) fields.get(cameraPitch).getValue(reference);
+		return (int) getField(cameraPitch).getValue(reference);
 	}
 
 }

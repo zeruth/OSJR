@@ -2,9 +2,9 @@ package os.jr.hooks;
 
 import java.io.File;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class157 extends GameClass{
+public class Class157 extends RSClass{
 	
 	public static final String jagexClDat = "jagexClDat";
 	public static final String idxCount = "idxCount";
@@ -19,27 +19,27 @@ public class Class157 extends GameClass{
 	}
 	
 	public File getJagexClDat() {
-		return (File) fields.get(jagexClDat).getValue(reference);
+		return (File) getField(jagexClDat).getValue(reference);
 	}
 
 	public int getIdxCount() {
-		return (int) fields.get(idxCount).getValue(reference);
+		return (int) getField(idxCount).getValue(reference);
 	}
 	
 	public CacheFile getRandomDat() {
-		return new CacheFile(fields.get(randomDat).getValue(reference));
+		return new CacheFile(getField(randomDat).getValue(reference));
 	}
 	
 	public CacheFile getDat2File() {
-		return new CacheFile(fields.get(dat2File).getValue(reference));
+		return new CacheFile(getField(dat2File).getValue(reference));
 	}
 	
 	public CacheFile getIdx255File() {
-		return new CacheFile(fields.get(idx255File).getValue(reference));
+		return new CacheFile(getField(idx255File).getValue(reference));
 	}
 	
 	public CacheFile[] getIdxFiles() {
-		Object[] os = (Object[]) fields.get(idxFiles).getValue(reference);
+		Object[] os = (Object[]) getField(idxFiles).getValue(reference);
 		CacheFile[] idxFiles = new CacheFile[os.length];
 		int i = 0;
 		for (Object o : os) {
@@ -50,6 +50,6 @@ public class Class157 extends GameClass{
 	}
 	
 	public String getOsNameLC() {
-		return (String) fields.get(osNameLC).getValue(reference);
+		return (String) getField(osNameLC).getValue(reference);
 	}
 }

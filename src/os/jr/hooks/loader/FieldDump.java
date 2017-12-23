@@ -3,7 +3,7 @@ package os.jr.hooks.loader;
 import java.lang.reflect.Field;
 
 import os.jr.game.RSGame;
-import os.jr.utils.Utils;
+import os.jr.hooks.Hooks;
 
 public class FieldDump {
 
@@ -17,30 +17,24 @@ public class FieldDump {
 	}
 
 	public Object getValue(Object reference) {
-		if (reference==null) {
-			reference = RSGame.rootReference;
-		}
 		try {
-			Object o;
+			Class<?> c = RSGame.classLoader.loadClass(Hooks.classNames.get(className));
+			Field f = c.getDeclaredField(fieldName);
+			f.setAccessible(true);
 			if (multiplier != null) {
-				Field f = RSGame.classLoader.loadClass(Utils.getClassbyName(className).obfuscatedName)
-						.getDeclaredField(fieldName);
-				f.setAccessible(true);
-				o = ((int) f.get(reference)) * multiplier.intValue();
+				return (int) f.get(reference) * multiplier.intValue();
 			} else {
-				Field f = RSGame.classLoader.loadClass(Utils.getClassbyName(className).obfuscatedName)
-						.getDeclaredField(fieldName);
-				f.setAccessible(true);
-				o = f.get(reference);
+				return f.get(reference);
 			}
-			return o;
-		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException
-				| ClassNotFoundException e) {
-			System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
-			System.out.println("Running without hooks.");
-			RSGame.outdated = true;
+		} catch (ClassNotFoundException | NoSuchFieldException | SecurityException | IllegalArgumentException
+				| IllegalAccessException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (NullPointerException e) {
+			System.out.println("Null field. This shouldn't happen ever.");
+			System.out.println(className+":"+refactoredName);
 		}
 		return null;
+
 	}
 }

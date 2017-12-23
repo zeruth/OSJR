@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class192 extends GameClass{
+public class Class192 extends RSClass{
 	
 	public static final String clanChatCount = "clanChatCount";
 	public static final String listFetcher = "listFetcher";
@@ -12,10 +12,10 @@ public class Class192 extends GameClass{
 	}
 	
 	public int getClanChatCount() {
-		return (int) fields.get(clanChatCount).getValue(reference);
+		return (int) getField(clanChatCount).getValue(reference);
 	}
 	
 	public UrlRequest getListFetcher() {
-		return new UrlRequest(fields.get(clanChatCount).getValue(reference));
+		return new UrlRequest(getField(clanChatCount).getValue(reference));
 	}
 }

@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class276 extends GameClass{
+public class Class276 extends RSClass{
 	
 	public static final String huffman = "huffman";
 
@@ -11,7 +11,7 @@ public class Class276 extends GameClass{
 	}
 	
 	public Huffman getHuffman() {
-		return new Huffman(fields.get(huffman).getValue(reference));
+		return new Huffman(getField(huffman).getValue(reference));
 	}
 
 }

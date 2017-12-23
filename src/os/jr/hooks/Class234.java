@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class234 extends GameClass{
+public class Class234 extends RSClass{
 	
 	public static final String runeSprites = "runeSprites";
 
@@ -11,7 +11,7 @@ public class Class234 extends GameClass{
 	}
 	
 	public IndexedSprite[] getRuneSprites() {
-		Object[] os = (Object[]) fields.get(runeSprites).getValue(reference);
+		Object[] os = (Object[]) getField(runeSprites).getValue(reference);
 		IndexedSprite[] runeSprites = new IndexedSprite[os.length];
 		int i = 0;
 		for (Object o : os) {

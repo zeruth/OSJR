@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class249 extends GameClass{
+public class Class249 extends RSClass{
 	
 	public static final String NetCache_socket = "NetCache_socket";
 	public static final String NetCache_pendingPriorityWrites = "NetCache_pendingPriorityWrites";
@@ -23,51 +23,51 @@ public class Class249 extends GameClass{
 	}
 	
 	public Class159 getNetCacheSocket() {
-		return new Class159(fields.get(NetCache_socket).getValue(reference));
+		return new Class159(getField(NetCache_socket).getValue(reference));
 	}
 	
 	public HashTable getNetCache_pendingPriorityWrites() {
-		return new HashTable(fields.get(NetCache_pendingPriorityWrites).getValue(reference));
+		return new HashTable(getField(NetCache_pendingPriorityWrites).getValue(reference));
 	}
 	
 	public int getNetCache_pendingPriorityWritesCount() {
-		return (int) fields.get(NetCache_pendingPriorityWritesCount).getValue(reference);
+		return (int) getField(NetCache_pendingPriorityWritesCount).getValue(reference);
 	}
 	
 	public int getNetCache_pendingPriorityResponses() {
-		return (int) fields.get(NetCache_pendingPriorityResponses).getValue(reference);
+		return (int) getField(NetCache_pendingPriorityResponses).getValue(reference);
 	}
 	
 	public int getNetCache_pendingPriorityResponsesCount() {
-		return (int) fields.get(NetCache_pendingPriorityResponsesCount).getValue(reference);
+		return (int) getField(NetCache_pendingPriorityResponsesCount).getValue(reference);
 	}
 	
 	public Node2LinkedList getNetCache_pendingWritesQueue() {
-		return new Node2LinkedList(fields.get(NetCache_pendingWritesQueue).getValue(reference)); 
+		return new Node2LinkedList(getField(NetCache_pendingWritesQueue).getValue(reference)); 
 	}
 	
 	public HashTable getNetCache_pendingWrites() {
-		return new HashTable(fields.get(NetCache_pendingWrites).getValue(reference)); 
+		return new HashTable(getField(NetCache_pendingWrites).getValue(reference)); 
 	}
 	
 	public int NetCache_pendingWritesCount() {
-		return (int) fields.get(NetCache_pendingWritesCount).getValue(reference);
+		return (int) getField(NetCache_pendingWritesCount).getValue(reference);
 	}
 
 	public HashTable getNetCache_pendingResponses() {
-		return new HashTable(fields.get(NetCache_pendingResponses).getValue(reference)); 
+		return new HashTable(getField(NetCache_pendingResponses).getValue(reference)); 
 	}
 	
 	public int NetCache_pendingResponsesCount() {
-		return (int) fields.get(NetCache_pendingResponsesCount).getValue(reference);
+		return (int) getField(NetCache_pendingResponsesCount).getValue(reference);
 	}
 	
 	public Buffer getNetCache_responseHeaderBuffer() {
-		return new Buffer(fields.get(NetCache_pendingResponses).getValue(reference)); 
+		return new Buffer(getField(NetCache_pendingResponses).getValue(reference)); 
 	}
 	
 	public IndexData[] getNetCache_indexCaches() {
-		Object[] os = (Object[]) fields.get(NetCache_indexCaches).getValue(reference);
+		Object[] os = (Object[]) getField(NetCache_indexCaches).getValue(reference);
 		IndexData[] NetCache_indexCaches = new IndexData[os.length];
 		int i = 0;
 		for (Object o : os) {

@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class175 extends GameClass{
+public class Class175 extends RSClass{
 	
 	public static final String socket = "socket";
 
@@ -11,7 +11,7 @@ public class Class175 extends GameClass{
 	}
 	
 	public Task getSocket() {
-		return new Task(fields.get(socket).getValue(reference));
+		return new Task(getField(socket).getValue(reference));
 	}
 
 }

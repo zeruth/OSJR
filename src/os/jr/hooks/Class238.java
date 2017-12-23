@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class238 extends GameClass{
+public class Class238 extends RSClass{
 	
 	public static final String ItemDefinition_modelIndexCache_ = "ItemDefinition_modelIndexCache";
 
@@ -11,7 +11,7 @@ public class Class238 extends GameClass{
 	}
 	
 	public IndexDataBase ItemDefinition_modelIndexCache() {
-		return new IndexDataBase(fields.get(ItemDefinition_modelIndexCache_).getValue(reference));
+		return new IndexDataBase(getField(ItemDefinition_modelIndexCache_).getValue(reference));
 	}
 
 }

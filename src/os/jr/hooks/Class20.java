@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class20 extends GameClass{
+public class Class20 extends RSClass{
 	
 	public static final String indexTrack2 = "indexTrack2";
 
@@ -11,7 +11,7 @@ public class Class20 extends GameClass{
 	}
 	
 	public IndexData getIndexTrack2() {
-		return new IndexData(fields.get(indexTrack2).getValue(reference));
+		return new IndexData(getField(indexTrack2).getValue(reference));
 	}
 
 }

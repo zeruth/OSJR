@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class101 extends GameClass{
+public class Class101 extends RSClass{
 
 	public Class101() {
 		super(Hooks.classNames.get("class101"));

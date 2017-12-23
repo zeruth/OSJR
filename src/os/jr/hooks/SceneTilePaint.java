@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class SceneTilePaint extends GameClass {
+public class SceneTilePaint extends RSClass {
 
 	public SceneTilePaint() {
 		super(Hooks.classNames.get("SceneTilePaint"));

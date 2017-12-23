@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public abstract class AbstractByteBuffer extends GameClass {
+public abstract class AbstractByteBuffer extends RSClass {
 
 	public static final String directBufferUnavailable = "directBufferUnavailable";
 
@@ -11,7 +11,7 @@ public abstract class AbstractByteBuffer extends GameClass {
 	}
 
 	public boolean getDirectBufferUnavailable() {
-		return (boolean) fields.get(directBufferUnavailable).getValue(reference);
+		return (boolean) getField(directBufferUnavailable).getValue(reference);
 	}
 
 }

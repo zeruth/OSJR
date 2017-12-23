@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class86 extends GameClass{
+public class Class86 extends RSClass{
 	
 	public static final String indexCache4 = "indexCache4";
 
@@ -11,7 +11,7 @@ public class Class86 extends GameClass{
 	}
 	
 	public IndexData getIndexCache4() {
-		return new IndexData(fields.get(indexCache4).getValue(reference));
+		return new IndexData(getField(indexCache4).getValue(reference));
 	}
 
 }

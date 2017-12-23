@@ -3,14 +3,14 @@ package os.jr.hooks;
 import java.util.HashMap;
 
 import os.jr.game.RSGame;
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
 public class Hooks {
 
 	public static Hooks selector;
 	public static HashMap<String, String> classNames = new HashMap<String, String>();
 	public static HashMap<String, String> refactoredClassNames = new HashMap<String, String>();
-	public static GameClass[] collection = new GameClass[400];
+	public static RSClass[] collection = new RSClass[400];
 
 	public static void init() {
 		try {
@@ -29,7 +29,7 @@ public class Hooks {
 	public AbstractIntegerNode0 abstractIntegerNode0 = new AbstractIntegerNode0() {
 	};
 	public AbstractSoundSystem abstractSoundSystem = new AbstractSoundSystem(null);
-	public Actor actor = new Actor();
+	public Actor actor = new Actor(null);
 	public Area area = new Area(null);
 	public AttackOption attackOption = new AttackOption(null);
 	public AudioEnvelope audioEnvelope = new AudioEnvelope(null);
@@ -179,13 +179,13 @@ public class Hooks {
 	public ClientPacket clientPacket = new ClientPacket();
 	public CodeBook codeBook = new CodeBook(null);
 	public CollisionData collisionData = new CollisionData(null);
-	public CombatInfo1 combatInfo1 = new CombatInfo1();
-	public CombatInfo2 combatInfo2 = new CombatInfo2();
+	public CombatInfo1 combatInfo1 = new CombatInfo1(null);
+	public CombatInfo2 combatInfo2 = new CombatInfo2(null);
 	public CombatInfoList combatInfoList = new CombatInfoList(null);
 	public CombatInfoListHolder combatInfoListHolder = new CombatInfoListHolder(null);
 	public ContextMenuRow contextMenuRow = new ContextMenuRow();
 	public Coordinates coordinates = new Coordinates();
-	public DecorativeObject decorativeObject = new DecorativeObject();
+	public DecorativeObject decorativeObject = new DecorativeObject(null);
 	public Deque deque = new Deque(null);
 	public DirectByteBuffer directByteBuffer = new DirectByteBuffer();
 	public DState dState = new DState(null);
@@ -198,6 +198,7 @@ public class Hooks {
 	public FileSystem fileSystem = new FileSystem();
 	public Floor1 floor1 = new Floor1(null);
 	public FloorUnderlayDefinition floorUnderlayDefinition = new FloorUnderlayDefinition();
+	public Font font = new Font();
 	public FontName fontName = new FontName();
 	public Fonts fonts = new Fonts();
 	public FontTypeFace fontTypeFace = new FontTypeFace();
@@ -234,10 +235,13 @@ public class Hooks {
 	public ItemLayer itemLayer = new ItemLayer();
 	public IterableDualNodeQueue iterableDualNodeQueue = new IterableDualNodeQueue(null);
 	public IterableHashTable iterableHashTable = new IterableHashTable(null);
+	public ITextureLoader iTextureLoader = new ITextureLoader(null);
 	public JagexGame jagexGame = new JagexGame();
 	public JagexLoginType jagexLoginType = new JagexLoginType();
 	public KeyFocusListener keyFocusListener = new KeyFocusListener();
 	public KitDefinition kitDefinition = new KitDefinition();
+	public Link link = new Link();
+	public LinkDeque linkDeque = new LinkDeque();
 	public LoginPacket loginPacket = new LoginPacket();
 	public MachineInfo machineInfo = new MachineInfo(null);
 	public MainBufferProvider mainBufferProvider = new MainBufferProvider();
@@ -248,10 +252,11 @@ public class Hooks {
 	public ModelData modelData = new ModelData();
 	public MouseInput mouseInput = new MouseInput();
 	public MouseRecorder mouseRecorder = new MouseRecorder(null);
+	public MouseWheel mouseWheel = new MouseWheel(null);
 	public MouseWheelHandler mouseWheelHandler = new MouseWheelHandler();
 	public NanoTimer nanoTimer = new NanoTimer();
 	public NetWriter netWriter = new NetWriter();
-	public Node node = new Node();
+	public Node node = new Node(null);
 	public Node2LinkedList node2LinkedList = new Node2LinkedList(null);
 	public NodeCache nodeCache = new NodeCache(null);
 	public NPC npc = new NPC(null);
@@ -260,20 +265,23 @@ public class Hooks {
 	public ObjectComposition objectComposition = new ObjectComposition();
 	public Occluder occluder = new Occluder();
 	public Overlay overlay = new Overlay();
+	public OwnWorldComparator ownWorldComparator = new OwnWorldComparator();
 	public PacketBuffer packetBuffer = new PacketBuffer();
 	public PacketNode packetNode = new PacketNode();
 	public Parameters parameters = new Parameters();
 	public PendingSpawn pendingSpawn = new PendingSpawn();
+	public Permission permission = new Permission();
 	public Player player = new Player(null);
 	public PlayerComposition playerComposition = new PlayerComposition();
 	public Preferences preferences = new Preferences(null);
 	public Projectile projectile = new Projectile();
 	public Rasterizer2D rasterizer2D = new Rasterizer2D();
 	public Region region = new Region(null);
-	public Renderable renderable = new Renderable();
+	public Renderable renderable = new Renderable(null);
 	public RenderOverview renderOverview = new RenderOverview(null);
 	public Residue residue = new Residue(null);
 	public RSCanvas rsCanvas = new RSCanvas();
+	public RSSocket rsSocket = new RSSocket();
 	public RunException runException = new RunException();
 	public ServerPacket serverPacket = new ServerPacket();
 	public SceneTileModel sceneTileModel = new SceneTileModel();
@@ -288,14 +296,19 @@ public class Hooks {
 	public SoundEffect soundEffect = new SoundEffect(null);
 	public SoundEffect3 soundEffect3 = new SoundEffect3(null);
 	public SoundTask soundTask = new SoundTask();
+	public SoundTaskDataProvider soundTaskDataProvider = new SoundTaskDataProvider();
 	public SourceDataSoundSystem sourceDataSoundSystem = new SourceDataSoundSystem();
 	public Spotanim spotanim = new Spotanim();
 	public SpritePixels spritePixels = new SpritePixels(null);
 	public Task task = new Task(null);
+	public TaskDataNode taskDataNode = new TaskDataNode(null);
+	public TaskDataProvider taskDataProvider = new TaskDataProvider(null);
 	public Texture texture = new Texture();
 	public TextureProvider textureProvider = new TextureProvider();
 	public Tile tile = new Tile();
+	public Timer timer = new Timer();
 	public TotalQuantityComparator totalQuantityComparator = new TotalQuantityComparator();
+	public Track1 track1 = new Track1();
 	public UnitPriceComparator unitPriceComparator = new UnitPriceComparator();
 	public UrlRequest urlRequest = new UrlRequest(null);
 	public UrlRequester urlRequester = new UrlRequester();

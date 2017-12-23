@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class7 extends GameClass{
+public class Class7 extends RSClass{
 	
 	public static final String drawBoundingBoxes3D = "drawBoundingBoxes3D";
 	public static final String drawBoundingBoxes2D = "drawBoundingBoxes2D";
@@ -16,27 +16,27 @@ public class Class7 extends GameClass{
 	}
 	
 	public boolean drawBoundingBoxes3D() {
-		return (boolean) fields.get(drawBoundingBoxes3D).getValue(reference);
+		return (boolean) getField(drawBoundingBoxes3D).getValue(reference);
 	}
 	
 	public boolean drawBoundingBoxes2D() {
-		return (boolean) fields.get(drawBoundingBoxes2D).getValue(reference);
+		return (boolean) getField(drawBoundingBoxes2D).getValue(reference);
 	}
 	
 	public boolean drawObjectGeometry2D() {
-		return (boolean) fields.get(drawObjectGeometry2D).getValue(reference);
+		return (boolean) getField(drawObjectGeometry2D).getValue(reference);
 	}
 	
 	public Class11 getBoundingBox3DDrawMode() {
-		return new Class11(fields.get(boundingBox3DDrawMode).getValue(reference));
+		return new Class11(getField(boundingBox3DDrawMode).getValue(reference));
 	}
 	
 	public CombatInfoList getBoundingBoxes() {
-		return new CombatInfoList(fields.get(boundingBoxes).getValue(reference));
+		return new CombatInfoList(getField(boundingBoxes).getValue(reference));
 	}
 	
 	public IndexedSprite[] getSlArrowSprites() {
-		Object[] os = (Object[]) fields.get(slArrowSprites).getValue(reference);
+		Object[] os = (Object[]) getField(slArrowSprites).getValue(reference);
 		IndexedSprite[] slArrowSprites = new IndexedSprite[os.length];
 		int i = 0;
 		for (Object o : os) {

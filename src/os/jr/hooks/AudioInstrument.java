@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class AudioInstrument extends GameClass {
+public class AudioInstrument extends RSClass {
 
 	public static final String samples = "samples";
 	public static final String NOISE = "NOISE";
@@ -34,99 +34,99 @@ public class AudioInstrument extends GameClass {
 	}
 
 	public int getDelayDecay() {
-		return (int) fields.get(delayDecay).getValue(reference);
+		return (int) getField(delayDecay).getValue(reference);
 	}
 
 	public int[] getDelays() {
-		return (int[]) fields.get(delays).getValue(reference);
+		return (int[]) getField(delays).getValue(reference);
 	}
 
 	public int getDelayTime() {
-		return (int) fields.get(delayTime).getValue(reference);
+		return (int) getField(delayTime).getValue(reference);
 	}
 
 	public int getDuration() {
-		return (int) fields.get(duration).getValue(reference);
+		return (int) getField(duration).getValue(reference);
 	}
 
 	public SoundEffect3 getFilter() {
-		return new SoundEffect3(fields.get(filter).getValue(reference));
+		return new SoundEffect3(getField(filter).getValue(reference));
 	}
 
 	public AudioEnvelope getFilterEnvelope() {
-		return new AudioEnvelope(fields.get(filterEnvelope).getValue(reference));
+		return new AudioEnvelope(getField(filterEnvelope).getValue(reference));
 	}
 
 	public int[] getNOISE() {
-		return (int[]) fields.get(NOISE).getValue(reference);
+		return (int[]) getField(NOISE).getValue(reference);
 	}
 
 	public int getOffset() {
-		return (int) fields.get(offset).getValue(reference);
+		return (int) getField(offset).getValue(reference);
 	}
 
 	public int[] getOscillatorDelays() {
-		return (int[]) fields.get(oscillatorDelays).getValue(reference);
+		return (int[]) getField(oscillatorDelays).getValue(reference);
 	}
 
 	public int[] getOscillatorPitch() {
-		return (int[]) fields.get(oscillatorPitch).getValue(reference);
+		return (int[]) getField(oscillatorPitch).getValue(reference);
 	}
 
 	public int[] getOscillatorVolume() {
-		return (int[]) fields.get(oscillatorVolume).getValue(reference);
+		return (int[]) getField(oscillatorVolume).getValue(reference);
 	}
 
 	public int[] getPhases() {
-		return (int[]) fields.get(phases).getValue(reference);
+		return (int[]) getField(phases).getValue(reference);
 	}
 
 	public AudioEnvelope getPitch() {
-		return new AudioEnvelope(fields.get(pitch).getValue(reference));
+		return new AudioEnvelope(getField(pitch).getValue(reference));
 	}
 
 	public int[] getPitchBaseSteps() {
-		return (int[]) fields.get(pitchBaseSteps).getValue(reference);
+		return (int[]) getField(pitchBaseSteps).getValue(reference);
 	}
 
 	public AudioEnvelope getPitchModifier() {
-		return new AudioEnvelope(fields.get(pitchModifier).getValue(reference));
+		return new AudioEnvelope(getField(pitchModifier).getValue(reference));
 	}
 
 	public AudioEnvelope getPitchModifierAmplitude() {
-		return new AudioEnvelope(fields.get(pitchModifierAmplitude).getValue(reference));
+		return new AudioEnvelope(getField(pitchModifierAmplitude).getValue(reference));
 	}
 
 	public int[] getPitchSteps() {
-		return (int[]) fields.get(pitchSteps).getValue(reference);
+		return (int[]) getField(pitchSteps).getValue(reference);
 	}
 
 	public AudioEnvelope getRelease() {
-		return new AudioEnvelope(fields.get(release).getValue(reference));
+		return new AudioEnvelope(getField(release).getValue(reference));
 	}
 
 	public int[] getSamples() {
-		return (int[]) fields.get(samples).getValue(reference);
+		return (int[]) getField(samples).getValue(reference);
 	}
 
 	public int[] getSINE() {
-		return (int[]) fields.get(SINE).getValue(reference);
+		return (int[]) getField(SINE).getValue(reference);
 	}
 
 	public AudioEnvelope getVolume() {
-		return new AudioEnvelope(fields.get(volume).getValue(reference));
+		return new AudioEnvelope(getField(volume).getValue(reference));
 	}
 
 	public AudioEnvelope getVolumeMultiplier() {
-		return new AudioEnvelope(fields.get(volumeMultiplier).getValue(reference));
+		return new AudioEnvelope(getField(volumeMultiplier).getValue(reference));
 	}
 
 	public AudioEnvelope getVolumeMultiplierAmplitude() {
 		return new AudioEnvelope(
-				fields.get(volumeMultiplierAmplitude).getValue(reference));
+				getField(volumeMultiplierAmplitude).getValue(reference));
 	}
 
 	public int[] getVolumeSteps() {
-		return (int[]) fields.get(volumeSteps).getValue(reference);
+		return (int[]) getField(volumeSteps).getValue(reference);
 	}
 }

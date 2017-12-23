@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Bounds extends GameClass {
+public class Bounds extends RSClass {
 
 	public static String spritePixels = "spritePixels";
 
@@ -11,7 +11,7 @@ public class Bounds extends GameClass {
 	}
 
 	public byte[][] getSpritePixels() {
-		return (byte[][]) fields.get(spritePixels).getValue(reference);
+		return (byte[][]) getField(spritePixels).getValue(reference);
 	}
 
 }

@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class61 extends GameClass{
+public class Class61 extends RSClass{
 	
 	public static final String renderOverview = "renderOverview";
 	public static final String tileHeights = "renderOverview";
@@ -13,15 +13,15 @@ public class Class61 extends GameClass{
 	}
 	
 	public RenderOverview getRenderOverview() {
-		return new RenderOverview(fields.get(renderOverview).getValue(reference));
+		return new RenderOverview(getField(renderOverview).getValue(reference));
 	}
 	
 	public int[][][] getTileHeights() {
-		return (int[][][]) fields.get(tileHeights).getValue(reference);
+		return (int[][][]) getField(tileHeights).getValue(reference);
 	}
 	
 	public byte[][][] getTileSettings() {
-		return (byte[][][]) fields.get(tileSettings).getValue(reference);
+		return (byte[][][]) getField(tileSettings).getValue(reference);
 	}
 
 }

@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class64 extends GameClass{
+public class Class64 extends RSClass{
 	
 	public static final String mapRegions = "mapRegions";
 
@@ -11,7 +11,7 @@ public class Class64 extends GameClass{
 	}
 	
 	public int[] getMapRegions() {
-		return (int[]) fields.get(mapRegions).getValue(reference);
+		return (int[]) getField(mapRegions).getValue(reference);
 	}
 
 }

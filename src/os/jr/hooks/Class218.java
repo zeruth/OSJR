@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class218 extends GameClass{
+public class Class218 extends RSClass{
 	
 	public static final String priority = "priority";
 
@@ -11,7 +11,7 @@ public class Class218 extends GameClass{
 	}
 	
 	public int getPriority() {
-		return (int) fields.get(priority).getValue(reference);
+		return (int) getField(priority).getValue(reference);
 	}
 
 }

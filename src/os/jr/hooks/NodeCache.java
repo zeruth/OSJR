@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class NodeCache extends GameClass {
+public class NodeCache extends RSClass {
 
 	public NodeCache(Object reference) {
 		super(Hooks.classNames.get("NodeCache"));

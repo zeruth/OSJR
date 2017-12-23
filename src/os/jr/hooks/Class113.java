@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class113 extends GameClass{
+public class Class113 extends RSClass{
 	
 	public static final String validInterfaces = "validInterfaces";
 	public static final String cacheLocations = "cacheLocations";
@@ -12,11 +12,11 @@ public class Class113 extends GameClass{
 	}
 	
 	public boolean[] getValidInterfaces() {
-		return (boolean[]) fields.get(validInterfaces).getValue(reference);
+		return (boolean[]) getField(validInterfaces).getValue(reference);
 	}
 	
 	public String[] getCacheLocations() {
-		return (String[]) fields.get(validInterfaces).getValue(reference);
+		return (String[]) getField(validInterfaces).getValue(reference);
 	}
 
 }

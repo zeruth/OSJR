@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class3 extends GameClass{
+public class Class3 extends RSClass{
 	
 	public static final String rssocket = "rssocket";
 	public static final String indexTextures = "indexTextures";
@@ -12,11 +12,11 @@ public class Class3 extends GameClass{
 	}
 	
 	public Class159 getRssocket() {
-		return new Class159(fields.get(rssocket).getValue(reference));
+		return new Class159(getField(rssocket).getValue(reference));
 	}
 	
 	public Class159 getIndexTextures() {
-		return new Class159(fields.get(indexTextures).getValue(reference));
+		return new Class159(getField(indexTextures).getValue(reference));
 	}
 
 }

@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class277 extends GameClass{
+public class Class277 extends RSClass{
 	
 	public static final String cp1252AsciiExtension = "cp1252AsciiExtension";
 
@@ -11,6 +11,6 @@ public class Class277 extends GameClass{
 	}
 
 	public char[] cp1252AsciiExtension() {
-		return (char[]) fields.get(cp1252AsciiExtension).getValue(reference);
+		return (char[]) getField(cp1252AsciiExtension).getValue(reference);
 	}
 }

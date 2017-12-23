@@ -37,20 +37,15 @@ public class HooksLoader {
 			}
 			Hooks.init();
 			for (HookDump hook : hooks) {
-				for (FieldDump field : hook.rsFields) {
-					totalFields++;
-					try {
-						GameClass gc = Utils.getClassbyName(field.className);
-						if (gc != null) {
-							gc.fields.put(field.refactoredName, field);
-								totalFieldsAddedToClass++;
-						}
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-
+				RSClass c = Utils.getClassbyName(hook.rsClass.refactoredName);
+				if (c!=null) {
+					c.fields = hook.rsFields;
+					totalFieldsAddedToClass+=hook.rsFields.length+1;
 				}
+				totalFields+=hook.rsFields.length+1;
+
 			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

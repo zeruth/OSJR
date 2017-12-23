@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class278 extends GameClass{
+public class Class278 extends RSClass{
 	
 	public static final String titlemuteSprite = "titlemuteSprite";
 
@@ -11,7 +11,7 @@ public class Class278 extends GameClass{
 	}
 	
 	public IndexedSprite[] getTitlemuteSprite() {
-		Object[] os = (Object[]) fields.get(titlemuteSprite).getValue(reference);
+		Object[] os = (Object[]) getField(titlemuteSprite).getValue(reference);
 		IndexedSprite[] titlemuteSprite = new IndexedSprite[os.length];
 		int i = 0;
 		for (Object o : os) {

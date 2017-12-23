@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class48 extends GameClass{
+public class Class48 extends RSClass{
 	
 	public static final String platformInfo = "platformInfo";
 	public static final String region = "region";
@@ -12,11 +12,11 @@ public class Class48 extends GameClass{
 	}
 	
 	public MachineInfo getPlatformInfo() {
-		return new MachineInfo(fields.get(platformInfo).getValue(reference));
+		return new MachineInfo(getField(platformInfo).getValue(reference));
 	}
 	
 	public Region getRegion() {
-		return new Region(fields.get(region).getValue(reference));
+		return new Region(getField(region).getValue(reference));
 	}
 
 }

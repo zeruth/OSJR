@@ -2,9 +2,9 @@ package os.jr.hooks;
 
 import java.util.HashMap;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Client extends GameClass {
+public class Client extends RSClass {
 
 	public static final String widgetCount = "widgetCount";
 	public static final String isResized = "isResized";
@@ -111,11 +111,11 @@ public class Client extends GameClass {
 	}
 
 	public boolean displayFps() {
-		return (boolean) Hooks.selector.client.fields.get(displayFps).getValue(reference);
+		return (boolean) Hooks.selector.client.getField(displayFps).getValue(reference);
 	}
 
 	public SoundEffect[] getAudioEffects() {
-		Object[] os = (Object[]) Hooks.selector.client.fields.get(audioEffects).getValue(reference);
+		Object[] os = (Object[]) Hooks.selector.client.getField(audioEffects).getValue(reference);
 		SoundEffect[] audioEffects = new SoundEffect[os.length];
 		int count = 0;
 		for (Object o : os) {
@@ -126,15 +126,15 @@ public class Client extends GameClass {
 	}
 
 	public int getBaseX() {
-		return (int) Hooks.selector.client.fields.get(baseX).getValue(reference);
+		return (int) Hooks.selector.client.getField(baseX).getValue(reference);
 	}
 
 	public int getBaseY() {
-		return (int) Hooks.selector.client.fields.get(baseY).getValue(reference);
+		return (int) Hooks.selector.client.getField(baseY).getValue(reference);
 	}
 
 	public NPC[] getCachedNPCs() {
-		Object[] os = (Object[]) Hooks.selector.client.fields.get(friends).getValue(reference);
+		Object[] os = (Object[]) Hooks.selector.client.getField(cachedNPCs).getValue(reference);
 		NPC[] cachedNPCs = new NPC[os.length];
 		int count = 0;
 		for (Object o : os) {
@@ -145,7 +145,7 @@ public class Client extends GameClass {
 	}
 
 	public Player[] getCachedPlayers() {
-		Object[] os = (Object[]) Hooks.selector.client.fields.get(friends).getValue(reference);
+		Object[] os = (Object[]) Hooks.selector.client.getField(cachedPlayers).getValue(reference);
 		Player[] cachedPlayers = new Player[os.length];
 		int count = 0;
 		for (Object o : os) {
@@ -156,19 +156,19 @@ public class Client extends GameClass {
 	}
 
 	public int getChatCycle() {
-		return (int) Hooks.selector.client.fields.get(chatCycle).getValue(reference);
+		return (int) Hooks.selector.client.getField(chatCycle).getValue(reference);
 	}
 
 	public String getClanChatName() {
-		return (String) Hooks.selector.client.fields.get(clanChatName).getValue(reference);
+		return (String) Hooks.selector.client.getField(clanChatName).getValue(reference);
 	}
 
 	public String getClanChatOwner() {
-		return (String) Hooks.selector.client.fields.get(clanChatOwner).getValue(reference);
+		return (String) Hooks.selector.client.getField(clanChatOwner).getValue(reference);
 	}
 
 	public CollisionData[] getCollisionMaps() {
-		Object[] os = (Object[]) Hooks.selector.client.fields.get(friends).getValue(reference);
+		Object[] os = (Object[]) Hooks.selector.client.getField(friends).getValue(reference);
 		CollisionData[] collisionMaps = new CollisionData[os.length];
 		int count = 0;
 		for (Object o : os) {
@@ -179,43 +179,43 @@ public class Client extends GameClass {
 	}
 
 	public HashTable getComponentTable() {
-		return new HashTable(Hooks.selector.client.fields.get(componentTable).getValue(reference));
+		return new HashTable(Hooks.selector.client.getField(componentTable).getValue(reference));
 	}
 
 	public int getCursorState() {
-		return (int) Hooks.selector.client.fields.get(cursorState).getValue(reference);
+		return (int) Hooks.selector.client.getField(cursorState).getValue(reference);
 	}
 
 	public int getCycleCounter() {
-		return (int) Hooks.selector.client.fields.get(cycleCntr).getValue(reference);
+		return (int) Hooks.selector.client.getField(cycleCntr).getValue(reference);
 	}
 
 	public int getDestinationX() {
-		return (int) Hooks.selector.client.fields.get(destinationX).getValue(reference);
+		return (int) Hooks.selector.client.getField(destinationX).getValue(reference);
 	}
 
 	public int getDestinationY() {
-		return (int) Hooks.selector.client.fields.get(destinationY).getValue(reference);
+		return (int) Hooks.selector.client.getField(destinationY).getValue(reference);
 	}
 
 	public int getEnergy() {
-		return (int) Hooks.selector.client.fields.get(energy).getValue(reference);
+		return (int) Hooks.selector.client.getField(energy).getValue(reference);
 	}
 
 	public int getFlags() {
-		return (int) Hooks.selector.client.fields.get(flags).getValue(reference);
+		return (int) Hooks.selector.client.getField(flags).getValue(reference);
 	}
 
 	public HashMap<?, ?> getFontsMap() {
-		return (HashMap<?, ?>) Hooks.selector.client.fields.get(fontsMap).getValue(reference);
+		return (HashMap<?, ?>) Hooks.selector.client.getField(fontsMap).getValue(reference);
 	}
 
 	public int getFriendCount() {
-		return (int) Hooks.selector.client.fields.get(friendCount).getValue(reference);
+		return (int) Hooks.selector.client.getField(friendCount).getValue(reference);
 	}
 
 	public Friend[] getFriends() {
-		Object[] os = (Object[]) Hooks.selector.client.fields.get(friends).getValue(reference);
+		Object[] os = (Object[]) Hooks.selector.client.getField(friends).getValue(reference);
 		Friend[] friends = new Friend[os.length];
 		int count = 0;
 		for (Object o : os) {
@@ -226,19 +226,19 @@ public class Client extends GameClass {
 	}
 
 	public int getGameCycle() {
-		return (int) Hooks.selector.client.fields.get(gameCycle).getValue(reference);
+		return (int) Hooks.selector.client.getField(gameCycle).getValue(reference);
 	}
 
 	public int getGameDrawingMode() {
-		return (int) Hooks.selector.client.fields.get(gameDrawingMode).getValue(reference);
+		return (int) Hooks.selector.client.getField(gameDrawingMode).getValue(reference);
 	}
 
 	public int getGameState() {
-		return (int) Hooks.selector.client.fields.get(gameState).getValue(reference);
+		return (int) Hooks.selector.client.getField(gameState).getValue(reference);
 	}
 
 	public GrandExchangeOffer[] getGrandExchangeOffers() {
-		Object[] os = (Object[]) Hooks.selector.client.fields.get(friends).getValue(reference);
+		Object[] os = (Object[]) Hooks.selector.client.getField(friends).getValue(reference);
 		GrandExchangeOffer[] grandExchangeOffers = new GrandExchangeOffer[os.length];
 		int count = 0;
 		for (Object o : os) {
@@ -249,51 +249,51 @@ public class Client extends GameClass {
 	}
 
 	public Deque getGraphicsObjectDeque() {
-		return new Deque(Hooks.selector.client.fields.get(graphicsObjectDeque).getValue(reference));
+		return new Deque(Hooks.selector.client.getField(graphicsObjectDeque).getValue(reference));
 	}
 
 	public Deque getGroundItemDeque() {
-		return new Deque(Hooks.selector.client.fields.get(groundItemDeque).getValue(reference));
+		return new Deque(Hooks.selector.client.getField(groundItemDeque).getValue(reference));
 	}
 
 	public int getHintArrowNpcTargetIdx() {
-		return (int) Hooks.selector.client.fields.get(hintArrowNpcTargetIdx).getValue(reference);
+		return (int) Hooks.selector.client.getField(hintArrowNpcTargetIdx).getValue(reference);
 	}
 
 	public int getHintArrowOffsetX() {
-		return (int) Hooks.selector.client.fields.get(hintArrowOffsetX).getValue(reference);
+		return (int) Hooks.selector.client.getField(hintArrowOffsetX).getValue(reference);
 	}
 
 	public int getHintArrowOffsetY() {
-		return (int) Hooks.selector.client.fields.get(hintArrowOffsetY).getValue(reference);
+		return (int) Hooks.selector.client.getField(hintArrowOffsetY).getValue(reference);
 	}
 
 	public int getHintArrowPlayerTargetIdx() {
-		return (int) Hooks.selector.client.fields.get(hintArrowPlayerTargetIdx).getValue(reference);
+		return (int) Hooks.selector.client.getField(hintArrowPlayerTargetIdx).getValue(reference);
 	}
 
 	public int getHintArrowTargetType() {
-		return (int) Hooks.selector.client.fields.get(hintArrowTargetType).getValue(reference);
+		return (int) Hooks.selector.client.getField(hintArrowTargetType).getValue(reference);
 	}
 
 	public int getHintArrowType() {
-		return (int) Hooks.selector.client.fields.get(hintArrowType).getValue(reference);
+		return (int) Hooks.selector.client.getField(hintArrowType).getValue(reference);
 	}
 
 	public int getHintArrowX() {
-		return (int) Hooks.selector.client.fields.get(hintArrowX).getValue(reference);
+		return (int) Hooks.selector.client.getField(hintArrowX).getValue(reference);
 	}
 
 	public int getHintArrowY() {
-		return (int) Hooks.selector.client.fields.get(hintArrowY).getValue(reference);
+		return (int) Hooks.selector.client.getField(hintArrowY).getValue(reference);
 	}
 
 	public int getIgnoreCount() {
-		return (int) Hooks.selector.client.fields.get(ignoreCount).getValue(reference);
+		return (int) Hooks.selector.client.getField(ignoreCount).getValue(reference);
 	}
 
 	public Ignore[] getIgnores() {
-		Object[] os = (Object[]) Hooks.selector.client.fields.get(ignores).getValue(reference);
+		Object[] os = (Object[]) Hooks.selector.client.getField(ignores).getValue(reference);
 		Ignore[] ignores = new Ignore[os.length];
 		int count = 0;
 		for (Object o : os) {
@@ -304,31 +304,31 @@ public class Client extends GameClass {
 	}
 
 	public int[] getInterfaceItemTriggers() {
-		return (int[]) Hooks.selector.client.fields.get(interfaceItemTriggers).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(interfaceItemTriggers).getValue(reference);
 	}
 
 	public int getItemSelectionState() {
-		return (int) Hooks.selector.client.fields.get(itemSelectionState).getValue(reference);
+		return (int) Hooks.selector.client.getField(itemSelectionState).getValue(reference);
 	}
 
 	public int getjs5State() {
-		return (int) Hooks.selector.client.fields.get(js5State).getValue(reference);
+		return (int) Hooks.selector.client.getField(js5State).getValue(reference);
 	}
 
 	public int getLanguageID() {
-		return (int) Hooks.selector.client.fields.get(languageId).getValue(reference);
+		return (int) Hooks.selector.client.getField(languageId).getValue(reference);
 	}
 
 	public String getLastSelectedItemName() {
-		return (String) Hooks.selector.client.fields.get(lastSelectedItemName).getValue(reference);
+		return (String) Hooks.selector.client.getField(lastSelectedItemName).getValue(reference);
 	}
 
 	public int getLoadingStage() {
-		return (int) Hooks.selector.client.fields.get(loadingStage).getValue(reference);
+		return (int) Hooks.selector.client.getField(loadingStage).getValue(reference);
 	}
 
 	public int getLocalInteractingIndex() {
-		return (int) Hooks.selector.client.fields.get(localInteractingIndex).getValue(reference);
+		return (int) Hooks.selector.client.getField(localInteractingIndex).getValue(reference);
 	}
 
 	public Player getLocalPlayer() {
@@ -336,15 +336,15 @@ public class Client extends GameClass {
 	}
 
 	public int getLoginState() {
-		return (int) Hooks.selector.client.fields.get(loginState).getValue(reference);
+		return (int) Hooks.selector.client.getField(loginState).getValue(reference);
 	}
 
 	public int getMapAngle() {
-		return (int) Hooks.selector.client.fields.get(mapAngle).getValue(reference);
+		return (int) Hooks.selector.client.getField(mapAngle).getValue(reference);
 	}
 
 	public SpritePixels[] getMapIcons() {
-		Object[] os = (Object[]) Hooks.selector.client.fields.get(mapIcons).getValue(reference);
+		Object[] os = (Object[]) Hooks.selector.client.getField(mapIcons).getValue(reference);
 		SpritePixels[] mapIcons = new SpritePixels[os.length];
 		int count = 0;
 		for (Object o : os) {
@@ -355,179 +355,179 @@ public class Client extends GameClass {
 	}
 
 	public int[] getMenuActionParams0() {
-		return (int[]) Hooks.selector.client.fields.get(menuActionParams0).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(menuActionParams0).getValue(reference);
 	}
 
 	public int[] getMenuActionParams1() {
-		return (int[]) Hooks.selector.client.fields.get(menuActionParams1).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(menuActionParams1).getValue(reference);
 	}
 
 	public boolean[] getMenuBooleanArray() {
-		return (boolean[]) Hooks.selector.client.fields.get(menuBooleanArray).getValue(reference);
+		return (boolean[]) Hooks.selector.client.getField(menuBooleanArray).getValue(reference);
 	}
 
 	public int[] getMenuIdentifiers() {
-		return (int[]) Hooks.selector.client.fields.get(menuIdentifiers).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(menuIdentifiers).getValue(reference);
 	}
 
 	public int getMenuOptionCount() {
-		return (int) Hooks.selector.client.fields.get(menuOptionCount).getValue(reference);
+		return (int) Hooks.selector.client.getField(menuOptionCount).getValue(reference);
 	}
 
 	public String[] getMenuOptions() {
-		return (String[]) Hooks.selector.client.fields.get(menuOptions).getValue(reference);
+		return (String[]) Hooks.selector.client.getField(menuOptions).getValue(reference);
 	}
 
 	public String[] getMenuTargets() {
-		return (String[]) Hooks.selector.client.fields.get(menuTargets).getValue(reference);
+		return (String[]) Hooks.selector.client.getField(menuTargets).getValue(reference);
 	}
 
 	public int[] getMenuTypes() {
-		return (int[]) Hooks.selector.client.fields.get(menuTypes).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(menuTypes).getValue(reference);
 	}
 
 	public int[] getModifiedSkillLevels() {
-		return (int[]) Hooks.selector.client.fields.get(boostedSkillLevels).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(boostedSkillLevels).getValue(reference);
 	}
 
 	public int getMouseCrosshair() {
-		return (int) Hooks.selector.client.fields.get(mouseCrosshair).getValue(reference);
+		return (int) Hooks.selector.client.getField(mouseCrosshair).getValue(reference);
 	}
 
 	public int getMouseLastPressedTimeMillis() {
-		return (int) Hooks.selector.client.fields.get(mouseLastPressedTimeMillis).getValue(reference);
+		return (int) Hooks.selector.client.getField(mouseLastPressedTimeMillis).getValue(reference);
 	}
 
 	public int getMouseWheelRotation() {
-		return (int) Hooks.selector.client.fields.get(mouseWheelRotation).getValue(reference);
+		return (int) Hooks.selector.client.getField(mouseWheelRotation).getValue(reference);
 	}
 
 	public AttackOption getNPCAttackOption() {
-		return new AttackOption(Hooks.selector.client.fields.get(npcAttackOption).getValue(reference));
+		return new AttackOption(Hooks.selector.client.getField(npcAttackOption).getValue(reference));
 	}
 
 	public int getNPCIndexesCount() {
-		return (int) Hooks.selector.client.fields.get(npcIndexesCount).getValue(reference);
+		return (int) Hooks.selector.client.getField(npcIndexesCount).getValue(reference);
 	}
 
 	public int[] getNPCIndices() {
-		return (int[]) Hooks.selector.client.fields.get(npcIndices).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(npcIndices).getValue(reference);
 	}
 
 	public int getPendingNPCFlagsIndices() {
-		return (int) Hooks.selector.client.fields.get(pendingNpcFlagsIndices).getValue(reference);
+		return (int) Hooks.selector.client.getField(pendingNpcFlagsIndices).getValue(reference);
 	}
 
 	public Deque getPendingSpawns() {
-		return new Deque(Hooks.selector.client.fields.get(pendingSpawns).getValue(reference));
+		return new Deque(Hooks.selector.client.getField(pendingSpawns).getValue(reference));
 	}
 
 	public AttackOption getPlayerAttackOption() {
-		return new AttackOption(Hooks.selector.client.fields.get(playerAttackOption).getValue(reference));
+		return new AttackOption(Hooks.selector.client.getField(playerAttackOption).getValue(reference));
 	}
 
 	public int[] getPlayerMenuTypes() {
-		return (int[]) Hooks.selector.client.fields.get(playerMenuTypes).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(playerMenuTypes).getValue(reference);
 	}
 
 	public int[] getPlayerOptions() {
-		return (int[]) Hooks.selector.client.fields.get(playerOptions).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(playerOptions).getValue(reference);
 	}
 
 	public boolean[] getPlayerOptionsPriorities() {
-		return (boolean[]) Hooks.selector.client.fields.get(playerOptionsPriorities).getValue(reference);
+		return (boolean[]) Hooks.selector.client.getField(playerOptionsPriorities).getValue(reference);
 	}
 
 	public Deque getProjectiles() {
-		return new Deque(Hooks.selector.client.fields.get(projectiles).getValue(reference));
+		return new Deque(Hooks.selector.client.getField(projectiles).getValue(reference));
 	}
 
 	public int getPublicChatMode() {
-		return (int) Hooks.selector.client.fields.get(publicChatMode).getValue(reference);
+		return (int) Hooks.selector.client.getField(publicChatMode).getValue(reference);
 	}
 
 	public int[] getRealSkillLevels() {
-		return (int[]) Hooks.selector.client.fields.get(realSkillLevels).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(realSkillLevels).getValue(reference);
 	}
 
 	public int getRights() {
-		return (int) Hooks.selector.client.fields.get(rights).getValue(reference);
+		return (int) Hooks.selector.client.getField(rights).getValue(reference);
 	}
 
 	public int getScale() {
-		return (int) Hooks.selector.client.fields.get(scale).getValue(reference);
+		return (int) Hooks.selector.client.getField(scale).getValue(reference);
 	}
 
 	public int getScreenX() {
-		return (int) Hooks.selector.client.fields.get(screenX).getValue(reference);
+		return (int) Hooks.selector.client.getField(screenX).getValue(reference);
 	}
 
 	public int getScreenY() {
-		return (int) Hooks.selector.client.fields.get(screenY).getValue(reference);
+		return (int) Hooks.selector.client.getField(screenY).getValue(reference);
 	}
 
 	public int[] getSkillExperiences() {
-		return (int[]) Hooks.selector.client.fields.get(skillExperiences).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(skillExperiences).getValue(reference);
 	}
 
 	public int getSocketType() {
-		return (int) Hooks.selector.client.fields.get(socketType).getValue(reference);
+		return (int) Hooks.selector.client.getField(socketType).getValue(reference);
 	}
 
 	public int getViewportHeight() {
-		return (int) Hooks.selector.client.fields.get(viewportHeight).getValue(reference);
+		return (int) Hooks.selector.client.getField(viewportHeight).getValue(reference);
 	}
 
 	public int getViewportWidth() {
-		return (int) Hooks.selector.client.fields.get(viewportWidth).getValue(reference);
+		return (int) Hooks.selector.client.getField(viewportWidth).getValue(reference);
 	}
 
 	public int getViewportXOffset() {
-		return (int) Hooks.selector.client.fields.get(Viewport_xOffset).getValue(reference);
+		return (int) Hooks.selector.client.getField(Viewport_xOffset).getValue(reference);
 	}
 
 	public int getViewportYOffset() {
-		return (int) Hooks.selector.client.fields.get(Viewport_yOffset).getValue(reference);
+		return (int) Hooks.selector.client.getField(Viewport_yOffset).getValue(reference);
 	}
 
 	public int getWeight() {
-		return (int) Hooks.selector.client.fields.get(weight).getValue(reference);
+		return (int) Hooks.selector.client.getField(weight).getValue(reference);
 	}
 
 	public int[] getWidgetBoundsHeight() {
-		return (int[]) Hooks.selector.client.fields.get(widgetBoundsHeight).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(widgetBoundsHeight).getValue(reference);
 	}
 
 	public int[] getWidgetBoundsWidth() {
-		return (int[]) Hooks.selector.client.fields.get(widgetBoundsWidth).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(widgetBoundsWidth).getValue(reference);
 	}
 
 	public int getWidgetCount() {
-		return (int) Hooks.selector.client.fields.get(widgetCount).getValue(reference);
+		return (int) Hooks.selector.client.getField(widgetCount).getValue(reference);
 	}
 
 	public HashTable getWidgetFlags() {
-		return new HashTable(Hooks.selector.client.fields.get(widgetFlags).getValue(reference));
+		return new HashTable(Hooks.selector.client.getField(widgetFlags).getValue(reference));
 	}
 
 	public int[] getWidgetPositionX() {
-		return (int[]) Hooks.selector.client.fields.get(widgetPositionX).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(widgetPositionX).getValue(reference);
 	}
 
 	public int[] getWidgetPositionY() {
-		return (int[]) Hooks.selector.client.fields.get(widgetPositionY).getValue(reference);
+		return (int[]) Hooks.selector.client.getField(widgetPositionY).getValue(reference);
 	}
 
 	public int getWidgetRoot() {
-		return (int) Hooks.selector.client.fields.get(widgetRoot).getValue(reference);
+		return (int) Hooks.selector.client.getField(widgetRoot).getValue(reference);
 	}
 
 	public int getWorld() {
-		return (int) Hooks.selector.client.fields.get(world).getValue(reference);
+		return (int) Hooks.selector.client.getField(world).getValue(reference);
 	}
 
 	public boolean isDynamicRegion() {
-		return (boolean) Hooks.selector.client.fields.get(isDynamicRegion).getValue(reference);
+		return (boolean) Hooks.selector.client.getField(isDynamicRegion).getValue(reference);
 	}
 
 	public boolean isLoggedOn() {
@@ -535,30 +535,30 @@ public class Client extends GameClass {
 	}
 
 	public boolean isMembers() {
-		return (boolean) Hooks.selector.client.fields.get(isMembers).getValue(reference);
+		return (boolean) Hooks.selector.client.getField(isMembers).getValue(reference);
 	}
 
 	public boolean isMenuOpen() {
-		return (boolean) Hooks.selector.client.fields.get(isMenuOpen).getValue(reference);
+		return (boolean) Hooks.selector.client.getField(isMenuOpen).getValue(reference);
 	}
 
 	public boolean isResized() {
-		return (boolean) Hooks.selector.client.fields.get(isResized).getValue(reference);
+		return (boolean) Hooks.selector.client.getField(isResized).getValue(reference);
 	}
 
 	public boolean lowMemory() {
-		return (boolean) Hooks.selector.client.fields.get(lowMemory).getValue(reference);
+		return (boolean) Hooks.selector.client.getField(lowMemory).getValue(reference);
 	}
 
 	public boolean numberMenuOptions() {
-		return (boolean) Hooks.selector.client.fields.get(numberMenuOptions).getValue(reference);
+		return (boolean) Hooks.selector.client.getField(numberMenuOptions).getValue(reference);
 	}
 
 	public boolean socketError() {
-		return (boolean) Hooks.selector.client.fields.get(socketError).getValue(reference);
+		return (boolean) Hooks.selector.client.getField(socketError).getValue(reference);
 	}
 
 	public boolean spellSelected() {
-		return (boolean) Hooks.selector.client.fields.get(spellSelected).getValue(reference);
+		return (boolean) Hooks.selector.client.getField(spellSelected).getValue(reference);
 	}
 }

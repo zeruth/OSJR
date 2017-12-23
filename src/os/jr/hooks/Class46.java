@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class46 extends GameClass{
+public class Class46 extends RSClass{
 	
 	public static final String baseX = "baseX";
 
@@ -11,7 +11,7 @@ public class Class46 extends GameClass{
 	}
 	
 	public int getBaseX() {
-		return (int) fields.get(baseX).getValue(reference);
+		return (int) getField(baseX).getValue(reference);
 	}
 
 }

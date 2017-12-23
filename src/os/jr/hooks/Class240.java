@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class240 extends GameClass{
+public class Class240 extends RSClass{
 	
 	public static final String cameraYaw = "cameraYaw";
 
@@ -11,7 +11,7 @@ public class Class240 extends GameClass{
 	}
 	
 	public int getCameraYaw() {
-		return (int) fields.get(cameraYaw).getValue(reference);
+		return (int) getField(cameraYaw).getValue(reference);
 	}
 
 }

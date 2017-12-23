@@ -3,6 +3,8 @@ package os.jr.hooks.updater;
 import os.jr.game.RSGame;
 import os.jr.hooks.Client;
 import os.jr.hooks.Hooks;
+import os.jr.hooks.Player;
+import os.jr.launcher.OSJRLauncher;
 import os.jr.utils.Utils;
 
 public class HookUpdater {
@@ -60,8 +62,19 @@ public class HookUpdater {
 		Client c = Hooks.selector.client;
 		try {
 			if (c.isLoggedOn()) {
+				//Bullshit example code.
+				System.out.println(c.getLocalPlayer().getName());
+				for (Player p : c.getCachedPlayers()) {
+					if (p.reference!=null)
+					System.out.println(p.getName());
+				}
 				@SuppressWarnings("unused")
 				int[][] i = Hooks.selector.class21.getXTeaKeys();
+				if (OSJRLauncher.rsFrame!=null) {
+					OSJRLauncher.updateTitle("[OSJR] - ["+c.getLocalPlayer().getName()+"] ");
+				}
+			} else {
+				OSJRLauncher.updateTitle("[OSJR] - "+c.getLoginState());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

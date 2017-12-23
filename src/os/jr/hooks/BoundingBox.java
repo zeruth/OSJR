@@ -13,7 +13,7 @@ public class BoundingBox extends Node {
 	}
 
 	public IndexData getIndexInterfaces() {
-		return new IndexData(fields.get(indexInterfaces).getValue(reference));
+		return new IndexData(getField(indexInterfaces).getValue(reference));
 	}
 
 }

@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class Class91 extends GameClass{
+public class Class91 extends RSClass{
 	
 	public static final String logoSprite = "logoSprite";
 	public static final String loginWindowX = "loginWindowX";
@@ -25,59 +25,59 @@ public class Class91 extends GameClass{
 	}
 	
 	public IndexedSprite getLogoSprite() {
-		return new IndexedSprite(fields.get(landMapFileIds).getValue(reference));
+		return new IndexedSprite(getField(landMapFileIds).getValue(reference));
 	}
 	
 	public int getLoginWindowX() {
-		return (int) fields.get(loginWindowX).getValue(reference);
+		return (int) getField(loginWindowX).getValue(reference);
 	}
 	
 	public int getLoadingBarPercentage() {
-		return (int) fields.get(loadingBarPercentage).getValue(reference);
+		return (int) getField(loadingBarPercentage).getValue(reference);
 	}
 	
 	public String getLoadingText() {
-		return (String) fields.get(loadingText).getValue(reference);
+		return (String) getField(loadingText).getValue(reference);
 	}
 	
 	public int getLoginIndex() {
-		return (int) fields.get(loginIndex).getValue(reference);
+		return (int) getField(loginIndex).getValue(reference);
 	}
 	
 	public String getLogin_response0() {
-		return (String) fields.get(Login_response0).getValue(reference);
+		return (String) getField(Login_response0).getValue(reference);
 	}
 	
 	public String getLoginMessage1() {
-		return (String) fields.get(loginMessage1).getValue(reference);
+		return (String) getField(loginMessage1).getValue(reference);
 	}
 	
 	public String getLoginMessage2() {
-		return (String) fields.get(loginMessage2).getValue(reference);
+		return (String) getField(loginMessage2).getValue(reference);
 	}
 	
 	public String getLoginMessage3() {
-		return (String) fields.get(loginMessage3).getValue(reference);
+		return (String) getField(loginMessage3).getValue(reference);
 	}
 
 	public String getUsername() {
-		return (String) fields.get(username).getValue(reference);
+		return (String) getField(username).getValue(reference);
 	}
 	
 	public String getPassword() {
-		return (String) fields.get(password).getValue(reference);
+		return (String) getField(password).getValue(reference);
 	}
 	
 	public boolean getLogin_isUsernameRemembered() {
-		return (boolean) fields.get(Login_isUsernameRemembered).getValue(reference);
+		return (boolean) getField(Login_isUsernameRemembered).getValue(reference);
 	}
 	
 	public boolean getWorldSelectShown() {
-		return (boolean) fields.get(worldSelectShown).getValue(reference);
+		return (boolean) getField(worldSelectShown).getValue(reference);
 	}
 	
 	public int[] getLandMapFileIds() {
-		return (int[]) fields.get(landMapFileIds).getValue(reference);
+		return (int[]) getField(landMapFileIds).getValue(reference);
 	}
 
 }

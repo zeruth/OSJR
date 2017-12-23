@@ -1,8 +1,8 @@
 package os.jr.hooks;
 
-import os.jr.hooks.loader.GameClass;
+import os.jr.hooks.loader.RSClass;
 
-public class BufferProvider extends GameClass {
+public class BufferProvider extends RSClass {
 
 	public static final String pixels = "pixels";
 	public static final String width = "width";
@@ -13,15 +13,15 @@ public class BufferProvider extends GameClass {
 	}
 
 	public int getHeight() {
-		return (int) fields.get(height).getValue(reference);
+		return (int) getField(height).getValue(reference);
 	}
 
 	public int[] getPixels() {
-		return (int[]) fields.get(pixels).getValue(reference);
+		return (int[]) getField(pixels).getValue(reference);
 	}
 
 	public int getWidth() {
-		return (int) fields.get(width).getValue(reference);
+		return (int) getField(width).getValue(reference);
 	}
 
 }
