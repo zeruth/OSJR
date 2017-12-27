@@ -32,10 +32,6 @@ public class Actor extends Renderable {
 		super(Hooks.classNames.get("Actor"));
 		this.reference = reference;
 	}
-	
-	public Actor(String className) {
-		super(className);
-	}
 
 	public int getActionAnimationDisable() {
 		return (int) getField(actionAnimationDisable).getValue(reference);
