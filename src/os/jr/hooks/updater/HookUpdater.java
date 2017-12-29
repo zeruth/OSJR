@@ -33,7 +33,8 @@ public class HookUpdater {
 						loggedInHooks();
 
 						lastCacheRunTime = System.currentTimeMillis() - cacheTimerStart;
-						// System.out.println("Time to run last Hooks cache: (ms) "+lastCacheRunTime);
+						if (lastCacheRunTime>50)
+						System.out.println("[Warning] Time to run last Hooks cache: (ms) "+lastCacheRunTime);
 
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
@@ -62,14 +63,6 @@ public class HookUpdater {
 		Client c = Hooks.selector.client;
 		try {
 			if (c.isLoggedOn()) {
-				//Bullshit example code.
-				System.out.println(c.getLocalPlayer().getName());
-				for (Player p : c.getCachedPlayers()) {
-					if (p.reference!=null)
-					System.out.println(p.getName());
-				}
-				@SuppressWarnings("unused")
-				int[][] i = Hooks.selector.class21.getXTeaKeys();
 				if (OSJRLauncher.rsFrame!=null) {
 					OSJRLauncher.updateTitle("[OSJR] - ["+c.getLocalPlayer().getName()+"] ");
 				}
