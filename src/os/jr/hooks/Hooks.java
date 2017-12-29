@@ -199,11 +199,11 @@ public class Hooks {
 	public Floor1 floor1 = new Floor1(null);
 	public FloorUnderlayDefinition floorUnderlayDefinition = new FloorUnderlayDefinition();
 	public Font font = new Font();
-	public FontName fontName = new FontName();
+	public FontName fontName = new FontName(null);
 	public Fonts fonts = new Fonts(null);
 	public FontTypeFace fontTypeFace = new FontTypeFace();
-	public Frame frame = new Frame();
-	public FrameMap frameMap = new FrameMap();
+	public Frame frame = new Frame(null);
+	public FrameMap frameMap = new FrameMap(null);
 	public Frames frames = new Frames();
 	public Friend friend = new Friend(null);
 	public FriendLoginUpdate friendLoginUpdate = new FriendLoginUpdate();
