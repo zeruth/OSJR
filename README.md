@@ -4,7 +4,7 @@ A lightweight OSRS Reflection framework.
 
 
 
-- **Revision 160 compliant**
+- **Revision 161 compliant**
 - Hook Implementations updated regularly
 - Built with Eclipse, easy to import and make your own if you so choose
 - **Auto gamepack updater**:
@@ -18,7 +18,7 @@ A lightweight OSRS Reflection framework.
 Live hook list
 --------------
 
-https://raw.githubusercontent.com/zeruth/OSJR/master/Hooks/Hooks.txt
+https://github.com/zeruth/OSJR/blob/master/Hooks/Hooks.txt
 
 OS-JR Implementation example
 ----------------------------
