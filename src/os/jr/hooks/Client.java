@@ -332,7 +332,7 @@ public class Client extends RSClass {
 	}
 
 	public Player getLocalPlayer() {
-		return Hooks.selector.urlRequest.getLocalPlayer();
+		return Hooks.selector.grandExchangeOffer.getLocalPlayer();
 	}
 
 	public int getLoginState() {

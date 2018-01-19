@@ -1,1946 +1,1963 @@
-Hook Revision 160
+Hook Revision 161
 
 
-{AbstractByteBuffer: gd}
-directBufferUnavailable: w
+{AbstractByteBuffer: gj}
+directBufferUnavailable: v
 
-{AbstractIntegerNode0: do}
-int1: z
+{AbstractIntegerNode0: dy}
+int1: d
 
-{AbstractSoundSystem: dn}
-offset: i, 578551261
-samples: n
-soundTaskDataProvider: s
+{AbstractSoundSystem: dd}
+clanMembers: ny
+offset: i, 948189211
+priority: e, 896619963
+sampleRate: h, 956408751
+samples: w
 
-{Actor: br}
-actionAnimationDisable: bz, 1371068499
-actionFrame: bf, 944368229
-angle: ak, -1662683967
-animation: bw, 1823864565
-combatInfoList: bc
-graphic: bh, -1732957069
-graphicsDelay: by, 844238417
-hitsplatCycles: ar
-hitsplatTypes: ao
-idlePoseAnimation: ax, 135804315
-inSequence: ah
-interacting: bp, -156297857
-npcCycle: br, -1830190809
-orientation: cp, -878372439
-overhead: ai
-overheadTextCyclesRemaining: az, 1918381959
-pathTraversed: ci
-pathX: cj
-pathY: cq
-poseAnimation: bq, -647845853
-poseFrame: be, -1237351081
-queueSize: cv, -979915637
-x: ad, 1951012149
-y: ag, -959431109
+{Actor: bm}
+actionAnimationDisable: bt, 287469253
+actionFrame: bx, -434008135
+angle: ag, -1267509975
+animation: bo, -263292343
+combatInfoList: bq
+graphic: ba, -1220883345
+graphicsDelay: bn, 790102567
+hitsplatCycles: ap
+hitsplatTypes: ai
+idlePoseAnimation: az, -218939717
+inSequence: al
+interacting: bk, -618462711
+npcCycle: bm, 506649515
+orientation: ch, -1579612309
+overhead: aa
+overheadTextCyclesRemaining: ay, 1788934009
+pathTraversed: cq
+pathX: cs
+pathY: cb
+poseAnimation: bj, 989775105
+poseFrame: bd, 2087161769
+queueSize: cd, -487939213
+x: aw, -1076215651
+y: at, -285612057
 
-{Area: if}
-areaSpriteCache: k
-mapAreaType: w
-name: f
-spriteId: z, 1034066741
+{Area: ie}
+areaSpriteCache: r
+mapAreaType: v
+name: b
+spriteId: d, -328811769
 
-{AttackOption: cz}
-AttackOption_alwaysRightClick: w
-AttackOption_dependsOnCombatLevels: a
-AttackOption_hidden: k
-AttackOption_leftClickWhereAvailable: e
-id: u, -1676481437
-mapscene: fo
+{AttackOption: cr}
+AttackOption_alwaysRightClick: v
+AttackOption_dependsOnCombatLevels: n
+AttackOption_hidden: r
+AttackOption_leftClickWhereAvailable: y
+id: h, -1499999509
 
-{AudioEnvelope: dh}
-amplitude: j
-durations: w
-end: u
-form: z
-max: c
-phaseIndex: f
-phases: e
-segments: a
-start: k
-step: g
-ticks: t
+{AudioEnvelope: do}
+amplitude: z
+durations: v
+end: d
+form: s
+max: y
+phaseIndex: e
+phases: r
+segments: n
+start: h
+step: f
+ticks: b
 
-{AudioInstrument: db}
-delayDecay: s
-delays: h
-delayTime: c
+{AudioInstrument: dw}
+delayDecay: p
+delays: g
+delayTime: u
 duration: o
-filter: n
-filterEnvelope: y
-NOISE: l
-offset: r
-oscillatorDelays: x
-oscillatorPitch: j
-oscillatorVolume: g
-phases: b
-pitch: a
-pitchBaseSteps: p
-pitchModifier: e
-pitchModifierAmplitude: k
-pitchSteps: v
-release: t
+filter: w
+filterEnvelope: t
+NOISE: m
+offset: a
+oscillatorDelays: z
+oscillatorPitch: f
+oscillatorVolume: e
+phases: j
+pitch: n
+pitchBaseSteps: q
+pitchModifier: y
+pitchModifierAmplitude: r
+pitchSteps: k
+release: s
 samples: i
-SINE: m
-volume: w
-volumeMultiplier: u
-volumeMultiplierAmplitude: z
-volumeSteps: d
+SINE: x
+volume: v
+volumeMultiplier: h
+volumeMultiplierAmplitude: d
+volumeSteps: c
 
-{BaseVarType: u}
-font_p12full: ea
-id: u, -436300871
-id2: k, 826185209
-INTEGER: a
-LONG: w
-STRING: e
+{BaseVarType: h}
+id: h, -423127387
+id2: r, 460744097
+INTEGER: n
+LONG: v
+mapMarkers: fz
+STRING: y
 
-{BoundingBox: j}
-indexInterfaces: cy
+{BoundingBox: f}
 
-{BoundingBox2D: g}
-color: u, 811326853
-plane: iy, -1321200933
-xMax: e, -1796622757
-xMin: a, -1617776623
-yMax: k, -841368133
-yMin: w, -904869015
+{BoundingBox2D: e}
+color: h, 955236265
+menuWidth: ja, 1739205817
+xMax: y, 1190502023
+xMin: n, 1811040767
+yMax: r, -714743463
+yMin: v, -710978531
 
-{BoundingBox3D: x}
-color: t, 840368185
-int1: a, 1399164583
-int2: w, 1793077055
-int3: e, 1975799011
-int4: k, 1467756151
-int5: u, -1302896507
-int6: z, 839033671
+{BoundingBox3D: z}
+color: s, 1054629821
+int1: n, -2069990477
+int2: v, 73860137
+int3: y, 669668565
+int4: r, -150028949
+int5: h, -8820899
+int6: d, -99451583
 
-{Bounds: kr}
-spritePixels: g
+{Bounds: kk}
 
-{Buffer: gh}
-crc32Table: e
-crc64Table: u
-offset: w, 328573213
-payload: a
+{Buffer: gv}
+crc32Table: y
+crc64Table: h
+offset: v, -1386340147
+payload: n
 
-{BufferProvider: kt}
-height: u, 205368253
-pixels: e
-width: k, -1870118989
+{BufferProvider: kr}
+height: h, 116038231
+pixels: y
+width: r, 1852809795
 
-{BuildType: il}
-BUILD_LIVE: k
-identifier: u
-LIVE: e
-ordinal: z, 175058789
-RC: a
-WIP: w
+{BuildType: ii}
+BUILD_LIVE: r
+identifier: h
+LIVE: y
+ordinal: d, -249748321
+RC: n
+WIP: v
 
-{ByteArrayNode: hv}
-byteArray: a
+{ByteArrayNode: hk}
+byteArray: n
 
-{CacheableNode: gi}
-next: cg
-previous: co
+{CacheableNode: gd}
+next: ct
+previous: cy
 
-{CacheFile: dv}
-accessFile: a
-capacity: j, -1754338581505271593
-length: g, 32181713884337277
-position: f, 1092840870758656945
-readPayload: w
-writePayload: u
+{CacheFile: dm}
+accessFile: n
+capacity: f, -1841172937382574949
+length: e, -5593322699123253025
+position: b, 6538862031506056999
+readPayload: v
+writePayload: h
 
-{ChatLineBuffer: ct}
-length: e, -1771803705
-lines: w
+{ChatLineBuffer: ci}
+length: y, -1772453129
+lines: v
+topContextMenuRow: jv
 
-{ClanMember: bu}
-rank: k
-username: a
-world: e, 65229773
+{ClanMember: br}
+rank: r
+username: n
+world: y, 705196955
 
-{class0: a}
+{class0: n}
 
-{class1: w}
-userHome: h
+{class1: v}
+task: f
 
-{class101: cl}
+{class101: ca}
 
-{class105: dd}
-bitPosition: g
-blockSize0: j
-blockSize1: x
-codeBooks: c
-floors: s
-mappings: y
+{class105: dj}
+bitPosition: e
+blockSize0: f
+blockSize1: z
+codeBooks: u
+floors: p
+mappings: t
 modeBlockFlags: o
-modeMappings: r
-payload: t
-position: f
-residues: n
+modeMappings: a
+payload: s
+position: b
+residues: w
 
-{class106: dx}
+{class106: dp}
 
-{class11: c}
-BoundingBox3DDrawMode_all: w
-BoundingBox3DDrawMode_mouseOver: a
-host: dt
+{class11: u}
+BoundingBox3DDrawMode_all: v
+BoundingBox3DDrawMode_mouseOver: n
 
 {class111: de}
-sfx_index: a
-vorbis_index: w
+sfx_index: n
+vorbis_index: v
 
-{class113: dk}
+{class113: da}
 
-{class115: dz}
-cacheLocations: r
-validInterfaces: t
+{class115: dc}
 
-{class116: dg}
+{class116: dt}
 
-{class133: ej}
-Viewport_containsMouse: a
-Viewport_entityCountAtMouse: n, 12111091
-Viewport_entityIdsAtMouse: y
-Viewport_false0: k
-Viewport_mouseX: w, -730306591
-Viewport_mouseY: e, -671398125
+{class133: ex}
+Viewport_containsMouse: n
+Viewport_entityCountAtMouse: w, -615866113
+Viewport_entityIdsAtMouse: t
+Viewport_false0: r
+Viewport_mouseX: v, 1420788547
+Viewport_mouseY: y, 693496733
 
-{class139: ei}
+{class139: ep}
+indexSoundEffects: cn
 
-{class150: ex}
+{class150: eb}
+port2: du, 1621142415
 
-{class153: er}
+{class153: ec}
+socket: cc
+userHome: g
 
-{class157: fn}
-dat2File: s
-idx255File: n
-idxCount: z, 2015749067
-idxFiles: y
-jagexClDat: k
-osNameLC: q
-randomDat: c
+{class157: fr}
+dat2File: p
+idx255File: w
+idxCount: d, -532493303
+idxFiles: t
+jagexClDat: r
+osNameLC: l
+randomDat: u
 
-{class159: fx}
+{class159: fl}
+chatMessages: lp
 
-{class160: fm}
-cameraPitch: gs, -1636862767
-tt: v
+{class160: ft}
+clientInstance: ap
+soundTaskDataProvider: p
 
-{class161: fj}
-indexScripts: dx
+{class161: fs}
+host: di
 
-{class163: fl}
+{class163: fu}
+menuY: je, -1379614509
 
-{class167: ft}
+{class167: fh}
 
-{class168: fk}
+{class168: fo}
 
-{class169: ff}
+{class169: fq}
 
-{class173: fa}
+{class173: fe}
 
 {class175: fz}
-socket: cs
+baseX: ee, -1859734051
 
-{class178: fw}
-state: f
+{class178: fd}
+state: e
 
-{class179: fu}
+{class179: fw}
+myWorldPort: dw, -660168955
+taskManager: n
 
-{class18: l}
-headIconsPk: fh
+{class18: m}
+grandExchangeEvents: qo
+headIconsPrayer: fe
 
-{class180: fc}
+{class180: fb}
 
-{class185: ge}
+{class181: fg}
 
-{class186: gg}
-currentTimeMsLast: a, -9054710416978003905
-currentTimeMsOffset: w, -6119670683134236171
+{class185: gg}
 
-{class188: gz}
+{class186: ge}
+currentTimeMsLast: n, 7321881511881330321
+currentTimeMsOffset: v, -6597138507761430893
 
-{class19: m}
+{class188: gn}
+spritePixels: e
 
-{class192: gb}
-clanChatCount: nr, -322232451
-listFetcher: j
+{class19: x}
+indexCache4: ce
 
-{class193: gw}
+{class192: gc}
 
-{class194: gf}
+{class193: gq}
 
-{class199: ga}
+{class194: gy}
 
-{class2: e}
-preferences: qj
+{class199: go}
 
-{class20: q}
-indexTrack2: dd
+{class2: y}
+cameraYaw: gr, -552382183
+highMemory: d
+mapedge: fn
 
-{class21: b}
-xteaKeys: fx
+{class20: l}
 
-{class211: hp}
-queue: a
+{class206: gt}
 
-{class213: ha}
+{class207: gf}
 
-{class214: hm}
+{class21: j}
+mapscene: fj
 
-{class215: ht}
+{class211: hx}
 
-{class216: hq}
+{class213: hj}
 
-{class217: hf}
+{class214: hz}
+mapRegions: ff
 
-{class218: ho}
-priority: g, 2004185345
+{class215: hu}
+configsIndex: cm
 
-{class219: hn}
+{class216: hb}
 
-{class22: h}
-indexMaps: ct
+{class217: hi}
 
-{class221: hy}
-slFlagSprites: bs
+{class218: hm}
 
-{class222: hs}
-settings: w
-varpsMasks: a
-widgetSettings: e
+{class219: hr}
 
-{class225: hd}
+{class22: g}
+selectedItemIndex: jb, 847231757
 
-{class226: hg}
+{class221: hw}
 
-{class228: hx}
+{class222: hn}
+preferences: qx
+settings: v
+varpsMasks: n
+widgetSettings: y
 
-{class229: hk}
+{class225: hp}
 
-{class23: d}
+{class228: hs}
+EnumDefinition_indexCache: n
 
-{class230: hi}
+{class229: ho}
 
-{class231: hu}
-vorbisIndex: dn
+{class23: c}
 
-{class232: hw}
+{class230: hg}
 
-{class233: hj}
+{class231: ha}
+NetCache_responseArchiveBuffer: o
 
-{class234: ix}
-runeSprites: u
+{class232: hd}
 
-{class236: iy}
+{class233: hh}
 
-{class237: ig}
+{class234: is}
+minimapSprite: nu
 
-{class238: iq}
-ItemDefinition_modelIndexCache: t
+{class235: ib}
+landMapFileIds: fr
 
-{class239: ii}
+{class236: ig}
 
-{class240: im}
-cameraYaw: gy, -1524418041
+{class238: ia}
 
-{class249: io}
-NetCache_crc: l
-NetCache_indexCaches: q
-NetCache_pendingPriorityResponses: z
-NetCache_pendingPriorityResponsesCount: t, 791424375
-NetCache_pendingPriorityWrites: k
-NetCache_pendingPriorityWritesCount: u, -1407929151
-NetCache_pendingResponses: x
-NetCache_pendingResponsesCount: c, -1116565755
-NetCache_pendingWrites: g
-NetCache_pendingWritesCount: j, -28511567
-NetCache_pendingWritesQueue: f
-NetCache_responseHeaderBuffer: y
-NetCache_socket: a
+{class239: io}
 
-{class25: p}
+{class240: ik}
 
-{class250: ik}
+{class249: iw}
+NetCache_crc: m
+NetCache_indexCaches: l
+NetCache_pendingPriorityResponses: d
+NetCache_pendingPriorityResponsesCount: s, -1638864385
+NetCache_pendingPriorityWrites: r
+NetCache_pendingPriorityWritesCount: h, 676287897
+NetCache_pendingResponses: z
+NetCache_pendingResponsesCount: u, -831740745
+NetCache_pendingWrites: e
+NetCache_pendingWritesCount: f, -1269568131
+NetCache_pendingWritesQueue: b
+NetCache_responseHeaderBuffer: t
+NetCache_socket: n
 
-{class254: ic}
+{class25: q}
+canvasHeight: k, -9955195
+rssocket: cr
 
-{class255: iw}
+{class250: iv}
+
+{class254: ix}
+modIconSprites: fw
+validInterfaces: s
+
+{class255: ic}
 
 {class260: jc}
 
-{class262: jk}
+{class262: ja}
 
-{class263: jt}
+{class263: jq}
 
-{class265: je}
+{class265: jd}
 
-{class268: jr}
-myWorldPort: db, 1266214211
+{class268: jt}
 
-{class27: ad}
+{class27: aw}
 
-{class276: jx}
-huffman: a
+{class276: jw}
+huffman: n
 
-{class277: jv}
-cp1252AsciiExtension: a
+{class277: jg}
+cp1252AsciiExtension: n
 
-{class278: js}
-titlemuteSprite: g
+{class278: jv}
 
-{class279: jy}
+{class279: jx}
 
-{class28: ag}
+{class28: at}
 
-{class280: jo}
+{class280: jp}
 
-{class281: ja}
-scriptLocalInts: e
+{class287: ke}
 
-{class282: jp}
+{class288: kj}
 
-{class283: jz}
+{class289: kc}
 
-{class285: ji}
+{class29: ag}
+cacheLocations: a
+currentRequest: w
 
-{class287: kj}
-NetCache_responseArchiveBuffer: o
+{class293: kx}
+classInfos: n
 
-{class289: ku}
+{class296: kw}
 
-{class29: ak}
-indexTrack1: cx
+{class299: kd}
+offsetsY: h
 
-{class293: kv}
-classInfos: a
+{class3: r}
+indexTextures: co
 
-{class296: kx}
+{class300: kp}
 
-{class299: kn}
-offsetsY: u
+{class305: kv}
 
-{class3: k}
-indexTextures: cd
-rssocket: cz
+{class31: af}
+indexCache15: do
 
-{class300: kc}
+{class33: ae}
 
-{class305: kw}
+{class34: av}
+menuHeight: jq, -1803688325
 
-{class31: aq}
+{class35: am}
+rasterProvider: aa
 
-{class33: at}
+{class36: ax}
+fontBold12: ek
 
-{class34: ap}
-mapMarkers: fz
-seq_ref: a
+{class37: ah}
+listFetcher: f
 
-{class35: an}
-scriptStringStackSize: j, -1440292873
+{class39: aj}
 
-{class36: ac}
-indexCache10: di
-selectedItemIndex: jz, 1715250021
-soundSystem0: od
+{class40: aa}
 
-{class37: aw}
-indexModels: cl
-revision: e, 1490194549
-slStarSprites: bk
-widgetIndex: f
+{class41: ao}
+slStarSprites: be
 
-{class39: ay}
+{class43: ay}
 
-{class40: ai}
+{class44: aq}
+headIconsPk: fx
+indexStore255: qk
+vorbisIndex: dd
 
-{class41: af}
+{class45: ak}
+middleMouseMovesCamera: cb
+region: fm
 
-{class43: az}
-indexSprites: ca
+{class46: as}
+indexCache3: cv
 
-{class44: av}
-mouseRecorder: bi
+{class47: au}
 
-{class45: ae}
+{class48: an}
+fonts: eo
 
-{class46: am}
-baseX: et, -1917457925
+{class5: d}
 
-{class47: aa}
-mapedge: fq
+{class52: bg}
 
-{class48: aj}
-platformInfo: qf
-region: fi
+{class54: bk}
 
-{class5: z}
+{class56: bz}
 
-{class52: bb}
+{class60: bo}
 
-{class54: bp}
+{class61: bx}
+tileHeights: n
+tileSettings: v
 
-{class56: bg}
-fontPlain11: eb
-grandExchangeEvents: qi
-indexStore255: qx
+{class64: be}
+indexCache13: dn
 
-{class60: bw}
+{class7: b}
+boundingBox3DDrawMode: r
+boundingBoxes: h
+drawBoundingBoxes2D: v
+drawBoundingBoxes3D: n
+drawObjectGeometry2D: y
+plane: ig, 1054954093
 
-{class61: bf}
-currentRequest: n
-renderOverview: qw
-tileHeights: a
-tileSettings: w
+{class72: bh}
 
-{class64: bk}
-mapRegions: fs
+{class81: cl}
 
-{class7: f}
-boundingBox3DDrawMode: k
-boundingBoxes: u
-drawBoundingBoxes2D: w
-drawBoundingBoxes3D: a
-drawObjectGeometry2D: e
-slArrowSprites: bz
+{class82: cd}
+intStack: s
+intStackSize: b, 1553638675
+scriptLocalInts: y
+scriptLocalStrings: r
+scriptStack: u
+scriptStackCount: z, -2098419305
+scriptStringStack: e
+SHAPE_VERTICES: d
 
-{class72: bd}
-
-{class81: cb}
-
-{class82: cv}
-intStack: t
-intStackSize: f, -531735453
-scriptLocalStrings: k
-scriptStack: c
-scriptStackCount: x, 733546181
-scriptStringStack: g
-SHAPE_VERTICES: z
-
-{class86: ce}
-indexCache4: cn
+{class86: cx}
 
 {class87: cu}
+canvasWidth: c, 291410129
 
-{class89: cs}
+{class89: cc}
 
-{class91: cr}
-landMapFileIds: fn
-loadingBarPercentage: an, -233909077
-loadingText: ac
-loginIndex: aw, 773237997
-loginMessage1: ay
-loginMessage2: ai
-loginMessage3: af
-loginWindowX: i, 1407958579
-Login_isUsernameRemembered: av
-Login_response0: al
-logoSprite: f
-password: az
-username: ah
-worldSelectShown: bw
+{class91: cz}
+loadingBarPercentage: am, -173119367
+loadingText: ax
+loginIndex: ah, 1448629513
+loginMessage1: aj
+loginMessage2: aa
+loginMessage3: ao
+loginWindowX: i, -642011175
+Login_isUsernameRemembered: aq
+Login_response0: ab
+logoSprite: b
+password: ay
+runeSprites: h
+username: al
+worldSelectShown: bo
 
-{class94: cy}
-playerIndexesCount: z, 1049985723
-playerIndices: t
-Players_orientations: x
-Players_regions: j
-Players_targetIndices: c
+{class94: cp}
+playerIndexesCount: d, 1231789495
+playerIndices: s
+Players_orientations: z
+Players_regions: f
+Players_targetIndices: u
 
 {class96: cm}
-chatLineMap: a
-messages: w
+chatLineMap: n
+messages: v
 
-{ClassInfo: kb}
-args: f
-count: w, 1480288181
-errorIdentifiers: k
-fields: u
-methods: t
-type: e
+{ClassInfo: ka}
+args: b
+count: v, 513477631
+errorIdentifiers: r
+fields: h
+methods: s
+type: y
 
 {Client: client}
 audioEffects: oc
-baseY: ee, -1694947901
-boostedSkillLevels: if
-cachedNPCs: dm
-cachedPlayers: ie
-chatCycle: lh, 254134351
-clanChatName: np
-clanChatOwner: nl
+boostedSkillLevels: ic
+cachedNPCs: dh
+cachedPlayers: ib
+chatCycle: lw, -895666125
+clanChatName: nj
+clanChatOwner: ng
 collisionMaps: w
-componentTable: kb
-cursorState: hl, 52368887
-cycleCntr: lx, -1965739811
-destinationX: na, -710720663
-destinationY: ni, -118830161
-displayFps: ba
-energy: kx, -1863294619
-flags: bc, -600424845
-fontsMap: ey
-friendCount: pp, 379628735
-friends: qq
-gameCycle: bt, 400517435
-gameDrawingMode: mv, 1192519963
-gameState: bh, -41679833
-grandExchangeOffers: qn
-graphicsObjectDeque: iv
-groundItemDeque: io
-hintArrowNpcTargetIdx: br, 1297669925
-hintArrowOffsetX: cv, -1413170751
-hintArrowOffsetY: cj, 1628051803
-hintArrowPlayerTargetIdx: ch, -392377251
-hintArrowTargetType: bo, 1519630183
-hintArrowType: cb, -1138049719
-hintArrowX: cp, -288982181
-hintArrowY: cf, -645003167
-ignoreCount: qt, 1957516805
-ignores: qz
-interfaceItemTriggers: lt
-isDynamicRegion: fl
-isMembers: be
-isMenuOpen: ip
-isResized: mw
-itemSelectionState: jp, 1247988347
-js5State: cr, 443603509
-languageId: bw, -628562359
+componentTable: kx
+cursorState: hf, -1516290627
+cycleCntr: li, -2137145405
+destinationX: nn, -2133546643
+destinationY: ne, 1224512003
+displayFps: bb
+energy: km, 1868459047
+flags: bq, 1691573407
+fontsMap: eq
+friendCount: qa, 912644233
+friends: qy
+gameCycle: bp, 113203175
+gameDrawingMode: mt, -138420577
+gameState: ba, -868842927
+grandExchangeOffers: qj
+graphicsObjectDeque: ie
+groundItemDeque: iw
+hintArrowNpcTargetIdx: bm, 1724246889
+hintArrowOffsetX: cd, -23243813
+hintArrowOffsetY: cs, 1261280625
+hintArrowPlayerTargetIdx: cj, -1467513383
+hintArrowTargetType: bc, -1189566717
+hintArrowType: cl, -875535609
+hintArrowX: ch, 411866839
+hintArrowY: ck, -2120232679
+ignoreCount: qn, 991818583
+ignores: qg
+interfaceItemTriggers: lh
+isDynamicRegion: fu
+isMembers: bd
+isMenuOpen: iu
+isResized: mu
+itemBeingDragged: hg
+itemPressedDuration: ha, 1333347473
+itemSelectionState: jm, -2058582069
+js5State: cz, 1385943177
+languageId: bo, -1967870591
+lastLeftClickX: hi, 702512097
+lastLeftClickY: hm, -1105692417
 lastSelectedItemName: it
-loadingStage: cw, -868419915
-localInteractingIndex: ig, 273517695
-loginState: dw, -1576936849
-lowMemory: bx
-mapAngle: gb, -1215179141
-mapIcons: ne
-menuActionParams0: je
-menuActionParams1: jf
-menuBooleanArray: jj
-menuIdentifiers: jr
-menuOptionCount: jg, -1716599453
-menuOptions: jn
-menuTargets: jh
-menuTypes: jq
-mouseCrosshair: hs, 1535720689
-mouseLastLastPressedTimeMillis: by, 12100145674618081
-mouseWheelRotation: lk, -2097279347
-npcAttackOption: ce
-npcIndexesCount: df, 469759311
-npcIndices: dq
-numberMenuOptions: kz
-pendingNpcFlagsCount: dp, -1005396313
+loadingStage: cf, 1742859319
+localInteractingIndex: ih, 1365865307
+loginState: df, 83298173
+lowMemory: bi
+mapAngle: gc, 1587296187
+mapIcons: ni
+maxOverheadTexts: gi, -633805299
+menuActionParams0: ji
+menuActionParams1: jl
+menuBooleanArray: jf
+menuIdentifiers: jh
+menuOptionCount: jd, 1503412963
+menuOptions: jy
+menuTargets: js
+menuTypes: jt
+mouseCrosshair: hn, -1381261537
+mouseLastLastPressedTimeMillis: bn, -6367548367601784955
+mouseWheelRotation: mx, 1584753023
+myPlayerIndex: hd, 1128084399
+npcAttackOption: cx
+npcIndexesCount: dl, 122497139
+npcIndices: ds
+numberMenuOptions: kq
+overheadTextCount: gw, 340017173
+overheadTexts: he
+overheadTextsCyclesRemaining: hx
+overheadTextsOffsetX: hy
+overheadTextsOffsetY: gf
+overheadTextsX: gd
+overheadTextsY: gt
+pendingNpcFlagsCount: dz, -508095559
 pendingNpcFlagsIndices: eu
-pendingSpawns: ik
-playerAttackOption: ci
-playerMenuTypes: ia
-playerOptions: in
-playerOptionsPriorities: ib
-projectiles: is
-publicChatMode: ms, 981875525
-realSkillLevels: ic
-rights: ks, 810022409
-scale: pu, 967296413
-screenX: hq, 1559491565
-screenY: ht, 277812439
-skillExperiences: iw
-socketError: ed
-socketType: bn, 402349077
-spellSelected: jb
-viewportHeight: pd, -123028359
-viewportWidth: pa, -1020819321
-Viewport_xOffset: pn, 1916496795
-Viewport_yOffset: pv, 789289861
-weight: kg, -297847855
-widgetBoundsHeight: mb
-widgetBoundsWidth: mr
-widgetCount: mn, 1871303889
-widgetFlags: mt
-widgetPositionX: mi
-widgetPositionY: mf
-widgetRoot: kr, 634425425
-world: bb, -516348683
+pendingSpawns: iv
+playerAttackOption: cq
+playerMenuTypes: id
+playerOptions: iq
+playerOptionsPriorities: il
+pressedItemIndex: ht, -1935973039
+projectiles: im
+publicChatMode: mw, 978291701
+realSkillLevels: iy
+rights: kd, 1182272611
+scale: pe, 1787694991
+screenX: hu, -893222211
+screenY: hb, -960663689
+skillExperiences: ip
+socketError: eg
+socketType: by, -1757056939
+spellSelected: jo
+viewportHeight: pc, 81711465
+viewportWidth: pz, -1291048227
+Viewport_xOffset: pn, -255663933
+Viewport_yOffset: pw, -1188903315
+weight: kg, 1853183719
+widgetBoundsHeight: ms
+widgetBoundsWidth: mg
+widgetCount: mn, -662280701
+widgetFlags: mr
+widgetPositionX: mp
+widgetPositionY: mb
+widgetRoot: ka, -284529701
+world: bg, 1835726469
 
-{ClientPacket: fo}
-menuY: jc, 139833421
-packetId: cm, 300628027
-packetLength: ck, -1101711967
+{ClientPacket: fj}
+packetId: cm, -1971519737
+packetLength: cv, 2029760335
 
-{CodeBook: cd}
-dimensions: a
-entries: w
-entryLengths: e
-valueVector: u
+{CodeBook: co}
+dimensions: n
+entries: v
+entryLengths: y
+valueVector: h
 
-{CollisionData: fp}
-flags: aw
-height: ac, -1670453825
-width: an, 1646832785
-x: at, 906965333
-y: ap, 1899582203
+{CollisionData: fi}
+flags: ah
+height: ax, 1348476209
+width: am, -1890945149
+x: ae, -2139579163
+y: av, -1976216317
 
-{CombatInfo1: ch}
-cycle: a, 1601973829
-health: e, 664186193
-healthRatio: w, 1616408329
-int2: k, 104636013
+{CombatInfo1: cj}
+cycle: n, 410263585
+font_p12full: ev
+health: y, -1905379511
+healthRatio: v, -1060883801
+int2: r, 1422168483
 
-{CombatInfo2: ir}
-healthScale: y, -500589715
-spriteCache: k
+{CombatInfo2: iu}
+healthScale: t, 673360983
+spriteCache: r
 
-{CombatInfoList: go}
-current: w
-node: a
+{CombatInfoList: gs}
+current: v
+node: n
 
-{CombatInfoListHolder: cq}
-combatInfo1: k
-combatInfo2: e
+{CombatInfoListHolder: cb}
+combatInfo1: r
+combatInfo2: y
+indexInterfaces: cp
+NetCache_reference: x
 
-{ContextMenuRow: cw}
-highMemory: z
-identifier: k, 1578872715
-option: u
-param0: a, 571443005
-param1: w, 715253505
-type: e, 1066703259
+{ContextMenuRow: cf}
+identifier: r, 758036865
+option: h
+param0: n, -1848826809
+param1: v, 1931478707
+type: y, 1082153175
 
-{Coordinates: hc}
-plane: a, -269383583
-worldX: w, -1934805779
-worldY: e, -397623979
+{Coordinates: ht}
+plane: n, 552661879
+worldX: v, -1851677327
+worldY: y, 2079623241
 
-{DecorativeObject: eq}
-floor: a, 714609933
-hash: j, 1258761623
-offsetX: z, -337797081
-offsetY: t, 1852052911
-renderable1: f
-renderable2: g
-renderFlag: k, 600979589
-renderInfoBitPacked: x, 1479818253
-rotation: u, 116232835
-x: w, -635706115
-y: e, -554820235
+{DecorativeObject: ew}
+floor: n, 522468633
+hash: f, 1470606707
+offsetX: d, 423015893
+offsetY: s, -1974723583
+renderable1: b
+renderable2: e
+renderFlag: r, -1776211319
+renderInfoBitPacked: z, -2081115135
+rotation: h, 1965091099
+x: v, -1190894301
+y: y, 1637463321
 
-{Deque: gl}
-current: w
-head: a
+{Deque: gi}
+current: v
+head: n
 
 {DirectByteBuffer: gk}
-buffer: a
+buffer: n
 
-{DState: gt}
-blockSize100k: i, 1124898451
-inUse: ab
-k0: q, 1742289959
-nblock_used: h, 1018799019
-next_in: f, -23923469
-next_out: x, -2097812977
-nInUse: p, 861373207
-out: j
-out_ch: n
-out_len: y, -1624378745
-seqToUnseq: ag
-strm: t
-total_in_hi32: o, -978960935
-total_in_lo32: r, -996553717
-total_out_hi32: s, -1477017367
-total_out_lo32: g, 1159766183
-tPos: m, -928259005
-urlRequester: ei
+{DState: gp}
+blockSize100k: i, -1993914323
+inUse: ac
+k0: l, -1336172825
+nblock_used: g, -895687597
+next_in: b, 351948785
+next_out: z, -557167025
+nInUse: q, 854844377
+out: f
+out_ch: w
+out_len: t, -918306367
+seqToUnseq: at
+strm: s
+total_in_hi32: o, 1124217457
+total_in_lo32: a, -958125921
+total_out_hi32: p, 1425877647
+total_out_lo32: e, 2076941583
+tPos: x, -2010383035
+tt: k
 
-{DynamicObject: cn}
-id: a, -1075365621
-level: k, -156840023
-orientation: e, -1841293615
-sceneX: u, 45773791
-sceneY: z, 1127872755
-type: w, -86666889
+{DynamicObject: ce}
+id: n, -1885131287
+level: r, 434762305
+orientation: y, 868992911
+sceneX: h, 829704213
+sceneY: d, -1026432357
+type: v, -1370973419
 
-{Enum: jg}
-defaultInt: z, -970408909
-defaultString: u
-EnumDefinition_cached: w
-EnumDefinition_indexCache: a
-intVals: g
-keys: f
-keyType: e
-size: t, 72752757
-stringVals: j
-valType: k
+{Enum: jn}
+defaultInt: d, -1801841691
+defaultString: h
+EnumDefinition_cached: v
+intVals: e
+keys: b
+keyType: y
+size: s, -1460843299
+stringVals: f
+valType: r
 
-{Enumerated: gs}
+{Enumerated: gm}
 
-{FaceNormal: ea}
-x: a, -819810915
-y: w, 572835747
-z: e, 1215733267
+{FaceNormal: ev}
+x: n, 255863557
+y: v, -1632090643
+z: y, -678068409
 
-{FileOnDisk: da}
-file: a
-length: w, -4512531111401429473
-port2: ds, -1270739899
-position: e, -6496465651702349683
+{FileOnDisk: dg}
+file: n
+length: v, -3908328648711878801
+position: y, 3186260224117879601
+scriptStringStackSize: f, -1950410857
 
 {FileRequest: it}
-crc: w, -803899541
-index: a
-padding: e
+crc: v, -1509332601
+fontPlain11: er
+index: n
+padding: y
 
-{FileSystem: in}
-data: k
-fonts: el
-index: e
-type: a, -1959598111
+{FileSystem: iq}
+clanChatCount: nx, -2057531233
+data: r
+index: y
+type: n, -1608342227
 
-{Floor1: dj}
-classDimensions: z
-classMasterbooks: f
-classSubClasses: t
-multiplier: k
-paritionClassList: u
-RANGES: a
-subclassBooks: g
-xList: j
-yList: x
+{Floor1: dn}
+classDimensions: d
+classMasterbooks: b
+classSubClasses: s
+multiplier: r
+paritionClassList: h
+RANGES: n
+subclassBooks: e
+xList: f
+yList: z
 
-{FloorUnderlayDefinition: ih}
-hue: k, -1784433545
-hueMultiplier: t, -982635371
-lightness: z, -272353301
-rgbColor: e, -1882661743
-saturation: u, 167744801
-underlays: w
-underlay_ref: a
+{FloorUnderlayDefinition: ip}
+hue: r, 1798605175
+hueMultiplier: s, 151472911
+lightness: d, -437032155
+rgbColor: y, 714931673
+saturation: h, 1081953381
+underlays: v
+underlay_ref: n
 
-{Font: jm}
+{Font: jz}
 
-{FontName: jl}
-FontName_bold12: e
-FontName_plain11: a
-FontName_plain12: w
-indexCache15: dh
+{FontName: jf}
+FontName_bold12: y
+FontName_plain11: n
+FontName_plain12: v
 
-{Fonts: ju}
-configsIndex: cm
-map: e
+{Fonts: jk}
+map: y
 
-{FontTypeFace: jd}
-color: r
-glyphWidths: k
-gylphHeights: e
-gylphs: a
-horizontalOffsets: u
-maxSpacing: g
-minSpacing: f
-modIcons: j
+{FontTypeFace: jj}
+color: a
+glyphWidths: r
+gylphHeights: y
+gylphs: n
+horizontalOffsets: h
+maxSpacing: e
+minSpacing: b
+modIcons: f
 prevColorRGB: o
-prevShadeRGB: n
-shadow: y
-strikeRGB: c
-underlineRGB: s
-verticalOffsets: z
-verticalSpace: t
+prevShadeRGB: w
+shadow: t
+strikeRGB: u
+underlineRGB: p
+verticalOffsets: d
+verticalSpace: s
 
 {Frame: eu}
-showing: x
-skin: u
-translator_x: f
-translator_y: g
-translator_z: j
+showing: z
+skin: h
+translator_x: b
+translator_y: e
+translator_z: f
 
-{FrameMap: eg}
-colorsToFind: t
-count: w, -1096353093
-id: a, 656904343
-indexSoundEffects: cc
-list: k
-types: e
+{FrameMap: ei}
+count: v, 844183929
+id: n, -396894033
+list: r
+types: y
 
-{Frames: ec}
-skeletons: a
+{Frames: ek}
+port1: dk, 560840327
+skeletons: n
 
-{Friend: bh}
-fontBold12: ec
-name: a
-previousName: w
-rank: k, -1196101617
-world: e, -681673857
+{Friend: ba}
+menuX: jc, -157777607
+name: n
+previousName: v
+rank: r, -1618849197
+world: y, 700564557
 
-{FriendLoginUpdate: bm}
-indexWorldMap: du
+{FriendLoginUpdate: bw}
 
-{GameEngine: be}
-canvas: ax
-clanMembers: nh
-clipboard: ah
-eventQueue: az
-focused: av
-FPS: c, 1092574815
-frame: aq
-garbageCollectorLastCheckTimeMs: aj, -1390540160102048077
-garbageCollectorLastCollectionTime: aa, 7654158968335052561
-hasErrored: t
-mouseWheelHandler: af
-shell: e
-shellCount: k, -673297861
-taskManager: a
+{GameCanvas: bq}
+component: n
+indexWorldMap: db
 
-{GameObject: et}
-cycle: c, -833063441
-drawPriority: x, 792465583
-flags: n, 195247177
-hash: s, 1044473627
-height: w, 1840593029
-offsetX: f, 1511254367
-offsetY: j, 235575925
-orientation: z, 1672836637
-plane: a, -1866751847
-relativeX: t, 1610249375
-relativeY: g, 19135965
-renderable: u
-x: e, 1087761421
-y: k, 1063628249
+{GameEngine: bd}
+cameraX: ge, 2065939819
+canvas: az
+clipboard: al
+eventQueue: ay
+focused: aq
+FPS: z, 588963553
+frame: af
+garbageCollectorLastCheckTimeMs: an, 4051514173255065559
+garbageCollectorLastCollectionTime: au, -4159530777100722497
+hasErrored: s
+headIconsHint: fy
+mouseWheelHandler: ao
+scrollbarSprites: fd
+shell: v
+shellCount: r, 1767721475
+varplayer_ref: n
 
-{GrandExchangeEvent: y}
-cameraZ: gd, 508599443
-compass: ff
-grandExchangeOffer: e
-string1: k
-string2: u
-world: a, 306485541
+{GameObject: ee}
+cycle: u, -35435741
+drawPriority: z, -1059063627
+flags: w, -1620091341
+hash: p, 1892082625
+height: v, -95353139
+mapDots: fc
+offsetX: b, -1848891115
+offsetY: f, -1108067955
+orientation: d, 1513008315
+plane: n, -1582265761
+relativeX: s, -676003621
+relativeY: e, -1360912861
+renderable: h
+x: y, -931394199
+y: r, -1349051947
 
-{GrandExchangeEvents: n}
-events: a
+{GameSocket: fp}
+platformInfo: qe
 
-{GrandExchangeOffer: r}
-itemId: w, 420374037
-osName: b
-price: e, -940633443
-progress: a
-quantitySold: u, -616978795
-spent: z, 300076227
-totalQuantity: k, -1993245439
+{GrandExchangeEvent: t}
+grandExchangeOffer: y
+string1: r
+string2: h
+world: n, 2070108189
 
-{Graphics3D: es}
-centerX: s
-centerY: n
-colorPalette: b
-COSINE: ab
-lowMem: e
-rasterAlpha: u
-rasterClipEnable: a
-rasterClipX: y
-rasterClipY: q
-rasterGouraudLowRes: k
+{GrandExchangeEvents: w}
+events: n
+
+{GrandExchangeOffer: a}
+itemId: v, 814876475
+jagexLoginType: bj
+localPlayer: io
+price: y, 1581347403
+progress: n
+quantitySold: h, -1724518865
+spent: d, 825894885
+totalQuantity: r, -2044645577
+
+{Graphics3D: ef}
+centerX: p
+centerY: w
+colorPalette: j
+COSINE: ac
+lowMem: y
+rasterAlpha: h
+rasterClipEnable: n
+rasterClipX: t
+rasterClipY: l
+rasterGouraudLowRes: r
 Rasterizer3D_clipHeight: o
 Rasterizer3D_clipMidX2: i
-Rasterizer3D_clipMidY2: m
-Rasterizer3D_clipNegativeMidX: r
-Rasterizer3D_clipNegativeMidY: l
-Rasterizer3D_zoom: c
-SINE: p
-textureLoader: h
+Rasterizer3D_clipMidY2: x
+Rasterizer3D_clipNegativeMidX: a
+Rasterizer3D_clipNegativeMidY: m
+Rasterizer3D_zoom: u
+SINE: q
+textureLoader: g
 
-{GraphicsObject: cj}
-finished: j
-height: z, 254755159
-id: a, -1167853917
-landRegionFileIds: fe
-level: e, 2120405891
-port1: dy, -505196129
-startCycle: w, 1957506109
-x: k, -1183024183
-y: u, 2114952073
+{GraphicsObject: cs}
+baseY: el, 2011022665
+finished: f
+height: s, -1008757159
+id: n, 1727106221
+level: r, 2045090739
+startCycle: v, 1363715003
+x: h, 663400687
+y: d, 466568023
 
-{GroundObject: dq}
-floor: a, 950595223
-hash: u, 1395110931
-renderable: k
-renderInfoBitPacked: z, 908974953
-task: j
-x: w, -1302060085
-y: e, 326033797
+{GroundObject: ds}
+floor: n, 1388982249
+hash: h, -2132089799
+renderable: r
+renderInfoBitPacked: d, 1503278099
+x: v, 2093213681
+y: y, -2030736887
 
-{GZipDecompressor: fd}
-cameraY: gz, -219460773
-inflator: a
+{GZipDecompressor: fc}
+inflator: n
 
-{HashTable: gp}
-buckets: w
-current: k
-currentGet: e
-index: u
-size: a
+{HashTable: gl}
+buckets: v
+current: r
+currentGet: y
+index: h
+size: n
 
-{HashTableIterator: he}
-head: k
-index: e
-table: a
-tail: w
+{HashTableIterator: hy}
+head: r
+index: y
+table: n
+tail: v
 
-{Huffman: fb}
-bits: w
-canvasWidth: d, -1401406659
-keys: e
-masks: a
+{Huffman: fa}
+bits: v
+colorsToReplace: b
+keys: y
+landRegionFileIds: fk
+masks: n
 
-{Identifiers: gm}
-table: a
+{Identifiers: gx}
+table: n
 
-{Ignore: bi}
-modIconSprites: fu
-name: a
-previousName: w
+{Ignore: bl}
+name: n
+previousName: v
 
-{IndexData: iu}
-crc32: p
-crcValue: ab, 707407901
-index: b, -233744701
-indexReferenceVersion: ad, 809778315
-indexStore: m
-referenceStore: q
-validArchives: v
+{IndexData: if}
+crc32: q
+crcValue: ac, -212414243
+index: j, 1609893325
+indexReferenceVersion: aw, 113742419
+indexStore: x
+referenceStore: l
+validArchives: k
 
-{IndexDataBase: ib}
-archiveCrcs: u
-archiveFileIds: f
-archiveFileNames: g
-archiveIds: w
-archiveNames: e
-archiveNumberOfFiles: t
-archiveRevisions: z
-archives: x
-childIdentifiers: j
-childs: c
-crc: n, 1159717755
-gzip: s
-identifiers: k
-releaseArchives: y
+{IndexDataBase: il}
+archiveCrcs: h
+archiveFileIds: b
+archiveFileNames: e
+archiveIds: v
+archiveNames: y
+archiveNumberOfFiles: s
+archiveRevisions: d
+archives: z
+childIdentifiers: f
+childs: u
+crc: w, 272710221
+gzip: p
+identifiers: r
+releaseArchives: t
 shallowRecords: o
-validArchivesCount: a, -955590129
+validArchivesCount: n, 1236051099
 
-{IndexedSprite: kg}
-height: k
-offsetX: u
-offsetY: z
-originalHeight: f
-originalWidth: e
-palette: w
-pixels: a
-width: t
+{IndexedSprite: km}
+height: r
+offsetX: h
+offsetY: d
+originalHeight: b
+originalWidth: y
+palette: v
+pixels: n
+width: s
 
 {IndexFile: fv}
-dataFile: w
-index: k, 1333258905
-indexFile: e
-IndexStore_buffer: a
-maxSize: u, -312679233
+dataFile: v
+index: r, 1405209691
+indexFile: y
+IndexStore_buffer: n
+maxSize: h, -1066874589
 
-{IndexStoreActionHandler: id}
-IndexStoreActionHandler_lock: k
-IndexStoreActionHandler_requestQueue: a
-IndexStoreActionHandler_responseQueue: w
-IndexStoreActionHandler_thread: u
+{IndexStoreActionHandler: ij}
+IndexStoreActionHandler_lock: r
+IndexStoreActionHandler_requestQueue: n
+IndexStoreActionHandler_responseQueue: v
+IndexStoreActionHandler_thread: h
 
-{IntegerNode: hr}
-value: a
+{IntegerNode: hc}
+value: n
 
-{InvType: is}
-inventoryCache: w
-size: e, 1659984447
+{InvType: iz}
+inventoryCache: v
+size: y, -447579771
 
-{ISAACCipher: gj}
-mm: z
-randResult: u
-valuesRemaining: k, -1239715429
+{ISAACCipher: gz}
+mm: d
+randResult: h
+valuesRemaining: r, -628582099
 
-{Item: cg}
-id: a, 485193461
-menuWidth: jw, -2124720277
-quantity: w, -1501899501
+{Item: ct}
+id: n, 917387703
+quantity: v, 1171675487
 
-{ItemComposition: jq}
-ambient: bb, -1717939813
-colourToReplace: r
+{ItemComposition: jl}
+ambient: bg, 384528315
+colourToReplace: a
 colourToReplaceWith: i
-contrast: bc, -1199119237
-countCo: am
-countObj: ae
-femaleHeadModel: az, -806041147
-femaleHeadModel2: av, -1553992041
-femaleModel: ac, 1164979167
-femaleModel1: aw, 2001513361
-femaleModel2: ai, 2095734483
-femaleOffset: al, 1454486959
-groundActions: ak
-id: n, 893144361
-int1: bp, 394645357
-int2: bx, -389138497
-int3: bw, 599115067
-inventoryActions: as
-inventoryModel: y, 1453511911
-isMembers: ag
-isStackable: ab, 658096135
-isTradable: bg
-itemModelCache: x
-items: j
-itemSpriteCache: c
-item_ref: z
-maleHeadModel: af, 1550750577
-maleHeadModel2: ah, -1469717441
-maleModel: at, 1536749267
-maleModel1: ap, -2144494677
-maleModel2: ay, -417382559
-maleOffset: an, -1840041673
+contrast: bq, 1867155131
+countCo: as
+countObj: ak
+femaleHeadModel: ay, -441525517
+femaleHeadModel2: aq, -1512640679
+femaleModel: ax, -851900865
+femaleModel1: ah, 2134533871
+femaleModel2: aa, -1090252625
+femaleOffset: ab, -794601261
+groundActions: ag
+id: w, 1235867587
+int1: bk, 1177917279
+int2: bi, 785611157
+int3: bo, 851075723
+inventoryActions: ad
+inventoryModel: t, -872483897
+isMembers: at
+isMembersWorld: b
+isStackable: ac, -115701987
+isTradable: bz
+ItemDefinition_modelIndexCache: s
+itemModelCache: z
+items: f
+itemSpriteCache: u
+item_ref: d
+maleHeadModel: ao, -876736771
+maleHeadModel2: al, 941562637
+maleModel: ae, 291746003
+maleModel1: av, 1599293061
+maleModel2: aj, 192180153
+maleOffset: am, 2104547535
 name: o
-note: aa, -1866150387
-notedId: be, -1995884479
-notedTemplate: aj, -1408228201
-offsetX2d: v, 51891773
-offsetY2d: p, 1784761435
-price: ad, -968472145
-resizeX: ao, -933749849
-resizeY: ar, -2006568821
-resizeZ: au, 1353408719
-team: ax, 156584973
-textToReplaceWith: m
-textureToReplace: l
-unnotedId: bq, 806926903
-xan2d: b, 1556411869
-yan2d: h, -404379691
-zan2d: d, -1182865303
-zoom2d: q, 232612579
+note: au, -1330013593
+notedId: bd, -74321789
+notedTemplate: an, 106831865
+offsetX2d: k, 252414699
+offsetY2d: q, -1836588181
+price: aw, 757578127
+resizeX: ai, -423593771
+resizeY: ap, -1630790751
+resizeZ: ar, -1732577955
+team: az, -9013923
+textToReplaceWith: x
+textureToReplace: m
+unnotedId: bj, 276736449
+xan2d: j, 1674562091
+yan2d: g, 584518783
+zan2d: c, 245234889
+zoom2d: l, 1941932699
 
-{ItemContainer: bz}
-itemContainers: a
-itemIds: w
-stackSizes: e
-worldList: u
+{ItemContainer: bt}
+itemContainers: n
+itemIds: v
+stackSizes: y
+titlemuteSprite: e
 
-{ItemLayer: dl}
-bottom: k
-flags: t, 554011731
-hash: a, 1329167205
-height: f, 14426789
-middle: u
-top: z
-x: w, 813439287
-y: e, 594162243
+{ItemLayer: dr}
+bottom: r
+flags: s, 1841382633
+hash: n, 1884863045
+height: b, -697743979
+middle: h
+slFlagSprites: bu
+top: d
+x: v, -1268769797
+y: y, -854573269
 
-{IterableDualNodeQueue: hh}
-sentinel: a
+{IterableDualNodeQueue: he}
+sentinel: n
 
-{IterableHashTable: gr}
-buckets: w
-head: e
-index: u
-size: a
-tail: k
+{IterableHashTable: gb}
+buckets: v
+head: y
+index: h
+size: n
+tail: r
 
-{ITextureLoader: ey}
+{ITextureLoader: eq}
 
-{JagexGame: ia}
-id: f, -1037398473
-name: t
+{JagexGame: id}
+id: b, 1209982667
+name: s
 
-{JagexLoginType: kz}
-identifier: x
+{JagexLoginType: kh}
+identifier: z
 
-{KeyFocusListener: ar}
-keyboard: a
-keyboardIdleTicks: ct, -1997209807
-KeyHandler_keyCodes: cx
+{KeyFocusListener: ap}
+keyboard: n
+keyboardIdleTicks: ci, 2110236291
+KeyHandler_keyCodes: cg
+keyPressed: cx
 
-{KitDefinition: ip}
-bodyPartId: u, 755102505
-identKits: k
-identKit_ref: a
-modelIds: z
-models: x
-nonSelectable: c
-recolorToFind: t
-recolorToReplace: f
-retextureToFind: g
-retextureToReplace: j
-
-{Link: gc}
-
-{LinkDeque: gv}
-
-{LoginPacket: fh}
-id: u, -105058661
-timer: s
-
-{MachineInfo: ki}
-javaVendorType: ax, -317574963
-javaVersionMajor: at, 465222985
-javaVersionMinor: ap, -383063131
-javaVersionPatch: an, 504078667
-maxMemoryMB: aw, -789804035
-os64Bit: t
-osType: z, -571571871
-osVersionType: ab, 1520683389
-
-{MainBufferProvider: bq}
-component: a
-image: w
-
-{Mapping: ds}
-mux: w
-submapFloors: e
-
-{MessageNode: bv}
-id: a, -1624456843
-name: k
-sender: u
-tick: w, -181195109
-type: e, 1783927465
-value: z
-
-{MilliTimer: ew}
-milliTime: k, 9158307521041611221
-sessionToken: bs
-sleepTime: e, -291367241
-
-{Model: ef}
-bottomY: ag
-boundsType: ad
-diameter: as
-indices1: j
-indices2: x
-indices3: c
-indicesCount: g
-modelViewportXs: ah
-modelViewportYs: af
-Model_cosine: bh
-Model_sine: bk
-radius: aq
-useBoundingBoxes3D: bf
-verticesCount: u
-verticesX: z
-verticesY: t
-verticesZ: f
-xViewportBuffer: bq
-XYZMag: ak
-yViewportBuffer: av
-
-{ModelData: dm}
-contrast: an
-faceAlphas: x
-faceColor: s
-faceNormals: aq
-faceRenderPriorities: j
-faceRenderType: g
-faceTextures: n
-normals: ax
-priority: y
-texTriangleX: i
-texTriangleY: l
-texTriangleZ: m
-textureCoords: c
-texturePrimaryColor: p
-textureRenderTypes: r
-triangleFaceCount: u
-trianglePointsX: z
-trianglePointsY: t
-trianglePointsZ: f
-triangleSkinValues: ag
-vertexCount: a
-vertexSkins: ad
-vertexX: w
-vertexY: e
-vertexZ: k
-
-{MouseInput: bx}
-cameraX: gg, -245636329
-indexCache3: ck
-mouse: u
-mouseCurrentButton: j, -333228559
-MouseHandler_currentButton: t, 523049731
-MouseHandler_lastButton: c, 1453893085
-MouseHandler_lastPressedTimeMillis: y, -7398409833473874705
-MouseHandler_lastPressedX: s, -384786981
-MouseHandler_lastPressedY: n, -348709505
-mouseIdleTicks: z, -363108789
-mouseLastButton: o, 872384249
-mouseLastPressedTimeMillis: l, -8309155304464128139
-mouseLastPressedX: r, -1046301689
-mouseLastPressedY: i, -1913046979
-mouseX: f, 1376819745
-mouseY: g, 202010869
-
-{MouseRecorder: bl}
-index: e, 396566785
-isRunning: a
-lock: w
-xs: k
-ys: u
-
-{MouseWheel: fe}
-
-{MouseWheelHandler: ao}
-rotation: a, -303729091
-
-{NanoTimer: en}
-nanoTime: a, 5541093550852491481
-
-{NetWriter: cx}
-buffer: k
-chatMessages: lj
-packetBuffer: z
-packetBufferNodes: w
-packetLength: f, 76115971
-rssocket: a
-serverPacket: t
-
-{Node: gn}
-hash: cs
-next: cz
-previous: cr
-
-{Node2LinkedList: gx}
-sentinel: a
-
-{NodeCache: gu}
-capacity: w
-list: u
-remainingCapacity: e
-table: k
-
-{NPC: ci}
-composition: a
-
-{NPCComposition: jn}
-actions: q
-colors: r
-combatLevel: h, -280231869
-configs: as
-heightScale: v, -2082676849
-id: u, 1273015549
-isClickable: ap
-isMinimapVisible: b
-isVisible: p
-models: f
-modifiedColors: i
-name: z
-NpcDefinition_indexCache: a
-NpcDefinition_modelIndexCache: w
-npcModelCache: k
-npcs: e
-varp32Index: ax, -1839748547
-varpIndex: aq, -2002687013
-widthScale: d, 1246817025
-
-{ObjectComposition: jf}
-actions: ag
-ambient: ab, 2045893851
-ambientSoundId: ae, 492183817
-animationId: v, -334665683
-boolean1: m
-boolean2: ay
-cachedModels: z
-clipped: ax
-clipType: b, 542423197
-configId: av, 2109158551
-contrast: ad, 931874435
-id: g, -1714760777
-impostorIds: ah
-int1: q, -1320550455
-int2: p, -1284309911
-int3: af, 2040555547
-int4: am, 1274074531
-int5: aa, 103125545
-int6: aj, 1679061985
-interactType: l, -1161808807
-isRotated: aq
-isSolid: ai
-mapIconId: ak, -956559097
-mapSceneId: as, -1042448959
-modelClipped: d
-modelSizeHeight: ap, -1468073391
-modelSizeX: at, 1342124689
-modelSizeY: an, -1186652121
-name: c
-nonFlatShading: h
-ObjectDefinition_isLowDetail: a
-objectModels: j
-objects: k
-objects_ref: w
-objectTypes: x
-offsetHeight: aw, 688876963
-offsetX: ac, 1247660289
-offsetY: al, 2050502779
+{KitDefinition: ir}
+bodyPartId: h, -155469597
+identKits: r
+identKit_ref: n
+modelIds: d
+models: z
+nonSelectable: u
 recolorToFind: s
-recolorToReplace: n
-sizeX: r, -1899287589
-sizeY: i, -2057232489
-textureToFind: y
+recolorToReplace: b
+retextureToFind: e
+retextureToReplace: f
+
+{LoginPacket: fx}
+id: h, -1273440689
+
+{MachineInfo: ky}
+javaVendorType: az, 2025860265
+javaVersionMajor: ae, -930952985
+javaVersionMinor: av, 1773440301
+javaVersionPatch: am, -2038013029
+maxMemoryMB: ah, -193276725
+os64Bit: s
+osType: d, -165469907
+osVersionType: ac, 1585000727
+
+{MainBufferProvider: bj}
+component: n
+image: v
+
+{Mapping: du}
+mux: v
+submapFloors: y
+
+{MessageNode: bs}
+crossSprites: fa
+id: n, -890292739
+name: r
+sender: h
+sessionToken: bu
+tick: v, -2130115035
+type: y, 11789715
+value: d
+
+{MilliTimer: ez}
+colorsToFind: s
+milliTime: r, 7424302029155602103
+sleepTime: y, -1362142787
+
+{Model: es}
+bottomY: at
+boundsType: aw
+diameter: ad
+indices1: f
+indices2: z
+indices3: u
+indicesCount: e
+modelViewportXs: al
+modelViewportYs: ao
+Model_cosine: ba
+Model_sine: be
+radius: af
+useBoundingBoxes3D: bx
+verticesCount: h
+verticesX: d
+verticesY: s
+verticesZ: b
+xViewportBuffer: bj
+XYZMag: ag
+yViewportBuffer: aq
+
+{ModelData: dh}
+contrast: am
+faceAlphas: z
+faceColor: p
+faceNormals: af
+faceRenderPriorities: f
+faceRenderType: e
+faceTextures: w
+normals: az
+priority: t
+texTriangleX: i
+texTriangleY: m
+texTriangleZ: x
+textureCoords: u
+texturePrimaryColor: q
+textureRenderTypes: a
+triangleFaceCount: h
+trianglePointsX: d
+trianglePointsY: s
+trianglePointsZ: b
+triangleSkinValues: at
+vertexCount: n
+vertexSkins: aw
+vertexX: v
+vertexY: y
+vertexZ: r
+
+{MouseInput: bi}
+cameraY: gn, -505541463
+indexCache10: dq
+indexModels: ca
+mouse: h
+mouseCurrentButton: f, 1506002783
+MouseHandler_currentButton: s, -249650989
+MouseHandler_lastButton: y, -1663662679
+MouseHandler_lastPressedTimeMillis: t, -3893203364507036079
+MouseHandler_lastPressedX: p, 1338500667
+MouseHandler_lastPressedY: w, 705271259
+mouseIdleTicks: d, 283652217
+mouseLastButton: o, -898339579
+mouseLastPressedTimeMillis: m, 5366304121087764859
+mouseLastPressedX: a, 1319375247
+mouseLastPressedY: i, -488033289
+mouseLastX: z, -1745090453
+mouseLastY: u, -1332932541
+mouseX: b, -353659367
+mouseY: e, 456570953
+
+{MouseRecorder: bv}
+index: y, -1208303387
+isRunning: n
+lock: v
+xs: r
+ys: h
+
+{MouseWheel: fk}
+
+{MouseWheelHandler: ai}
+rotation: n, 1433196223
+
+{NanoTimer: em}
+nanoTime: n, -556867922724870867
+
+{NetWriter: cg}
+buffer: r
+packetBuffer: d
+packetBufferNodes: v
+packetLength: b, 1251875601
+rssocket: n
+serverPacket: s
+
+{Node: gw}
+hash: cc
+next: cr
+previous: cz
+
+{Node2LinkedList: gh}
+sentinel: n
+
+{NodeCache: ga}
+capacity: v
+list: h
+remainingCapacity: y
+table: r
+
+{NPC: cq}
+composition: n
+
+{NPCComposition: jh}
+actions: l
+colors: a
+combatLevel: g, 1202986903
+configs: ad
+heightScale: k, 1568843311
+id: h, 1596908301
+isClickable: av
+isMinimapVisible: j
+isVisible: q
+models: b
+modifiedColors: i
+name: d
+NpcDefinition_indexCache: n
+NpcDefinition_modelIndexCache: v
+npcModelCache: r
+npcs: y
+varp32Index: az, 1997373267
+varpIndex: af, 1511343147
+widthScale: c, -1911594961
+
+{ObjectComposition: ji}
+actions: at
+ambient: ac, -1188483619
+ambientSoundId: ak, -650599853
+animationId: k, -17869461
+blocksProjectile: x
+cachedModels: d
+clipped: az
+clipType: m, 1342103707
+configId: aq, 150368401
+contouredGround: j, 623363405
+contrast: aw, -1054225147
+decorDisplacement: q, 478298465
+id: e, -1214822967
+impostorIds: al
+int1: l, 1390443309
+int4: as, 1353914647
+int5: au, -1421091489
+int6: an, -1016751483
+isHollow: aa
+isRotated: af
+length: i, -1893629857
+mapIconId: ag, -1996116985
+mapSceneId: ad, -1643523835
+modelClipped: c
+modelSizeHeight: av, 24045283
+modelSizeX: ae, -1199209541
+modelSizeY: am, 175239069
+name: u
+nonFlatShading: g
+ObjectDefinition_isLowDetail: n
+objectModels: f
+objects: r
+objects_ref: v
+objectTypes: z
+obstructsGround: aj
+offsetHeight: ah, -95873567
+offsetX: ax, 461989129
+offsetY: ab, -741504479
+params: ap
+recolorToFind: p
+recolorToReplace: w
+supportItems: ao, 1050482093
+textureToFind: t
 textureToReplace: o
-varpId: az, 1929572175
+varpId: ay, -1985913491
+width: a, 1423927001
 
-{ObjectNode: gq}
-value: a
+{ObjectNode: gu}
+value: n
 
-{Occluder: em}
-maxNormalX: o, -743903315
-maxNormalY: i, 1329319429
-maxTIleX: w, -1669354965
-maxTileZ: k, -1798184553
-maxX: t, -663628629
-maxY: x, 1204169261
-maxZ: g, 1738272033
-minNormalX: y, 1499501973
-minNormalY: r, 236692935
-minTileX: a, 1377100417
-minTileZ: e, -1364764655
-minX: z, -25611653
-minY: j, -925867423
-minZ: f, 162046975
-testDirection: c, 619543051
-type: u, -153010939
+{Occluder: ed}
+maxNormalX: o, 2003736157
+maxNormalY: i, 70756975
+maxTIleX: v, 295152925
+maxTileZ: r, 2127870165
+maxX: s, -555560423
+maxY: z, -1537764779
+maxZ: e, 1658877971
+minNormalX: t, -1199725755
+minNormalY: a, -1266217975
+minTileX: n, -1174365471
+minTileZ: y, 180896165
+minX: d, -101138541
+minY: f, -869990365
+minZ: b, -2146142723
+testDirection: u, 207502883
+type: h, -980863161
 
-{Overlay: jh}
-color: e, -806846189
-hue: t, -1907080363
-isHidden: u
-lightness: g, 973818973
-otherHue: j, 1376424583
-otherLightness: c, -341809107
-otherRgbColor: z, 353934355
-otherSaturation: x, -1001047649
-overlays: w
-overlay_ref: a
-saturation: f, 1051805489
-texture: k, 1614382543
+{Overlay: jy}
+color: y, -1122055089
+hue: s, 1670004891
+isHidden: h
+lightness: e, -1283902265
+otherHue: f, -351171103
+otherLightness: u, -384475967
+otherRgbColor: d, -200980065
+otherSaturation: z, 442303003
+overlays: v
+overlay_ref: n
+saturation: b, -1833550447
+texture: r, -1797220547
 
-{OwnWorldComparator: ba}
+{OwnWorldComparator: bb}
 
-{PacketBuffer: gy}
-bitPosition: x, -1022606895
-cipher: g
+{PacketBuffer: gr}
+bitPosition: z, -800315305
+cipher: e
 
-{PacketNode: fg}
-clientPacket: a
-packetBuffer: e
-packetBufferNodes: u
+{PacketNode: fy}
+clientPacket: n
+packetBuffer: y
+packetBufferNodes: h
 
-{Parameters: kp}
-key: r
+{Parameters: kz}
+key: a
 
-{PendingSpawn: bo}
-delay: x, 1885900041
-hitpoints: c, -1299482467
-id: f, -591865171
-jagexLoginType: bq
-level: a, 1314434327
-orientation: g, 1702666337
-topContextMenuRow: jv
-type: w, 1135806613
-x: e, -1534725047
-y: k, -2011832797
+{PendingSpawn: bc}
+delay: z, -1835930035
+hitpoints: u, 1028985825
+id: b, 2048199829
+level: n, 385040307
+orientation: e, -2140050245
+type: v, -2008759881
+x: y, 1557662453
+y: r, 799939429
 
-{Permission: ij}
+{Permission: in}
 
-{Player: bj}
-actions: z
-animationCycleEnd: x, 897531569
-animationCycleStart: j, -313979289
-combatLevel: t, 959498037
-composition: w
-hidden: b
-isLowDetail: m
-model: y
-name: a
-overheadIcon: k, 226773847
-skullIcon: e, 1669295901
-team: q, -558926455
-totalLevel: f, -1522787423
+{Player: bf}
+actions: d
+animationCycleEnd: z, 667267473
+animationCycleStart: f, 59872103
+combatLevel: s, 311039859
+composition: v
+hidden: j
+isLowDetail: x
+model: t
+name: n
+overheadIcon: r, 1849896869
+skullIcon: y, -932580155
+team: l, 1621366447
+totalLevel: b, 58901581
 
-{PlayerComposition: hb}
-bodyPartColours: w
-colorsToReplace: f
-equipmentIds: a
-hash: u, -5429717739818962937
-isFemale: e
-transformedNpcId: k, -938568641
+{PlayerComposition: hl}
+bodyPartColours: v
+equipmentIds: n
+hash: h, 8627624893139841113
+isFemale: y
+transformedNpcId: r, 2120932443
 
-{Preferences: cf}
-hideRoofs: e
-hideUsername: t
-indexCache13: dj
-muted: k
-preferences: f
-rememberedUsername: z
-screenType: u, -881826075
+{Preferences: ck}
+hideRoofs: y
+hideUsername: s
+muted: r
+preferences: b
+rememberedUsername: d
+screenType: h, 792293341
 
-{Projectile: co}
-animationSequence: h
-cycle: f, 632478681
-endHeight: z, 1369906141
-floor: w, 1093934655
-height: u, -1885188655
-heightOffset: m
-id: a, 253222545
-int6: v, 242707913
-int7: d, -851439171
-interacting: x, -820127231
-isMoving: c
-rotationX: q, -83233913
-rotationY: b, -436430029
-scalar: r
-slope: g, -45498235
-speedX: o
-start: j, -1841552807
-startTime: t, 1550375669
-velocityX: l
-velocityY: i
-velocityZ: n
-x: s
-x1: e, 696136279
-y1: k, 806338563
-z: y
+{Projectile: cy}
+animationSequence: g
+endCycle: b, -2623133
+endHeight: d, -2139108743
+floor: v, -1173893145
+height: h, -302590985
+heightOffset: x
+id: n, -623327607
+int6: k, -1796280389
+int7: c, 1814836045
+interacting: z, 2034407867
+isMoving: u
+rotationX: l, 1633053303
+rotationY: j, -1048200603
+scalar: i
+slope: e, 1917638751
+startHeight: f, 1931453645
+startMovementCycle: s, 706162689
+velocityX: o
+velocityY: a
+velocityZ: m
+x: p
+x1: y, -217171077
+y: w
+y1: r, -1473091927
+z: t
 
-{Rasterizer2D: ky}
-drawingAreaBottom: at
-drawingAreaRight: aq
-drawingAreaTop: as
-draw_region_x: ax
-graphicsPixels: ad
-graphicsPixelsHeight: ak
-graphicsPixelsWidth: ag
+{Rasterizer2D: kb}
+drawingAreaBottom: ae
+drawingAreaRight: af
+drawingAreaTop: ad
+draw_region_x: az
+graphicsPixels: aw
+graphicsPixelsHeight: ag
+graphicsPixelsWidth: at
 
 {Region: eh}
-cameraX2: d
-cameraY2: v
-cameraZ2: p
-checkClick: aq
-cycle: r
-entityBuffer: as
-entityCount: f
-levelOccluderCount: af
-levelOccluders: ah
-lowMemory: a
-maxTileX: l
-maxTileZ: q
-maxX: e
-maxY: w
-maxZ: k
-MAX_OCCLUDER_LEVELS: ai
-minLevel: t
+cameraX2: c
+cameraY2: k
+cameraZ2: q
+checkClick: af
+cycle: a
+entityBuffer: ad
+entityCount: b
+levelOccluderCount: ao
+levelOccluders: al
+lowMemory: n
+maxTileX: m
+maxTileZ: l
+maxX: y
+maxY: v
+maxZ: r
+MAX_OCCLUDER_LEVELS: aa
+minLevel: s
 minTileX: i
-minTileZ: m
-mouseX2: at
-mouseY2: ap
-objects: g
-pitchCos: ad
-pitchSin: ab
-renderArea: bg
+minTileZ: x
+mouseX2: ae
+mouseY2: av
+objects: e
+pitchCos: aw
+pitchSin: ac
+renderArea: bz
 Scene_plane: o
-screenCenterX: b
-screenCenterZ: h
-selectedRegionTileX: an
-selectedRegionTileY: ac
-tileCycles: j
-tileDeque: ae
-tileHeights: u
-tiles: z
-tileUpdateCount: y
-TILE_MASK_2D: bc
-TILE_ROTATION_2D: bp
-TILE_WALL_DRAW_FLAGS_1: aj
-viewportWalking: aw
-visibilityMaps: bn
-WALL_UNCULL_FLAGS_0: ao
-WALL_UNCULL_FLAGS_1: ar
-WALL_UNCULL_FLAGS_2: au
-WALL_UNCULL_FLAGS_3: bb
-yawCos: ak
-yawSin: ag
+screenCenterX: j
+screenCenterZ: g
+selectedRegionTileX: am
+selectedRegionTileY: ax
+tileCycles: f
+tileDeque: ak
+tileHeights: h
+tiles: d
+tileUpdateCount: t
+TILE_MASK_2D: bq
+TILE_ROTATION_2D: bk
+TILE_WALL_DRAW_FLAGS_1: an
+viewportWalking: ah
+visibilityMaps: by
+WALL_UNCULL_FLAGS_0: ai
+WALL_UNCULL_FLAGS_1: ap
+WALL_UNCULL_FLAGS_2: ar
+WALL_UNCULL_FLAGS_3: bg
+yawCos: ag
+yawSin: at
 
-{Renderable: el}
-modelHeight: cw, -1204322527
+{Renderable: eo}
+indexSprites: cw
+modelHeight: cf, 1603129761
+soundSystem0: on
 
-{RenderOverview: ka}
-fontNameVerdana11: f
-fontNameVerdana13: g
-fontNameVerdana15: j
-headIconsHint: fg
+{RenderOverview: kl}
+fontNameVerdana11: b
+fontNameVerdana13: e
+fontNameVerdana15: f
 
-{Residue: dr}
-begin: w
-classBook: z
-classification: u
-end: e
-partitionSize: k
-type: a
+{Residue: dv}
+begin: v
+classBook: d
+classification: h
+end: y
+partitionSize: r
+type: n
 
-{RSCanvas: bc}
-component: a
+{RunException: ey}
+indexTrack2: dj
+localPlayerName: v
 
-{RSSocket: fr}
-
-{RunException: eo}
-localPlayerName: w
-
-{SceneTileModel: df}
-flatShade: x
-overlay: y
-rotation: s
-shape: c
-tmpScreenX: o
-tmpScreenY: r
-triangleColorA: k
-triangleColorB: u
-triangleColorC: z
-triangleTextureId: j
-underlay: n
-vertexSceneX: i
-vertexSceneY: l
-vertexSceneZ: m
-vertexX: a
-vertexY: w
-vertexZ: e
-
-{SceneTilePaint: ed}
+{SceneTileModel: dl}
 flatShade: z
-neColor: e, 646505167
-nwColor: k, 799884147
-rgb: t, -546473555
-seColor: w, 1295951857
-swColor: a, -829167371
-texture: u, -879620257
+overlay: t
+rotation: p
+shape: u
+tmpScreenX: o
+tmpScreenY: a
+triangleColorA: r
+triangleColorB: h
+triangleColorC: d
+triangleTextureId: f
+underlay: w
+vertexSceneX: i
+vertexSceneY: m
+vertexSceneZ: x
+vertexX: n
+vertexY: v
+vertexZ: y
 
-{Script: ck}
-instructions: w
-intOperands: e
-intStackCount: t, -1243325363
-localIntCount: u, 475547171
-localStringCount: z, -1400091303
-mapDots: fd
-stringOperands: k
-stringStackCount: f, -1013854573
-switches: g
+{SceneTilePaint: eg}
+flatShade: d
+neColor: y, -48624337
+nwColor: r, 1347512629
+rgb: s, 450993421
+seColor: v, 223131607
+swColor: n, -1205436467
+texture: h, 1886351167
 
-{ScriptEvent: by}
-boolean1: w
-objs: a
-string: j
-widget: e
+{Script: cv}
+instructions: v
+intOperands: y
+intStackCount: s, 1986593681
+localIntCount: h, -285464221
+localStringCount: d, 179342557
+stringOperands: r
+stringStackCount: b, 1606864021
+switches: e
 
-{ScriptState: bs}
-invokedFromPc: w, -1612919269
-invokedFromScript: a
-isMembersWorld: f
-rasterProvider: ai
-sampleRate: u, -1895373177
-savedLocalInts: e
-savedLocalStrings: k
+{ScriptEvent: bn}
+boolean1: v
+cameraZ: gj, 696974527
+mouseWheel: ll
+objs: n
+string: f
+widget: y
 
-{ScriptVarType: t}
-id: ge, 2055034965
-typeChar: gg
+{ScriptState: bu}
+indexMaps: ci
+invokedFromPc: v, 1058908433
+invokedFromScript: n
+savedLocalInts: y
+savedLocalStrings: r
 
-{Sequence: jj}
-forcedPriority: s, -1623144549
-frameIDs: z
-frameLenghts: f
-frameStep: j, -220100085
-interleaveLeave: x
-leftHandItem: n, 199012451
-maxLoops: o, -502401333
-precedenceAnimating: r, -235496103
-priority: i, 100974965
-replyMode: l, 1611211339
-rightHandItem: y, -1249525367
-sequences: k
-skeletons: u
-skel_ref: w
-skin_ref: e
-stretches: c
+{ScriptVarType: s}
+id: gg, 1787578607
+typeChar: ge
 
-{ServerPacket: fq}
-packetId: cb, -874561827
-packetLength: cv, -1985679577
+{Sequence: js}
+forcedPriority: p, 1538169177
+frameIDs: d
+frameLenghts: b
+frameStep: f, 332827053
+interleaveLeave: z
+leftHandItem: w, 813918677
+maxLoops: o, -565156721
+precedenceAnimating: a, 592248831
+priority: i, -2091801731
+replyMode: m, 733525121
+rightHandItem: t, -628531205
+sequences: r
+seq_ref: n
+skeletons: h
+skel_ref: v
+skin_ref: y
+stretches: u
 
-{Signlink: fs}
-cachedTask: k
-closed: z
-currentTask: e
-javaVendor: a
-javaVersion: w
-sysEventQueue: u
+{ServerPacket: fn}
+packetId: cl, -1288651075
+packetLength: cd, 716505925
 
-{Size: v}
-crossSprites: fb
-menuHeight: jk, -557930467
+{Signlink: ff}
+cachedTask: r
+closed: d
+currentTask: y
+javaVendor: n
+javaVersion: v
+sysEventQueue: h
+timer: u
+urlRequester: ep
 
-{SoundEffect: di}
-end: k
-instruments: w
-start: e
+{Size: k}
+indexTrack1: cg
 
-{SoundEffect3: dt}
-coefficients: t
-fowardMinimisedCoefficientMultiplier: f
-fowardMultiplier: g
-magnitudes: k
-minimisedCoefficients: z
-pairs: a
-phases: e
-unity: u
+{SoundEffect: dq}
+end: r
+instruments: v
+start: y
 
-{SoundTask: du}
-NetCache_reference: m
-systems: a
+{SoundEffect3: di}
+coefficients: s
+fowardMinimisedCoefficientMultiplier: b
+fowardMultiplier: e
+magnitudes: r
+minimisedCoefficients: d
+pairs: n
+phases: y
+unity: h
 
-{SoundTaskDataProvider: au}
+{SoundTask: db}
+cameraPitch: gm, 1633509945
+osName: j
+systems: n
 
-{SourceDataSoundSystem: bn}
-audioFormat: a
-bytes: k
-size: e, 187098319
-source: w
+{SoundTaskDataProvider: ar}
 
-{Spotanim: iz}
-heightScale: s, 924320411
-id: u, -1724173847
-orientation: n, 1346987829
-SpotAnimationDefinition_cachedModels: k
-SpotAnimationDefinition_indexCache: a
-SpotAnimationDefinition_modelIndexCache: w
-spotanims: e
-widthScale: c, -2078782681
+{SourceDataSoundSystem: by}
+audioFormat: n
+bytes: r
+size: y, -1518684947
+source: v
 
-{SpritePixels: ks}
-height: e
-maxHeight: t
-maxWidth: z
-offsetX: k
-offsetY: u
-pixels: a
-width: w
+{Spotanim: iy}
+heightScale: p, 1771214059
+id: h, -697985447
+orientation: w, 400209417
+SpotAnimationDefinition_cachedModels: r
+SpotAnimationDefinition_indexCache: n
+SpotAnimationDefinition_modelIndexCache: v
+spotanims: y
+widthScale: u, -819269327
 
-{Task: ev}
-intArgument: t
-objectArgument: f
-status: u
-task: a
-type: z, 243075415
-value: g
+{SpritePixels: kg}
+height: y
+maxHeight: s
+maxWidth: d
+offsetX: r
+offsetY: h
+pixels: n
+width: v
 
-{TaskDataNode: dy}
+{Task: et}
+intArgument: s
+objectArgument: b
+status: h
+task: n
+type: d, -1378470907
+value: e
 
-{TaskDataProvider: ca}
+{TaskDataNode: dk}
 
-{Texture: dp}
-fileIds: t
-loaded: n
-pixels: s
+{TaskDataProvider: cw}
 
-{TextureProvider: dc}
-brightness: u
-deque: w
-maxSize: e, 1055362031
-size: k, -205210017
-sprites: t
-textures: a
-width: z, 1283582721
+{Texture: dz}
+fileIds: s
+loaded: w
+pixels: p
 
-{Tile: ez}
-bridge: h
-decorativeObject: f
+{TextureProvider: dx}
+brightness: h
+deque: v
+maxSize: y, 1420530535
+renderOverview: qb
+size: r, 826241847
+sprites: s
+textures: n
+width: d, 1637241803
+
+{Tile: ej}
+bridge: g
+decorativeObject: b
 draw: o
 drawEntities: i
-entityCount: x, 1495705029
-entityFlags: s
-flags: n, 414760873
-groundObject: g
-itemLayer: j
-objects: c
-overlay: z
-paint: u
-physicalLevel: y, 1613392379
-plane: a, 1725557519
-renderLevel: k, -721315981
-visible: r
-wallCullDirection: l, -746627283
-wallCullOppositeDirection: q, 37190099
-wallDrawFlags: b, -1139868411
-wallObject: t
-wallUncullDirection: m, 1182737099
-x: w, -695857629
-y: e, 1267689537
+entityCount: z, 831855861
+entityFlags: p
+flags: w, 823196875
+groundObject: e
+itemLayer: f
+objects: u
+overlay: d
+paint: h
+physicalLevel: t, 1114807551
+plane: n, -123400925
+renderLevel: r, -1654186991
+visible: a
+wallCullDirection: m, 701297865
+wallCullOppositeDirection: l, -1560273499
+wallDrawFlags: j, -437205115
+wallObject: s
+wallUncullDirection: x, -178883987
+x: v, -1747017945
+y: y, -1024113217
 
-{Timer: fi}
+{Timer: fm}
+indexScripts: dp
 
 {TotalQuantityComparator: o}
-clientInstance: ar
 
-{Track1: hl}
+{Track1: hf}
 
 {UnitPriceComparator: i}
-headIconsPrayer: fa
+revision: y, 1469824859
 
-{UrlRequest: ep}
-isDone0: w
-localPlayer: ii
-response0: e
-url: a
+{UrlRequest: en}
+isDone0: v
+response0: y
+url: n
 
-{UrlRequester: ee}
-isClosed: w
-requests: e
-thread: a
+{UrlRequester: el}
+isClosed: v
+mouseRecorder: bl
+requests: y
+soundSystem1: oo
+thread: n
 
-{Varbit: jw}
-configId: e, -1005831171
-leastSignificantBit: k, 442861105
-mostSignificantBit: u, 1796470167
-varbits: w
-varbit_ref: a
+{Varbit: je}
+configId: y, 1848151097
+leastSignificantBit: r, 208382339
+mostSignificantBit: h, -759227175
+varbits: v
+varbit_ref: n
 
-{Varcs: cc}
-changed: t
-lastSerialize: f, -1435949291815639655
-varcs: u
-varcSerials: e
-varcstrings: z
-varcstringSerials: k
+{Varcs: cn}
+changed: s
+lastSerialize: b, -5024628078537204155
+varcs: h
+varcSerials: y
+varcstrings: d
+varcstringSerials: r
 
-{VarPlayerType: iv}
-configType: k, 1618823997
-varplayers: e
-varplayer_ref: a
+{VarPlayerType: im}
+compass: fq
+configType: r, -1128845797
+varplayers: y
 
-{VertexNormal: ek}
-canvasHeight: v, 197876021
-clanChatRank: nn
-magnitude: k, -1070537593
-soundSystem1: or
-x: a, -364405127
-y: w, -312726173
-z: e, -820067941
+{VertexNormal: ea}
+magnitude: r, 875150227
+x: n, -925840547
+y: v, 850042175
+z: y, -237349833
 
-{WallObject: eb}
-config: g, 585357267
-floor: a, -848426587
-hash: f, 2085641561
-orientationA: k, -659812433
-orientationB: u, 529102943
-renderable1: z
-renderable2: t
-scrollbarSprites: fw
-x: w, -395897065
-y: e, 1588001219
+{WallObject: er}
+config: e, 179650203
+floor: n, 433254391
+hash: b, -1866921115
+orientationA: r, 1487602585
+orientationB: h, -1333183839
+renderable1: d
+renderable2: s
+x: v, 141605773
+y: y, 1065730419
 
-{Widget: hz}
-actions: cy
-borderThickness: bg, -787463529
-boundsIndex: en, -767002277
-buttonType: p, -1691006837
-children: ey
-config: co, -29765301
-configActions: cw
-configListenerArgs: dk
-configTriggers: dr
-contentType: b, -1317501575
-dragParent: cc
-dynamicValues: ef
-filled: am
-flippedHorizontally: bx
-flippedVertically: be
-fontId: bo, 1378111317
-hasScript: r
-height: at, -510787749
-id: i, 1180637085
-index: l, 373582993
-isHidden: aw
-itemId: el, -655869141
+{Widget: hq}
+actions: cp
+borderThickness: bz, -23290719
+boundsIndex: em, 1405322449
+buttonType: q, -903022623
+children: eq
+config: cy, -1387866553
+configActions: cf
+configListenerArgs: da
+configTriggers: dv
+contentType: j, -1105807973
+dragParent: cn
+dynamicValues: es
+dynamicWidth: k, -1909108183
+dynamicX: g, 290494863
+dynamicY: c, -681207317
+filled: as
+flippedHorizontally: bi
+flippedVertically: bd
+fontId: bc, -227423773
+hasScript: a
+height: ae, -1234965771
+id: i, -1897512589
+index: m, 1399766411
+isHidden: ah
+itemId: eo, -81002185
 itemIds: eh
-itemQuantities: ei
-itemQuantity: eb, 306061293
-lineWidth: ar, 1546760195
-loopCycle: ew, 451491617
-modelId: bf, -1159054531
-modelType: bw, 2100193729
-modelZoom: bv, -675889149
-mouseEnterListener: dx
-mouseExitListener: dn
-mouseHoverListener: dj
-name: cg
-noClickThrough: er
-opacity: aj, 1259484473
-originalWidth: ag, -1466251825
-originalX: ab, -942933619
-originalY: ad, -520769527
-paddingX: cj, -943352403
-paddingY: cq, -498146337
-parentId: ac, 1222259003
-relativeX: as, -2118483697
-relativeY: aq, 330328389
-renderListener: ds
-rotationX: by, 431546337
-rotationY: bl, 1562380973
-rotationZ: bi, -1087716599
-scrollHeight: af, 548021281
-scrollListener: do
-scrollWidth: ai, -1224042105
-scrollX: al, -1206701085
-scrollY: ay, 579088909
-selectedAction: ct
-skillListenerArgs: dt
-skillTriggers: dy
-spellName: ed
-sprite2: bq, -1788728145
-spriteId: bb, -207033201
-spriteTiling: bn
-string1: ch
-tableActions: ej
-tableListenerArgs: dz
-tableModTriggers: dg
-text: br
-textColor: ah, -705105487
-textShadowed: cv
-textureId: bp, -1826327485
-tooltip: eg
-type: m, -615721927
-widgets: z
-Widget_cachedFonts: n
-Widget_cachedModels: s
-width: ax, 1913265447
-xSprites: ci
+itemQuantities: ep
+itemQuantity: er, -429858587
+lineWidth: ap, -264823937
+loopCycle: ez, 1327978769
+modelId: bx, -181997591
+modelType: bo, -1148390205
+modelZoom: bs, -1607809931
+mouseEnterListener: dp
+mouseExitListener: dd
+mouseHoverListener: dn
+name: ct
+noClickThrough: ec
+opacity: an, 1292757505
+originalHeight: ag, 728630073
+originalWidth: at, -1767373597
+originalX: ac, -1216716409
+originalY: aw, -889317087
+paddingX: cs, 1178670921
+paddingY: cb, -807119459
+parentId: ax, 124216063
+relativeX: ad, 1147742561
+relativeY: af, 963537701
+renderListener: du
+rotationX: bn, -1519876663
+rotationY: bv, 1919077371
+rotationZ: bl, -1901880727
+scrollHeight: ao, -1911617157
+scrollListener: dy
+scrollWidth: aa, -1979513123
+scrollX: ab, -1800486249
+scrollY: aj, 1730030323
+selectedAction: ci
+skillListenerArgs: di
+skillTriggers: dk
+spellName: eg
+sprite2: bj, 743784795
+spriteId: bg, 792545527
+spriteTiling: by
+string1: cj
+tableActions: ex
+tableListenerArgs: dc
+tableModTriggers: dt
+text: bm
+textColor: al, 1002577099
+textShadowed: cd
+textureId: bk, 1136278555
+tooltip: ei
+type: x, 1666752653
+widgetIndex: b
+widgets: d
+Widget_cachedFonts: w
+Widget_cachedModels: p
+width: az, 1815467615
+xSprites: cq
 
-{WidgetNode: bt}
-id: a, 1515870281
-owner: w, -292484973
+{WidgetNode: bp}
+id: n, -1416062019
+owner: v, 421860697
 
-{World: cp}
-activity: y
-address: n
-id: x, -404484463
-index: r, -1567307001
-location: o, 614439421
-mask: c, -1198421041
-playerCount: s, -2015743543
-worldCount: z, -2073723129
+{World: ch}
+activity: t
+address: w
+id: z, -73332619
+index: a, -573712759
+location: o, 1687134911
+mask: u, 1964230429
+playerCount: p, -222012739
+worldCount: d, 942053817
+worldList: h
 
-{WorldComparator: s}
-mouseWheel: ld
+{WorldComparator: p}
 
-{WorldMapData: ax}
-fileId: a, 1868688265
+{WorldMapData: az}
+fileId: n, -1839307921
+slArrowSprites: bt
 
-{WorldMapSectionBase: ah}
+{WorldMapSectionBase: al}
 
-{WorldMapType1: as}
-menuX: ir, -1945852199
+{WorldMapType1: ad}
 
-{WorldMapType2: al}
+{WorldMapType2: ab}
 
-{WorldMapType3: ab}
+{WorldMapType3: ac}
+clanChatRank: no
+xteaKeys: fl

@@ -1,10 +1,13 @@
 package os.jr.launcher;
 
+import java.applet.Applet;
+import java.awt.Canvas;
+
 import javax.swing.JFrame;
 
 import os.jr.game.RSGame;
 
-public class OSJRLauncher {
+public class OSJRLauncher extends Canvas{
 
 	public static JFrame rsFrame = new JFrame();
 	public static RSGame rsGame = new RSGame();
@@ -24,6 +27,11 @@ public class OSJRLauncher {
 	}
 
 	private void addApplet() {
+		Applet applet = RSGame.applet;
+			applet.setStub(rsGame);
+			applet.setSize(766, 503);
+			applet.init();
+			applet.start();
 		rsFrame.add(RSGame.applet);
 		rsFrame.validate();
 		rsFrame.setVisible(true);
