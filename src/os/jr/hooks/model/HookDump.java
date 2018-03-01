@@ -1,4 +1,4 @@
-package os.jr.hooks.loader;
+package os.jr.hooks.model;
 
 public class HookDump {
 

@@ -1,11 +1,6 @@
-package os.jr.hooks.updater;
+package os.jr.hooks;
 
 import os.jr.game.RSGame;
-import os.jr.hooks.Client;
-import os.jr.hooks.Hooks;
-import os.jr.hooks.Player;
-import os.jr.launcher.OSJRLauncher;
-import os.jr.utils.Utils;
 
 public class HookUpdater {
 	public static long lastCacheRunTime = 0;
@@ -16,7 +11,6 @@ public class HookUpdater {
 		@SuppressWarnings("deprecation")
 		@Override
 		public void run() {
-			Utils.makeXPforLevel();
 
 			while (true != false) {
 				{
@@ -24,7 +18,6 @@ public class HookUpdater {
 						t.stop();
 					}
 					try {
-
 						Thread.sleep(sleeptime);
 						// Start Hook caching
 						Long cacheTimerStart = System.currentTimeMillis();
@@ -34,8 +27,9 @@ public class HookUpdater {
 
 						lastCacheRunTime = System.currentTimeMillis() - cacheTimerStart;
 						if (lastCacheRunTime>50)
-						System.out.println("[Warning] Time to run last Hooks cache: (ms) "+lastCacheRunTime);
-
+							System.out.println(
+									"[Warning] Time to run last Hooks cache: (ms) "
+											+lastCacheRunTime);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -47,12 +41,8 @@ public class HookUpdater {
 	});
 
 	public static void anyStateHooks() {
-		try {
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
+		Client c = Hooks.selector.client;
+		// int i = c.getLoginState();
 	}
 
 	public static void init() {
@@ -60,19 +50,8 @@ public class HookUpdater {
 	}
 
 	public static void loggedInHooks() {
-		Client c = Hooks.selector.client;
-		try {
-			if (c.isLoggedOn()) {
-				if (OSJRLauncher.rsFrame!=null) {
-					OSJRLauncher.updateTitle("[OSJR] - ["+c.getLocalPlayer().getName()+"] ");
-				}
-			} else {
-				OSJRLauncher.updateTitle("[OSJR] - "+c.getLoginState());
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
+		//Put checks that require a player to be logged in
+		// here.
 	}
 
 }

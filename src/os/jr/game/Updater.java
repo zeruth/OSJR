@@ -1,4 +1,4 @@
-package os.jr.ui;
+package os.jr.game;
 
 import java.awt.Color;
 import java.io.IOException;
@@ -9,7 +9,6 @@ import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.border.EmptyBorder;
 
-import os.jr.game.RSGame;
 import os.jr.utils.Utils;
 
 public class Updater extends JFrame {

@@ -1,14 +1,16 @@
-package os.jr.launcher;
+package os.jr.game;
 
 import java.applet.Applet;
 import java.awt.Canvas;
 
 import javax.swing.JFrame;
 
-import os.jr.game.RSGame;
-
 public class OSJRLauncher extends Canvas{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public static JFrame rsFrame = new JFrame();
 	public static RSGame rsGame = new RSGame();
 

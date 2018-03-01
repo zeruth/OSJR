@@ -1,4 +1,4 @@
-package os.jr.hooks.loader;
+package os.jr.hooks;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,8 +9,8 @@ import java.io.Reader;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import os.jr.hooks.Hooks;
-import os.jr.utils.Utils;
+import os.jr.hooks.model.HookDump;
+import os.jr.hooks.model.RSClass;
 
 public class HooksLoader {
 
@@ -37,12 +37,12 @@ public class HooksLoader {
 			}
 			Hooks.init();
 			for (HookDump hook : hooks) {
-				RSClass c = Utils.getClassbyName(hook.rsClass.refactoredName);
+				RSClass c = Hooks.getClassbyName(hook.rsClass.refactoredName);
 				if (c!=null) {
 					c.fields = hook.rsFields;
-					totalFieldsAddedToClass+=hook.rsFields.length+1;
+					totalFieldsAddedToClass+=hook.rsFields.length;
 				}
-				totalFields+=hook.rsFields.length+1;
+				totalFields+=hook.rsFields.length;
 
 			}
 			

@@ -19,12 +19,6 @@ public class SettingsIo {
 	public static File file = new File(System.getProperty("user.home") + "/OSJR/settings");
 	public static File dir = new File(System.getProperty("user.home") + "/OSJR/");
 
-	/**
-	 * createBlankDB - Creates blank settings file in user data directory.
-	 * 
-	 * @throws IOException
-	 *             = Various I/O issues.
-	 */
 	public static void createBlankDb() {
 		Writer writer;
 		try {
@@ -40,15 +34,6 @@ public class SettingsIo {
 
 	}
 
-	/**
-	 * loadSettings - Loads settings from user data directory using Gson.
-	 * 
-	 * @return = Returns settings file in data directory as an object.
-	 * @throws UnsupportedEncodingException
-	 *             = Malformed settings file.
-	 * @throws IOException
-	 *             = Various I/O related issues.
-	 */
 	public static Settings loadSettings() {
 		InputStream inputStream;
 		try {
@@ -74,14 +59,6 @@ public class SettingsIo {
 
 	}
 
-	/**
-	 * saveSettings - Saves Settings object to file in data directory.
-	 * 
-	 * @param s
-	 *            = Settings object to be saved.
-	 * @throws IOException
-	 *             = Various I/O issues.
-	 */
 	public static void saveSettings(Settings s) {
 		try {
 			Writer writer = new FileWriter(file);
@@ -94,16 +71,6 @@ public class SettingsIo {
 
 	}
 
-	/**
-	 * updateGamePackSize - Overwrites the old gamepack size in settings file.
-	 * 
-	 * @param size
-	 *            = Size of new gamepack.
-	 * @throws UnsupportedEncodingException
-	 *             = Malformed settings file.
-	 * @throws IOException
-	 *             = Various I/O issues.
-	 */
 	public static void updateGamePackSize(int size) {
 		Settings s = loadSettings();
 		s.gamePackSize = size;

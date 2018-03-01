@@ -19,9 +19,8 @@ import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import os.jr.hooks.loader.HooksLoader;
-import os.jr.hooks.updater.HookUpdater;
-import os.jr.ui.Updater;
+import os.jr.hooks.HookUpdater;
+import os.jr.hooks.HooksLoader;
 import os.jr.utils.Settings;
 import os.jr.utils.SettingsIo;
 import os.jr.utils.Utils;

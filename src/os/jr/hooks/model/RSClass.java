@@ -1,6 +1,7 @@
-package os.jr.hooks.loader;
+package os.jr.hooks.model;
 
 import os.jr.hooks.Hooks;
+import os.jr.hooks.HooksLoader;
 
 public class RSClass {
 
