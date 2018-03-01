@@ -33,24 +33,24 @@ public class HooksLoader {
 			for (HookDump hook : hooks) {
 				Hooks.classNames.put(hook.rsClass.refactoredName, hook.rsClass.obfuscatedName);
 				Hooks.refactoredClassNames.put(hook.rsClass.obfuscatedName, hook.rsClass.refactoredName);
-				totalClasses ++;
+				totalClasses++;
 			}
 			Hooks.init();
 			for (HookDump hook : hooks) {
 				RSClass c = Hooks.getClassbyName(hook.rsClass.refactoredName);
-				if (c!=null) {
+				if (c != null) {
 					c.fields = hook.rsFields;
-					totalFieldsAddedToClass+=hook.rsFields.length;
+					totalFieldsAddedToClass += hook.rsFields.length;
 				}
-				totalFields+=hook.rsFields.length;
+				totalFields += hook.rsFields.length;
 
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("[OSJR] Loaded "+totalClasses+" Classes.");
-		System.out.println("[OSJR] Loaded "+totalFields+" Fields.");
-		System.out.println("[OSJR] Loaded "+totalFieldsAddedToClass+" Fields into classes.");
+		System.out.println("[OSJR] Loaded " + totalClasses + " Classes.");
+		System.out.println("[OSJR] Loaded " + totalFields + " Fields.");
+		System.out.println("[OSJR] Loaded " + totalFieldsAddedToClass + " Fields into classes.");
 	}
 }

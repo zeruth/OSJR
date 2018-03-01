@@ -23,12 +23,12 @@ public class Hooks {
 		}
 
 	}
-	
-	public static RSClass getClassbyName(String name) { 
+
+	public static RSClass getClassbyName(String name) {
 		if (name.compareTo("Client") == 0) {
 			return selector.client;
 		}
-		System.out.println(name+" not loaded.");
+		System.out.println(name + " not loaded.");
 		return null;
 	}
 

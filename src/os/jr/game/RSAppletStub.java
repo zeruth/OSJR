@@ -57,12 +57,14 @@ public class RSAppletStub implements AppletStub {
 		try {
 			System.out.println("Parsing Website");
 			final URLConnection urlConnection = new URL(link + "l=0/jav_config.ws").openConnection();
-			urlConnection.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36");
+			urlConnection.addRequestProperty("User-Agent",
+					"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36");
 			final BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
 			String line;
 			while ((line = reader.readLine()) != null) {
-				line = line.replaceAll("\">'", "\"").replaceAll("'", "").replaceAll("\\(", "").replaceAll("\\)", "").replaceAll("\"", "").replaceAll(" ", "").replaceAll("param=", "")
-						.replaceAll(";", "").replaceAll("value", "");
+				line = line.replaceAll("\">'", "\"").replaceAll("'", "").replaceAll("\\(", "").replaceAll("\\)", "")
+						.replaceAll("\"", "").replaceAll(" ", "").replaceAll("param=", "").replaceAll(";", "")
+						.replaceAll("value", "");
 				final String[] splitted = line.split("=");
 				if (splitted.length == 1) {
 					parameters.put(splitted[0], "");
@@ -82,6 +84,6 @@ public class RSAppletStub implements AppletStub {
 	@Override
 	public void appletResize(int width, int height) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

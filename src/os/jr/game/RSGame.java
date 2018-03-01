@@ -97,7 +97,7 @@ public class RSGame implements AppletStub {
 
 	@Override
 	public void appletResize(int x, int y) {
-		
+
 	}
 
 	@Override

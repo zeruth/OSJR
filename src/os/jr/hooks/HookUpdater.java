@@ -26,10 +26,8 @@ public class HookUpdater {
 						loggedInHooks();
 
 						lastCacheRunTime = System.currentTimeMillis() - cacheTimerStart;
-						if (lastCacheRunTime>50)
-							System.out.println(
-									"[Warning] Time to run last Hooks cache: (ms) "
-											+lastCacheRunTime);
+						if (lastCacheRunTime > 50)
+							System.out.println("[Warning] Time to run last Hooks cache: (ms) " + lastCacheRunTime);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -50,7 +48,7 @@ public class HookUpdater {
 	}
 
 	public static void loggedInHooks() {
-		//Put checks that require a player to be logged in
+		// Put checks that require a player to be logged in
 		// here.
 	}
 

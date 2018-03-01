@@ -5,7 +5,7 @@ import java.awt.Canvas;
 
 import javax.swing.JFrame;
 
-public class OSJRLauncher extends Canvas{
+public class OSJRLauncher extends Canvas {
 
 	/**
 	 * 
@@ -30,15 +30,15 @@ public class OSJRLauncher extends Canvas{
 
 	private void addApplet() {
 		Applet applet = RSGame.applet;
-			applet.setStub(rsGame);
-			applet.setSize(766, 503);
-			applet.init();
-			applet.start();
+		applet.setStub(rsGame);
+		applet.setSize(766, 503);
+		applet.init();
+		applet.start();
 		rsFrame.add(RSGame.applet);
 		rsFrame.validate();
 		rsFrame.setVisible(true);
 	}
-	
+
 	public static void updateTitle(String title) {
 		rsFrame.setTitle(title);
 	}

@@ -32,7 +32,7 @@ public class FieldDump {
 			e.printStackTrace();
 		} catch (NullPointerException e) {
 			System.out.println("Null field. This shouldn't happen ever.");
-			System.out.println(className+":"+refactoredName);
+			System.out.println(className + ":" + refactoredName);
 		}
 		return null;
 

@@ -5,7 +5,7 @@ import os.jr.hooks.model.RSClass;
 //Simple example of hook impl.
 public class Client extends RSClass {
 
-	//Declare field names here for ease later on.
+	// Declare field names here for ease later on.
 	public static final String widgetCount = "widgetCount";
 	public static final String isResized = "isResized";
 	public static final String gameDrawingMode = "gameDrawingMode";
@@ -105,20 +105,20 @@ public class Client extends RSClass {
 	public static final String rights = "rights";
 	public static final String numberMenuOptions = "numberMenuOptions";
 
-	//What should be the only creation on the hook.
+	// What should be the only creation on the hook.
 	public Client(Object reference) {
 		super(Hooks.classNames.get("Client"));
-		
-		//ALWAYS pass the reference object from the previous call.
+
+		// ALWAYS pass the reference object from the previous call.
 		this.reference = reference;
 	}
-	
-	//EXAMPLE!! METHOD WILL NOT WORK AS IS!
-	//You must find the actual field and define it in the Hooks file.
+
+	// EXAMPLE!! METHOD WILL NOT WORK AS IS!
+	// You must find the actual field and define it in the Hooks file.
 	public int getLoginState() {
-		
-		//getField fetches the realtime object you want.
-		//ALWAYS pass the reference forward.
+
+		// getField fetches the realtime object you want.
+		// ALWAYS pass the reference forward.
 		return (int) getField(loginState).getValue(reference);
 	}
 }
