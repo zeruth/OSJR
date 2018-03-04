@@ -14,7 +14,7 @@ public class Hooks {
 
 	public static void init() {
 		try {
-			selector = new Hooks();
+			selector = new Hooks(); // All hooks must be valid for this to succeed. Easy out-dated check.
 		} catch (Exception e) {
 			System.out.println("Client hooks outdated. Please update from github or update hooks yourself.");
 			System.out.println("Running without hooks.");
@@ -34,5 +34,5 @@ public class Hooks {
 
 	// Creates selectable instances of your hooks.
 	public Client client = new Client(null);
-	// public Widget widget; etc.
+	// public Widget widget = new Widget(null); etc.
 }

@@ -104,10 +104,9 @@ public class Client extends RSClass {
 	public static final String weight = "weight";
 	public static final String rights = "rights";
 	public static final String numberMenuOptions = "numberMenuOptions";
-
-	// What should be the only creation on the hook.
+	
 	public Client(Object reference) {
-		super(Hooks.classNames.get("Client"));
+		super(Hooks.classNames.get("Client")); // Use the refactored name for lookup.
 
 		// ALWAYS pass the reference object from the previous call.
 		this.reference = reference;

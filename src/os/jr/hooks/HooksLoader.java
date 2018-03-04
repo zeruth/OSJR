@@ -9,7 +9,7 @@ import java.io.Reader;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import os.jr.hooks.model.HookDump;
+import os.jr.hooks.model.RSHook;
 import os.jr.hooks.model.RSClass;
 
 public class HooksLoader {
@@ -18,7 +18,7 @@ public class HooksLoader {
 	private static int totalFields = 0;
 	private static int totalClasses = 0;
 	private static int totalFieldsAddedToClass = 0;
-	public static HookDump[] hooks;
+	public static RSHook[] hooks;
 
 	public static void loadHooksJson() {
 		Reader reader;
@@ -28,15 +28,15 @@ public class HooksLoader {
 			inputStream = new FileInputStream(hooksFile);
 			reader = new InputStreamReader(inputStream, "UTF-8");
 			Gson gson = new GsonBuilder().create();
-			hooks = gson.fromJson(reader, HookDump[].class);
+			hooks = gson.fromJson(reader, RSHook[].class);
 
-			for (HookDump hook : hooks) {
+			for (RSHook hook : hooks) {
 				Hooks.classNames.put(hook.rsClass.refactoredName, hook.rsClass.obfuscatedName);
 				Hooks.refactoredClassNames.put(hook.rsClass.obfuscatedName, hook.rsClass.refactoredName);
 				totalClasses++;
 			}
 			Hooks.init();
-			for (HookDump hook : hooks) {
+			for (RSHook hook : hooks) {
 				RSClass c = Hooks.getClassbyName(hook.rsClass.refactoredName);
 				if (c != null) {
 					c.fields = hook.rsFields;

@@ -9,22 +9,22 @@ public class RSClass {
 	public String obfuscatedName = "";
 	public Object reference;
 
-	public FieldDump[] fields;
+	public RSField[] fields;
 
 	public RSClass(String obfuscatedName) {
 		this.obfuscatedName = obfuscatedName;
 		this.refactoredName = Hooks.refactoredClassNames.get(obfuscatedName);
 	}
 
-	public FieldDump getField(String fieldName) {
+	public RSField getField(String fieldName) {
 		if (fields == null)
-			for (HookDump hook : HooksLoader.hooks) {
+			for (RSHook hook : HooksLoader.hooks) {
 				if (hook.rsClass.refactoredName.compareTo(refactoredName) == 0) {
 					fields = hook.rsFields;
 				}
 			}
 
-		for (FieldDump field : fields) {
+		for (RSField field : fields) {
 			if (field.refactoredName.compareTo(fieldName) == 0) {
 				return field;
 			}

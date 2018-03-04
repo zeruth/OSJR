@@ -5,14 +5,14 @@ import java.lang.reflect.Field;
 import os.jr.game.RSGame;
 import os.jr.hooks.Hooks;
 
-public class FieldDump {
+public class RSField {
 
 	public String className = "";
 	public String refactoredName = "";
 	public String fieldName = "";
 	public Number multiplier;
 
-	public FieldDump() {
+	public RSField() {
 
 	}
 
