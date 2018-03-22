@@ -9,7 +9,6 @@ import java.io.Reader;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import os.jr.hooks.model.RSHook;
 import os.jr.hooks.model.RSClass;
 
 public class HooksLoader {
@@ -18,7 +17,7 @@ public class HooksLoader {
 	private static int totalFields = 0;
 	private static int totalClasses = 0;
 	private static int totalFieldsAddedToClass = 0;
-	public static RSHook[] hooks;
+	public static RSClass[] hooks;
 
 	public static void loadHooksJson() {
 		Reader reader;
@@ -28,21 +27,23 @@ public class HooksLoader {
 			inputStream = new FileInputStream(hooksFile);
 			reader = new InputStreamReader(inputStream, "UTF-8");
 			Gson gson = new GsonBuilder().create();
-			hooks = gson.fromJson(reader, RSHook[].class);
+			hooks = gson.fromJson(reader, RSClass[].class);
 
-			for (RSHook hook : hooks) {
-				Hooks.classNames.put(hook.rsClass.refactoredName, hook.rsClass.obfuscatedName);
-				Hooks.refactoredClassNames.put(hook.rsClass.obfuscatedName, hook.rsClass.refactoredName);
-				totalClasses++;
+			for (RSClass hook : hooks) {
+				if (hook!=null) {
+					Hooks.classNames.put(hook.name, hook.obfuscatedName);
+					Hooks.refactoredClassNames.put(hook.obfuscatedName, hook.name);
+					totalClasses++;	
+				}
 			}
 			Hooks.init();
-			for (RSHook hook : hooks) {
-				RSClass c = Hooks.getClassbyName(hook.rsClass.refactoredName);
+			for (RSClass hook : hooks) {
+				RSClass c = Hooks.getClassbyName(hook.name);
 				if (c != null) {
-					c.fields = hook.rsFields;
-					totalFieldsAddedToClass += hook.rsFields.length;
+					c.fields = hook.fields;
+					totalFieldsAddedToClass += hook.fields.length;
 				}
-				totalFields += hook.rsFields.length;
+				totalFields += hook.fields.length;
 
 			}
 
