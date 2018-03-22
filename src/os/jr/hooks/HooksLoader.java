@@ -38,13 +38,14 @@ public class HooksLoader {
 			}
 			Hooks.init();
 			for (RSClass hook : hooks) {
-				RSClass c = Hooks.getClassbyName(hook.name);
-				if (c != null) {
-					c.fields = hook.fields;
-					totalFieldsAddedToClass += hook.fields.length;
+				if (hook!=null) {
+					RSClass c = Hooks.getClassbyName(hook.name);
+					if (c != null) {
+						c.fields = hook.fields;
+						totalFieldsAddedToClass += hook.fields.length;
+					}
+					totalFields += hook.fields.length;
 				}
-				totalFields += hook.fields.length;
-
 			}
 
 		} catch (Exception e) {

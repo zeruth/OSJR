@@ -28,6 +28,7 @@ public class Hooks {
 		if (name.compareTo("Client") == 0) {
 			return selector.client;
 		}
+		if (!name.startsWith("class"))
 		System.out.println(name + " not loaded.");
 		return null;
 	}
