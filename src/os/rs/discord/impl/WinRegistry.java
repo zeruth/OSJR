@@ -22,8 +22,8 @@ class WinRegistry {
 	private static final Method regQueryValueEx;
 	private static final Method regSetValueEx;
 	private static final Preferences systemRoot = Preferences.systemRoot();
-	private static final Class<? extends Preferences> userClass = WinRegistry.userRoot.getClass();
 	private static final Preferences userRoot = Preferences.userRoot();
+	private static final Class<? extends Preferences> userClass = WinRegistry.userRoot.getClass();
 
 	static {
 		try {
