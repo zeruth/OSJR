@@ -2,9 +2,10 @@
 A High-speed Old School Runescape client
 
 # What's New!
+- Update to OSRS Revision 167
 
-Well to put it simply... the original OSJR had no paint.
 
+### Well to put it simply... the original OSJR had no paint.
 
 ![clickBoxes](https://i.imgur.com/XGGg6zY.jpg)
 
