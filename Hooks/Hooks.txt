@@ -1,7 +1,0 @@
-Find your own hooks! you can learn a lot that way,
-even if you get them from another client.
-
-btw this txtx file is never read its more for ease of reading.
-
-{Client: client}
-loginState: unknown

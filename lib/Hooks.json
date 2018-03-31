@@ -1,0 +1,10177 @@
+[
+  {
+    "obfuscatedName": "gh",
+    "name": "AbstractByteBuffer",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "directBufferUnavailable"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "dk",
+    "name": "AbstractIntegerNode0",
+    "fields": [
+      {
+        "obfuscatedName": "x",
+        "name": "int1"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "dz",
+    "name": "AbstractSoundSystem",
+    "fields": [
+      {
+        "obfuscatedName": "bb",
+        "name": "slArrowSprites"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "samples"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "offset",
+        "multiplier": 1971373207
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bg",
+    "name": "Actor",
+    "fields": [
+      {
+        "obfuscatedName": "ai",
+        "name": "x",
+        "multiplier": -894772563
+      },
+      {
+        "obfuscatedName": "ab",
+        "name": "y",
+        "multiplier": 1684394433
+      },
+      {
+        "obfuscatedName": "ak",
+        "name": "angle",
+        "multiplier": 316543435
+      },
+      {
+        "obfuscatedName": "ao",
+        "name": "idlePoseAnimation",
+        "multiplier": 1545883651
+      },
+      {
+        "obfuscatedName": "ay",
+        "name": "overhead"
+      },
+      {
+        "obfuscatedName": "av",
+        "name": "overheadTextCyclesRemaining",
+        "multiplier": 1101422759
+      },
+      {
+        "obfuscatedName": "bv",
+        "name": "hitsplatTypes"
+      },
+      {
+        "obfuscatedName": "bw",
+        "name": "hitsplatCycles"
+      },
+      {
+        "obfuscatedName": "bl",
+        "name": "combatInfoList"
+      },
+      {
+        "obfuscatedName": "br",
+        "name": "interacting",
+        "multiplier": 17675511
+      },
+      {
+        "obfuscatedName": "bu",
+        "name": "poseAnimation",
+        "multiplier": -865838849
+      },
+      {
+        "obfuscatedName": "bp",
+        "name": "poseFrame",
+        "multiplier": 742068837
+      },
+      {
+        "obfuscatedName": "bc",
+        "name": "poseFrameCycle",
+        "multiplier": -58321547
+      },
+      {
+        "obfuscatedName": "bb",
+        "name": "animation",
+        "multiplier": -1243839969
+      },
+      {
+        "obfuscatedName": "bt",
+        "name": "actionFrame",
+        "multiplier": -11015395
+      },
+      {
+        "obfuscatedName": "by",
+        "name": "actionFrameCycle",
+        "multiplier": -1866414785
+      },
+      {
+        "obfuscatedName": "be",
+        "name": "actionAnimationDisable",
+        "multiplier": -409835841
+      },
+      {
+        "obfuscatedName": "bq",
+        "name": "graphic",
+        "multiplier": 1743712713
+      },
+      {
+        "obfuscatedName": "bn",
+        "name": "spotAnimFrame",
+        "multiplier": 1440662483
+      },
+      {
+        "obfuscatedName": "bk",
+        "name": "spotAnimFrameCycle",
+        "multiplier": 570715383
+      },
+      {
+        "obfuscatedName": "bm",
+        "name": "graphicsDelay",
+        "multiplier": 539257231
+      },
+      {
+        "obfuscatedName": "ck",
+        "name": "npcCycle",
+        "multiplier": 646546065
+      },
+      {
+        "obfuscatedName": "cy",
+        "name": "logicalHeight",
+        "multiplier": 1038072977
+      },
+      {
+        "obfuscatedName": "cd",
+        "name": "orientation",
+        "multiplier": 1736719235
+      },
+      {
+        "obfuscatedName": "cj",
+        "name": "queueSize",
+        "multiplier": 454379183
+      },
+      {
+        "obfuscatedName": "cm",
+        "name": "pathX"
+      },
+      {
+        "obfuscatedName": "cc",
+        "name": "pathY"
+      },
+      {
+        "obfuscatedName": "cg",
+        "name": "pathTraversed"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ja",
+    "name": "Area",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "mapAreaType"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "areaSpriteCache"
+      },
+      {
+        "obfuscatedName": "gc",
+        "name": "cameraZ",
+        "multiplier": -1747289681
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "id",
+        "multiplier": 969341623
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "spriteId",
+        "multiplier": 589537747
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "name"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "horizontalAlignment"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "verticalAlignment"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cv",
+    "name": "AttackOption",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "AttackOption_dependsOnCombatLevels"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "AttackOption_alwaysRightClick"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "AttackOption_leftClickWhereAvailable"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "AttackOption_hidden"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "floorHues"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "id",
+        "multiplier": 1538586325
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dn",
+    "name": "AudioEnvelope",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "segments"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "durations"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "phases"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "start"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "end"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "form"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "ticks"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "phaseIndex"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "step"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "amplitude"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "max"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "du",
+    "name": "AudioInstrument",
+    "fields": [
+      {
+        "obfuscatedName": "h",
+        "name": "samples"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "NOISE"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "AUDIO_SINE"
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "phases"
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "delays"
+      },
+      {
+        "obfuscatedName": "g",
+        "name": "volumeSteps"
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "pitchSteps"
+      },
+      {
+        "obfuscatedName": "s",
+        "name": "pitchBaseSteps"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "pitch"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "volume"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "pitchModifier"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "pitchModifierAmplitude"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "volumeMultiplier"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "volumeMultiplierAmplitude"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "release"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "oscillatorVolume"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "oscillatorPitch"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "oscillatorDelays"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "delayTime"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "delayDecay"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "filter"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "filterEnvelope"
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "duration"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "offset"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "k",
+    "name": "BaseVarType",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "INTEGER"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "LONG"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "STRING"
+      },
+      {
+        "obfuscatedName": "es",
+        "name": "baseY",
+        "multiplier": 269470427
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "id2",
+        "multiplier": 307420811
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "id",
+        "multiplier": 1900067095
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "r",
+    "name": "BoundingBox",
+    "fields": [
+      {
+        "obfuscatedName": "au",
+        "name": "clientInstance"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "w",
+    "name": "BoundingBox2D",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "xMin",
+        "multiplier": -1546245765
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "yMin",
+        "multiplier": 1442306253
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "xMax",
+        "multiplier": 768200023
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "yMax",
+        "multiplier": -1880251377
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "color",
+        "multiplier": -1912374301
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "d",
+    "name": "BoundingBox3D",
+    "fields": [
+      {
+        "obfuscatedName": "gb",
+        "name": "cameraPitch",
+        "multiplier": -388491899
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "int1",
+        "multiplier": 779362501
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "int2",
+        "multiplier": 1582837273
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "int3",
+        "multiplier": -1228743201
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "int4",
+        "multiplier": 514739853
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "int5",
+        "multiplier": -1489241905
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "int6",
+        "multiplier": -1999716913
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "color",
+        "multiplier": -1168317273
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "a",
+    "name": "BoundingBox3DDrawMode",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "ON_MOUSEOVER"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "ALWAYS"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "lg",
+    "name": "Bounds",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gp",
+    "name": "Buffer",
+    "fields": [
+      {
+        "obfuscatedName": "o",
+        "name": "crc32Table"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "crc64Table"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "payload"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "offset",
+        "multiplier": -732981237
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lj",
+    "name": "BufferProvider",
+    "fields": [
+      {
+        "obfuscatedName": "o",
+        "name": "pixels"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "width",
+        "multiplier": 1927789777
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "height",
+        "multiplier": 920466167
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "iv",
+    "name": "BuildType",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "RC"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "WIP"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "LIVE"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "BUILD_LIVE"
+      },
+      {
+        "obfuscatedName": "cc",
+        "name": "currentTypedKey"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "identifier"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hk",
+    "name": "ByteArrayNode",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "byteArray"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "hv",
+    "name": "CacheableNode",
+    "fields": [
+      {
+        "obfuscatedName": "cx",
+        "name": "previous"
+      },
+      {
+        "obfuscatedName": "cw",
+        "name": "next"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dq",
+    "name": "CacheFile",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "accessFile"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "readPayload"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "writePayload"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "position",
+        "multiplier": -3303374386081442213
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "length",
+        "multiplier": 6829708687430738371
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "capacity",
+        "multiplier": 321188635543818891
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cp",
+    "name": "ChatLineBuffer",
+    "fields": [
+      {
+        "obfuscatedName": "ga",
+        "name": "cameraY",
+        "multiplier": -2123886963
+      },
+      {
+        "obfuscatedName": "kx",
+        "name": "topContextMenuRow"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "lines"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "length",
+        "multiplier": -860360207
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ke",
+    "name": "ChatPlayer",
+    "fields": [
+      {
+        "obfuscatedName": "k",
+        "name": "world",
+        "multiplier": 839995305
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "rank",
+        "multiplier": 1824870945
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "kg",
+    "name": "ClanMember",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ki",
+    "name": "ClanMemberManager",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "c",
+    "name": "class0",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "i",
+    "name": "class1",
+    "fields": [
+      {
+        "obfuscatedName": "d",
+        "name": "floorSaturations"
+      },
+      {
+        "obfuscatedName": "co",
+        "name": "indexMaps"
+      },
+      {
+        "obfuscatedName": "cs",
+        "name": "indexTrack1"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cs",
+    "name": "class100",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cz",
+    "name": "class101",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "do",
+    "name": "class104",
+    "fields": [
+      {
+        "obfuscatedName": "z",
+        "name": "payload"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "position"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "bitPosition"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "blockSize0"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "blockSize1"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "codeBooks"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "floors"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "residues"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "mappings"
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "modeBlockFlags"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "modeMappings"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dl",
+    "name": "class110",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "sfx_index"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "vorbis_index"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dv",
+    "name": "class112",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dx",
+    "name": "class115",
+    "fields": [
+      {
+        "obfuscatedName": "r",
+        "name": "startPosition"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "endPosition"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ec",
+    "name": "class132",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "Viewport_containsMouse"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "Viewport_mouseX",
+        "multiplier": -35220189
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "Viewport_mouseY",
+        "multiplier": 358460999
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "Viewport_false0"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "Viewport_entityCountAtMouse",
+        "multiplier": 118136731
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "Viewport_entityIdsAtMouse"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ej",
+    "name": "class138",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "eq",
+    "name": "class149",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "eo",
+    "name": "class150",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "eb",
+    "name": "class151",
+    "fields": [
+      {
+        "obfuscatedName": "dl",
+        "name": "indexWorldMap"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ey",
+    "name": "class152",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "eh",
+    "name": "class153",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ea",
+    "name": "class154",
+    "fields": [
+      {
+        "obfuscatedName": "p",
+        "name": "isMembersWorld"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "et",
+    "name": "class155",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fg",
+    "name": "class156",
+    "fields": [
+      {
+        "obfuscatedName": "x",
+        "name": "item_ref"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fh",
+    "name": "class157",
+    "fields": [
+      {
+        "obfuscatedName": "bt",
+        "name": "slStarSprites"
+      },
+      {
+        "obfuscatedName": "da",
+        "name": "indexTrack2"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fb",
+    "name": "class158",
+    "fields": [
+      {
+        "obfuscatedName": "mj",
+        "name": "varcs"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fi",
+    "name": "class159",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "fv",
+    "name": "class160",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "fs",
+    "name": "class163",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fj",
+    "name": "class167",
+    "fields": [
+      {
+        "obfuscatedName": "j",
+        "name": "jagexClDat"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "randomDat"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "dat2File"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "idx255File"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "idxFiles"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fr",
+    "name": "class169",
+    "fields": [
+      {
+        "obfuscatedName": "cf",
+        "name": "indexInterfaces"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "fp",
+    "name": "class170",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fx",
+    "name": "class171",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fu",
+    "name": "class173",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fq",
+    "name": "class177",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fn",
+    "name": "class178",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ft",
+    "name": "class179",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "t",
+    "name": "class18",
+    "fields": [
+      {
+        "obfuscatedName": "dz",
+        "name": "indexCache13"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gk",
+    "name": "class183",
+    "fields": [
+      {
+        "obfuscatedName": "y",
+        "name": "tt"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ge",
+    "name": "class185",
+    "fields": [
+      {
+        "obfuscatedName": "n",
+        "name": "osNameLC"
+      },
+      {
+        "obfuscatedName": "fb",
+        "name": "landRegionFileIds"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "ga",
+    "name": "class188",
+    "fields": [
+      {
+        "obfuscatedName": "p",
+        "name": "state"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "gb",
+    "name": "class189",
+    "fields": [
+      {
+        "obfuscatedName": "x",
+        "name": "widgets"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "v",
+    "name": "class19",
+    "fields": [
+      {
+        "obfuscatedName": "cb",
+        "name": "indexSoundEffects"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "gv",
+    "name": "class190",
+    "fields": [
+      {
+        "obfuscatedName": "u",
+        "name": "osName"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gx",
+    "name": "class195",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gq",
+    "name": "class196",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gm",
+    "name": "class197",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gi",
+    "name": "class199",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "o",
+    "name": "class2",
+    "fields": [
+      {
+        "obfuscatedName": "em",
+        "name": "fontPlain11"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "n",
+    "name": "class20",
+    "fields": [
+      {
+        "obfuscatedName": "fm",
+        "name": "headIconsPk"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gj",
+    "name": "class203",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gl",
+    "name": "class204",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gu",
+    "name": "class205",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "hc",
+    "name": "class208",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "u",
+    "name": "class21",
+    "fields": [
+      {
+        "obfuscatedName": "r",
+        "name": "listFetcher"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "soundTaskDataProvider"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "hw",
+    "name": "class211",
+    "fields": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hm",
+    "name": "class213",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ha",
+    "name": "class219",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "q",
+    "name": "class22",
+    "fields": [
+      {
+        "obfuscatedName": "q",
+        "name": "userHome"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "hd",
+    "name": "class220",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hn",
+    "name": "class221",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hs",
+    "name": "class224",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hr",
+    "name": "class226",
+    "fields": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hx",
+    "name": "class228",
+    "fields": [
+      {
+        "obfuscatedName": "el",
+        "name": "fontBold12"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hi",
+    "name": "class229",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "g",
+    "name": "class23",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ht",
+    "name": "class230",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hu",
+    "name": "class231",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ho",
+    "name": "class232",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hp",
+    "name": "class233",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ik",
+    "name": "class234",
+    "fields": [
+      {
+        "obfuscatedName": "j",
+        "name": "scriptLocalStrings"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ir",
+    "name": "class236",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ih",
+    "name": "class237",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "varpsMasks"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "serverVarps"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "clientVarps"
+      },
+      {
+        "obfuscatedName": "ig",
+        "name": "plane",
+        "multiplier": 1180254661
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "if",
+    "name": "class240",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "il",
+    "name": "class241",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "javaVendor"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "in",
+    "name": "class244",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "iz",
+    "name": "class245",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ij",
+    "name": "class248",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "id",
+    "name": "class249",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "s",
+    "name": "class25",
+    "fields": [
+      {
+        "obfuscatedName": "x",
+        "name": "indexSpriteWidths"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "it",
+    "name": "class250",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "iy",
+    "name": "class251",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ia",
+    "name": "class252",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "objects_ref"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "io",
+    "name": "class254",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "je",
+    "name": "class264",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "NetCache_socket"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "NetCache_pendingPriorityWrites"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "NetCache_pendingPriorityWritesCount",
+        "multiplier": 1331152347
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "NetCache_pendingPriorityResponses"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "NetCache_pendingPriorityResponsesCount",
+        "multiplier": -1149484045
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "NetCache_pendingWritesQueue"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "NetCache_pendingWrites"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "NetCache_pendingWritesCount",
+        "multiplier": -89930727
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "NetCache_pendingResponses"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "NetCache_pendingResponsesCount",
+        "multiplier": 870374293
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "NetCache_responseHeaderBuffer"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "NetCache_crc"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "NetCache_reference"
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "NetCache_indexCaches"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jp",
+    "name": "class265",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ap",
+    "name": "class27",
+    "fields": [
+      {
+        "obfuscatedName": "r",
+        "name": "task"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "cacheLocations"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jw",
+    "name": "class276",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "jy",
+    "name": "class278",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ji",
+    "name": "class279",
+    "fields": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "al",
+    "name": "class28",
+    "fields": [
+      {
+        "obfuscatedName": "d",
+        "name": "decorations"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jf",
+    "name": "class281",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "kl",
+    "name": "class288",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "kk",
+    "name": "class289",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "km",
+    "name": "class290",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "kf",
+    "name": "class292",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "ka",
+    "name": "class294",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ks",
+    "name": "class297",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "kq",
+    "name": "class298",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "j",
+    "name": "class3",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "kc",
+    "name": "class302",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "kj",
+    "name": "class303",
+    "fields": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "kz",
+    "name": "class304",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "kr",
+    "name": "class308",
+    "fields": [
+      {
+        "obfuscatedName": "fc",
+        "name": "region"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ly",
+    "name": "class313",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "huffman"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ld",
+    "name": "class314",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "cp1252AsciiExtension"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "validInterfaces"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lb",
+    "name": "class315",
+    "fields": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lu",
+    "name": "class316",
+    "fields": [
+      {
+        "obfuscatedName": "x",
+        "name": "idxCount",
+        "multiplier": 1669544623
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lk",
+    "name": "class317",
+    "fields": [
+      {
+        "obfuscatedName": "k",
+        "name": "sampleRate",
+        "multiplier": -1050056085
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lf",
+    "name": "class320",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lr",
+    "name": "class321",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lx",
+    "name": "class322",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lm",
+    "name": "class324",
+    "fields": [
+      {
+        "obfuscatedName": "aw",
+        "name": "rasterProvider"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "lc",
+    "name": "class326",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "classInfos"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "lt",
+    "name": "class329",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "aa",
+    "name": "class33",
+    "fields": [
+      {
+        "obfuscatedName": "oh",
+        "name": "clanMemberManager"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lv",
+    "name": "class332",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "indexedSpriteWidth",
+        "multiplier": 152613417
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "indexedSpriteOffsetYs"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "indexedSpriteHeights"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "indexedSpritePalette"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "spritePixels"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "lw",
+    "name": "class333",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ls",
+    "name": "class336",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "mh",
+    "name": "class338",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "am",
+    "name": "class36",
+    "fields": [
+      {
+        "obfuscatedName": "b",
+        "name": "scriptMapIconReference"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "aq",
+    "name": "class37",
+    "fields": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ae",
+    "name": "class38",
+    "fields": [
+      {
+        "obfuscatedName": "w",
+        "name": "titlemuteSprite"
+      },
+      {
+        "obfuscatedName": "bn",
+        "name": "mouseRecorder"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ad",
+    "name": "class44",
+    "fields": [
+      {
+        "obfuscatedName": "cp",
+        "name": "indexCache4"
+      },
+      {
+        "obfuscatedName": "cz",
+        "name": "indexModels"
+      },
+      {
+        "obfuscatedName": "cn",
+        "name": "indexSprites"
+      },
+      {
+        "obfuscatedName": "ft",
+        "name": "modIconSprites"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "at",
+    "name": "class45",
+    "fields": [
+      {
+        "obfuscatedName": "g",
+        "name": "canvasHeight",
+        "multiplier": 1980402669
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "av",
+    "name": "class46",
+    "fields": [
+      {
+        "obfuscatedName": "qt",
+        "name": "preferences"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "az",
+    "name": "class47",
+    "fields": [
+      {
+        "obfuscatedName": "fa",
+        "name": "headIconsHint"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ar",
+    "name": "class49",
+    "fields": [
+      {
+        "obfuscatedName": "mp",
+        "name": "mouseWheel"
+      },
+      {
+        "obfuscatedName": "kt",
+        "name": "selectedItemIndex",
+        "multiplier": 1787871455
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "x",
+    "name": "class5",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bw",
+    "name": "class53",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "ba",
+    "name": "class55",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "underlay_ref"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "scriptLocalInts"
+      },
+      {
+        "obfuscatedName": "cw",
+        "name": "indexCache3"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "br",
+    "name": "class57",
+    "fields": [
+      {
+        "obfuscatedName": "e",
+        "name": "floorMultiplier"
+      },
+      {
+        "obfuscatedName": "ch",
+        "name": "rssocket"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bp",
+    "name": "class61",
+    "fields": [
+      {
+        "obfuscatedName": "fx",
+        "name": "mapscene"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bc",
+    "name": "class62",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "tileHeights"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "tileSettings"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "tileUnderlayIds"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "tileOverlayIds"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "tileOverlayPath"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bt",
+    "name": "class64",
+    "fields": [
+      {
+        "obfuscatedName": "fw",
+        "name": "mapMarkers"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "be",
+    "name": "class66",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "p",
+    "name": "class7",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "drawBoundingBoxes3D"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "drawBoundingBoxes2D"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "drawObjectGeometry2D"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "boundingBox3DDrawMode"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "boundingBoxes"
+      },
+      {
+        "obfuscatedName": "ex",
+        "name": "fonts"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bm",
+    "name": "class71",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ck",
+    "name": "class80",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cy",
+    "name": "class81",
+    "fields": [
+      {
+        "obfuscatedName": "o",
+        "name": "indexedSpriteHeight",
+        "multiplier": 1519128555
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "SHAPE_VERTICES"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "intStack"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "scriptStringStack"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "scriptStackCount",
+        "multiplier": -1641541167
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "scriptStack"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cj",
+    "name": "class85",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cm",
+    "name": "class86",
+    "fields": [
+      {
+        "obfuscatedName": "fu",
+        "name": "headIconsPrayer"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cg",
+    "name": "class88",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ch",
+    "name": "class90",
+    "fields": [
+      {
+        "obfuscatedName": "k",
+        "name": "runeSprites"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "logoSprite"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "loginWindowX",
+        "multiplier": -1865946043
+      },
+      {
+        "obfuscatedName": "ao",
+        "name": "loadingBarPercentage",
+        "multiplier": -911828325
+      },
+      {
+        "obfuscatedName": "am",
+        "name": "loadingText"
+      },
+      {
+        "obfuscatedName": "aq",
+        "name": "loginIndex",
+        "multiplier": 1740099917
+      },
+      {
+        "obfuscatedName": "ae",
+        "name": "Login_response0"
+      },
+      {
+        "obfuscatedName": "af",
+        "name": "loginMessage1"
+      },
+      {
+        "obfuscatedName": "aw",
+        "name": "loginMessage2"
+      },
+      {
+        "obfuscatedName": "ax",
+        "name": "loginMessage3"
+      },
+      {
+        "obfuscatedName": "ag",
+        "name": "username"
+      },
+      {
+        "obfuscatedName": "ay",
+        "name": "password"
+      },
+      {
+        "obfuscatedName": "ad",
+        "name": "Login_isUsernameRemembered"
+      },
+      {
+        "obfuscatedName": "bu",
+        "name": "worldSelectShown"
+      },
+      {
+        "obfuscatedName": "bc",
+        "name": "slFlagSprites"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cr",
+    "name": "class93",
+    "fields": [
+      {
+        "obfuscatedName": "x",
+        "name": "playerIndexesCount",
+        "multiplier": -1143734549
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "playerIndices"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "Players_regions"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "Players_orientations"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "Players_targetIndices"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cb",
+    "name": "class95",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "chatLineMap"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "messages"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lp",
+    "name": "ClassInfo",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "count",
+        "multiplier": -1237507683
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "type"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "errorIdentifiers"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "fields"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "methods"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "args"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "client",
+    "name": "Client",
+    "fields": [
+      {
+        "obfuscatedName": "nr",
+        "name": "widgetCount",
+        "multiplier": -645554481
+      },
+      {
+        "obfuscatedName": "mb",
+        "name": "cycleCntr",
+        "multiplier": 2122024019
+      },
+      {
+        "obfuscatedName": "nj",
+        "name": "isResized"
+      },
+      {
+        "obfuscatedName": "nn",
+        "name": "gameDrawingMode",
+        "multiplier": 1677151361
+      },
+      {
+        "obfuscatedName": "md",
+        "name": "widgetFlags"
+      },
+      {
+        "obfuscatedName": "nd",
+        "name": "widgetBoundsWidth"
+      },
+      {
+        "obfuscatedName": "nf",
+        "name": "widgetPositionX"
+      },
+      {
+        "obfuscatedName": "nl",
+        "name": "widgetPositionY"
+      },
+      {
+        "obfuscatedName": "nq",
+        "name": "widgetBoundsHeight"
+      },
+      {
+        "obfuscatedName": "mu",
+        "name": "mouseWheelRotation",
+        "multiplier": 984816653
+      },
+      {
+        "obfuscatedName": "oi",
+        "name": "destinationX",
+        "multiplier": -1701431247
+      },
+      {
+        "obfuscatedName": "od",
+        "name": "destinationY",
+        "multiplier": -1321669407
+      },
+      {
+        "obfuscatedName": "pp",
+        "name": "queuedSoundEffectCount",
+        "multiplier": -264616407
+      },
+      {
+        "obfuscatedName": "pc",
+        "name": "queuedSoundEffectIDs"
+      },
+      {
+        "obfuscatedName": "pd",
+        "name": "unknownSoundValues1"
+      },
+      {
+        "obfuscatedName": "pf",
+        "name": "unknownSoundValues2"
+      },
+      {
+        "obfuscatedName": "pq",
+        "name": "audioEffects"
+      },
+      {
+        "obfuscatedName": "pe",
+        "name": "soundLocations"
+      },
+      {
+        "obfuscatedName": "qi",
+        "name": "Viewport_xOffset",
+        "multiplier": -1169232249
+      },
+      {
+        "obfuscatedName": "qb",
+        "name": "Viewport_yOffset",
+        "multiplier": 1622222017
+      },
+      {
+        "obfuscatedName": "ol",
+        "name": "mapIcons"
+      },
+      {
+        "obfuscatedName": "qj",
+        "name": "viewportWidth",
+        "multiplier": -1212678583
+      },
+      {
+        "obfuscatedName": "qa",
+        "name": "viewportHeight",
+        "multiplier": 1963341667
+      },
+      {
+        "obfuscatedName": "ma",
+        "name": "chatCycle",
+        "multiplier": -1082097987
+      },
+      {
+        "obfuscatedName": "ql",
+        "name": "scale",
+        "multiplier": 97263787
+      },
+      {
+        "obfuscatedName": "nh",
+        "name": "publicChatMode",
+        "multiplier": -1592912231
+      },
+      {
+        "obfuscatedName": "qk",
+        "name": "grandExchangeEvents"
+      },
+      {
+        "obfuscatedName": "qe",
+        "name": "grandExchangeOffers"
+      },
+      {
+        "obfuscatedName": "mw",
+        "name": "interfaceItemTriggers"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "collisionMaps"
+      },
+      {
+        "obfuscatedName": "bv",
+        "name": "world",
+        "multiplier": -2001318921
+      },
+      {
+        "obfuscatedName": "bw",
+        "name": "flags",
+        "multiplier": 1227222983
+      },
+      {
+        "obfuscatedName": "ba",
+        "name": "socketType",
+        "multiplier": 1499887071
+      },
+      {
+        "obfuscatedName": "br",
+        "name": "loginType"
+      },
+      {
+        "obfuscatedName": "bh",
+        "name": "isMembers"
+      },
+      {
+        "obfuscatedName": "bf",
+        "name": "lowMemory"
+      },
+      {
+        "obfuscatedName": "bu",
+        "name": "languageId",
+        "multiplier": -1212184821
+      },
+      {
+        "obfuscatedName": "by",
+        "name": "gameState",
+        "multiplier": 139136151
+      },
+      {
+        "obfuscatedName": "bs",
+        "name": "gameCycle",
+        "multiplier": -349791995
+      },
+      {
+        "obfuscatedName": "bq",
+        "name": "mouseLastLastPressedTimeMillis",
+        "multiplier": -56477317167389187
+      },
+      {
+        "obfuscatedName": "bi",
+        "name": "displayFps"
+      },
+      {
+        "obfuscatedName": "bd",
+        "name": "hintArrowTargetType",
+        "multiplier": 458134011
+      },
+      {
+        "obfuscatedName": "bz",
+        "name": "hintArrowNpcTargetIdx",
+        "multiplier": -1830190711
+      },
+      {
+        "obfuscatedName": "ca",
+        "name": "hintArrowPlayerTargetIdx",
+        "multiplier": -1420606467
+      },
+      {
+        "obfuscatedName": "ct",
+        "name": "hintArrowX",
+        "multiplier": 908221549
+      },
+      {
+        "obfuscatedName": "ck",
+        "name": "hintArrowY",
+        "multiplier": -1094636543
+      },
+      {
+        "obfuscatedName": "cy",
+        "name": "hintArrowType",
+        "multiplier": 846382949
+      },
+      {
+        "obfuscatedName": "cd",
+        "name": "hintArrowOffsetX",
+        "multiplier": 1749205737
+      },
+      {
+        "obfuscatedName": "cu",
+        "name": "hintArrowOffsetY",
+        "multiplier": -2096404159
+      },
+      {
+        "obfuscatedName": "cj",
+        "name": "playerAttackOption"
+      },
+      {
+        "obfuscatedName": "cm",
+        "name": "npcAttackOption"
+      },
+      {
+        "obfuscatedName": "cg",
+        "name": "loadingStage",
+        "multiplier": 532795071
+      },
+      {
+        "obfuscatedName": "ci",
+        "name": "js5State",
+        "multiplier": 446382285
+      },
+      {
+        "obfuscatedName": "do",
+        "name": "indexCache10"
+      },
+      {
+        "obfuscatedName": "dv",
+        "name": "loginState",
+        "multiplier": 969268293
+      },
+      {
+        "obfuscatedName": "dd",
+        "name": "host"
+      },
+      {
+        "obfuscatedName": "df",
+        "name": "cachedNPCs"
+      },
+      {
+        "obfuscatedName": "db",
+        "name": "npcIndexesCount",
+        "multiplier": -1307083879
+      },
+      {
+        "obfuscatedName": "dc",
+        "name": "npcIndices"
+      },
+      {
+        "obfuscatedName": "dy",
+        "name": "pendingNpcFlagsCount",
+        "multiplier": 407650311
+      },
+      {
+        "obfuscatedName": "eg",
+        "name": "pendingNpcFlagsIndices"
+      },
+      {
+        "obfuscatedName": "ev",
+        "name": "socketError"
+      },
+      {
+        "obfuscatedName": "ew",
+        "name": "fontsMap"
+      },
+      {
+        "obfuscatedName": "fs",
+        "name": "isDynamicRegion"
+      },
+      {
+        "obfuscatedName": "ff",
+        "name": "instanceTemplateChunks"
+      },
+      {
+        "obfuscatedName": "gs",
+        "name": "cameraPitchTarget",
+        "multiplier": 1513004305
+      },
+      {
+        "obfuscatedName": "gp",
+        "name": "mapAngle",
+        "multiplier": -1305799137
+      },
+      {
+        "obfuscatedName": "he",
+        "name": "overheadTextCount",
+        "multiplier": -658715783
+      },
+      {
+        "obfuscatedName": "hl",
+        "name": "overheadTextsX"
+      },
+      {
+        "obfuscatedName": "hv",
+        "name": "overheadTextsY"
+      },
+      {
+        "obfuscatedName": "ha",
+        "name": "overheadTextsOffsetY"
+      },
+      {
+        "obfuscatedName": "hd",
+        "name": "overheadTextsOffsetX"
+      },
+      {
+        "obfuscatedName": "hq",
+        "name": "overheadTextsCyclesRemaining"
+      },
+      {
+        "obfuscatedName": "hs",
+        "name": "overheadTexts"
+      },
+      {
+        "obfuscatedName": "hb",
+        "name": "screenX",
+        "multiplier": -1666033635
+      },
+      {
+        "obfuscatedName": "hx",
+        "name": "screenY",
+        "multiplier": -2054555869
+      },
+      {
+        "obfuscatedName": "hi",
+        "name": "lastLeftClickX",
+        "multiplier": 971070527
+      },
+      {
+        "obfuscatedName": "ht",
+        "name": "lastLeftClickY",
+        "multiplier": -60699937
+      },
+      {
+        "obfuscatedName": "ho",
+        "name": "cursorState",
+        "multiplier": -678051619
+      },
+      {
+        "obfuscatedName": "iu",
+        "name": "mouseCrosshair",
+        "multiplier": -1171071495
+      },
+      {
+        "obfuscatedName": "ir",
+        "name": "pressedItemIndex",
+        "multiplier": -931788621
+      },
+      {
+        "obfuscatedName": "in",
+        "name": "itemPressedDuration",
+        "multiplier": -642182991
+      },
+      {
+        "obfuscatedName": "ie",
+        "name": "myPlayerIndex",
+        "multiplier": -149980665
+      },
+      {
+        "obfuscatedName": "it",
+        "name": "lastSelectedItemName"
+      },
+      {
+        "obfuscatedName": "ia",
+        "name": "cachedPlayers"
+      },
+      {
+        "obfuscatedName": "io",
+        "name": "localInteractingIndex",
+        "multiplier": 227169641
+      },
+      {
+        "obfuscatedName": "jd",
+        "name": "playerMenuTypes"
+      },
+      {
+        "obfuscatedName": "jc",
+        "name": "playerOptions"
+      },
+      {
+        "obfuscatedName": "jb",
+        "name": "playerOptionsPriorities"
+      },
+      {
+        "obfuscatedName": "ju",
+        "name": "groundItemDeque"
+      },
+      {
+        "obfuscatedName": "jg",
+        "name": "pendingSpawns"
+      },
+      {
+        "obfuscatedName": "jx",
+        "name": "projectiles"
+      },
+      {
+        "obfuscatedName": "jt",
+        "name": "graphicsObjectDeque"
+      },
+      {
+        "obfuscatedName": "jo",
+        "name": "boostedSkillLevels"
+      },
+      {
+        "obfuscatedName": "jw",
+        "name": "realSkillLevels"
+      },
+      {
+        "obfuscatedName": "jz",
+        "name": "skillExperiences"
+      },
+      {
+        "obfuscatedName": "ji",
+        "name": "isMenuOpen"
+      },
+      {
+        "obfuscatedName": "jn",
+        "name": "menuX",
+        "multiplier": -1898598759
+      },
+      {
+        "obfuscatedName": "jk",
+        "name": "menuOptionCount",
+        "multiplier": -111817867
+      },
+      {
+        "obfuscatedName": "kv",
+        "name": "menuActionParams0"
+      },
+      {
+        "obfuscatedName": "kn",
+        "name": "menuActionParams1"
+      },
+      {
+        "obfuscatedName": "kl",
+        "name": "menuTypes"
+      },
+      {
+        "obfuscatedName": "kk",
+        "name": "menuIdentifiers"
+      },
+      {
+        "obfuscatedName": "km",
+        "name": "menuOptions"
+      },
+      {
+        "obfuscatedName": "kh",
+        "name": "menuTargets"
+      },
+      {
+        "obfuscatedName": "kf",
+        "name": "menuBooleanArray"
+      },
+      {
+        "obfuscatedName": "ko",
+        "name": "itemSelectionState",
+        "multiplier": 2018350599
+      },
+      {
+        "obfuscatedName": "ki",
+        "name": "spellSelected"
+      },
+      {
+        "obfuscatedName": "ld",
+        "name": "widgetRoot",
+        "multiplier": 177467167
+      },
+      {
+        "obfuscatedName": "lb",
+        "name": "componentTable"
+      },
+      {
+        "obfuscatedName": "ll",
+        "name": "energy",
+        "multiplier": -2109457609
+      },
+      {
+        "obfuscatedName": "lf",
+        "name": "weight",
+        "multiplier": 1903921219
+      },
+      {
+        "obfuscatedName": "lr",
+        "name": "rights",
+        "multiplier": -1611342179
+      },
+      {
+        "obfuscatedName": "lp",
+        "name": "draggedWidget"
+      },
+      {
+        "obfuscatedName": "lt",
+        "name": "draggedOnWidget"
+      },
+      {
+        "obfuscatedName": "ls",
+        "name": "draggingWidget"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fd",
+    "name": "ClientPacket",
+    "fields": [
+      {
+        "obfuscatedName": "gv",
+        "name": "cameraYaw",
+        "multiplier": -2103720125
+      },
+      {
+        "obfuscatedName": "cp",
+        "name": "packetId",
+        "multiplier": 765132047
+      },
+      {
+        "obfuscatedName": "co",
+        "name": "packetLength",
+        "multiplier": 1991827717
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cn",
+    "name": "CodeBook",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "dimensions"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "entries"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "entryLengths"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "valueVector"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fk",
+    "name": "CollisionData",
+    "fields": [
+      {
+        "obfuscatedName": "aa",
+        "name": "x",
+        "multiplier": 293804241
+      },
+      {
+        "obfuscatedName": "ah",
+        "name": "y",
+        "multiplier": 2079220953
+      },
+      {
+        "obfuscatedName": "ao",
+        "name": "width",
+        "multiplier": -914373273
+      },
+      {
+        "obfuscatedName": "am",
+        "name": "height",
+        "multiplier": 101372235
+      },
+      {
+        "obfuscatedName": "aq",
+        "name": "flags"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "bd",
+    "name": "CombatInfo1",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "cycle",
+        "multiplier": -833582695
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "healthRatio",
+        "multiplier": -189311435
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "health",
+        "multiplier": -1388541921
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "int2",
+        "multiplier": -1958781031
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "jo",
+    "name": "CombatInfo2",
+    "fields": [
+      {
+        "obfuscatedName": "l",
+        "name": "healthScale",
+        "multiplier": 839223867
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "he",
+    "name": "CombatInfoList",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "node"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "current"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "cu",
+    "name": "CombatInfoListHolder",
+    "fields": [
+      {
+        "obfuscatedName": "o",
+        "name": "combatInfo2"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "combatInfo1"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "cc",
+    "name": "ContextMenuRow",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "param0",
+        "multiplier": -1258169607
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "param1",
+        "multiplier": 1974902623
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "type",
+        "multiplier": -1708739253
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "identifier",
+        "multiplier": 1947125179
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "option"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "im",
+    "name": "Coordinates",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "plane",
+        "multiplier": 73194951
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "worldX",
+        "multiplier": -1500657727
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "worldY",
+        "multiplier": -425737425
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "eu",
+    "name": "DecorativeObject",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "floor",
+        "multiplier": -741509819
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "x",
+        "multiplier": 27940365
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "y",
+        "multiplier": 1351166039
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "renderFlag",
+        "multiplier": -1505419439
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "rotation",
+        "multiplier": -1448452761
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "offsetX",
+        "multiplier": -2067639295
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "offsetY",
+        "multiplier": -1364887827
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "renderable1"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "renderable2"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "hash",
+        "multiplier": 2129795425
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "renderInfoBitPacked",
+        "multiplier": -1116667243
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "hl",
+    "name": "Deque",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "head"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "current"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "gy",
+    "name": "DirectByteBuffer",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "buffer"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "gs",
+    "name": "DState",
+    "fields": [
+      {
+        "obfuscatedName": "z",
+        "name": "strm"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "next_in",
+        "multiplier": 1543513409
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "total_out_lo32",
+        "multiplier": 1949852487
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "out"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "next_out",
+        "multiplier": -154623411
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "total_out_hi32",
+        "multiplier": -1544859891
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "out_ch"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "out_len",
+        "multiplier": -2142325623
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "total_in_hi32",
+        "multiplier": 1463448079
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "total_in_lo32",
+        "multiplier": 425024153
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "blockSize100k",
+        "multiplier": -1870090557
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "tPos",
+        "multiplier": -586650107
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "k0",
+        "multiplier": 1768844759
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "nblock_used",
+        "multiplier": -168965799
+      },
+      {
+        "obfuscatedName": "s",
+        "name": "nInUse",
+        "multiplier": 1270772263
+      },
+      {
+        "obfuscatedName": "ac",
+        "name": "inUse"
+      },
+      {
+        "obfuscatedName": "al",
+        "name": "seqToUnseq"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cw",
+    "name": "DynamicObject",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "id",
+        "multiplier": 1174563175
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "type",
+        "multiplier": -780980641
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "orientation",
+        "multiplier": -405492085
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "level",
+        "multiplier": -616080743
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "sceneX",
+        "multiplier": 1475499661
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "sceneY",
+        "multiplier": -718879387
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "animFrame",
+        "multiplier": 815102389
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "animCycleCount",
+        "multiplier": 1899582733
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jn",
+    "name": "Enum",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "EnumDefinition_indexCache"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "EnumDefinition_cached"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "keyType"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "valType"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "defaultString"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "defaultInt",
+        "multiplier": 1280776805
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "size",
+        "multiplier": -263499207
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "keys"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "intVals"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "stringVals"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "gw",
+    "name": "Enumerated",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "em",
+    "name": "FaceNormal",
+    "fields": [
+      {
+        "obfuscatedName": "k",
+        "name": "worldList"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "x",
+        "multiplier": 1965721985
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "y",
+        "multiplier": -688009131
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "z",
+        "multiplier": -966970701
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "dp",
+    "name": "FileOnDisk",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "file"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "length",
+        "multiplier": 4498511617949867639
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "position",
+        "multiplier": -7169359039108738715
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jv",
+    "name": "FileRequest",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "index"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "crc",
+        "multiplier": 1970862263
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "padding"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "iw",
+    "name": "FileSystem",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "type",
+        "multiplier": -643588965
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "index"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "data"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "de",
+    "name": "Floor1",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "RANGES"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "xList"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "yList"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "multiplier"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "paritionClassList"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "classDimensions"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "classSubClasses"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "classMasterbooks"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "subclassBooks"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jx",
+    "name": "FloorUnderlayDefinition",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "underlays"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "rgbColor",
+        "multiplier": 359249599
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "hue",
+        "multiplier": -236430015
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "saturation",
+        "multiplier": 1610254485
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "lightness",
+        "multiplier": 1103831319
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "hueMultiplier",
+        "multiplier": 946053927
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "kw",
+    "name": "Font",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "kd",
+    "name": "FontName",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "FontName_plain11"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "FontName_plain12"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "FontName_bold12"
+      },
+      {
+        "obfuscatedName": "du",
+        "name": "port2",
+        "multiplier": -787747873
+      },
+      {
+        "obfuscatedName": "fh",
+        "name": "landMapFileIds"
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "kp",
+    "name": "Fonts",
+    "fields": [
+      {
+        "obfuscatedName": "o",
+        "name": "map"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lh",
+    "name": "FontTypeFace",
+    "fields": [
+      {
+        "obfuscatedName": "r",
+        "name": "modIcons"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "strikeRGB"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "underlineRGB"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "prevShadeRGB"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "shadow"
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "prevColorRGB"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "color"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "gylphs"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "gylphHeights"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "glyphWidths"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "horizontalOffsets"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "verticalOffsets"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "verticalSpace"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "minSpacing"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "maxSpacing"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dy",
+    "name": "Frame",
+    "fields": [
+      {
+        "obfuscatedName": "k",
+        "name": "skin"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "transformCount"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "transformTypes"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "translator_x"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "translator_y"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "translator_z"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "showing"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ev",
+    "name": "FrameMap",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "id",
+        "multiplier": -1943637907
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "count",
+        "multiplier": -248897639
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "types"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "list"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ee",
+    "name": "Frames",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "SpotAnimationDefinition_modelIndexCache"
+      },
+      {
+        "obfuscatedName": "jf",
+        "name": "menuY",
+        "multiplier": -425019147
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "skeletons"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "kt",
+    "name": "Friend",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ct",
+    "name": "FriendManager",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bj",
+    "name": "GameCanvas",
+    "fields": [
+      {
+        "obfuscatedName": "rc",
+        "name": "indexStore255"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "indexedSpriteOffsetXs"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "colorsToReplace"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "component"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bf",
+    "name": "GameEngine",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "taskManager"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "shell"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "shellCount",
+        "multiplier": -1861919181
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "FPS",
+        "multiplier": -799673495
+      },
+      {
+        "obfuscatedName": "ad",
+        "name": "focused"
+      },
+      {
+        "obfuscatedName": "az",
+        "name": "garbageCollectorLastCollectionTime",
+        "multiplier": 2020306385097555121
+      },
+      {
+        "obfuscatedName": "aj",
+        "name": "garbageCollectorLastCheckTimeMs",
+        "multiplier": 1035849672202840579
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "hasErrored"
+      },
+      {
+        "obfuscatedName": "ak",
+        "name": "frame"
+      },
+      {
+        "obfuscatedName": "as",
+        "name": "canvas"
+      },
+      {
+        "obfuscatedName": "ax",
+        "name": "mouseWheelHandler"
+      },
+      {
+        "obfuscatedName": "ag",
+        "name": "clipboard"
+      },
+      {
+        "obfuscatedName": "ay",
+        "name": "eventQueue"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ep",
+    "name": "GameObject",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "plane",
+        "multiplier": 700578585
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "height",
+        "multiplier": 1742280241
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "x",
+        "multiplier": 823892543
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "y",
+        "multiplier": -961737963
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "renderable"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "orientation",
+        "multiplier": 1429840503
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "relativeX",
+        "multiplier": -1576345027
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "offsetX",
+        "multiplier": -683998103
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "relativeY",
+        "multiplier": -314169043
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "offsetY",
+        "multiplier": -1308771995
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "drawPriority",
+        "multiplier": -1014084627
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "cycle",
+        "multiplier": 2026204851
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "hash",
+        "multiplier": -374780921
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "flags",
+        "multiplier": -1445617631
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "fw",
+    "name": "GameSocket",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "l",
+    "name": "GrandExchangeEvent",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "world",
+        "multiplier": -465224591
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "grandExchangeOffer"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "string1"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "string2"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "f",
+    "name": "GrandExchangeEvents",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "events"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "b",
+    "name": "GrandExchangeOffer",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "state"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "itemId",
+        "multiplier": 1681843795
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "price",
+        "multiplier": 1202645115
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "totalQuantity",
+        "multiplier": 774757347
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "quantitySold",
+        "multiplier": -1825065405
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "spent",
+        "multiplier": 2074004771
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "er",
+    "name": "Graphics3D",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "rasterClipEnable"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "lowMem"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "rasterGouraudLowRes"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "rasterAlpha"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "Rasterizer3D_zoom"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "centerX"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "centerY"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "rasterClipX"
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "Rasterizer3D_clipHeight"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "Rasterizer3D_clipNegativeMidX"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "Rasterizer3D_clipMidX2"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "Rasterizer3D_clipNegativeMidY"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "Rasterizer3D_clipMidY2"
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "rasterClipY"
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "colorPalette"
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "textureLoader"
+      },
+      {
+        "obfuscatedName": "s",
+        "name": "SINE"
+      },
+      {
+        "obfuscatedName": "ac",
+        "name": "COSINE"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cd",
+    "name": "GraphicsObject",
+    "fields": [
+      {
+        "obfuscatedName": "f",
+        "name": "currentRequest"
+      },
+      {
+        "obfuscatedName": "bc",
+        "name": "sessionToken"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "id",
+        "multiplier": -1927183795
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "startCycle",
+        "multiplier": -1362767529
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "level",
+        "multiplier": -1796546393
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "x",
+        "multiplier": 2000708757
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "y",
+        "multiplier": -1059478129
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "height",
+        "multiplier": -650341429
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "finished"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "db",
+    "name": "GroundObject",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "floor",
+        "multiplier": -868930993
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "x",
+        "multiplier": -1587041179
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "y",
+        "multiplier": -1653875779
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "renderable"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "hash",
+        "multiplier": 2109063959
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "renderInfoBitPacked",
+        "multiplier": 1055237259
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gc",
+    "name": "GZipDecompressor",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "inflator"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "hy",
+    "name": "HashTable",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "size"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "buckets"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "currentGet"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "current"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "index"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "hh",
+    "name": "HashTableIterator",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "table"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "tail"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "index"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "head"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "jl",
+    "name": "HorizontalAlignment",
+    "fields": [
+      {
+        "obfuscatedName": "j",
+        "name": "value",
+        "multiplier": 1217113899
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gt",
+    "name": "Huffman",
+    "fields": [
+      {
+        "obfuscatedName": "ee",
+        "name": "font_p12full"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "masks"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "bits"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "keys"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "hf",
+    "name": "Identifiers",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "table"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "kx",
+    "name": "Ignore",
+    "fields": [
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "js",
+    "name": "IndexData",
+    "fields": [
+      {
+        "obfuscatedName": "al",
+        "name": "crc32"
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "indexStore"
+      },
+      {
+        "obfuscatedName": "g",
+        "name": "referenceStore"
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "index",
+        "multiplier": -354438501
+      },
+      {
+        "obfuscatedName": "ap",
+        "name": "validArchives"
+      },
+      {
+        "obfuscatedName": "ai",
+        "name": "crcValue",
+        "multiplier": 541984573
+      },
+      {
+        "obfuscatedName": "ab",
+        "name": "indexReferenceVersion",
+        "multiplier": -2034816883
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jm",
+    "name": "IndexDataBase",
+    "fields": [
+      {
+        "obfuscatedName": "f",
+        "name": "gzip"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "validArchivesCount",
+        "multiplier": 1402382803
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "archiveIds"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "archiveNames"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "identifiers"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "archiveCrcs"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "archiveRevisions"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "archiveNumberOfFiles"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "archiveFileIds"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "archiveFileNames"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "childIdentifiers"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "archives"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "childs"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "crc",
+        "multiplier": 681457177
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "releaseArchives"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "shallowRecords"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lq",
+    "name": "IndexedSprite",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "pixels"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "palette"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "width"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "height"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "offsetX"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "offsetY"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "originalWidth"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "originalHeight"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "fa",
+    "name": "IndexFile",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "IndexStore_buffer"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "index",
+        "multiplier": 2044766501
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "dataFile"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "indexFile"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "maxSize",
+        "multiplier": -254096491
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jr",
+    "name": "IndexStoreActionHandler",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "IndexStoreActionHandler_requestQueue"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "IndexStoreActionHandler_responseQueue"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "IndexStoreActionHandler_lock"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "IndexStoreActionHandler_thread"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hq",
+    "name": "IntegerNode",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "value"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "jc",
+    "name": "InvType",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "inventoryCache"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "size",
+        "multiplier": -689507525
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gr",
+    "name": "ISAACCipher",
+    "fields": [
+      {
+        "obfuscatedName": "m",
+        "name": "NetCache_responseArchiveBuffer"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "valuesRemaining",
+        "multiplier": -1944074173
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "randResult"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "mm"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ce",
+    "name": "Item",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "id",
+        "multiplier": -575635587
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "quantity",
+        "multiplier": -1957266407
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jh",
+    "name": "ItemComposition",
+    "fields": [
+      {
+        "obfuscatedName": "z",
+        "name": "ItemDefinition_modelIndexCache"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "items"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "itemModelCache"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "itemSpriteCache"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "id",
+        "multiplier": -1034555267
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "inventoryModel",
+        "multiplier": 552191123
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "name"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "colourToReplace"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "colourToReplaceWith"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "textureToReplace"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "textToReplaceWith"
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "zoom2d",
+        "multiplier": -1771822335
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "xan2d",
+        "multiplier": 895334683
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "yan2d",
+        "multiplier": -679676625
+      },
+      {
+        "obfuscatedName": "g",
+        "name": "zan2d",
+        "multiplier": 38708853
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "offsetX2d",
+        "multiplier": 1033812727
+      },
+      {
+        "obfuscatedName": "s",
+        "name": "offsetY2d",
+        "multiplier": -49795523
+      },
+      {
+        "obfuscatedName": "ac",
+        "name": "isStackable",
+        "multiplier": 1361922013
+      },
+      {
+        "obfuscatedName": "ap",
+        "name": "price",
+        "multiplier": 1325296789
+      },
+      {
+        "obfuscatedName": "al",
+        "name": "isMembers"
+      },
+      {
+        "obfuscatedName": "ai",
+        "name": "groundActions"
+      },
+      {
+        "obfuscatedName": "ab",
+        "name": "inventoryActions"
+      },
+      {
+        "obfuscatedName": "as",
+        "name": "team",
+        "multiplier": -122857391
+      },
+      {
+        "obfuscatedName": "aa",
+        "name": "maleModel",
+        "multiplier": -1266446809
+      },
+      {
+        "obfuscatedName": "ah",
+        "name": "maleModel1",
+        "multiplier": -1897620307
+      },
+      {
+        "obfuscatedName": "ao",
+        "name": "maleOffset",
+        "multiplier": -126228773
+      },
+      {
+        "obfuscatedName": "am",
+        "name": "femaleModel",
+        "multiplier": 1678321903
+      },
+      {
+        "obfuscatedName": "aq",
+        "name": "femaleModel1",
+        "multiplier": 1914722319
+      },
+      {
+        "obfuscatedName": "ae",
+        "name": "femaleOffset",
+        "multiplier": 336499319
+      },
+      {
+        "obfuscatedName": "af",
+        "name": "maleModel2",
+        "multiplier": -1138094871
+      },
+      {
+        "obfuscatedName": "aw",
+        "name": "femaleModel2",
+        "multiplier": 807369139
+      },
+      {
+        "obfuscatedName": "ax",
+        "name": "maleHeadModel",
+        "multiplier": 1490052073
+      },
+      {
+        "obfuscatedName": "ag",
+        "name": "maleHeadModel2",
+        "multiplier": -458419647
+      },
+      {
+        "obfuscatedName": "ay",
+        "name": "femaleHeadModel",
+        "multiplier": 431488037
+      },
+      {
+        "obfuscatedName": "ad",
+        "name": "femaleHeadModel2",
+        "multiplier": -1341277777
+      },
+      {
+        "obfuscatedName": "at",
+        "name": "countObj"
+      },
+      {
+        "obfuscatedName": "av",
+        "name": "countCo"
+      },
+      {
+        "obfuscatedName": "az",
+        "name": "note",
+        "multiplier": 1371413469
+      },
+      {
+        "obfuscatedName": "aj",
+        "name": "notedTemplate",
+        "multiplier": 2035277611
+      },
+      {
+        "obfuscatedName": "ar",
+        "name": "resizeX",
+        "multiplier": 2075645489
+      },
+      {
+        "obfuscatedName": "au",
+        "name": "resizeY",
+        "multiplier": 184766083
+      },
+      {
+        "obfuscatedName": "an",
+        "name": "resizeZ",
+        "multiplier": 182368247
+      },
+      {
+        "obfuscatedName": "bv",
+        "name": "ambient",
+        "multiplier": 998726143
+      },
+      {
+        "obfuscatedName": "bw",
+        "name": "contrast",
+        "multiplier": 663477571
+      },
+      {
+        "obfuscatedName": "bj",
+        "name": "int1",
+        "multiplier": -617679473
+      },
+      {
+        "obfuscatedName": "bl",
+        "name": "isTradable"
+      },
+      {
+        "obfuscatedName": "br",
+        "name": "unnotedId",
+        "multiplier": 1565677321
+      },
+      {
+        "obfuscatedName": "bh",
+        "name": "notedId",
+        "multiplier": 1557048343
+      },
+      {
+        "obfuscatedName": "bf",
+        "name": "int2",
+        "multiplier": -143668211
+      },
+      {
+        "obfuscatedName": "bu",
+        "name": "int3",
+        "multiplier": 1366669303
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "by",
+    "name": "ItemContainer",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "itemContainers"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "itemIds"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "stackSizes"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dt",
+    "name": "ItemLayer",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "hash",
+        "multiplier": 1302142755
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "x",
+        "multiplier": -1176722639
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "y",
+        "multiplier": 496517009
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "bottom"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "middle"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "top"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "flags",
+        "multiplier": -122810767
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "height",
+        "multiplier": -1294947835
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "hb",
+    "name": "IterableDualNodeQueue",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "sentinel"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hz",
+    "name": "IterableHashTable",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "size"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "buckets"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "head"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "tail"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "index"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "el",
+    "name": "ITextureLoader",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "ic",
+    "name": "JagexGame",
+    "fields": [
+      {
+        "obfuscatedName": "z",
+        "name": "name"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "id",
+        "multiplier": 1985086691
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "lo",
+    "name": "JagexLoginType",
+    "fields": [
+      {
+        "obfuscatedName": "qp",
+        "name": "platformInfo"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "identifier"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "an",
+    "name": "KeyFocusListener",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "keyboard"
+      },
+      {
+        "obfuscatedName": "cm",
+        "name": "keyPressed"
+      },
+      {
+        "obfuscatedName": "co",
+        "name": "keyboardIdleTicks",
+        "multiplier": -749012037
+      },
+      {
+        "obfuscatedName": "cs",
+        "name": "KeyHandler_keyCodes"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jt",
+    "name": "KitDefinition",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "identKit_ref"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "identKits"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "bodyPartId",
+        "multiplier": -11555789
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "modelIds"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "recolorToFind"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "recolorToReplace"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "retextureToFind"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "retextureToReplace"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "models"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "nonSelectable"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gn",
+    "name": "LoginPacket",
+    "fields": [
+      {
+        "obfuscatedName": "k",
+        "name": "id",
+        "multiplier": -1957826581
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "le",
+    "name": "MachineInfo",
+    "fields": [
+      {
+        "obfuscatedName": "x",
+        "name": "osType",
+        "multiplier": -1145737203
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "os64Bit"
+      },
+      {
+        "obfuscatedName": "ac",
+        "name": "osVersionType",
+        "multiplier": -973316379
+      },
+      {
+        "obfuscatedName": "as",
+        "name": "javaVendorType",
+        "multiplier": -611426277
+      },
+      {
+        "obfuscatedName": "aa",
+        "name": "javaVersionMajor",
+        "multiplier": -48698859
+      },
+      {
+        "obfuscatedName": "ah",
+        "name": "javaVersionMinor",
+        "multiplier": -1809530315
+      },
+      {
+        "obfuscatedName": "ao",
+        "name": "javaVersionPatch",
+        "multiplier": 1671855805
+      },
+      {
+        "obfuscatedName": "aq",
+        "name": "maxMemoryMB",
+        "multiplier": 1371046327
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bh",
+    "name": "MainBufferProvider",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "component"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "image"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "ax",
+    "name": "MapCacheArchiveNames",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "DETAILS"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "COMPOSITE_MAP"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "COMPOSITE_TEXTURE"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "AREA"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "LABELS"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "name"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "aw",
+    "name": "MapIcon",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "areaId",
+        "multiplier": 1180295891
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "screenX",
+        "multiplier": -369339579
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "screenY",
+        "multiplier": -1335900661
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "aj",
+    "name": "MapIconReference",
+    "fields": [
+      {
+        "obfuscatedName": "ek",
+        "name": "urlRequester"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "areaId",
+        "multiplier": -805707893
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ah",
+    "name": "MapLabel",
+    "fields": [
+      {
+        "obfuscatedName": "de",
+        "name": "indexScripts"
+      },
+      {
+        "obfuscatedName": "fp",
+        "name": "mapedge"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "text"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "fontSize"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "di",
+    "name": "Mapping",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "mux"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "submapFloors"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bk",
+    "name": "MessageNode",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "id",
+        "multiplier": -1758157563
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "tick",
+        "multiplier": 2090519135
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "type",
+        "multiplier": 1642637665
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "name"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "sender"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "value"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fc",
+    "name": "MilliTimer",
+    "fields": [
+      {
+        "obfuscatedName": "o",
+        "name": "sleepTime",
+        "multiplier": 129880059
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ed",
+    "name": "Model",
+    "fields": [
+      {
+        "obfuscatedName": "ax",
+        "name": "modelViewportYs"
+      },
+      {
+        "obfuscatedName": "ag",
+        "name": "modelViewportXs"
+      },
+      {
+        "obfuscatedName": "ad",
+        "name": "yViewportBuffer"
+      },
+      {
+        "obfuscatedName": "br",
+        "name": "xViewportBuffer"
+      },
+      {
+        "obfuscatedName": "bh",
+        "name": "animOffsetX"
+      },
+      {
+        "obfuscatedName": "bf",
+        "name": "animOffsetY"
+      },
+      {
+        "obfuscatedName": "bu",
+        "name": "animOffsetZ"
+      },
+      {
+        "obfuscatedName": "bp",
+        "name": "useBoundingBoxes3D"
+      },
+      {
+        "obfuscatedName": "bt",
+        "name": "Model_sine"
+      },
+      {
+        "obfuscatedName": "by",
+        "name": "Model_cosine"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "verticesCount"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "verticesX"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "verticesY"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "verticesZ"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "indicesCount"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "indices1"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "indices2"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "indices3"
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "vertexGroups"
+      },
+      {
+        "obfuscatedName": "ap",
+        "name": "boundsType"
+      },
+      {
+        "obfuscatedName": "al",
+        "name": "bottomY"
+      },
+      {
+        "obfuscatedName": "ai",
+        "name": "XYZMag"
+      },
+      {
+        "obfuscatedName": "ab",
+        "name": "diameter"
+      },
+      {
+        "obfuscatedName": "ak",
+        "name": "radius"
+      },
+      {
+        "obfuscatedName": "as",
+        "name": "centerX"
+      },
+      {
+        "obfuscatedName": "aa",
+        "name": "centerY"
+      },
+      {
+        "obfuscatedName": "ah",
+        "name": "centerZ"
+      },
+      {
+        "obfuscatedName": "ao",
+        "name": "extremeX"
+      },
+      {
+        "obfuscatedName": "am",
+        "name": "extremeY"
+      },
+      {
+        "obfuscatedName": "aq",
+        "name": "extremeZ"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dj",
+    "name": "ModelData",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "vertexCount"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "vertexX"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "vertexY"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "vertexZ"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "triangleFaceCount"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "trianglePointsX"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "trianglePointsY"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "trianglePointsZ"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "faceRenderType"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "faceRenderPriorities"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "faceAlphas"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "textureCoords"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "faceColor"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "faceTextures"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "priority"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "textureRenderTypes"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "texTriangleX"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "texTriangleY"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "texTriangleZ"
+      },
+      {
+        "obfuscatedName": "s",
+        "name": "texturePrimaryColor"
+      },
+      {
+        "obfuscatedName": "ap",
+        "name": "vertexSkins"
+      },
+      {
+        "obfuscatedName": "al",
+        "name": "triangleSkinValues"
+      },
+      {
+        "obfuscatedName": "ak",
+        "name": "faceNormals"
+      },
+      {
+        "obfuscatedName": "as",
+        "name": "normals"
+      },
+      {
+        "obfuscatedName": "ao",
+        "name": "contrast"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bu",
+    "name": "MouseInput",
+    "fields": [
+      {
+        "obfuscatedName": "j",
+        "name": "mouse"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "mouseLastX",
+        "multiplier": -1900871027
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "mouseLastY",
+        "multiplier": -1224880405
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "mouseIdleTicks",
+        "multiplier": 577913925
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "MouseHandler_currentButton",
+        "multiplier": 426724143
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "mouseX",
+        "multiplier": 1461770535
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "mouseY",
+        "multiplier": 1581245593
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "mouseCurrentButton",
+        "multiplier": -925786721
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "MouseHandler_lastButton",
+        "multiplier": 1264640247
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "MouseHandler_lastPressedX",
+        "multiplier": 219033813
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "MouseHandler_lastPressedY",
+        "multiplier": -1802708657
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "MouseHandler_lastPressedTimeMillis",
+        "multiplier": 441534821827824627
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "mouseLastButton",
+        "multiplier": 2039012631
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "mouseLastPressedX",
+        "multiplier": 1641066659
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "mouseLastPressedY",
+        "multiplier": 255819989
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "mouseLastPressedTimeMillis",
+        "multiplier": 83204130288246869
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "bn",
+    "name": "MouseRecorder",
+    "fields": [
+      {
+        "obfuscatedName": "fr",
+        "name": "compass"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "isRunning"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "lock"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "index",
+        "multiplier": 1392647411
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "xs"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "ys"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "fz",
+    "name": "MouseWheel",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "au",
+    "name": "MouseWheelHandler",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "rotation",
+        "multiplier": 1925756309
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "ko",
+    "name": "Name",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "name"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "cleanName"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "ku",
+    "name": "Nameable",
+    "fields": [
+      {
+        "obfuscatedName": "o",
+        "name": "name"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "kb",
+    "name": "NameableContainer",
+    "fields": [
+      {
+        "obfuscatedName": "k",
+        "name": "count",
+        "multiplier": -263697855
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "nameables"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fo",
+    "name": "NanoTimer",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "nanoTime",
+        "multiplier": 539494359589664741
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "co",
+    "name": "NetWriter",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "rssocket"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "packetBufferNodes"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "buffer"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "packetBuffer"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "serverPacket"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "packetLength",
+        "multiplier": -1557268839
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "hg",
+    "name": "Node",
+    "fields": [
+      {
+        "obfuscatedName": "ce",
+        "name": "hash"
+      },
+      {
+        "obfuscatedName": "cr",
+        "name": "next"
+      },
+      {
+        "obfuscatedName": "cf",
+        "name": "previous"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "gz",
+    "name": "Node2LinkedList",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "sentinel"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "hj",
+    "name": "NodeCache",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "capacity"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "remainingCapacity"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "table"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "list"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cq",
+    "name": "NPC",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "composition"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "jk",
+    "name": "NPCComposition",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "NpcDefinition_indexCache"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "NpcDefinition_modelIndexCache"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "npcs"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "npcModelCache"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "id",
+        "multiplier": -1851650433
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "name"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "models"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "colors"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "modifiedColors"
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "actions"
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "isMinimapVisible"
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "combatLevel",
+        "multiplier": -1468343159
+      },
+      {
+        "obfuscatedName": "g",
+        "name": "widthScale",
+        "multiplier": 503367255
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "heightScale",
+        "multiplier": 735676559
+      },
+      {
+        "obfuscatedName": "s",
+        "name": "isVisible"
+      },
+      {
+        "obfuscatedName": "ab",
+        "name": "configs"
+      },
+      {
+        "obfuscatedName": "ak",
+        "name": "varpIndex",
+        "multiplier": -1468818249
+      },
+      {
+        "obfuscatedName": "as",
+        "name": "varp32Index",
+        "multiplier": 387497477
+      },
+      {
+        "obfuscatedName": "ah",
+        "name": "isClickable"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jj",
+    "name": "ObjectComposition",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "objectCompositionLowDetail"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "objects"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "cachedModels"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "id",
+        "multiplier": -203768003
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "objectModels"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "objectTypes"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "name"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "recolorToFind"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "recolorToReplace"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "textureToFind"
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "textureToReplace"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "width",
+        "multiplier": 288447891
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "length",
+        "multiplier": 1925031589
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "clipType",
+        "multiplier": 275413629
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "blocksProjectile"
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "int1",
+        "multiplier": -1453940843
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "contouredGround",
+        "multiplier": -62075823
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "nonFlatShading"
+      },
+      {
+        "obfuscatedName": "g",
+        "name": "modelClipped"
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "animationId",
+        "multiplier": 2049812949
+      },
+      {
+        "obfuscatedName": "s",
+        "name": "decorDisplacement",
+        "multiplier": 1546385777
+      },
+      {
+        "obfuscatedName": "ac",
+        "name": "ambient",
+        "multiplier": -294161495
+      },
+      {
+        "obfuscatedName": "ap",
+        "name": "contrast",
+        "multiplier": 1890228519
+      },
+      {
+        "obfuscatedName": "al",
+        "name": "actions"
+      },
+      {
+        "obfuscatedName": "ai",
+        "name": "mapIconId",
+        "multiplier": -1780534271
+      },
+      {
+        "obfuscatedName": "ab",
+        "name": "mapSceneId",
+        "multiplier": 1111180165
+      },
+      {
+        "obfuscatedName": "ak",
+        "name": "isRotated"
+      },
+      {
+        "obfuscatedName": "as",
+        "name": "clipped"
+      },
+      {
+        "obfuscatedName": "aa",
+        "name": "modelSizeX",
+        "multiplier": 830250465
+      },
+      {
+        "obfuscatedName": "ah",
+        "name": "modelSizeHeight",
+        "multiplier": 775283297
+      },
+      {
+        "obfuscatedName": "ao",
+        "name": "modelSizeY",
+        "multiplier": -1805969913
+      },
+      {
+        "obfuscatedName": "am",
+        "name": "offsetX",
+        "multiplier": 698753105
+      },
+      {
+        "obfuscatedName": "aq",
+        "name": "offsetHeight",
+        "multiplier": -2077653817
+      },
+      {
+        "obfuscatedName": "ae",
+        "name": "offsetY",
+        "multiplier": 405725635
+      },
+      {
+        "obfuscatedName": "af",
+        "name": "obstructsGround"
+      },
+      {
+        "obfuscatedName": "aw",
+        "name": "isHollow"
+      },
+      {
+        "obfuscatedName": "ax",
+        "name": "supportItems",
+        "multiplier": 680017971
+      },
+      {
+        "obfuscatedName": "ag",
+        "name": "impostorIds"
+      },
+      {
+        "obfuscatedName": "ay",
+        "name": "varpId",
+        "multiplier": -1391694375
+      },
+      {
+        "obfuscatedName": "ad",
+        "name": "configId",
+        "multiplier": 1560121555
+      },
+      {
+        "obfuscatedName": "at",
+        "name": "ambientSoundId",
+        "multiplier": 219634051
+      },
+      {
+        "obfuscatedName": "av",
+        "name": "int4",
+        "multiplier": 396245309
+      },
+      {
+        "obfuscatedName": "az",
+        "name": "int5",
+        "multiplier": -511764457
+      },
+      {
+        "obfuscatedName": "aj",
+        "name": "int6",
+        "multiplier": -1993750703
+      },
+      {
+        "obfuscatedName": "au",
+        "name": "params"
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gd",
+    "name": "ObjectNode",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "value"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "ew",
+    "name": "Occluder",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "minTileX",
+        "multiplier": -676852977
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "maxTIleX",
+        "multiplier": -2072900197
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "minTileZ",
+        "multiplier": 437112655
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "maxTileZ",
+        "multiplier": -226363807
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "type",
+        "multiplier": -2042015417
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "minX",
+        "multiplier": -1016989277
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "maxX",
+        "multiplier": -279581517
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "minZ",
+        "multiplier": -808054181
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "maxZ",
+        "multiplier": -1005482455
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "minY",
+        "multiplier": 41157783
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "maxY",
+        "multiplier": -1791148741
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "testDirection",
+        "multiplier": -1724035419
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "minNormalX",
+        "multiplier": 679644417
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "maxNormalX",
+        "multiplier": 2005106235
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "minNormalY",
+        "multiplier": -889154915
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "maxNormalY",
+        "multiplier": 1036950935
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "kv",
+    "name": "Overlay",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "overlay_ref"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "overlays"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "color",
+        "multiplier": 2100337249
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "texture",
+        "multiplier": -746122799
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "isHidden"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "otherRgbColor",
+        "multiplier": -230234169
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "hue",
+        "multiplier": 770188269
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "saturation",
+        "multiplier": 325793955
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "lightness",
+        "multiplier": 461563659
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "otherHue",
+        "multiplier": 590294673
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "otherSaturation",
+        "multiplier": 554256877
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "otherLightness",
+        "multiplier": -1952471821
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "bo",
+    "name": "OwnWorldComparator",
+    "fields": [
+      {
+        "obfuscatedName": "ps",
+        "name": "soundSystem0"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gf",
+    "name": "PacketBuffer",
+    "fields": [
+      {
+        "obfuscatedName": "w",
+        "name": "cipher"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "bitPosition",
+        "multiplier": -1770691627
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "gg",
+    "name": "PacketNode",
+    "fields": [
+      {
+        "obfuscatedName": "k",
+        "name": "packetBufferNodes"
+      },
+      {
+        "obfuscatedName": "ef",
+        "name": "baseX",
+        "multiplier": -854639313
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "clientPacket"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "packetBuffer"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ky",
+    "name": "Parameters",
+    "fields": [
+      {
+        "obfuscatedName": "b",
+        "name": "key"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bi",
+    "name": "PendingSpawn",
+    "fields": [
+      {
+        "obfuscatedName": "cl",
+        "name": "indexTextures"
+      },
+      {
+        "obfuscatedName": "fn",
+        "name": "scrollbarSprites"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "level",
+        "multiplier": 979197913
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "type",
+        "multiplier": -1073346127
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "x",
+        "multiplier": -438486631
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "y",
+        "multiplier": -650060595
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "id",
+        "multiplier": 96829491
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "orientation",
+        "multiplier": 291338857
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "delay",
+        "multiplier": -2105868869
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "hitpoints",
+        "multiplier": -1885525981
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "is",
+    "name": "Permission",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bx",
+    "name": "Player",
+    "fields": [
+      {
+        "obfuscatedName": "dk",
+        "name": "myWorldPort",
+        "multiplier": -344450419
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "name"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "composition"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "skullIcon",
+        "multiplier": -1027722121
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "overheadIcon",
+        "multiplier": -625409671
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "actions"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "combatLevel",
+        "multiplier": -1080214623
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "totalLevel",
+        "multiplier": 179111129
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "animationCycleStart",
+        "multiplier": 1100019033
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "animationCycleEnd",
+        "multiplier": -838319363
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "model"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "isLowDetail"
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "team",
+        "multiplier": 1690504761
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "hidden"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ip",
+    "name": "PlayerComposition",
+    "fields": [
+      {
+        "obfuscatedName": "z",
+        "name": "colorsToFind"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "equipmentIds"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "bodyPartColours"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "isFemale"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "transformedNpcId",
+        "multiplier": -1540355509
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "hash",
+        "multiplier": 3250398404253519497
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ca",
+    "name": "Preferences",
+    "fields": [
+      {
+        "obfuscatedName": "o",
+        "name": "hideRoofs"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "muted"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "screenType",
+        "multiplier": 1125088693
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "rememberedUsername"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "hideUsername"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "preferences"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ci",
+    "name": "Projectile",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "id",
+        "multiplier": 1240281537
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "floor",
+        "multiplier": -1321171591
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "x1",
+        "multiplier": 618916399
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "y1",
+        "multiplier": 1688211213
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "height",
+        "multiplier": 1815078191
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "endHeight",
+        "multiplier": 1791832385
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "startMovementCycle",
+        "multiplier": -380019885
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "endCycle",
+        "multiplier": -642293845
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "slope",
+        "multiplier": 956359293
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "startHeight",
+        "multiplier": -1165447961
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "interacting",
+        "multiplier": 361345737
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "isMoving"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "x"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "y"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "z"
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "velocityX"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "velocityY"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "scalar"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "velocityZ"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "heightOffset"
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "rotationX",
+        "multiplier": 694303613
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "rotationY",
+        "multiplier": 918511865
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "animationSequence"
+      },
+      {
+        "obfuscatedName": "g",
+        "name": "int7",
+        "multiplier": -1132435881
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "int6",
+        "multiplier": 508222089
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ln",
+    "name": "Rasterizer2D",
+    "fields": [
+      {
+        "obfuscatedName": "ap",
+        "name": "graphicsPixels"
+      },
+      {
+        "obfuscatedName": "al",
+        "name": "graphicsPixelsWidth"
+      },
+      {
+        "obfuscatedName": "ai",
+        "name": "graphicsPixelsHeight"
+      },
+      {
+        "obfuscatedName": "ab",
+        "name": "drawingAreaTop"
+      },
+      {
+        "obfuscatedName": "ak",
+        "name": "drawingAreaRight"
+      },
+      {
+        "obfuscatedName": "as",
+        "name": "draw_region_x"
+      },
+      {
+        "obfuscatedName": "aa",
+        "name": "drawingAreaBottom"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "da",
+    "name": "RawAudioNode",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "sampleRate"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "audioBuffer"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "startPosition"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "endPosition"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ez",
+    "name": "Region",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "regionLowMemory"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "tileUpdateCount"
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "Scene_plane"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "cycle"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "minTileX"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "maxTileX"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "minTileZ"
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "maxTileZ"
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "screenCenterX"
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "screenCenterZ"
+      },
+      {
+        "obfuscatedName": "g",
+        "name": "cameraX2"
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "cameraY2"
+      },
+      {
+        "obfuscatedName": "s",
+        "name": "cameraZ2"
+      },
+      {
+        "obfuscatedName": "ac",
+        "name": "pitchSin"
+      },
+      {
+        "obfuscatedName": "ap",
+        "name": "pitchCos"
+      },
+      {
+        "obfuscatedName": "al",
+        "name": "yawSin"
+      },
+      {
+        "obfuscatedName": "ai",
+        "name": "yawCos"
+      },
+      {
+        "obfuscatedName": "ab",
+        "name": "entityBuffer"
+      },
+      {
+        "obfuscatedName": "ak",
+        "name": "checkClick"
+      },
+      {
+        "obfuscatedName": "aa",
+        "name": "mouseX2"
+      },
+      {
+        "obfuscatedName": "ah",
+        "name": "mouseY2"
+      },
+      {
+        "obfuscatedName": "ao",
+        "name": "selectedRegionTileX"
+      },
+      {
+        "obfuscatedName": "am",
+        "name": "selectedRegionTileY"
+      },
+      {
+        "obfuscatedName": "aq",
+        "name": "viewportWalking"
+      },
+      {
+        "obfuscatedName": "aw",
+        "name": "MAX_OCCLUDER_LEVELS"
+      },
+      {
+        "obfuscatedName": "ax",
+        "name": "levelOccluderCount"
+      },
+      {
+        "obfuscatedName": "ag",
+        "name": "levelOccluders"
+      },
+      {
+        "obfuscatedName": "at",
+        "name": "tileDeque"
+      },
+      {
+        "obfuscatedName": "aj",
+        "name": "TILE_WALL_DRAW_FLAGS_1"
+      },
+      {
+        "obfuscatedName": "ar",
+        "name": "WALL_UNCULL_FLAGS_0"
+      },
+      {
+        "obfuscatedName": "au",
+        "name": "WALL_UNCULL_FLAGS_1"
+      },
+      {
+        "obfuscatedName": "an",
+        "name": "WALL_UNCULL_FLAGS_2"
+      },
+      {
+        "obfuscatedName": "bv",
+        "name": "WALL_UNCULL_FLAGS_3"
+      },
+      {
+        "obfuscatedName": "ba",
+        "name": "visibilityMaps"
+      },
+      {
+        "obfuscatedName": "bl",
+        "name": "renderArea"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "maxY"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "maxX"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "maxZ"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "tileHeights"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "tiles"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "minLevel"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "entityCount"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "objects"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "tileCycles"
+      },
+      {
+        "obfuscatedName": "bw",
+        "name": "TILE_MASK_2D"
+      },
+      {
+        "obfuscatedName": "bj",
+        "name": "TILE_ROTATION_2D"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ek",
+    "name": "Renderable",
+    "fields": [
+      {
+        "obfuscatedName": "dh",
+        "name": "indexCache15"
+      },
+      {
+        "obfuscatedName": "ci",
+        "name": "modelHeight",
+        "multiplier": -9892427
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "li",
+    "name": "RenderOverview",
+    "fields": [
+      {
+        "obfuscatedName": "p",
+        "name": "fontNameVerdana11"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "fontNameVerdana13"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "fontNameVerdana15"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "mapFonts"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "worldMapDataByIdentifier"
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "worldMapData"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "worldMapManager"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "worldMapX",
+        "multiplier": -2084277079
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "worldMapY",
+        "multiplier": 858942121
+      },
+      {
+        "obfuscatedName": "g",
+        "name": "worldMapZoom"
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "worldMapZoomTarget"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ds",
+    "name": "Resampler",
+    "fields": [
+      {
+        "obfuscatedName": "j",
+        "name": "storedSampleRateRatio",
+        "multiplier": -554086911
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "playbackSampleRateRatio",
+        "multiplier": -144966917
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "resampleTable"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "dr",
+    "name": "Residue",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "type"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "begin"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "end"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "partitionSize"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "classification"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "classBook"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ff",
+    "name": "RunException",
+    "fields": [
+      {
+        "obfuscatedName": "qh",
+        "name": "friendManager"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "revision",
+        "multiplier": 1591042175
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "overlayRotations"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "timer"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "parent"
+      },
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "df",
+    "name": "SceneTileModel",
+    "fields": [
+      {
+        "obfuscatedName": "m",
+        "name": "tmpScreenX"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "tmpScreenY"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "vertexSceneX"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "vertexSceneY"
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "vertexSceneZ"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "vertexX"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "vertexY"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "vertexZ"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "triangleColorA"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "triangleColorB"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "triangleColorC"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "triangleTextureId"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "flatShade"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "shape"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "rotation"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "underlay"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "overlay"
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "en",
+    "name": "SceneTilePaint",
+    "fields": [
+      {
+        "obfuscatedName": "p",
+        "name": "intStackSize",
+        "multiplier": 1347687077
+      },
+      {
+        "obfuscatedName": "fq",
+        "name": "mapDots"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "swColor",
+        "multiplier": -18770937
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "seColor",
+        "multiplier": -448684097
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "neColor",
+        "multiplier": -319993733
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "nwColor",
+        "multiplier": 940147599
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "texture",
+        "multiplier": 1768517335
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "flatShade"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "rgb",
+        "multiplier": 897907373
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "cx",
+    "name": "Script",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "instructions"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "intOperands"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "stringOperands"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "localIntCount",
+        "multiplier": 2007836195
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "localStringCount",
+        "multiplier": -986383027
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "intStackCount",
+        "multiplier": 155988455
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "stringStackCount",
+        "multiplier": 1556061907
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "switches"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bq",
+    "name": "ScriptEvent",
+    "fields": [
+      {
+        "obfuscatedName": "dn",
+        "name": "vorbisIndex"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "objs"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "boolean1"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "widget"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "pressedKey",
+        "multiplier": 1358472503
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "typedKey",
+        "multiplier": -1152280539
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "string"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bb",
+    "name": "ScriptState",
+    "fields": [
+      {
+        "obfuscatedName": "rq",
+        "name": "renderOverview"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "invokedFromScript"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "invokedFromPc",
+        "multiplier": -2139558841
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "savedLocalInts"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "savedLocalStrings"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "z",
+    "name": "ScriptVarType",
+    "fields": [
+      {
+        "obfuscatedName": "ge",
+        "name": "id",
+        "multiplier": 1340256661
+      },
+      {
+        "obfuscatedName": "gt",
+        "name": "typeChar"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "kn",
+    "name": "Sequence",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "skel_ref"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "skin_ref"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "sequences"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "skeletons"
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "canvasWidth",
+        "multiplier": -145939929
+      },
+      {
+        "obfuscatedName": "gt",
+        "name": "cameraX",
+        "multiplier": -1137123045
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "frameIDs"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "frameLengths"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "frameStep",
+        "multiplier": -1455720483
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "interleaveLeave"
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "stretches"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "forcedPriority",
+        "multiplier": -131931259
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "leftHandItem",
+        "multiplier": 2055205033
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "rightHandItem",
+        "multiplier": 882121669
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "maxLoops",
+        "multiplier": 1202001239
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "precedenceAnimating",
+        "multiplier": -1875667801
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "priority",
+        "multiplier": -244398935
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "replyMode",
+        "multiplier": 1732219259
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fe",
+    "name": "ServerPacket",
+    "fields": [
+      {
+        "obfuscatedName": "op",
+        "name": "minimapSprite"
+      },
+      {
+        "obfuscatedName": "cq",
+        "name": "packetId",
+        "multiplier": -1322544437
+      },
+      {
+        "obfuscatedName": "cj",
+        "name": "packetLength",
+        "multiplier": 875912003
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "fl",
+    "name": "Signlink",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "javaVersion"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "currentTask"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "cachedTask"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "sysEventQueue"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "closed"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "y",
+    "name": "Size",
+    "fields": [
+      {
+        "obfuscatedName": "fg",
+        "name": "mapRegions"
+      },
+      {
+        "obfuscatedName": "fi",
+        "name": "xteaKeys"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cl",
+    "name": "SoundEffect",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "instruments"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "start"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "end"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "dg",
+    "name": "SoundEffect3",
+    "fields": [
+      {
+        "obfuscatedName": "x",
+        "name": "minimisedCoefficients"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "coefficients"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "fowardMinimisedCoefficientMultiplier"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "fowardMultiplier"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "pairs"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "phases"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "magnitudes"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "unity"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "dh",
+    "name": "SoundTask",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "systems"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bv",
+    "name": "SoundTaskDataProvider",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bl",
+    "name": "SourceDataSoundSystem",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "audioFormat"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "source"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "size",
+        "multiplier": 757809645
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "bytes"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "jg",
+    "name": "Spotanim",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "SpotAnimationDefinition_indexCache"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "spotanims"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "SpotAnimationDefinition_cachedModels"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "id",
+        "multiplier": 707682133
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "widthScale",
+        "multiplier": 1719168513
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "heightScale",
+        "multiplier": 798892181
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "orientation",
+        "multiplier": 1766198743
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "la",
+    "name": "SpritePixels",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "pixels"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "width"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "height"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "offsetX"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "offsetY"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "maxWidth"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "maxHeight"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "fy",
+    "name": "Task",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "task"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "status"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "type",
+        "multiplier": 880916215
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "intArgument"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "objectArgument"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "value"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "dd",
+    "name": "TaskDataNode",
+    "fields": [
+      {
+        "obfuscatedName": "t",
+        "name": "data"
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dc",
+    "name": "Texture",
+    "fields": [
+      {
+        "obfuscatedName": "z",
+        "name": "fileIds"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "pixels"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "loaded"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "dw",
+    "name": "TextureProvider",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "textures"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "deque"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "maxSize",
+        "multiplier": 668092963
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "size",
+        "multiplier": -1004512887
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "brightness"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "width",
+        "multiplier": 2064588337
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "sprites"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "eg",
+    "name": "Tile",
+    "fields": [
+      {
+        "obfuscatedName": "pm",
+        "name": "soundSystem1"
+      },
+      {
+        "obfuscatedName": "cg",
+        "name": "currentPressedKey",
+        "multiplier": -162307101
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "plane",
+        "multiplier": -301090885
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "x",
+        "multiplier": 697235257
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "y",
+        "multiplier": -195311981
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "renderLevel",
+        "multiplier": -1240461063
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "paint"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "overlay"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "wallObject"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "decorativeObject"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "groundObject"
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "itemLayer"
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "entityCount",
+        "multiplier": 255910971
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "objects"
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "entityFlags"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "flags",
+        "multiplier": 551842339
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "physicalLevel",
+        "multiplier": -1193888249
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "draw"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "visible"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "drawEntities"
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "wallCullDirection",
+        "multiplier": -2114658351
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "wallUncullDirection",
+        "multiplier": 1845201121
+      },
+      {
+        "obfuscatedName": "n",
+        "name": "wallCullOppositeDirection",
+        "multiplier": 512333307
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "wallDrawFlags",
+        "multiplier": -99567843
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "bridge"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "fm",
+    "name": "Timer",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "m",
+    "name": "TotalQuantityComparator",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "iu",
+    "name": "Track1",
+    "fields": [
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "h",
+    "name": "UnitPriceComparator",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "seq_ref"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "audioHighMemory"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "widgetIndex"
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "es",
+    "name": "UrlRequest",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "url"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "isDone0"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "response0"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "ef",
+    "name": "UrlRequester",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "thread"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "isClosed"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "requests"
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "jz",
+    "name": "Varbit",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "varbit_ref"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "varbits"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "configId",
+        "multiplier": 426139985
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "leastSignificantBit",
+        "multiplier": 1659131149
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "mostSignificantBit",
+        "multiplier": 1975939557
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "jq",
+    "name": "VarCInt",
+    "fields": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "cf",
+    "name": "Varcs",
+    "fields": [
+      {
+        "obfuscatedName": "o",
+        "name": "varcSerials"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "varcstringSerials"
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "varcs"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "varcstrings"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "changed"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ju",
+    "name": "VarCString",
+    "fields": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "jb",
+    "name": "VarPlayerType",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "varplayer_ref"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "varplayers"
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "configType",
+        "multiplier": -308780597
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ei",
+    "name": "VertexNormal",
+    "fields": [
+      {
+        "obfuscatedName": "i",
+        "name": "x",
+        "multiplier": -1953739951
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "y",
+        "multiplier": 694894109
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "z",
+        "multiplier": -2035068839
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "magnitude",
+        "multiplier": -2051356479
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "jd",
+    "name": "VerticalAlignment",
+    "fields": [
+      {
+        "obfuscatedName": "j",
+        "name": "value",
+        "multiplier": 1410778253
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ex",
+    "name": "WallObject",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "floor",
+        "multiplier": 721700685
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "x",
+        "multiplier": -1069278695
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "y",
+        "multiplier": 1402981939
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "orientationA",
+        "multiplier": -120467245
+      },
+      {
+        "obfuscatedName": "k",
+        "name": "orientationB",
+        "multiplier": -1569356951
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "renderable1"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "renderable2"
+      },
+      {
+        "obfuscatedName": "p",
+        "name": "hash",
+        "multiplier": 1091466637
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "config",
+        "multiplier": -650877531
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "ib",
+    "name": "Widget",
+    "fields": [
+      {
+        "obfuscatedName": "e",
+        "name": "Widget_cachedModels"
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "Widget_cachedFonts"
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "hasScript"
+      },
+      {
+        "obfuscatedName": "h",
+        "name": "id",
+        "multiplier": 1142975091
+      },
+      {
+        "obfuscatedName": "t",
+        "name": "index",
+        "multiplier": 1123577801
+      },
+      {
+        "obfuscatedName": "v",
+        "name": "type",
+        "multiplier": -1783955207
+      },
+      {
+        "obfuscatedName": "u",
+        "name": "contentType",
+        "multiplier": 1879464173
+      },
+      {
+        "obfuscatedName": "q",
+        "name": "dynamicX",
+        "multiplier": 2120204995
+      },
+      {
+        "obfuscatedName": "g",
+        "name": "dynamicY",
+        "multiplier": 1078232467
+      },
+      {
+        "obfuscatedName": "y",
+        "name": "dynamicWidth",
+        "multiplier": 1710646817
+      },
+      {
+        "obfuscatedName": "s",
+        "name": "buttonType",
+        "multiplier": 1614123915
+      },
+      {
+        "obfuscatedName": "ac",
+        "name": "originalX",
+        "multiplier": -1732157043
+      },
+      {
+        "obfuscatedName": "ap",
+        "name": "originalY",
+        "multiplier": -1536717775
+      },
+      {
+        "obfuscatedName": "al",
+        "name": "originalWidth",
+        "multiplier": 1481239699
+      },
+      {
+        "obfuscatedName": "ai",
+        "name": "originalHeight",
+        "multiplier": -1232512943
+      },
+      {
+        "obfuscatedName": "ab",
+        "name": "relativeX",
+        "multiplier": -632888981
+      },
+      {
+        "obfuscatedName": "ak",
+        "name": "relativeY",
+        "multiplier": 281271781
+      },
+      {
+        "obfuscatedName": "as",
+        "name": "width",
+        "multiplier": 1805934265
+      },
+      {
+        "obfuscatedName": "aa",
+        "name": "height",
+        "multiplier": 1461772433
+      },
+      {
+        "obfuscatedName": "am",
+        "name": "parentId",
+        "multiplier": -1731270967
+      },
+      {
+        "obfuscatedName": "aq",
+        "name": "isHidden"
+      },
+      {
+        "obfuscatedName": "ae",
+        "name": "scrollX",
+        "multiplier": -148857533
+      },
+      {
+        "obfuscatedName": "af",
+        "name": "scrollY",
+        "multiplier": 1554543705
+      },
+      {
+        "obfuscatedName": "aw",
+        "name": "scrollWidth",
+        "multiplier": 794692473
+      },
+      {
+        "obfuscatedName": "ax",
+        "name": "scrollHeight",
+        "multiplier": -1821198741
+      },
+      {
+        "obfuscatedName": "ag",
+        "name": "textColor",
+        "multiplier": 207739255
+      },
+      {
+        "obfuscatedName": "av",
+        "name": "filled"
+      },
+      {
+        "obfuscatedName": "aj",
+        "name": "opacity",
+        "multiplier": -1157181721
+      },
+      {
+        "obfuscatedName": "au",
+        "name": "lineWidth",
+        "multiplier": -1577692161
+      },
+      {
+        "obfuscatedName": "bv",
+        "name": "spriteId",
+        "multiplier": 2084099853
+      },
+      {
+        "obfuscatedName": "bj",
+        "name": "textureId",
+        "multiplier": 30471697
+      },
+      {
+        "obfuscatedName": "ba",
+        "name": "spriteTiling"
+      },
+      {
+        "obfuscatedName": "bl",
+        "name": "borderThickness",
+        "multiplier": 1085049229
+      },
+      {
+        "obfuscatedName": "br",
+        "name": "sprite2",
+        "multiplier": -663624129
+      },
+      {
+        "obfuscatedName": "bh",
+        "name": "flippedVertically"
+      },
+      {
+        "obfuscatedName": "bf",
+        "name": "flippedHorizontally"
+      },
+      {
+        "obfuscatedName": "bu",
+        "name": "modelType",
+        "multiplier": -1189080517
+      },
+      {
+        "obfuscatedName": "bp",
+        "name": "modelId",
+        "multiplier": -562991309
+      },
+      {
+        "obfuscatedName": "be",
+        "name": "offsetX2d",
+        "multiplier": 166462951
+      },
+      {
+        "obfuscatedName": "bs",
+        "name": "offsetY2d",
+        "multiplier": 1177668007
+      },
+      {
+        "obfuscatedName": "bq",
+        "name": "rotationX",
+        "multiplier": 253045931
+      },
+      {
+        "obfuscatedName": "bn",
+        "name": "rotationZ",
+        "multiplier": 400711347
+      },
+      {
+        "obfuscatedName": "bk",
+        "name": "rotationY",
+        "multiplier": 615028395
+      },
+      {
+        "obfuscatedName": "bm",
+        "name": "modelZoom",
+        "multiplier": -296295035
+      },
+      {
+        "obfuscatedName": "bd",
+        "name": "fontId",
+        "multiplier": 1410291809
+      },
+      {
+        "obfuscatedName": "bz",
+        "name": "text"
+      },
+      {
+        "obfuscatedName": "ca",
+        "name": "string1"
+      },
+      {
+        "obfuscatedName": "cd",
+        "name": "textShadowed"
+      },
+      {
+        "obfuscatedName": "cu",
+        "name": "paddingX",
+        "multiplier": 904131277
+      },
+      {
+        "obfuscatedName": "cq",
+        "name": "paddingY",
+        "multiplier": -13479069
+      },
+      {
+        "obfuscatedName": "cj",
+        "name": "xSprites"
+      },
+      {
+        "obfuscatedName": "cg",
+        "name": "configActions"
+      },
+      {
+        "obfuscatedName": "cv",
+        "name": "clickMask",
+        "multiplier": 911842529
+      },
+      {
+        "obfuscatedName": "ch",
+        "name": "opBase"
+      },
+      {
+        "obfuscatedName": "ci",
+        "name": "actions"
+      },
+      {
+        "obfuscatedName": "cb",
+        "name": "dragParent"
+      },
+      {
+        "obfuscatedName": "cx",
+        "name": "dragDeadZone",
+        "multiplier": -1842134183
+      },
+      {
+        "obfuscatedName": "cw",
+        "name": "dragDeadTime",
+        "multiplier": 2080557627
+      },
+      {
+        "obfuscatedName": "cp",
+        "name": "dragRenderBehavior"
+      },
+      {
+        "obfuscatedName": "co",
+        "name": "targetVerb"
+      },
+      {
+        "obfuscatedName": "cs",
+        "name": "hasListener"
+      },
+      {
+        "obfuscatedName": "cz",
+        "name": "onLoadListener"
+      },
+      {
+        "obfuscatedName": "cn",
+        "name": "onClickListener"
+      },
+      {
+        "obfuscatedName": "cl",
+        "name": "onClickRepeatListener"
+      },
+      {
+        "obfuscatedName": "do",
+        "name": "onReleaseListener"
+      },
+      {
+        "obfuscatedName": "da",
+        "name": "onHoldListener"
+      },
+      {
+        "obfuscatedName": "de",
+        "name": "onMouseOverListener"
+      },
+      {
+        "obfuscatedName": "dz",
+        "name": "onMouseRepeatListener"
+      },
+      {
+        "obfuscatedName": "dn",
+        "name": "onMouseLeaveListener"
+      },
+      {
+        "obfuscatedName": "dh",
+        "name": "onDragListener"
+      },
+      {
+        "obfuscatedName": "dl",
+        "name": "onDragCompleteListener"
+      },
+      {
+        "obfuscatedName": "dm",
+        "name": "onTargetEnterListener"
+      },
+      {
+        "obfuscatedName": "dv",
+        "name": "onTargetLeaveListener"
+      },
+      {
+        "obfuscatedName": "dr",
+        "name": "onVarTransmitListener"
+      },
+      {
+        "obfuscatedName": "ds",
+        "name": "varTransmitTriggers"
+      },
+      {
+        "obfuscatedName": "dx",
+        "name": "onInvTransmitListener"
+      },
+      {
+        "obfuscatedName": "dg",
+        "name": "invTransmitTriggers"
+      },
+      {
+        "obfuscatedName": "dd",
+        "name": "onStatTransmitListener"
+      },
+      {
+        "obfuscatedName": "di",
+        "name": "statTransmitTriggers"
+      },
+      {
+        "obfuscatedName": "du",
+        "name": "onTimerListener"
+      },
+      {
+        "obfuscatedName": "dk",
+        "name": "onOpListener"
+      },
+      {
+        "obfuscatedName": "dq",
+        "name": "onScrollWheelListener"
+      },
+      {
+        "obfuscatedName": "dp",
+        "name": "onChatTransmitListener"
+      },
+      {
+        "obfuscatedName": "dw",
+        "name": "onKeyListener"
+      },
+      {
+        "obfuscatedName": "dt",
+        "name": "onFriendTransmitListener"
+      },
+      {
+        "obfuscatedName": "dj",
+        "name": "onClanTransmitListener"
+      },
+      {
+        "obfuscatedName": "df",
+        "name": "onMiscTransmitListener"
+      },
+      {
+        "obfuscatedName": "db",
+        "name": "onDialogAbortListener"
+      },
+      {
+        "obfuscatedName": "dc",
+        "name": "onSubChangeListener"
+      },
+      {
+        "obfuscatedName": "dy",
+        "name": "onResizeListener"
+      },
+      {
+        "obfuscatedName": "eg",
+        "name": "onStockTransmitListener"
+      },
+      {
+        "obfuscatedName": "ed",
+        "name": "onCamFinishedListener"
+      },
+      {
+        "obfuscatedName": "ec",
+        "name": "dynamicValues"
+      },
+      {
+        "obfuscatedName": "ei",
+        "name": "tableActions"
+      },
+      {
+        "obfuscatedName": "ev",
+        "name": "spellName"
+      },
+      {
+        "obfuscatedName": "ez",
+        "name": "tooltip"
+      },
+      {
+        "obfuscatedName": "ej",
+        "name": "itemIds"
+      },
+      {
+        "obfuscatedName": "ek",
+        "name": "itemQuantities"
+      },
+      {
+        "obfuscatedName": "ex",
+        "name": "itemId",
+        "multiplier": -1835891363
+      },
+      {
+        "obfuscatedName": "em",
+        "name": "itemQuantity",
+        "multiplier": -305234817
+      },
+      {
+        "obfuscatedName": "ew",
+        "name": "children"
+      },
+      {
+        "obfuscatedName": "eb",
+        "name": "boundsIndex",
+        "multiplier": 116391723
+      },
+      {
+        "obfuscatedName": "ey",
+        "name": "loopCycle",
+        "multiplier": -850255915
+      },
+      {
+        "obfuscatedName": "eh",
+        "name": "noClickThrough"
+      },
+      {
+        "obfuscatedName": "ea",
+        "name": "noScrollThrough"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bs",
+    "name": "WidgetNode",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "id",
+        "multiplier": -1342265387
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "owner",
+        "multiplier": -30726049
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "bz",
+    "name": "World",
+    "fields": [
+      {
+        "obfuscatedName": "x",
+        "name": "worldCount",
+        "multiplier": 1622430193
+      },
+      {
+        "obfuscatedName": "r",
+        "name": "scriptStringStackSize",
+        "multiplier": -1630125505
+      },
+      {
+        "obfuscatedName": "d",
+        "name": "id",
+        "multiplier": 1287107705
+      },
+      {
+        "obfuscatedName": "a",
+        "name": "mask",
+        "multiplier": -417413109
+      },
+      {
+        "obfuscatedName": "e",
+        "name": "playerCount",
+        "multiplier": 2064917163
+      },
+      {
+        "obfuscatedName": "f",
+        "name": "address"
+      },
+      {
+        "obfuscatedName": "l",
+        "name": "activity"
+      },
+      {
+        "obfuscatedName": "m",
+        "name": "location",
+        "multiplier": 452975209
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "index",
+        "multiplier": 1968641635
+      },
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "e",
+    "name": "WorldComparator",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "indexedSpriteCount",
+        "multiplier": -285390263
+      },
+      {
+        "obfuscatedName": "fk",
+        "name": "crossSprites"
+      },
+      {
+        "obfuscatedName": "is",
+        "name": "localPlayer"
+      },
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "as",
+    "name": "WorldMapData",
+    "fields": [
+      {
+        "obfuscatedName": "cq",
+        "name": "middleMouseMovesCamera"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "fileId",
+        "multiplier": -54601899
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "identifier"
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "name"
+      },
+      {
+        "obfuscatedName": "z",
+        "name": "minX",
+        "multiplier": -1581477657
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "minY",
+        "multiplier": 1344274627
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ak",
+    "name": "WorldMapDecoration",
+    "fields": [
+      {
+        "obfuscatedName": "cv",
+        "name": "socket"
+      },
+      {
+        "obfuscatedName": "c",
+        "name": "objectDefinitionId",
+        "multiplier": -362055059
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "decoration",
+        "multiplier": 1828880653
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "rotation",
+        "multiplier": 160883779
+      }
+    ]
+  },
+  {
+    "obfuscatedName": "ix",
+    "name": "WorldMapDecorationType",
+    "fields": [
+      {
+        "obfuscatedName": "g",
+        "name": "rsOrdinal",
+        "multiplier": 1470097667
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ag",
+    "name": "WorldMapManager",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "loaded"
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "loading"
+      },
+      {
+        "obfuscatedName": "x",
+        "name": "mapRegions"
+      },
+      {
+        "obfuscatedName": "w",
+        "name": "mapFonts"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ai",
+    "name": "WorldMapRectangle",
+    "fields": [
+      {
+        "obfuscatedName": "c",
+        "name": "worldMapRegionWidth",
+        "multiplier": 165230499
+      },
+      {
+        "obfuscatedName": "i",
+        "name": "worldMapRegionHeight",
+        "multiplier": -131982961
+      },
+      {
+        "obfuscatedName": "o",
+        "name": "worldMapRegionX",
+        "multiplier": -254202691
+      },
+      {
+        "obfuscatedName": "j",
+        "name": "worldMapRegionY",
+        "multiplier": 251093751
+      },
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ao",
+    "name": "WorldMapRegion",
+    "fields": [
+      {
+        "obfuscatedName": "di",
+        "name": "port1",
+        "multiplier": 775228979
+      },
+      {
+        "obfuscatedName": "b",
+        "name": "mapFonts"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ay",
+    "name": "WorldMapSectionBase",
+    "fields": []
+  },
+  {
+    "obfuscatedName": "ab",
+    "name": "WorldMapType1",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "af",
+    "name": "WorldMapType2",
+    "fields": [
+      {
+        "obfuscatedName": "cx",
+        "name": "configsIndex"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "obfuscatedName": "ac",
+    "name": "WorldMapType3",
+    "fields": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  null,
+  null,
+  null,
+  null,
+  null
+]
