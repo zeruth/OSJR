@@ -30,7 +30,7 @@ public class JarInjector {
 		classnodes = new CanvasInjector(classnodes).run();
 
 		try {
-			injectedJar = new File("gamepack_injected.jar");
+			injectedJar = new File("./export/gamepack_injected.jar");
 			JarOutputStream jos = new JarOutputStream(new FileOutputStream(injectedJar));
 
 			for (ClassNode cn : classnodes.values()) {

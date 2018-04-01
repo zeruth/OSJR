@@ -17,10 +17,12 @@ public class UpdateStatus extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+
 	public static void run() {
 		UpdateStatus frame = new UpdateStatus();
 		frame.setVisible(true);
 	}
+
 	private JPanel contentPane;
 
 	private JTextField textField;

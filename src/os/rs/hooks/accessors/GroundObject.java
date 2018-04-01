@@ -6,6 +6,8 @@ import os.rs.hooks.model.RSClass;
 
 public class GroundObject extends RSClass {
 
+	public int plane = 0;
+
 	public GroundObject(Object reference) {
 		this.reference = reference;
 		if (Hooks.groundObject != null) {
@@ -37,7 +39,7 @@ public class GroundObject extends RSClass {
 	}
 
 	public int getPlane() {
-		return (int) getValue(getField("floor"));
+		return plane;
 	}
 
 	public Renderable getRenderable1() {

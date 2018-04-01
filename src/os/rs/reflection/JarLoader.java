@@ -68,7 +68,7 @@ public class JarLoader extends ClassLoader {
 			} else {
 			}
 
-			JarFile jar = new JarFile(new File("./gamepack.jar"));
+			JarFile jar = new JarFile(new File("./export/gamepack.jar"));
 			Enumeration<JarEntry> en = jar.entries();
 			while (en.hasMoreElements()) {
 				JarEntry entry = en.nextElement();

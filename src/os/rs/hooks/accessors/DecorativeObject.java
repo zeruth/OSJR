@@ -6,6 +6,8 @@ import os.rs.hooks.model.RSClass;
 
 public class DecorativeObject extends RSClass {
 
+	public int plane = 0;
+
 	public DecorativeObject(Object reference) {
 		this.reference = reference;
 		if (Hooks.decorativeObject != null) {
@@ -40,7 +42,7 @@ public class DecorativeObject extends RSClass {
 	}
 
 	public int getPlane() {
-		return (int) getValue(getField("plane"));
+		return plane;
 	}
 
 	public Renderable getRenderable1() {

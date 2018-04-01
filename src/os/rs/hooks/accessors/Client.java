@@ -67,6 +67,10 @@ public class Client extends RSClass {
 
 	}
 
+	public int[] getRealSkillLevels() {
+		return (int[]) getValue(getField("realSkillLevels"));
+	}
+
 	public int getCameraPitch() {
 		return Hooks.boundingBox3D.getCameraPitch();
 	}
@@ -112,6 +116,8 @@ public class Client extends RSClass {
 	}
 
 	public Region getRegion() {
+		if (Hooks.class308 == null)
+			return null;
 		return Hooks.class308.getRegion();
 	}
 

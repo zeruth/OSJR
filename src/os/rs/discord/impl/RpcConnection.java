@@ -34,6 +34,7 @@ public class RpcConnection {
 	public interface DisconnectCallback {
 		void accept(ErrorCode lastErrorCode, String lastErrorMessage);
 	}
+
 	private class MessageFrame // I know this class is quite ugly yeah... will find a better way to handle that
 	{
 		byte[] headerBuffer;
@@ -117,14 +118,15 @@ public class RpcConnection {
 			return this.id;
 		}
 	}
+
 	private enum State {
 		// AWAITING_RESPONSE, FIXME Not used ?
 		// https://github.com/discordapp/discord-rpc/search?utf8=%E2%9C%93&q=AwaitingResponse&type=
-		CONNECTED, DISCONNECTED,
-		SENT_HANDSHAKE
+		CONNECTED, DISCONNECTED, SENT_HANDSHAKE
 	}
 
 	private static final Gson GSON = new GsonBuilder().create();
+
 	/**
 	 * Create a RPC connection
 	 *
@@ -135,6 +137,7 @@ public class RpcConnection {
 	public static RpcConnection create(String applicationId) {
 		return new RpcConnection(applicationId);
 	}
+
 	/**
 	 * Destroy a RPC connection
 	 *

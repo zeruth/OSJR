@@ -217,7 +217,7 @@ public class Hooks {
 	public static RSClass[] main() {
 		Gson gson = new GsonBuilder().create();
 		try {
-			RSClass[] c = gson.fromJson(new FileReader(new File("./lib/Hooks.json")), RSClass[].class);
+			RSClass[] c = gson.fromJson(new FileReader(new File("./export/Hooks.json")), RSClass[].class);
 			return c;
 		} catch (JsonSyntaxException e) {
 			// TODO Auto-generated catch block

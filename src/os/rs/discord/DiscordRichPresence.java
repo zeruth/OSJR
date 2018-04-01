@@ -220,6 +220,7 @@ public class DiscordRichPresence {
 			return this;
 		}
 	}
+
 	/**
 	 * Create a new rich presence builder
 	 *
@@ -228,6 +229,7 @@ public class DiscordRichPresence {
 	public static DiscordRichPresenceBuilder builder() {
 		return new DiscordRichPresenceBuilder();
 	}
+
 	private String details;
 	private long endTimestamp;
 	private boolean instance;
