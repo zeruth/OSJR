@@ -2,6 +2,7 @@
 A High-speed Old School Runescape client
 
 # What's New!
+- It's now more of a client than Framework.
 - Update to OSRS Revision 167
 
 
@@ -10,7 +11,10 @@ A High-speed Old School Runescape client
 ![clickBoxes](https://i.imgur.com/XGGg6zY.jpg)
 
 And now it does! Included is some very basic paint Listeners:
-- Agility Overlay (Currently only supports Al Kharid and Varrock)
+- Agility Overlay
+-- Al Kharid
+-- Varrock
+-- Canifis
 - Actor Names Overlay (Players and NPC's)
 - Fishing Overlay
 - Various Object ID overlays under Settings
@@ -26,4 +30,4 @@ And now it does! Included is some very basic paint Listeners:
 - If you are really interested in knowing how I get them, take a look at my Runelite fork commits. 
 
 ### No release is supported at this time.
-- if you want to use this. Build it and run it using Eclipse. It is not ready for a runnable Jar release.
+- if you want to use this. I have included a courtesy export folder. OSJR, gamepack, and Hooks.json need to be in the same directory currently.
