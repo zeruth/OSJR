@@ -1,5 +1,6 @@
 # OSJR [![Build Status](https://travis-ci.org/zeruth/OSJR.svg?branch=master)](https://travis-ci.org/zeruth/OSJR)
 A High-speed Old School Runescape client
+Discord: https://discord.gg/hYJdgFj
 
 # What's New!
 - Converted to Gradle project.
