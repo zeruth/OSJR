@@ -15,7 +15,7 @@ public class AgilityObjects {
 	public DecorativeObject AL_KHARID_6 = new DecorativeObject(null);
 	public GroundObject AL_KHARID_7 = new GroundObject(null);
 	public GameObject AL_KHARID_8 = new GameObject(null);
-
+asda
 	// Varrock
 	public DecorativeObject VARROCK_1 = new DecorativeObject(null);
 	public GameObject VARROCK_2 = new GameObject(null);
