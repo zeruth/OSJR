@@ -5,6 +5,7 @@ A High-speed Old School Runescape client
 - It's now more of a client than Framework.
 - Update to OSRS Revision 167
 - Added -vanilla Command Line Argument
+- Added Travis CI
 
 
 ### Well to put it simply... the original OSJR had no paint.
