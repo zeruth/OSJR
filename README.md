@@ -26,6 +26,8 @@ And now it does! Included is some very basic paint Listeners:
 
 ![discordRPC](https://i.imgur.com/f4qJYlo.png)
 
+-OSJR repo changes are also listed in discord now.
+
 ### Hooks are once again included.
 
 - If you are really interested in knowing how I get them, take a look at my Runelite fork commits. 
