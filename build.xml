@@ -46,8 +46,8 @@
             <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
         </unzip>
     </target>
-    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+    <target description="compile project with Eclipse compiler" name="test">
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-        <antcall target="test"/>
+        <antcall target="build"/>
     </target>
 </project>
