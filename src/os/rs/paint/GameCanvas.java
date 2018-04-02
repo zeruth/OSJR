@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 
+import os.rs.game.Game;
 import os.rs.game.LoaderWindow;
 
 public class GameCanvas extends Canvas {
@@ -18,6 +19,9 @@ public class GameCanvas extends Canvas {
 
 	@Override
 	public Graphics getGraphics() {
+		if (Game.vanilla) {
+			return super.getGraphics();
+		}
 
 		Graphics botGraphics = LoaderWindow.game.gamePaint();
 

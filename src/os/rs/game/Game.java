@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import javax.swing.JFrame;
+
 import os.rs.discord.DiscordManager;
 import os.rs.hooks.Hooks;
 import os.rs.hooks.accessors.Client;
@@ -56,251 +58,281 @@ public class Game extends Canvas implements Runnable {
 	public ThreadGroup threadGroup;
 	public AgilityObjects agilityObjects = new AgilityObjects();
 	int[] i = new int[30000];
+	public static boolean vanilla = false;
 
-	public Game() {
-		threadGroup = new ThreadGroup("RSGame");
-		gameImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
-		paintImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
-
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				try {
-					jarLoader = new JarLoader();
-
-					Class<?> c = jarLoader.loadClass("client");
-					applet = (Applet) c.newInstance();
-					applet.setStub(jarLoader.getAppletStub());
-					applet.init();
-					applet.setSize(OSRSLauncher.loaderWindow.getContentPane().getSize());
-					applet.start();
-
-					// Sleeping to let the game load
-					Thread.sleep(1000);
-					Hooks.client = new Client(applet);
-					new Hooks();
-					while (!Client.isLoaded()) {
-						Thread.sleep(10);
-					}
-
-					DiscordManager.run();
-
-					inputListeners = new InputListeners(true, applet);
-					requestFocus();
-					addMouseListener(inputListeners);
-					addMouseMotionListener(inputListeners);
-					addMouseWheelListener(inputListeners);
-					addKeyListener(inputListeners);
-					addFocusListener(inputListeners);
-
-					paintListeners.add(new FpsPaintListener(Hooks.client));
-					paintListeners.add(new ActorNames(Hooks.client));
-					paintListeners.add(new GroundObjects(Hooks.client));
-					paintListeners.add(new GameObjects(Hooks.client));
-					paintListeners.add(new DecorativeObjects(Hooks.client));
-					paintListeners.add(new WallObjects(Hooks.client));
-
-					paintListeners.add(new AgilityOverlay(Hooks.client));
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-
-				loading = false;
-				System.out.println("[OSRS] Init Complete.");
-
+	public Game(String[] args) {
+		for (String s : args) {
+			if (s.compareTo("vanilla")==0) {
+				vanilla = true;
 			}
-		}).start();
+		}
+		if (vanilla) {
+			jarLoader = new JarLoader();
 
-		paintListeners = new ArrayList<PaintListener>();
-		textPaintListeners = new ArrayList<TextPaintListener>();
+			Class<?> c;
+			try {
+				c = jarLoader.loadClass("client");
+				applet = (Applet) c.newInstance();
+				applet.setStub(jarLoader.getAppletStub());
+				JFrame vanillaFrame = new JFrame("Vanilla OSRS");
+				applet.setSize(800, 600);
+				vanillaFrame.setSize(800, 600);
+				applet.init();
+				applet.start();
+				vanillaFrame.add(applet);
+				vanillaFrame.setVisible(true);
+			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 
-		paintThread = new Thread(threadGroup, this, "paint");
-		paintThread.start();
 
-		new Thread(threadGroup, new Runnable() {
+		} else {
+			threadGroup = new ThreadGroup("RSGame");
+			gameImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
+			paintImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
 
-			@Override
-			public void run() {
-				while (true != false) {
-					if (Hooks.client != null) {
-						if (Client.isLoaded())
-							if (Hooks.client.isLoggedIn()) {
-								if (basex != Hooks.client.getBaseX() || basey != Hooks.client.getBaseY()) {
-									resetObjects();
-									basex = Hooks.client.getBaseX();
-									basey = Hooks.client.getBaseY();
-								}
-								if (Hooks.client.getRegion() != null) {
-									if (Hooks.client.getRegion().getTiles() != null) {
-										for (Tile t : Hooks.client.getRegion().getTiles()) {
-											for (GameObject go : t.getObjects()) {
-												if (go != null) {
-													if (gameObjects.containsKey(go.getID())) {
-														continue;
-													}
-													switch (go.getID()) {
-
-													// Al Kharid course
-													case 10355:
-														agilityObjects.AL_KHARID_3 = go;
-														addGameObject(agilityObjects.AL_KHARID_3);
-														break;
-													case 10357:
-														agilityObjects.AL_KHARID_5 = go;
-														addGameObject(agilityObjects.AL_KHARID_3);
-														break;
-													case 10352:
-														agilityObjects.AL_KHARID_8 = go;
-														addGameObject(agilityObjects.AL_KHARID_8);
-														break;
-
-													// Varrock
-
-													case 10587:
-														agilityObjects.VARROCK_2 = go;
-														addGameObject(agilityObjects.VARROCK_2);
-														break;
-													case 10642:
-														agilityObjects.VARROCK_3 = go;
-														addGameObject(agilityObjects.VARROCK_3);
-														break;
-													case 10777:
-														agilityObjects.VARROCK_4 = go;
-														addGameObject(agilityObjects.VARROCK_4);
-														break;
-													case 10778:
-														agilityObjects.VARROCK_5 = go;
-														addGameObject(agilityObjects.VARROCK_5);
-														break;
-													case 10779:
-														agilityObjects.VARROCK_6 = go;
-														addGameObject(agilityObjects.VARROCK_6);
-														break;
-													case 10780:
-														agilityObjects.VARROCK_7 = go;
-														addGameObject(agilityObjects.VARROCK_7);
-														break;
-													case 10781:
-														agilityObjects.VARROCK_8 = go;
-														addGameObject(agilityObjects.VARROCK_8);
-														break;
-													case 10817:
-														agilityObjects.VARROCK_9 = go;
-														addGameObject(agilityObjects.VARROCK_9);
-														break;
-
-													// Canifis
-													case 10819:
-														agilityObjects.CANIFIS_1 = go;
-														addGameObject(agilityObjects.CANIFIS_1);
-														break;
-													case 10820:
-														agilityObjects.CANIFIS_2 = go;
-														addGameObject(agilityObjects.CANIFIS_2);
-														break;
-													case 10821:
-														agilityObjects.CANIFIS_3 = go;
-														addGameObject(agilityObjects.CANIFIS_3);
-														break;
-													case 10828:
-														agilityObjects.CANIFIS_4 = go;
-														addGameObject(agilityObjects.CANIFIS_4);
-														break;
-													case 10822:
-														agilityObjects.CANIFIS_5 = go;
-														addGameObject(agilityObjects.CANIFIS_5);
-														break;
-													case 10831:
-														agilityObjects.CANIFIS_6 = go;
-														addGameObject(agilityObjects.CANIFIS_6);
-														break;
-													case 10823:
-														agilityObjects.CANIFIS_7 = go;
-														addGameObject(agilityObjects.CANIFIS_7);
-														break;
-													case 10832:
-														agilityObjects.CANIFIS_8 = go;
-														addGameObject(agilityObjects.CANIFIS_8);
-														break;
-													}
-												}
-											}
-
-											if (t != null) {
-												if (t.getDecorativeObject() != null) {
-													if (decorativeObjects
-															.containsKey(t.getDecorativeObject().getID())) {
-														continue;
-													}
-													switch (t.getDecorativeObject().getID()) {
-
-													// Al Kharid course
-													case 10093:
-														agilityObjects.AL_KHARID_1 = t.getDecorativeObject();
-														addDecorativeObject(agilityObjects.AL_KHARID_1);
-														break;
-													case 10094:
-														agilityObjects.AL_KHARID_6 = t.getDecorativeObject();
-														agilityObjects.AL_KHARID_6.plane = 2;
-														addDecorativeObject(agilityObjects.AL_KHARID_6);
-														break;
-
-													// Varrock course
-													case 10586:
-														agilityObjects.VARROCK_1 = t.getDecorativeObject();
-														addDecorativeObject(agilityObjects.VARROCK_1);
-														break;
-													}
-												}
-											}
-
-											if (t != null) {
-												if (t.getGroundObject() != null) {
-													if (groundObjects.containsKey(t.getGroundObject().getID())) {
-														continue;
-													}
-													if (t.getGroundObject() != null)
-														switch (t.getGroundObject().getID()) {
-														// Al Kharid Course
-														case 10284:
-															agilityObjects.AL_KHARID_2 = t.getGroundObject();
-															agilityObjects.AL_KHARID_2.plane = 3;
-															addGroundObject(agilityObjects.AL_KHARID_2);
-															break;
-														case 10527:
-															agilityObjects.AL_KHARID_4 = t.getGroundObject();
-															agilityObjects.AL_KHARID_4.plane = 3;
-															addGroundObject(agilityObjects.AL_KHARID_4);
-															break;
-														case 10583:
-															agilityObjects.AL_KHARID_7 = t.getGroundObject();
-															agilityObjects.AL_KHARID_7.plane = 3;
-															addGroundObject(agilityObjects.AL_KHARID_7);
-															break;
-
-														}
-												}
-											}
-
-										}
-									}
-								}
-							} else {
-								resetObjects();
-							}
-
-					}
+			new Thread(new Runnable() {
+				@Override
+				public void run() {
 					try {
+						jarLoader = new JarLoader();
+
+						Class<?> c = jarLoader.loadClass("client");
+						applet = (Applet) c.newInstance();
+						applet.setStub(jarLoader.getAppletStub());
+						applet.init();
+						applet.setSize(OSRSLauncher.loaderWindow.getContentPane().getSize());
+						applet.start();
+
+						// Sleeping to let the game load
 						Thread.sleep(1000);
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
+						Hooks.client = new Client(applet);
+						new Hooks();
+						while (!Client.isLoaded()) {
+							Thread.sleep(10);
+						}
+
+						DiscordManager.run();
+
+						inputListeners = new InputListeners(true, applet);
+						requestFocus();
+						addMouseListener(inputListeners);
+						addMouseMotionListener(inputListeners);
+						addMouseWheelListener(inputListeners);
+						addKeyListener(inputListeners);
+						addFocusListener(inputListeners);
+
+						paintListeners.add(new FpsPaintListener(Hooks.client));
+						paintListeners.add(new ActorNames(Hooks.client));
+						paintListeners.add(new GroundObjects(Hooks.client));
+						paintListeners.add(new GameObjects(Hooks.client));
+						paintListeners.add(new DecorativeObjects(Hooks.client));
+						paintListeners.add(new WallObjects(Hooks.client));
+
+						paintListeners.add(new AgilityOverlay(Hooks.client));
+					} catch (Exception e) {
 						e.printStackTrace();
 					}
-				}
-			}
-		}).start();
 
-		this.setSize(765, 503);
+					loading = false;
+					System.out.println("[OSRS] Init Complete.");
+
+				}
+			}).start();
+
+			paintListeners = new ArrayList<PaintListener>();
+			textPaintListeners = new ArrayList<TextPaintListener>();
+
+			paintThread = new Thread(threadGroup, this, "paint");
+			paintThread.start();
+
+			new Thread(threadGroup, new Runnable() {
+
+				@Override
+				public void run() {
+					while (true != false) {
+						if (Hooks.client != null) {
+							if (Client.isLoaded())
+								if (Hooks.client.isLoggedIn()) {
+									if (basex != Hooks.client.getBaseX() || basey != Hooks.client.getBaseY()) {
+										resetObjects();
+										basex = Hooks.client.getBaseX();
+										basey = Hooks.client.getBaseY();
+									}
+									if (Hooks.client.getRegion() != null) {
+										if (Hooks.client.getRegion().getTiles() != null) {
+											for (Tile t : Hooks.client.getRegion().getTiles()) {
+												for (GameObject go : t.getObjects()) {
+													if (go != null) {
+														if (gameObjects.containsKey(go.getID())) {
+															continue;
+														}
+														switch (go.getID()) {
+
+														// Al Kharid course
+														case 10355:
+															agilityObjects.AL_KHARID_3 = go;
+															addGameObject(agilityObjects.AL_KHARID_3);
+															break;
+														case 10357:
+															agilityObjects.AL_KHARID_5 = go;
+															addGameObject(agilityObjects.AL_KHARID_3);
+															break;
+														case 10352:
+															agilityObjects.AL_KHARID_8 = go;
+															addGameObject(agilityObjects.AL_KHARID_8);
+															break;
+
+														// Varrock
+
+														case 10587:
+															agilityObjects.VARROCK_2 = go;
+															addGameObject(agilityObjects.VARROCK_2);
+															break;
+														case 10642:
+															agilityObjects.VARROCK_3 = go;
+															addGameObject(agilityObjects.VARROCK_3);
+															break;
+														case 10777:
+															agilityObjects.VARROCK_4 = go;
+															addGameObject(agilityObjects.VARROCK_4);
+															break;
+														case 10778:
+															agilityObjects.VARROCK_5 = go;
+															addGameObject(agilityObjects.VARROCK_5);
+															break;
+														case 10779:
+															agilityObjects.VARROCK_6 = go;
+															addGameObject(agilityObjects.VARROCK_6);
+															break;
+														case 10780:
+															agilityObjects.VARROCK_7 = go;
+															addGameObject(agilityObjects.VARROCK_7);
+															break;
+														case 10781:
+															agilityObjects.VARROCK_8 = go;
+															addGameObject(agilityObjects.VARROCK_8);
+															break;
+														case 10817:
+															agilityObjects.VARROCK_9 = go;
+															addGameObject(agilityObjects.VARROCK_9);
+															break;
+
+														// Canifis
+														case 10819:
+															agilityObjects.CANIFIS_1 = go;
+															addGameObject(agilityObjects.CANIFIS_1);
+															break;
+														case 10820:
+															agilityObjects.CANIFIS_2 = go;
+															addGameObject(agilityObjects.CANIFIS_2);
+															break;
+														case 10821:
+															agilityObjects.CANIFIS_3 = go;
+															addGameObject(agilityObjects.CANIFIS_3);
+															break;
+														case 10828:
+															agilityObjects.CANIFIS_4 = go;
+															addGameObject(agilityObjects.CANIFIS_4);
+															break;
+														case 10822:
+															agilityObjects.CANIFIS_5 = go;
+															addGameObject(agilityObjects.CANIFIS_5);
+															break;
+														case 10831:
+															agilityObjects.CANIFIS_6 = go;
+															addGameObject(agilityObjects.CANIFIS_6);
+															break;
+														case 10823:
+															agilityObjects.CANIFIS_7 = go;
+															addGameObject(agilityObjects.CANIFIS_7);
+															break;
+														case 10832:
+															agilityObjects.CANIFIS_8 = go;
+															addGameObject(agilityObjects.CANIFIS_8);
+															break;
+														}
+													}
+												}
+
+												if (t != null) {
+													if (t.getDecorativeObject() != null) {
+														if (decorativeObjects
+																.containsKey(t.getDecorativeObject().getID())) {
+															continue;
+														}
+														switch (t.getDecorativeObject().getID()) {
+
+														// Al Kharid course
+														case 10093:
+															agilityObjects.AL_KHARID_1 = t.getDecorativeObject();
+															addDecorativeObject(agilityObjects.AL_KHARID_1);
+															break;
+														case 10094:
+															agilityObjects.AL_KHARID_6 = t.getDecorativeObject();
+															agilityObjects.AL_KHARID_6.plane = 2;
+															addDecorativeObject(agilityObjects.AL_KHARID_6);
+															break;
+
+														// Varrock course
+														case 10586:
+															agilityObjects.VARROCK_1 = t.getDecorativeObject();
+															addDecorativeObject(agilityObjects.VARROCK_1);
+															break;
+														}
+													}
+												}
+
+												if (t != null) {
+													if (t.getGroundObject() != null) {
+														if (groundObjects.containsKey(t.getGroundObject().getID())) {
+															continue;
+														}
+														if (t.getGroundObject() != null)
+															switch (t.getGroundObject().getID()) {
+															// Al Kharid Course
+															case 10284:
+																agilityObjects.AL_KHARID_2 = t.getGroundObject();
+																agilityObjects.AL_KHARID_2.plane = 3;
+																addGroundObject(agilityObjects.AL_KHARID_2);
+																break;
+															case 10527:
+																agilityObjects.AL_KHARID_4 = t.getGroundObject();
+																agilityObjects.AL_KHARID_4.plane = 3;
+																addGroundObject(agilityObjects.AL_KHARID_4);
+																break;
+															case 10583:
+																agilityObjects.AL_KHARID_7 = t.getGroundObject();
+																agilityObjects.AL_KHARID_7.plane = 3;
+																addGroundObject(agilityObjects.AL_KHARID_7);
+																break;
+
+															}
+													}
+												}
+
+											}
+										}
+									}
+								} else {
+									resetObjects();
+								}
+
+						}
+						try {
+							Thread.sleep(1000);
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+				}
+			}).start();
+
+			this.setSize(765, 503);
+		}
+
 	}
 
 	public void addGameObject(GameObject d) {

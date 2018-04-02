@@ -20,38 +20,49 @@ public class LoaderWindow extends JFrame {
 	private JPanel gamePanel;
 	private MenuHandler menuHandler;
 
-	public LoaderWindow() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setResizable(true);
-		setSize(780, 563);
-		setTitle("OSJR");
-		setLayout(new BorderLayout());
-
-		JPopupMenu.setDefaultLightWeightPopupEnabled(false);
-		ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);
-
-		Container contentPanel = getContentPane();
-		contentPanel.setLayout(new BorderLayout());
-		gamePanel = new JPanel();
-		contentPanel.add(gamePanel);
-
-		try {
-			contentPanel.repaint();
-			contentPanel.revalidate();
-			game = new Game();
-			contentPanel.add(game);
-			contentPanel.setVisible(true);
-			contentPanel.setSize(765, 503);
-			contentPanel.repaint();
-			contentPanel.revalidate();
-			setResizable(true);
-		} catch (Exception e) {
+	public LoaderWindow(String[] args) {
+		boolean vanilla = false;
+		for (String s : args) {
+			if (s.compareTo("vanilla")==0) {
+				vanilla = true;
+			}
 		}
+		if (vanilla) {
+			game = new Game(args);
+		} else {
+			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			setResizable(true);
+			setSize(780, 563);
+			setTitle("OSJR");
+			setLayout(new BorderLayout());
 
-		console = new Console(game);
+			JPopupMenu.setDefaultLightWeightPopupEnabled(false);
+			ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);
 
-		menuHandler = new MenuHandler(this, game, console);
-		this.setJMenuBar(menuHandler.makeJMenuBar());
+			Container contentPanel = getContentPane();
+			contentPanel.setLayout(new BorderLayout());
+			gamePanel = new JPanel();
+			contentPanel.add(gamePanel);
+
+			try {
+				contentPanel.repaint();
+				contentPanel.revalidate();
+				game = new Game(args);
+				contentPanel.add(game);
+				contentPanel.setVisible(true);
+				contentPanel.setSize(765, 503);
+				contentPanel.repaint();
+				contentPanel.revalidate();
+				setResizable(true);
+			} catch (Exception e) {
+			}
+
+			console = new Console(game);
+
+			menuHandler = new MenuHandler(this, game, console);
+			this.setJMenuBar(menuHandler.makeJMenuBar());
+
+		}
 
 	}
 
