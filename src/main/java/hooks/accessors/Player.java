@@ -25,5 +25,34 @@ public class Player extends RSClass {
 	public Name getNames() {
 		return new Name(getValue(getField("name")));
 	}
+	
+	public boolean isInClanChat() {
+		try {
+			if (Client.getClanMemberManager().reference!=null) {
+				for (Nameable n : Client.getClanMemberManager().asNameableContainer().getNameables()) {
+					if (n!=null) {
+						if (n.getName().getOriginalName().compareTo(getNames().getOriginalName())==0)
+						return true;
+					}
+				}
+				
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	public int getClanRank() {
+		if (isInClanChat()) {
+				for (Nameable n : Client.getClanMemberManager().asNameableContainer().getNameables()) {
+					if (n!=null) {
+						if (n.getName().getOriginalName().compareTo(getNames().getOriginalName())==0)
+						return n.asClanMember().asChatPlayer().getRank();
+					}
+				}
+		}
+		return 0;
+	}
 
 }

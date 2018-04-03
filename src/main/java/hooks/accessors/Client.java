@@ -156,4 +156,8 @@ public class Client extends RSClass {
 	public boolean isResized() {
 		return (boolean) getValue(getField("isResized"));
 	}
+	
+	public static ClanMemberManager getClanMemberManager() {
+		return Hooks.class33.getClanMemberManager();
+	}
 }

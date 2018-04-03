@@ -18,7 +18,7 @@ public class Name extends RSClass {
 		return (String) getValue(getField("cleanName"));
 	}
 
-	public String getName() {
+	public String getOriginalName() {
 		if (this.reference == null)
 			return "null";
 		return (String) getValue(getField("name"));

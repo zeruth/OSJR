@@ -14,8 +14,12 @@ public class Nameable extends RSClass {
 		}
 	}
 
-	public Object getName() {
-		return getValue(getField("name"));
+	public Name getName() {
+		return new Name(getValue(getField("name")));
+	}
+	
+	public ClanMember asClanMember() {
+		return new ClanMember(this.reference);
 	}
 
 }

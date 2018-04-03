@@ -10,43 +10,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 
-import hooks.accessors.Actor;
-import hooks.accessors.Area;
-import hooks.accessors.BaseVarType;
-import hooks.accessors.BoundingBox3D;
-import hooks.accessors.ChatLineBuffer;
-import hooks.accessors.Class160;
-import hooks.accessors.Class237;
-import hooks.accessors.Class308;
-import hooks.accessors.Class33;
-import hooks.accessors.Class38;
-import hooks.accessors.Class62;
-import hooks.accessors.Client;
-import hooks.accessors.ClientPacket;
-import hooks.accessors.Coordinates;
-import hooks.accessors.DecorativeObject;
-import hooks.accessors.GameEngine;
-import hooks.accessors.GameObject;
-import hooks.accessors.GroundObject;
-import hooks.accessors.Ignore;
-import hooks.accessors.Model;
-import hooks.accessors.Name;
-import hooks.accessors.Nameable;
-import hooks.accessors.Npc;
-import hooks.accessors.NpcComposition;
-import hooks.accessors.ObjectComposition;
-import hooks.accessors.PacketNode;
-import hooks.accessors.Player;
-import hooks.accessors.PlayerComposition;
-import hooks.accessors.Region;
-import hooks.accessors.Renderable;
-import hooks.accessors.Sequence;
-import hooks.accessors.SpritePixels;
-import hooks.accessors.Tile;
-import hooks.accessors.Varcs;
-import hooks.accessors.WallObject;
-import hooks.accessors.WorldComparator;
-import hooks.accessors.WorldMapData;
+import hooks.accessors.*;
 import hooks.model.RSClass;
 
 public class Hooks {
@@ -57,6 +21,9 @@ public class Hooks {
 	public static BaseVarType baseVarType;
 	public static BoundingBox3D boundingBox3D;
 	public static ChatLineBuffer chatLineBuffer;
+	public static ChatPlayer chatPlayer;
+	public static ClanMember clanMember;
+	public static ClanMemberManager clanMemberManager;
 	public static Class160 class160;
 	public static Class237 class237;
 	public static Class308 class308;
@@ -74,6 +41,7 @@ public class Hooks {
 	public static Model model;
 	public static Name name;
 	public static Nameable nameable;
+	public static NameableContainer nameableContainer;
 	public static Npc npc;
 	public static NpcComposition npcComposition;
 	public static ObjectComposition objectComposition;
@@ -106,6 +74,18 @@ public class Hooks {
 			} else if (c.name.compareTo("BoundingBox3D") == 0) {
 				boundingBox3D = new BoundingBox3D(null);
 				temp = boundingBox3D;
+			} else if (c.name.compareTo("ChatLineBuffer") == 0) {
+				chatLineBuffer = new ChatLineBuffer(null);
+				temp = chatLineBuffer;
+			} else if (c.name.compareTo("ChatPlayer") == 0) {
+				chatPlayer = new ChatPlayer(null);
+				temp = chatPlayer;
+			} else if (c.name.compareTo("ClanMember") == 0) {
+				clanMember = new ClanMember(null);
+				temp = clanMember;
+			} else if (c.name.compareTo("ClanMemberManager") == 0) {
+				clanMemberManager = new ClanMemberManager(null);
+				temp = clanMemberManager;
 			} else if (c.name.compareTo("class33") == 0) {
 				class33 = new Class33(null);
 				temp = class33;
@@ -124,9 +104,6 @@ public class Hooks {
 			} else if (c.name.compareTo("class308") == 0) {
 				class308 = new Class308(null);
 				temp = class308;
-			} else if (c.name.compareTo("ChatLineBuffer") == 0) {
-				chatLineBuffer = new ChatLineBuffer(null);
-				temp = chatLineBuffer;
 			} else if (c.name.compareTo("Client") == 0) {
 				temp = client;
 			} else if (c.name.compareTo("ClientPacket") == 0) {
@@ -159,6 +136,9 @@ public class Hooks {
 			} else if (c.name.compareTo("Nameable") == 0) {
 				nameable = new Nameable(null);
 				temp = nameable;
+			} else if (c.name.compareTo("NameableContainer") == 0) {
+				nameableContainer = new NameableContainer(null);
+				temp = nameableContainer;
 			} else if (c.name.compareTo("NPC") == 0) {
 				npc = new Npc(null);
 				temp = npc;
