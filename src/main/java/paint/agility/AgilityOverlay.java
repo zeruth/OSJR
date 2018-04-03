@@ -96,7 +96,8 @@ public class AgilityOverlay implements PaintListener {
 					case 10586:
 						// Falador course;
 					case 10833:
-						if (d.getPlane() != Hooks.client.getPlane()&&Game.debug) {
+						if (d.getPlane() != Hooks.client.getPlane()) {
+							if (Game.debug)
 							System.out.println("" + d.getPlane() + " " + Hooks.client.getPlane());
 						} else {
 							g.setColor(Color.YELLOW);
@@ -130,7 +131,8 @@ public class AgilityOverlay implements PaintListener {
 						// Falador course
 					case 10834:
 					case 11364:
-						if (go.getPlane() != Hooks.client.getPlane()&&Game.debug) {
+						if (go.getPlane() != Hooks.client.getPlane()) {
+							if (Game.debug)
 							System.out.println("" + go.getPlane() + " " + Hooks.client.getPlane());
 							continue;
 						}
