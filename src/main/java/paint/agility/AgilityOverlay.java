@@ -7,17 +7,18 @@ import java.awt.RenderingHints;
 import java.awt.geom.Area;
 import java.util.Map;
 
-import game.Game;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
 import hooks.accessors.DecorativeObject;
 import hooks.accessors.GameObject;
 import hooks.accessors.GroundObject;
+import hooks.helpers.ObjectManager;
 import paint.listeners.PaintListener;
 
 public class AgilityOverlay implements PaintListener {
 
+	@SuppressWarnings("unused")
 	private Map<RenderingHints.Key, ?> hints;
 
 	public AgilityOverlay(Client game) {
@@ -28,8 +29,8 @@ public class AgilityOverlay implements PaintListener {
 		g.setColor(Color.YELLOW);
 		Color fillColor = new Color(Color.YELLOW.getBlue(), Color.YELLOW.getGreen(), Color.YELLOW.getRed(), 50);
 		if (Settings.SHOW_AGILITY_OVERLAY == true) {
-			if (Game.gameObjects != null)
-				for (GameObject go : Game.gameObjects.values()) {
+			if (ObjectManager.gameObjects != null)
+				for (GameObject go : ObjectManager.gameObjects.values()) {
 					if (go.getPlane() != Hooks.client.getPlane())
 						continue;
 					if (go != null) {
@@ -70,7 +71,7 @@ public class AgilityOverlay implements PaintListener {
 					}
 				}
 
-			for (DecorativeObject d : Game.decorativeObjects.values()) {
+			for (DecorativeObject d : ObjectManager.decorativeObjects.values()) {
 
 				if (d != null) {
 					switch (d.getID()) {
@@ -102,7 +103,7 @@ public class AgilityOverlay implements PaintListener {
 
 			}
 
-			for (GroundObject go : Game.groundObjects.values()) {
+			for (GroundObject go : ObjectManager.groundObjects.values()) {
 				if (go != null) {
 					switch (go.getID()) {
 

@@ -23,7 +23,7 @@ public class LoaderWindow extends JFrame {
 	public LoaderWindow(String[] args) {
 		boolean vanilla = false;
 		for (String s : args) {
-			if (s.compareTo("vanilla")==0) {
+			if (s.compareTo("vanilla") == 0) {
 				vanilla = true;
 			}
 		}

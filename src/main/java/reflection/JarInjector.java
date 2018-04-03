@@ -8,6 +8,7 @@ import java.util.jar.JarOutputStream;
 
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.tree.ClassNode;
+
 import paint.CanvasInjector;
 
 public class JarInjector {

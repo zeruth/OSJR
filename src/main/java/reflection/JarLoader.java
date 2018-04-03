@@ -13,6 +13,7 @@ import java.util.jar.JarFile;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
+
 import game.RSAppletStub;
 import game.Settings;
 
