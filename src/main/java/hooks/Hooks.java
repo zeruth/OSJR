@@ -3,6 +3,7 @@ package hooks;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -216,8 +217,9 @@ public class Hooks {
 
 	public static RSClass[] main() {
 		Gson gson = new GsonBuilder().create();
-		try {
-			RSClass[] c = gson.fromJson(new FileReader(new File("./resources/Hooks.json")), RSClass[].class);
+		try (FileReader fr = new FileReader(new File("./resources/Hooks.json"))){
+			RSClass[] c = gson.fromJson(fr, RSClass[].class);
+			fr.close();
 			return c;
 		} catch (JsonSyntaxException e) {
 			// TODO Auto-generated catch block
@@ -226,6 +228,9 @@ public class Hooks {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

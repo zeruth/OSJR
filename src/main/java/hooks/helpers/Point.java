@@ -65,11 +65,11 @@ public class Point {
 	}
 
 	public int getX() {
-		return x;
+		return this.x;
 	}
 
 	public int getY() {
-		return y;
+		return this.y;
 	}
 
 	@Override
@@ -82,6 +82,6 @@ public class Point {
 
 	@Override
 	public String toString() {
-		return "Point{" + "x=" + x + ", y=" + y + '}';
+		return "Point{" + "x=" + this.x + ", y=" + this.y + '}';
 	}
 }

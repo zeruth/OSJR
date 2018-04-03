@@ -10,7 +10,6 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.awt.image.RasterFormatException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import javax.swing.JFrame;
@@ -18,14 +17,9 @@ import javax.swing.JFrame;
 import discord.DiscordManager;
 import hooks.Hooks;
 import hooks.accessors.Client;
-import hooks.accessors.DecorativeObject;
-import hooks.accessors.GameObject;
-import hooks.accessors.GroundObject;
 import hooks.accessors.Region;
-import hooks.accessors.Tile;
 import hooks.helpers.ObjectManager;
 import paint.Console;
-import paint.agility.AgilityObjects;
 import paint.agility.AgilityOverlay;
 import paint.listeners.ActorNames;
 import paint.listeners.DecorativeObjects;
@@ -45,10 +39,10 @@ public class Game extends Canvas implements Runnable {
 	private static final long serialVersionUID = 1L;
 	public static boolean debug;
 	private BufferedImage gameImage;
-	private InputListeners inputListeners;
+	InputListeners inputListeners;
 	public boolean loading = true;
 	public BufferedImage paintImage;
-	private List<PaintListener> paintListeners;
+	List<PaintListener> paintListeners;
 	private Thread paintThread;
 	private List<TextPaintListener> textPaintListeners;
 	public Region oldRegion = new Region(null);
@@ -86,10 +80,11 @@ public class Game extends Canvas implements Runnable {
 
 		} else {
 			threadGroup = new ThreadGroup("RSGame");
-			gameImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
-			paintImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
+			this.gameImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
+			this.paintImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
 
 			new Thread(new Runnable() {
+				@SuppressWarnings("unused")
 				@Override
 				public void run() {
 					try {
@@ -112,38 +107,38 @@ public class Game extends Canvas implements Runnable {
 
 						DiscordManager.run();
 
-						inputListeners = new InputListeners(true, applet);
+						Game.this.inputListeners = new InputListeners(true, applet);
 						requestFocus();
-						addMouseListener(inputListeners);
-						addMouseMotionListener(inputListeners);
-						addMouseWheelListener(inputListeners);
-						addKeyListener(inputListeners);
-						addFocusListener(inputListeners);
+						addMouseListener(Game.this.inputListeners);
+						addMouseMotionListener(Game.this.inputListeners);
+						addMouseWheelListener(Game.this.inputListeners);
+						addKeyListener(Game.this.inputListeners);
+						addFocusListener(Game.this.inputListeners);
 
-						paintListeners.add(new FpsPaintListener(Hooks.client));
-						paintListeners.add(new ActorNames(Hooks.client));
-						paintListeners.add(new GroundObjects(Hooks.client));
-						paintListeners.add(new GameObjects(Hooks.client));
-						paintListeners.add(new DecorativeObjects(Hooks.client));
-						paintListeners.add(new WallObjects(Hooks.client));
+						Game.this.paintListeners.add(new FpsPaintListener(Hooks.client));
+						Game.this.paintListeners.add(new ActorNames(Hooks.client));
+						Game.this.paintListeners.add(new GroundObjects(Hooks.client));
+						Game.this.paintListeners.add(new GameObjects(Hooks.client));
+						Game.this.paintListeners.add(new DecorativeObjects(Hooks.client));
+						Game.this.paintListeners.add(new WallObjects(Hooks.client));
 
-						paintListeners.add(new AgilityOverlay(Hooks.client));
-						objectManager.t.start();
+						Game.this.paintListeners.add(new AgilityOverlay(Hooks.client));
+						Game.this.objectManager.t.start();
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
 
-					loading = false;
+					Game.this.loading = false;
 					System.out.println("[OSRS] Init Complete.");
 
 				}
 			}).start();
 
-			paintListeners = new ArrayList<PaintListener>();
-			textPaintListeners = new ArrayList<TextPaintListener>();
+			this.paintListeners = new ArrayList<>();
+			this.textPaintListeners = new ArrayList<>();
 
-			paintThread = new Thread(threadGroup, this, "paint");
-			paintThread.start();
+			this.paintThread = new Thread(threadGroup, this, "paint");
+			this.paintThread.start();
 
 			this.setSize(765, 503);
 		}
@@ -155,10 +150,10 @@ public class Game extends Canvas implements Runnable {
 	}
 
 	public Graphics gamePaint() {
-		return gameImage.getGraphics();
+		return this.gameImage.getGraphics();
 	}
 
-	public Applet getApplet() {
+	public static Applet getApplet() {
 		return applet;
 	}
 
@@ -168,11 +163,11 @@ public class Game extends Canvas implements Runnable {
 			if (!this.isVisible())
 				return;
 
-			if (OSRSLauncher.loaderWindow.getHeight() != gameImage.getHeight()
-					|| OSRSLauncher.loaderWindow.getWidth() != gameImage.getWidth()) {
-				gameImage = new BufferedImage(OSRSLauncher.loaderWindow.getWidth(),
+			if (OSRSLauncher.loaderWindow.getHeight() != this.gameImage.getHeight()
+					|| OSRSLauncher.loaderWindow.getWidth() != this.gameImage.getWidth()) {
+				this.gameImage = new BufferedImage(OSRSLauncher.loaderWindow.getWidth(),
 						OSRSLauncher.loaderWindow.getHeight(), BufferedImage.TYPE_INT_RGB);
-				paintImage = new BufferedImage(OSRSLauncher.loaderWindow.getWidth(),
+				this.paintImage = new BufferedImage(OSRSLauncher.loaderWindow.getWidth(),
 						OSRSLauncher.loaderWindow.getHeight(), BufferedImage.TYPE_INT_RGB);
 				if (applet != null)
 					applet.setSize(OSRSLauncher.loaderWindow.getContentPane().getSize());
@@ -183,24 +178,24 @@ public class Game extends Canvas implements Runnable {
 			g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
 			Rectangle r = g2d.getClipBounds();
-			if (loading) {
-				g2d.drawImage(gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
+			if (this.loading) {
+				g2d.drawImage(this.gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
 						r.y + r.height, null);
 				return;
 			}
 
-			if (gameImage != null) {
-				paintImage.flush();
+			if (this.gameImage != null) {
+				this.paintImage.flush();
 
-				Graphics paintGraphics = paintImage.getGraphics();
-				paintGraphics.drawImage(gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
+				Graphics paintGraphics = this.paintImage.getGraphics();
+				paintGraphics.drawImage(this.gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
 						r.y + r.height, null);
 
-				for (PaintListener pl : paintListeners) {
+				for (PaintListener pl : this.paintListeners) {
 					pl.onRepaint(paintGraphics);
 				}
 
-				for (TextPaintListener tpl : textPaintListeners) {
+				for (TextPaintListener tpl : this.textPaintListeners) {
 					int y = 40;
 					paintGraphics.setColor(Color.cyan);
 					String[] lines = tpl.onTextRepaint();
@@ -214,7 +209,7 @@ public class Game extends Canvas implements Runnable {
 					}
 				}
 
-				g2d.drawImage(paintImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
+				g2d.drawImage(this.paintImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
 						r.y + r.height, null);
 				paintGraphics.dispose();
 			}

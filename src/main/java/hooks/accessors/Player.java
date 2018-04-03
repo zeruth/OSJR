@@ -15,7 +15,7 @@ public class Player extends RSClass {
 	}
 
 	public Actor asActor() {
-		return new Actor(reference);
+		return new Actor(this.reference);
 	}
 
 	public int getCombatLevel() {

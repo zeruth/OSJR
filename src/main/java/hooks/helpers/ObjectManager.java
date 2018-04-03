@@ -16,9 +16,9 @@ public class ObjectManager {
 	public int basex = 0, basey = 0;
 	static int[] i = new int[30000];
 	
-	public static HashMap<Integer, GameObject> gameObjects = new HashMap<Integer, GameObject>();
-	public static HashMap<Integer, DecorativeObject> decorativeObjects = new HashMap<Integer, DecorativeObject>();
-	public static HashMap<Integer, GroundObject> groundObjects = new HashMap<Integer, GroundObject>();
+	public static HashMap<Integer, GameObject> gameObjects = new HashMap<>();
+	public static HashMap<Integer, DecorativeObject> decorativeObjects = new HashMap<>();
+	public static HashMap<Integer, GroundObject> groundObjects = new HashMap<>();
 	
 	public AgilityObjects agilityObjects = new AgilityObjects();
 	
@@ -32,14 +32,14 @@ public class ObjectManager {
 				if (Hooks.client != null) {
 					if (Client.isLoaded())
 						if (Hooks.client.isLoggedIn()) {
-							if (basex != Hooks.client.getBaseX() || basey != Hooks.client.getBaseY()) {
+							if (ObjectManager.this.basex != Client.getBaseX() || ObjectManager.this.basey != Client.getBaseY()) {
 								resetObjects();
-								basex = Hooks.client.getBaseX();
-								basey = Hooks.client.getBaseY();
+								ObjectManager.this.basex = Client.getBaseX();
+								ObjectManager.this.basey = Client.getBaseY();
 							}
-							if (Hooks.client.getRegion() != null) {
-								if (Hooks.client.getRegion().getTiles() != null) {
-									for (Tile t : Hooks.client.getRegion().getTiles()) {
+							if (Client.getRegion() != null) {
+								if (Client.getRegion().getTiles() != null) {
+									for (Tile t : Client.getRegion().getTiles()) {
 										AgilityObjects.checkAgilityObjects(t);
 									}
 								}
@@ -81,10 +81,11 @@ public class ObjectManager {
 		}
 	}
 	
-	public void resetObjects() {
+	public static void resetObjects() {
 		i = new int[30000];
-		gameObjects = new HashMap<Integer, GameObject>();
-		decorativeObjects = new HashMap<Integer, DecorativeObject>();
+		gameObjects = new HashMap<>();
+		decorativeObjects = new HashMap<>();
+		groundObjects = new HashMap<>();
 	}
 
 }

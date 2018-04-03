@@ -35,27 +35,27 @@ public class WorldPoint {
 	 * Returns a WorldPoint containing the passed local coordinates
 	 */
 	public static WorldPoint fromLocal(Client client, int x, int y, int plane) {
-		return new WorldPoint((x >>> Perspective.LOCAL_COORD_BITS) + client.getBaseX(),
-				(y >>> Perspective.LOCAL_COORD_BITS) + client.getBaseY(), plane);
+		return new WorldPoint((x >>> Perspective.LOCAL_COORD_BITS) + Client.getBaseX(),
+				(y >>> Perspective.LOCAL_COORD_BITS) + Client.getBaseY(), plane);
 	}
 
 	/**
 	 * Returns a WorldPoint containing the passed LocalPoint
 	 */
 	public static WorldPoint fromLocal(Client client, LocalPoint local) {
-		return fromLocal(client, local.getX(), local.getY(), client.getPlane());
+		return fromLocal(client, local.getX(), local.getY(), Client.getPlane());
 	}
 
 	/**
 	 * Returns a WorldPoint from the passed region coords
 	 */
 	public static WorldPoint fromRegion(Client client, int x, int y, int plane) {
-		return new WorldPoint(x + client.getBaseX(), y + client.getBaseY(), plane);
+		return new WorldPoint(x + Client.getBaseX(), y + Client.getBaseY(), plane);
 	}
 
 	public static boolean isInScene(Client client, int x, int y) {
-		int baseX = client.getBaseX();
-		int baseY = client.getBaseY();
+		int baseX = Client.getBaseX();
+		int baseY = Client.getBaseY();
 
 		int maxX = baseX + Perspective.SCENE_SIZE;
 		int maxY = baseY + Perspective.SCENE_SIZE;
@@ -92,7 +92,7 @@ public class WorldPoint {
 	 * @return
 	 */
 	public int distanceTo(WorldPoint other) {
-		if (other.plane != plane) {
+		if (other.plane != this.plane) {
 			return Integer.MAX_VALUE;
 		}
 
@@ -111,25 +111,25 @@ public class WorldPoint {
 
 	public int getPlane() {
 		// TODO Auto-generated method stub
-		return plane;
+		return this.plane;
 	}
 
 	int getX() {
 		// TODO Auto-generated method stub
-		return x;
+		return this.x;
 	}
 
 	int getY() {
 		// TODO Auto-generated method stub
-		return y;
+		return this.y;
 	}
 
 	public boolean isInScene(Client client) {
-		return client.getPlane() == plane && isInScene(client, x, y);
+		return Client.getPlane() == this.plane && isInScene(client, this.x, this.y);
 	}
 
 	@Deprecated
 	public Point toPoint() {
-		return new Point(x, y);
+		return new Point(this.x, this.y);
 	}
 }

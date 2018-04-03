@@ -3,7 +3,6 @@ package hooks.model;
 import java.lang.reflect.Field;
 
 import game.Game;
-import game.LoaderWindow;
 
 public class RSClass {
 
@@ -17,7 +16,7 @@ public class RSClass {
 	}
 
 	public RSField getField(String fieldName) {
-		for (RSField f : fields) {
+		for (RSField f : this.fields) {
 			if (f != null)
 				if (f.name.compareTo(fieldName) == 0) {
 					return f;
@@ -28,20 +27,20 @@ public class RSClass {
 
 	public Object getValue(RSField f) {
 		try {
-			if (reference == null)
-				reference = Game.applet;
+			if (this.reference == null)
+				this.reference = Game.applet;
 			if (f.multiplier != null) {
-				Field ff = Game.jarLoader.loadClass(obfuscatedName).getDeclaredField(f.obfuscatedName);
+				Field ff = Game.jarLoader.loadClass(this.obfuscatedName).getDeclaredField(f.obfuscatedName);
 				ff.setAccessible(true);
-				return (int) (ff.get(reference)) * f.multiplier.intValue();
+				return (int) (ff.get(this.reference)) * f.multiplier.intValue();
 			}
 
-			Field ff = Game.jarLoader.loadClass(obfuscatedName).getDeclaredField(f.obfuscatedName);
+			Field ff = Game.jarLoader.loadClass(this.obfuscatedName).getDeclaredField(f.obfuscatedName);
 			ff.setAccessible(true);
-			return ff.get(reference);
+			return ff.get(this.reference);
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException
 				| ClassNotFoundException e) {
-			if (LoaderWindow.game.debug)
+			if (Game.debug)
 				e.printStackTrace();
 		}
 		return null;

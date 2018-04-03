@@ -39,16 +39,16 @@ public class CanvasInjector {
 	}
 
 	public Hashtable<String, ClassNode> getClassnodes() {
-		return classnodes;
+		return this.classnodes;
 	}
 
 	public Hashtable<String, ClassNode> run() {
-		for (ClassNode cn : classnodes.values()) {
+		for (ClassNode cn : this.classnodes.values()) {
 			if (cn.superName.toLowerCase().contains("canvas")) {
 				setSuper(cn, "paint/GameCanvas");
 			}
 		}
-		return classnodes;
+		return this.classnodes;
 	}
 
 }

@@ -50,106 +50,105 @@ public class MenuHandler implements ActionListener {
 		this.frame = frame;
 		this.console = console;
 
-		menuBar = new JMenuBar();
+		this.menuBar = new JMenuBar();
 
 		// Settings
-		settingsMenu = new JMenu("Settings");
-		discordMenu = new JMenu("Discord");
-		skillOverlays = new JMenu("Skill Overlays");
+		this.settingsMenu = new JMenu("Settings");
+		this.discordMenu = new JMenu("Discord");
+		this.skillOverlays = new JMenu("Skill Overlays");
 
-		fps = new JMenuItem("Draw Fps");
-		actorNames = new JMenuItem("Draw Actor Names");
-		groundObjects = new JMenuItem("Draw GroundObject ID's (Laggy)");
-		gameObjects = new JMenuItem("Draw GameObject ID's (Laggy)");
-		decorativeObjects = new JMenuItem("Draw DecorativeObject ID's (Laggy)");
-		wallObjects = new JMenuItem("Draw WallObject ID's (Laggy)");
-		consoleItem = new JMenuItem("Console");
+		this.fps = new JMenuItem("Draw Fps");
+		this.actorNames = new JMenuItem("Draw Actor Names");
+		this.groundObjects = new JMenuItem("Draw GroundObject ID's (Laggy)");
+		this.gameObjects = new JMenuItem("Draw GameObject ID's (Laggy)");
+		this.decorativeObjects = new JMenuItem("Draw DecorativeObject ID's (Laggy)");
+		this.wallObjects = new JMenuItem("Draw WallObject ID's (Laggy)");
+		this.consoleItem = new JMenuItem("Console");
 
-		updateStatus = new JMenuItem("Update Status");
+		this.updateStatus = new JMenuItem("Update Status");
 
-		agilityOverlay = new JMenuItem("Agility");
+		this.agilityOverlay = new JMenuItem("Agility");
 
-		fps.addActionListener(this);
-		actorNames.addActionListener(this);
-		groundObjects.addActionListener(this);
-		gameObjects.addActionListener(this);
-		decorativeObjects.addActionListener(this);
-		consoleItem.addActionListener(this);
-		wallObjects.addActionListener(this);
+		this.fps.addActionListener(this);
+		this.actorNames.addActionListener(this);
+		this.groundObjects.addActionListener(this);
+		this.gameObjects.addActionListener(this);
+		this.decorativeObjects.addActionListener(this);
+		this.consoleItem.addActionListener(this);
+		this.wallObjects.addActionListener(this);
 
-		updateStatus.addActionListener(this);
+		this.updateStatus.addActionListener(this);
 
-		agilityOverlay.addActionListener(this);
+		this.agilityOverlay.addActionListener(this);
 
-		settingsMenu.add(fps);
-		settingsMenu.add(consoleItem);
-		settingsMenu.add(actorNames);
-		settingsMenu.add(groundObjects);
-		settingsMenu.add(gameObjects);
-		settingsMenu.add(decorativeObjects);
-		settingsMenu.add(wallObjects);
+		this.settingsMenu.add(this.fps);
+		this.settingsMenu.add(this.consoleItem);
+		this.settingsMenu.add(this.actorNames);
+		this.settingsMenu.add(this.groundObjects);
+		this.settingsMenu.add(this.gameObjects);
+		this.settingsMenu.add(this.decorativeObjects);
+		this.settingsMenu.add(this.wallObjects);
 
-		discordMenu.add(updateStatus);
+		this.discordMenu.add(this.updateStatus);
 
-		skillOverlays.add(agilityOverlay);
+		this.skillOverlays.add(this.agilityOverlay);
 
-		menuBar.add(settingsMenu);
-		menuBar.add(discordMenu);
-		menuBar.add(skillOverlays);
+		this.menuBar.add(this.settingsMenu);
+		this.menuBar.add(this.discordMenu);
+		this.menuBar.add(this.skillOverlays);
 
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource().equals(debug)) {
+		if (e.getSource().equals(this.debug)) {
 			Settings.SHOW_DEBUG = !Settings.SHOW_DEBUG;
 		}
-		if (e.getSource().equals(fps)) {
+		if (e.getSource().equals(this.fps)) {
 			Settings.SHOW_FPS = !Settings.SHOW_FPS;
 		}
-		if (e.getSource().equals(actorNames)) {
+		if (e.getSource().equals(this.actorNames)) {
 			Settings.SHOW_PLAYER_NAMES = !Settings.SHOW_PLAYER_NAMES;
 		}
-		if (e.getSource().equals(groundObjects)) {
+		if (e.getSource().equals(this.groundObjects)) {
 			Settings.SHOW_GROUNDOBJECT_IDS = !Settings.SHOW_GROUNDOBJECT_IDS;
 		}
-		if (e.getSource().equals(gameObjects)) {
+		if (e.getSource().equals(this.gameObjects)) {
 			Settings.SHOW_GAMEOBJECT_IDS = !Settings.SHOW_GAMEOBJECT_IDS;
 		}
-		if (e.getSource().equals(decorativeObjects)) {
+		if (e.getSource().equals(this.decorativeObjects)) {
 			Settings.SHOW_DECORATIVEOBJECT_IDS = !Settings.SHOW_DECORATIVEOBJECT_IDS;
 		}
-		if (e.getSource().equals(wallObjects)) {
+		if (e.getSource().equals(this.wallObjects)) {
 			Settings.SHOW_WALLOBJECT_IDS = !Settings.SHOW_WALLOBJECT_IDS;
 		}
-		if (e.getSource().equals(agilityOverlay)) {
+		if (e.getSource().equals(this.agilityOverlay)) {
 			Settings.SHOW_AGILITY_OVERLAY = !Settings.SHOW_AGILITY_OVERLAY;
 		}
-		if (e.getSource().equals(updateStatus)) {
-			if (updateStatusWindow == null)
-				updateStatusWindow = new UpdateStatus();
-			if (!updateStatusWindow.isVisible())
-				updateStatusWindow.setVisible(true);
+		if (e.getSource().equals(this.updateStatus)) {
+			if (this.updateStatusWindow == null)
+				this.updateStatusWindow = new UpdateStatus();
+			if (!this.updateStatusWindow.isVisible())
+				this.updateStatusWindow.setVisible(true);
 		}
-		if (e.getSource().equals(pack)) {
-			frame.pack();
+		if (e.getSource().equals(this.pack)) {
+			this.frame.pack();
 		}
-		if (e.getSource().equals(consoleItem)) {
-			for (Component c : frame.getContentPane().getComponents()) {
-				if (c.equals(console)) {
-					frame.getContentPane().remove(console);
+		if (e.getSource().equals(this.consoleItem)) {
+			for (Component c : this.frame.getContentPane().getComponents()) {
+				if (c.equals(this.console)) {
+					this.frame.getContentPane().remove(this.console);
 					Console.isOpen = false;
-					frame.pack();
+					this.frame.pack();
 					return;
 				}
 			}
-			frame.getContentPane().add(console, BorderLayout.EAST);
-			frame.pack();
+			this.frame.getContentPane().add(this.console, BorderLayout.EAST);
+			this.frame.pack();
 		}
 	}
 
-	@SuppressWarnings("unused")
-	private BufferedImage getScaledImage(BufferedImage src, int h) {
+	private static BufferedImage getScaledImage(BufferedImage src, int h) {
 		int finalh = h;
 		double factor = 1.0d;
 
@@ -165,7 +164,7 @@ public class MenuHandler implements ActionListener {
 	}
 
 	public JMenuBar makeJMenuBar() {
-		return menuBar;
+		return this.menuBar;
 	}
 
 }

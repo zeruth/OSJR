@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class RSAppletStub implements AppletStub {
 
 	private String link = "http://oldschool9.runescape.com/";
-	private HashMap<String, String> parameters = new HashMap<String, String>();
+	private HashMap<String, String> parameters = new HashMap<>();
 
 	public RSAppletStub() {
 		parse();
@@ -32,7 +32,7 @@ public class RSAppletStub implements AppletStub {
 	@Override
 	public URL getCodeBase() {
 		try {
-			return new URL(link);
+			return new URL(this.link);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
@@ -45,12 +45,12 @@ public class RSAppletStub implements AppletStub {
 	}
 
 	public String getLink() {
-		return link;
+		return this.link;
 	}
 
 	@Override
 	public String getParameter(String name) {
-		return parameters.get(name);
+		return this.parameters.get(name);
 	}
 
 	@Override
@@ -60,7 +60,7 @@ public class RSAppletStub implements AppletStub {
 
 	private void parse() {
 		try {
-			final URLConnection urlConnection = new URL(link + "l=0/jav_config.ws").openConnection();
+			final URLConnection urlConnection = new URL(this.link + "l=0/jav_config.ws").openConnection();
 			urlConnection.addRequestProperty("User-Agent",
 					"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36");
 			final BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
@@ -71,13 +71,13 @@ public class RSAppletStub implements AppletStub {
 						.replaceAll("value", "");
 				final String[] splitted = line.split("=");
 				if (splitted.length == 1) {
-					parameters.put(splitted[0], "");
+					this.parameters.put(splitted[0], "");
 				} else if (splitted.length == 2) {
-					parameters.put(splitted[0], splitted[1]);
+					this.parameters.put(splitted[0], splitted[1]);
 				} else if (splitted.length == 3) {
-					parameters.put(splitted[0], splitted[1] + "=" + splitted[2]);
+					this.parameters.put(splitted[0], splitted[1] + "=" + splitted[2]);
 				} else if (splitted.length == 4) {
-					parameters.put(splitted[0], splitted[1] + "=" + splitted[2] + "=" + splitted[3]);
+					this.parameters.put(splitted[0], splitted[1] + "=" + splitted[2] + "=" + splitted[3]);
 				}
 			}
 		} catch (IOException e) {

@@ -41,8 +41,8 @@ public class LoaderWindow extends JFrame {
 
 			Container contentPanel = getContentPane();
 			contentPanel.setLayout(new BorderLayout());
-			gamePanel = new JPanel();
-			contentPanel.add(gamePanel);
+			this.gamePanel = new JPanel();
+			contentPanel.add(this.gamePanel);
 
 			try {
 				contentPanel.repaint();
@@ -57,10 +57,10 @@ public class LoaderWindow extends JFrame {
 			} catch (Exception e) {
 			}
 
-			console = new Console(game);
+			this.console = new Console(game);
 
-			menuHandler = new MenuHandler(this, game, console);
-			this.setJMenuBar(menuHandler.makeJMenuBar());
+			this.menuHandler = new MenuHandler(this, game, this.console);
+			this.setJMenuBar(this.menuHandler.makeJMenuBar());
 
 		}
 

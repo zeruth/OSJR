@@ -24,7 +24,7 @@ public class GroundObjects implements PaintListener {
 		if (Settings.SHOW_GROUNDOBJECT_IDS)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
-					for (Tile t : Hooks.client.getRegion().getTiles()) {
+					for (Tile t : Client.getRegion().getTiles()) {
 						GroundObject go = t.getGroundObject();
 						if (go != null) {
 							String name = "" + go.getID() + "p: " + go.getPlane() + " x:" + go.getX() + " y:"

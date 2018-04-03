@@ -24,7 +24,7 @@ public class WallObjects implements PaintListener {
 		if (Settings.SHOW_WALLOBJECT_IDS)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
-					for (Tile t : Hooks.client.getRegion().getTiles()) {
+					for (Tile t : Client.getRegion().getTiles()) {
 						WallObject wo = t.getWallObject();
 						if (wo != null) {
 							String name = "" + wo.getID() + "p: " + 0 + " x:" + wo.getX() + " y:" + wo.getY();

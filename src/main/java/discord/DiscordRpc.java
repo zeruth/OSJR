@@ -106,7 +106,7 @@ public class DiscordRpc {
 		}
 	}
 
-	private long getProcessId() {
+	private static long getProcessId() {
 		String jvmName = ManagementFactory.getRuntimeMXBean().getName();
 		int index = jvmName.indexOf('@');
 
@@ -150,7 +150,7 @@ public class DiscordRpc {
 		if (this.rpcConnection != null)
 			return;
 
-		this.pid = this.getProcessId();
+		this.pid = DiscordRpc.getProcessId();
 		this.handler = handler;
 
 		this.rpcConnection = RpcConnection.create(applicationId);

@@ -35,7 +35,7 @@ class BaseConnectionUnix extends BaseConnection {
 		return true;
 	}
 
-	private String getTempPath() {
+	private static String getTempPath() {
 		String temp = System.getenv("XDG_RUNTIME_DIR");
 		temp = temp != null ? temp : System.getenv("TMPDIR");
 		temp = temp != null ? temp : System.getenv("TMP");
@@ -49,7 +49,7 @@ class BaseConnectionUnix extends BaseConnection {
 		return this.opened;
 	}
 
-	boolean mkdir(String path) {
+	static boolean mkdir(String path) {
 		File file = new File(path);
 
 		return file.exists() && file.isDirectory() || file.mkdir();
@@ -57,7 +57,7 @@ class BaseConnectionUnix extends BaseConnection {
 
 	@Override
 	boolean open() {
-		String pipeName = this.getTempPath() + "/discord-ipc-";
+		String pipeName = BaseConnectionUnix.getTempPath() + "/discord-ipc-";
 
 		if (this.isOpen())
 			throw new IllegalStateException("Connection is already opened");
@@ -132,17 +132,17 @@ class BaseConnectionUnix extends BaseConnection {
 		String desktopFileName = "/discord-" + applicationId + ".desktop";
 		String desktopFilePath = home + "/.local";
 
-		if (this.mkdir(desktopFilePath))
+		if (BaseConnectionUnix.mkdir(desktopFilePath))
 			throw new RuntimeException("Failed to create directory '" + desktopFilePath + "'");
 
 		desktopFilePath += "/share";
 
-		if (this.mkdir(desktopFilePath))
+		if (BaseConnectionUnix.mkdir(desktopFilePath))
 			throw new RuntimeException("Failed to create directory '" + desktopFilePath + "'");
 
 		desktopFilePath += "/applications";
 
-		if (this.mkdir(desktopFilePath))
+		if (BaseConnectionUnix.mkdir(desktopFilePath))
 			throw new RuntimeException("Failed to create directory '" + desktopFilePath + "'");
 
 		desktopFilePath += desktopFileName;

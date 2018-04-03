@@ -37,21 +37,21 @@ public class Triangle {
 
 	public Vertex getA() {
 		// TODO Auto-generated method stub
-		return a;
+		return this.a;
 	}
 
 	public Vertex getB() {
 		// TODO Auto-generated method stub
-		return b;
+		return this.b;
 	}
 
 	public Vertex getC() {
 		// TODO Auto-generated method stub
-		return c;
+		return this.c;
 	}
 
 	public Triangle rotate(int orientation) {
-		return new Triangle(a.rotate(orientation), b.rotate(orientation), c.rotate(orientation));
+		return new Triangle(this.a.rotate(orientation), this.b.rotate(orientation), this.c.rotate(orientation));
 	}
 
 }

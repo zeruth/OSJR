@@ -26,17 +26,17 @@ public class JarLoader extends ClassLoader {
 	private String gamepackUrl;
 
 	public JarLoader() {
-		appleStub = new RSAppletStub();
-		classnodes = new Hashtable<String, ClassNode>();
-		gamepackUrl = appleStub.getLink() + appleStub.getParameter("initial_jar");
+		this.appleStub = new RSAppletStub();
+		this.classnodes = new Hashtable<>();
+		this.gamepackUrl = this.appleStub.getLink() + this.appleStub.getParameter("initial_jar");
 		loadJar();
 
-		JarInjector injector = new JarInjector(classnodes);
+		JarInjector injector = new JarInjector(this.classnodes);
 		injector.run();
-		classnodes = injector.getClassnodes();
+		this.classnodes = injector.getClassnodes();
 
 		try {
-			classLoader = URLClassLoader.newInstance(new URL[] { injector.getInjectedJar().toURI().toURL() });
+			this.classLoader = URLClassLoader.newInstance(new URL[] { injector.getInjectedJar().toURI().toURL() });
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -44,23 +44,23 @@ public class JarLoader extends ClassLoader {
 	}
 
 	public RSAppletStub getAppletStub() {
-		return appleStub;
+		return this.appleStub;
 	}
 
 	public Hashtable<String, ClassNode> getClassnodes() {
-		return classnodes;
+		return this.classnodes;
 	}
 
 	@Override
 	public Class<?> loadClass(String name) throws ClassNotFoundException {
-		return classLoader.loadClass(name);
+		return this.classLoader.loadClass(name);
 	}
 
 	private void loadJar() {
 		try {
 			if (Settings.DOWNLOAD_GAMEPACK) {
 				long start = System.currentTimeMillis();
-				ReadableByteChannel rbc = Channels.newChannel(new URL(gamepackUrl).openStream());
+				ReadableByteChannel rbc = Channels.newChannel(new URL(this.gamepackUrl).openStream());
 				FileOutputStream fos = new FileOutputStream("gamepack.jar");
 				fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 
@@ -68,19 +68,20 @@ public class JarLoader extends ClassLoader {
 
 			} else {
 			}
-
-			JarFile jar = new JarFile(new File("./resources/gamepack.jar"));
-			Enumeration<JarEntry> en = jar.entries();
-			while (en.hasMoreElements()) {
-				JarEntry entry = en.nextElement();
-				if (entry.getName().endsWith(".class")) {
-					ClassReader cr = new ClassReader(jar.getInputStream(entry));
-					ClassNode cn = new ClassNode();
-					cr.accept(cn, ClassReader.SKIP_DEBUG | ClassReader.SKIP_FRAMES);
-					classnodes.put(cn.name, cn);
+			try (JarFile jar = new JarFile(new File("./resources/gamepack.jar"))) {
+				Enumeration<JarEntry> en = jar.entries();
+				while (en.hasMoreElements()) {
+					JarEntry entry = en.nextElement();
+					if (entry.getName().endsWith(".class")) {
+						ClassReader cr = new ClassReader(jar.getInputStream(entry));
+						ClassNode cn = new ClassNode();
+						cr.accept(cn, ClassReader.SKIP_DEBUG | ClassReader.SKIP_FRAMES);
+						this.classnodes.put(cn.name, cn);
+					}
 				}
+				jar.close();
 			}
-			jar.close();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

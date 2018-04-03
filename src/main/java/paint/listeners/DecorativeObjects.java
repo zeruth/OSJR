@@ -24,7 +24,7 @@ public class DecorativeObjects implements PaintListener {
 		if (Settings.SHOW_DECORATIVEOBJECT_IDS)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
-					for (Tile t : Hooks.client.getRegion().getTiles()) {
+					for (Tile t : Client.getRegion().getTiles()) {
 						if (t.getDecorativeObject() != null) {
 							DecorativeObject o = t.getDecorativeObject();
 							String name = "" + t.getDecorativeObject().getID() + "p: " + 0 + " x:" + o.getX() + " y:"

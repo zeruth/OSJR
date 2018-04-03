@@ -45,7 +45,7 @@ public class ActorNames implements PaintListener {
 							if (pl != null) {
 								String name = pl.getNpcComposition().getName();
 								if (name != null) {
-									if (name.contains("Fishing")) {
+									if (name.contains("Fishing")) { //$NON-NLS-1$
 										String[] actions = pl.getNpcComposition().getActions();
 										int i = 50;
 										for (String s : actions) {
@@ -53,7 +53,7 @@ public class ActorNames implements PaintListener {
 												Point p1 = Perspective.getCanvasTextLocation(Hooks.client,
 														(Graphics2D) g,
 														new LocalPoint(pl.asActor().getX(), pl.asActor().getY()), s, i);
-												if (p1 != null && name != null && name.compareTo("null") != 0)
+												if (p1 != null && name != null && name.compareTo("null") != 0) //$NON-NLS-1$
 													g.drawString(s, p1.getX(), p1.getY());
 												i -= 50;
 											}
@@ -61,7 +61,7 @@ public class ActorNames implements PaintListener {
 									} else {
 										Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
 												new LocalPoint(pl.asActor().getX(), pl.asActor().getY()), name, 190);
-										if (p != null && name != null && name.compareTo("null") != 0)
+										if (p != null && name != null && name.compareTo("null") != 0) //$NON-NLS-1$
 											g.drawString(name, p.getX(), p.getY());
 									}
 								}

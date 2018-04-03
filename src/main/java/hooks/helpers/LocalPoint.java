@@ -51,8 +51,8 @@ public class LocalPoint {
 			return null;
 		}
 
-		int baseX = client.getBaseX();
-		int baseY = client.getBaseY();
+		int baseX = Client.getBaseX();
+		int baseY = Client.getBaseY();
 
 		return fromRegion(x - baseX, y - baseY);
 	}
@@ -64,7 +64,7 @@ public class LocalPoint {
 	 */
 
 	public static LocalPoint fromWorld(Client client, WorldPoint world) {
-		if (client.getPlane() != world.getPlane()) {
+		if (Client.getPlane() != world.getPlane()) {
 			return null;
 		}
 		return fromWorld(client, world.getX(), world.getY());
@@ -73,8 +73,8 @@ public class LocalPoint {
 	private final int x, y;
 
 	public LocalPoint(int i, int j) {
-		x = i;
-		y = j;
+		this.x = i;
+		this.y = j;
 	}
 
 	/**
@@ -91,21 +91,21 @@ public class LocalPoint {
 	 * Returns the X coordinate in Region space (tiles)
 	 */
 	public int getRegionX() {
-		return x >>> Perspective.LOCAL_COORD_BITS;
+		return this.x >>> Perspective.LOCAL_COORD_BITS;
 	}
 
 	/**
 	 * Returns the Y coordinate in Region space (tiles)
 	 */
 	public int getRegionY() {
-		return y >>> Perspective.LOCAL_COORD_BITS;
+		return this.y >>> Perspective.LOCAL_COORD_BITS;
 	}
 
 	public int getX() {
-		return x;
+		return this.x;
 	}
 
 	public int getY() {
-		return y;
+		return this.y;
 	}
 }

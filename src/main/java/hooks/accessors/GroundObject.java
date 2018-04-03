@@ -48,7 +48,7 @@ public class GroundObject extends RSClass {
 	}
 
 	public int getPlane() {
-		return plane;
+		return this.plane;
 	}
 
 	public Renderable getRenderable1() {

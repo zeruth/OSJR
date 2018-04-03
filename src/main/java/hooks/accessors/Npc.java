@@ -15,7 +15,7 @@ public class Npc extends RSClass {
 	}
 
 	public Actor asActor() {
-		return new Actor(reference);
+		return new Actor(this.reference);
 	}
 
 	public int getCombatLevel() {

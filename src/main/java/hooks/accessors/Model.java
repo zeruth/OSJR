@@ -26,7 +26,7 @@ public class Model extends RSClass {
 			int[] trianglesZ = getTrianglesZ();
 
 			List<Vertex> vertices = getVertices();
-			List<Triangle> triangles = new ArrayList<Triangle>(getTrianglesCount());
+			List<Triangle> triangles = new ArrayList<>(getTrianglesCount());
 
 			for (int i = 0; i < getTrianglesCount(); ++i) {
 				int triangleX = trianglesX[i];
@@ -69,7 +69,7 @@ public class Model extends RSClass {
 			int[] verticesY = getVerticesY();
 			int[] verticesZ = getVerticesZ();
 
-			List<Vertex> vertices = new ArrayList<Vertex>();
+			List<Vertex> vertices = new ArrayList<>();
 
 			for (int i = 0; i < getVerticesCount(); ++i) {
 				Vertex v = new Vertex(verticesX[i], verticesY[i], verticesZ[i]);

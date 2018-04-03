@@ -251,7 +251,7 @@ public class DiscordRichPresence {
 	public DiscordRichPresence() {
 	}
 
-	private DiscordRichPresence(String state, String details, long startTimestamp, long endTimestamp,
+	DiscordRichPresence(String state, String details, long startTimestamp, long endTimestamp,
 			String largeImageKey, String largeImageText, String smallImageKey, String smallImageText, String partyId,
 			int partySize, int partyMax, String matchSecret, String joinSecret, String spectateSecret,
 			boolean instance) {

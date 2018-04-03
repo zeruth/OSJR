@@ -220,7 +220,7 @@ public class Perspective {
 	 */
 	public static Point getCanvasImageLocation(Client client, Graphics2D graphics, LocalPoint localLocation,
 			BufferedImage image, int zOffset) {
-		int plane = client.getPlane();
+		int plane = Client.getPlane();
 
 		Point p = Perspective.worldToCanvas(client, localLocation.getX(), localLocation.getY(), plane, zOffset);
 
@@ -249,7 +249,7 @@ public class Perspective {
 	 */
 	public static Point getCanvasSpriteLocation(Client client, Graphics2D graphics, LocalPoint localLocation,
 			SpritePixels sprite, int zOffset) {
-		int plane = client.getPlane();
+		int plane = Client.getPlane();
 
 		Point p = Perspective.worldToCanvas(client, localLocation.getX(), localLocation.getY(), plane, zOffset);
 
@@ -278,7 +278,7 @@ public class Perspective {
 	 */
 	public static Point getCanvasTextLocation(Client client, Graphics2D graphics, LocalPoint localLocation, String text,
 			int zOffset) {
-		int plane = client.getPlane();
+		int plane = Client.getPlane();
 
 		Point p = Perspective.worldToCanvas(client, localLocation.getX(), localLocation.getY(), plane, zOffset);
 
@@ -331,7 +331,7 @@ public class Perspective {
 	 * @return a polygon representing the tiles in the area
 	 */
 	public static Polygon getCanvasTileAreaPoly(Client client, LocalPoint localLocation, int size) {
-		int plane = client.getPlane();
+		int plane = Client.getPlane();
 		int halfTile = LOCAL_TILE_SIZE / 2;
 
 		// If the size is 5, we need to shift it up and left 2 units, then expand by 5
@@ -461,8 +461,8 @@ public class Perspective {
 		int var3 = x >> 7;
 		int var4 = y >> 7;
 		if (var3 >= 0 && var4 >= 0 && var3 <= 103 && var4 <= 103) {
-			byte[][][] tileSettings = client.getTileSettings();
-			int[][][] tileHeights = client.getTileHeights();
+			byte[][][] tileSettings = Client.getTileSettings();
+			int[][][] tileHeights = Client.getTileHeights();
 
 			int var5 = plane;
 			if (plane < 3 && (tileSettings[1][var3][var4] & 2) == 2) {
@@ -568,14 +568,14 @@ public class Perspective {
 	 */
 	public static Point worldToCanvas(Client client, int x, int y, int plane, int tileX, int tileY, int zOffset) {
 		if (x >= 128 && y >= 128 && x <= 13056 && y <= 13056) {
-			int z = getTileHeight(client, tileX, tileY, client.getPlane()) - plane;
-			x -= client.getCameraX();
-			y -= client.getCameraY();
-			z -= client.getCameraZ();
+			int z = getTileHeight(client, tileX, tileY, Client.getPlane()) - plane;
+			x -= Client.getCameraX();
+			y -= Client.getCameraY();
+			z -= Client.getCameraZ();
 			z -= zOffset;
 
-			int cameraPitch = client.getCameraPitch();
-			int cameraYaw = client.getCameraYaw();
+			int cameraPitch = Client.getCameraPitch();
+			int cameraYaw = Client.getCameraYaw();
 
 			int pitchSin = SINE[cameraPitch];
 			int pitchCos = COSINE[cameraPitch];
@@ -630,7 +630,7 @@ public class Perspective {
 	public static Point worldToMiniMap(Client client, int x, int y, int distance) {
 		int angle = client.getMapAngle() & 0x7FF;
 
-		LocalPoint localLocation = client.getLocalPlayer().asActor().getLocalLocation();
+		LocalPoint localLocation = Client.getLocalPlayer().asActor().getLocalLocation();
 		x = x / 32 - localLocation.getX() / 32;
 		y = y / 32 - localLocation.getY() / 32;
 
@@ -642,7 +642,7 @@ public class Perspective {
 			int xx = y * sin + cos * x >> 16;
 			int yy = sin * x - y * cos >> 16;
 
-			int miniMapX = client.isResized() ? client.getCanvas().getWidth() - 167 : Constants.GAME_FIXED_WIDTH - 208;
+			int miniMapX = client.isResized() ? Client.getCanvas().getWidth() - 167 : Constants.GAME_FIXED_WIDTH - 208;
 
 			x = (miniMapX + 167 / 2) + xx;
 			y = (167 / 2 - 1) + yy;

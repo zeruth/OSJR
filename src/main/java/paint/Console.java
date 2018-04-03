@@ -31,21 +31,21 @@ public class Console extends JPanel implements ActionListener {
 		super(new GridBagLayout());
 		isOpen = true;
 
-		textField = new JTextField(20);
-		textField.addActionListener(this);
+		this.textField = new JTextField(20);
+		this.textField.addActionListener(this);
 
-		textArea = new JTextArea(15, 20);
-		textArea.setEditable(false);
-		textArea.setLineWrap(true);
-		textArea.setWrapStyleWord(true);
-		JScrollPane scrollPane = new JScrollPane(textArea);
+		this.textArea = new JTextArea(15, 20);
+		this.textArea.setEditable(false);
+		this.textArea.setLineWrap(true);
+		this.textArea.setWrapStyleWord(true);
+		JScrollPane scrollPane = new JScrollPane(this.textArea);
 
 		// Add Components to this panel.
 		GridBagConstraints c = new GridBagConstraints();
 		c.gridwidth = GridBagConstraints.REMAINDER;
 
 		c.fill = GridBagConstraints.HORIZONTAL;
-		add(textField, c);
+		add(this.textField, c);
 
 		c.fill = GridBagConstraints.BOTH;
 		c.weightx = 1.0;
@@ -55,18 +55,18 @@ public class Console extends JPanel implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent evt) {
-		String text = textField.getText();
+		String text = this.textField.getText();
 
 		// textField.selectAll();
-		textField.setText("");
+		this.textField.setText("");
 
 		// Make sure the new text is visible, even if there
 		// was a selection in the text area.
-		textArea.setCaretPosition(textArea.getDocument().getLength());
+		this.textArea.setCaretPosition(this.textArea.getDocument().getLength());
 
 		// handle text
 		if (text.startsWith("clear")) {
-			textArea.setText("");
+			this.textArea.setText("");
 		}
 
 	}

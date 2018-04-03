@@ -29,8 +29,8 @@ public class Region extends RSClass {
 
 	public Tile getTile(int x, int y) {
 		if (Hooks.client != null) {
-			int bx = Hooks.client.getBaseX();
-			int by = Hooks.client.getBaseY();
+			int bx = Client.getBaseX();
+			int by = Client.getBaseY();
 
 			int ax = x - bx;
 			int ay = y - by;
@@ -38,8 +38,8 @@ public class Region extends RSClass {
 			System.out.println(bx + " " + by);
 			Object[][][] rsTiles = (Object[][][]) getValue(getField("tiles"));
 
-			if (rsTiles[Hooks.client.getPlane()][ax][ay] != null)
-				return new Tile(rsTiles[Hooks.client.getPlane()][ax][ay]);
+			if (rsTiles[Client.getPlane()][ax][ay] != null)
+				return new Tile(rsTiles[Client.getPlane()][ax][ay]);
 		}
 
 		return null;
@@ -49,7 +49,7 @@ public class Region extends RSClass {
 	public Tile[] getTiles() {
 		int REGION_SIZE = 104;
 		Object[][][] rsTiles = (Object[][][]) getValue(getField("tiles"));
-		int z = Hooks.client.getPlane();
+		int z = Client.getPlane();
 		int i = 0;
 		Object[] temp = new Object[20000];
 		for (int x = 0; x < REGION_SIZE; ++x) {

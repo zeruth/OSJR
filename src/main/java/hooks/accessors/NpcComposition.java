@@ -19,7 +19,7 @@ public class NpcComposition extends RSClass {
 	}
 
 	public String getName() {
-		if (reference == null)
+		if (this.reference == null)
 			return "null";
 		return (String) getValue(getField("name"));
 	}

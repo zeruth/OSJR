@@ -24,7 +24,7 @@ public class GameObjects implements PaintListener {
 		if (Settings.SHOW_GAMEOBJECT_IDS)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
-					for (Tile t : Hooks.client.getRegion().getTiles()) {
+					for (Tile t : Client.getRegion().getTiles()) {
 						if (t.getObjects() != null)
 							for (GameObject go : t.getObjects()) {
 								if (go != null) {

@@ -28,10 +28,10 @@ public class InputListeners
 
 	@Override
 	public void focusGained(FocusEvent e) {
-		hasFocus = true;
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		this.hasFocus = true;
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -39,24 +39,24 @@ public class InputListeners
 
 	@Override
 	public void focusLost(FocusEvent e) {
-		hasFocus = false;
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		this.hasFocus = false;
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
 	}
 
 	public boolean isInputEnabled() {
-		return inputEnabled;
+		return this.inputEnabled;
 	}
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -64,9 +64,9 @@ public class InputListeners
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -74,9 +74,9 @@ public class InputListeners
 
 	@Override
 	public void keyTyped(KeyEvent e) {
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -86,9 +86,9 @@ public class InputListeners
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		LoaderWindow.game.focus();
-		if (inputEnabled && client != null) {
-			e.setSource(client);
-			Canvas canvas = (Canvas) client.getComponent(0);
+		if (this.inputEnabled && this.client != null) {
+			e.setSource(this.client);
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -96,9 +96,9 @@ public class InputListeners
 
 	@Override
 	public void mouseDragged(MouseEvent e) {
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -106,9 +106,9 @@ public class InputListeners
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -116,9 +116,9 @@ public class InputListeners
 
 	@Override
 	public void mouseExited(MouseEvent e) {
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -126,9 +126,9 @@ public class InputListeners
 
 	@Override
 	public void mouseMoved(MouseEvent e) {
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -136,11 +136,11 @@ public class InputListeners
 
 	@Override
 	public void mousePressed(MouseEvent e) {
-		if (inputEnabled && client != null) {
-			e.setSource(client);
-			Canvas canvas = (Canvas) client.getComponent(0);
+		if (this.inputEnabled && this.client != null) {
+			e.setSource(this.client);
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null) {
-				if (!hasFocus)
+				if (!this.hasFocus)
 					canvas.requestFocus();
 
 				canvas.dispatchEvent(e);
@@ -150,9 +150,9 @@ public class InputListeners
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		if (inputEnabled && client != null) {
-			e.setSource(client);
-			Canvas canvas = (Canvas) client.getComponent(0);
+		if (this.inputEnabled && this.client != null) {
+			e.setSource(this.client);
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}
@@ -162,9 +162,9 @@ public class InputListeners
 
 	@Override
 	public void mouseWheelMoved(MouseWheelEvent e) {
-		e.setSource(client);
-		if (inputEnabled && client != null) {
-			Canvas canvas = (Canvas) client.getComponent(0);
+		e.setSource(this.client);
+		if (this.inputEnabled && this.client != null) {
+			Canvas canvas = (Canvas) this.client.getComponent(0);
 			if (canvas != null)
 				canvas.dispatchEvent(e);
 		}

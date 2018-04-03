@@ -18,7 +18,7 @@ public abstract class BaseConnection {
 		if (SystemUtils.IS_OS_WINDOWS)
 			return new BaseConnectionWindows();
 
-		throw new IllegalStateException("This OS is not supported");
+		throw new IllegalStateException("This OS is not supported"); //$NON-NLS-1$
 	}
 
 	static void destroy(BaseConnection baseConnection) {

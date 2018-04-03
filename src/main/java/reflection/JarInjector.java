@@ -20,29 +20,29 @@ public class JarInjector {
 	}
 
 	public Hashtable<String, ClassNode> getClassnodes() {
-		return classnodes;
+		return this.classnodes;
 	}
 
 	public File getInjectedJar() {
-		return injectedJar;
+		return this.injectedJar;
 	}
 
 	public void run() {
-		classnodes = new CanvasInjector(classnodes).run();
+		this.classnodes = new CanvasInjector(this.classnodes).run();
 
 		try {
-			injectedJar = new File("./resources/gamepack_injected.jar");
-			JarOutputStream jos = new JarOutputStream(new FileOutputStream(injectedJar));
-
-			for (ClassNode cn : classnodes.values()) {
-				ClassWriter cw = new ClassWriter(1);
-				cn.accept(cw);
-				JarEntry entry = new JarEntry(cn.name + ".class");
-				jos.putNextEntry(entry);
-				jos.write(cw.toByteArray());
-				jos.closeEntry();
+			this.injectedJar = new File("./resources/gamepack_injected.jar");
+			try (JarOutputStream jos = new JarOutputStream(new FileOutputStream(this.injectedJar))){
+				for (ClassNode cn : this.classnodes.values()) {
+					ClassWriter cw = new ClassWriter(1);
+					cn.accept(cw);
+					JarEntry entry = new JarEntry(cn.name + ".class");
+					jos.putNextEntry(entry);
+					jos.write(cw.toByteArray());
+					jos.closeEntry();
+				}
+				jos.close();
 			}
-			jos.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();

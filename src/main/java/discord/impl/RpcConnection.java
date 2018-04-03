@@ -38,18 +38,18 @@ public class RpcConnection {
 	private class MessageFrame // I know this class is quite ugly yeah... will find a better way to handle that
 	{
 		byte[] headerBuffer;
-		private int length;
+		int length;
 
-		private String message;
+		String message;
 		byte[] messageBuffer;
-		private OpCode opCode;
+		OpCode opCode;
 
-		private MessageFrame() {
+		MessageFrame() {
 			this.headerBuffer = new byte[8];
 			this.messageBuffer = new byte[65535 - this.headerBuffer.length];
 		}
 
-		private boolean parseHeader() {
+		boolean parseHeader() {
 			try {
 				ByteArrayInputStream inputStream = new ByteArrayInputStream(this.headerBuffer);
 
@@ -63,7 +63,7 @@ public class RpcConnection {
 			}
 		}
 
-		private boolean parseMessage() {
+		boolean parseMessage() {
 			this.message = new String(Arrays.copyOfRange(this.messageBuffer, 0, this.length));
 
 			return true;
@@ -80,7 +80,7 @@ public class RpcConnection {
 			return ((ch4 << 24) + (ch3 << 16) + (ch2 << 8) + ch1);
 		}
 
-		private boolean write() {
+		boolean write() {
 			try {
 				ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 

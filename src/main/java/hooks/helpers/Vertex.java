@@ -37,17 +37,17 @@ public class Vertex {
 
 	public int getX() {
 		// TODO Auto-generated method stub
-		return x;
+		return this.x;
 	}
 
 	public int getY() {
 		// TODO Auto-generated method stub
-		return y;
+		return this.y;
 	}
 
 	public int getZ() {
 		// TODO Auto-generated method stub
-		return z;
+		return this.z;
 	}
 
 	/**
@@ -67,6 +67,6 @@ public class Vertex {
 		int sin = Perspective.SINE[orientation];
 		int cos = Perspective.COSINE[orientation];
 
-		return new Vertex(x * cos + z * sin >> 16, y, z * cos - x * sin >> 16);
+		return new Vertex(this.x * cos + this.z * sin >> 16, this.y, this.z * cos - this.x * sin >> 16);
 	}
 }

@@ -26,11 +26,11 @@ public class Client extends RSClass {
 		}
 	}
 
-	public int getBaseX() {
+	public static int getBaseX() {
 		return Hooks.packetNode.getBaseX();
 	}
 
-	public int getBaseY() {
+	public static int getBaseY() {
 		return Hooks.baseVarType.getBaseY();
 	}
 
@@ -71,27 +71,27 @@ public class Client extends RSClass {
 		return (int[]) getValue(getField("realSkillLevels"));
 	}
 
-	public int getCameraPitch() {
+	public static int getCameraPitch() {
 		return Hooks.boundingBox3D.getCameraPitch();
 	}
 
-	public int getCameraX() {
+	public static int getCameraX() {
 		return Hooks.sequence.getCameraX();
 	}
 
-	public int getCameraY() {
+	public static int getCameraY() {
 		return Hooks.chatLineBuffer.getCameraY();
 	}
 
-	public int getCameraYaw() {
+	public static int getCameraYaw() {
 		return Hooks.clientPacket.getCameraYaw();
 	}
 
-	public int getCameraZ() {
+	public static int getCameraZ() {
 		return Hooks.area.getCameraZ();
 	}
 
-	public Canvas getCanvas() {
+	public static Canvas getCanvas() {
 		return LoaderWindow.game;
 	}
 
@@ -99,7 +99,7 @@ public class Client extends RSClass {
 		return (int) getValue(getField("gameState"));
 	}
 
-	public Player getLocalPlayer() {
+	public static Player getLocalPlayer() {
 		return Hooks.worldComparator.getLocalPlayer();
 	}
 
@@ -111,11 +111,11 @@ public class Client extends RSClass {
 		return (int) getValue(getField("mapAngle"));
 	}
 
-	public int getPlane() {
+	public static int getPlane() {
 		return Hooks.class237.getPlane();
 	}
 
-	public Region getRegion() {
+	public static Region getRegion() {
 		if (Hooks.class308 == null)
 			return null;
 		return Hooks.class308.getRegion();
@@ -125,19 +125,19 @@ public class Client extends RSClass {
 		return (int) getValue(getField("scale"));
 	}
 
-	public int getSetting(int i) {
+	public static int getSetting(int i) {
 		return 0;
 	}
 
-	public int[] getSettingsArray() {
+	public static int[] getSettingsArray() {
 		return new int[100];
 	}
 
-	public int[][][] getTileHeights() {
+	public static int[][][] getTileHeights() {
 		return Hooks.class62.getTileHeights();
 	}
 
-	public byte[][][] getTileSettings() {
+	public static byte[][][] getTileSettings() {
 		return Hooks.class62.getTileSettings();
 	}
 

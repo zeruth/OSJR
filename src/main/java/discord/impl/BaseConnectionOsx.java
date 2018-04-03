@@ -7,27 +7,27 @@ class BaseConnectionOsx extends BaseConnectionUnix {
 	public void register(String applicationId, String command) {
 		try {
 			if (command != null)
-				this.registerCommand(applicationId, command);
+				BaseConnectionOsx.registerCommand(applicationId, command);
 			else
-				this.registerUrl(applicationId);
+				BaseConnectionOsx.registerUrl(applicationId);
 		} catch (Exception ex) {
 			throw new RuntimeException("Failed to register " + (command == null ? "url" : "command"), ex);
 		}
 	}
 
-	private void registerCommand(String applicationId, String command) {
+	private static void registerCommand(String applicationId, String command) {
 		String home = System.getenv("HOME");
 		if (home == null)
 			throw new RuntimeException("Unable to find user HOME directory");
 
 		String path = home + "/Library/Application Support/discord";
 
-		if (!this.mkdir(path))
+		if (!BaseConnectionUnix.mkdir(path))
 			throw new RuntimeException("Failed to create directory '" + path + "'");
 
 		path += "/games";
 
-		if (!this.mkdir(path))
+		if (!BaseConnectionUnix.mkdir(path))
 			throw new RuntimeException("Failed to create directory '" + path + "'");
 
 		path += "/" + applicationId + ".json";
@@ -44,7 +44,7 @@ class BaseConnectionOsx extends BaseConnectionUnix {
 		this.register(applicationId, "steam://rungameid/" + steamId);
 	}
 
-	private void registerUrl(String applicationId) {
+	private static void registerUrl(String applicationId) {
 		throw new UnsupportedOperationException("OSX URL registration is not handled yet");
 		/*
 		 * TODO char url[256]; snprintf(url, sizeof(url), "discord-%s", applicationId);
