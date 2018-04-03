@@ -43,7 +43,7 @@ public class Game extends Canvas implements Runnable {
 	public static Applet applet;
 	public static JarLoader jarLoader;
 	private static final long serialVersionUID = 1L;
-	public boolean debug;
+	public static boolean debug;
 	private BufferedImage gameImage;
 	private InputListeners inputListeners;
 	public boolean loading = true;
@@ -60,6 +60,8 @@ public class Game extends Canvas implements Runnable {
 		for (String s : args) {
 			if (s.compareTo("vanilla") == 0) {
 				vanilla = true;
+			} else if (s.compareTo("debug")==0) {
+				debug = true;
 			}
 		}
 		if (vanilla) {

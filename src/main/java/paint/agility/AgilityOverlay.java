@@ -7,6 +7,7 @@ import java.awt.RenderingHints;
 import java.awt.geom.Area;
 import java.util.Map;
 
+import game.Game;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
@@ -58,6 +59,18 @@ public class AgilityOverlay implements PaintListener {
 						case 10828:
 						case 10831:
 						case 10832:
+							// Falador
+						case 10836:
+						case 11161:
+						case 11360:
+						case 11361:
+						case 11365:
+						case 11366:
+						case 11367:
+						case 11369:
+						case 11370:
+						case 11371:
+
 							g.setColor(Color.YELLOW);
 							;
 							Graphics2D g2 = (Graphics2D) g;
@@ -81,21 +94,22 @@ public class AgilityOverlay implements PaintListener {
 					case 10094:
 						// Varrock course
 					case 10586:
-						if (d.getPlane() != Hooks.client.getPlane()) {
-							continue;
-						} else {
-
+						// Falador course;
+					case 10833:
+						if (d.getPlane() != Hooks.client.getPlane()&&Game.debug) {
 							System.out.println("" + d.getPlane() + " " + Hooks.client.getPlane());
-						}
-						g.setColor(Color.YELLOW);
-						;
-						Graphics2D g2 = (Graphics2D) g;
-						Area a = d.getClickbox();
-						if (a != null) {
+						} else {
+							g.setColor(Color.YELLOW);
+							;
+							Graphics2D g2 = (Graphics2D) g;
+							Area a = d.getClickbox();
+							if (a != null) {
 
-							g2.draw(a);
-							g2.setPaint(fillColor);
-							g2.fill(a);
+								g2.draw(a);
+								g2.setPaint(fillColor);
+								g2.fill(a);
+							}
+
 						}
 					}
 
@@ -112,7 +126,11 @@ public class AgilityOverlay implements PaintListener {
 					case 10527:
 					case 10583:
 					case 10584:
-						if (go.getPlane() != Hooks.client.getPlane()) {
+
+						// Falador course
+					case 10834:
+					case 11364:
+						if (go.getPlane() != Hooks.client.getPlane()&&Game.debug) {
 							System.out.println("" + go.getPlane() + " " + Hooks.client.getPlane());
 							continue;
 						}

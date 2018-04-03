@@ -16,6 +16,15 @@ public class GroundObject extends RSClass {
 			this.obfuscatedName = Hooks.groundObject.obfuscatedName;
 		}
 	}
+	
+	public GroundObject() {
+		this.reference = null;
+		if (Hooks.groundObject != null) {
+			this.fields = Hooks.groundObject.fields;
+			this.name = Hooks.groundObject.name;
+			this.obfuscatedName = Hooks.groundObject.obfuscatedName;
+		}
+	}
 
 	public java.awt.geom.Area getClickbox() {
 		return Perspective.getClickbox(Hooks.client, getModel(), 0, getX(), getY());

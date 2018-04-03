@@ -14,6 +14,15 @@ public class GameObject extends RSClass {
 			this.obfuscatedName = Hooks.gameObject.obfuscatedName;
 		}
 	}
+	
+	public GameObject() {
+		this.reference = null;
+		if (Hooks.gameObject != null) {
+			this.fields = Hooks.gameObject.fields;
+			this.name = Hooks.gameObject.name;
+			this.obfuscatedName = Hooks.gameObject.obfuscatedName;
+		}
+	}
 
 	public java.awt.geom.Area getClickbox() {
 		return Perspective.getClickbox(Hooks.client, getModel(), 0, getX(), getY());
