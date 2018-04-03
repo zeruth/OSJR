@@ -33,6 +33,12 @@ public class ObjectManager {
 					if (Client.isLoaded())
 						if (Hooks.client.isLoggedIn()) {
 							if (ObjectManager.this.basex != Client.getBaseX() || ObjectManager.this.basey != Client.getBaseY()) {
+								try {
+									Thread.sleep(100);
+								} catch (InterruptedException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								}
 								resetObjects();
 								ObjectManager.this.basex = Client.getBaseX();
 								ObjectManager.this.basey = Client.getBaseY();
@@ -50,7 +56,7 @@ public class ObjectManager {
 
 				}
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(100);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
