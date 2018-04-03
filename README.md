@@ -7,13 +7,13 @@ A High-speed Old School Runescape client
 - Added Travis CI support.
 
 
-### Paint support.
+### Overhead Clan support.
 
-![clickBoxes](https://i.imgur.com/XGGg6zY.jpg)
+![overheads](https://i.redd.it/qors8u1hmqp01.png)
 
 Included is some very basic paint Listeners:
-- Agility Overlay (Currently only supports Al Kharid and Varrock)
-- Actor Names Overlay (Players and NPC's)
+- Agility Overlay (Al Kharid/Varrock/Canifis/Falador)
+- Actor Names Overlay (Players/NPC's/Clan members)
 - Fishing Overlay
 - Various Object ID overlays under Settings
 
