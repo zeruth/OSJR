@@ -9,6 +9,7 @@ import game.Game;
 import game.LoaderWindow;
 
 public class GameCanvas extends Canvas {
+	Graphics botGraphics;
 
 	private static final long serialVersionUID = 1L;
 
@@ -23,10 +24,10 @@ public class GameCanvas extends Canvas {
 			return super.getGraphics();
 		}
 
-		Graphics botGraphics = LoaderWindow.game.gamePaint();
+		this.botGraphics = LoaderWindow.game.gamePaint();
 
-		if (botGraphics != null) {
-			return botGraphics;
+		if (this.botGraphics != null) {
+			return this.botGraphics;
 		} else {
 			return super.getGraphics();
 		}

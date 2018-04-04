@@ -1,3 +1,4 @@
 /.gradle/
 /build/
 /bin/
+resources/gamepack_injected.jar

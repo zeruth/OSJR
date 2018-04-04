@@ -5,21 +5,15 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;
-import java.awt.image.BufferedImage;
-import java.io.BufferedInputStream;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
 import game.LoaderWindow;
-import game.OSRSLauncher;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
-import hooks.accessors.Nameable;
 import hooks.accessors.Npc;
 import hooks.accessors.Player;
 import hooks.helpers.LocalPoint;
@@ -110,8 +104,9 @@ public class ActorNames implements PaintListener {
 
 	
 	
+
 	@SuppressWarnings("resource")
-	public Image getRankImage(int clanRank) {
+	public static Image getRankImage(int clanRank) {
 		String imageName = "";
 		switch (clanRank) {
 		case -1:

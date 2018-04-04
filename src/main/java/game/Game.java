@@ -49,6 +49,9 @@ public class Game extends Canvas implements Runnable {
 	public static ThreadGroup threadGroup;
 	public static boolean vanilla = false;
 	public ObjectManager objectManager = new ObjectManager();
+	
+	Graphics2D g2d;
+	Graphics paintGraphics;
 
 	public Game(String[] args) {
 		for (String s : args) {
@@ -173,13 +176,13 @@ public class Game extends Canvas implements Runnable {
 					applet.setSize(OSRSLauncher.loaderWindow.getContentPane().getSize());
 			}
 
-			Graphics2D g2d = (Graphics2D) g;
-			g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
-			g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+			this.g2d = (Graphics2D) g;
+			this.g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+			this.g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-			Rectangle r = g2d.getClipBounds();
+			Rectangle r = this.g2d.getClipBounds();
 			if (this.loading) {
-				g2d.drawImage(this.gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
+				this.g2d.drawImage(this.gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
 						r.y + r.height, null);
 				return;
 			}
@@ -187,31 +190,31 @@ public class Game extends Canvas implements Runnable {
 			if (this.gameImage != null) {
 				this.paintImage.flush();
 
-				Graphics paintGraphics = this.paintImage.getGraphics();
-				paintGraphics.drawImage(this.gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
+				this.paintGraphics = this.paintImage.getGraphics();
+				this.paintGraphics.drawImage(this.gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
 						r.y + r.height, null);
 
 				for (PaintListener pl : this.paintListeners) {
-					pl.onRepaint(paintGraphics);
+					pl.onRepaint(this.paintGraphics);
 				}
 
 				for (TextPaintListener tpl : this.textPaintListeners) {
 					int y = 40;
-					paintGraphics.setColor(Color.cyan);
+					this.paintGraphics.setColor(Color.cyan);
 					String[] lines = tpl.onTextRepaint();
 					if (lines != null) {
 						for (String line : lines) {
 							if (line == null)
 								continue;
-							paintGraphics.drawString(line, 20, y);
+							this.paintGraphics.drawString(line, 20, y);
 							y += 15;
 						}
 					}
 				}
 
-				g2d.drawImage(this.paintImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
+				this.g2d.drawImage(this.paintImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
 						r.y + r.height, null);
-				paintGraphics.dispose();
+				this.paintGraphics.dispose();
 			}
 		} catch (RasterFormatException ignored) {
 		}

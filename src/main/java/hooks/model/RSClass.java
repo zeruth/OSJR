@@ -5,6 +5,8 @@ import java.lang.reflect.Field;
 import game.Game;
 
 public class RSClass {
+	
+	Field field;
 
 	public RSField[] fields;
 	public String name;
@@ -30,14 +32,14 @@ public class RSClass {
 			if (this.reference == null)
 				this.reference = Game.applet;
 			if (f.multiplier != null) {
-				Field ff = Game.jarLoader.loadClass(this.obfuscatedName).getDeclaredField(f.obfuscatedName);
-				ff.setAccessible(true);
-				return (int) (ff.get(this.reference)) * f.multiplier.intValue();
+				this.field = Game.jarLoader.loadClass(this.obfuscatedName).getDeclaredField(f.obfuscatedName);
+				this.field.setAccessible(true);
+				return (int) (this.field.get(this.reference)) * f.multiplier.intValue();
 			}
 
-			Field ff = Game.jarLoader.loadClass(this.obfuscatedName).getDeclaredField(f.obfuscatedName);
-			ff.setAccessible(true);
-			return ff.get(this.reference);
+			this.field = Game.jarLoader.loadClass(this.obfuscatedName).getDeclaredField(f.obfuscatedName);
+			this.field.setAccessible(true);
+			return this.field.get(this.reference);
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException
 				| ClassNotFoundException e) {
 			if (Game.debug)

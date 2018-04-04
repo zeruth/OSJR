@@ -70,6 +70,10 @@ public class Client extends RSClass {
 	public int[] getRealSkillLevels() {
 		return (int[]) getValue(getField("realSkillLevels"));
 	}
+	
+	public int[] getExperiences() {
+		return (int[]) getValue(getField("skillExperiences"));
+	}
 
 	public static int getCameraPitch() {
 		return Hooks.boundingBox3D.getCameraPitch();
