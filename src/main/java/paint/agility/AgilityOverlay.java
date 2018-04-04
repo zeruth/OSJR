@@ -87,6 +87,11 @@ public class AgilityOverlay implements PaintListener {
 							case 11369:
 							case 11370:
 							case 11371:
+								//Seers
+							case 11374:
+							case 11375:
+							case 11376:
+							case 11377:
 
 								g.setColor(outlineColor);
 								;
@@ -113,6 +118,8 @@ public class AgilityOverlay implements PaintListener {
 							case 10586:
 								// Falador course;
 							case 10833:
+								// Seers course
+							case 11373:
 								if (d.getPlane() != Client.getPlane()) {
 									if (Game.debug)
 										System.out.println("" + d.getPlane() + " " + Client.getPlane()); //$NON-NLS-1$ //$NON-NLS-2$
@@ -148,6 +155,9 @@ public class AgilityOverlay implements PaintListener {
 								// Falador course
 							case 10834:
 							case 11364:
+								
+								//Seers
+							case 11378:
 								if (go.getPlane() != Client.getPlane()) {
 									if (Game.debug)
 										System.out.println("" + go.getPlane() + " " + Client.getPlane()); //$NON-NLS-1$ //$NON-NLS-2$
@@ -245,7 +255,7 @@ public class AgilityOverlay implements PaintListener {
 					e.printStackTrace();
 				}
 				g22.fill(circle);
-				g.setColor(Color.yellow);
+				g.setColor(outlineColor);
 				int lvl = Hooks.client.getRealSkillLevels()[16];
 				double percentage = Skill.getLevelUpPercentage(16);
 				DecimalFormat df = new DecimalFormat("##.##");

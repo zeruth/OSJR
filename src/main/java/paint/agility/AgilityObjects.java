@@ -8,47 +8,54 @@ import hooks.helpers.ObjectManager;
 
 public class AgilityObjects {
 
-	public static DecorativeObject AL_KHARID_1 = new DecorativeObject();
-	public static GroundObject AL_KHARID_2 = new GroundObject();
-	public static GameObject AL_KHARID_3 = new GameObject();
-	public static GroundObject AL_KHARID_4 = new GroundObject();
-	public static GameObject AL_KHARID_5 = new GameObject();
-	public static DecorativeObject AL_KHARID_6 = new DecorativeObject();
-	public static GroundObject AL_KHARID_7 = new GroundObject();
-	public static GameObject AL_KHARID_8 = new GameObject();
+	public static DecorativeObject AL_KHARID_1;
+	public static GroundObject AL_KHARID_2;
+	public static GameObject AL_KHARID_3;
+	public static GroundObject AL_KHARID_4;
+	public static GameObject AL_KHARID_5;
+	public static DecorativeObject AL_KHARID_6;
+	public static GroundObject AL_KHARID_7;
+	public static GameObject AL_KHARID_8;
 
-	public static DecorativeObject VARROCK_1 = new DecorativeObject();
-	public static GameObject VARROCK_2 = new GameObject();
-	public static GameObject VARROCK_3 = new GameObject();
-	public static GameObject VARROCK_4 = new GameObject();
-	public static GameObject VARROCK_5 = new GameObject();
-	public static GameObject VARROCK_6 = new GameObject();
-	public static GameObject VARROCK_7 = new GameObject();
-	public static GameObject VARROCK_8 = new GameObject();
-	public static GameObject VARROCK_9 = new GameObject();
+	public static DecorativeObject VARROCK_1;
+	public static GameObject VARROCK_2;
+	public static GameObject VARROCK_3;
+	public static GameObject VARROCK_4;
+	public static GameObject VARROCK_5;
+	public static GameObject VARROCK_6;
+	public static GameObject VARROCK_7;
+	public static GameObject VARROCK_8;
+	public static GameObject VARROCK_9;
 
-	public static GameObject CANIFIS_1 = new GameObject();
-	public static GameObject CANIFIS_2 = new GameObject();
-	public static GameObject CANIFIS_3 = new GameObject();
-	public static GameObject CANIFIS_4 = new GameObject();
-	public static GameObject CANIFIS_5 = new GameObject();
-	public static GameObject CANIFIS_6 = new GameObject();
-	public static GameObject CANIFIS_7 = new GameObject();
-	public static GameObject CANIFIS_8 = new GameObject();
+	public static GameObject CANIFIS_1;
+	public static GameObject CANIFIS_2;
+	public static GameObject CANIFIS_3;
+	public static GameObject CANIFIS_4;
+	public static GameObject CANIFIS_5;
+	public static GameObject CANIFIS_6;
+	public static GameObject CANIFIS_7;
+	public static GameObject CANIFIS_8;
 	
-	public static DecorativeObject FALADOR_1 = new DecorativeObject();
-	public static GroundObject FALADOR_2 =  new GroundObject();
-	public static GameObject FALADOR_3 =  new GameObject();
-	public static GameObject FALADOR_4 =  new GameObject();
-	public static GameObject FALADOR_5 =  new GameObject();
-	public static GameObject FALADOR_6 =  new GameObject();
-	public static GroundObject FALADOR_7 =  new GroundObject();
-	public static GameObject FALADOR_8 =  new GameObject();
-	public static GameObject FALADOR_9 =  new GameObject();
-	public static GameObject FALADOR_10 =  new GameObject();
-	public static GameObject FALADOR_11 =  new GameObject();
-	public static GameObject FALADOR_12 =  new GameObject();
-	public static GameObject FALADOR_13 =  new GameObject();
+	public static DecorativeObject FALADOR_1;
+	public static GroundObject FALADOR_2;
+	public static GameObject FALADOR_3;
+	public static GameObject FALADOR_4;
+	public static GameObject FALADOR_5;
+	public static GameObject FALADOR_6;
+	public static GroundObject FALADOR_7;
+	public static GameObject FALADOR_8;
+	public static GameObject FALADOR_9;
+	public static GameObject FALADOR_10;
+	public static GameObject FALADOR_11;
+	public static GameObject FALADOR_12;
+	public static GameObject FALADOR_13;
+	
+	public static DecorativeObject SEERS_1;
+	private static GameObject SEERS_2;
+	public static GroundObject SEERS_3;
+	private static GameObject SEERS_4;
+	private static GameObject SEERS_5;
+	private static GameObject SEERS_6;
 
 	
 	public static void checkAgilityObjects(Tile t) {
@@ -178,6 +185,22 @@ public class AgilityObjects {
 					FALADOR_13 = go;
 					ObjectManager.addGameObject(FALADOR_13);
 					break;
+				case 11374:
+					SEERS_2 = go;
+					ObjectManager.addGameObject(SEERS_2);
+					break;
+				case 11375:
+					SEERS_4 = go;
+					ObjectManager.addGameObject(SEERS_4);
+					break;
+				case 11376:
+					SEERS_5 = go;
+					ObjectManager.addGameObject(SEERS_5);
+					break;
+				case 11377:
+					SEERS_6 = go;
+					ObjectManager.addGameObject(SEERS_6);
+					break;
 				}
 			}
 		}
@@ -190,7 +213,6 @@ public class AgilityObjects {
 				}
 				switch (t.getDecorativeObject().getID()) {
 
-				// Al Kharid course
 				case 10093:
 					AL_KHARID_1 = t.getDecorativeObject();
 					ObjectManager.addDecorativeObject(AL_KHARID_1);
@@ -201,18 +223,21 @@ public class AgilityObjects {
 					ObjectManager.addDecorativeObject(AL_KHARID_6);
 					break;
 
-				// Varrock course
 				case 10586:
 					VARROCK_1 = t.getDecorativeObject();
 					ObjectManager.addDecorativeObject(VARROCK_1);
 					break;
 					
-				//Falador course
 				case 10833:
 					FALADOR_1 = t.getDecorativeObject();
 					ObjectManager.addDecorativeObject(FALADOR_1);
 					break;
-				}
+					
+				case 11373:
+					SEERS_1 = t.getDecorativeObject();
+					ObjectManager.addDecorativeObject(SEERS_1);
+					break;
+				}				
 			}
 		}
 
@@ -240,7 +265,6 @@ public class AgilityObjects {
 						ObjectManager.addGroundObject(AL_KHARID_7);
 						break;
 						
-					//Falador course
 					case 10834:
 						FALADOR_2 = t.getGroundObject();
 						FALADOR_2.plane = 3;
@@ -250,6 +274,12 @@ public class AgilityObjects {
 						FALADOR_7 = t.getGroundObject();
 						FALADOR_7.plane = 3;
 						ObjectManager.addGroundObject(FALADOR_7);
+						break;
+						
+					case 11378:
+						SEERS_3 = t.getGroundObject();
+						SEERS_3.plane = 2;
+						ObjectManager.addGroundObject(SEERS_3);
 						break;
 					}
 			}
