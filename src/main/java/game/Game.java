@@ -19,7 +19,7 @@ import hooks.Hooks;
 import hooks.accessors.Client;
 import hooks.accessors.Region;
 import hooks.helpers.ObjectManager;
-import paint.Console;
+import paint.MenuHandler;
 import paint.agility.AgilityOverlay;
 import paint.listeners.ActorNames;
 import paint.listeners.DecorativeObjects;
@@ -242,8 +242,12 @@ public class Game extends Canvas implements Runnable {
 				if (this.isShowing()) {
 					repaint();
 					Thread.sleep(1000 / 50);
-					if (!hasFocus() && !Console.isOpen())
-						requestFocus();
+					if (!hasFocus()) {
+						if (MenuHandler.colorPick!=null)
+						 if (!MenuHandler.colorPick.isVisible())
+								requestFocus();
+					}
+
 				} else {
 					Thread.sleep(300);
 				}

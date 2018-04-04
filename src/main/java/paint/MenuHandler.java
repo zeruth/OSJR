@@ -1,7 +1,6 @@
 package paint;
 
-import java.awt.BorderLayout;
-import java.awt.Component;
+import java.applet.Applet;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.Transparency;
@@ -17,15 +16,15 @@ import javax.swing.JMenuItem;
 import discord.UpdateStatus;
 import game.Game;
 import game.Settings;
+import paint.agility.AgilityOverlay;
 
 public class MenuHandler implements ActionListener {
+	
+	public static Applet colorPick;
 
 	private JMenuItem actorNames;
 
 	private JMenuItem agilityOverlay;
-	private Console console;
-
-	private JMenuItem consoleItem;
 
 	private JMenuItem debug;
 	private JMenuItem decorativeObjects;
@@ -34,6 +33,14 @@ public class MenuHandler implements ActionListener {
 	private JFrame frame;
 	private JMenuItem gameObjects;
 	private JMenuItem groundObjects;
+	private JMenu colorPicker;
+	private JMenuItem colorOutline;
+	private JMenuItem colorFill;
+	private JMenuItem colorNPCName;
+	private JMenuItem colorPlayerName;
+	private JMenuItem colorClanMateName;
+
+
 	// Menus
 	private JMenuBar menuBar;
 	private JMenuItem pack;
@@ -46,9 +53,8 @@ public class MenuHandler implements ActionListener {
 
 	private JMenuItem wallObjects;
 
-	public MenuHandler(JFrame frame, Game game, Console console) {
+	public MenuHandler(JFrame frame, Game game) {
 		this.frame = frame;
-		this.console = console;
 
 		this.menuBar = new JMenuBar();
 
@@ -56,6 +62,7 @@ public class MenuHandler implements ActionListener {
 		this.settingsMenu = new JMenu("Settings");
 		this.discordMenu = new JMenu("Discord");
 		this.skillOverlays = new JMenu("Skill Overlays");
+		this.colorPicker = new JMenu("Change Colors");
 
 		this.fps = new JMenuItem("Draw Fps");
 		this.actorNames = new JMenuItem("Draw Actor Names");
@@ -63,7 +70,11 @@ public class MenuHandler implements ActionListener {
 		this.gameObjects = new JMenuItem("Draw GameObject ID's (Laggy)");
 		this.decorativeObjects = new JMenuItem("Draw DecorativeObject ID's (Laggy)");
 		this.wallObjects = new JMenuItem("Draw WallObject ID's (Laggy)");
-		this.consoleItem = new JMenuItem("Console");
+		this.colorOutline = new JMenuItem("Outline");
+		this.colorFill = new JMenuItem("Fill");
+		this.colorNPCName = new JMenuItem("NPC Names");
+		this.colorPlayerName = new JMenuItem("Player Names");
+		this.colorClanMateName = new JMenuItem("ClanMate Names");
 
 		this.updateStatus = new JMenuItem("Update Status");
 
@@ -74,20 +85,31 @@ public class MenuHandler implements ActionListener {
 		this.groundObjects.addActionListener(this);
 		this.gameObjects.addActionListener(this);
 		this.decorativeObjects.addActionListener(this);
-		this.consoleItem.addActionListener(this);
 		this.wallObjects.addActionListener(this);
+		this.colorPicker.addActionListener(this);
+		this.colorOutline.addActionListener(this);
+		this.colorFill.addActionListener(this);
+		this.colorNPCName.addActionListener(this);
+		this.colorPlayerName.addActionListener(this);
+		this.colorClanMateName.addActionListener(this);
+		
+		this.colorPicker.add(this.colorOutline);
+		this.colorPicker.add(this.colorFill);
+		this.colorPicker.add(this.colorNPCName);
+		this.colorPicker.add(this.colorPlayerName);
+		this.colorPicker.add(this.colorClanMateName);
 
 		this.updateStatus.addActionListener(this);
 
 		this.agilityOverlay.addActionListener(this);
 
 		this.settingsMenu.add(this.fps);
-		this.settingsMenu.add(this.consoleItem);
 		this.settingsMenu.add(this.actorNames);
 		this.settingsMenu.add(this.groundObjects);
 		this.settingsMenu.add(this.gameObjects);
 		this.settingsMenu.add(this.decorativeObjects);
 		this.settingsMenu.add(this.wallObjects);
+		this.settingsMenu.add(this.colorPicker);
 
 		this.discordMenu.add(this.updateStatus);
 
@@ -131,19 +153,16 @@ public class MenuHandler implements ActionListener {
 			if (!this.updateStatusWindow.isVisible())
 				this.updateStatusWindow.setVisible(true);
 		}
-		if (e.getSource().equals(this.pack)) {
-			this.frame.pack();
+		if (e.getSource().equals(this.colorOutline)) {
+			colorPick = new ColorChooserApplet(AgilityOverlay.outlineColor);
+			JFrame colors = new JFrame("ColorPicker");
+			colors.setSize(800, 600);
+			colors.setVisible(true);
+			colors.getContentPane().add(colorPick);
+			colorPick.init();
+			colorPick.start();
 		}
-		if (e.getSource().equals(this.consoleItem)) {
-			for (Component c : this.frame.getContentPane().getComponents()) {
-				if (c.equals(this.console)) {
-					this.frame.getContentPane().remove(this.console);
-					Console.isOpen = false;
-					this.frame.pack();
-					return;
-				}
-			}
-			this.frame.getContentPane().add(this.console, BorderLayout.EAST);
+		if (e.getSource().equals(this.pack)) {
 			this.frame.pack();
 		}
 	}

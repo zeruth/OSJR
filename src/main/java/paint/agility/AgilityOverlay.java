@@ -34,7 +34,8 @@ public class AgilityOverlay implements PaintListener {
 
 	Graphics2D g2;
 	Area a;
-	Color fillColor;
+	public static Color fillColor = new Color(Color.YELLOW.getBlue(), Color.YELLOW.getGreen(), Color.YELLOW.getRed(), 50);
+	public static Color outlineColor = Color.YELLOW;
 
 	public AgilityOverlay(Client game) {
 	}
@@ -42,8 +43,7 @@ public class AgilityOverlay implements PaintListener {
 	@SuppressWarnings("resource")
 	@Override
 	public void onRepaint(Graphics g) {
-		g.setColor(Color.YELLOW);
-		this.fillColor = new Color(Color.YELLOW.getBlue(), Color.YELLOW.getGreen(), Color.YELLOW.getRed(), 50);
+		g.setColor(outlineColor);
 		if (Settings.SHOW_AGILITY_OVERLAY == true) {
 			if (ObjectManager.gameObjects != null)
 				try {
@@ -88,13 +88,13 @@ public class AgilityOverlay implements PaintListener {
 							case 11370:
 							case 11371:
 
-								g.setColor(Color.YELLOW);
+								g.setColor(outlineColor);
 								;
 								this.g2 = (Graphics2D) g;
 								this.a = go.getClickbox();
 								if (this.a != null) {
 									this.g2.draw(this.a);
-									this.g2.setPaint(this.fillColor);
+									this.g2.setPaint(AgilityOverlay.fillColor);
 									this.g2.fill(this.a);
 								}
 							}
@@ -117,14 +117,14 @@ public class AgilityOverlay implements PaintListener {
 									if (Game.debug)
 										System.out.println("" + d.getPlane() + " " + Client.getPlane()); //$NON-NLS-1$ //$NON-NLS-2$
 								} else {
-									g.setColor(Color.YELLOW);
+									g.setColor(outlineColor);
 									;
 									this.g2 = (Graphics2D) g;
 									this.a = d.getClickbox();
 									if (this.a != null) {
 
 										this.g2.draw(this.a);
-										this.g2.setPaint(this.fillColor);
+										this.g2.setPaint(AgilityOverlay.fillColor);
 										this.g2.fill(this.a);
 									}
 
@@ -153,13 +153,13 @@ public class AgilityOverlay implements PaintListener {
 										System.out.println("" + go.getPlane() + " " + Client.getPlane()); //$NON-NLS-1$ //$NON-NLS-2$
 									continue;
 								}
-								g.setColor(Color.YELLOW);
+								g.setColor(outlineColor);
 								;
 								this.g2 = (Graphics2D) g;
 								this.a = go.getClickbox();
 								if (this.a != null) {
 									this.g2.draw(this.a);
-									this.g2.setPaint(this.fillColor);
+									this.g2.setPaint(AgilityOverlay.fillColor);
 									this.g2.fill(this.a);
 								}
 							}
@@ -183,7 +183,7 @@ public class AgilityOverlay implements PaintListener {
 				g22.setRenderingHints(rh);
 				g22.setStroke(new BasicStroke(3));
 				g22.setFont(new Font(g.getFont().getFontName(), Font.PLAIN, 15));
-				g22.setColor(this.fillColor);
+				g22.setColor(AgilityOverlay.fillColor);
 				InputStream is = null;
 				try {
 					is = new FileInputStream("./resources/skill_icons/" + "Agility" + ".png");
@@ -194,7 +194,7 @@ public class AgilityOverlay implements PaintListener {
 					e.printStackTrace();
 				}
 				g22.fill(circle);
-				g.setColor(Color.yellow);
+				g.setColor(outlineColor);
 				int lvl = Hooks.client.getRealSkillLevels()[16];
 				double percentage = Skill.getLevelUpPercentage(16);
 				DecimalFormat df = new DecimalFormat("##.##");
@@ -218,7 +218,7 @@ public class AgilityOverlay implements PaintListener {
 					percentage2 = "00";
 				}
 				g22.drawString("." + percentage2, centerX + 28, 40);
-				g.setColor(this.fillColor);
+				g.setColor(AgilityOverlay.fillColor);
 				g22.setStroke(new BasicStroke());
 			} else {
 				RenderingHints rh = new RenderingHints(RenderingHints.KEY_ANTIALIASING,
@@ -234,7 +234,7 @@ public class AgilityOverlay implements PaintListener {
 				g22.setRenderingHints(rh);
 				g22.setStroke(new BasicStroke(3));
 				g22.setFont(new Font(g.getFont().getFontName(), Font.PLAIN, 15));
-				g22.setColor(this.fillColor);
+				g22.setColor(AgilityOverlay.fillColor);
 				InputStream is = null;
 				try {
 					is = new FileInputStream("./resources/skill_icons/" + "Agility" + ".png");
@@ -269,7 +269,7 @@ public class AgilityOverlay implements PaintListener {
 					percentage2 = "00";
 				}
 				g22.drawString("." + percentage2, centerX + 28, 40);
-				g.setColor(this.fillColor);
+				g.setColor(AgilityOverlay.fillColor);
 				g22.setStroke(new BasicStroke());
 			}
 

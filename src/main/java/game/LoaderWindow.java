@@ -9,14 +9,12 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.ToolTipManager;
 
-import paint.Console;
 import paint.MenuHandler;
 
 public class LoaderWindow extends JFrame {
 
 	public static Game game;
 	private static final long serialVersionUID = 1L;
-	private Console console;
 	private JPanel gamePanel;
 	private MenuHandler menuHandler;
 
@@ -57,9 +55,8 @@ public class LoaderWindow extends JFrame {
 			} catch (Exception e) {
 			}
 
-			this.console = new Console(game);
 
-			this.menuHandler = new MenuHandler(this, game, this.console);
+			this.menuHandler = new MenuHandler(this, game);
 			this.setJMenuBar(this.menuHandler.makeJMenuBar());
 
 		}
