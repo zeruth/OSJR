@@ -2,20 +2,27 @@
 A High-speed Old School Runescape client
 - Discord: https://discord.gg/hYJdgFj
 
-# What's New!
-- Converted to Gradle project.
-- Added Travis CI support.
+# What's New! 4/4/18
+
+-Added Seers Village course to Agility overlay.
+-Finished ColorPicker - now supports all colorable entities in OSJR under Settings > Change Colors.
+-Finished XpGlobe - now has a solid background, with much better skill icon. background color can still be changes.
+
+Note: For XpGlobe, 
+Text color is tied to Outline color.
+Background color is tied to Fill color.
 
 
-### Overhead Clan support.
+### Color Picker / Xp Globe
 
-![overheads](https://i.redd.it/qors8u1hmqp01.png)
+![colorPicker](https://i.imgur.com/7CPjLUT.png)
 
 Included is some very basic paint Listeners:
-- Agility Overlay (Al Kharid/Varrock/Canifis/Falador)
+- Agility Overlay (Al Kharid/Varrock/Canifis/Falador/Seers)
 - Actor Names Overlay (Players/NPC's/Clan members)
-- Fishing Overlay
+- Fishing Overlay (built into ActorNames for now)
 - Various Object ID overlays under Settings
+- Color Picker for anything OSJR colors under Settings.
 
 ### Discord Rich Presence
 - Users can set a custom status under Discord > Update status.
