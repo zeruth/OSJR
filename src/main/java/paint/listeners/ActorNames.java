@@ -22,7 +22,9 @@ import hooks.helpers.Point;
 
 public class ActorNames implements PaintListener {
 	
-	Color purple = new Color(102, 0, 153);
+	public static Color npcNameColor = Color.CYAN;
+	public static Color playerNameColor = Color.green;
+	public static Color clanMateNameColor = Color.ORANGE;
 
 	RenderingHints rh = new RenderingHints(RenderingHints.KEY_TEXT_ANTIALIASING,
 			RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
@@ -36,13 +38,13 @@ public class ActorNames implements PaintListener {
 		if (Hooks.client != null)
 			if (Hooks.client.isLoggedIn()) {
 				if (Settings.SHOW_PLAYER_NAMES) {
-						g.setColor(Color.green);
+						g.setColor(playerNameColor);
 						Player[] ps = Hooks.client.getCachedPlayers();
 						for (Player pl : ps) {
 							if (pl != null) {
 								if (pl.isInClanChat()) {
 									Image rank = getRankImage(pl.getClanRank());
-									g.setColor(Color.orange);
+									g.setColor(clanMateNameColor);
 									String name = pl.getNames().getOriginalName();
 									Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
 											new LocalPoint(pl.asActor().getX(), pl.asActor().getY()), name, 200);
@@ -53,7 +55,7 @@ public class ActorNames implements PaintListener {
 											g2.setRenderingHints(this.rh);
 											g2.drawImage(rank, p.getX() - 12, p.getY() - 9, LoaderWindow.game);
 										}
-										g.setColor(Color.green);
+										g.setColor(playerNameColor);
 									}
 								} else {
 									String name = pl.getNames().getOriginalName();
@@ -69,7 +71,7 @@ public class ActorNames implements PaintListener {
 						}
 					}
 
-					g.setColor(Color.cyan);
+					g.setColor(npcNameColor);
 					Npc[] ns = Hooks.client.getCachedNpcs();
 					if (ns != null) {
 						for (Npc pl : ns) {

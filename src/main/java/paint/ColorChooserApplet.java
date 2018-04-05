@@ -15,7 +15,8 @@ import java.awt.event.AdjustmentListener;
 
 import javax.swing.JButton;
 
-import paint.agility.AgilityOverlay;
+import hooks.helpers.ObjectManager;
+import paint.listeners.ActorNames;
 
 public class ColorChooserApplet extends Applet implements AdjustmentListener {
 	
@@ -60,9 +61,25 @@ public void init() {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			Color newColor = new Color(ColorChooserApplet.this.r, ColorChooserApplet.this.g, ColorChooserApplet.this.b);
-			if (ColorChooserApplet.this.oldColor.equals(AgilityOverlay.outlineColor)) {
-				AgilityOverlay.outlineColor = newColor;
+			if (ColorChooserApplet.this.oldColor.equals(ObjectManager.outlineColor)) {
+				ObjectManager.outlineColor = newColor;
 				ColorChooserApplet.this.oldColor = newColor;
+			} else if (ColorChooserApplet.this.oldColor.equals(ObjectManager.fillColor)) {
+				Color newC = new Color(newColor.getRed(), newColor.getGreen(), newColor.getBlue(), 50);
+				ObjectManager.fillColor = newC;
+				ColorChooserApplet.this.oldColor = newC;
+			} else if (ColorChooserApplet.this.oldColor.equals(ActorNames.npcNameColor)) {
+				Color newC = new Color(newColor.getRed(), newColor.getGreen(), newColor.getBlue());
+				ActorNames.npcNameColor = newC;
+				ColorChooserApplet.this.oldColor = newC;
+			} else if (ColorChooserApplet.this.oldColor.equals(ActorNames.playerNameColor)) {
+				Color newC = new Color(newColor.getRed(), newColor.getGreen(), newColor.getBlue());
+				ActorNames.playerNameColor = newC;
+				ColorChooserApplet.this.oldColor = newC;
+			} else if (ColorChooserApplet.this.oldColor.equals(ActorNames.clanMateNameColor)) {
+				Color newC = new Color(newColor.getRed(), newColor.getGreen(), newColor.getBlue());
+				ActorNames.clanMateNameColor = newC;
+				ColorChooserApplet.this.oldColor = newC;
 			}
 			
 		}

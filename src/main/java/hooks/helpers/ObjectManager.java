@@ -1,5 +1,6 @@
 package hooks.helpers;
 
+import java.awt.Color;
 import java.util.HashMap;
 
 import game.Game;
@@ -12,6 +13,9 @@ import hooks.accessors.Tile;
 import paint.agility.AgilityObjects;
 
 public class ObjectManager {
+	
+	public static Color fillColor = new Color(Color.YELLOW.getBlue(), Color.YELLOW.getGreen(), Color.YELLOW.getRed(), 50);
+	public static Color outlineColor = Color.YELLOW;
 	
 	public int basex = 0, basey = 0;
 	static int[] i = new int[30000];

@@ -30,6 +30,7 @@ import paint.listeners.InputListeners;
 import paint.listeners.PaintListener;
 import paint.listeners.TextPaintListener;
 import paint.listeners.WallObjects;
+import paint.listeners.XpGlobe;
 import reflection.JarLoader;
 
 public class Game extends Canvas implements Runnable {
@@ -52,6 +53,8 @@ public class Game extends Canvas implements Runnable {
 	
 	Graphics2D g2d;
 	Graphics paintGraphics;
+	private Rectangle r;
+	private String[] lines;
 
 	public Game(String[] args) {
 		for (String s : args) {
@@ -126,6 +129,7 @@ public class Game extends Canvas implements Runnable {
 						Game.this.paintListeners.add(new WallObjects(Hooks.client));
 
 						Game.this.paintListeners.add(new AgilityOverlay(Hooks.client));
+						Game.this.paintListeners.add(new XpGlobe());
 						Game.this.objectManager.t.start();
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -180,10 +184,10 @@ public class Game extends Canvas implements Runnable {
 			this.g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
 			this.g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-			Rectangle r = this.g2d.getClipBounds();
+			this.r = this.g2d.getClipBounds();
 			if (this.loading) {
-				this.g2d.drawImage(this.gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
-						r.y + r.height, null);
+				this.g2d.drawImage(this.gameImage, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width,
+						this.r.y + this.r.height, null);
 				return;
 			}
 
@@ -191,8 +195,8 @@ public class Game extends Canvas implements Runnable {
 				this.paintImage.flush();
 
 				this.paintGraphics = this.paintImage.getGraphics();
-				this.paintGraphics.drawImage(this.gameImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
-						r.y + r.height, null);
+				this.paintGraphics.drawImage(this.gameImage, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width,
+						this.r.y + this.r.height, null);
 
 				for (PaintListener pl : this.paintListeners) {
 					pl.onRepaint(this.paintGraphics);
@@ -201,9 +205,9 @@ public class Game extends Canvas implements Runnable {
 				for (TextPaintListener tpl : this.textPaintListeners) {
 					int y = 40;
 					this.paintGraphics.setColor(Color.cyan);
-					String[] lines = tpl.onTextRepaint();
-					if (lines != null) {
-						for (String line : lines) {
+					this.lines = tpl.onTextRepaint();
+					if (this.lines != null) {
+						for (String line : this.lines) {
 							if (line == null)
 								continue;
 							this.paintGraphics.drawString(line, 20, y);
@@ -212,8 +216,8 @@ public class Game extends Canvas implements Runnable {
 					}
 				}
 
-				this.g2d.drawImage(this.paintImage, r.x, r.y, r.x + r.width, r.y + r.height, r.x, r.y, r.x + r.width,
-						r.y + r.height, null);
+				this.g2d.drawImage(this.paintImage, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width,
+						this.r.y + this.r.height, null);
 				this.paintGraphics.dispose();
 			}
 		} catch (RasterFormatException ignored) {

@@ -17,6 +17,7 @@ public class LoaderWindow extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel gamePanel;
 	private MenuHandler menuHandler;
+	private Container contentPanel;
 
 	public LoaderWindow(String[] args) {
 		boolean vanilla = false;
@@ -37,20 +38,20 @@ public class LoaderWindow extends JFrame {
 			JPopupMenu.setDefaultLightWeightPopupEnabled(false);
 			ToolTipManager.sharedInstance().setLightWeightPopupEnabled(false);
 
-			Container contentPanel = getContentPane();
-			contentPanel.setLayout(new BorderLayout());
+			this.contentPanel = getContentPane();
+			this.contentPanel.setLayout(new BorderLayout());
 			this.gamePanel = new JPanel();
-			contentPanel.add(this.gamePanel);
+			this.contentPanel.add(this.gamePanel);
 
 			try {
-				contentPanel.repaint();
-				contentPanel.revalidate();
+				this.contentPanel.repaint();
+				this.contentPanel.revalidate();
 				game = new Game(args);
-				contentPanel.add(game);
-				contentPanel.setVisible(true);
-				contentPanel.setSize(765, 503);
-				contentPanel.repaint();
-				contentPanel.revalidate();
+				this.contentPanel.add(game);
+				this.contentPanel.setVisible(true);
+				this.contentPanel.setSize(765, 503);
+				this.contentPanel.repaint();
+				this.contentPanel.revalidate();
 				setResizable(true);
 			} catch (Exception e) {
 			}
@@ -66,7 +67,6 @@ public class LoaderWindow extends JFrame {
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
-		// gamePanel.setSize(Boot.loaderWindow.getSize());
 	}
 
 }
