@@ -13,9 +13,4 @@ public class Class308 extends RSClass {
 			this.obfuscatedName = Hooks.class308.obfuscatedName;
 		}
 	}
-
-	public Region getRegion() {
-		return new Region(getValue(getField("region")));
-	}
-
 }

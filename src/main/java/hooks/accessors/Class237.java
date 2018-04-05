@@ -13,8 +13,4 @@ public class Class237 extends RSClass {
 			this.obfuscatedName = Hooks.class237.obfuscatedName;
 		}
 	}
-
-	public int getPlane() {
-		return (int) getValue(getField("plane"));
-	}
 }

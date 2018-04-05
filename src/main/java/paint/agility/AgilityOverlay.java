@@ -12,7 +12,6 @@ import hooks.accessors.DecorativeObject;
 import hooks.accessors.GameObject;
 import hooks.accessors.GroundObject;
 import hooks.helpers.ObjectManager;
-import hooks.helpers.SkillGlobe;
 import paint.listeners.PaintListener;
 
 public class AgilityOverlay implements PaintListener {

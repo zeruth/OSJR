@@ -13,8 +13,4 @@ public class ClientPacket extends RSClass {
 			this.obfuscatedName = Hooks.sequence.obfuscatedName;
 		}
 	}
-
-	public int getCameraYaw() {
-		return (int) getValue(getField("cameraYaw"));
-	}
 }

@@ -20,13 +20,19 @@ public class Hooks {
 	public static Area area;
 	public static BaseVarType baseVarType;
 	public static BoundingBox3D boundingBox3D;
+	public static BoundingBox3DDrawMode boundingBox3DDrawMode;
 	public static ChatLineBuffer chatLineBuffer;
 	public static ChatPlayer chatPlayer;
 	public static ClanMember clanMember;
 	public static ClanMemberManager clanMemberManager;
+	public static Class138 class138;
 	public static Class160 class160;
 	public static Class237 class237;
+	public static Class255 class255;
 	public static Class308 class308;
+	public static Class20 class20;
+	public static Class23 class23;
+	public static Class28 class28;
 	public static Class33 class33;
 	public static Class38 class38;
 	public static Class62 class62;
@@ -36,6 +42,7 @@ public class Hooks {
 	public static DecorativeObject decorativeObject;
 	public static GameEngine gameEngine;
 	public static GameObject gameObject;
+	public static GrandExchangeOffer grandExchangeOffer;
 	public static GroundObject groundObject;
 	public static Ignore ignore;
 	public static Model model;
@@ -52,6 +59,7 @@ public class Hooks {
 	public static Renderable renderable;
 	public static Hooks selector;
 	public static Sequence sequence;
+	public static SoundTaskDataProvider soundTaskDataProvider;
 	public static SpritePixels spritePixels;
 	public static Tile tile;
 	public static Varcs varcs;
@@ -74,6 +82,9 @@ public class Hooks {
 			} else if (c.name.compareTo("BoundingBox3D") == 0) {
 				boundingBox3D = new BoundingBox3D(null);
 				temp = boundingBox3D;
+			} else if (c.name.compareTo("BoundingBox3DDrawMode") == 0) {
+				boundingBox3DDrawMode = new BoundingBox3DDrawMode(null);
+				temp = boundingBox3DDrawMode;
 			} else if (c.name.compareTo("ChatLineBuffer") == 0) {
 				chatLineBuffer = new ChatLineBuffer(null);
 				temp = chatLineBuffer;
@@ -86,7 +97,16 @@ public class Hooks {
 			} else if (c.name.compareTo("ClanMemberManager") == 0) {
 				clanMemberManager = new ClanMemberManager(null);
 				temp = clanMemberManager;
-			} else if (c.name.compareTo("class33") == 0) {
+			} else if (c.name.compareTo("class20") == 0) {
+				class20 = new Class20(null);
+				temp = class20;
+			} else if (c.name.compareTo("class23") == 0) {
+				class23 = new Class23(null);
+				temp = class23;
+			} else if (c.name.compareTo("class28") == 0) {
+				class28 = new Class28(null);
+				temp = class28;
+			}  else if (c.name.compareTo("class33") == 0) {
 				class33 = new Class33(null);
 				temp = class33;
 			} else if (c.name.compareTo("class38") == 0) {
@@ -95,12 +115,18 @@ public class Hooks {
 			} else if (c.name.compareTo("class62") == 0) {
 				class62 = new Class62(null);
 				temp = class62;
+			} else if (c.name.compareTo("class138") == 0) {
+				class138 = new Class138(null);
+				temp = class138;
 			} else if (c.name.compareTo("class160") == 0) {
 				class160 = new Class160(null);
 				temp = class160;
 			} else if (c.name.compareTo("class237") == 0) {
 				class237 = new Class237(null);
 				temp = class237;
+			} else if (c.name.compareTo("class255") == 0) {
+				class255 = new Class255(null);
+				temp = class255;
 			} else if (c.name.compareTo("class308") == 0) {
 				class308 = new Class308(null);
 				temp = class308;
@@ -121,6 +147,9 @@ public class Hooks {
 			} else if (c.name.compareTo("GameObject") == 0) {
 				gameObject = new GameObject(null);
 				temp = gameObject;
+			} else if (c.name.compareTo("GrandExchangeOffer") == 0) {
+				grandExchangeOffer = new GrandExchangeOffer(null);
+				temp = grandExchangeOffer;
 			} else if (c.name.compareTo("GroundObject") == 0) {
 				groundObject = new GroundObject(null);
 				temp = groundObject;
@@ -166,6 +195,9 @@ public class Hooks {
 			} else if (c.name.compareTo("Sequence") == 0) {
 				sequence = new Sequence(null);
 				temp = sequence;
+			} else if (c.name.compareTo("SoundTaskDataProvider") == 0) {
+				soundTaskDataProvider = new SoundTaskDataProvider(null);
+				temp = soundTaskDataProvider;
 			} else if (c.name.compareTo("SpritePixels") == 0) {
 				spritePixels = new SpritePixels(null);
 				temp = spritePixels;

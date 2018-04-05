@@ -13,8 +13,4 @@ public class Sequence extends RSClass {
 			this.obfuscatedName = Hooks.sequence.obfuscatedName;
 		}
 	}
-
-	public int getCameraX() {
-		return (int) getValue(getField("cameraX"));
-	}
 }

@@ -60,5 +60,9 @@ public class GameObject extends RSClass {
 	public int getY() {
 		return (int) getValue(getField("y"));
 	}
+	
+	public int getCameraZ() {
+		return (int) getValue(getField("cameraZ"));
+	}
 
 }

@@ -13,8 +13,4 @@ public class BaseVarType extends RSClass {
 			this.obfuscatedName = Hooks.baseVarType.obfuscatedName;
 		}
 	}
-
-	public int getBaseY() {
-		return (int) getValue(getField("baseY"));
-	}
 }

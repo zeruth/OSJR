@@ -13,8 +13,4 @@ public class Class33 extends RSClass {
 			this.obfuscatedName = Hooks.class33.obfuscatedName;
 		}
 	}
-	
-	public ClanMemberManager getClanMemberManager() {
-		return new ClanMemberManager(getValue(getField("clanMemberManager")));
-	}
 }

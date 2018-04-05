@@ -14,7 +14,4 @@ public class ChatLineBuffer extends RSClass {
 		}
 	}
 
-	public int getCameraY() {
-		return (int) getValue(getField("cameraY"));
-	}
 }

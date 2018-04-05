@@ -13,9 +13,4 @@ public class PacketNode extends RSClass {
 			this.obfuscatedName = Hooks.packetNode.obfuscatedName;
 		}
 	}
-
-	public int getBaseX() {
-		return (int) getValue(getField("baseX"));
-	}
-
 }

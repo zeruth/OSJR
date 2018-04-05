@@ -55,4 +55,7 @@ public class Player extends RSClass {
 		return 0;
 	}
 
+	public int getCameraX() {
+		return (int) getValue(getField("cameraX"));
+	}
 }

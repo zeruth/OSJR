@@ -13,9 +13,4 @@ public class WorldComparator extends RSClass {
 			this.obfuscatedName = Hooks.worldComparator.obfuscatedName;
 		}
 	}
-
-	public Player getLocalPlayer() {
-		this.reference = null;
-		return new Player(getValue(getField("localPlayer")));
-	}
 }

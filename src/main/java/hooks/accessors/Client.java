@@ -27,11 +27,11 @@ public class Client extends RSClass {
 	}
 
 	public static int getBaseX() {
-		return Hooks.packetNode.getBaseX();
+		return Hooks.class138.getBaseX();
 	}
 
 	public static int getBaseY() {
-		return Hooks.baseVarType.getBaseY();
+		return Hooks.class23.getBaseY();
 	}
 
 	public Npc[] getCachedNpcs() {
@@ -76,23 +76,23 @@ public class Client extends RSClass {
 	}
 
 	public static int getCameraPitch() {
-		return Hooks.boundingBox3D.getCameraPitch();
+		return Hooks.grandExchangeOffer.getCameraPitch();
 	}
 
 	public static int getCameraX() {
-		return Hooks.sequence.getCameraX();
+		return Hooks.player.getCameraX();
 	}
 
 	public static int getCameraY() {
-		return Hooks.chatLineBuffer.getCameraY();
+		return Hooks.class20.getCameraY();
 	}
 
 	public static int getCameraYaw() {
-		return Hooks.clientPacket.getCameraYaw();
+		return Hooks.class28.getCameraYaw();
 	}
 
 	public static int getCameraZ() {
-		return Hooks.area.getCameraZ();
+		return Hooks.gameObject.getCameraZ();
 	}
 
 	public static Canvas getCanvas() {
@@ -104,7 +104,7 @@ public class Client extends RSClass {
 	}
 
 	public static Player getLocalPlayer() {
-		return Hooks.worldComparator.getLocalPlayer();
+		return Hooks.soundTaskDataProvider.getLocalPlayer();
 	}
 
 	public int getLoginState() {
@@ -116,13 +116,13 @@ public class Client extends RSClass {
 	}
 
 	public static int getPlane() {
-		return Hooks.class237.getPlane();
+		return Hooks.boundingBox3DDrawMode.getPlane();
 	}
 
 	public static Region getRegion() {
-		if (Hooks.class308 == null)
+		if (Hooks.class255 == null)
 			return null;
-		return Hooks.class308.getRegion();
+		return Hooks.class255.getRegion();
 	}
 
 	public int getScale() {
@@ -162,6 +162,6 @@ public class Client extends RSClass {
 	}
 	
 	public static ClanMemberManager getClanMemberManager() {
-		return Hooks.class33.getClanMemberManager();
+		return Hooks.gameEngine.getClanMemberManager();
 	}
 }

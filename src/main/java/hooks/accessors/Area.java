@@ -13,8 +13,4 @@ public class Area extends RSClass {
 			this.obfuscatedName = Hooks.sequence.obfuscatedName;
 		}
 	}
-
-	public int getCameraZ() {
-		return (int) getValue(getField("cameraZ"));
-	}
 }
