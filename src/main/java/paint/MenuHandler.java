@@ -18,15 +18,15 @@ import game.Game;
 import game.Settings;
 import hooks.helpers.ObjectManager;
 import hooks.helpers.SkillGlobe;
-import paint.listeners.ActorNames;
 
 public class MenuHandler implements ActionListener {
-	
+
 	public static Applet colorPick;
 
 	private JMenuItem actorNames;
 
 	private JMenuItem agilityOverlay;
+	private JMenuItem fishingOverlay = new JMenuItem("Fishing");
 
 	private JMenuItem debug;
 	private JMenuItem decorativeObjects;
@@ -66,7 +66,6 @@ public class MenuHandler implements ActionListener {
 	private JMenuItem globeRunecrafting = new JMenuItem("Runecrafting");
 	private JMenuItem globeHunter = new JMenuItem("Hunter");
 	private JMenuItem globeConstruction = new JMenuItem("Construction");
-
 
 	// Menus
 	private JMenuBar menuBar;
@@ -120,7 +119,7 @@ public class MenuHandler implements ActionListener {
 		this.colorNPCName.addActionListener(this);
 		this.colorPlayerName.addActionListener(this);
 		this.colorClanMateName.addActionListener(this);
-		
+
 		this.colorPicker.add(this.colorOutline);
 		this.colorPicker.add(this.colorFill);
 		this.colorPicker.add(this.colorNPCName);
@@ -130,6 +129,7 @@ public class MenuHandler implements ActionListener {
 		this.updateStatus.addActionListener(this);
 
 		this.agilityOverlay.addActionListener(this);
+		this.fishingOverlay.addActionListener(this);
 
 		this.settingsMenu.add(this.fps);
 		this.settingsMenu.add(this.actorNames);
@@ -142,7 +142,8 @@ public class MenuHandler implements ActionListener {
 		this.discordMenu.add(this.updateStatus);
 
 		this.skillOverlays.add(this.agilityOverlay);
-		
+		this.skillOverlays.add(this.fishingOverlay);
+
 		this.xpGlobe.add(this.globeClear);
 		this.xpGlobe.add(this.globeAttack);
 		this.xpGlobe.add(this.globeDefence);
@@ -167,7 +168,7 @@ public class MenuHandler implements ActionListener {
 		this.xpGlobe.add(this.globeRunecrafting);
 		this.xpGlobe.add(this.globeHunter);
 		this.xpGlobe.add(this.globeConstruction);
-		
+
 		this.globeClear.addActionListener(this);
 		this.globeAttack.addActionListener(this);
 		this.globeDefence.addActionListener(this);
@@ -193,7 +194,6 @@ public class MenuHandler implements ActionListener {
 		this.globeHunter.addActionListener(this);
 		this.globeConstruction.addActionListener(this);
 
-
 		this.menuBar.add(this.settingsMenu);
 		this.menuBar.add(this.discordMenu);
 		this.menuBar.add(this.skillOverlays);
@@ -205,35 +205,28 @@ public class MenuHandler implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource().equals(this.debug)) {
 			Settings.SHOW_DEBUG = !Settings.SHOW_DEBUG;
-		}
-		else if (e.getSource().equals(this.fps)) {
+		} else if (e.getSource().equals(this.fps)) {
 			Settings.SHOW_FPS = !Settings.SHOW_FPS;
-		}
-		else if (e.getSource().equals(this.actorNames)) {
+		} else if (e.getSource().equals(this.actorNames)) {
 			Settings.SHOW_PLAYER_NAMES = !Settings.SHOW_PLAYER_NAMES;
-		}
-		else if (e.getSource().equals(this.groundObjects)) {
+		} else if (e.getSource().equals(this.groundObjects)) {
 			Settings.SHOW_GROUNDOBJECT_IDS = !Settings.SHOW_GROUNDOBJECT_IDS;
-		}
-		else if (e.getSource().equals(this.gameObjects)) {
+		} else if (e.getSource().equals(this.gameObjects)) {
 			Settings.SHOW_GAMEOBJECT_IDS = !Settings.SHOW_GAMEOBJECT_IDS;
-		}
-		else if (e.getSource().equals(this.decorativeObjects)) {
+		} else if (e.getSource().equals(this.decorativeObjects)) {
 			Settings.SHOW_DECORATIVEOBJECT_IDS = !Settings.SHOW_DECORATIVEOBJECT_IDS;
-		}
-		else if (e.getSource().equals(this.wallObjects)) {
+		} else if (e.getSource().equals(this.wallObjects)) {
 			Settings.SHOW_WALLOBJECT_IDS = !Settings.SHOW_WALLOBJECT_IDS;
-		}
-		else if (e.getSource().equals(this.agilityOverlay)) {
+		} else if (e.getSource().equals(this.agilityOverlay)) {
 			Settings.SHOW_AGILITY_OVERLAY = !Settings.SHOW_AGILITY_OVERLAY;
-		}
-		else if (e.getSource().equals(this.updateStatus)) {
+		} else if (e.getSource().equals(this.fishingOverlay)) {
+			Settings.SHOW_FISHING_OVERLAY = !Settings.SHOW_FISHING_OVERLAY;
+		} else if (e.getSource().equals(this.updateStatus)) {
 			if (this.updateStatusWindow == null)
 				this.updateStatusWindow = new UpdateStatus();
 			if (!this.updateStatusWindow.isVisible())
 				this.updateStatusWindow.setVisible(true);
-		}
-		else if (e.getSource().equals(this.colorOutline)) {
+		} else if (e.getSource().equals(this.colorOutline)) {
 			colorPick = new ColorChooserApplet(ObjectManager.outlineColor);
 			JFrame colors = new JFrame("ColorPicker");
 			colors.setSize(400, 200);
@@ -241,8 +234,7 @@ public class MenuHandler implements ActionListener {
 			colors.getContentPane().add(colorPick);
 			colorPick.init();
 			colorPick.start();
-		}
-		else if (e.getSource().equals(this.colorFill)) {
+		} else if (e.getSource().equals(this.colorFill)) {
 			colorPick = new ColorChooserApplet(ObjectManager.fillColor);
 			JFrame colors = new JFrame("ColorPicker");
 			colors.setSize(400, 200);
@@ -250,8 +242,7 @@ public class MenuHandler implements ActionListener {
 			colors.getContentPane().add(colorPick);
 			colorPick.init();
 			colorPick.start();
-		}
-		else if (e.getSource().equals(this.colorNPCName)) {
+		} else if (e.getSource().equals(this.colorNPCName)) {
 			colorPick = new ColorChooserApplet(ActorNames.npcNameColor);
 			JFrame colors = new JFrame("ColorPicker");
 			colors.setSize(400, 200);
@@ -259,8 +250,7 @@ public class MenuHandler implements ActionListener {
 			colors.getContentPane().add(colorPick);
 			colorPick.init();
 			colorPick.start();
-		}
-		else if (e.getSource().equals(this.colorPlayerName)) {
+		} else if (e.getSource().equals(this.colorPlayerName)) {
 			colorPick = new ColorChooserApplet(ActorNames.playerNameColor);
 			JFrame colors = new JFrame("ColorPicker");
 			colors.setSize(400, 200);
@@ -268,8 +258,7 @@ public class MenuHandler implements ActionListener {
 			colors.getContentPane().add(colorPick);
 			colorPick.init();
 			colorPick.start();
-		}
-		else if (e.getSource().equals(this.colorClanMateName)) {
+		} else if (e.getSource().equals(this.colorClanMateName)) {
 			colorPick = new ColorChooserApplet(ActorNames.clanMateNameColor);
 			JFrame colors = new JFrame("ColorPicker");
 			colors.setSize(400, 200);
@@ -277,81 +266,56 @@ public class MenuHandler implements ActionListener {
 			colors.getContentPane().add(colorPick);
 			colorPick.init();
 			colorPick.start();
-		}
-		else if (e.getSource().equals(this.pack)) {
+		} else if (e.getSource().equals(this.pack)) {
 			this.frame.pack();
-		}
-		else if (e.getSource().equals(this.globeClear)) {
-			SkillGlobe.activeSkillGlobe=null;
-		}
-		else if (e.getSource().equals(this.globeAttack)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(0);
-		}
-		else if (e.getSource().equals(this.globeDefence)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(1);
-		}
-		else if (e.getSource().equals(this.globeStrength)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(2);
-		}
-		else if (e.getSource().equals(this.globeHitpoints)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(3);
-		}
-		else if (e.getSource().equals(this.globeRanged)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(4);
-		}
-		else if (e.getSource().equals(this.globePrayer)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(5);
-		}
-		else if (e.getSource().equals(this.globeMagic)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(6);
-		}
-		else if (e.getSource().equals(this.globeCooking)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(7);
-		}
-		else if (e.getSource().equals(this.globeWoodcutting)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(8);
-		}
-		else if (e.getSource().equals(this.globeFletching)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(9);
-		}
-		else if (e.getSource().equals(this.globeFishing)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(10);
-		}
-		else if (e.getSource().equals(this.globeFiremaking)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(11);
-		}
-		else if (e.getSource().equals(this.globeCrafting)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(12);
-		}
-		else if (e.getSource().equals(this.globeSmithing)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(13);
-		}
-		else if (e.getSource().equals(this.globeMining)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(14);
-		}
-		else if (e.getSource().equals(this.globeHerblore)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(15);
-		}
-		else if (e.getSource().equals(this.globeAgility)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(16);
-		}
-		else if (e.getSource().equals(this.globeThieving)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(17);
-		}
-		else if (e.getSource().equals(this.globeSlayer)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(18);
-		}
-		else if (e.getSource().equals(this.globeFarming)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(19);
-		}
-		else if (e.getSource().equals(this.globeRunecrafting)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(20);
-		}
-		else if (e.getSource().equals(this.globeHunter)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(21);
-		}
-		else if (e.getSource().equals(this.globeConstruction)) {
-			SkillGlobe.activeSkillGlobe=new SkillGlobe(22);
+		} else if (e.getSource().equals(this.globeClear)) {
+			SkillGlobe.activeSkillGlobe = null;
+		} else if (e.getSource().equals(this.globeAttack)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(0);
+		} else if (e.getSource().equals(this.globeDefence)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(1);
+		} else if (e.getSource().equals(this.globeStrength)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(2);
+		} else if (e.getSource().equals(this.globeHitpoints)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(3);
+		} else if (e.getSource().equals(this.globeRanged)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(4);
+		} else if (e.getSource().equals(this.globePrayer)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(5);
+		} else if (e.getSource().equals(this.globeMagic)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(6);
+		} else if (e.getSource().equals(this.globeCooking)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(7);
+		} else if (e.getSource().equals(this.globeWoodcutting)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(8);
+		} else if (e.getSource().equals(this.globeFletching)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(9);
+		} else if (e.getSource().equals(this.globeFishing)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(10);
+		} else if (e.getSource().equals(this.globeFiremaking)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(11);
+		} else if (e.getSource().equals(this.globeCrafting)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(12);
+		} else if (e.getSource().equals(this.globeSmithing)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(13);
+		} else if (e.getSource().equals(this.globeMining)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(14);
+		} else if (e.getSource().equals(this.globeHerblore)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(15);
+		} else if (e.getSource().equals(this.globeAgility)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(16);
+		} else if (e.getSource().equals(this.globeThieving)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(17);
+		} else if (e.getSource().equals(this.globeSlayer)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(18);
+		} else if (e.getSource().equals(this.globeFarming)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(19);
+		} else if (e.getSource().equals(this.globeRunecrafting)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(20);
+		} else if (e.getSource().equals(this.globeHunter)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(21);
+		} else if (e.getSource().equals(this.globeConstruction)) {
+			SkillGlobe.activeSkillGlobe = new SkillGlobe(22);
 		}
 	}
 

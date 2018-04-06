@@ -21,26 +21,25 @@ import game.OSRSLauncher;
 import hooks.Hooks;
 
 public class SkillGlobe {
-	
+
 	public static SkillGlobe activeSkillGlobe;
-	
+
 	public int skillID;
 	private Color fillColor;
 	private Color outlineColor;
 	private Graphics2D g2;
-	
+
 	public SkillGlobe(int skillID) {
 		this.skillID = skillID;
 	}
-	
+
 	public void paint(Graphics g) {
 		this.g2 = (Graphics2D) g;
 		this.fillColor = ObjectManager.fillColor;
 		this.outlineColor = ObjectManager.outlineColor;
 
 		if (OSRSLauncher.loaderWindow.getWidth() <= 850) {
-			RenderingHints rh = new RenderingHints(RenderingHints.KEY_ANTIALIASING,
-					RenderingHints.VALUE_ANTIALIAS_ON);
+			RenderingHints rh = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 			int radiusX = 50;
 			int centerX = ((OSRSLauncher.loaderWindow.getWidth() - (radiusX)) / 2) - 50;
 			int centerY = 5;
@@ -53,7 +52,7 @@ public class SkillGlobe {
 			g22.setStroke(new BasicStroke(3));
 			g22.setFont(new Font(g.getFont().getFontName(), Font.PLAIN, 15));
 			g22.setColor(this.fillColor);
-			RoundRectangle2D skillBackdrop = new RoundRectangle2D.Double(centerX-32, centerY+10, 40, 30, 10, 10);
+			RoundRectangle2D skillBackdrop = new RoundRectangle2D.Double(centerX - 32, centerY + 10, 40, 30, 10, 10);
 			g22.setColor(Color.DARK_GRAY.darker());
 			g22.draw(skillBackdrop);
 			g22.fill(skillBackdrop);
@@ -66,20 +65,20 @@ public class SkillGlobe {
 
 			g22.fill(circle);
 			String skillName = Skill.getNameForID(this.skillID);
-			if (skillName!=null)
-			try (InputStream is = new FileInputStream("./resources/skill_icons/" +skillName + ".png")){
-				Image skillIcon = ImageIO.read(is);
-				is.close();
-				this.g2.drawImage(skillIcon, centerX - 29, centerY + 13, LoaderWindow.game);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+			if (skillName != null)
+				try (InputStream is = new FileInputStream("./resources/skill_icons/" + skillName + ".png")) {
+					Image skillIcon = ImageIO.read(is);
+					is.close();
+					this.g2.drawImage(skillIcon, centerX - 29, centerY + 13, LoaderWindow.game);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			g.setColor(this.outlineColor);
 			int lvl = Hooks.client.getRealSkillLevels()[this.skillID];
 			double percentage = Skill.getLevelUpPercentage(this.skillID);
 			DecimalFormat df = new DecimalFormat("##.##");
 			g22.drawString(Integer.toString(lvl), centerX + 16, 20);
-			String s = (String) "-" + (int) ((percentage / 100) * 360);
+			String s = "-" + (int) ((percentage / 100) * 360);
 			int length = Integer.valueOf(s);
 			g22.drawArc(centerX, centerY, radiusX, radiusYY, startAngle, length);
 			g22.setFont(new Font("TimesRoman", Font.PLAIN, 24));
@@ -101,8 +100,7 @@ public class SkillGlobe {
 			g.setColor(this.fillColor);
 			g22.setStroke(new BasicStroke());
 		} else {
-			RenderingHints rh = new RenderingHints(RenderingHints.KEY_ANTIALIASING,
-					RenderingHints.VALUE_ANTIALIAS_ON);
+			RenderingHints rh = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 			int radiusX = 50;
 			int centerX = ((OSRSLauncher.loaderWindow.getWidth() - (radiusX)) / 2);
 			int centerY = 5;
@@ -115,7 +113,7 @@ public class SkillGlobe {
 			g22.setStroke(new BasicStroke(3));
 			g22.setFont(new Font(g.getFont().getFontName(), Font.PLAIN, 15));
 			g22.setColor(this.fillColor);
-			RoundRectangle2D skillBackdrop = new RoundRectangle2D.Double(centerX-32, centerY+10, 40, 30, 10, 10);
+			RoundRectangle2D skillBackdrop = new RoundRectangle2D.Double(centerX - 32, centerY + 10, 40, 30, 10, 10);
 			g22.setColor(Color.DARK_GRAY.darker());
 			g22.draw(skillBackdrop);
 			g22.fill(skillBackdrop);
@@ -128,20 +126,20 @@ public class SkillGlobe {
 
 			g22.fill(circle);
 			String skillName = Skill.getNameForID(this.skillID);
-			if (skillName!=null)
-			try (InputStream is = new FileInputStream("./resources/skill_icons/" +skillName + ".png")){
-				Image skillIcon = ImageIO.read(is);
-				is.close();
-				this.g2.drawImage(skillIcon, centerX - 29, centerY + 13, LoaderWindow.game);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+			if (skillName != null)
+				try (InputStream is = new FileInputStream("./resources/skill_icons/" + skillName + ".png")) {
+					Image skillIcon = ImageIO.read(is);
+					is.close();
+					this.g2.drawImage(skillIcon, centerX - 29, centerY + 13, LoaderWindow.game);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			g.setColor(this.outlineColor);
 			int lvl = Hooks.client.getRealSkillLevels()[this.skillID];
 			double percentage = Skill.getLevelUpPercentage(this.skillID);
 			DecimalFormat df = new DecimalFormat("##.##");
 			g22.drawString(Integer.toString(lvl), centerX + 16, 20);
-			String s = (String) "-" + (int) ((percentage / 100) * 360);
+			String s = "-" + (int) ((percentage / 100) * 360);
 			int length = Integer.valueOf(s);
 			g22.drawArc(centerX, centerY, radiusX, radiusYY, startAngle, length);
 			g22.setFont(new Font("TimesRoman", Font.PLAIN, 24));

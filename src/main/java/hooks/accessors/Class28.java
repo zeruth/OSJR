@@ -13,7 +13,7 @@ public class Class28 extends RSClass {
 			this.obfuscatedName = Hooks.class28.obfuscatedName;
 		}
 	}
-	
+
 	public int getCameraYaw() {
 		return (int) getValue(getField("cameraYaw"));
 	}

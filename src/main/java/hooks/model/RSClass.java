@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 import game.Game;
 
 public class RSClass {
-	
+
 	Field field;
 
 	public RSField[] fields;

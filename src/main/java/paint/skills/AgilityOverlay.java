@@ -1,4 +1,4 @@
-package paint.agility;
+package paint.skills;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -12,14 +12,14 @@ import hooks.accessors.DecorativeObject;
 import hooks.accessors.GameObject;
 import hooks.accessors.GroundObject;
 import hooks.helpers.ObjectManager;
-import paint.listeners.PaintListener;
+import paint.PaintListener;
 
 public class AgilityOverlay implements PaintListener {
 
 	Graphics2D g2;
 	Area a;
 
-	public AgilityOverlay(Client game) {
+	public AgilityOverlay() {
 	}
 
 	@Override
@@ -70,7 +70,7 @@ public class AgilityOverlay implements PaintListener {
 							case 11369:
 							case 11370:
 							case 11371:
-								//Seers
+								// Seers
 							case 11374:
 							case 11375:
 							case 11376:
@@ -138,8 +138,8 @@ public class AgilityOverlay implements PaintListener {
 								// Falador course
 							case 10834:
 							case 11364:
-								
-								//Seers
+
+								// Seers
 							case 11378:
 								if (go.getPlane() != Client.getPlane()) {
 									if (Game.debug)

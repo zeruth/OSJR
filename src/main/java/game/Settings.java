@@ -11,6 +11,8 @@ public class Settings {
 
 	public static boolean SHOW_AGILITY_OVERLAY = false;
 
+	public static boolean SHOW_FISHING_OVERLAY = false;
+
 	public static boolean SHOW_DEBUG = false;
 
 	public static boolean SHOW_DECORATIVEOBJECT_IDS = false;

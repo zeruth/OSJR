@@ -13,7 +13,6 @@ public class Class138 extends RSClass {
 			this.obfuscatedName = Hooks.class138.obfuscatedName;
 		}
 	}
-	
 
 	public int getBaseX() {
 		return (int) getValue(getField("baseX"));

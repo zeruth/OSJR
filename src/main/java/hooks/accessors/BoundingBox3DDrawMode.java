@@ -13,7 +13,7 @@ public class BoundingBox3DDrawMode extends RSClass {
 			this.obfuscatedName = Hooks.boundingBox3D.obfuscatedName;
 		}
 	}
-	
+
 	public int getPlane() {
 		return (int) getValue(getField("plane"));
 	}

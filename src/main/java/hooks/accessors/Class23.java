@@ -13,7 +13,7 @@ public class Class23 extends RSClass {
 			this.obfuscatedName = Hooks.class23.obfuscatedName;
 		}
 	}
-	
+
 	public int getBaseY() {
 		return (int) getValue(getField("baseY"));
 	}

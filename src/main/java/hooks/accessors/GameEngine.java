@@ -17,7 +17,7 @@ public class GameEngine extends RSClass {
 	public int getFps() {
 		return (int) getValue(getField("FPS"));
 	}
-	
+
 	public ClanMemberManager getClanMemberManager() {
 		return new ClanMemberManager(getValue(getField("clanMemberManager")));
 	}

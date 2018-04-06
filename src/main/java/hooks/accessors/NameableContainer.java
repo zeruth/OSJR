@@ -13,18 +13,18 @@ public class NameableContainer extends RSClass {
 			this.obfuscatedName = Hooks.nameableContainer.obfuscatedName;
 		}
 	}
-	
+
 	public Nameable[] getNameables() {
 		Object[] os = (Object[]) getValue(getField("nameables"));
 		int i = 0;
 		for (Object o : os) {
-			if (o!=null)
-			i++;
+			if (o != null)
+				i++;
 		}
 		Nameable[] nameables = new Nameable[i];
 		int k = 0;
 		for (Object o : os) {
-			if (o!=null) {
+			if (o != null) {
 				nameables[k] = new Nameable(o);
 				k++;
 			}

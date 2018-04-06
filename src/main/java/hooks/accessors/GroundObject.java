@@ -16,7 +16,7 @@ public class GroundObject extends RSClass {
 			this.obfuscatedName = Hooks.groundObject.obfuscatedName;
 		}
 	}
-	
+
 	public GroundObject() {
 		this.reference = null;
 		if (Hooks.groundObject != null) {

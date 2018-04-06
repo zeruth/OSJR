@@ -1,7 +1,6 @@
 package hooks.accessors;
 
 import hooks.Hooks;
-import hooks.helpers.Perspective;
 import hooks.model.RSClass;
 
 public class GrandExchangeOffer extends RSClass {

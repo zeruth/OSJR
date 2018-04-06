@@ -1,4 +1,4 @@
-package paint.listeners;
+package paint;
 
 import java.awt.Graphics;
 import java.awt.RenderingHints;
@@ -14,9 +14,9 @@ public class XpGlobe implements PaintListener {
 	@Override
 	public void onRepaint(Graphics g) {
 		if (Hooks.client.isLoggedIn())
-		if (SkillGlobe.activeSkillGlobe != null) {
-			SkillGlobe.activeSkillGlobe.paint(g);
-		}
+			if (SkillGlobe.activeSkillGlobe != null) {
+				SkillGlobe.activeSkillGlobe.paint(g);
+			}
 	}
 
 }

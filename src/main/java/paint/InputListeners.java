@@ -1,4 +1,4 @@
-package paint.listeners;
+package paint;
 
 import java.applet.Applet;
 import java.awt.Canvas;

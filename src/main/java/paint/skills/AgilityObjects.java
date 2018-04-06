@@ -1,4 +1,4 @@
-package paint.agility;
+package paint.skills;
 
 import hooks.accessors.DecorativeObject;
 import hooks.accessors.GameObject;
@@ -35,7 +35,7 @@ public class AgilityObjects {
 	public static GameObject CANIFIS_6;
 	public static GameObject CANIFIS_7;
 	public static GameObject CANIFIS_8;
-	
+
 	public static DecorativeObject FALADOR_1;
 	public static GroundObject FALADOR_2;
 	public static GameObject FALADOR_3;
@@ -49,7 +49,7 @@ public class AgilityObjects {
 	public static GameObject FALADOR_11;
 	public static GameObject FALADOR_12;
 	public static GameObject FALADOR_13;
-	
+
 	public static DecorativeObject SEERS_1;
 	private static GameObject SEERS_2;
 	public static GroundObject SEERS_3;
@@ -57,7 +57,6 @@ public class AgilityObjects {
 	private static GameObject SEERS_5;
 	private static GameObject SEERS_6;
 
-	
 	public static void checkAgilityObjects(Tile t) {
 		for (GameObject go : t.getObjects()) {
 			if (go != null) {
@@ -144,7 +143,7 @@ public class AgilityObjects {
 					CANIFIS_8 = go;
 					ObjectManager.addGameObject(CANIFIS_8);
 					break;
-					
+
 				case 10836:
 					FALADOR_3 = go;
 					ObjectManager.addGameObject(FALADOR_3);
@@ -207,8 +206,7 @@ public class AgilityObjects {
 
 		if (t != null) {
 			if (t.getDecorativeObject() != null) {
-				if (ObjectManager.decorativeObjects
-						.containsKey(t.getDecorativeObject().getID())) {
+				if (ObjectManager.decorativeObjects.containsKey(t.getDecorativeObject().getID())) {
 					return;
 				}
 				switch (t.getDecorativeObject().getID()) {
@@ -227,17 +225,17 @@ public class AgilityObjects {
 					VARROCK_1 = t.getDecorativeObject();
 					ObjectManager.addDecorativeObject(VARROCK_1);
 					break;
-					
+
 				case 10833:
 					FALADOR_1 = t.getDecorativeObject();
 					ObjectManager.addDecorativeObject(FALADOR_1);
 					break;
-					
+
 				case 11373:
 					SEERS_1 = t.getDecorativeObject();
 					ObjectManager.addDecorativeObject(SEERS_1);
 					break;
-				}				
+				}
 			}
 		}
 
@@ -264,7 +262,7 @@ public class AgilityObjects {
 						AL_KHARID_7.plane = 3;
 						ObjectManager.addGroundObject(AL_KHARID_7);
 						break;
-						
+
 					case 10834:
 						FALADOR_2 = t.getGroundObject();
 						FALADOR_2.plane = 3;
@@ -275,7 +273,7 @@ public class AgilityObjects {
 						FALADOR_7.plane = 3;
 						ObjectManager.addGroundObject(FALADOR_7);
 						break;
-						
+
 					case 11378:
 						SEERS_3 = t.getGroundObject();
 						SEERS_3.plane = 2;

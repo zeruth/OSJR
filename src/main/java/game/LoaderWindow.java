@@ -56,7 +56,6 @@ public class LoaderWindow extends JFrame {
 			} catch (Exception e) {
 			}
 
-
 			this.menuHandler = new MenuHandler(this, game);
 			this.setJMenuBar(this.menuHandler.makeJMenuBar());
 

@@ -3,19 +3,20 @@ package hooks.helpers;
 import hooks.Hooks;
 
 public class Skill {
-	
+
 	public static double getLevelUpPercentage(int skillID) {
 		int xpForNextLevel = getXpForNextLevel(Hooks.client.getRealSkillLevels()[skillID]);
-		int xpForCurrentLevel = getXpForNextLevel(Hooks.client.getRealSkillLevels()[skillID]-1);
+		int xpForCurrentLevel = getXpForNextLevel(Hooks.client.getRealSkillLevels()[skillID] - 1);
 		int currentXp = Hooks.client.getExperiences()[skillID];
-		float percentage = ((float)(currentXp-xpForCurrentLevel) / (float)(xpForNextLevel-xpForCurrentLevel))*100;
-		if (currentXp==0) {
+		float percentage = ((float) (currentXp - xpForCurrentLevel) / (float) (xpForNextLevel - xpForCurrentLevel))
+				* 100;
+		if (currentXp == 0) {
 			return 0;
 		}
 		return roundDown5(percentage);
-		
+
 	}
-	
+
 	public static int getXpForNextLevel(int currentLevel) {
 		switch (currentLevel) {
 		case 1:
@@ -214,13 +215,11 @@ public class Skill {
 			return 11805606;
 		case 98:
 			return 13034431;
-			
-			
-			
+
 		}
 		return -1;
 	}
-	
+
 	public static String getNameForID(int skillID) {
 		switch (skillID) {
 		case 0:
@@ -272,8 +271,8 @@ public class Skill {
 		}
 		return null;
 	}
-	
+
 	public static double roundDown5(double d) {
-	    return (long) (d * 1e5) / 1e5;
+		return (long) (d * 1e5) / 1e5;
 	}
 }

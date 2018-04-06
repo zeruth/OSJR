@@ -251,10 +251,9 @@ public class DiscordRichPresence {
 	public DiscordRichPresence() {
 	}
 
-	DiscordRichPresence(String state, String details, long startTimestamp, long endTimestamp,
-			String largeImageKey, String largeImageText, String smallImageKey, String smallImageText, String partyId,
-			int partySize, int partyMax, String matchSecret, String joinSecret, String spectateSecret,
-			boolean instance) {
+	DiscordRichPresence(String state, String details, long startTimestamp, long endTimestamp, String largeImageKey,
+			String largeImageText, String smallImageKey, String smallImageText, String partyId, int partySize,
+			int partyMax, String matchSecret, String joinSecret, String spectateSecret, boolean instance) {
 		this.state = state;
 		this.details = details;
 		this.startTimestamp = startTimestamp;

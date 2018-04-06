@@ -1,4 +1,4 @@
-package paint.listeners;
+package paint;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -7,35 +7,35 @@ import java.awt.Graphics2D;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
+import hooks.accessors.DecorativeObject;
 import hooks.accessors.Tile;
-import hooks.accessors.WallObject;
 import hooks.helpers.LocalPoint;
 import hooks.helpers.Perspective;
 import hooks.helpers.Point;
 
-public class WallObjects implements PaintListener {
+public class DecorativeObjects implements PaintListener {
 
-	public WallObjects(Client game) {
+	public DecorativeObjects(Client game) {
 	}
 
 	@Override
 	public void onRepaint(Graphics g) {
 		g.setColor(Color.yellow);
-		if (Settings.SHOW_WALLOBJECT_IDS)
+		if (Settings.SHOW_DECORATIVEOBJECT_IDS)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
 					for (Tile t : Client.getRegion().getTiles()) {
-						WallObject wo = t.getWallObject();
-						if (wo != null) {
-							String name = "" + wo.getID() + "p: " + 0 + " x:" + wo.getX() + " y:" + wo.getY();
+						if (t.getDecorativeObject() != null) {
+							DecorativeObject o = t.getDecorativeObject();
+							String name = "" + t.getDecorativeObject().getID() + "p: " + 0 + " x:" + o.getX() + " y:"
+									+ o.getY();
 							Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
-									new LocalPoint(wo.getX(), wo.getY()), name, 0);
+									new LocalPoint(o.getX(), o.getY()), name, 0);
 							if (p != null && name != null && name.compareTo("null") != 0)
 								g.drawString(name, p.getX(), p.getY());
 						}
 					}
 				}
-
 	}
 
 }

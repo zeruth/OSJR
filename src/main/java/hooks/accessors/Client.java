@@ -70,7 +70,7 @@ public class Client extends RSClass {
 	public int[] getRealSkillLevels() {
 		return (int[]) getValue(getField("realSkillLevels"));
 	}
-	
+
 	public int[] getExperiences() {
 		return (int[]) getValue(getField("skillExperiences"));
 	}
@@ -160,7 +160,7 @@ public class Client extends RSClass {
 	public boolean isResized() {
 		return (boolean) getValue(getField("isResized"));
 	}
-	
+
 	public static ClanMemberManager getClanMemberManager() {
 		return Hooks.gameEngine.getClanMemberManager();
 	}

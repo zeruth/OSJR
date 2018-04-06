@@ -32,7 +32,7 @@ public class JarInjector {
 
 		try {
 			this.injectedJar = new File("./resources/gamepack_injected.jar");
-			try (JarOutputStream jos = new JarOutputStream(new FileOutputStream(this.injectedJar))){
+			try (JarOutputStream jos = new JarOutputStream(new FileOutputStream(this.injectedJar))) {
 				for (ClassNode cn : this.classnodes.values()) {
 					ClassWriter cw = new ClassWriter(1);
 					cn.accept(cw);

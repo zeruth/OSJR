@@ -19,18 +19,19 @@ import hooks.Hooks;
 import hooks.accessors.Client;
 import hooks.accessors.Region;
 import hooks.helpers.ObjectManager;
+import paint.ActorNames;
+import paint.DecorativeObjects;
+import paint.FpsPaintListener;
+import paint.GameObjects;
+import paint.GroundObjects;
+import paint.InputListeners;
 import paint.MenuHandler;
-import paint.agility.AgilityOverlay;
-import paint.listeners.ActorNames;
-import paint.listeners.DecorativeObjects;
-import paint.listeners.FpsPaintListener;
-import paint.listeners.GameObjects;
-import paint.listeners.GroundObjects;
-import paint.listeners.InputListeners;
-import paint.listeners.PaintListener;
-import paint.listeners.TextPaintListener;
-import paint.listeners.WallObjects;
-import paint.listeners.XpGlobe;
+import paint.PaintListener;
+import paint.TextPaintListener;
+import paint.WallObjects;
+import paint.XpGlobe;
+import paint.skills.AgilityOverlay;
+import paint.skills.FishingOverlay;
 import reflection.JarLoader;
 
 public class Game extends Canvas implements Runnable {
@@ -50,7 +51,7 @@ public class Game extends Canvas implements Runnable {
 	public static ThreadGroup threadGroup;
 	public static boolean vanilla = false;
 	public ObjectManager objectManager = new ObjectManager();
-	
+
 	Graphics2D g2d;
 	Graphics paintGraphics;
 	private Rectangle r;
@@ -60,7 +61,7 @@ public class Game extends Canvas implements Runnable {
 		for (String s : args) {
 			if (s.compareTo("vanilla") == 0) {
 				vanilla = true;
-			} else if (s.compareTo("debug")==0) {
+			} else if (s.compareTo("debug") == 0) {
 				debug = true;
 			}
 		}
@@ -128,7 +129,8 @@ public class Game extends Canvas implements Runnable {
 						Game.this.paintListeners.add(new DecorativeObjects(Hooks.client));
 						Game.this.paintListeners.add(new WallObjects(Hooks.client));
 
-						Game.this.paintListeners.add(new AgilityOverlay(Hooks.client));
+						Game.this.paintListeners.add(new AgilityOverlay());
+						Game.this.paintListeners.add(new FishingOverlay());
 						Game.this.paintListeners.add(new XpGlobe());
 						Game.this.objectManager.t.start();
 					} catch (Exception e) {
@@ -186,8 +188,9 @@ public class Game extends Canvas implements Runnable {
 
 			this.r = this.g2d.getClipBounds();
 			if (this.loading) {
-				this.g2d.drawImage(this.gameImage, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width,
-						this.r.y + this.r.height, null);
+				this.g2d.drawImage(this.gameImage, this.r.x, this.r.y, this.r.x + this.r.width,
+						this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height,
+						null);
 				return;
 			}
 
@@ -195,8 +198,9 @@ public class Game extends Canvas implements Runnable {
 				this.paintImage.flush();
 
 				this.paintGraphics = this.paintImage.getGraphics();
-				this.paintGraphics.drawImage(this.gameImage, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width,
-						this.r.y + this.r.height, null);
+				this.paintGraphics.drawImage(this.gameImage, this.r.x, this.r.y, this.r.x + this.r.width,
+						this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height,
+						null);
 
 				for (PaintListener pl : this.paintListeners) {
 					pl.onRepaint(this.paintGraphics);
@@ -216,8 +220,9 @@ public class Game extends Canvas implements Runnable {
 					}
 				}
 
-				this.g2d.drawImage(this.paintImage, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width,
-						this.r.y + this.r.height, null);
+				this.g2d.drawImage(this.paintImage, this.r.x, this.r.y, this.r.x + this.r.width,
+						this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height,
+						null);
 				this.paintGraphics.dispose();
 			}
 		} catch (RasterFormatException ignored) {
@@ -247,8 +252,8 @@ public class Game extends Canvas implements Runnable {
 					repaint();
 					Thread.sleep(1000 / 50);
 					if (!hasFocus()) {
-						if (MenuHandler.colorPick!=null)
-						 if (!MenuHandler.colorPick.isVisible())
+						if (MenuHandler.colorPick != null)
+							if (!MenuHandler.colorPick.isVisible())
 								requestFocus();
 					}
 

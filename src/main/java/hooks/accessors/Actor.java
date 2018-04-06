@@ -1,7 +1,10 @@
 package hooks.accessors;
 
+import java.awt.Polygon;
+
 import hooks.Hooks;
 import hooks.helpers.LocalPoint;
+import hooks.helpers.Perspective;
 
 public class Actor extends Renderable {
 
@@ -24,5 +27,9 @@ public class Actor extends Renderable {
 
 	public int getY() {
 		return (int) getValue(getField("y")); //$NON-NLS-1$
+	}
+
+	public Polygon getTileAreaOnScreen() {
+		return Perspective.getCanvasTilePoly(Hooks.client, getLocalLocation());
 	}
 }

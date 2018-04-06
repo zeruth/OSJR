@@ -13,7 +13,7 @@ public class SoundTaskDataProvider extends RSClass {
 			this.obfuscatedName = Hooks.soundTaskDataProvider.obfuscatedName;
 		}
 	}
-	
+
 	public Player getLocalPlayer() {
 		this.reference = null;
 		return new Player(getValue(getField("localPlayer")));

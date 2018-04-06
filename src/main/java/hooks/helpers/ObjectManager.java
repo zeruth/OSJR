@@ -10,24 +10,23 @@ import hooks.accessors.DecorativeObject;
 import hooks.accessors.GameObject;
 import hooks.accessors.GroundObject;
 import hooks.accessors.Tile;
-import paint.agility.AgilityObjects;
+import paint.skills.AgilityObjects;
 
 public class ObjectManager {
-	
-	public static Color fillColor = new Color(Color.YELLOW.getBlue(), Color.YELLOW.getGreen(), Color.YELLOW.getRed(), 50);
+
+	public static Color fillColor = new Color(Color.YELLOW.getBlue(), Color.YELLOW.getGreen(), Color.YELLOW.getRed(),
+			50);
 	public static Color outlineColor = Color.YELLOW;
-	
+
 	public int basex = 0, basey = 0;
 	static int[] i = new int[30000];
-	
+
 	public static HashMap<Integer, GameObject> gameObjects = new HashMap<>();
 	public static HashMap<Integer, DecorativeObject> decorativeObjects = new HashMap<>();
 	public static HashMap<Integer, GroundObject> groundObjects = new HashMap<>();
-	
+
 	public AgilityObjects agilityObjects = new AgilityObjects();
-	
-	
-	
+
 	public Thread t = new Thread(Game.threadGroup, new Runnable() {
 
 		@Override
@@ -36,7 +35,8 @@ public class ObjectManager {
 				if (Hooks.client != null) {
 					if (Client.isLoaded())
 						if (Hooks.client.isLoggedIn()) {
-							if (ObjectManager.this.basex != Client.getBaseX() || ObjectManager.this.basey != Client.getBaseY()) {
+							if (ObjectManager.this.basex != Client.getBaseX()
+									|| ObjectManager.this.basey != Client.getBaseY()) {
 								try {
 									Thread.sleep(100);
 								} catch (InterruptedException e) {
@@ -68,7 +68,6 @@ public class ObjectManager {
 			}
 		}
 	});
-	
 
 	public static void addGameObject(GameObject d) {
 		if (i[d.getID()] != 1) {
@@ -90,7 +89,7 @@ public class ObjectManager {
 			i[d.getID()] = 1;
 		}
 	}
-	
+
 	public static void resetObjects() {
 		i = new int[30000];
 		gameObjects = new HashMap<>();

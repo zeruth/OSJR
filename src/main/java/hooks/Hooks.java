@@ -106,7 +106,7 @@ public class Hooks {
 			} else if (c.name.compareTo("class28") == 0) {
 				class28 = new Class28(null);
 				temp = class28;
-			}  else if (c.name.compareTo("class33") == 0) {
+			} else if (c.name.compareTo("class33") == 0) {
 				class33 = new Class33(null);
 				temp = class33;
 			} else if (c.name.compareTo("class38") == 0) {
@@ -229,7 +229,7 @@ public class Hooks {
 
 	public static RSClass[] main() {
 		Gson gson = new GsonBuilder().create();
-		try (FileReader fr = new FileReader(new File("./resources/Hooks.json"))){
+		try (FileReader fr = new FileReader(new File("./resources/Hooks.json"))) {
 			RSClass[] c = gson.fromJson(fr, RSClass[].class);
 			fr.close();
 			return c;

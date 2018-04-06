@@ -14,7 +14,7 @@ public class GameObject extends RSClass {
 			this.obfuscatedName = Hooks.gameObject.obfuscatedName;
 		}
 	}
-	
+
 	public GameObject() {
 		this.reference = null;
 		if (Hooks.gameObject != null) {
@@ -60,7 +60,7 @@ public class GameObject extends RSClass {
 	public int getY() {
 		return (int) getValue(getField("y"));
 	}
-	
+
 	public int getCameraZ() {
 		return (int) getValue(getField("cameraZ"));
 	}

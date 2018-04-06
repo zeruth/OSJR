@@ -23,7 +23,8 @@ public class DecorativeObject extends RSClass {
 			this.fields = Hooks.decorativeObject.fields;
 			this.name = Hooks.decorativeObject.name;
 			this.obfuscatedName = Hooks.decorativeObject.obfuscatedName;
-		}	}
+		}
+	}
 
 	public java.awt.geom.Area getClickbox() {
 		return Perspective.getClickbox(Hooks.client, getModel(), getOrientation(), getX(), getY());

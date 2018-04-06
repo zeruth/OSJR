@@ -1,4 +1,4 @@
-package paint.listeners;
+package paint;
 
 import java.awt.Graphics;
 import java.util.EventListener;

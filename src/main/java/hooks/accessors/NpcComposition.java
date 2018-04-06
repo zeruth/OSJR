@@ -23,5 +23,4 @@ public class NpcComposition extends RSClass {
 			return "null";
 		return (String) getValue(getField("name"));
 	}
-
 }
