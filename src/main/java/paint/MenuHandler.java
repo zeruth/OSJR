@@ -26,7 +26,9 @@ public class MenuHandler implements ActionListener {
 	private JMenuItem actorNames;
 
 	private JMenuItem agilityOverlay;
-	private JMenuItem fishingOverlay = new JMenuItem("Fishing");
+	private JMenuItem fishingNetBait = new JMenuItem("Small Net / Bait");
+	private JMenuItem fishingCageHarpoon = new JMenuItem("Cage / Harpoon");
+	private JMenuItem fishingNetHarpoon = new JMenuItem("Big Net / Harpoon");
 
 	private JMenuItem debug;
 	private JMenuItem decorativeObjects;
@@ -73,6 +75,7 @@ public class MenuHandler implements ActionListener {
 	// Settings
 	private JMenu settingsMenu;
 	private JMenu skillOverlays;
+	private JMenu fishingRoot = new JMenu("Fishing");
 	private JMenuItem updateStatus;
 
 	public JFrame updateStatusWindow;
@@ -119,6 +122,9 @@ public class MenuHandler implements ActionListener {
 		this.colorNPCName.addActionListener(this);
 		this.colorPlayerName.addActionListener(this);
 		this.colorClanMateName.addActionListener(this);
+		this.fishingRoot.add(this.fishingNetBait);
+		this.fishingRoot.add(this.fishingCageHarpoon);
+		this.fishingRoot.add(this.fishingNetHarpoon);
 
 		this.colorPicker.add(this.colorOutline);
 		this.colorPicker.add(this.colorFill);
@@ -129,7 +135,11 @@ public class MenuHandler implements ActionListener {
 		this.updateStatus.addActionListener(this);
 
 		this.agilityOverlay.addActionListener(this);
-		this.fishingOverlay.addActionListener(this);
+		this.fishingNetBait.addActionListener(this);
+		this.fishingCageHarpoon.addActionListener(this);
+		this.fishingNetHarpoon.addActionListener(this);
+		this.colorPlayerName.addActionListener(this);
+		this.colorClanMateName.addActionListener(this);
 
 		this.settingsMenu.add(this.fps);
 		this.settingsMenu.add(this.actorNames);
@@ -142,7 +152,7 @@ public class MenuHandler implements ActionListener {
 		this.discordMenu.add(this.updateStatus);
 
 		this.skillOverlays.add(this.agilityOverlay);
-		this.skillOverlays.add(this.fishingOverlay);
+		this.skillOverlays.add(this.fishingRoot);
 
 		this.xpGlobe.add(this.globeClear);
 		this.xpGlobe.add(this.globeAttack);
@@ -219,8 +229,18 @@ public class MenuHandler implements ActionListener {
 			Settings.SHOW_WALLOBJECT_IDS = !Settings.SHOW_WALLOBJECT_IDS;
 		} else if (e.getSource().equals(this.agilityOverlay)) {
 			Settings.SHOW_AGILITY_OVERLAY = !Settings.SHOW_AGILITY_OVERLAY;
-		} else if (e.getSource().equals(this.fishingOverlay)) {
-			Settings.SHOW_FISHING_OVERLAY = !Settings.SHOW_FISHING_OVERLAY;
+		} else if (e.getSource().equals(this.fishingNetBait)) {
+			if (!Settings.SHOW_FISHING_OVERLAY)
+				Settings.SHOW_FISHING_OVERLAY = true;
+			Settings.SHOW_FISHING_NET_BAIT = !Settings.SHOW_FISHING_NET_BAIT;
+		} else if (e.getSource().equals(this.fishingCageHarpoon)) {
+			if (!Settings.SHOW_FISHING_OVERLAY)
+				Settings.SHOW_FISHING_OVERLAY = true;
+			Settings.SHOW_FISHING_CAGE_HARPOON = !Settings.SHOW_FISHING_CAGE_HARPOON;
+		} else if (e.getSource().equals(this.fishingNetHarpoon)) {
+			if (!Settings.SHOW_FISHING_OVERLAY)
+				Settings.SHOW_FISHING_OVERLAY = true;
+			Settings.SHOW_FISHING_NET_HARPOON = !Settings.SHOW_FISHING_NET_HARPOON;
 		} else if (e.getSource().equals(this.updateStatus)) {
 			if (this.updateStatusWindow == null)
 				this.updateStatusWindow = new UpdateStatus();

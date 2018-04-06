@@ -37,11 +37,11 @@ public class ActorNames implements PaintListener {
 
 	@Override
 	public void onRepaint(Graphics g) {
-		if (this.g2d == null)
-			this.g2d = (Graphics2D) g;
-		if (Hooks.client != null)
-			if (Hooks.client.isLoggedIn()) {
-				if (Settings.SHOW_PLAYER_NAMES) {
+		if (Settings.SHOW_PLAYER_NAMES) {
+			if (this.g2d == null)
+				this.g2d = (Graphics2D) g;
+			if (Hooks.client != null)
+				if (Hooks.client.isLoggedIn()) {
 					g.setColor(playerNameColor);
 					Player[] ps = Hooks.client.getCachedPlayers();
 					for (Player pl : ps) {
@@ -75,24 +75,24 @@ public class ActorNames implements PaintListener {
 					}
 				}
 
-				g.setColor(npcNameColor);
-				Npc[] ns = Hooks.client.getCachedNpcs();
-				if (ns != null) {
-					for (Npc pl : ns) {
-						if (pl != null) {
-							String name = pl.getNpcComposition().getName();
-							if (name != null) {
-								if (!name.contains("Fishing")) {
-									Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
-											new LocalPoint(pl.asActor().getX(), pl.asActor().getY()), name, 190);
-									if (p != null && name != null && name.compareTo("null") != 0) //$NON-NLS-1$
-										g.drawString(name, p.getX(), p.getY());
-								}
+			g.setColor(npcNameColor);
+			Npc[] ns = Hooks.client.getCachedNpcs();
+			if (ns != null) {
+				for (Npc pl : ns) {
+					if (pl != null) {
+						String name = pl.getNpcComposition().getName();
+						if (name != null) {
+							if (!name.contains("Fishing")) {
+								Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
+										new LocalPoint(pl.asActor().getX(), pl.asActor().getY()), name, 190);
+								if (p != null && name != null && name.compareTo("null") != 0) //$NON-NLS-1$
+									g.drawString(name, p.getX(), p.getY());
 							}
 						}
 					}
 				}
 			}
+		}
 	}
 
 	@SuppressWarnings("resource")
