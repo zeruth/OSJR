@@ -4,6 +4,8 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Player extends RSClass {
+	
+	int cameraX;
 
 	public Player(Object reference) {
 		this.reference = reference;
@@ -56,6 +58,7 @@ public class Player extends RSClass {
 	}
 
 	public int getCameraX() {
-		return (int) getValue(getField("cameraX"));
+		this.cameraX = (int) getValue(getField("cameraX"));
+		return this.cameraX;
 	}
 }

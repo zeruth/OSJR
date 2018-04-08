@@ -5,6 +5,15 @@ import hooks.helpers.Perspective;
 import hooks.model.RSClass;
 
 public class GameObject extends RSClass {
+	
+	int cameraZ;
+	int x;
+	int y;
+	int id;
+	int plane;
+	Renderable renderable1;
+	Model model;
+	java.awt.geom.Area clickbox;
 
 	public GameObject(Object reference) {
 		this.reference = reference;
@@ -25,44 +34,52 @@ public class GameObject extends RSClass {
 	}
 
 	public java.awt.geom.Area getClickbox() {
-		return Perspective.getClickbox(Hooks.client, getModel(), 0, getX(), getY());
+		this.clickbox = Perspective.getClickbox(Hooks.client, getModel(), 0, getX(), getY());
+		return this.clickbox;
 	}
 
 	public int getHash() {
-		return (int) getValue(getField("hash"));
+		this.id = (int) getValue(getField("hash"));
+		return this.id;
 	}
 
 	public int getID() {
-		int hash = getHash();
-		return hash >> 14 & 32767;
+		this.id = getHash();
+		return this.id >> 14 & 32767;
 	}
 
 	public Model getModel() {
-		if (getRenderable1().reference != null) {
-			return new Model(getValue(getField("renderable")));
+		if (this.renderable1.reference != null) {
+			this.model = new Model(getValue(getField("renderable")));
+			return this.model;
 		}
 		return null;
 
 	}
 
 	public int getPlane() {
-		return (int) getValue(getField("plane"));
+		this.plane = (int) getValue(getField("plane"));
+		return this.plane;
 	}
 
 	public Renderable getRenderable1() {
-		return new Renderable(getValue(getField("renderable")));
+		this.renderable1 = new Renderable(getValue(getField("renderable")));
+		return this.renderable1;
 	}
 
 	public int getX() {
-		return (int) getValue(getField("x"));
+		this.x = (int) getValue(getField("x"));
+		return this.x;
 	}
 
 	public int getY() {
-		return (int) getValue(getField("y"));
+		this.y = (int) getValue(getField("y"));
+		return this.y;
 	}
 
 	public int getCameraZ() {
-		return (int) getValue(getField("cameraZ"));
+		this.cameraZ = (int) getValue(getField("cameraZ"));
+		return this.cameraZ;
 	}
 
 }

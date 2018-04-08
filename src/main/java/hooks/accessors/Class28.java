@@ -4,6 +4,8 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Class28 extends RSClass {
+	
+	int cameraYaw;
 
 	public Class28(Object reference) {
 		this.reference = reference;
@@ -15,6 +17,7 @@ public class Class28 extends RSClass {
 	}
 
 	public int getCameraYaw() {
-		return (int) getValue(getField("cameraYaw"));
+		this.cameraYaw = (int) getValue(getField("cameraYaw"));
+		return this.cameraYaw;
 	}
 }

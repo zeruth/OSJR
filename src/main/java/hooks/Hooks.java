@@ -14,6 +14,8 @@ import hooks.accessors.*;
 import hooks.model.RSClass;
 
 public class Hooks {
+	
+	static RSClass temp;
 
 	public static Actor actor;
 
@@ -68,7 +70,7 @@ public class Hooks {
 	public static WorldMapData worldMapData;
 
 	public static void assignHook(RSClass c, String className) {
-		RSClass temp = null;
+		temp = null;
 		if (c != null)
 			if (c.name.compareTo("Area") == 0) {
 				area = new Area(null);

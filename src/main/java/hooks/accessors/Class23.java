@@ -4,6 +4,8 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Class23 extends RSClass {
+	
+	int baseY;
 
 	public Class23(Object reference) {
 		this.reference = reference;
@@ -15,6 +17,7 @@ public class Class23 extends RSClass {
 	}
 
 	public int getBaseY() {
-		return (int) getValue(getField("baseY"));
+		this.baseY = (int) getValue(getField("baseY"));
+		return this.baseY;
 	}
 }

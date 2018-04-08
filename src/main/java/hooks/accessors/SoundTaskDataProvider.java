@@ -4,6 +4,7 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class SoundTaskDataProvider extends RSClass {
+	Player localPlayer;
 
 	public SoundTaskDataProvider(Object reference) {
 		this.reference = reference;
@@ -16,6 +17,7 @@ public class SoundTaskDataProvider extends RSClass {
 
 	public Player getLocalPlayer() {
 		this.reference = null;
-		return new Player(getValue(getField("localPlayer")));
+		this.localPlayer = new Player(getValue(getField("localPlayer")));
+		return this.localPlayer;
 	}
 }

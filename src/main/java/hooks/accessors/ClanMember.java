@@ -4,6 +4,8 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class ClanMember extends RSClass {
+	
+	ChatPlayer chatPLayer;
 
 	public ClanMember(Object reference) {
 		this.reference = reference;
@@ -15,7 +17,8 @@ public class ClanMember extends RSClass {
 	}
 
 	public ChatPlayer asChatPlayer() {
-		return new ChatPlayer(this.reference);
+		this.chatPLayer = new ChatPlayer(this.reference);
+		return this.chatPLayer;
 	}
 
 }

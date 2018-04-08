@@ -4,6 +4,8 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class ClanMemberManager extends RSClass {
+	
+	NameableContainer nameableContainer;
 
 	public ClanMemberManager(Object reference) {
 		this.reference = reference;
@@ -15,7 +17,8 @@ public class ClanMemberManager extends RSClass {
 	}
 
 	public NameableContainer asNameableContainer() {
-		return new NameableContainer(this.reference);
+		this.nameableContainer = new NameableContainer(this.reference);
+		return this.nameableContainer;
 	}
 
 }

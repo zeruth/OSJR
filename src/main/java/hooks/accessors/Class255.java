@@ -4,6 +4,8 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Class255 extends RSClass {
+	
+	Region region;
 
 	public Class255(Object reference) {
 		this.reference = reference;
@@ -15,7 +17,8 @@ public class Class255 extends RSClass {
 	}
 
 	public Region getRegion() {
-		return new Region(getValue(getField("region")));
+		this.region = new Region(getValue(getField("region")));
+		return this.region;
 	}
 
 }

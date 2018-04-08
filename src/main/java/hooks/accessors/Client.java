@@ -7,6 +7,17 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Client extends RSClass {
+	
+	int loginState;
+	int gameState;
+	int scale;
+	
+	Player[] cachedPlayers;
+	Npc[] cachedNPCs;
+	
+	Object[] tempObjects;
+	Player tempPlayer;
+	Npc tempNPC;
 
 	public static boolean isLoaded() {
 		try {
@@ -35,33 +46,35 @@ public class Client extends RSClass {
 	}
 
 	public Npc[] getCachedNpcs() {
-		Object[] os = (Object[]) getValue(getField("cachedNPCs"));
-		if (os != null) {
+		this.tempObjects = (Object[]) getValue(getField("cachedNPCs"));
+		if (this.tempObjects != null) {
 			int i = 0;
-			Npc[] ps = new Npc[os.length];
-			for (Object o : os) {
+			this.cachedNPCs = new Npc[this.tempObjects.length];
+			for (Object o : this.tempObjects) {
 				if (o != null) {
-					ps[i] = new Npc(o);
+					this.tempNPC =  new Npc(o);
+					this.cachedNPCs[i] = this.tempNPC;
 					i++;
 				}
 			}
-			return ps;
+			return this.cachedNPCs;
 		}
 		return null;
 	}
 
 	public Player[] getCachedPlayers() {
-		Object[] os = (Object[]) getValue(getField("cachedPlayers"));
-		if (os != null) {
+		this.tempObjects = (Object[]) getValue(getField("cachedPlayers"));
+		if (this.tempObjects != null) {
 			int i = 0;
-			Player[] ps = new Player[os.length];
-			for (Object o : os) {
+			this.cachedPlayers = new Player[this.tempObjects.length];
+			for (Object o : this.tempObjects) {
 				if (o != null) {
-					ps[i] = new Player(o);
+					this.tempPlayer = new Player(o);
+					this.cachedPlayers[i] = this.tempPlayer;
 					i++;
 				}
 			}
-			return ps;
+			return this.cachedPlayers;
 		}
 		return null;
 
@@ -100,7 +113,8 @@ public class Client extends RSClass {
 	}
 
 	public int getGameState() {
-		return (int) getValue(getField("gameState"));
+		this.gameState = (int) getValue(getField("gameState"));
+		return this.gameState;
 	}
 
 	public static Player getLocalPlayer() {
@@ -108,7 +122,8 @@ public class Client extends RSClass {
 	}
 
 	public int getLoginState() {
-		return (int) getValue(getField("loginState"));
+		this.loginState = (int) getValue(getField("loginState"));
+		return (int) this.loginState;
 	}
 
 	public int getMapAngle() {
@@ -126,7 +141,8 @@ public class Client extends RSClass {
 	}
 
 	public int getScale() {
-		return (int) getValue(getField("scale"));
+		this.scale = (int) getValue(getField("scale"));
+		return this.scale;
 	}
 
 	public static int getSetting(int i) {

@@ -4,6 +4,9 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Class62 extends RSClass {
+	
+	int[][][] tileHeights;
+	byte[][][] tileSettings;
 
 	public Class62(Object reference) {
 		this.reference = reference;
@@ -15,10 +18,12 @@ public class Class62 extends RSClass {
 	}
 
 	public int[][][] getTileHeights() {
-		return (int[][][]) getValue(getField("tileHeights"));
+		this.tileHeights = (int[][][]) getValue(getField("tileHeights"));
+		return this.tileHeights;
 	}
 
 	public byte[][][] getTileSettings() {
-		return (byte[][][]) getValue(getField("tileSettings"));
+		this.tileSettings = (byte[][][]) getValue(getField("tileSettings")); 
+		return this.tileSettings;
 	}
 }

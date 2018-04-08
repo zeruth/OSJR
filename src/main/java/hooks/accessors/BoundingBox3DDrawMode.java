@@ -4,6 +4,8 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class BoundingBox3DDrawMode extends RSClass {
+	
+	int plane;
 
 	public BoundingBox3DDrawMode(Object reference) {
 		this.reference = reference;
@@ -15,6 +17,7 @@ public class BoundingBox3DDrawMode extends RSClass {
 	}
 
 	public int getPlane() {
-		return (int) getValue(getField("plane"));
+		this.plane = (int) getValue(getField("plane"));
+		return this.plane;
 	}
 }

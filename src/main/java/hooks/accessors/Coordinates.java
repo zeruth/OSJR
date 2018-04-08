@@ -4,6 +4,8 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Coordinates extends RSClass {
+	
+	int plane;
 
 	public Coordinates(Object reference) {
 		this.reference = reference;
@@ -15,6 +17,7 @@ public class Coordinates extends RSClass {
 	}
 
 	public int getPlane() {
-		return (int) getValue(getField("plane"));
+		this.plane = (int) getValue(getField("plane"));
+		return this.plane;
 	}
 }

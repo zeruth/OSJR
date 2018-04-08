@@ -4,6 +4,8 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class ChatPlayer extends RSClass {
+	
+	int rank;
 
 	public ChatPlayer(Object reference) {
 		this.reference = reference;
@@ -15,7 +17,8 @@ public class ChatPlayer extends RSClass {
 	}
 
 	public int getRank() {
-		return (int) getValue(getField("rank"));
+		this.rank = (int) getValue(getField("rank"));;
+		return this.rank;
 	}
 
 }

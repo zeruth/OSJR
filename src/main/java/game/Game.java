@@ -40,20 +40,20 @@ public class Game extends Canvas implements Runnable {
 	public static JarLoader jarLoader;
 	private static final long serialVersionUID = 1L;
 	public static boolean debug;
-	private BufferedImage gameImage;
-	InputListeners inputListeners;
+	private static BufferedImage gameImage;
+	static InputListeners inputListeners;
 	public boolean loading = true;
 	public BufferedImage paintImage;
-	List<PaintListener> paintListeners;
-	private Thread paintThread;
-	private List<TextPaintListener> textPaintListeners;
-	public Region oldRegion = new Region(null);
+	static List<PaintListener> paintListeners;
+	static private Thread paintThread;
+	static private List<TextPaintListener> textPaintListeners;
+	public static Region oldRegion = new Region(null);
 	public static ThreadGroup threadGroup;
 	public static boolean vanilla = false;
 	public ObjectManager objectManager = new ObjectManager();
 
 	Graphics2D g2d;
-	Graphics paintGraphics;
+	static Graphics paintGraphics;
 	private Rectangle r;
 	private String[] lines;
 
@@ -87,7 +87,7 @@ public class Game extends Canvas implements Runnable {
 
 		} else {
 			threadGroup = new ThreadGroup("RSGame");
-			this.gameImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
+			Game.gameImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
 			this.paintImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
 
 			new Thread(new Runnable() {
@@ -114,24 +114,24 @@ public class Game extends Canvas implements Runnable {
 
 						DiscordManager.run();
 
-						Game.this.inputListeners = new InputListeners(true, applet);
+						Game.inputListeners = new InputListeners(true, applet);
 						requestFocus();
-						addMouseListener(Game.this.inputListeners);
-						addMouseMotionListener(Game.this.inputListeners);
-						addMouseWheelListener(Game.this.inputListeners);
-						addKeyListener(Game.this.inputListeners);
-						addFocusListener(Game.this.inputListeners);
+						addMouseListener(Game.inputListeners);
+						addMouseMotionListener(Game.inputListeners);
+						addMouseWheelListener(Game.inputListeners);
+						addKeyListener(Game.inputListeners);
+						addFocusListener(Game.inputListeners);
 
-						Game.this.paintListeners.add(new FpsPaintListener(Hooks.client));
-						Game.this.paintListeners.add(new ActorNames(Hooks.client));
-						Game.this.paintListeners.add(new GroundObjects(Hooks.client));
-						Game.this.paintListeners.add(new GameObjects(Hooks.client));
-						Game.this.paintListeners.add(new DecorativeObjects(Hooks.client));
-						Game.this.paintListeners.add(new WallObjects(Hooks.client));
+						Game.paintListeners.add(new FpsPaintListener(Hooks.client));
+						Game.paintListeners.add(new ActorNames(Hooks.client));
+						Game.paintListeners.add(new GroundObjects(Hooks.client));
+						Game.paintListeners.add(new GameObjects(Hooks.client));
+						Game.paintListeners.add(new DecorativeObjects(Hooks.client));
+						Game.paintListeners.add(new WallObjects(Hooks.client));
 
-						Game.this.paintListeners.add(new AgilityOverlay());
-						Game.this.paintListeners.add(new FishingOverlay());
-						Game.this.paintListeners.add(new XpGlobe());
+						Game.paintListeners.add(new AgilityOverlay());
+						Game.paintListeners.add(new FishingOverlay());
+						Game.paintListeners.add(new XpGlobe());
 						Game.this.objectManager.t.start();
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -143,11 +143,11 @@ public class Game extends Canvas implements Runnable {
 				}
 			}).start();
 
-			this.paintListeners = new ArrayList<>();
-			this.textPaintListeners = new ArrayList<>();
+			Game.paintListeners = new ArrayList<>();
+			Game.textPaintListeners = new ArrayList<>();
 
-			this.paintThread = new Thread(threadGroup, this, "paint");
-			this.paintThread.start();
+			Game.paintThread = new Thread(threadGroup, this, "paint");
+			Game.paintThread.start();
 
 			this.setSize(765, 503);
 		}
@@ -159,7 +159,7 @@ public class Game extends Canvas implements Runnable {
 	}
 
 	public Graphics gamePaint() {
-		return this.gameImage.getGraphics();
+		return Game.gameImage.getGraphics();
 	}
 
 	public static Applet getApplet() {
@@ -172,9 +172,9 @@ public class Game extends Canvas implements Runnable {
 			if (!this.isVisible())
 				return;
 
-			if (OSRSLauncher.loaderWindow.getHeight() != this.gameImage.getHeight()
-					|| OSRSLauncher.loaderWindow.getWidth() != this.gameImage.getWidth()) {
-				this.gameImage = new BufferedImage(OSRSLauncher.loaderWindow.getWidth(),
+			if (OSRSLauncher.loaderWindow.getHeight() != Game.gameImage.getHeight()
+					|| OSRSLauncher.loaderWindow.getWidth() != Game.gameImage.getWidth()) {
+				Game.gameImage = new BufferedImage(OSRSLauncher.loaderWindow.getWidth(),
 						OSRSLauncher.loaderWindow.getHeight(), BufferedImage.TYPE_INT_RGB);
 				this.paintImage = new BufferedImage(OSRSLauncher.loaderWindow.getWidth(),
 						OSRSLauncher.loaderWindow.getHeight(), BufferedImage.TYPE_INT_RGB);
@@ -188,33 +188,33 @@ public class Game extends Canvas implements Runnable {
 
 			this.r = this.g2d.getClipBounds();
 			if (this.loading) {
-				this.g2d.drawImage(this.gameImage, this.r.x, this.r.y, this.r.x + this.r.width,
+				this.g2d.drawImage(Game.gameImage, this.r.x, this.r.y, this.r.x + this.r.width,
 						this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height,
 						null);
 				return;
 			}
 
-			if (this.gameImage != null) {
+			if (Game.gameImage != null) {
 				this.paintImage.flush();
 
-				this.paintGraphics = this.paintImage.getGraphics();
-				this.paintGraphics.drawImage(this.gameImage, this.r.x, this.r.y, this.r.x + this.r.width,
+				Game.paintGraphics = this.paintImage.getGraphics();
+				Game.paintGraphics.drawImage(Game.gameImage, this.r.x, this.r.y, this.r.x + this.r.width,
 						this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height,
 						null);
 
-				for (PaintListener pl : this.paintListeners) {
-					pl.onRepaint(this.paintGraphics);
+				for (PaintListener pl : Game.paintListeners) {
+					pl.onRepaint(Game.paintGraphics);
 				}
 
-				for (TextPaintListener tpl : this.textPaintListeners) {
+				for (TextPaintListener tpl : Game.textPaintListeners) {
 					int y = 40;
-					this.paintGraphics.setColor(Color.cyan);
+					Game.paintGraphics.setColor(Color.cyan);
 					this.lines = tpl.onTextRepaint();
 					if (this.lines != null) {
 						for (String line : this.lines) {
 							if (line == null)
 								continue;
-							this.paintGraphics.drawString(line, 20, y);
+							Game.paintGraphics.drawString(line, 20, y);
 							y += 15;
 						}
 					}
@@ -223,7 +223,7 @@ public class Game extends Canvas implements Runnable {
 				this.g2d.drawImage(this.paintImage, this.r.x, this.r.y, this.r.x + this.r.width,
 						this.r.y + this.r.height, this.r.x, this.r.y, this.r.x + this.r.width, this.r.y + this.r.height,
 						null);
-				this.paintGraphics.dispose();
+				Game.paintGraphics.dispose();
 			}
 		} catch (RasterFormatException ignored) {
 		}

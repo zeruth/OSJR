@@ -4,6 +4,13 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Region extends RSClass {
+	
+	GameObject[] objects;
+	Tile[] tiles;
+	Object[][][] rsTiles;
+	
+	Object[] tempObjects;
+	Tile tempTile;
 
 	public Region(Object reference) {
 		this.reference = reference;
@@ -15,16 +22,16 @@ public class Region extends RSClass {
 	}
 
 	public GameObject[] getObjects() {
-		Object[] os = (Object[]) getValue(getField("objects"));
+		this.tempObjects = (Object[]) getValue(getField("objects"));
 		int i = 0;
-		GameObject[] gos = new GameObject[os.length];
-		for (Object o : os) {
+		this.objects = new GameObject[this.tempObjects.length];
+		for (Object o : this.tempObjects) {
 			if (o != null) {
-				gos[i] = new GameObject(o);
+				this.objects[i] = new GameObject(o);
 				i++;
 			}
 		}
-		return gos;
+		return this.objects;
 	}
 
 	public Tile getTile(int x, int y) {
@@ -36,10 +43,12 @@ public class Region extends RSClass {
 			int ay = y - by;
 
 			System.out.println(bx + " " + by);
-			Object[][][] rsTiles = (Object[][][]) getValue(getField("tiles"));
+			this.rsTiles = (Object[][][]) getValue(getField("tiles"));
 
-			if (rsTiles[Client.getPlane()][ax][ay] != null)
-				return new Tile(rsTiles[Client.getPlane()][ax][ay]);
+			if (this.rsTiles[Client.getPlane()][ax][ay] != null) {
+				this.tempTile = new Tile(this.rsTiles[Client.getPlane()][ax][ay]);
+			}
+				return this.tempTile;
 		}
 
 		return null;
@@ -48,29 +57,29 @@ public class Region extends RSClass {
 
 	public Tile[] getTiles() {
 		int REGION_SIZE = 104;
-		Object[][][] rsTiles = (Object[][][]) getValue(getField("tiles"));
+		this.rsTiles = (Object[][][]) getValue(getField("tiles"));
 		int z = Client.getPlane();
 		int i = 0;
-		Object[] temp = new Object[20000];
+		this.tempObjects = new Object[20000];
 		for (int x = 0; x < REGION_SIZE; ++x) {
 			for (int y = 0; y < REGION_SIZE; ++y) {
-				Object tile = rsTiles[z][x][y];
+				Object tile = this.rsTiles[z][x][y];
 				if (tile == null) {
 					continue;
 				}
-				temp[i] = tile;
+				this.tempObjects[i] = tile;
 				i++;
 			}
 		}
-		Tile[] tiles = new Tile[i];
+		this.tiles = new Tile[i];
 		int k = 0;
-		for (Object o : temp) {
+		for (Object o : this.tempObjects) {
 			if (o != null) {
-				tiles[k] = new Tile(o);
+				this.tiles[k] = new Tile(o);
 				k++;
 			}
 		}
-		return tiles;
+		return this.tiles;
 	}
 
 }

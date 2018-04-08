@@ -7,6 +7,12 @@ import hooks.helpers.LocalPoint;
 import hooks.helpers.Perspective;
 
 public class Actor extends Renderable {
+	
+	LocalPoint localLocation;
+	int x;
+	int y;
+	Polygon tileAreaonScreen;
+	
 
 	public Actor(Object reference) {
 		super(reference);
@@ -18,18 +24,22 @@ public class Actor extends Renderable {
 	}
 
 	public LocalPoint getLocalLocation() {
-		return new LocalPoint(getX(), getY());
+		this.localLocation = new LocalPoint(getX(), getY());
+		return this.localLocation;
 	}
 
 	public int getX() {
-		return (int) getValue(getField("x")); //$NON-NLS-1$
+		this.x = (int) getValue(getField("x"));
+		return this.x;
 	}
 
 	public int getY() {
-		return (int) getValue(getField("y")); //$NON-NLS-1$
+		this.y = (int) getValue(getField("y"));
+		return this.y;
 	}
 
 	public Polygon getTileAreaOnScreen() {
-		return Perspective.getCanvasTilePoly(Hooks.client, getLocalLocation());
+		this.tileAreaonScreen = Perspective.getCanvasTilePoly(Hooks.client, getLocalLocation());
+		return this.tileAreaonScreen;
 	}
 }
