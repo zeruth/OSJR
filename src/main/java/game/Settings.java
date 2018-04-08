@@ -16,6 +16,8 @@ public class Settings {
 	public static boolean SHOW_FISHING_NET_HARPOON= false;
 	
 	public static boolean SHOW_FISHING_CAGE_HARPOON= false;
+	
+	public static boolean SHOW_FISHING_BARBARIAN= false;
 
 	public static boolean SHOW_DEBUG = false;
 

@@ -68,6 +68,7 @@ public class MenuHandler implements ActionListener {
 	private JMenuItem globeRunecrafting = new JMenuItem("Runecrafting");
 	private JMenuItem globeHunter = new JMenuItem("Hunter");
 	private JMenuItem globeConstruction = new JMenuItem("Construction");
+	private JMenuItem fishingBarbarian = new JMenuItem("Barbarian");
 
 	// Menus
 	private JMenuBar menuBar;
@@ -125,6 +126,7 @@ public class MenuHandler implements ActionListener {
 		this.fishingRoot.add(this.fishingNetBait);
 		this.fishingRoot.add(this.fishingCageHarpoon);
 		this.fishingRoot.add(this.fishingNetHarpoon);
+		this.fishingRoot.add(this.fishingBarbarian);
 
 		this.colorPicker.add(this.colorOutline);
 		this.colorPicker.add(this.colorFill);
@@ -203,6 +205,7 @@ public class MenuHandler implements ActionListener {
 		this.globeRunecrafting.addActionListener(this);
 		this.globeHunter.addActionListener(this);
 		this.globeConstruction.addActionListener(this);
+		this.fishingBarbarian.addActionListener(this);
 
 		this.menuBar.add(this.settingsMenu);
 		this.menuBar.add(this.discordMenu);
@@ -241,6 +244,10 @@ public class MenuHandler implements ActionListener {
 			if (!Settings.SHOW_FISHING_OVERLAY)
 				Settings.SHOW_FISHING_OVERLAY = true;
 			Settings.SHOW_FISHING_NET_HARPOON = !Settings.SHOW_FISHING_NET_HARPOON;
+		} else if (e.getSource().equals(this.fishingBarbarian)) {
+			if (!Settings.SHOW_FISHING_OVERLAY)
+				Settings.SHOW_FISHING_OVERLAY = true;
+			Settings.SHOW_FISHING_BARBARIAN = !Settings.SHOW_FISHING_BARBARIAN;
 		} else if (e.getSource().equals(this.updateStatus)) {
 			if (this.updateStatusWindow == null)
 				this.updateStatusWindow = new UpdateStatus();
