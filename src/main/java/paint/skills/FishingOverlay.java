@@ -4,6 +4,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Polygon;
 
+import game.Game;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Npc;
@@ -25,6 +26,7 @@ public class FishingOverlay implements PaintListener {
 	@Override
 	public void onRepaint(Graphics g) {
 		if (Settings.SHOW_FISHING_OVERLAY) {
+			g.setFont(Game.runescapeFont);
 			if (this.g2d == null)
 				this.g2d = (Graphics2D) g;
 			if (Hooks.client != null)

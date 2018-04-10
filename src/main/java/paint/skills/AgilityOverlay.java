@@ -24,6 +24,7 @@ public class AgilityOverlay implements PaintListener {
 
 	@Override
 	public void onRepaint(Graphics g) {
+		g.setFont(Game.runescapeFont);
 		Color outlineColor = ObjectManager.outlineColor;
 		Color fillColor = ObjectManager.fillColor;
 		g.setColor(outlineColor);

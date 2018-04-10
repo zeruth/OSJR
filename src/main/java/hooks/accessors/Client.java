@@ -133,6 +133,10 @@ public class Client extends RSClass {
 	public static int getPlane() {
 		return Hooks.boundingBox3DDrawMode.getPlane();
 	}
+	
+	public int getWidgetRoot() {
+		return (int) getValue(getField("widgetRoot"));
+	}
 
 	public static Region getRegion() {
 		if (Hooks.class255 == null)

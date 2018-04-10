@@ -3,12 +3,17 @@ package game;
 import java.applet.Applet;
 import java.awt.Canvas;
 import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontFormatException;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.GraphicsEnvironment;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.awt.image.RasterFormatException;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +61,7 @@ public class Game extends Canvas implements Runnable {
 	static Graphics paintGraphics;
 	private Rectangle r;
 	private String[] lines;
+	public static Font runescapeFont;
 
 	public Game(String[] args) {
 		for (String s : args) {
@@ -148,6 +154,23 @@ public class Game extends Canvas implements Runnable {
 
 			Game.paintThread = new Thread(threadGroup, this, "paint");
 			Game.paintThread.start();
+			
+			try {
+			     GraphicsEnvironment ge = 
+			         GraphicsEnvironment.getLocalGraphicsEnvironment();
+			     ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("./resources/Runescape.ttf")));
+			} catch (IOException | FontFormatException e) {
+			     e.printStackTrace();
+			}
+			
+			for (Font f: GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts()) {
+				if (f.getName().compareTo("RuneScape")==0) {
+					Font g = f.deriveFont(16);
+					g = f.deriveFont(Font.BOLD, 16);
+					runescapeFont = g;	
+					System.out.println("[OSRS] Loaded Runescape Font.");
+				}
+			}
 
 			this.setSize(765, 503);
 		}
@@ -158,7 +181,7 @@ public class Game extends Canvas implements Runnable {
 		requestFocus();
 	}
 
-	public Graphics gamePaint() {
+	public static Graphics gamePaint() {
 		return Game.gameImage.getGraphics();
 	}
 

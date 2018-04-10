@@ -10,6 +10,11 @@ import hooks.Hooks;
 import hooks.accessors.Client;
 
 public class FpsPaintListener implements PaintListener {
+	
+	FontMetrics fm;
+	String stringFps;
+	int x;
+	int fps;
 
 	public FpsPaintListener(Client game) {
 	}
@@ -18,21 +23,21 @@ public class FpsPaintListener implements PaintListener {
 	public void onRepaint(Graphics g) {
 		if (Settings.SHOW_FPS) {
 			if (Client.isLoaded()) {
-				FontMetrics fm = g.getFontMetrics();
-				String fps = "" + Hooks.gameEngine.getFps();
-				int x = OSRSLauncher.loaderWindow.getWidth() - fm.stringWidth(fps) - 17;
+				this.fm = g.getFontMetrics();
+				this.stringFps = "" + Hooks.gameEngine.getFps();
+				this.x = OSRSLauncher.loaderWindow.getWidth() - this.fm.stringWidth(this.stringFps) - 17;
 
-				int j = Hooks.gameEngine.getFps();
-				if (j >= 50) {
+				this.fps = Hooks.gameEngine.getFps();
+				if (this.fps >= 50) {
 					g.setColor(Color.cyan);
-				} else if (j >= 40 && j < 50) {
+				} else if (this.fps >= 40 && this.fps < 50) {
 					g.setColor(Color.green);
-				} else if (j >= 30 && j < 40) {
+				} else if (this.fps >= 30 && this.fps < 40) {
 					g.setColor(Color.yellow);
 				} else {
 					g.setColor(Color.red);
 				}
-				g.drawString(fps, x, 15);
+				g.drawString(this.stringFps, this.x, 15);
 			}
 		}
 	}

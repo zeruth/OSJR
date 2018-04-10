@@ -16,6 +16,7 @@ import java.text.DecimalFormat;
 
 import javax.imageio.ImageIO;
 
+import game.Game;
 import game.LoaderWindow;
 import game.OSRSLauncher;
 import hooks.Hooks;
@@ -47,10 +48,10 @@ public class SkillGlobe {
 			int startAngle = 90;
 			Shape circle = new Ellipse2D.Double(centerX, centerY, radiusYY, radiusX);
 			Graphics2D g22 = (Graphics2D) g;
+			g.setFont(Game.runescapeFont.deriveFont(Font.BOLD, 18));
 			g.setColor(Color.DARK_GRAY.darker());
 			g22.setRenderingHints(rh);
 			g22.setStroke(new BasicStroke(3));
-			g22.setFont(new Font(g.getFont().getFontName(), Font.PLAIN, 15));
 			g22.setColor(this.fillColor);
 			RoundRectangle2D skillBackdrop = new RoundRectangle2D.Double(centerX - 32, centerY + 10, 40, 30, 10, 10);
 			g22.setColor(Color.DARK_GRAY.darker());
@@ -77,7 +78,14 @@ public class SkillGlobe {
 			int lvl = Hooks.client.getRealSkillLevels()[this.skillID];
 			double percentage = Skill.getLevelUpPercentage(this.skillID);
 			DecimalFormat df = new DecimalFormat("##.##");
-			g22.drawString(Integer.toString(lvl), centerX + 16, 20);
+			int lvlX;
+			if (Integer.toString(lvl).length()==1) {
+				lvlX = centerX +20;
+			} else {
+				lvlX = centerX + 16;
+			}
+				
+			g22.drawString(Integer.toString(lvl), lvlX, 20);
 			String s = "-" + (int) ((percentage / 100) * 360);
 			int length = Integer.valueOf(s);
 			g22.drawArc(centerX, centerY, radiusX, radiusYY, startAngle, length);
@@ -108,10 +116,10 @@ public class SkillGlobe {
 			int startAngle = 90;
 			Shape circle = new Ellipse2D.Double(centerX, centerY, radiusYY, radiusX);
 			Graphics2D g22 = (Graphics2D) g;
+			g.setFont(Game.runescapeFont.deriveFont(Font.BOLD, 18));
 			g.setColor(Color.DARK_GRAY.darker());
 			g22.setRenderingHints(rh);
 			g22.setStroke(new BasicStroke(3));
-			g22.setFont(new Font(g.getFont().getFontName(), Font.PLAIN, 15));
 			g22.setColor(this.fillColor);
 			RoundRectangle2D skillBackdrop = new RoundRectangle2D.Double(centerX - 32, centerY + 10, 40, 30, 10, 10);
 			g22.setColor(Color.DARK_GRAY.darker());
@@ -138,7 +146,14 @@ public class SkillGlobe {
 			int lvl = Hooks.client.getRealSkillLevels()[this.skillID];
 			double percentage = Skill.getLevelUpPercentage(this.skillID);
 			DecimalFormat df = new DecimalFormat("##.##");
-			g22.drawString(Integer.toString(lvl), centerX + 16, 20);
+			int lvlX;
+			if (Integer.toString(lvl).length()==1) {
+				lvlX = centerX +20;
+			} else {
+				lvlX = centerX + 16;
+			}
+				
+			g22.drawString(Integer.toString(lvl), lvlX, 20);
 			String s = "-" + (int) ((percentage / 100) * 360);
 			int length = Integer.valueOf(s);
 			g22.drawArc(centerX, centerY, radiusX, radiusYY, startAngle, length);

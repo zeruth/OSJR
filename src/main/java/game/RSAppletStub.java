@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 public class RSAppletStub implements AppletStub {
 
-	private String link = "http://oldschool9.runescape.com/";
+	private String link = "http://oldschool21.runescape.com/";
 	private HashMap<String, String> parameters = new HashMap<>();
 
 	public RSAppletStub() {

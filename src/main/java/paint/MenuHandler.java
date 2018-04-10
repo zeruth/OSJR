@@ -157,29 +157,41 @@ public class MenuHandler implements ActionListener {
 		this.skillOverlays.add(this.fishingRoot);
 
 		this.xpGlobe.add(this.globeClear);
-		this.xpGlobe.add(this.globeAttack);
-		this.xpGlobe.add(this.globeDefence);
-		this.xpGlobe.add(this.globeStrength);
-		this.xpGlobe.add(this.globeHitpoints);
-		this.xpGlobe.add(this.globeRanged);
-		this.xpGlobe.add(this.globePrayer);
-		this.xpGlobe.add(this.globeMagic);
-		this.xpGlobe.add(this.globeCooking);
-		this.xpGlobe.add(this.globeWoodcutting);
-		this.xpGlobe.add(this.globeFletching);
-		this.xpGlobe.add(this.globeFishing);
-		this.xpGlobe.add(this.globeFiremaking);
-		this.xpGlobe.add(this.globeCrafting);
-		this.xpGlobe.add(this.globeSmithing);
-		this.xpGlobe.add(this.globeMining);
-		this.xpGlobe.add(this.globeHerblore);
 		this.xpGlobe.add(this.globeAgility);
-		this.xpGlobe.add(this.globeThieving);
-		this.xpGlobe.add(this.globeSlayer);
-		this.xpGlobe.add(this.globeFarming);
-		this.xpGlobe.add(this.globeRunecrafting);
-		this.xpGlobe.add(this.globeHunter);
+		this.xpGlobe.add(this.globeAttack);
+		this.xpGlobe.add(this.globeCooking);
 		this.xpGlobe.add(this.globeConstruction);
+		this.xpGlobe.add(this.globeCrafting);
+		this.xpGlobe.add(this.globeDefence);
+		this.xpGlobe.add(this.globeFarming);
+		this.xpGlobe.add(this.globeFletching);
+		this.xpGlobe.add(this.globeFiremaking);
+		this.xpGlobe.add(this.globeFishing);
+		this.xpGlobe.add(this.globeHerblore);
+		this.xpGlobe.add(this.globeHitpoints);
+		this.xpGlobe.add(this.globeHunter);
+		this.xpGlobe.add(this.globeMagic);
+		this.xpGlobe.add(this.globeMining);
+		this.xpGlobe.add(this.globePrayer);
+		this.xpGlobe.add(this.globeRanged);
+		this.xpGlobe.add(this.globeRunecrafting);
+		this.xpGlobe.add(this.globeSlayer);
+		this.xpGlobe.add(this.globeSmithing);
+		this.xpGlobe.add(this.globeStrength);
+		this.xpGlobe.add(this.globeThieving);
+		this.xpGlobe.add(this.globeWoodcutting);
+
+
+
+
+
+
+
+
+
+
+
+
 
 		this.globeClear.addActionListener(this);
 		this.globeAttack.addActionListener(this);

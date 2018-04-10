@@ -1,8 +1,10 @@
 package paint;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.RenderingHints;
 import java.io.FileInputStream;
@@ -10,6 +12,7 @@ import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
+import game.Game;
 import game.LoaderWindow;
 import game.Settings;
 import hooks.Hooks;
@@ -42,6 +45,7 @@ public class ActorNames implements PaintListener {
 				this.g2d = (Graphics2D) g;
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
+					g.setFont(Game.runescapeFont);
 					g.setColor(playerNameColor);
 					Player[] ps = Hooks.client.getCachedPlayers();
 					for (Player pl : ps) {
@@ -74,7 +78,8 @@ public class ActorNames implements PaintListener {
 						}
 					}
 				}
-
+			
+		g.setFont(Game.runescapeFont);
 			g.setColor(npcNameColor);
 			Npc[] ns = Hooks.client.getCachedNpcs();
 			if (ns != null) {
