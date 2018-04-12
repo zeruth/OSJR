@@ -7,12 +7,11 @@ import hooks.helpers.LocalPoint;
 import hooks.helpers.Perspective;
 
 public class Actor extends Renderable {
-	
+
 	LocalPoint localLocation;
 	int x;
 	int y;
 	Polygon tileAreaonScreen;
-	
 
 	public Actor(Object reference) {
 		super(reference);

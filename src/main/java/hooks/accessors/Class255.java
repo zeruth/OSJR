@@ -4,7 +4,7 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Class255 extends RSClass {
-	
+
 	Region region;
 
 	public Class255(Object reference) {

@@ -21,6 +21,7 @@ public class UpdateStatus extends JFrame {
 	public static void run() {
 		UpdateStatus frame = new UpdateStatus();
 		frame.setVisible(true);
+		frame.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 	}
 
 	private JPanel contentPane;
@@ -31,7 +32,6 @@ public class UpdateStatus extends JFrame {
 	 * Create the frame.
 	 */
 	public UpdateStatus() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 150, 128);
 		this.contentPane = new JPanel();
 		this.contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));

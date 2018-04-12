@@ -4,11 +4,11 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Region extends RSClass {
-	
+
 	GameObject[] objects;
 	Tile[] tiles;
 	Object[][][] rsTiles;
-	
+
 	Object[] tempObjects;
 	Tile tempTile;
 
@@ -48,7 +48,7 @@ public class Region extends RSClass {
 			if (this.rsTiles[Client.getPlane()][ax][ay] != null) {
 				this.tempTile = new Tile(this.rsTiles[Client.getPlane()][ax][ay]);
 			}
-				return this.tempTile;
+			return this.tempTile;
 		}
 
 		return null;

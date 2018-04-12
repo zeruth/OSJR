@@ -4,7 +4,7 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Player extends RSClass {
-	
+
 	int cameraX;
 
 	public Player(Object reference) {

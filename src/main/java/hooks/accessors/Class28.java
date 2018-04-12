@@ -4,7 +4,7 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Class28 extends RSClass {
-	
+
 	int cameraYaw;
 
 	public Class28(Object reference) {

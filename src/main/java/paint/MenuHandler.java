@@ -181,18 +181,6 @@ public class MenuHandler implements ActionListener {
 		this.xpGlobe.add(this.globeThieving);
 		this.xpGlobe.add(this.globeWoodcutting);
 
-
-
-
-
-
-
-
-
-
-
-
-
 		this.globeClear.addActionListener(this);
 		this.globeAttack.addActionListener(this);
 		this.globeDefence.addActionListener(this);

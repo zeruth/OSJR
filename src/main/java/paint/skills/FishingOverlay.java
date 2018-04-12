@@ -180,25 +180,25 @@ public class FishingOverlay implements PaintListener {
 												}
 											}
 										if (Settings.SHOW_FISHING_BARBARIAN)
-												for (String ss : actions) {
-													if (ss != null)
-														if (ss.compareTo("Use-rod") == 0) {
-															int i = 50;
-															for (String s : actions) {
-																if (s != null) {
-																	Point p1 = Perspective.getCanvasTextLocation(
-																			Hooks.client, (Graphics2D) g,
-																			new LocalPoint(pl.asActor().getX(),
-																					pl.asActor().getY()),
-																			s, i);
-																	if (p1 != null && name != null
-																			&& name.compareTo("null") != 0)
-																		g.drawString("Leaping", p1.getX(), p1.getY());
-																	i -= 50;
-																}
+											for (String ss : actions) {
+												if (ss != null)
+													if (ss.compareTo("Use-rod") == 0) {
+														int i = 50;
+														for (String s : actions) {
+															if (s != null) {
+																Point p1 = Perspective.getCanvasTextLocation(
+																		Hooks.client, (Graphics2D) g,
+																		new LocalPoint(pl.asActor().getX(),
+																				pl.asActor().getY()),
+																		s, i);
+																if (p1 != null && name != null
+																		&& name.compareTo("null") != 0)
+																	g.drawString("Leaping", p1.getX(), p1.getY());
+																i -= 50;
 															}
 														}
-												}
+													}
+											}
 									}
 								}
 							}

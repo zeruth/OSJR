@@ -1,10 +1,8 @@
 package paint;
 
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.RenderingHints;
 import java.io.FileInputStream;
@@ -78,8 +76,8 @@ public class ActorNames implements PaintListener {
 						}
 					}
 				}
-			
-		g.setFont(Game.runescapeFont);
+
+			g.setFont(Game.runescapeFont);
 			g.setColor(npcNameColor);
 			Npc[] ns = Hooks.client.getCachedNpcs();
 			if (ns != null) {

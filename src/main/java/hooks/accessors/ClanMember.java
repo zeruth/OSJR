@@ -4,7 +4,7 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class ClanMember extends RSClass {
-	
+
 	ChatPlayer chatPLayer;
 
 	public ClanMember(Object reference) {

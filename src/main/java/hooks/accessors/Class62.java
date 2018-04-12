@@ -4,7 +4,7 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Class62 extends RSClass {
-	
+
 	int[][][] tileHeights;
 	byte[][][] tileSettings;
 
@@ -23,7 +23,7 @@ public class Class62 extends RSClass {
 	}
 
 	public byte[][][] getTileSettings() {
-		this.tileSettings = (byte[][][]) getValue(getField("tileSettings")); 
+		this.tileSettings = (byte[][][]) getValue(getField("tileSettings"));
 		return this.tileSettings;
 	}
 }

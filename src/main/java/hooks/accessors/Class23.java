@@ -4,7 +4,7 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Class23 extends RSClass {
-	
+
 	int baseY;
 
 	public Class23(Object reference) {

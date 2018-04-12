@@ -4,7 +4,7 @@ import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Coordinates extends RSClass {
-	
+
 	int plane;
 
 	public Coordinates(Object reference) {

@@ -14,7 +14,7 @@ import hooks.accessors.*;
 import hooks.model.RSClass;
 
 public class Hooks {
-	
+
 	static RSClass temp;
 
 	public static Actor actor;
@@ -38,6 +38,7 @@ public class Hooks {
 	public static Class33 class33;
 	public static Class38 class38;
 	public static Class62 class62;
+	public static Class95 class95;
 	public static Client client;
 	public static ClientPacket clientPacket;
 	public static Coordinates coordinates;
@@ -47,6 +48,7 @@ public class Hooks {
 	public static GrandExchangeOffer grandExchangeOffer;
 	public static GroundObject groundObject;
 	public static Ignore ignore;
+	public static MessageNode messageNode;
 	public static Model model;
 	public static Name name;
 	public static Nameable nameable;
@@ -117,6 +119,9 @@ public class Hooks {
 			} else if (c.name.compareTo("class62") == 0) {
 				class62 = new Class62(null);
 				temp = class62;
+			} else if (c.name.compareTo("class95") == 0) {
+				class95 = new Class95(null);
+				temp = class95;
 			} else if (c.name.compareTo("class138") == 0) {
 				class138 = new Class138(null);
 				temp = class138;
@@ -158,6 +163,9 @@ public class Hooks {
 			} else if (c.name.compareTo("Ignore") == 0) {
 				ignore = new Ignore(null);
 				temp = ignore;
+			} else if (c.name.compareTo("MessageNode") == 0) {
+				messageNode = new MessageNode(null);
+				temp = messageNode;
 			} else if (c.name.compareTo("Model") == 0) {
 				model = new Model(null);
 				temp = model;

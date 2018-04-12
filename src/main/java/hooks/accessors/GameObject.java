@@ -5,7 +5,7 @@ import hooks.helpers.Perspective;
 import hooks.model.RSClass;
 
 public class GameObject extends RSClass {
-	
+
 	int cameraZ;
 	int x;
 	int y;

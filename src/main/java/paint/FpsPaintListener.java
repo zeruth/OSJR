@@ -10,7 +10,7 @@ import hooks.Hooks;
 import hooks.accessors.Client;
 
 public class FpsPaintListener implements PaintListener {
-	
+
 	FontMetrics fm;
 	String stringFps;
 	int x;

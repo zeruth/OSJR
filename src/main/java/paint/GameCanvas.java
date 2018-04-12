@@ -24,7 +24,7 @@ public class GameCanvas extends Canvas {
 			return super.getGraphics();
 		}
 
-		this.botGraphics = LoaderWindow.game.gamePaint();
+		this.botGraphics = Game.gamePaint();
 
 		if (this.botGraphics != null) {
 			return this.botGraphics;

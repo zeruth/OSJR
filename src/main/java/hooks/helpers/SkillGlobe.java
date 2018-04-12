@@ -79,12 +79,12 @@ public class SkillGlobe {
 			double percentage = Skill.getLevelUpPercentage(this.skillID);
 			DecimalFormat df = new DecimalFormat("##.##");
 			int lvlX;
-			if (Integer.toString(lvl).length()==1) {
-				lvlX = centerX +20;
+			if (Integer.toString(lvl).length() == 1) {
+				lvlX = centerX + 20;
 			} else {
 				lvlX = centerX + 16;
 			}
-				
+
 			g22.drawString(Integer.toString(lvl), lvlX, 20);
 			String s = "-" + (int) ((percentage / 100) * 360);
 			int length = Integer.valueOf(s);
@@ -147,12 +147,12 @@ public class SkillGlobe {
 			double percentage = Skill.getLevelUpPercentage(this.skillID);
 			DecimalFormat df = new DecimalFormat("##.##");
 			int lvlX;
-			if (Integer.toString(lvl).length()==1) {
-				lvlX = centerX +20;
+			if (Integer.toString(lvl).length() == 1) {
+				lvlX = centerX + 20;
 			} else {
 				lvlX = centerX + 16;
 			}
-				
+
 			g22.drawString(Integer.toString(lvl), lvlX, 20);
 			String s = "-" + (int) ((percentage / 100) * 360);
 			int length = Integer.valueOf(s);

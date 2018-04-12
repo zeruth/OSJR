@@ -1,20 +1,21 @@
 package hooks.accessors;
 
 import java.awt.Canvas;
+import java.util.Map;
 
 import game.LoaderWindow;
 import hooks.Hooks;
 import hooks.model.RSClass;
 
 public class Client extends RSClass {
-	
+
 	int loginState;
 	int gameState;
 	int scale;
-	
+
 	Player[] cachedPlayers;
 	Npc[] cachedNPCs;
-	
+
 	Object[] tempObjects;
 	Player tempPlayer;
 	Npc tempNPC;
@@ -52,7 +53,7 @@ public class Client extends RSClass {
 			this.cachedNPCs = new Npc[this.tempObjects.length];
 			for (Object o : this.tempObjects) {
 				if (o != null) {
-					this.tempNPC =  new Npc(o);
+					this.tempNPC = new Npc(o);
 					this.cachedNPCs[i] = this.tempNPC;
 					i++;
 				}
@@ -123,7 +124,7 @@ public class Client extends RSClass {
 
 	public int getLoginState() {
 		this.loginState = (int) getValue(getField("loginState"));
-		return (int) this.loginState;
+		return this.loginState;
 	}
 
 	public int getMapAngle() {
@@ -133,7 +134,7 @@ public class Client extends RSClass {
 	public static int getPlane() {
 		return Hooks.boundingBox3DDrawMode.getPlane();
 	}
-	
+
 	public int getWidgetRoot() {
 		return (int) getValue(getField("widgetRoot"));
 	}
@@ -179,6 +180,10 @@ public class Client extends RSClass {
 
 	public boolean isResized() {
 		return (boolean) getValue(getField("isResized"));
+	}
+
+	public static Map<Integer, Object> getChatLineMap() {
+		return Hooks.class95.getChatLineMap();
 	}
 
 	public static ClanMemberManager getClanMemberManager() {

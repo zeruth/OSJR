@@ -10,6 +10,7 @@ import java.awt.Graphics2D;
 import java.awt.GraphicsEnvironment;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
+import java.awt.TrayIcon.MessageType;
 import java.awt.image.BufferedImage;
 import java.awt.image.RasterFormatException;
 import java.io.File;
@@ -23,6 +24,7 @@ import discord.DiscordManager;
 import hooks.Hooks;
 import hooks.accessors.Client;
 import hooks.accessors.Region;
+import hooks.helpers.MessageManager;
 import hooks.helpers.ObjectManager;
 import paint.ActorNames;
 import paint.DecorativeObjects;
@@ -92,6 +94,7 @@ public class Game extends Canvas implements Runnable {
 			}
 
 		} else {
+
 			threadGroup = new ThreadGroup("RSGame");
 			Game.gameImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
 			this.paintImage = new BufferedImage(765, 503, BufferedImage.TYPE_INT_RGB);
@@ -138,6 +141,7 @@ public class Game extends Canvas implements Runnable {
 						Game.paintListeners.add(new AgilityOverlay());
 						Game.paintListeners.add(new FishingOverlay());
 						Game.paintListeners.add(new XpGlobe());
+						Game.paintListeners.add(new MessageManager());
 						Game.this.objectManager.t.start();
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -154,20 +158,19 @@ public class Game extends Canvas implements Runnable {
 
 			Game.paintThread = new Thread(threadGroup, this, "paint");
 			Game.paintThread.start();
-			
+
 			try {
-			     GraphicsEnvironment ge = 
-			         GraphicsEnvironment.getLocalGraphicsEnvironment();
-			     ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("./resources/Runescape.ttf")));
+				GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+				ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("./resources/Runescape.ttf")));
 			} catch (IOException | FontFormatException e) {
-			     e.printStackTrace();
+				e.printStackTrace();
 			}
-			
-			for (Font f: GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts()) {
-				if (f.getName().compareTo("RuneScape")==0) {
+
+			for (Font f : GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts()) {
+				if (f.getName().compareTo("RuneScape") == 0) {
 					Font g = f.deriveFont(16);
 					g = f.deriveFont(Font.BOLD, 16);
-					runescapeFont = g;	
+					runescapeFont = g;
 					System.out.println("[OSRS] Loaded Runescape Font.");
 				}
 			}
@@ -265,6 +268,11 @@ public class Game extends Canvas implements Runnable {
 	@Override
 	public void repaint(long tm, int x, int y, int width, int height) {
 		super.repaint(tm, 0, 0, OSRSLauncher.loaderWindow.getWidth(), getHeight());
+	}
+
+	public static void sendTrayMessage(String caption, String message) {
+		if (OSRSLauncher.trayIcon != null)
+			OSRSLauncher.trayIcon.displayMessage(caption, message, MessageType.NONE);
 	}
 
 	@Override
