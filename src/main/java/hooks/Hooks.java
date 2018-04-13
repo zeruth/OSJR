@@ -48,6 +48,8 @@ public class Hooks {
 	public static GrandExchangeOffer grandExchangeOffer;
 	public static GroundObject groundObject;
 	public static Ignore ignore;
+	public static Item item;
+	public static ItemLayer itemLayer;
 	public static MessageNode messageNode;
 	public static Model model;
 	public static Name name;
@@ -163,6 +165,12 @@ public class Hooks {
 			} else if (c.name.compareTo("Ignore") == 0) {
 				ignore = new Ignore(null);
 				temp = ignore;
+			} else if (c.name.compareTo("Item") == 0) {
+				item = new Item(null);
+				temp = item;
+			} else if (c.name.compareTo("ItemLayer") == 0) {
+				itemLayer = new ItemLayer(null);
+				temp = itemLayer;
 			} else if (c.name.compareTo("MessageNode") == 0) {
 				messageNode = new MessageNode(null);
 				temp = messageNode;

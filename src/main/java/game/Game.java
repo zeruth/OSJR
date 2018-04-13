@@ -20,12 +20,10 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
-import cache.DecorativeObjectListener;
-import cache.GameObjectListener;
-import cache.GroundObjectListener;
+import cache.ActorListener;
 import cache.MessageManager;
 import cache.ObjectManager;
-import cache.WallObjectListener;
+import cache.TileListener;
 import discord.DiscordManager;
 import hooks.Hooks;
 import hooks.accessors.Client;
@@ -38,6 +36,7 @@ import paint.misc.ActorNames;
 import paint.misc.DecorativeObjects;
 import paint.misc.FpsPaintListener;
 import paint.misc.GameObjects;
+import paint.misc.GroundItems;
 import paint.misc.GroundObjects;
 import paint.misc.WallObjects;
 import paint.misc.XpGlobe;
@@ -146,10 +145,11 @@ public class Game extends Canvas implements Runnable {
 						Game.paintListeners.add(new FishingOverlay());
 						Game.paintListeners.add(new XpGlobe());
 						Game.paintListeners.add(new MessageManager());
-						Game.paintListeners.add(new DecorativeObjectListener());
-						Game.paintListeners.add(new GameObjectListener());
-						Game.paintListeners.add(new GroundObjectListener());
-						Game.paintListeners.add(new WallObjectListener());
+						
+						Game.paintListeners.add(new TileListener());
+						Game.paintListeners.add(new ActorListener());
+						Game.paintListeners.add(new GroundItems());
+						
 						Game.this.objectManager.t.start();
 					} catch (Exception e) {
 						e.printStackTrace();

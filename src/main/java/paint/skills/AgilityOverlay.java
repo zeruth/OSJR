@@ -6,10 +6,8 @@ import java.awt.Graphics2D;
 import java.awt.geom.Area;
 import java.util.ArrayList;
 
-import cache.DecorativeObjectListener;
-import cache.GameObjectListener;
-import cache.GroundObjectListener;
 import cache.ObjectManager;
+import cache.TileListener;
 import game.Game;
 import game.Settings;
 import hooks.accessors.Client;
@@ -35,9 +33,9 @@ public class AgilityOverlay implements PaintListener {
 
 		g.setColor(this.outlineColor);
 		if (Settings.SHOW_AGILITY_OVERLAY == true) {
-			if (GameObjectListener.gameObjects != null)
+			if (TileListener.gameObjects != null)
 				try {
-					for (ArrayList<GameObject> gos : GameObjectListener.gameObjects.values()) {
+					for (ArrayList<GameObject> gos : TileListener.gameObjects.values()) {
 
 						if (gos.get(0).getPlane() != Client.getPlane())
 							continue;
@@ -94,7 +92,7 @@ public class AgilityOverlay implements PaintListener {
 						}
 					}
 
-					for (DecorativeObject d : DecorativeObjectListener.decorativeObjects.values()) {
+					for (DecorativeObject d : TileListener.decorativeObjects.values()) {
 
 						if (d != null) {
 							switch (d.getID()) {
@@ -130,7 +128,7 @@ public class AgilityOverlay implements PaintListener {
 
 					}
 
-					for (GroundObject go : GroundObjectListener.groundObjects.values()) {
+					for (GroundObject go : TileListener.groundObjects.values()) {
 						if (go != null) {
 							switch (go.getID()) {
 

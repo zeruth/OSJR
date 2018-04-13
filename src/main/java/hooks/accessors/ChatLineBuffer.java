@@ -28,7 +28,7 @@ public class ChatLineBuffer extends RSClass {
 		return null;
 	}
 
-	public int length() {
+	public static int length() {
 		return -1;
 	}
 

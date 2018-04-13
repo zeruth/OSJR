@@ -10,6 +10,7 @@ import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
+import cache.ActorListener;
 import game.Game;
 import game.LoaderWindow;
 import game.Settings;
@@ -46,8 +47,8 @@ public class ActorNames implements PaintListener {
 				if (Hooks.client.isLoggedIn()) {
 					g.setFont(Game.runescapeFont);
 					g.setColor(playerNameColor);
-					Player[] ps = Hooks.client.getCachedPlayers();
-					for (Player pl : ps) {
+
+					for (Player pl : ActorListener.players) {
 						if (pl != null) {
 							if (pl.isInClanChat()) {
 								Image rank = getRankImage(pl.getClanRank());
@@ -78,7 +79,7 @@ public class ActorNames implements PaintListener {
 					}
 					g.setFont(Game.runescapeFont);
 					g.setColor(npcNameColor);
-					Npc[] ns = Hooks.client.getCachedNpcs();
+					Npc[] ns = ActorListener.npcs;
 					if (ns != null) {
 						for (Npc pl : ns) {
 							if (pl != null) {

@@ -1,5 +1,7 @@
 package hooks.accessors;
 
+import java.util.ArrayList;
+
 import hooks.Hooks;
 import hooks.model.RSClass;
 
@@ -55,31 +57,21 @@ public class Region extends RSClass {
 
 	}
 
-	public Tile[] getTiles() {
+	public ArrayList<Tile> getTiles() {
+		ArrayList<Tile> tiles = new ArrayList<>();
 		int REGION_SIZE = 104;
 		this.rsTiles = (Object[][][]) getValue(getField("tiles"));
 		int z = Client.getPlane();
-		int i = 0;
-		this.tempObjects = new Object[20000];
 		for (int x = 0; x < REGION_SIZE; ++x) {
 			for (int y = 0; y < REGION_SIZE; ++y) {
 				Object tile = this.rsTiles[z][x][y];
 				if (tile == null) {
 					continue;
 				}
-				this.tempObjects[i] = tile;
-				i++;
+				tiles.add(new Tile(tile));
 			}
 		}
-		this.tiles = new Tile[i];
-		int k = 0;
-		for (Object o : this.tempObjects) {
-			if (o != null) {
-				this.tiles[k] = new Tile(o);
-				k++;
-			}
-		}
-		return this.tiles;
+		return tiles;
 	}
 
 }

@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.util.ArrayList;
 
-import cache.GameObjectListener;
+import cache.TileListener;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
@@ -23,7 +23,7 @@ public class GameObjects implements PaintListener {
 		if (Settings.SHOW_GAMEOBJECT_IDS)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
-					for (ArrayList<GameObject> gos : GameObjectListener.gameObjects.values()) {
+					for (ArrayList<GameObject> gos : TileListener.gameObjects.values()) {
 						GameObject go = gos.get(0);
 						if (go.getPlane() == Client.getPlane()) {
 							String name = "" + go.getID() + "p: " + go.getPlane() + " x:" + go.getX() + " y:"

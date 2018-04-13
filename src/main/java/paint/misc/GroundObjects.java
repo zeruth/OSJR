@@ -4,11 +4,11 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 
+import cache.TileListener;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
 import hooks.accessors.GroundObject;
-import hooks.accessors.Tile;
 import hooks.helpers.LocalPoint;
 import hooks.helpers.Perspective;
 import hooks.helpers.Point;
@@ -25,8 +25,7 @@ public class GroundObjects implements PaintListener {
 		if (Settings.SHOW_GROUNDOBJECT_IDS)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
-					for (Tile t : Client.getRegion().getTiles()) {
-						GroundObject go = t.getGroundObject();
+					for (GroundObject go  : TileListener.groundObjects.values()) {
 						if (go != null) {
 							String name = "" + go.getID() + "p: " + go.getPlane() + " x:" + go.getX() + " y:"
 									+ go.getY();

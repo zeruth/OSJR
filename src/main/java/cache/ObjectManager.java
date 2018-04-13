@@ -38,10 +38,10 @@ public class ObjectManager {
 	});
 
 	public static void resetObjects() {
-		DecorativeObjectListener.decorativeObjects = new HashMap<>();
-		WallObjectListener.wallObjects = new HashMap<>();
-		GroundObjectListener.groundObjects = new HashMap<>();
-		GameObjectListener.gameObjects = new HashMap<>();
+		TileListener.decorativeObjects = new HashMap<>();
+		TileListener.wallObjects = new HashMap<>();
+		TileListener.groundObjects = new HashMap<>();
+		TileListener.gameObjects = new HashMap<>();
 	}
 
 }

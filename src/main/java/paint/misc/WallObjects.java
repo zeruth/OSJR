@@ -4,10 +4,10 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 
+import cache.TileListener;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
-import hooks.accessors.Tile;
 import hooks.accessors.WallObject;
 import hooks.helpers.LocalPoint;
 import hooks.helpers.Perspective;
@@ -25,8 +25,7 @@ public class WallObjects implements PaintListener {
 		if (Settings.SHOW_WALLOBJECT_IDS)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
-					for (Tile t : Client.getRegion().getTiles()) {
-						WallObject wo = t.getWallObject();
+					for (WallObject wo : TileListener.wallObjects.values()) {
 						if (wo != null) {
 							String name = "" + wo.getID() + "p: " + 0 + " x:" + wo.getX() + " y:" + wo.getY();
 							Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
