@@ -22,6 +22,7 @@ public class RSClass {
 					return f;
 				}
 		}
+		System.out.println("Shouldnt happen");
 		return null;
 	}
 
@@ -32,14 +33,17 @@ public class RSClass {
 			if (f.multiplier != null) {
 				Field field = Game.jarLoader.loadClass(this.obfuscatedName).getDeclaredField(f.obfuscatedName);
 				field.setAccessible(true);
+				if (field.get(this.reference) == null) {
+					return null;
+				}
 				return (int) (field.get(this.reference)) * f.multiplier.intValue();
 			}
 
 			Field field = Game.jarLoader.loadClass(this.obfuscatedName).getDeclaredField(f.obfuscatedName);
 			field.setAccessible(true);
 			return field.get(this.reference);
-		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException
-				| ClassNotFoundException e) {
+		} catch (NullPointerException | IllegalArgumentException | IllegalAccessException | NoSuchFieldException
+				| SecurityException | ClassNotFoundException e) {
 			if (Game.debug)
 				e.printStackTrace();
 		}

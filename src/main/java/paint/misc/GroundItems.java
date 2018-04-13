@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+
+import cache.ItemDefinitionManager;
 import cache.TileListener;
 import game.Settings;
 import hooks.Hooks;
@@ -15,11 +17,6 @@ import hooks.helpers.Point;
 import paint.PaintListener;
 
 public class GroundItems implements PaintListener {
-
-	public static Color npcNameColor = Color.CYAN;
-	public static Color playerNameColor = Color.green;
-	public static Color clanMateNameColor = Color.ORANGE;
-
 	Graphics2D g2d;
 
 	RenderingHints rh = new RenderingHints(RenderingHints.KEY_TEXT_ANTIALIASING,
@@ -34,15 +31,41 @@ public class GroundItems implements PaintListener {
 		if (Settings.SHOW_PLAYER_NAMES) {
 			if (this.g2d == null)
 				this.g2d = (Graphics2D) g;
+			this.g2d.setColor(Color.YELLOW);
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
 					for (ItemLayer il : TileListener.groundItems) {
-						Item item = il.getBottom();
-						String name = ""+item.getId();
-						Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
-								new LocalPoint(il.getX(), il.getY()), name, 0);
-						if (p != null) {
-							g.drawString(name, p.getX(), p.getY());
+						int i = 0;
+
+						Item item = il.getTop();
+						if (item.reference != null) {
+							String name = ItemDefinitionManager.itemDefinitions[item.getId()].getName();
+							Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
+									new LocalPoint(il.getX(), il.getY()), name, i);
+							if (p != null) {
+								g.drawString(name, p.getX(), p.getY() - i);
+							}
+							i += 10;
+						}
+						item = il.getMiddle();
+						if (item.reference != null) {
+							String name = ItemDefinitionManager.itemDefinitions[item.getId()].getName();
+							Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
+									new LocalPoint(il.getX(), il.getY()), name, i);
+							if (p != null) {
+								g.drawString(name, p.getX(), p.getY() - i);
+							}
+							i += 10;
+						}
+						item = il.getBottom();
+						if (item.reference != null) {
+							String name = ItemDefinitionManager.itemDefinitions[item.getId()].getName();
+							Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
+									new LocalPoint(il.getX(), il.getY()), name, i);
+							if (p != null) {
+								g.drawString(name, p.getX(), p.getY() - i);
+							}
+							i += 10;
 						}
 					}
 				}

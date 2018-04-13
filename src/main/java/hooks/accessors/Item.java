@@ -13,12 +13,17 @@ public class Item extends RSClass {
 			this.obfuscatedName = Hooks.item.obfuscatedName;
 		}
 	}
-	
+
 	public int getId() {
 		return (int) getValue(getField("id"));
 	}
+
 	public int getX() {
 		return (int) getValue(getField("quantity"));
+	}
+
+	public Node asNode() {
+		return new Node(this.reference);
 	}
 
 }

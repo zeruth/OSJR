@@ -145,14 +145,14 @@ public class AgilityOverlay implements PaintListener {
 							case 10584:
 								drawGroundObject(go, g);
 								break;
-								// Falador course
+							// Falador course
 							case 10834:
 								drawGroundObject(go, g);
 								break;
 							case 11364:
 								drawGroundObject(go, g);
 								break;
-								// Seers
+							// Seers
 							case 11378:
 								go.plane = 2;
 								drawGroundObject(go, g);

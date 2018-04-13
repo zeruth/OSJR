@@ -190,7 +190,7 @@ public class Client extends RSClass {
 	public static ClanMemberManager getClanMemberManager() {
 		return Hooks.gameEngine.getClanMemberManager();
 	}
-	
+
 	public int getCycle() {
 		return (int) getValue(getField("cycleCntr"));
 	}

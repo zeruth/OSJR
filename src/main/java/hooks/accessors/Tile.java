@@ -27,7 +27,7 @@ public class Tile extends RSClass {
 			return new GroundObject(o);
 		return null;
 	}
-	
+
 	public ItemLayer getItemLayer() {
 		return new ItemLayer(getValue(getField("itemLayer")));
 	}

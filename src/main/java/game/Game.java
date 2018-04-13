@@ -17,10 +17,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.swing.JFrame;
 
 import cache.ActorListener;
+import cache.ItemDefinitionManager;
 import cache.MessageManager;
 import cache.ObjectManager;
 import cache.TileListener;
@@ -145,15 +145,17 @@ public class Game extends Canvas implements Runnable {
 						Game.paintListeners.add(new FishingOverlay());
 						Game.paintListeners.add(new XpGlobe());
 						Game.paintListeners.add(new MessageManager());
-						
+
 						Game.paintListeners.add(new TileListener());
 						Game.paintListeners.add(new ActorListener());
 						Game.paintListeners.add(new GroundItems());
-						
+
 						Game.this.objectManager.t.start();
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
+
+					ItemDefinitionManager.init();
 
 					Game.this.loading = false;
 					System.out.println("[OSRS] Init Complete.");

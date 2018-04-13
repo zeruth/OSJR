@@ -55,6 +55,7 @@ public class Hooks {
 	public static Name name;
 	public static Nameable nameable;
 	public static NameableContainer nameableContainer;
+	public static Node node;
 	public static Npc npc;
 	public static NpcComposition npcComposition;
 	public static ObjectComposition objectComposition;
@@ -186,6 +187,9 @@ public class Hooks {
 			} else if (c.name.compareTo("NameableContainer") == 0) {
 				nameableContainer = new NameableContainer(null);
 				temp = nameableContainer;
+			} else if (c.name.compareTo("Node") == 0) {
+				node = new Node(null);
+				temp = node;
 			} else if (c.name.compareTo("NPC") == 0) {
 				npc = new Npc(null);
 				temp = npc;

@@ -11,7 +11,7 @@ import hooks.accessors.MessageNode;
 import paint.PaintListener;
 
 public class MessageManager implements PaintListener {
-	
+
 	static int tick = 0;
 
 	public static final int SERVER = 0;
@@ -45,7 +45,7 @@ public class MessageManager implements PaintListener {
 	public static ArrayList<MessageNode> unknownMessages = new ArrayList<>();
 
 	public static void handleNewMessages() {
-		if (tick>40) {
+		if (tick > 40) {
 			Map<Integer, Object> m = Client.getChatLineMap();
 			if (m.get(SERVER) != null) {
 				ChatLineBuffer buffer = new ChatLineBuffer(m.get(SERVER));
@@ -102,7 +102,7 @@ public class MessageManager implements PaintListener {
 			}
 			int i = 0;
 			while (i < 110) {
-				if (i != CLAN_INFO && i != SERVER && i != CLAN && i != PUBLIC && i!=FILTERED) {
+				if (i != CLAN_INFO && i != SERVER && i != CLAN && i != PUBLIC && i != FILTERED) {
 					if (m.get(i) != null) {
 						ChatLineBuffer buffer = new ChatLineBuffer(m.get(i));
 						for (MessageNode mn : buffer.getLines()) {
@@ -116,11 +116,11 @@ public class MessageManager implements PaintListener {
 				}
 				i++;
 			}
-			tick=0;
+			tick = 0;
 		} else {
 			tick++;
 		}
-		
+
 	}
 
 	public static boolean containsMessage(MessageNode newMessage, ArrayList<MessageNode> messages) {
@@ -160,7 +160,7 @@ public class MessageManager implements PaintListener {
 
 	public static void handleNewFilteredMessage(MessageNode mn) {
 		if (Game.debug)
-		System.out.println("Filtered: " + mn.getMessage());
+			System.out.println("Filtered: " + mn.getMessage());
 	}
 
 	public static void testMessage() {

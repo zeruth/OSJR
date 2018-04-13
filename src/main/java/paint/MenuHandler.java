@@ -347,6 +347,7 @@ public class MenuHandler implements ActionListener {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private static BufferedImage getScaledImage(BufferedImage src, int h) {
 		int finalh = h;
 		double factor = 1.0d;

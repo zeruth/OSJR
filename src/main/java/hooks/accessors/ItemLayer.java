@@ -13,18 +13,28 @@ public class ItemLayer extends RSClass {
 			this.obfuscatedName = Hooks.itemLayer.obfuscatedName;
 		}
 	}
-	
+
 	public int getHash() {
 		return (int) getValue(getField("hash"));
 	}
+
 	public int getX() {
 		return (int) getValue(getField("x"));
 	}
+
 	public int getY() {
 		return (int) getValue(getField("y"));
 	}
-	
+
 	public Item getBottom() {
 		return new Item(getValue(getField("bottom")));
+	}
+
+	public Item getMiddle() {
+		return new Item(getValue(getField("middle")));
+	}
+
+	public Item getTop() {
+		return new Item(getValue(getField("top")));
 	}
 }
