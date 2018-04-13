@@ -1,4 +1,4 @@
-package discord.impl;
+package discord;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -4,16 +4,16 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Polygon;
 
+import cache.ObjectManager;
 import game.Game;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Npc;
 import hooks.helpers.LocalPoint;
-import hooks.helpers.ObjectManager;
 import hooks.helpers.Perspective;
 import hooks.helpers.Point;
-import paint.ActorNames;
 import paint.PaintListener;
+import paint.misc.ActorNames;
 
 public class FishingOverlay implements PaintListener {
 

@@ -1,4 +1,4 @@
-package hooks.helpers;
+package cache;
 
 import java.awt.Color;
 import java.util.HashMap;

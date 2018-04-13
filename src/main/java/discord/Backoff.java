@@ -1,4 +1,4 @@
-package discord.impl;
+package discord;
 
 import java.security.SecureRandom;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package discord.impl;
+package discord;
 
 import org.apache.commons.lang3.SystemUtils;
 

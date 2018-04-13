@@ -1,4 +1,4 @@
-package hooks.helpers;
+package cache;
 
 import java.awt.Graphics;
 import java.util.ArrayList;
@@ -11,8 +11,8 @@ import hooks.accessors.MessageNode;
 import paint.PaintListener;
 
 public class MessageManager implements PaintListener {
-
-	Map<Integer, Object> oldMap;
+	
+	static int tick = 0;
 
 	public static final int SERVER = 0;
 	public static final int PUBLIC = 2;
@@ -45,76 +45,82 @@ public class MessageManager implements PaintListener {
 	public static ArrayList<MessageNode> unknownMessages = new ArrayList<>();
 
 	public static void handleNewMessages() {
-		Map<Integer, Object> m = Client.getChatLineMap();
-		if (m.get(SERVER) != null) {
-			ChatLineBuffer buffer = new ChatLineBuffer(m.get(SERVER));
-			for (MessageNode mn : buffer.getLines()) {
-				if (mn.reference != null)
-					if (!containsMessage(mn, serverMessages)) {
-						handleNewServerMessage(mn);
-						serverMessages.add(mn);
-					}
-			}
-		}
-		if (m.get(PUBLIC) != null) {
-			ChatLineBuffer buffer = new ChatLineBuffer(m.get(PUBLIC));
-			for (MessageNode mn : buffer.getLines()) {
-				if (mn.reference != null)
-					if (!containsMessage(mn, publicMessages)) {
-						if (mn.getMessage().contains("lol42")) {
-							Game.sendTrayMessage("test", "succeeded");
+		if (tick>40) {
+			Map<Integer, Object> m = Client.getChatLineMap();
+			if (m.get(SERVER) != null) {
+				ChatLineBuffer buffer = new ChatLineBuffer(m.get(SERVER));
+				for (MessageNode mn : buffer.getLines()) {
+					if (mn.reference != null)
+						if (!containsMessage(mn, serverMessages)) {
+							handleNewServerMessage(mn);
+							serverMessages.add(mn);
 						}
-						handleNewPublicMessage(mn);
-						publicMessages.add(mn);
-					}
-			}
-		}
-		if (m.get(CLAN) != null) {
-			ChatLineBuffer buffer = new ChatLineBuffer(m.get(CLAN));
-			for (MessageNode mn : buffer.getLines()) {
-				if (mn.reference != null)
-					if (!containsMessage(mn, clanMessages)) {
-						handleNewClanMessage(mn);
-						clanMessages.add(mn);
-					}
-			}
-		}
-		if (m.get(CLAN_INFO) != null) {
-			ChatLineBuffer buffer = new ChatLineBuffer(m.get(CLAN_INFO));
-			for (MessageNode mn : buffer.getLines()) {
-				if (mn.reference != null)
-					if (!containsMessage(mn, helpMessages)) {
-						handleNewClanInfoMessage(mn);
-						helpMessages.add(mn);
-					}
-			}
-		}
-		if (m.get(FILTERED) != null) {
-			ChatLineBuffer buffer = new ChatLineBuffer(m.get(FILTERED));
-			for (MessageNode mn : buffer.getLines()) {
-				if (mn.reference != null)
-					if (!containsMessage(mn, filteredMessages)) {
-						handleNewFilteredMessage(mn);
-						filteredMessages.add(mn);
-					}
-			}
-		}
-		int i = 0;
-		while (i < 110) {
-			if (i != CLAN_INFO && i != SERVER && i != CLAN && i != PUBLIC) {
-				if (m.get(i) != null) {
-					ChatLineBuffer buffer = new ChatLineBuffer(m.get(i));
-					for (MessageNode mn : buffer.getLines()) {
-						if (mn.reference != null)
-							if (!containsMessage(mn, unknownMessages)) {
-								handleNewUnknownMessage(mn);
-								unknownMessages.add(mn);
-							}
-					}
 				}
 			}
-			i++;
+			if (m.get(PUBLIC) != null) {
+				ChatLineBuffer buffer = new ChatLineBuffer(m.get(PUBLIC));
+				for (MessageNode mn : buffer.getLines()) {
+					if (mn.reference != null)
+						if (!containsMessage(mn, publicMessages)) {
+							if (mn.getMessage().contains("lol42")) {
+								Game.sendTrayMessage("test", "succeeded");
+							}
+							handleNewPublicMessage(mn);
+							publicMessages.add(mn);
+						}
+				}
+			}
+			if (m.get(CLAN) != null) {
+				ChatLineBuffer buffer = new ChatLineBuffer(m.get(CLAN));
+				for (MessageNode mn : buffer.getLines()) {
+					if (mn.reference != null)
+						if (!containsMessage(mn, clanMessages)) {
+							handleNewClanMessage(mn);
+							clanMessages.add(mn);
+						}
+				}
+			}
+			if (m.get(CLAN_INFO) != null) {
+				ChatLineBuffer buffer = new ChatLineBuffer(m.get(CLAN_INFO));
+				for (MessageNode mn : buffer.getLines()) {
+					if (mn.reference != null)
+						if (!containsMessage(mn, helpMessages)) {
+							handleNewClanInfoMessage(mn);
+							helpMessages.add(mn);
+						}
+				}
+			}
+			if (m.get(FILTERED) != null) {
+				ChatLineBuffer buffer = new ChatLineBuffer(m.get(FILTERED));
+				for (MessageNode mn : buffer.getLines()) {
+					if (mn.reference != null)
+						if (!containsMessage(mn, filteredMessages)) {
+							handleNewFilteredMessage(mn);
+							filteredMessages.add(mn);
+						}
+				}
+			}
+			int i = 0;
+			while (i < 110) {
+				if (i != CLAN_INFO && i != SERVER && i != CLAN && i != PUBLIC && i!=FILTERED) {
+					if (m.get(i) != null) {
+						ChatLineBuffer buffer = new ChatLineBuffer(m.get(i));
+						for (MessageNode mn : buffer.getLines()) {
+							if (mn.reference != null)
+								if (!containsMessage(mn, unknownMessages)) {
+									handleNewUnknownMessage(mn);
+									unknownMessages.add(mn);
+								}
+						}
+					}
+				}
+				i++;
+			}
+			tick=0;
+		} else {
+			tick++;
 		}
+		
 	}
 
 	public static boolean containsMessage(MessageNode newMessage, ArrayList<MessageNode> messages) {
@@ -153,6 +159,7 @@ public class MessageManager implements PaintListener {
 	}
 
 	public static void handleNewFilteredMessage(MessageNode mn) {
+		if (Game.debug)
 		System.out.println("Filtered: " + mn.getMessage());
 	}
 

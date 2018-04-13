@@ -15,7 +15,8 @@ import java.awt.event.AdjustmentListener;
 
 import javax.swing.JButton;
 
-import hooks.helpers.ObjectManager;
+import cache.ObjectManager;
+import paint.misc.ActorNames;
 
 public class ColorChooserApplet extends Applet implements AdjustmentListener {
 

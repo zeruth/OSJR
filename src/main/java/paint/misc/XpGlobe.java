@@ -1,10 +1,11 @@
-package paint;
+package paint.misc;
 
 import java.awt.Graphics;
 import java.awt.RenderingHints;
 
 import hooks.Hooks;
 import hooks.helpers.SkillGlobe;
+import paint.PaintListener;
 
 public class XpGlobe implements PaintListener {
 

@@ -12,9 +12,6 @@ import java.util.concurrent.locks.ReentrantLock;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 
-import discord.impl.Backoff;
-import discord.impl.RpcConnection;
-
 /**
  * Main SDK class
  */

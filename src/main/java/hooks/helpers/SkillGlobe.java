@@ -16,6 +16,7 @@ import java.text.DecimalFormat;
 
 import javax.imageio.ImageIO;
 
+import cache.ObjectManager;
 import game.Game;
 import game.LoaderWindow;
 import game.OSRSLauncher;

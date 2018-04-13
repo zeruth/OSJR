@@ -1,4 +1,4 @@
-package paint;
+package paint.misc;
 
 import java.awt.Color;
 import java.awt.FontMetrics;
@@ -8,6 +8,7 @@ import game.OSRSLauncher;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
+import paint.PaintListener;
 
 public class FpsPaintListener implements PaintListener {
 

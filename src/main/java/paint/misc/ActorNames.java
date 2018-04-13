@@ -1,4 +1,4 @@
-package paint;
+package paint.misc;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -20,6 +20,7 @@ import hooks.accessors.Player;
 import hooks.helpers.LocalPoint;
 import hooks.helpers.Perspective;
 import hooks.helpers.Point;
+import paint.PaintListener;
 
 public class ActorNames implements PaintListener {
 

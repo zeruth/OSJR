@@ -5,16 +5,17 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.Area;
 import java.util.ArrayList;
+
+import cache.DecorativeObjectListener;
+import cache.GameObjectListener;
+import cache.GroundObjectListener;
+import cache.ObjectManager;
 import game.Game;
 import game.Settings;
 import hooks.accessors.Client;
 import hooks.accessors.DecorativeObject;
 import hooks.accessors.GameObject;
 import hooks.accessors.GroundObject;
-import hooks.helpers.DecorativeObjectListener;
-import hooks.helpers.GameObjectListener;
-import hooks.helpers.GroundObjectListener;
-import hooks.helpers.ObjectManager;
 import paint.PaintListener;
 
 public class AgilityOverlay implements PaintListener {

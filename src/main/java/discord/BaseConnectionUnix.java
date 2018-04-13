@@ -1,4 +1,4 @@
-package discord.impl;
+package discord;
 
 import java.io.File;
 import java.io.FileWriter;

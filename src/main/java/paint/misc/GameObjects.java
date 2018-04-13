@@ -1,32 +1,31 @@
-package paint;
+package paint.misc;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.util.ArrayList;
 
+import cache.GameObjectListener;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
-import hooks.accessors.GroundObject;
-import hooks.accessors.Tile;
+import hooks.accessors.GameObject;
 import hooks.helpers.LocalPoint;
 import hooks.helpers.Perspective;
 import hooks.helpers.Point;
+import paint.PaintListener;
 
-public class GroundObjects implements PaintListener {
-
-	public GroundObjects(Client game) {
-	}
+public class GameObjects implements PaintListener {
 
 	@Override
 	public void onRepaint(Graphics g) {
 		g.setColor(Color.yellow);
-		if (Settings.SHOW_GROUNDOBJECT_IDS)
+		if (Settings.SHOW_GAMEOBJECT_IDS)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
-					for (Tile t : Client.getRegion().getTiles()) {
-						GroundObject go = t.getGroundObject();
-						if (go != null) {
+					for (ArrayList<GameObject> gos : GameObjectListener.gameObjects.values()) {
+						GameObject go = gos.get(0);
+						if (go.getPlane() == Client.getPlane()) {
 							String name = "" + go.getID() + "p: " + go.getPlane() + " x:" + go.getX() + " y:"
 									+ go.getY();
 							Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,

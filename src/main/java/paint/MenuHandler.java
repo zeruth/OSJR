@@ -13,11 +13,12 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
+import cache.ObjectManager;
 import discord.UpdateStatus;
 import game.Game;
 import game.Settings;
-import hooks.helpers.ObjectManager;
 import hooks.helpers.SkillGlobe;
+import paint.misc.ActorNames;
 
 public class MenuHandler implements ActionListener {
 
