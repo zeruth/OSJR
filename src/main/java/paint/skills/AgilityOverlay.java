@@ -32,7 +32,7 @@ public class AgilityOverlay implements PaintListener {
 		g.setFont(Game.runescapeFont);
 
 		g.setColor(this.outlineColor);
-		if (Settings.SHOW_AGILITY_OVERLAY == true) {
+		if (Settings.SHOW_AGILITY_OVERLAY == true && Game.ctrlPressed==false) {
 			if (TileListener.gameObjects != null)
 				try {
 					for (ArrayList<GameObject> gos : TileListener.gameObjects.values()) {

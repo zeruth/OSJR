@@ -19,7 +19,6 @@ public class ItemDefinitionManager {
 		try {
 			ItemDefinitionManager.itemDefinitions = gson.fromJson(new FileReader(new File("./resources/ItemDef.json")),
 					ItemDefinition[].class);
-			System.out.println(ItemDefinitionManager.itemDefinitions[100].getName());
 		} catch (JsonSyntaxException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

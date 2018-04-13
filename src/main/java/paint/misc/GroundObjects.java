@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 
 import cache.TileListener;
+import game.Game;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Client;
@@ -22,7 +23,7 @@ public class GroundObjects implements PaintListener {
 	@Override
 	public void onRepaint(Graphics g) {
 		g.setColor(Color.yellow);
-		if (Settings.SHOW_GROUNDOBJECT_IDS)
+		if (Settings.SHOW_GROUNDOBJECT_IDS && Game.ctrlPressed==false)
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
 					for (GroundObject go : TileListener.groundObjects.values()) {

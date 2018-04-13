@@ -25,7 +25,7 @@ public class FishingOverlay implements PaintListener {
 
 	@Override
 	public void onRepaint(Graphics g) {
-		if (Settings.SHOW_FISHING_OVERLAY) {
+		if (Settings.SHOW_FISHING_OVERLAY && Game.ctrlPressed==false) {
 			g.setFont(Game.runescapeFont);
 			if (this.g2d == null)
 				this.g2d = (Graphics2D) g;

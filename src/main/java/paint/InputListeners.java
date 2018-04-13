@@ -12,6 +12,7 @@ import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
+import game.Game;
 import game.LoaderWindow;
 
 public class InputListeners
@@ -54,6 +55,9 @@ public class InputListeners
 
 	@Override
 	public void keyPressed(KeyEvent e) {
+		if (e.getKeyCode()==17) {
+			Game.ctrlPressed = true;
+		}
 		e.setSource(this.client);
 		if (this.inputEnabled && this.client != null) {
 			Canvas canvas = (Canvas) this.client.getComponent(0);
@@ -64,6 +68,9 @@ public class InputListeners
 
 	@Override
 	public void keyReleased(KeyEvent e) {
+		if (e.getKeyCode()==17) {
+			Game.ctrlPressed = false;
+		}
 		e.setSource(this.client);
 		if (this.inputEnabled && this.client != null) {
 			Canvas canvas = (Canvas) this.client.getComponent(0);

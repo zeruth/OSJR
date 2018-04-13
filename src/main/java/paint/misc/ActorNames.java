@@ -40,7 +40,7 @@ public class ActorNames implements PaintListener {
 
 	@Override
 	public void onRepaint(Graphics g) {
-		if (Settings.SHOW_PLAYER_NAMES) {
+		if (Settings.SHOW_PLAYER_NAMES && Game.ctrlPressed==false) {
 			if (this.g2d == null)
 				this.g2d = (Graphics2D) g;
 			if (Hooks.client != null)

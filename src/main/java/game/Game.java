@@ -67,6 +67,7 @@ public class Game extends Canvas implements Runnable {
 	private Rectangle r;
 	private String[] lines;
 	public static Font runescapeFont;
+	public static boolean ctrlPressed;
 
 	public Game(String[] args) {
 		for (String s : args) {

@@ -7,6 +7,7 @@ import java.awt.RenderingHints;
 
 import cache.ItemDefinitionManager;
 import cache.TileListener;
+import game.Game;
 import game.Settings;
 import hooks.Hooks;
 import hooks.accessors.Item;
@@ -28,15 +29,14 @@ public class GroundItems implements PaintListener {
 
 	@Override
 	public void onRepaint(Graphics g) {
-		if (Settings.SHOW_PLAYER_NAMES) {
+		if (Settings.SHOW_PLAYER_NAMES && Game.ctrlPressed==false) {
 			if (this.g2d == null)
 				this.g2d = (Graphics2D) g;
-			this.g2d.setColor(Color.YELLOW);
 			if (Hooks.client != null)
 				if (Hooks.client.isLoggedIn()) {
 					for (ItemLayer il : TileListener.groundItems) {
 						int i = 0;
-
+						g.setColor(Color.white);
 						Item item = il.getTop();
 						if (item.reference != null) {
 							String name = ItemDefinitionManager.itemDefinitions[item.getId()].getName();
