@@ -24,8 +24,12 @@ import discord.DiscordManager;
 import hooks.Hooks;
 import hooks.accessors.Client;
 import hooks.accessors.Region;
+import hooks.helpers.DecorativeObjectListener;
+import hooks.helpers.GameObjectListener;
+import hooks.helpers.GroundObjectListener;
 import hooks.helpers.MessageManager;
 import hooks.helpers.ObjectManager;
+import hooks.helpers.WallObjectListener;
 import paint.ActorNames;
 import paint.DecorativeObjects;
 import paint.FpsPaintListener;
@@ -134,7 +138,7 @@ public class Game extends Canvas implements Runnable {
 						Game.paintListeners.add(new FpsPaintListener(Hooks.client));
 						Game.paintListeners.add(new ActorNames(Hooks.client));
 						Game.paintListeners.add(new GroundObjects(Hooks.client));
-						Game.paintListeners.add(new GameObjects(Hooks.client));
+						Game.paintListeners.add(new GameObjects());
 						Game.paintListeners.add(new DecorativeObjects(Hooks.client));
 						Game.paintListeners.add(new WallObjects(Hooks.client));
 
@@ -142,6 +146,10 @@ public class Game extends Canvas implements Runnable {
 						Game.paintListeners.add(new FishingOverlay());
 						Game.paintListeners.add(new XpGlobe());
 						Game.paintListeners.add(new MessageManager());
+						Game.paintListeners.add(new DecorativeObjectListener());
+						Game.paintListeners.add(new GameObjectListener());
+						Game.paintListeners.add(new GroundObjectListener());
+						Game.paintListeners.add(new WallObjectListener());
 						Game.this.objectManager.t.start();
 					} catch (Exception e) {
 						e.printStackTrace();

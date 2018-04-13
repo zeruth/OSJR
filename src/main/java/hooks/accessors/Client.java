@@ -9,6 +9,7 @@ import hooks.model.RSClass;
 
 public class Client extends RSClass {
 
+	public static boolean loggedIn = false;
 	int loginState;
 	int gameState;
 	int scale;
@@ -175,7 +176,7 @@ public class Client extends RSClass {
 	}
 
 	public boolean isLoggedIn() {
-		return (getLoginState() == 10 && getGameState() >= 11);
+		return (getLoginState() == 10 && getGameState() >= 11 && loggedIn == true);
 	}
 
 	public boolean isResized() {

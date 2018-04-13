@@ -16,13 +16,32 @@ public class MessageManager implements PaintListener {
 
 	public static final int SERVER = 0;
 	public static final int PUBLIC = 2;
-	public static final int HELP = 11; // ?
+	public static final int PM_RECEIVED = 3;
+	public static final int TRADE_RECEIVED = 4;
+	public static final int PM_INFO = 5;
+	public static final int PM_SENT = 6;
+	public static final int PM_RECEIVED_MOD = 7;
 	public static final int CLAN = 9;
+	public static final int CLAN_INFO = 11;
+	public static final int TRADE_SENT = 12;
+	public static final int ABUSE_REPORT = 26;
+	public static final int EXAMINE_ITEM = 27;
+	public static final int EXAMINE_NPC = 28;
+	public static final int EXAMINE_OBJECT = 29;
+	public static final int FRIENDS_ADD = 30;
+	public static final int IGNORE_ADD = 31;
+	public static final int AUTOCHAT = 90;
+	public static final int GAME = 99;
+	public static final int TRADE = 101;
+	public static final int DUEL = 103;
+	public static final int FILTERED = 105;
+	public static final int ACTION = 109;
 
 	public static ArrayList<MessageNode> publicMessages = new ArrayList<>();
 	public static ArrayList<MessageNode> clanMessages = new ArrayList<>();
 	public static ArrayList<MessageNode> serverMessages = new ArrayList<>();
 	public static ArrayList<MessageNode> helpMessages = new ArrayList<>();
+	public static ArrayList<MessageNode> filteredMessages = new ArrayList<>();
 	public static ArrayList<MessageNode> unknownMessages = new ArrayList<>();
 
 	public static void handleNewMessages() {
@@ -60,19 +79,29 @@ public class MessageManager implements PaintListener {
 					}
 			}
 		}
-		if (m.get(HELP) != null) {
-			ChatLineBuffer buffer = new ChatLineBuffer(m.get(HELP));
+		if (m.get(CLAN_INFO) != null) {
+			ChatLineBuffer buffer = new ChatLineBuffer(m.get(CLAN_INFO));
 			for (MessageNode mn : buffer.getLines()) {
 				if (mn.reference != null)
 					if (!containsMessage(mn, helpMessages)) {
-						handleNewHelpMessage(mn);
+						handleNewClanInfoMessage(mn);
 						helpMessages.add(mn);
 					}
 			}
 		}
+		if (m.get(FILTERED) != null) {
+			ChatLineBuffer buffer = new ChatLineBuffer(m.get(FILTERED));
+			for (MessageNode mn : buffer.getLines()) {
+				if (mn.reference != null)
+					if (!containsMessage(mn, filteredMessages)) {
+						handleNewFilteredMessage(mn);
+						filteredMessages.add(mn);
+					}
+			}
+		}
 		int i = 0;
-		while (i < 20) {
-			if (i != HELP && i != SERVER && i != CLAN && i != PUBLIC) {
+		while (i < 110) {
+			if (i != CLAN_INFO && i != SERVER && i != CLAN && i != PUBLIC) {
 				if (m.get(i) != null) {
 					ChatLineBuffer buffer = new ChatLineBuffer(m.get(i));
 					for (MessageNode mn : buffer.getLines()) {
@@ -107,18 +136,24 @@ public class MessageManager implements PaintListener {
 		System.out.println("Server: " + mn.getMessage());
 		if (mn.getMessage().contains("A bird's nest falls out of the tree."))
 			Game.sendTrayMessage("OSJR", "A bird's nest falls out of the tree.");
+		if (mn.getMessage().contains("Welcome to RuneScape."))
+			Client.loggedIn = true;
 	}
 
 	public static void handleNewClanMessage(MessageNode mn) {
 		System.out.println("Clan: (" + mn.getName() + ") " + mn.getMessage());
 	}
 
-	public static void handleNewHelpMessage(MessageNode mn) {
+	public static void handleNewClanInfoMessage(MessageNode mn) {
 		System.out.println("Help: " + mn.getMessage());
 	}
 
 	public static void handleNewUnknownMessage(MessageNode mn) {
 		System.out.println("Unknown:" + mn.getType() + " " + mn.getMessage());
+	}
+
+	public static void handleNewFilteredMessage(MessageNode mn) {
+		System.out.println("Filtered: " + mn.getMessage());
 	}
 
 	public static void testMessage() {

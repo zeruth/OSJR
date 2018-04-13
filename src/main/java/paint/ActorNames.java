@@ -75,26 +75,25 @@ public class ActorNames implements PaintListener {
 							// g2.drawImage(rank, null, p.getX(), p.getY());
 						}
 					}
-				}
-
-			g.setFont(Game.runescapeFont);
-			g.setColor(npcNameColor);
-			Npc[] ns = Hooks.client.getCachedNpcs();
-			if (ns != null) {
-				for (Npc pl : ns) {
-					if (pl != null) {
-						String name = pl.getNpcComposition().getName();
-						if (name != null) {
-							if (!name.contains("Fishing")) {
-								Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
-										new LocalPoint(pl.asActor().getX(), pl.asActor().getY()), name, 190);
-								if (p != null && name != null && name.compareTo("null") != 0) //$NON-NLS-1$
-									g.drawString(name, p.getX(), p.getY());
+					g.setFont(Game.runescapeFont);
+					g.setColor(npcNameColor);
+					Npc[] ns = Hooks.client.getCachedNpcs();
+					if (ns != null) {
+						for (Npc pl : ns) {
+							if (pl != null) {
+								String name = pl.getNpcComposition().getName();
+								if (name != null) {
+									if (!name.contains("Fishing")) {
+										Point p = Perspective.getCanvasTextLocation(Hooks.client, (Graphics2D) g,
+												new LocalPoint(pl.asActor().getX(), pl.asActor().getY()), name, 190);
+										if (p != null && name != null && name.compareTo("null") != 0) //$NON-NLS-1$
+											g.drawString(name, p.getX(), p.getY());
+									}
+								}
 							}
 						}
 					}
 				}
-			}
 		}
 	}
 

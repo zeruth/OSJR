@@ -1,6 +1,7 @@
 package hooks.accessors;
 
 import hooks.Hooks;
+import hooks.helpers.LocalPoint;
 import hooks.helpers.Perspective;
 import hooks.model.RSClass;
 
@@ -49,12 +50,17 @@ public class GameObject extends RSClass {
 	}
 
 	public Model getModel() {
-		if (this.renderable1.reference != null) {
+		if (getRenderable1().reference != null) {
 			this.model = new Model(getValue(getField("renderable")));
 			return this.model;
 		}
 		return null;
 
+	}
+
+	public LocalPoint getLocalPoint() {
+		LocalPoint lp = new LocalPoint(getX(), getY());
+		return lp;
 	}
 
 	public int getPlane() {

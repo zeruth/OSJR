@@ -3,98 +3,45 @@ package hooks.helpers;
 import java.awt.Color;
 import java.util.HashMap;
 
-import game.Game;
 import hooks.Hooks;
 import hooks.accessors.Client;
-import hooks.accessors.DecorativeObject;
-import hooks.accessors.GameObject;
-import hooks.accessors.GroundObject;
-import hooks.accessors.Tile;
-import paint.skills.AgilityObjects;
 
 public class ObjectManager {
 
 	public static Color fillColor = new Color(Color.YELLOW.getBlue(), Color.YELLOW.getGreen(), Color.YELLOW.getRed(),
 			50);
 	public static Color outlineColor = Color.YELLOW;
-
 	public int basex = 0, basey = 0;
-	static int[] i = new int[30000];
 
-	public static HashMap<Integer, GameObject> gameObjects = new HashMap<>();
-	public static HashMap<Integer, DecorativeObject> decorativeObjects = new HashMap<>();
-	public static HashMap<Integer, GroundObject> groundObjects = new HashMap<>();
-
-	public AgilityObjects agilityObjects = new AgilityObjects();
-
-	public Thread t = new Thread(Game.threadGroup, new Runnable() {
+	public Thread t = new Thread(new Runnable() {
 
 		@Override
 		public void run() {
 			while (true != false) {
+				try {
+					Thread.sleep(100);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 				if (Hooks.client != null) {
 					if (Client.isLoaded())
 						if (Hooks.client.isLoggedIn()) {
 							if (ObjectManager.this.basex != Client.getBaseX()
 									|| ObjectManager.this.basey != Client.getBaseY()) {
-								try {
-									Thread.sleep(100);
-								} catch (InterruptedException e) {
-									// TODO Auto-generated catch block
-									e.printStackTrace();
-								}
+							} else {
 								resetObjects();
-								ObjectManager.this.basex = Client.getBaseX();
-								ObjectManager.this.basey = Client.getBaseY();
 							}
-							if (Client.getRegion() != null) {
-								if (Client.getRegion().getTiles() != null) {
-									for (Tile t : Client.getRegion().getTiles()) {
-										AgilityObjects.checkAgilityObjects(t);
-									}
-								}
-							}
-						} else {
-							resetObjects();
 						}
-
-				}
-				try {
-					Thread.sleep(100);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}
 			}
 		}
 	});
 
-	public static void addGameObject(GameObject d) {
-		if (i[d.getID()] != 1) {
-			gameObjects.put(d.getID(), d);
-			i[d.getID()] = 1;
-		}
-	}
-
-	public static void addDecorativeObject(DecorativeObject d) {
-		if (i[d.getID()] != 1) {
-			decorativeObjects.put(d.getID(), d);
-			i[d.getID()] = 1;
-		}
-	}
-
-	public static void addGroundObject(GroundObject d) {
-		if (i[d.getID()] != 1) {
-			groundObjects.put(d.getID(), d);
-			i[d.getID()] = 1;
-		}
-	}
-
 	public static void resetObjects() {
-		i = new int[30000];
-		gameObjects = new HashMap<>();
-		decorativeObjects = new HashMap<>();
-		groundObjects = new HashMap<>();
+		DecorativeObjectListener.decorativeObjects = new HashMap<>();
+		WallObjectListener.wallObjects = new HashMap<>();
+		GroundObjectListener.groundObjects = new HashMap<>();
+		GameObjectListener.gameObjects = new HashMap<>();
 	}
 
 }

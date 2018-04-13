@@ -41,7 +41,8 @@ public class MessageNode extends RSClass {
 		String s = (String) getValue(getField("value"));
 		s = s.replace("<br>", "\n");
 		s = s.replace("</col>", "");
-		s = s.replace("<col=ff0000>", "");
+		s = s.replace("<col=ff0000>", "[Urgent] ");
+		s = s.replace("<col=ef1020>", "[Info] ");
 		return s;
 	}
 }

@@ -4,17 +4,23 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.Area;
-import java.util.Collection;
+import java.util.ArrayList;
 import game.Game;
 import game.Settings;
 import hooks.accessors.Client;
 import hooks.accessors.DecorativeObject;
 import hooks.accessors.GameObject;
 import hooks.accessors.GroundObject;
+import hooks.helpers.DecorativeObjectListener;
+import hooks.helpers.GameObjectListener;
+import hooks.helpers.GroundObjectListener;
 import hooks.helpers.ObjectManager;
 import paint.PaintListener;
 
 public class AgilityOverlay implements PaintListener {
+
+	Color outlineColor = ObjectManager.outlineColor;
+	Color fillColor = ObjectManager.fillColor;
 
 	Graphics2D g2;
 	Area a;
@@ -25,18 +31,17 @@ public class AgilityOverlay implements PaintListener {
 	@Override
 	public void onRepaint(Graphics g) {
 		g.setFont(Game.runescapeFont);
-		Color outlineColor = ObjectManager.outlineColor;
-		Color fillColor = ObjectManager.fillColor;
-		g.setColor(outlineColor);
+
+		g.setColor(this.outlineColor);
 		if (Settings.SHOW_AGILITY_OVERLAY == true) {
-			if (ObjectManager.gameObjects != null)
+			if (GameObjectListener.gameObjects != null)
 				try {
-					Collection<GameObject> gos = ObjectManager.gameObjects.values();
-					for (GameObject go : gos) {
-						if (go.getPlane() != Client.getPlane())
+					for (ArrayList<GameObject> gos : GameObjectListener.gameObjects.values()) {
+
+						if (gos.get(0).getPlane() != Client.getPlane())
 							continue;
-						if (go != null) {
-							switch (go.getID()) {
+						if (gos.get(0) != null) {
+							switch (gos.get(0).getID()) {
 
 							// Al Kharid course
 							case 10355:
@@ -76,21 +81,19 @@ public class AgilityOverlay implements PaintListener {
 							case 11375:
 							case 11376:
 							case 11377:
-
-								g.setColor(outlineColor);
-								;
+								g.setColor(this.outlineColor);
 								this.g2 = (Graphics2D) g;
-								this.a = go.getClickbox();
+								this.a = gos.get(0).getClickbox();
 								if (this.a != null) {
 									this.g2.draw(this.a);
-									this.g2.setPaint(fillColor);
+									this.g2.setPaint(this.fillColor);
 									this.g2.fill(this.a);
 								}
 							}
 						}
 					}
 
-					for (DecorativeObject d : ObjectManager.decorativeObjects.values()) {
+					for (DecorativeObject d : DecorativeObjectListener.decorativeObjects.values()) {
 
 						if (d != null) {
 							switch (d.getID()) {
@@ -108,14 +111,14 @@ public class AgilityOverlay implements PaintListener {
 									if (Game.debug)
 										System.out.println("" + d.getPlane() + " " + Client.getPlane()); //$NON-NLS-1$ //$NON-NLS-2$
 								} else {
-									g.setColor(outlineColor);
+									g.setColor(this.outlineColor);
 									;
 									this.g2 = (Graphics2D) g;
 									this.a = d.getClickbox();
 									if (this.a != null) {
 
 										this.g2.draw(this.a);
-										this.g2.setPaint(fillColor);
+										this.g2.setPaint(this.fillColor);
 										this.g2.fill(this.a);
 									}
 
@@ -126,42 +129,58 @@ public class AgilityOverlay implements PaintListener {
 
 					}
 
-					for (GroundObject go : ObjectManager.groundObjects.values()) {
+					for (GroundObject go : GroundObjectListener.groundObjects.values()) {
 						if (go != null) {
 							switch (go.getID()) {
 
 							// Al Kharid Course
 							case 10284:
+								drawGroundObject(go, g);
+								break;
 							case 10527:
+								drawGroundObject(go, g);
+								break;
 							case 10583:
+								drawGroundObject(go, g);
+								break;
 							case 10584:
-
+								drawGroundObject(go, g);
+								break;
 								// Falador course
 							case 10834:
+								drawGroundObject(go, g);
+								break;
 							case 11364:
-
+								drawGroundObject(go, g);
+								break;
 								// Seers
 							case 11378:
-								if (go.getPlane() != Client.getPlane()) {
-									if (Game.debug)
-										System.out.println("" + go.getPlane() + " " + Client.getPlane());
-									continue;
-								}
-								g.setColor(outlineColor);
-								;
-								this.g2 = (Graphics2D) g;
-								this.a = go.getClickbox();
-								if (this.a != null) {
-									this.g2.draw(this.a);
-									this.g2.setPaint(fillColor);
-									this.g2.fill(this.a);
-								}
+								go.plane = 2;
+								drawGroundObject(go, g);
+								break;
 							}
 						}
 					}
 				} catch (Exception e) {
 					ObjectManager.resetObjects();
 				}
+		}
+	}
+
+	private void drawGroundObject(GroundObject go, Graphics g) {
+		if (go.getPlane() != Client.getPlane()) {
+			if (Game.debug)
+				System.out.println("" + go.getPlane() + " " + Client.getPlane());
+			return;
+		}
+		g.setColor(this.outlineColor);
+		;
+		this.g2 = (Graphics2D) g;
+		this.a = go.getClickbox();
+		if (this.a != null) {
+			this.g2.draw(this.a);
+			this.g2.setPaint(this.fillColor);
+			this.g2.fill(this.a);
 		}
 	}
 

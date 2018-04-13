@@ -6,7 +6,6 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 
 import game.Game;
-import game.LoaderWindow;
 
 public class GameCanvas extends Canvas {
 	Graphics botGraphics;
